@@ -407,11 +407,13 @@ bqz	bqy	s_	()V		32
 bra	bqy	i	()V		32
 brb	bqy	p	()V		32
 brc	bqy			brc	32
+bre	brd				4136
 brf	brd			brf	32
 brg	brd			brg	32
 brh	brd			brh	32
 brj	brd			brj	32
 brm	brl	a	(Lcnr;)V		32
+brp	bro				4136
 brq	bro				40
 brr	brq	<init>	(Ljava/lang/String;)V		32
 brt	brs			brt	32
@@ -697,6 +699,7 @@ o	j	a	(Lj;Ldf;Lano;)V		56
 oc	ob	<init>	(Lnet/minecraft/server/MinecraftServer;Lbhv;ILoj;Lry;)V		32
 oe	od	a	(Ltu;IIZ)V		32
 oh	og			oh	32
+ok	oj				4136
 ol	oj			ol	40
 or	oq				4136
 ot	os	a	(Ljava/net/InetAddress;I)V		32
