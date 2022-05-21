@@ -65,11 +65,11 @@ task downloadVersionsManifest {
     group = setupGroup
     //inputs.property "mc_ver", minecraft_version
     inputs.property "currenttime", new Date()
-    def manifestFile = new File(cacheFilesMinecraft, "version_manifest_v2.json")
+    def manifestFile = new File(cacheFilesMinecraft, "version_manifest.json")
     outputs.file(manifestFile)
     doLast {
         logger.lifecycle(":downloading minecraft versions manifest")
-        FileUtils.copyURLToFile(new URL("https://launchermeta.mojang.com/mc/game/version_manifest_v2.json"), manifestFile)
+        FileUtils.copyURLToFile(new URL("https://skyrising.github.io/mc-versions/version_manifest.json"), manifestFile)
     }
 }
 
@@ -124,7 +124,7 @@ task downloadMcJars(dependsOn: downloadWantedVersionManifest) {
         //reload in case it changed
         def version = new JsonSlurper().parseText(FileUtils.readFileToString(versionFile, Charset.defaultCharset()))
 
-        logger.lifecycle(":downloading minecraft jars")
+        logger.lifecycle(":downloading minecraft jars for ${minecraft_version}")
 
         download {
             src new URL(version.downloads.client.url)
