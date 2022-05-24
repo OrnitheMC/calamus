@@ -1,8 +1,8 @@
-Matches saved 2022-05-21T23:10:03.373315592Z, input files:
+Matches saved 2022-05-24T22:04:20.286153664Z, input files:
 	a:
-		7783993	SHA256	J9JeUDiKzZQf5bfAwqZmHV6+MYaOrc1rzhSGedIMdUg=	14w33c-merged-nested.jar
+		7783991	SHA256	+tekWPjN4NTxzb/LCaeFmXV5M4TuBZmb5lgUgHo/tvQ=	14w33c-mn.jar
 	b:
-		7791376	SHA256	YJcr/K1Wh2U+WfPt5A2jb8wiPPVtfAwwCIxpd+rp6Yg=	14w34a-merged-nested.jar
+		7791376	SHA256	YI1To+1HGGyYgAqxzXOlXda474R7SGCW/K4u56Sd1cM=	14w34a-mn.jar
 	cp:
 	cp a:
 	cp b:
@@ -1257,6 +1257,7 @@ c	Labz$acg;	Laca$acj;
 	f	e;;Z	e;;Z
 c	Labz;	Laca;
 	m	<init>(Laqo;)V	<init>(Laqr;)V
+		ma	0	0
 	m	bB()F	bD()F
 	m	a(Labz$acc;)V	a(Laca$acd;)V
 		ma	0	0
@@ -1290,6 +1291,7 @@ c	Labz;	Laca;
 	m	bl()Ljava/lang/String;	bn()Ljava/lang/String;
 	m	bm()Ljava/lang/String;	bo()Ljava/lang/String;
 	m	r(Lwu;)Z	r(Lwv;)Z
+		ma	0	0
 	m	a(Lwg;F)Z	a(Lwh;F)Z
 		ma	0	0
 		ma	1	1
@@ -33564,7 +33566,9 @@ c	Lcek$2;	Lcen$2;
 	f	a;;[I	a;;[I
 c	Lcek;	Lcen;
 	m	<init>(Lcom/mojang/authlib/GameProfile;)V	<init>(Lcom/mojang/authlib/GameProfile;)V
+		ma	0	0
 	m	<init>(Lkg$kj;)V	<init>(Lkh$kk;)V
+		ma	0	0
 	m	a()Lcom/mojang/authlib/GameProfile;	a()Lcom/mojang/authlib/GameProfile;
 	m	b()Laqv$aqw;	b()Laqy$aqz;
 	m	c()I	c()I
@@ -38146,7 +38150,8 @@ c	Lcnz$2;	Lcoc$2;
 	f	b;;Lcoc;	b;;Lcof;
 	f	c;;Lcnz;	c;;Lcoc;
 c	Lcnz;	Lcoc;
-	mu	a	<init>(Lcnv;)V
+	m	<init>(Lcnv;)V	<init>(Lcny;)V
+		ma	0	0
 	m	run()V	run()V
 	m	a(Lcns;)V	a(Lcnv;)V
 		ma	0	0
