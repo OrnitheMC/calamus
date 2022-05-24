@@ -1,8 +1,8 @@
-Matches saved 2022-05-21T05:03:12.258871815Z, input files:
+Matches saved 2022-05-24T07:23:15.011133862Z, input files:
 	a:
-		7817167	SHA256	FyANPMTPJSJVGkH0MaDepVS1qRWOOMoIZsnnE+1Pl7Y=	1.8.2-pre1-merged-nested.jar
+		7817172	SHA256	ZPA4boyF85MBXZiNS94irtDvGxjOBEkrrdNVXfanPZg=	1.8.2-pre1-mn.jar
 	b:
-		7818164	SHA256	FrVpXuXEJAThj6DNIfAb9XrAadzue1AdmDSOgvJPHtY=	1.8.2-pre2-merged-nested.jar
+		7818164	SHA256	futEoQr8TEFGLcutUmudNjPB4Jpp/csuTIdaLGhY6Qw=	1.8.2-pre2-mn.jar
 	cp:
 	cp a:
 	cp b:
@@ -18977,11 +18977,7 @@ c	Lbdd;	Lbdd;
 	m	G()Lvt;	G()Lvt;
 	m	b(Lbdc;)Lvt;	b(Lbdc;)Lvt;
 		ma	0	0
-	m	a(Laqs;DDD)Lady;	a(Laqs;DDD)Ljava/util/List;
-		ma	0	0
-		ma	1	1
-		ma	2	2
-		ma	3	3
+	mu	a	a(Laqs;DDD)Lady;
 	m	b(Laqs;DDD)Lvt;	b(Laqs;DDD)Lvt;
 		ma	0	0
 		ma	1	1
@@ -19640,7 +19636,6 @@ c	Lbej;	Lbej;
 		ma	0	0
 		ma	1	1
 	m	a(Laqs;)Lcom/google/common/cache/LoadingCache;	a(Laqs;Z)Lcom/google/common/cache/LoadingCache;
-		ma	0	0
 	m	a(Ldt;Lej;Lej;III)Ldt;	a(Ldt;Lej;Lej;III)Ldt;
 		ma	0	0
 		ma	1	1
@@ -34122,7 +34117,6 @@ c	Lcez$2;	Lcez$2;
 		ma	1	1
 		ma	2	2
 	m	initChannel(Lio/netty/channel/Channel;)V	initChannel(Lio/netty/channel/Channel;)V
-		ma	0	0
 	f	a;;Lcev;	a;;Lcev;
 	f	b;;Lcew;	b;;Lcew;
 	f	c;;Lcez;	c;;Lcez;
@@ -37895,13 +37889,8 @@ c	Lcmp;	Lcmp;
 		ma	3	3
 		ma	4	4
 	m	a(Lorg/lwjgl/util/vector/Vector3f;Lorg/lwjgl/util/vector/Vector3f;Lorg/lwjgl/util/vector/Matrix4f;Lorg/lwjgl/util/vector/Vector3f;)V	a(Lorg/lwjgl/util/vector/Vector3f;Lorg/lwjgl/util/vector/Vector3f;Lorg/lwjgl/util/vector/Matrix4f;Lorg/lwjgl/util/vector/Vector3f;)V
-		ma	0	0
-		ma	1	1
-		ma	2	2
-		ma	3	3
 	m	a()Lorg/lwjgl/util/vector/Matrix4f;	a()Lorg/lwjgl/util/vector/Matrix4f;
 	m	a([I)Lej;	a([I)Lej;
-		ma	0	0
 	m	a([ILej;Lcma;Lcue;)V	a([ILej;Lcma;Lcue;)V
 		ma	0	0
 		ma	1	1
@@ -38667,7 +38656,6 @@ c	Lcop;	Lcop;
 	m	b(I)Lcur;	b(I)Lcur;
 		ma	0	0
 	m	a(Ldt;)V	a(Ldt;)V
-		ma	0	0
 	m	a(FFFLcoa;)V	a(FFFLcoa;)V
 		ma	0	0
 		ma	1	1
@@ -42426,9 +42414,6 @@ c	Lcuy;	Lcuy;
 		ma	0	0
 		ma	1	1
 	m	a(Lcwk;Ljava/io/InputStream;Ljava/lang/String;)Lcwi;	a(Lcwk;Ljava/io/InputStream;Ljava/lang/String;)Lcwi;
-		ma	0	0
-		ma	1	1
-		ma	2	2
 	m	a()Ljava/awt/image/BufferedImage;	a()Ljava/awt/image/BufferedImage;
 	m	b()Ljava/lang/String;	b()Ljava/lang/String;
 	m	<clinit>()V	<clinit>()V
@@ -43755,11 +43740,7 @@ c	Lcza$1$1;	Lcza$1$1;
 	m	<init>(Lcza$1;)V	<init>(Lcza$1;)V
 		ma	0	0
 	m	message(Ljava/lang/String;I)V	message(Ljava/lang/String;I)V
-		ma	0	0
-		ma	1	1
 	m	importantMessage(Ljava/lang/String;I)V	importantMessage(Ljava/lang/String;I)V
-		ma	0	0
-		ma	1	1
 	m	errorMessage(Ljava/lang/String;Ljava/lang/String;I)V	errorMessage(Ljava/lang/String;Ljava/lang/String;I)V
 		ma	0	0
 		ma	1	1
@@ -43787,7 +43768,6 @@ c	Lcza$czf;	Lcza$czf;
 	m	<init>(Lcza;)V	<init>(Lcza;)V
 		ma	0	0
 	m	playing(Ljava/lang/String;)Z	playing(Ljava/lang/String;)Z
-		ma	0	0
 	m	<init>(Lcza;Lcza$1;)V	<init>(Lcza;Lcza$1;)V
 		ma	0	0
 		ma	1	1
@@ -44161,9 +44141,7 @@ c	Lczu;	Lczu;
 		ma	0	0
 	m	t()Ltv/twitch/broadcast/IngestList;	t()Ltv/twitch/broadcast/IngestList;
 	m	a(F)V	a(F)V
-		ma	0	0
 	m	b(F)V	b(F)V
-		ma	0	0
 	m	w()Ldai;	w()Ldai;
 	m	x()J	x()J
 	m	y()Z	y()Z
@@ -44178,17 +44156,9 @@ c	Lczu;	Lczu;
 		ma	1	1
 	m	F()Z	F()Z
 	m	a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z	a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
-		ma	0	0
-		ma	1	1
-		ma	2	2
 	m	G()Z	G()Z
 	m	a(IIFF)Ltv/twitch/broadcast/VideoParams;	a(IIFF)Ltv/twitch/broadcast/VideoParams;
-		ma	0	0
-		ma	1	1
-		ma	2	2
-		ma	3	3
 	m	a(Ltv/twitch/broadcast/VideoParams;)Z	a(Ltv/twitch/broadcast/VideoParams;)Z
-		ma	0	0
 	m	H()Z	H()Z
 	m	I()Z	I()Z
 	m	J()Z	J()Z
@@ -44494,9 +44464,7 @@ c	Ldai$1;	Ldai$1;
 		ma	0	0
 		ma	1	1
 	m	runCommercialCallback(Ltv/twitch/ErrorCode;)V	runCommercialCallback(Ltv/twitch/ErrorCode;)V
-		ma	0	0
 	m	setStreamInfoCallback(Ltv/twitch/ErrorCode;)V	setStreamInfoCallback(Ltv/twitch/ErrorCode;)V
-		ma	0	0
 	m	getGameNameListCallback(Ltv/twitch/ErrorCode;Ltv/twitch/broadcast/GameInfoList;)V	getGameNameListCallback(Ltv/twitch/ErrorCode;Ltv/twitch/broadcast/GameInfoList;)V
 		ma	0	0
 		ma	1	1
@@ -44507,11 +44475,8 @@ c	Ldai$1;	Ldai$1;
 	m	stopCallback(Ltv/twitch/ErrorCode;)V	stopCallback(Ltv/twitch/ErrorCode;)V
 		ma	0	0
 	m	sendActionMetaDataCallback(Ltv/twitch/ErrorCode;)V	sendActionMetaDataCallback(Ltv/twitch/ErrorCode;)V
-		ma	0	0
 	m	sendStartSpanMetaDataCallback(Ltv/twitch/ErrorCode;)V	sendStartSpanMetaDataCallback(Ltv/twitch/ErrorCode;)V
-		ma	0	0
 	m	sendEndSpanMetaDataCallback(Ltv/twitch/ErrorCode;)V	sendEndSpanMetaDataCallback(Ltv/twitch/ErrorCode;)V
-		ma	0	0
 	f	a;;Ldai;	a;;Ldai;
 c	Ldai$2;	Ldai$2;
 	m	<init>(Ldai;)V	<init>(Ldai;)V
@@ -44735,8 +44700,6 @@ c	Ldaq;	Ldaq;
 		ma	0	0
 		ma	1	1
 	m	a(Ljava/lang/String;Ltv/twitch/chat/ChatRawMessage;)V	a(Ljava/lang/String;Ltv/twitch/chat/ChatRawMessage;)V
-		ma	0	0
-		ma	1	1
 	m	a(Ljava/util/Set;Ljava/util/Set;I)Z	a(Ljava/util/Set;Ljava/util/Set;I)Z
 		ma	0	0
 		ma	1	1
@@ -52742,8 +52705,6 @@ c	Lrb;	Lrb;
 		ma	0	0
 		ma	1	1
 	m	a(Lio/netty/channel/ChannelHandlerContext;Lio/netty/buffer/ByteBuf;)V	a(Lio/netty/channel/ChannelHandlerContext;Lio/netty/buffer/ByteBuf;)V
-		ma	0	0
-		ma	1	1
 	m	a(Ljava/lang/String;)Lio/netty/buffer/ByteBuf;	a(Ljava/lang/String;)Lio/netty/buffer/ByteBuf;
 		ma	0	0
 	m	<clinit>()V	<clinit>()V
@@ -53002,7 +52963,6 @@ c	Lrs;	Lrs;
 	m	a(Lnk;)V	a(Lnk;)V
 		ma	0	0
 	m	a(Lcom/mojang/authlib/GameProfile;)Lcom/mojang/authlib/GameProfile;	a(Lcom/mojang/authlib/GameProfile;)Lcom/mojang/authlib/GameProfile;
-		ma	0	0
 	m	a(Lrs;)Lnet/minecraft/server/MinecraftServer;	a(Lrs;)Lnet/minecraft/server/MinecraftServer;
 		ma	0	0
 	m	b(Lrs;)Lcom/mojang/authlib/GameProfile;	b(Lrs;)Lcom/mojang/authlib/GameProfile;
@@ -53269,9 +53229,6 @@ c	Lsh;	Lsh;
 		ma	0	0
 		ma	1	1
 	m	a(Lnet/minecraft/server/MinecraftServer;Ljava/util/Collection;Lcom/mojang/authlib/ProfileLookupCallback;)V	a(Lnet/minecraft/server/MinecraftServer;Ljava/util/Collection;Lcom/mojang/authlib/ProfileLookupCallback;)V
-		ma	0	0
-		ma	1	1
-		ma	2	2
 	m	a(Lnet/minecraft/server/MinecraftServer;)Z	a(Lnet/minecraft/server/MinecraftServer;)Z
 		ma	0	0
 	m	b(Lnet/minecraft/server/MinecraftServer;)Z	b(Lnet/minecraft/server/MinecraftServer;)Z
@@ -54173,7 +54130,7 @@ c	Lue;	Lue;
 		ma	0	0
 	m	<clinit>()V	<clinit>()V
 	f	a;;Ljava/util/Set;	a;;Ljava/util/Set;
-	f	b;;Lcom/google/common/collect/Multimap;	b;;Ljava/util/Map;
+	fu	a	b;;Lcom/google/common/collect/Multimap;
 	f	c;;Ljava/util/Set;	c;;Ljava/util/Set;
 	f	d;;Ljava/lang/Class;	d;;Ljava/lang/Class;
 c	Lui;	Luh;
@@ -54507,7 +54464,6 @@ c	Luw$1;	Luw$1;
 		ma	0	0
 		ma	1	1
 	m	read(Lcom/google/gson/stream/JsonReader;)Ljava/lang/Object;	read(Lcom/google/gson/stream/JsonReader;)Ljava/lang/Object;
-		ma	0	0
 	f	a;;Ljava/util/Map;	a;;Ljava/util/Map;
 	f	b;;Luw;	b;;Luw;
 c	Luw;	Luw;

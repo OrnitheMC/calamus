@@ -46,7 +46,7 @@ def versionFile = new File(cacheFilesMinecraft, "${minecraft_version}.json")
 def clientJar = new File(cacheFilesMinecraft, "${minecraft_version}-client.jar")
 def serverJar = new File(cacheFilesMinecraft, "${minecraft_version}-server.jar")
 def mergedFile = new File(cacheFilesMinecraft, "${minecraft_version}-merged.jar")
-def nestedMergedFile = file("${minecraft_version}-merged-nested.jar")
+def nestedMergedFile = file("${minecraft_version}-mn.jar")
 
 static boolean validateChecksum(File file, String checksum) {
     if (file != null) {
