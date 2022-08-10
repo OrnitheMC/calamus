@@ -4,6 +4,7 @@ import cuchaz.enigma.command.ConvertMappingsCommand
 import groovy.json.JsonSlurper
 import groovy.xml.XmlSlurper
 import net.fabricmc.stitch.merge.JarMerger
+import net.fabricmc.stitch.util.CalamusUtil
 import net.ornithemc.nester.Nester
 import org.apache.commons.io.FileUtils
 
@@ -25,7 +26,7 @@ buildscript {
     dependencies {
         classpath "net.ornithemc:enigma-cli:1.2.2"
         classpath "net.ornithemc:nester:0.2.5"
-        classpath "net.ornithemc:stitch:0.7.0"
+        classpath "net.ornithemc:stitch:0.7.3"
         classpath "commons-io:commons-io:2.8.0"
         classpath "org.codehaus.groovy:groovy-json:3.0.9"
         classpath "org.codehaus.groovy:groovy-xml:3.0.9"
@@ -42,11 +43,14 @@ def ENV = System.getenv()
 def setupGroup = "jar setup"
 def cacheFilesMinecraft = file(".gradle/minecraft")
 def minecraft_version = ENV.MC_VERSION
+def manifestFile = new File(cacheFilesMinecraft, "version_manifest.json")
 def versionFile = new File(cacheFilesMinecraft, "${minecraft_version}.json")
+def versionDetailsFile = new File(cacheFilesMinecraft, "${minecraft_version}-details.json")
 def clientJar = new File(cacheFilesMinecraft, "${minecraft_version}-client.jar")
 def serverJar = new File(cacheFilesMinecraft, "${minecraft_version}-server.jar")
 def mergedFile = new File(cacheFilesMinecraft, "${minecraft_version}-merged.jar")
 def nestedMergedFile = file("${minecraft_version}-mn.jar")
+def calamusFile = file("mappings/${minecraft_version}.tiny")
 
 static boolean validateChecksum(File file, String checksum) {
     if (file != null) {
@@ -65,8 +69,9 @@ task downloadVersionsManifest {
     group = setupGroup
     //inputs.property "mc_ver", minecraft_version
     inputs.property "currenttime", new Date()
-    def manifestFile = new File(cacheFilesMinecraft, "version_manifest.json")
+
     outputs.file(manifestFile)
+
     doLast {
         logger.lifecycle(":downloading minecraft versions manifest")
         FileUtils.copyURLToFile(new URL("https://skyrising.github.io/mc-versions/version_manifest.json"), manifestFile)
@@ -82,9 +87,7 @@ static def getManifestVersion(File manifestFile, String minecraft_version) {
 
 task downloadWantedVersionManifest(dependsOn: downloadVersionsManifest) {
     group = setupGroup
-    def manifestFile = downloadVersionsManifest.outputs.files.singleFile
     def manifestVersion = getManifestVersion(manifestFile, minecraft_version)
-
     //have to grab the release time as there's a current timestamp on each element?!
     inputs.property "releaseTime", manifestVersion.isPresent() ? manifestVersion.get().releaseTime : -1
 
@@ -102,7 +105,26 @@ task downloadWantedVersionManifest(dependsOn: downloadVersionsManifest) {
             throw new RuntimeException("No version data for Minecraft version ${minecraft_version} (Did you forget to set the MC_VERSION environment variable?)")
         }
     }
+}
 
+task downloadWantedVersionDetails(dependsOn: downloadVersionsManifest) {
+    group = setupGroup
+    def manifestVersion = getManifestVersion(manifestFile, minecraft_version)
+    inputs.property "manifestUrl", manifestVersion.isPresent() ? manifestVersion.get().url : -1
+
+    outputs.file versionDetailsFile
+
+    doLast {
+        manifestVersion = getManifestVersion(manifestFile, minecraft_version)
+
+        if (manifestVersion.isPresent() || versionDetailsFile.exists()) {
+            if (manifestVersion.isPresent()) {
+                FileUtils.copyURLToFile(new URL(manifestVersion.get().details), versionDetailsFile)
+            }
+        } else {
+            throw new RuntimeException("No version details for Minecraft version ${minecraft_version} (Did you forget to set the MC_VERSION environment variable?)")
+        }
+    }
 }
 
 task downloadMcJars(dependsOn: downloadWantedVersionManifest) {
@@ -110,7 +132,6 @@ task downloadMcJars(dependsOn: downloadWantedVersionManifest) {
     inputs.files versionFile
 
     outputs.files(clientJar, serverJar)
-
     outputs.upToDateWhen {
         def version = new JsonSlurper().parseText(FileUtils.readFileToString(versionFile, Charset.defaultCharset()))
         return clientJar.exists() && serverJar.exists() && validateChecksum(clientJar, version.downloads.client.sha1) && validateChecksum(serverJar, version.downloads.server.sha1)
@@ -143,6 +164,7 @@ task downloadMcJars(dependsOn: downloadWantedVersionManifest) {
 task mergeJars(dependsOn: downloadMcJars) {
     group = setupGroup
     inputs.files downloadMcJars.outputs.files.files
+
     outputs.file(mergedFile)
 
     doLast {
@@ -165,6 +187,7 @@ task mergeJars(dependsOn: downloadMcJars) {
 task nestJar(dependsOn: mergeJars) {
     group = setupGroup
     inputs.file mergedFile
+
     outputs.file(nestedMergedFile)
 
     doLast {
@@ -181,6 +204,26 @@ task nestJar(dependsOn: mergeJars) {
         Nester.fixJar(Paths.get(merged.getAbsolutePath()), Paths.get(nested.getAbsolutePath()), Paths.get(nestMapping.getAbsolutePath()))
     }
 
+}
+
+// this task will probably not work for certain versions, but we'll cross that bridge when we get there
+task generateCalamus(dependsOn: [downloadWantedVersionDetails, nestJar]) {
+    group = setupGroup
+    inputs.file nestedMergedFile
+
+    outputs.file(calamusFile)
+    outputs.upToDateWhen {
+        return calamusFile.exists()
+    }
+
+    // TODO: this only works to generate Calamus mappings from scratch, still have to add update functionality
+    doLast {
+        if (calamusFile.exists()) {
+            return
+        }
+
+        CalamusUtil.generateCalamus(nestedMergedFile, calamusFile, null)
+    }
 }
 
 static List<String> getPublishedVersions() {
