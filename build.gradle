@@ -87,7 +87,7 @@ static def getManifestVersion(File manifestFile, String minecraft_version) {
     }).findFirst() : java.util.Optional.empty()
 }
 
-task downloadWantedVersionManifest(dependsOn: downloadVersionsManifest) {
+task downloadVersionManifest(dependsOn: downloadVersionsManifest) {
     group = jarSetupGroup
     def manifestVersion = getManifestVersion(manifestFile, minecraft_version)
     //have to grab the release time as there's a current timestamp on each element?!
@@ -109,7 +109,7 @@ task downloadWantedVersionManifest(dependsOn: downloadVersionsManifest) {
     }
 }
 
-task downloadWantedVersionDetails(dependsOn: downloadVersionsManifest) {
+task downloadVersionDetails(dependsOn: downloadVersionsManifest) {
     group = jarSetupGroup
     def manifestVersion = getManifestVersion(manifestFile, minecraft_version)
     inputs.property "manifestUrl", manifestVersion.isPresent() ? manifestVersion.get().url : -1
@@ -129,7 +129,7 @@ task downloadWantedVersionDetails(dependsOn: downloadVersionsManifest) {
     }
 }
 
-task downloadMcJars(dependsOn: downloadWantedVersionManifest) {
+task downloadMcJars(dependsOn: downloadVersionManifest) {
     group = jarSetupGroup
     inputs.files versionFile
 
@@ -201,15 +201,17 @@ task nestJar(dependsOn: mergeJars) {
             return
         }
 
-        def nestMapping = file("nests/${minecraft_version}.nest")
+        def nests = file("nests/${minecraft_version}.nest")
 
-        Nester.fixJar(Paths.get(merged.getAbsolutePath()), Paths.get(nested.getAbsolutePath()), Paths.get(nestMapping.getAbsolutePath()))
+        if (nests.exists()) {
+            Nester.fixJar(Paths.get(merged.getAbsolutePath()), Paths.get(nested.getAbsolutePath()), Paths.get(nests.getAbsolutePath()))
+        }
     }
 
 }
 
 // this task will probably not work for certain versions, but we'll cross that bridge when we get there
-task generateCalamus(dependsOn: [downloadWantedVersionDetails, nestJar]) {
+task generateCalamus(dependsOn: [downloadVersionDetails, nestJar]) {
     group = mappingGenerationGroup
     inputs.file nestedMergedFile
 
@@ -224,7 +226,7 @@ task generateCalamus(dependsOn: [downloadWantedVersionDetails, nestJar]) {
             return
         }
 
-        CalamusUtil.generateCalamus(nestedMergedFile, calamusFile, null)
+        CalamusUtil.generateCalamus(nestedMergedFile.exists() ? nestedMergedFile : mergedFile, calamusFile, null)
     }
 }
 
@@ -255,6 +257,7 @@ file('mappings').eachFile {
 
     File v1MappingFile = it
     File v2MappingFile = new File("$localMappingsPath/${it.name}")
+    File nestsFile = new File("nests/${mcVer}.nest")
 
     def conversionTask = "convert${it.name}ToV2"
     tasks.register(conversionTask) {
@@ -272,9 +275,8 @@ file('mappings').eachFile {
         }
     }
 
-    Jar makeV1Jar = makeJar(mcVer, v1MappingFile, false)
-    Jar makeV2Jar = makeJar(mcVer, v2MappingFile, true)
-
+    Jar makeV1Jar = makeJar(mcVer, v1MappingFile, nestsFile, false)
+    Jar makeV2Jar = makeJar(mcVer, v2MappingFile, nestsFile, true)
 
     build.dependsOn makeV1Jar
     build.dependsOn makeV2Jar
@@ -300,13 +302,19 @@ file('mappings').eachFile {
 
 }
 
-def makeJar(String mcVersion, File mappings, boolean v2) {
+def makeJar(String mcVersion, File mappings, File nests, boolean v2) {
     def jarFilename = "calamus-" + mcVersion + (v2 ? "-v2" : "")
     return task("${mcVersion}_makeJar" + (v2 ? "v2" : ""), type: Jar) {
         baseName jarFilename
         from(file(mappings)) {
             into "mappings"
             rename mappings.name, "mappings.tiny"
+        }
+        if (nests.exists()) {
+            from(file(nests)) {
+                into "mappings"
+                rename nests.name, "mappings.nest"
+            }
         }
         destinationDirectory = file("build/jars")
     }
