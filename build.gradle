@@ -384,7 +384,7 @@ task updateCalamus(dependsOn: [downloadOldVersionDetails, nestOldJar, downloadVe
         }
 
         // TODO: check if matches are the other way around and invert them if necessary
-        File matchesFile = new File("matches/${old_minecraft_version}-${minecraft_version}.match")
+        File matchesFile = new File("nested-matches/${old_minecraft_version}-${minecraft_version}.match")
 
         if (!matchesFile.exists()) {
             throw new RuntimeException("Matches file from ${old_minecraft_version} to ${minecraft_version} does not exist!")
