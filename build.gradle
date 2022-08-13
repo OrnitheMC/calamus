@@ -35,12 +35,14 @@ buildscript {
 
 plugins {
     id 'de.undercouch.download' version '4.1.1'
+    id 'java'
     id 'maven-publish'
 }
 
 def ENV = System.getenv()
 
-def setupGroup = "jar setup"
+def jarSetupGroup = "jar setup"
+def mappingGenerationGroup = "mapping generation"
 def cacheFilesMinecraft = file(".gradle/minecraft")
 def minecraft_version = ENV.MC_VERSION
 def manifestFile = new File(cacheFilesMinecraft, "version_manifest.json")
@@ -66,7 +68,7 @@ static boolean validateChecksum(File file, String checksum) {
 }
 
 task downloadVersionsManifest {
-    group = setupGroup
+    group = jarSetupGroup
     //inputs.property "mc_ver", minecraft_version
     inputs.property "currenttime", new Date()
 
@@ -86,7 +88,7 @@ static def getManifestVersion(File manifestFile, String minecraft_version) {
 }
 
 task downloadWantedVersionManifest(dependsOn: downloadVersionsManifest) {
-    group = setupGroup
+    group = jarSetupGroup
     def manifestVersion = getManifestVersion(manifestFile, minecraft_version)
     //have to grab the release time as there's a current timestamp on each element?!
     inputs.property "releaseTime", manifestVersion.isPresent() ? manifestVersion.get().releaseTime : -1
@@ -108,7 +110,7 @@ task downloadWantedVersionManifest(dependsOn: downloadVersionsManifest) {
 }
 
 task downloadWantedVersionDetails(dependsOn: downloadVersionsManifest) {
-    group = setupGroup
+    group = jarSetupGroup
     def manifestVersion = getManifestVersion(manifestFile, minecraft_version)
     inputs.property "manifestUrl", manifestVersion.isPresent() ? manifestVersion.get().url : -1
 
@@ -128,7 +130,7 @@ task downloadWantedVersionDetails(dependsOn: downloadVersionsManifest) {
 }
 
 task downloadMcJars(dependsOn: downloadWantedVersionManifest) {
-    group = setupGroup
+    group = jarSetupGroup
     inputs.files versionFile
 
     outputs.files(clientJar, serverJar)
@@ -162,7 +164,7 @@ task downloadMcJars(dependsOn: downloadWantedVersionManifest) {
 }
 
 task mergeJars(dependsOn: downloadMcJars) {
-    group = setupGroup
+    group = jarSetupGroup
     inputs.files downloadMcJars.outputs.files.files
 
     outputs.file(mergedFile)
@@ -185,7 +187,7 @@ task mergeJars(dependsOn: downloadMcJars) {
 }
 
 task nestJar(dependsOn: mergeJars) {
-    group = setupGroup
+    group = jarSetupGroup
     inputs.file mergedFile
 
     outputs.file(nestedMergedFile)
@@ -208,7 +210,7 @@ task nestJar(dependsOn: mergeJars) {
 
 // this task will probably not work for certain versions, but we'll cross that bridge when we get there
 task generateCalamus(dependsOn: [downloadWantedVersionDetails, nestJar]) {
-    group = setupGroup
+    group = mappingGenerationGroup
     inputs.file nestedMergedFile
 
     outputs.file(calamusFile)
@@ -246,7 +248,7 @@ file('mappings').eachFile {
 
     def mcVer = it.name.replace(".tiny", "")
 
-    if (publishedVersions.contains(mcVer)) {
+    if (publishedVersions != null && publishedVersions.contains(mcVer)) {
         project.logger.lifecycle("Skipping ${mcVer} as it has already been released")
         return
     }
