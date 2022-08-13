@@ -374,20 +374,20 @@ task updateCalamus(dependsOn: [downloadOldVersionDetails, nestOldJar, downloadVe
         return calamusFile.exists()
     }
 
-    if (!oldCalamusFile.exists()) {
-        throw new RuntimeException("Cannot update calamus from ${old_minecraft_version} to ${minecraft_version}: calamus for ${old_minecraft_version} does not exist!")
-    }
-
-    // TODO: check if matches are the other way around and invert them if necessary
-    File matchesFile = new File("matches/${old_minecraft_version}-${minecraft_version}.match")
-
-    if (!matchesFile.exists()) {
-        throw new RuntimeException("Matches file from ${old_minecraft_version} to ${minecraft_version} does not exist!")
-    }
-
     doLast {
         if (calamusFile.exists()) {
             return
+        }
+
+        if (!oldCalamusFile.exists()) {
+            throw new RuntimeException("Cannot update calamus from ${old_minecraft_version} to ${minecraft_version}: calamus for ${old_minecraft_version} does not exist!")
+        }
+
+        // TODO: check if matches are the other way around and invert them if necessary
+        File matchesFile = new File("matches/${old_minecraft_version}-${minecraft_version}.match")
+
+        if (!matchesFile.exists()) {
+            throw new RuntimeException("Matches file from ${old_minecraft_version} to ${minecraft_version} does not exist!")
         }
 
         File oldJar = oldNestedMergedFile.exists() ? oldNestedMergedFile : oldMergedFile
