@@ -44,8 +44,12 @@ def ENV = System.getenv()
 def jarSetupGroup = "jar setup"
 def mappingGenerationGroup = "mapping generation"
 def cacheFilesMinecraft = file(".gradle/minecraft")
-def minecraft_version = ENV.MC_VERSION
 def manifestFile = new File(cacheFilesMinecraft, "version_manifest.json")
+
+def minecraft_version = ENV.MC_VERSION
+def old_minecraft_version = ENV.OLD_MC_VERSION
+
+// files for the version for which to generate calamus
 def versionFile = new File(cacheFilesMinecraft, "${minecraft_version}.json")
 def versionDetailsFile = new File(cacheFilesMinecraft, "${minecraft_version}-details.json")
 def clientJar = new File(cacheFilesMinecraft, "${minecraft_version}-client.jar")
@@ -53,6 +57,15 @@ def serverJar = new File(cacheFilesMinecraft, "${minecraft_version}-server.jar")
 def mergedFile = new File(cacheFilesMinecraft, "${minecraft_version}-merged.jar")
 def nestedMergedFile = file("${minecraft_version}-mn.jar")
 def calamusFile = file("mappings/${minecraft_version}.tiny")
+
+// files for the version from which to update calamus
+def oldVersionFile = new File(cacheFilesMinecraft, "${old_minecraft_version}.json")
+def oldVersionDetailsFile = new File(cacheFilesMinecraft, "${old_minecraft_version}-details.json")
+def oldClientJar = new File(cacheFilesMinecraft, "${old_minecraft_version}-client.jar")
+def oldServerJar = new File(cacheFilesMinecraft, "${old_minecraft_version}-server.jar")
+def oldMergedFile = new File(cacheFilesMinecraft, "${old_minecraft_version}-merged.jar")
+def oldNestedMergedFile = file("${old_minecraft_version}-mn.jar")
+def oldCalamusFile = file("mappings/${old_minecraft_version}.tiny")
 
 static boolean validateChecksum(File file, String checksum) {
     if (file != null) {
@@ -109,6 +122,28 @@ task downloadVersionManifest(dependsOn: downloadVersionsManifest) {
     }
 }
 
+task downloadOldVersionManifest(dependsOn: downloadVersionsManifest) {
+    group = jarSetupGroup
+    def manifestVersion = getManifestVersion(manifestFile, old_minecraft_version)
+    //have to grab the release time as there's a current timestamp on each element?!
+    inputs.property "releaseTime", manifestVersion.isPresent() ? manifestVersion.get().releaseTime : -1
+
+    outputs.file oldVersionFile
+
+    doLast {
+        manifestVersion = getManifestVersion(manifestFile, old_minecraft_version)
+        //nb need to re-read here in case it didn't exist before
+        if (manifestVersion.isPresent() || oldVersionFile.exists()) {
+
+            if (manifestVersion.isPresent()) {
+                FileUtils.copyURLToFile(new URL(manifestVersion.get().url), oldVersionFile)
+            }
+        } else {
+            throw new RuntimeException("No version data for Minecraft version ${old_minecraft_version} (Did you forget to set the OLD_MC_VERSION environment variable?)")
+        }
+    }
+}
+
 task downloadVersionDetails(dependsOn: downloadVersionsManifest) {
     group = jarSetupGroup
     def manifestVersion = getManifestVersion(manifestFile, minecraft_version)
@@ -125,6 +160,26 @@ task downloadVersionDetails(dependsOn: downloadVersionsManifest) {
             }
         } else {
             throw new RuntimeException("No version details for Minecraft version ${minecraft_version} (Did you forget to set the MC_VERSION environment variable?)")
+        }
+    }
+}
+
+task downloadOldVersionDetails(dependsOn: downloadVersionsManifest) {
+    group = jarSetupGroup
+    def manifestVersion = getManifestVersion(manifestFile, old_minecraft_version)
+    inputs.property "manifestUrl", manifestVersion.isPresent() ? manifestVersion.get().url : -1
+
+    outputs.file oldVersionDetailsFile
+
+    doLast {
+        manifestVersion = getManifestVersion(manifestFile, old_minecraft_version)
+
+        if (manifestVersion.isPresent() || oldVersionDetailsFile.exists()) {
+            if (manifestVersion.isPresent()) {
+                FileUtils.copyURLToFile(new URL(manifestVersion.get().details), oldVersionDetailsFile)
+            }
+        } else {
+            throw new RuntimeException("No version details for Minecraft version ${old_minecraft_version} (Did you forget to set the OLD_MC_VERSION environment variable?)")
         }
     }
 }
@@ -163,6 +218,40 @@ task downloadMcJars(dependsOn: downloadVersionManifest) {
     }
 }
 
+task downloadOldMcJars(dependsOn: downloadOldVersionManifest) {
+    group = jarSetupGroup
+    inputs.files oldVersionFile
+
+    outputs.files(oldClientJar, oldServerJar)
+    outputs.upToDateWhen {
+        def version = new JsonSlurper().parseText(FileUtils.readFileToString(oldVersionFile, Charset.defaultCharset()))
+        return oldClientJar.exists() && oldServerJar.exists() && validateChecksum(oldClientJar, version.downloads.client.sha1) && validateChecksum(oldServerJar, version.downloads.server.sha1)
+    }
+
+    doLast {
+        if (!oldVersionFile.exists()) {
+            throw new RuntimeException("Can't download the jars without the ${oldVersionFile.name} file!")
+        }
+
+        //reload in case it changed
+        def version = new JsonSlurper().parseText(FileUtils.readFileToString(oldVersionFile, Charset.defaultCharset()))
+
+        logger.lifecycle(":downloading minecraft jars for ${old_minecraft_version}")
+
+        download {
+            src new URL(version.downloads.client.url)
+            dest oldClientJar
+            overwrite false
+        }
+
+        download {
+            src new URL(version.downloads.server.url)
+            dest oldServerJar
+            overwrite false
+        }
+    }
+}
+
 task mergeJars(dependsOn: downloadMcJars) {
     group = jarSetupGroup
     inputs.files downloadMcJars.outputs.files.files
@@ -174,6 +263,29 @@ task mergeJars(dependsOn: downloadMcJars) {
         def client = inputs.files.files.find { it.name.endsWith("-client.jar") }
         def server = inputs.files.files.find { it.name.endsWith("-server.jar") }
         def merged = mergedFile
+
+        if (merged.exists()) {
+            return
+        }
+
+        def jarMerger = new JarMerger(client, server, merged)
+        jarMerger.merge()
+        jarMerger.close()
+    }
+
+}
+
+task mergeOldJars(dependsOn: downloadOldMcJars) {
+    group = jarSetupGroup
+    inputs.files downloadOldMcJars.outputs.files.files
+
+    outputs.file(oldMergedFile)
+
+    doLast {
+        logger.lifecycle(":merging jars")
+        def client = inputs.files.files.find { it.name.endsWith("-client.jar") }
+        def server = inputs.files.files.find { it.name.endsWith("-server.jar") }
+        def merged = oldMergedFile
 
         if (merged.exists()) {
             return
@@ -210,6 +322,30 @@ task nestJar(dependsOn: mergeJars) {
 
 }
 
+task nestOldJar(dependsOn: mergeOldJars) {
+    group = jarSetupGroup
+    inputs.file oldMergedFile
+
+    outputs.file(oldNestedMergedFile)
+
+    doLast {
+        logger.lifecycle(":nesting jar")
+        def merged = oldMergedFile
+        def nested = oldNestedMergedFile
+
+        if (nested.exists()) {
+            return
+        }
+
+        def nests = file("nests/${old_minecraft_version}.nest")
+
+        if (nests.exists()) {
+            Nester.fixJar(Paths.get(merged.getAbsolutePath()), Paths.get(nested.getAbsolutePath()), Paths.get(nests.getAbsolutePath()))
+        }
+    }
+
+}
+
 // this task will probably not work for certain versions, but we'll cross that bridge when we get there
 task generateCalamus(dependsOn: [downloadVersionDetails, nestJar]) {
     group = mappingGenerationGroup
@@ -220,13 +356,44 @@ task generateCalamus(dependsOn: [downloadVersionDetails, nestJar]) {
         return calamusFile.exists()
     }
 
-    // TODO: this only works to generate Calamus mappings from scratch, still have to add update functionality
     doLast {
         if (calamusFile.exists()) {
             return
         }
 
         CalamusUtil.generateCalamus(nestedMergedFile.exists() ? nestedMergedFile : mergedFile, calamusFile, null)
+    }
+}
+
+task updateCalamus(dependsOn: [downloadOldVersionDetails, nestOldJar, downloadVersionDetails, nestJar]) {
+    group = mappingGenerationGroup
+    inputs.files(oldNestedMergedFile, nestedMergedFile)
+
+    outputs.file(calamusFile)
+    outputs.upToDateWhen {
+        return calamusFile.exists()
+    }
+
+    if (!oldCalamusFile.exists()) {
+        throw new RuntimeException("Cannot update calamus from ${old_minecraft_version} to ${minecraft_version}: calamus for ${old_minecraft_version} does not exist!")
+    }
+
+    // TODO: check if matches are the other way around and invert them if necessary
+    File matchesFile = new File("matches/${old_minecraft_version}-${minecraft_version}.match")
+
+    if (!matchesFile.exists()) {
+        throw new RuntimeException("Matches file from ${old_minecraft_version} to ${minecraft_version} does not exist!")
+    }
+
+    doLast {
+        if (calamusFile.exists()) {
+            return
+        }
+
+        File oldJar = oldNestedMergedFile.exists() ? oldNestedMergedFile : oldMergedFile
+        File newJar = nestedMergedFile.exists() ? nestedMergedFile : mergedFile
+
+        CalamusUtil.updateCalamus(oldJar, newJar, oldCalamusFile, calamusFile, matchesFile)
     }
 }
 
