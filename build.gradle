@@ -424,7 +424,7 @@ file('mappings').eachFile {
 
     File v1MappingFile = it
     File v2MappingFile = new File("$localMappingsPath/${it.name}")
-    File nestsFile = new File("nests/${mcVer}.nest")
+    File nestsFile = file("nests/${mcVer}.nest")
 
     def conversionTask = "convert${it.name}ToV2"
     tasks.register(conversionTask) {
