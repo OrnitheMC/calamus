@@ -365,6 +365,30 @@ task generateCalamus(dependsOn: [downloadVersionDetails, nestJar]) {
     }
 }
 
+static File findMatches(String from, String to) {
+    // first check if we have our own nested matches
+    File matches = new File("nested-matches/${from}-${to}.match");
+
+    if (matches.exists()) {
+        return matches;
+    }
+
+    // TODO: check if nested matches exist the other way around and invert them
+
+    // check skyrising's matches
+    // matches are organized in folders for each major release
+    for (File dir : new File("matches/matches/merged/").listFiles()) {
+        matches = new File(dir, "${from}#${to}.match");
+
+        if (matches.exists()) {
+            return matches;
+        }
+    }
+
+    // no matches found...
+    throw new RuntimeException("matches from ${from} to ${to} do not exist!");
+}
+
 task updateCalamus(dependsOn: [downloadOldVersionDetails, nestOldJar, downloadVersionDetails, nestJar]) {
     group = mappingGenerationGroup
     inputs.files(oldNestedMergedFile, nestedMergedFile)
@@ -383,13 +407,7 @@ task updateCalamus(dependsOn: [downloadOldVersionDetails, nestOldJar, downloadVe
             throw new RuntimeException("Cannot update calamus from ${old_minecraft_version} to ${minecraft_version}: calamus for ${old_minecraft_version} does not exist!")
         }
 
-        // TODO: check if matches are the other way around and invert them if necessary
-        File matchesFile = new File("nested-matches/${old_minecraft_version}-${minecraft_version}.match")
-
-        if (!matchesFile.exists()) {
-            throw new RuntimeException("Matches file from ${old_minecraft_version} to ${minecraft_version} does not exist!")
-        }
-
+        File matchesFile = findMatches(old_minecraft_version, minecraft_version)
         File oldJar = oldNestedMergedFile.exists() ? oldNestedMergedFile : oldMergedFile
         File newJar = nestedMergedFile.exists() ? nestedMergedFile : mergedFile
 
