@@ -24,9 +24,9 @@ buildscript {
     }
 
     dependencies {
-        classpath "net.ornithemc:enigma-cli:1.2.2"
-        classpath "net.ornithemc:nester:0.2.5"
-        classpath "net.ornithemc:stitch:0.7.8"
+        classpath "net.ornithemc:enigma-cli:1.2.6"
+        classpath "net.ornithemc:nester:0.3.3"
+        classpath "net.ornithemc:stitch:0.7.9"
         classpath "commons-io:commons-io:2.8.0"
         classpath "org.codehaus.groovy:groovy-json:3.0.9"
         classpath "org.codehaus.groovy:groovy-xml:3.0.9"
@@ -55,7 +55,7 @@ def versionDetailsFile = new File(cacheFilesMinecraft, "${minecraft_version}-det
 def clientJar = new File(cacheFilesMinecraft, "${minecraft_version}-client.jar")
 def serverJar = new File(cacheFilesMinecraft, "${minecraft_version}-server.jar")
 def mergedFile = new File(cacheFilesMinecraft, "${minecraft_version}-merged.jar")
-def nestedMergedFile = file("${minecraft_version}-mn.jar")
+def nestedMergedFile = new File(cacheFilesMinecraft, "${minecraft_version}-merged-nested.jar")
 def calamusFile = file("mappings/${minecraft_version}.tiny")
 
 // files for the version from which to update calamus
@@ -64,7 +64,7 @@ def oldVersionDetailsFile = new File(cacheFilesMinecraft, "${old_minecraft_versi
 def oldClientJar = new File(cacheFilesMinecraft, "${old_minecraft_version}-client.jar")
 def oldServerJar = new File(cacheFilesMinecraft, "${old_minecraft_version}-server.jar")
 def oldMergedFile = new File(cacheFilesMinecraft, "${old_minecraft_version}-merged.jar")
-def oldNestedMergedFile = file("${old_minecraft_version}-mn.jar")
+def oldNestedMergedFile = new File(cacheFilesMinecraft, "${old_minecraft_version}-merged-nested.jar")
 def oldCalamusFile = file("mappings/${old_minecraft_version}.tiny")
 
 static boolean validateChecksum(File file, String checksum) {
