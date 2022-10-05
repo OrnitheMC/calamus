@@ -190,8 +190,8 @@ bcs	bcr	a	(ZI)V	1	0
 bct	bcr			bct	0
 bcu	bct	a	(IIILbpw;)V	1	0
 bcx	bcw	B_	()V	1	0
-bcy	bcw	i	()V	2	0
-bcz	bcw	h	()V	3	0
+bcy	bcw	h	()V	2	0
+bcz	bcw	i	()V	3	0
 bda	bcw			bda	0
 bdc	bdb			1	4104
 bdd	bdb			bdd	0
@@ -319,8 +319,8 @@ lr	lp	<clinit>	()V	2	8
 ls	lp	<clinit>	()V	3	8
 lt	lp	<clinit>	()V	4	8
 m	k	a	(Lk;IIILatt;I)V	2	8
-mb	mc			1	4104
-mc	ma			mc	8
+mb	ma			1	4104
+mc	ma			mc	0
 mg	mf	a	(Ljava/io/File;Ljava/lang/String;Lmh;Ljava/util/Map;ILmw;Ljava/net/Proxy;)V	1	8
 mk	mj			mk	8
 mo	mn			mo	8
@@ -332,7 +332,8 @@ nv	nu	a	()V	1	0
 o	k			o	8
 on	om	a	(Lk;)V	1	0
 oo	om	a	(Lk;)V	2	0
-op	oq			1	4104
+op	om			3	4104
+oq	om			oq	16409
 ot	os			ot	9
 ow	ov	<clinit>	()V	1	8
 ox	ov	<clinit>	()V	2	8

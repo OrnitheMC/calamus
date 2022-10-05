@@ -235,7 +235,7 @@ bob	bnz	b	(Lbbu;Lbqg;Ladd;II)V	2	0
 boc	bnz	b	(Lbbu;Lbqg;Ladd;II)V	3	0
 bod	bnz	b	(Lbbu;Lbqg;Ladd;II)V	4	0
 bpn	bpm			bpn	16409
-bpt	bps	a	(Lbqz;)V	1	0
+bpt	bps	a	()V	1	0
 bpx	bpw			bpx	9
 bpy	bpw			bpy	9
 bqb	bqa	b	(Lbqz;)V	1	0
@@ -415,7 +415,8 @@ qw	qv			qw	9
 rj	ri	a	()V	1	0
 sb	sa	a	(Lk;)V	1	0
 sc	sa	a	(Lk;)V	2	0
-sd	se			1	4104
+sd	sa			3	4104
+se	sa			se	16409
 sh	sg			sh	9
 sk	sj	<clinit>	()V	1	8
 sl	sj	<clinit>	()V	2	8
