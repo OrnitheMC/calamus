@@ -1,6 +1,6 @@
-Matches saved 2022-10-06, status: c:1342/1430 m:10679/11556 f:5518/5755 ma:17059/18438, input files:
+Matches saved 2022-10-09, status: c:1342/1430 m:10679/11556 f:5521/5755 ma:17059/18438, input files:
 	a:
-		4746768	SHA256	WC606WZiccjMY6yJUvtbBhhQgvOZjLqtXhOuKLcyG+M=	1.3-merged-nested.jar
+		4746465	SHA256	P3yBoBTLx5NPnQ/AZ0dg4M68FM9r8Eb7ISxbvPQS7Jo=	1.3-merged-nested.jar
 	b:
 		4626514	SHA256	k6LSNosHsHmV8X7AjX110tmOK34bv5UpGrE1XNfHEjM=	1.3.1-merged-nested.jar
 	cp:
@@ -8483,7 +8483,7 @@ c	Lami;	Laoi;
 		ma	1	1
 		ma	2	2
 	m	<clinit>()V	<clinit>()V
-	f	a;;[Lnet/minecraft/client/ab$net/minecraft/client/ad;	a;;[Lany$aoa;
+	f	a;;[Lnet/minecraft/client/ab$ad;	a;;[Lany$aoa;
 	f	b;;Lanm;	b;;Lapm;
 	f	c;;Lnet/minecraft/client/ab;	c;;Lany;
 	f	d;;Ljava/lang/String;	d;;Ljava/lang/String;
@@ -9322,7 +9322,7 @@ c	Lanh;	Laph;
 		ma	1	1
 		ma	2	2
 	m	<clinit>()V	<clinit>()V
-	f	b;;[Lnet/minecraft/client/ab$net/minecraft/client/ad;	b;;[Lany$aoa;
+	f	b;;[Lnet/minecraft/client/ab$ad;	b;;[Lany$aoa;
 	f	c;;Lanm;	c;;Lapm;
 	f	d;;Lnet/minecraft/client/ab;	d;;Lany;
 	f	a;;Ljava/lang/String;	a;;Ljava/lang/String;
@@ -9638,7 +9638,7 @@ c	Lanr;	Lapr;
 	f	d;;Ljava/lang/String;	d;;Ljava/lang/String;
 	f	m;;Z	m;;Z
 c	Lans;	Laps;
-	m	<init>(IIILnet/minecraft/client/ab$net/minecraft/client/ad;Ljava/lang/String;F)V	<init>(IIILany$aoa;Ljava/lang/String;F)V
+	m	<init>(IIILnet/minecraft/client/ab$ad;Ljava/lang/String;F)V	<init>(IIILany$aoa;Ljava/lang/String;F)V
 		ma	0	0
 		ma	1	1
 		ma	2	2
@@ -9660,7 +9660,7 @@ c	Lans;	Laps;
 		ma	1	1
 	f	j;;F	j;;F
 	f	k;;Z	k;;Z
-	f	l;;Lnet/minecraft/client/ab$net/minecraft/client/ad;	l;;Lany$aoa;
+	f	l;;Lnet/minecraft/client/ab$ad;	l;;Lany$aoa;
 c	Lant;	Lapt;
 	m	<init>(IIILjava/lang/String;)V	<init>(IIILjava/lang/String;)V
 		ma	0	0
@@ -9674,14 +9674,14 @@ c	Lant;	Lapt;
 		ma	3	3
 		ma	4	4
 		ma	5	5
-	m	<init>(IIILnet/minecraft/client/ab$net/minecraft/client/ad;Ljava/lang/String;)V	<init>(IIILany$aoa;Ljava/lang/String;)V
+	m	<init>(IIILnet/minecraft/client/ab$ad;Ljava/lang/String;)V	<init>(IIILany$aoa;Ljava/lang/String;)V
 		ma	0	0
 		ma	1	1
 		ma	2	2
 		ma	3	3
 		ma	4	4
-	m	a()Lnet/minecraft/client/ab$net/minecraft/client/ad;	a()Lany$aoa;
-	f	j;;Lnet/minecraft/client/ab$net/minecraft/client/ad;	j;;Lany$aoa;
+	m	a()Lnet/minecraft/client/ab$ad;	a()Lany$aoa;
+	f	j;;Lnet/minecraft/client/ab$ad;	j;;Lany$aoa;
 c	Lanu$anv;	Lapu$apv;
 	m	<init>(Lanu;)V	<init>(Lapu;)V
 		ma	0	0
@@ -9739,7 +9739,7 @@ c	Lanw;	Lapw;
 	f	a;;Ljava/lang/String;	a;;Ljava/lang/String;
 	f	c;;Lnet/minecraft/client/ab;	c;;Lany;
 	f	d;;Z	d;;Z
-	f	m;;[Lnet/minecraft/client/ab$net/minecraft/client/ad;	m;;[Lany$aoa;
+	f	m;;[Lnet/minecraft/client/ab$ad;	m;;[Lany$aoa;
 c	Lanx;	Lapx;
 	m	<init>(Lnet/minecraft/client/Minecraft;)V	<init>(Lnet/minecraft/client/Minecraft;)V
 		ma	0	0
@@ -24192,7 +24192,7 @@ c	Lnet/minecraft/client/Minecraft$1;	Lnet/minecraft/client/Minecraft$1;
 		ma	1	1
 	m	run()V	run()V
 	f	a;;Lnet/minecraft/client/Minecraft;	a;;Lnet/minecraft/client/Minecraft;
-c	Lnet/minecraft/client/Minecraft$1net/minecraft/client/n;	Lnet/minecraft/client/Minecraft$1ank;
+c	Lnet/minecraft/client/Minecraft$1n;	Lnet/minecraft/client/Minecraft$1ank;
 	m	<init>(Ljava/util/Map;)V	<init>(Ljava/util/Map;)V
 		ma	0	0
 	m	appletResize(II)V	appletResize(II)V
@@ -24364,6 +24364,7 @@ c	Lnet/minecraft/client/Minecraft;	Lnet/minecraft/client/Minecraft;
 	f	d;;I	d;;I
 	f	T;;Lnet/minecraft/client/ah;	T;;Laoe;
 	f	U;;Lik;	U;;Lja;
+	f	e;;Larc;	e;;Latc;
 	f	f;;Lata;	f;;Lava;
 	f	g;;Larf;	g;;Latf;
 	f	h;;Ljf;	h;;Ljv;
@@ -24443,6 +24444,8 @@ c	Lnet/minecraft/client/MinecraftApplet;	Lnet/minecraft/client/MinecraftApplet;
 	m	stop()V	stop()V
 	m	destroy()V	destroy()V
 	m	b()V	b()V
+	f	a;;Ljava/awt/Canvas;	a;;Ljava/awt/Canvas;
+	f	b;;Lnet/minecraft/client/Minecraft;	b;;Lnet/minecraft/client/Minecraft;
 	f	c;;Ljava/lang/Thread;	c;;Ljava/lang/Thread;
 c	Lnet/minecraft/client/a;	Lamw;
 	m	<init>(Ljava/io/File;Lnet/minecraft/client/Minecraft;)V	<init>(Ljava/io/File;Lnet/minecraft/client/Minecraft;)V
@@ -24471,11 +24474,11 @@ c	Lnet/minecraft/client/aa;	Lanx;
 c	Lnet/minecraft/client/ab$1;	Lany$1;
 	m	<clinit>()V	<clinit>()V
 	f	a;;[I	a;;[I
-c	Lnet/minecraft/client/ab$net/minecraft/client/ad;	Lany$aoa;
-	m	values()[Lnet/minecraft/client/ab$net/minecraft/client/ad;	values()[Lany$aoa;
-	m	valueOf(Ljava/lang/String;)Lnet/minecraft/client/ab$net/minecraft/client/ad;	valueOf(Ljava/lang/String;)Lany$aoa;
+c	Lnet/minecraft/client/ab$ad;	Lany$aoa;
+	m	values()[Lnet/minecraft/client/ab$ad;	values()[Lany$aoa;
+	m	valueOf(Ljava/lang/String;)Lnet/minecraft/client/ab$ad;	valueOf(Ljava/lang/String;)Lany$aoa;
 		ma	0	0
-	m	a(I)Lnet/minecraft/client/ab$net/minecraft/client/ad;	a(I)Lany$aoa;
+	m	a(I)Lnet/minecraft/client/ab$ad;	a(I)Lany$aoa;
 		ma	0	0
 	m	<init>(Ljava/lang/String;ILjava/lang/String;ZZ)V	<init>(Ljava/lang/String;ILjava/lang/String;ZZ)V
 		ma	0	0
@@ -24488,36 +24491,36 @@ c	Lnet/minecraft/client/ab$net/minecraft/client/ad;	Lany$aoa;
 	m	c()I	c()I
 	m	d()Ljava/lang/String;	d()Ljava/lang/String;
 	m	<clinit>()V	<clinit>()V
-	f	a;;Lnet/minecraft/client/ab$net/minecraft/client/ad;	a;;Lany$aoa;
-	f	b;;Lnet/minecraft/client/ab$net/minecraft/client/ad;	b;;Lany$aoa;
-	f	c;;Lnet/minecraft/client/ab$net/minecraft/client/ad;	c;;Lany$aoa;
-	f	d;;Lnet/minecraft/client/ab$net/minecraft/client/ad;	d;;Lany$aoa;
-	f	e;;Lnet/minecraft/client/ab$net/minecraft/client/ad;	e;;Lany$aoa;
-	f	f;;Lnet/minecraft/client/ab$net/minecraft/client/ad;	f;;Lany$aoa;
-	f	g;;Lnet/minecraft/client/ab$net/minecraft/client/ad;	g;;Lany$aoa;
-	f	h;;Lnet/minecraft/client/ab$net/minecraft/client/ad;	h;;Lany$aoa;
-	f	i;;Lnet/minecraft/client/ab$net/minecraft/client/ad;	i;;Lany$aoa;
-	f	j;;Lnet/minecraft/client/ab$net/minecraft/client/ad;	j;;Lany$aoa;
-	f	k;;Lnet/minecraft/client/ab$net/minecraft/client/ad;	k;;Lany$aoa;
-	f	l;;Lnet/minecraft/client/ab$net/minecraft/client/ad;	l;;Lany$aoa;
-	f	m;;Lnet/minecraft/client/ab$net/minecraft/client/ad;	m;;Lany$aoa;
-	f	n;;Lnet/minecraft/client/ab$net/minecraft/client/ad;	n;;Lany$aoa;
-	f	o;;Lnet/minecraft/client/ab$net/minecraft/client/ad;	o;;Lany$aoa;
-	f	p;;Lnet/minecraft/client/ab$net/minecraft/client/ad;	p;;Lany$aoa;
-	f	q;;Lnet/minecraft/client/ab$net/minecraft/client/ad;	q;;Lany$aoa;
-	f	r;;Lnet/minecraft/client/ab$net/minecraft/client/ad;	r;;Lany$aoa;
-	f	s;;Lnet/minecraft/client/ab$net/minecraft/client/ad;	s;;Lany$aoa;
-	f	t;;Lnet/minecraft/client/ab$net/minecraft/client/ad;	t;;Lany$aoa;
-	f	u;;Lnet/minecraft/client/ab$net/minecraft/client/ad;	u;;Lany$aoa;
-	f	v;;Lnet/minecraft/client/ab$net/minecraft/client/ad;	v;;Lany$aoa;
-	f	w;;Lnet/minecraft/client/ab$net/minecraft/client/ad;	w;;Lany$aoa;
-	f	x;;Lnet/minecraft/client/ab$net/minecraft/client/ad;	x;;Lany$aoa;
-	f	y;;Lnet/minecraft/client/ab$net/minecraft/client/ad;	y;;Lany$aoa;
-	f	z;;Lnet/minecraft/client/ab$net/minecraft/client/ad;	z;;Lany$aoa;
+	f	a;;Lnet/minecraft/client/ab$ad;	a;;Lany$aoa;
+	f	b;;Lnet/minecraft/client/ab$ad;	b;;Lany$aoa;
+	f	c;;Lnet/minecraft/client/ab$ad;	c;;Lany$aoa;
+	f	d;;Lnet/minecraft/client/ab$ad;	d;;Lany$aoa;
+	f	e;;Lnet/minecraft/client/ab$ad;	e;;Lany$aoa;
+	f	f;;Lnet/minecraft/client/ab$ad;	f;;Lany$aoa;
+	f	g;;Lnet/minecraft/client/ab$ad;	g;;Lany$aoa;
+	f	h;;Lnet/minecraft/client/ab$ad;	h;;Lany$aoa;
+	f	i;;Lnet/minecraft/client/ab$ad;	i;;Lany$aoa;
+	f	j;;Lnet/minecraft/client/ab$ad;	j;;Lany$aoa;
+	f	k;;Lnet/minecraft/client/ab$ad;	k;;Lany$aoa;
+	f	l;;Lnet/minecraft/client/ab$ad;	l;;Lany$aoa;
+	f	m;;Lnet/minecraft/client/ab$ad;	m;;Lany$aoa;
+	f	n;;Lnet/minecraft/client/ab$ad;	n;;Lany$aoa;
+	f	o;;Lnet/minecraft/client/ab$ad;	o;;Lany$aoa;
+	f	p;;Lnet/minecraft/client/ab$ad;	p;;Lany$aoa;
+	f	q;;Lnet/minecraft/client/ab$ad;	q;;Lany$aoa;
+	f	r;;Lnet/minecraft/client/ab$ad;	r;;Lany$aoa;
+	f	s;;Lnet/minecraft/client/ab$ad;	s;;Lany$aoa;
+	f	t;;Lnet/minecraft/client/ab$ad;	t;;Lany$aoa;
+	f	u;;Lnet/minecraft/client/ab$ad;	u;;Lany$aoa;
+	f	v;;Lnet/minecraft/client/ab$ad;	v;;Lany$aoa;
+	f	w;;Lnet/minecraft/client/ab$ad;	w;;Lany$aoa;
+	f	x;;Lnet/minecraft/client/ab$ad;	x;;Lany$aoa;
+	f	y;;Lnet/minecraft/client/ab$ad;	y;;Lany$aoa;
+	f	z;;Lnet/minecraft/client/ab$ad;	z;;Lany$aoa;
 	f	A;;Z	A;;Z
 	f	B;;Z	B;;Z
 	f	C;;Ljava/lang/String;	C;;Ljava/lang/String;
-	f	D;;[Lnet/minecraft/client/ab$net/minecraft/client/ad;	D;;[Lany$aoa;
+	f	D;;[Lnet/minecraft/client/ab$ad;	D;;[Lany$aoa;
 c	Lnet/minecraft/client/ab;	Lany;
 	m	<init>(Lnet/minecraft/client/Minecraft;Ljava/io/File;)V	<init>(Lnet/minecraft/client/Minecraft;Ljava/io/File;)V
 		ma	0	0
@@ -24532,20 +24535,20 @@ c	Lnet/minecraft/client/ab;	Lany;
 	m	a(II)V	a(II)V
 		ma	0	0
 		ma	1	1
-	m	a(Lnet/minecraft/client/ab$net/minecraft/client/ad;F)V	a(Lany$aoa;F)V
+	m	a(Lnet/minecraft/client/ab$ad;F)V	a(Lany$aoa;F)V
 		ma	0	0
 		ma	1	1
-	m	a(Lnet/minecraft/client/ab$net/minecraft/client/ad;I)V	a(Lany$aoa;I)V
+	m	a(Lnet/minecraft/client/ab$ad;I)V	a(Lany$aoa;I)V
 		ma	0	0
 		ma	1	1
-	m	a(Lnet/minecraft/client/ab$net/minecraft/client/ad;)F	a(Lany$aoa;)F
+	m	a(Lnet/minecraft/client/ab$ad;)F	a(Lany$aoa;)F
 		ma	0	0
-	m	b(Lnet/minecraft/client/ab$net/minecraft/client/ad;)Z	b(Lany$aoa;)Z
+	m	b(Lnet/minecraft/client/ab$ad;)Z	b(Lany$aoa;)Z
 		ma	0	0
 	m	a([Ljava/lang/String;I)Ljava/lang/String;	a([Ljava/lang/String;I)Ljava/lang/String;
 		ma	0	0
 		ma	1	1
-	m	c(Lnet/minecraft/client/ab$net/minecraft/client/ad;)Ljava/lang/String;	c(Lany$aoa;)Ljava/lang/String;
+	m	c(Lnet/minecraft/client/ab$ad;)Ljava/lang/String;	c(Lany$aoa;)Ljava/lang/String;
 		ma	0	0
 	m	a()V	a()V
 	m	a(Ljava/lang/String;)F	a(Ljava/lang/String;)F
@@ -24702,10 +24705,10 @@ c	Lnet/minecraft/client/b;	Lamx;
 	f	g;;F	g;;F
 	f	h;;F	h;;F
 cu	a	Lnet/minecraft/client/c;
-c	Lnet/minecraft/client/d$net/minecraft/client/e;	Lamz$ana;
+c	Lnet/minecraft/client/d$e;	Lamz$ana;
 	m	<init>(I)V	<init>(I)V
 		ma	0	0
-c	Lnet/minecraft/client/d$net/minecraft/client/f;	Lamz$anb;
+c	Lnet/minecraft/client/d$f;	Lamz$anb;
 	m	<init>()V	<init>()V
 	m	paint(Ljava/awt/Graphics;)V	paint(Ljava/awt/Graphics;)V
 		ma	0	0
@@ -25103,7 +25106,7 @@ c	Lnet/minecraft/server/c;	Lej;
 	f	a;;Ljava/lang/String;	a;;Ljava/lang/String;
 	f	b;;Lr;	b;;Lr;
 cu	a	Lnet/minecraft/server/d;
-c	Lnet/minecraft/server/e$net/minecraft/server/f;	Lel$em;
+c	Lnet/minecraft/server/e$f;	Lel$em;
 	m	<init>()V	<init>()V
 	m	format(Ljava/util/logging/LogRecord;)Ljava/lang/String;	format(Ljava/util/logging/LogRecord;)Ljava/lang/String;
 		ma	0	0
