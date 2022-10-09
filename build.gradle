@@ -367,7 +367,7 @@ task generateCalamus(dependsOn: [downloadVersionDetails, nestJar]) {
 
 static File findMatches(String from, String to) {
     // first check if we have our own nested matches
-    File matches = new File("nested-matches/${from}-${to}.match");
+    File matches = new File("nested-matches/${from}#${to}.match");
 
     if (matches.exists()) {
         return matches;
