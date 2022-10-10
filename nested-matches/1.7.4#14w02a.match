@@ -1,4 +1,4 @@
-Matches saved 2022-10-08, status: c:1840/1849 m:15655/15823 f:6898/7063 ma:18321/23214, input files:
+Matches saved 2022-10-10, status: c:1840/1849 m:15627/15823 f:6898/7063 ma:18321/23214, input files:
 	a:
 		5302532	SHA256	rEzNBca+t7ydkX8O+Bt4RpY1ctCEIKOhT/TSZ4zG9Mg=	1.7.4-merged-nested.jar
 	b:
@@ -8064,8 +8064,6 @@ c	Lanh;	Laor;
 	m	a(ILabu;)V	a(ILacw;)V
 		ma	0	0
 		ma	1	1
-	m	b()Ljava/lang/String;	b_()Ljava/lang/String;
-	m	k_()Z	d()Z
 	m	a(Ljava/lang/String;)V	a(Ljava/lang/String;)V
 		ma	0	0
 	m	d()I	e()I
@@ -8152,8 +8150,6 @@ c	Lani;	Laos;
 	f	h;;Lahz;	e;;Lajc;
 c	Lanm;	Laow;
 	m	<init>()V	<init>()V
-	m	b()Ljava/lang/String;	b_()Ljava/lang/String;
-	m	k_()Z	d()Z
 	m	a(Ljava/lang/String;)V	a(Ljava/lang/String;)V
 		ma	0	0
 	m	a()I	k_()I
@@ -8218,8 +8214,6 @@ c	Lann;	Laox;
 	m	a(ILabu;)V	a(ILacw;)V
 		ma	0	0
 		ma	1	1
-	m	b()Ljava/lang/String;	b_()Ljava/lang/String;
-	m	k_()Z	d()Z
 	m	a(Ljava/lang/String;)V	a(Ljava/lang/String;)V
 		ma	0	0
 	m	a(Ldg;)V	a(Ldv;)V
@@ -8308,10 +8302,8 @@ c	Lans;	Lapc;
 		ma	1	1
 	m	a(Labu;)I	a(Lacw;)I
 		ma	0	0
-	m	b()Ljava/lang/String;	b_()Ljava/lang/String;
 	m	a(Ljava/lang/String;)V	a(Ljava/lang/String;)V
 		ma	0	0
-	m	k_()Z	d()Z
 	m	a(Ldg;)V	a(Ldv;)V
 		ma	0	0
 	m	b(Ldg;)V	b(Ldv;)V
@@ -8329,7 +8321,6 @@ c	Lans;	Lapc;
 	f	a;;Ljava/lang/String;	a;;Ljava/lang/String;
 c	Lant;	Lapd;
 	m	<init>()V	<init>()V
-	m	b()Ljava/lang/String;	b_()Ljava/lang/String;
 c	Lanu;	Lape;
 	m	<init>()V	<init>()V
 	m	b(Ldg;)V	b(Ldv;)V
@@ -8337,7 +8328,6 @@ c	Lanu;	Lape;
 	m	a(Ldg;)V	a(Ldv;)V
 		ma	0	0
 	m	h()V	n()V
-	m	a()Ljava/lang/String;	b_()Ljava/lang/String;
 	m	b()Z	d()Z
 	m	a(Ljava/lang/String;)V	a(Ljava/lang/String;)V
 		ma	0	0
@@ -8399,8 +8389,6 @@ c	Lanx;	Laph;
 	m	a(ILabu;)V	a(ILacw;)V
 		ma	0	0
 		ma	1	1
-	m	b()Ljava/lang/String;	b_()Ljava/lang/String;
-	m	k_()Z	d()Z
 	m	a(Ljava/lang/String;)V	a(Ljava/lang/String;)V
 		ma	0	0
 	m	a(Ldg;)V	a(Ldv;)V
@@ -8464,8 +8452,6 @@ c	Lanz;	Lapj;
 	m	a(ILabu;)V	a(ILacw;)V
 		ma	0	0
 		ma	1	1
-	m	b()Ljava/lang/String;	b_()Ljava/lang/String;
-	m	k_()Z	d()Z
 	m	a(Ljava/lang/String;)V	a(Ljava/lang/String;)V
 		ma	0	0
 	m	d()I	e()I
@@ -36803,7 +36789,6 @@ c	Lorg/lwjgl/input/Mouse;	Lorg/lwjgl/input/Mouse;
 	m	<init>()V	<init>()V
 	m	isCreated()Z	isCreated()Z
 	m	getImplementation()Lorg/lwjgl/opengl/InputImplementation;	getImplementation()Lorg/lwjgl/opengl/InputImplementation;
-	m	getNativeCursor()Lorg/lwjgl/input/Cursor;	getNativeCursor()Lorg/lwjgl/input/Cursor;
 	m	setNativeCursor(Lorg/lwjgl/input/Cursor;)Lorg/lwjgl/input/Cursor;	setNativeCursor(Lorg/lwjgl/input/Cursor;)Lorg/lwjgl/input/Cursor;
 		ma	0	0
 	m	getNativeCursor()Lorg/lwjgl/input/Cursor;	getNativeCursor()Lorg/lwjgl/input/Cursor;
@@ -38988,12 +38973,10 @@ c	Lorg/lwjgl/opengl/ContextCapabilities;	Lorg/lwjgl/opengl/ContextCapabilities;
 		ma	0	0
 	f	DEBUG;;Z	DEBUG;;Z
 	f	util;;Lorg/lwjgl/opengl/APIUtil;	util;;Lorg/lwjgl/opengl/APIUtil;
-	f	util;;Lorg/lwjgl/opengl/APIUtil;	util;;Lorg/lwjgl/opengl/APIUtil;
 	f	OpenGL20;;Z	OpenGL20;;Z
 	f	GL_ARB_vertex_shader;;Z	GL_ARB_vertex_shader;;Z
 	f	OpenGL13;;Z	OpenGL13;;Z
 	f	GL_ARB_multitexture;;Z	GL_ARB_multitexture;;Z
-	f	tracker;;Lorg/lwjgl/opengl/StateTracker;	tracker;;Lorg/lwjgl/opengl/StateTracker;
 	f	tracker;;Lorg/lwjgl/opengl/StateTracker;	tracker;;Lorg/lwjgl/opengl/StateTracker;
 	f	GL_AMD_blend_minmax_factor;;Z	GL_AMD_blend_minmax_factor;;Z
 	f	GL_AMD_conservative_depth;;Z	GL_AMD_conservative_depth;;Z
@@ -52216,7 +52199,6 @@ c	Lorg/lwjgl/opengl/GLContext$CapabilitiesCacheEntry;	Lorg/lwjgl/opengl/GLContex
 	f	capabilities;;Lorg/lwjgl/opengl/ContextCapabilities;	capabilities;;Lorg/lwjgl/opengl/ContextCapabilities;
 c	Lorg/lwjgl/opengl/GLContext;	Lorg/lwjgl/opengl/GLContext;
 	m	<init>()V	<init>()V
-	m	getCapabilities()Lorg/lwjgl/opengl/ContextCapabilities;	getCapabilities()Lorg/lwjgl/opengl/ContextCapabilities;
 	m	getFunctionAddress([Ljava/lang/String;)J	getFunctionAddress([Ljava/lang/String;)J
 		ma	0	0
 	m	getFunctionAddress(Ljava/lang/String;)J	getFunctionAddress(Ljava/lang/String;)J
@@ -57034,8 +57016,6 @@ c	Lpr;	Lqe;
 	m	a()I	k_()I
 	m	a(Lps;)Z	a(Lqf;)Z
 		ma	0	0
-	m	b()Ljava/lang/String;	b_()Ljava/lang/String;
-	m	k_()Z	d()Z
 	m	a(I)Labu;	a(I)Lacw;
 		ma	0	0
 	m	a(II)Labu;	a(II)Lacw;
@@ -57158,8 +57138,6 @@ c	Lpy;	Lqq;
 		ma	0	0
 		ma	1	1
 	m	a()I	k_()I
-	m	b()Ljava/lang/String;	b_()Ljava/lang/String;
-	m	k_()Z	d()Z
 	m	a(Ljava/lang/String;)V	a(Ljava/lang/String;)V
 		ma	0	0
 	m	d()I	e()I
@@ -62496,7 +62474,6 @@ c	Lwc;	Lwu;
 	m	a(Ljava/lang/String;)V	a(Ljava/lang/String;)V
 		ma	0	0
 	m	b_()Ljava/lang/String;	b_()Ljava/lang/String;
-	m	k_()Z	d()Z
 	m	u()Ljava/lang/String;	aE()Ljava/lang/String;
 	m	<clinit>()V	<clinit>()V
 	f	a;;Z	a;;Z
@@ -62590,7 +62567,6 @@ c	Lwg;	Lxa;
 	m	b(ILabu;)Z	b(ILacw;)Z
 		ma	0	0
 		ma	1	1
-	m	b()Ljava/lang/String;	b_()Ljava/lang/String;
 	m	d()I	e()I
 	m	b(I)V	c(I)V
 		ma	0	0
@@ -63493,8 +63469,6 @@ c	Lxo;	Lyp;
 	m	a()I	k_()I
 	m	a(I)Labu;	a(I)Lacw;
 		ma	0	0
-	m	b()Ljava/lang/String;	b_()Ljava/lang/String;
-	m	k_()Z	d()Z
 	m	d()I	e()I
 	m	b(Lahz;)Z	b(Lajc;)Z
 		ma	0	0
@@ -64599,8 +64573,6 @@ c	Lyv;	Lzw;
 	m	b(II)Labu;	c(II)Lacw;
 		ma	0	0
 		ma	1	1
-	m	b()Ljava/lang/String;	b_()Ljava/lang/String;
-	m	k_()Z	d()Z
 	m	a_(I)Labu;	b(I)Lacw;
 		ma	0	0
 	m	a(II)Labu;	a(II)Lacw;
@@ -64849,8 +64821,6 @@ c	Lzj;	Laam;
 	m	a(ILabu;)V	a(ILacw;)V
 		ma	0	0
 		ma	1	1
-	m	b()Ljava/lang/String;	b_()Ljava/lang/String;
-	m	k_()Z	d()Z
 	m	d()I	e()I
 	m	a(Lxq;)Z	a(Lyr;)Z
 		ma	0	0
@@ -64940,8 +64910,6 @@ c	Lzn;	Laaq;
 	m	a()I	k_()I
 	m	a(I)Labu;	a(I)Lacw;
 		ma	0	0
-	m	b()Ljava/lang/String;	b_()Ljava/lang/String;
-	m	k_()Z	d()Z
 	m	a(II)Labu;	a(II)Lacw;
 		ma	0	0
 		ma	1	1
