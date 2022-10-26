@@ -1,8 +1,8 @@
-Matches saved 2022-10-12, status: c:1536/1638 m:12680/13582 f:5967/6662 ma:19851/21276, input files:
+Matches saved 2022-10-26, status: c:1538/1640 m:12684/13582 f:5969/6662 ma:19851/21276, input files:
 	a:
-		5592905	SHA256	UwYGsnQKWJdFXOEH6PP1SbignazMtdaBUzZAO5b0o2Q=	1.5.1-merged-nested.jar
+		5593587	SHA256	9xJsHmzvirEJE7FLnKkbiEqVu2EVWxy2cHCuKHQRQjQ=	1.5.1-merged-nested.jar
 	b:
-		5641187	SHA256	Z65/9zTAhQXeS4nyUcBd1hGFa6nkXTE6n5CS0tOsuRQ=	13w16a-merged-nested.jar
+		5641857	SHA256	g4VAKA+y59jVuQOrhy+98Mo2Jerzc4nSFeu9xdfQY/Y=	13w16a-merged-nested.jar
 	cp:
 		208338	SHA256	ebWk9YKeGkmkFXEff7jrW5rSLe+nKSn9otqW7DDT8Bg=	jinput-2.0.5.jar
 		7508	SHA256	wzNP85zwqztUklYZEBBUyQCYt8czseeDTHt15MQehKU=	jutils-1.0.0.jar
@@ -3852,79 +3852,12 @@ c	Laf;	Lah;
 	m	a([Ljava/lang/String;I)Z	a([Ljava/lang/String;I)Z
 		ma	0	0
 		ma	1	1
-c	Lafm$1;	Lafy$1;
 c	Lafm$afn;	Lafy$afz;
 	m	<init>(Laab;Ljava/util/Random;II)V	<init>(Laan;Ljava/util/Random;II)V
 		ma	0	0
 		ma	1	1
 		ma	2	2
 		ma	3	3
-c	Lafm$afq;	Lafy$agc;
-	m	<init>(Ljava/util/Random;II)V	<init>(Ljava/util/Random;II)V
-		ma	0	0
-		ma	1	1
-		ma	2	2
-	m	a(Laab;Ljava/util/Random;Laek;)Z	a(Laan;Ljava/util/Random;Laew;)Z
-		ma	0	0
-		ma	1	1
-		ma	2	2
-	m	<clinit>()V	<clinit>()V
-	f	h;;[Z	h;;[Z
-	f	i;;[Llp;	i;;[Lls;
-c	Lafm$afr$afs;	Lafy$agd$age;
-	m	<init>()V	<init>()V
-	m	a(Ljava/util/Random;IIIZ)V	a(Ljava/util/Random;IIIZ)V
-		ma	0	0
-		ma	1	1
-		ma	2	2
-		ma	3	3
-		ma	4	4
-	m	<init>(Lafm$1;)V	<init>(Lafy$1;)V
-		ma	0	0
-c	Lafm$afr;	Lafy$agd;
-	m	<init>(Ljava/util/Random;II)V	<init>(Ljava/util/Random;II)V
-		ma	0	0
-		ma	1	1
-		ma	2	2
-	m	a(Laab;Ljava/util/Random;Laek;)Z	a(Laan;Ljava/util/Random;Laew;)Z
-		ma	0	0
-		ma	1	1
-		ma	2	2
-	m	<clinit>()V	<clinit>()V
-	f	h;;Z	h;;Z
-	f	i;;Z	i;;Z
-	f	j;;Z	j;;Z
-	f	k;;Z	k;;Z
-	f	l;;[Llp;	l;;[Lls;
-	f	m;;[Llp;	m;;[Lls;
-	f	n;;Lafm$afr$afs;	n;;Lafy$agd$age;
-c	Lafm$aft;	Lafy$agf;
-	m	<init>(Ljava/util/Random;IIIIII)V	<init>(Ljava/util/Random;IIIIII)V
-		ma	0	0
-		ma	1	1
-		ma	2	2
-		ma	3	3
-		ma	4	4
-		ma	5	5
-		ma	6	6
-	m	a(Laab;Laek;I)Z	a(Laan;Laew;I)Z
-		ma	0	0
-		ma	1	1
-		ma	2	2
-	f	a;;I	a;;I
-	f	b;;I	b;;I
-	f	c;;I	c;;I
-	f	d;;I	d;;I
-c	Lafm$afu;	Lafy$agg;
-	m	<init>(Ljava/util/Random;II)V	<init>(Ljava/util/Random;II)V
-		ma	0	0
-		ma	1	1
-		ma	2	2
-	m	a(Laab;Ljava/util/Random;Laek;)Z	a(Laan;Ljava/util/Random;Laew;)Z
-		ma	0	0
-		ma	1	1
-		ma	2	2
-	f	h;;Z	h;;Z
 c	Lafm;	Lafy;
 	m	<init>()V	<init>()V
 	m	<init>(Ljava/util/Map;)V	<init>(Ljava/util/Map;)V
@@ -3941,6 +3874,74 @@ c	Lafm;	Lafy;
 	f	f;;Ljava/util/List;	f;;Ljava/util/List;
 	f	g;;I	g;;I
 	f	h;;I	h;;I
+c	Lafo$1;	Laga$1;
+c	Lafo$afq;	Laga$agc;
+	m	<init>(Ljava/util/Random;II)V	<init>(Ljava/util/Random;II)V
+		ma	0	0
+		ma	1	1
+		ma	2	2
+	m	a(Laab;Ljava/util/Random;Laek;)Z	a(Laan;Ljava/util/Random;Laew;)Z
+		ma	0	0
+		ma	1	1
+		ma	2	2
+	m	<clinit>()V	<clinit>()V
+	f	h;;[Z	h;;[Z
+	f	i;;[Llp;	i;;[Lls;
+c	Lafo$afr$afs;	Laga$agd$age;
+	m	<init>()V	<init>()V
+	m	a(Ljava/util/Random;IIIZ)V	a(Ljava/util/Random;IIIZ)V
+		ma	0	0
+		ma	1	1
+		ma	2	2
+		ma	3	3
+		ma	4	4
+	m	<init>(Lafo$1;)V	<init>(Laga$1;)V
+		ma	0	0
+c	Lafo$afr;	Laga$agd;
+	m	<init>(Ljava/util/Random;II)V	<init>(Ljava/util/Random;II)V
+		ma	0	0
+		ma	1	1
+		ma	2	2
+	m	a(Laab;Ljava/util/Random;Laek;)Z	a(Laan;Ljava/util/Random;Laew;)Z
+		ma	0	0
+		ma	1	1
+		ma	2	2
+	m	<clinit>()V	<clinit>()V
+	f	h;;Z	h;;Z
+	f	i;;Z	i;;Z
+	f	j;;Z	j;;Z
+	f	k;;Z	k;;Z
+	f	l;;[Llp;	l;;[Lls;
+	f	m;;[Llp;	m;;[Lls;
+	f	n;;Lafo$afr$afs;	n;;Laga$agd$age;
+c	Lafo$aft;	Laga$agf;
+	m	<init>(Ljava/util/Random;IIIIII)V	<init>(Ljava/util/Random;IIIIII)V
+		ma	0	0
+		ma	1	1
+		ma	2	2
+		ma	3	3
+		ma	4	4
+		ma	5	5
+		ma	6	6
+	m	a(Laab;Laek;I)Z	a(Laan;Laew;I)Z
+		ma	0	0
+		ma	1	1
+		ma	2	2
+	f	a;;I	a;;I
+	f	b;;I	b;;I
+	f	c;;I	c;;I
+	f	d;;I	d;;I
+c	Lafo$afu;	Laga$agg;
+	m	<init>(Ljava/util/Random;II)V	<init>(Ljava/util/Random;II)V
+		ma	0	0
+		ma	1	1
+		ma	2	2
+	m	a(Laab;Ljava/util/Random;Laek;)Z	a(Laan;Ljava/util/Random;Laew;)Z
+		ma	0	0
+		ma	1	1
+		ma	2	2
+	f	h;;Z	h;;Z
+c	Lafo;	Laga;
 c	Lafv$afw;	Lagh$agi;
 	m	<init>(Laab;Ljava/util/Random;II)V	<init>(Laan;Ljava/util/Random;II)V
 		ma	0	0
@@ -19969,7 +19970,7 @@ c	Lbei;	Lbbp;
 		ma	5	5
 		ma	6	6
 	m	l_()V	k_()V
-c	Lbek;	Lbbr;
+c	Lbej$bek;	Lbbq$bbr;
 	m	<init>(Laab;DDD)V	<init>(Laan;DDD)V
 		ma	0	0
 		ma	1	1
@@ -19983,7 +19984,7 @@ c	Lbek;	Lbbr;
 		ma	4	4
 		ma	5	5
 		ma	6	6
-c	Lbel;	Lbbs;
+c	Lbej$bel;	Lbbq$bbs;
 	m	<init>(Laab;DDDDDDLbev;)V	<init>(Laan;DDDDDDLbcc;)V
 		ma	0	0
 		ma	1	1
@@ -20024,7 +20025,7 @@ c	Lbel;	Lbbs;
 	f	aF;;F	aF;;F
 	f	aG;;F	aG;;F
 	f	aH;;Z	aH;;Z
-c	Lbem;	Lbbt;
+c	Lbej$bem;	Lbbq$bbt;
 	m	<init>(Laab;DDDDDDLbev;Lbs;)V	<init>(Laan;DDDDDDLbcc;Lbu;)V
 		ma	0	0
 		ma	1	1
@@ -20081,6 +20082,7 @@ c	Lbem;	Lbbt;
 	f	aC;;Lbev;	aC;;Lbcc;
 	f	aD;;Lca;	aD;;Lcc;
 	f	a;;Z	a;;Z
+c	Lbej;	Lbbq;
 c	Lben;	Lbbu;
 	m	<init>(Laab;DDDDDD)V	<init>(Laan;DDDDDD)V
 		ma	0	0
@@ -30835,9 +30837,11 @@ c	Lnet/minecraft/client/Minecraft;	Lasm;
 	m	I()V	J()V
 	m	a(Lb;)V	a(Lb;)V
 		ma	0	0
+	m	c(Lb;)V	c(Lb;)V
 	m	a(Ljava/lang/String;I)V	a(Ljava/lang/String;I)V
 		ma	0	0
 		ma	1	1
+	m	a()V	K()V
 	m	J()V	M()V
 	m	a(IIIIII)V	a(IIIIII)V
 		ma	0	0
@@ -30851,6 +30855,7 @@ c	Lnet/minecraft/client/Minecraft;	Lasm;
 		ma	0	0
 	m	d(Ljava/lang/String;)V	c(Ljava/lang/String;)V
 		ma	0	0
+	m	e()V	b()V
 	m	K()V	N()V
 	m	L()I	O()I
 	m	f()V	d()V
@@ -30891,6 +30896,7 @@ c	Lnet/minecraft/client/Minecraft;	Lasm;
 		ma	0	0
 	m	q()Z	p()Z
 	m	r()Lbdl;	q()Lbas;
+	m	s()Z	r()Z
 	m	t()Z	s()Z
 	m	u()Z	t()Z
 	m	O()V	S()V
@@ -30923,6 +30929,7 @@ c	Lnet/minecraft/client/Minecraft;	Lasm;
 	f	b;;Lbds;	b;;Lbaz;
 	f	S;;Z	M;;Z
 	f	T;;Z	N;;Z
+	f	U;;Lb;	O;;Lb;
 	f	c;;I	c;;I
 	f	d;;I	d;;I
 	f	V;;Lawe;	P;;Lath;
@@ -30954,6 +30961,7 @@ c	Lnet/minecraft/client/Minecraft;	Lasm;
 	f	ac;;Laki;	Y;;Laku;
 	f	ad;;I	Z;;I
 	f	ae;;I	aa;;I
+	f	af;;Z	ab;;Z
 	f	F;;Lbki;	z;;Lbhs;
 	f	ag;;Ljava/lang/String;	ac;;Ljava/lang/String;
 	f	ah;;I	ad;;I

@@ -1,6 +1,6 @@
-Matches saved 2022-10-09, status: c:2534/2534 m:19893/19925 f:8849/8863 ma:26121/26178, input files:
+Matches saved 2022-10-26, status: c:2535/2535 m:19893/19925 f:8849/8863 ma:26121/26178, input files:
 	a:
-		7829189	SHA256	vuNx/YvT83bLt+yHWkqNiLf4ko5vmnp7ttgw37j+zxQ=	1.8.2-pre4-merged-nested.jar
+		7829761	SHA256	eEvcSLyLurYuCOJBGR6PfNbulJiCDiDGg5dhCdNqjrA=	1.8.2-pre4-merged-nested.jar
 	b:
 		9362315	SHA256	UVdxLtF5EkTFBjS7OpV6UTsj8+cIQkD6jq5JlH6gmWg=	1.8.2-pre5-merged.jar
 	cp:
@@ -34503,7 +34503,7 @@ c	Lcfv;	Lbdq;
 		ma	5	5
 		ma	6	6
 	m	t_()V	t_()V
-c	Lcfy;	Lbdr$a;
+c	Lcfx$cfy;	Lbdr$a;
 	m	<init>(Laqs;DDD)V	<init>(Ladn;DDD)V
 		ma	0	0
 		ma	1	1
@@ -34518,7 +34518,7 @@ c	Lcfy;	Lbdr$a;
 		ma	5	5
 		ma	6	6
 		ma	7	7
-c	Lcfz;	Lbdr$b;
+c	Lcfx$cfz;	Lbdr$b;
 	m	<init>(Laqs;DDDDDDLcgx;)V	<init>(Ladn;DDDDDDLbed;)V
 		ma	0	0
 		ma	1	1
@@ -34560,15 +34560,7 @@ c	Lcfz;	Lbdr$b;
 	f	aD;;F	aD;;F
 	f	aE;;F	aE;;F
 	f	aF;;Z	aF;;Z
-c	Lcg;	Laz;
-	m	<init>()V	<init>()V
-	m	c()Ljava/lang/String;	c()Ljava/lang/String;
-	m	c(Lae;)Ljava/lang/String;	c(Ln;)Ljava/lang/String;
-		ma	0	0
-	m	a(Lae;[Ljava/lang/String;)V	a(Ln;[Ljava/lang/String;)V
-		ma	0	0
-		ma	1	1
-c	Lcga;	Lbdr$c;
+c	Lcfx$cga;	Lbdr$c;
 	m	<init>(Laqs;DDDDDDLcgx;Lfn;)V	<init>(Ladn;DDDDDDLbed;Ldp;)V
 		ma	0	0
 		ma	1	1
@@ -34626,7 +34618,7 @@ c	Lcga;	Lbdr$c;
 	f	aA;;Lcgx;	aA;;Lbed;
 	f	aB;;Lfv;	aB;;Ldv;
 	f	a;;Z	a;;Z
-c	Lcgb;	Lbdr$d;
+c	Lcfx$cgb;	Lbdr$d;
 	m	<init>()V	<init>()V
 	m	a(ILaqs;DDDDDD[I)Lcgw;	a(ILadn;DDDDDD[I)Lbec;
 		ma	0	0
@@ -34638,6 +34630,15 @@ c	Lcgb;	Lbdr$d;
 		ma	6	6
 		ma	7	7
 		ma	8	8
+c	Lcfx;	Lbdr;
+c	Lcg;	Laz;
+	m	<init>()V	<init>()V
+	m	c()Ljava/lang/String;	c()Ljava/lang/String;
+	m	c(Lae;)Ljava/lang/String;	c(Ln;)Ljava/lang/String;
+		ma	0	0
+	m	a(Lae;[Ljava/lang/String;)V	a(Ln;[Ljava/lang/String;)V
+		ma	0	0
+		ma	1	1
 c	Lcgc$cgd;	Lbds$a;
 	m	<init>()V	<init>()V
 	m	a(ILaqs;DDDDDD[I)Lcgw;	a(ILadn;DDDDDD[I)Lbec;
@@ -66884,6 +66885,11 @@ c	Lorg/lwjgl/opengl/XRandR$Screen;	Lorg/lwjgl/opengl/XRandR$Screen;
 		ma	0	0
 		ma	1	1
 	m	<init>(Ljava/lang/String;IIIILorg/lwjgl/opengl/XRandR$1;)V	<init>(Ljava/lang/String;IIIII)V
+		ma	0	0
+		ma	1	1
+		ma	2	2
+		ma	3	3
+		ma	4	4
 	f	name;;Ljava/lang/String;	name;;Ljava/lang/String;
 	f	width;;I	width;;I
 	f	height;;I	height;;I
