@@ -287,6 +287,9 @@ bni	bne	a	(Lb;)Lj;	4	0
 bno	bnn	a	(Lbnl;)V	1	0
 bnp	bnn	b	(Lbnl;)V	2	0
 bnq	bnp	initChannel	(Lio/netty/channel/Channel;)V	1	0
+bnz	bny			bnz	9
+boa	bny			boa	9
+bob	bny			bob	9
 bol	bok	a	()V	1	0
 bom	bok	a	()V	2	0
 bon	bok	a	(Lrz;F)V	3	0
