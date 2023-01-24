@@ -5,6 +5,7 @@ import groovy.json.JsonSlurper
 import groovy.xml.XmlSlurper
 import net.fabricmc.stitch.merge.JarMerger
 import net.fabricmc.stitch.util.CalamusUtil
+import net.ornithemc.mappingutils.MappingUtils
 import net.ornithemc.nester.Nester
 import org.apache.commons.io.FileUtils
 
@@ -24,9 +25,10 @@ buildscript {
     }
 
     dependencies {
-        classpath "net.ornithemc:enigma-cli:1.2.6"
-        classpath "net.ornithemc:nester:0.4.0"
-        classpath "net.ornithemc:stitch:0.7.11"
+        classpath "net.ornithemc:enigma-cli:1.2.7"
+        classpath "net.ornithemc:nester:1.0.0"
+        classpath "net.ornithemc:stitch:0.7.13"
+	classpath "net.ornithemc:mapping-utils:0.6.2"
         classpath "commons-io:commons-io:2.8.0"
         classpath "org.codehaus.groovy:groovy-json:3.0.9"
         classpath "org.codehaus.groovy:groovy-xml:3.0.9"
@@ -316,7 +318,7 @@ task nestJar(dependsOn: mergeJars) {
         def nests = file("nests/${minecraft_version}.nest")
 
         if (nests.exists()) {
-            Nester.fixJar(Paths.get(merged.getAbsolutePath()), Paths.get(nested.getAbsolutePath()), Paths.get(nests.getAbsolutePath()))
+            Nester.nestJar(new Nester.Options().silent(true), Paths.get(merged.getAbsolutePath()), Paths.get(nested.getAbsolutePath()), Paths.get(nests.getAbsolutePath()))
         }
     }
 
@@ -340,7 +342,7 @@ task nestOldJar(dependsOn: mergeOldJars) {
         def nests = file("nests/${old_minecraft_version}.nest")
 
         if (nests.exists()) {
-            Nester.fixJar(Paths.get(merged.getAbsolutePath()), Paths.get(nested.getAbsolutePath()), Paths.get(nests.getAbsolutePath()))
+            Nester.nestJar(new Nester.Options().silent(true), Paths.get(merged.getAbsolutePath()), Paths.get(nested.getAbsolutePath()), Paths.get(nests.getAbsolutePath()))
         }
     }
 
@@ -361,32 +363,68 @@ task generateCalamus(dependsOn: [downloadVersionDetails, nestJar]) {
             return
         }
 
-        CalamusUtil.generateCalamus(nestedMergedFile.exists() ? nestedMergedFile : mergedFile, calamusFile, null)
+        def version = new JsonSlurper().parseText(FileUtils.readFileToString(versionFile, Charset.defaultCharset()))
+
+        File jarFile = nestedMergedFile.exists() ? nestedMergedFile : mergedFile
+        String[] args = new String[] {
+            "--client-hash", version.downloads.client.sha1,
+            "--server-hash", version.downloads.server.sha1
+        }
+
+        CalamusUtil.generateCalamus(jarFile, calamusFile, args)
     }
 }
 
 static File findMatches(String from, String to) {
-    // first check if we have our own nested matches
-    File matches = new File("nested-matches/${from}#${to}.match");
+    return findMatches(from, to, false);
+}
 
-    if (matches.exists()) {
+static File findMatches(String from, String to, boolean orThrow) {
+    // first check if we have our own nested matches
+    File matches = findMatches(new File("nested-matches"), from, to);
+
+    if (matches != null) {
         return matches;
     }
 
-    // TODO: check if nested matches exist the other way around and invert them
-
     // check skyrising's matches
-    // matches are organized in folders for each major release
-    for (File dir : new File("matches/matches/merged/").listFiles()) {
-        matches = new File(dir, "${from}#${to}.match");
+    matches = findMatches(new File("matches/matches"));
+
+    if (matches != null) {
+        return matches;
+    }
+
+    // no matches found...
+    if (orThrow) {
+        throw new RuntimeException("matches from ${from} to ${to} do not exist!");
+    } else {
+        File invertedMatches = findMatches(to, from, true);
+        matches = new File(".gradle/temp/${from}#${to}.match");
+
+        MappingUtils.invertMatches(invertedMatches, matches);
+    }
+
+    return matches;
+}
+
+static File findMatches(File dir, String from, String to) {
+    if (dir.isDirectory()) {
+        File matches = new File(dir, "${from}#${to}.match");
 
         if (matches.exists()) {
             return matches;
         }
+
+        for (File f : dir.listFiles()) {
+            matches = findMatches(f, from, to);
+
+            if (matches != null) {
+                return matches;
+            }
+        }
     }
 
-    // no matches found...
-    throw new RuntimeException("matches from ${from} to ${to} do not exist!");
+    return null;
 }
 
 task updateCalamus(dependsOn: [downloadOldVersionDetails, nestOldJar, downloadVersionDetails, nestJar]) {
@@ -407,11 +445,17 @@ task updateCalamus(dependsOn: [downloadOldVersionDetails, nestOldJar, downloadVe
             throw new RuntimeException("Cannot update calamus from ${old_minecraft_version} to ${minecraft_version}: calamus for ${old_minecraft_version} does not exist!")
         }
 
+        def version = new JsonSlurper().parseText(FileUtils.readFileToString(versionFile, Charset.defaultCharset()))
+
         File matchesFile = findMatches(old_minecraft_version, minecraft_version)
         File oldJar = oldNestedMergedFile.exists() ? oldNestedMergedFile : oldMergedFile
         File newJar = nestedMergedFile.exists() ? nestedMergedFile : mergedFile
+        String[] args = new String[] {
+            "--client-hash", version.downloads.client.sha1,
+            "--server-hash", version.downloads.server.sha1
+        }
 
-        CalamusUtil.updateCalamus(oldJar, newJar, oldCalamusFile, calamusFile, matchesFile)
+        CalamusUtil.updateCalamus(oldJar, newJar, oldCalamusFile, calamusFile, matchesFile, args)
     }
 }
 
