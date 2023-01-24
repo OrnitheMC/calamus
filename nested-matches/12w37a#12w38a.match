@@ -1,8 +1,8 @@
-Matches saved 2022-10-26, status: c:1401/1401 m:11360/11394 f:5706/5768 ma:18030/18129, input files:
+Matches saved 2022-11-10, status: c:1401/1401 m:11360/11394 f:5706/5768 ma:18023/18129, input files:
 	a:
-		4774362	SHA256	GUEhif0mI01AyNfgKOTd7fvw7jCov+IkrrIPWAUU9Qo=	12w37a-merged-nested.jar
+		4769389	SHA256	A7//rgnTlNLuBQpZ2GhmlCZF34qZMmnKXlc/yBM4Boo=	12w37a-merged-nested.jar
 	b:
-		4799881	SHA256	jUficE046VbOWYHTmCugVZECfW5Q4oY+NiQQJkjzrm8=	12w38a-merged-nested.jar
+		4794911	SHA256	rz/NOSvdSfFpQZDU/bXnaIToJXRq4VZVrq5Yxt7jzCE=	12w38a-merged-nested.jar
 	cp:
 		27787	SHA256	yfoJ9YFfHYzlt9WaUxaLmhsKuWY+Q7JEAxE5HfenjVI=	launchwrapper-1.5.jar
 		61311	SHA256	ZDNaSL5rFCp9DBPsXIKnB4V6pYwCNObto+rKDpbupRs=	jopt-simple-4.5.jar
@@ -5304,12 +5304,17 @@ c	Laih;	Lain;
 		ma	4	4
 		ma	5	5
 		ma	6	6
+c	Laii$aij;	Laio$aip;
+	m	values()[Laii$aij;	values()[Laio$aip;
+	m	valueOf(Ljava/lang/String;)Laii$aij;	valueOf(Ljava/lang/String;)Laio$aip;
+	m	<init>(Ljava/lang/String;I)V	<init>(Ljava/lang/String;I)V
+	m	<clinit>()V	<clinit>()V
+	f	a;;Laii$aij;	a;;Laio$aip;
+	f	b;;Laii$aij;	b;;Laio$aip;
+	f	c;;Laii$aij;	c;;Laio$aip;
+	f	d;;[Laii$aij;	d;;[Laio$aip;
 c	Laii;	Laio;
-	m	<init>(IILaij;Ladn;)V	<init>(IILaip;Ladt;)V
-		ma	0	0
-		ma	1	1
-		ma	2	2
-		ma	3	3
+	m	<init>(IILaii$aij;Ladn;)V	<init>(IILaio$aip;Ladt;)V
 	m	r_()I	r_()I
 	m	e(Lvm;III)Lakw;	e(Lvs;III)Lalc;
 		ma	0	0
@@ -5378,19 +5383,7 @@ c	Laii;	Laio;
 	m	i()Z	i()Z
 	m	f()V	f()V
 	m	q_()I	q_()I
-	f	a;;Laij;	a;;Laip;
-c	Laij;	Laip;
-	m	values()[Laij;	values()[Laip;
-	m	valueOf(Ljava/lang/String;)Laij;	valueOf(Ljava/lang/String;)Laip;
-		ma	0	0
-	m	<init>(Ljava/lang/String;I)V	<init>(Ljava/lang/String;I)V
-		ma	0	0
-		ma	1	1
-	m	<clinit>()V	<clinit>()V
-	f	a;;Laij;	a;;Laip;
-	f	b;;Laij;	b;;Laip;
-	f	c;;Laij;	c;;Laip;
-	f	d;;[Laij;	d;;[Laip;
+	f	a;;Laii$aij;	a;;Laio$aip;
 c	Laik;	Laiq;
 	m	<init>(IIZ)V	<init>(IIZ)V
 		ma	0	0

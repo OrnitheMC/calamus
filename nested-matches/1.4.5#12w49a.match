@@ -1,8 +1,8 @@
-Matches saved 2022-10-26, status: c:1490/1491 m:12040/12080 f:6007/6071 ma:19047/19140, input files:
+Matches saved 2022-11-10, status: c:1490/1491 m:12040/12080 f:6007/6071 ma:19040/19140, input files:
 	a:
-		5019585	SHA256	tbDW6Pa1qVZ23rgQP30h4Y7XW1TV0ddAqHDzjqQj+Qg=	1.4.5-merged-nested.jar
+		5014603	SHA256	Bj7dw4AFC0sM+AMRZZVOdO9XYcsfjR+H3O0yh0FwO5w=	1.4.5-merged-nested.jar
 	b:
-		5043451	SHA256	A3vMkU/atTW/tNR/MFmSwfbegBJy2Cn5gU10K6/L7vE=	12w49a-merged-nested.jar
+		5038299	SHA256	ZAdv1zDZ/I6tfluambmXa8xpzjC+gO3G28qeT6KIFk4=	12w49a-merged-nested.jar
 	cp:
 		27787	SHA256	yfoJ9YFfHYzlt9WaUxaLmhsKuWY+Q7JEAxE5HfenjVI=	launchwrapper-1.5.jar
 		61311	SHA256	ZDNaSL5rFCp9DBPsXIKnB4V6pYwCNObto+rKDpbupRs=	jopt-simple-4.5.jar
@@ -6969,12 +6969,17 @@ c	Lalg;	Laln;
 		ma	4	4
 		ma	5	5
 		ma	6	6
+c	Lalh$ali;	Lalo$alp;
+	m	values()[Lalh$ali;	values()[Lalo$alp;
+	m	valueOf(Ljava/lang/String;)Lalh$ali;	valueOf(Ljava/lang/String;)Lalo$alp;
+	m	<init>(Ljava/lang/String;I)V	<init>(Ljava/lang/String;I)V
+	m	<clinit>()V	<clinit>()V
+	f	a;;Lalh$ali;	a;;Lalo$alp;
+	f	b;;Lalh$ali;	b;;Lalo$alp;
+	f	c;;Lalh$ali;	c;;Lalo$alp;
+	f	d;;[Lalh$ali;	d;;[Lalo$alp;
 c	Lalh;	Lalo;
-	m	<init>(IILali;Lagb;)V	<init>(IILalp;Lagi;)V
-		ma	0	0
-		ma	1	1
-		ma	2	2
-		ma	3	3
+	m	<init>(IILalh$ali;Lagb;)V	<init>(IILalo$alp;Lagi;)V
 	m	r_()I	r_()I
 	m	e(Lxv;III)Lanw;	e(Lyc;III)Laoe;
 		ma	0	0
@@ -7043,19 +7048,7 @@ c	Lalh;	Lalo;
 	m	i()Z	i()Z
 	m	f()V	f()V
 	m	q_()I	q_()I
-	f	a;;Lali;	a;;Lalp;
-c	Lali;	Lalp;
-	m	values()[Lali;	values()[Lalp;
-	m	valueOf(Ljava/lang/String;)Lali;	valueOf(Ljava/lang/String;)Lalp;
-		ma	0	0
-	m	<init>(Ljava/lang/String;I)V	<init>(Ljava/lang/String;I)V
-		ma	0	0
-		ma	1	1
-	m	<clinit>()V	<clinit>()V
-	f	a;;Lali;	a;;Lalp;
-	f	b;;Lali;	b;;Lalp;
-	f	c;;Lali;	c;;Lalp;
-	f	d;;[Lali;	d;;[Lalp;
+	f	a;;Lalh$ali;	a;;Lalo$alp;
 c	Lalj;	Lalq;
 	m	<init>(IIZ)V	<init>(IIZ)V
 		ma	0	0

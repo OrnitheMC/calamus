@@ -1,8 +1,8 @@
-Matches saved 2022-10-26, status: c:1538/1640 m:12684/13582 f:5969/6662 ma:19851/21276, input files:
+Matches saved 2022-11-10, status: c:1537/1640 m:12678/13582 f:5967/6662 ma:19849/21276, input files:
 	a:
-		5593587	SHA256	9xJsHmzvirEJE7FLnKkbiEqVu2EVWxy2cHCuKHQRQjQ=	1.5.1-merged-nested.jar
+		5588326	SHA256	5A7paY13DnUwePDSd33lIMMtSPTOYAoQfCgNr6a1kj0=	1.5.1-merged-nested.jar
 	b:
-		5641857	SHA256	g4VAKA+y59jVuQOrhy+98Mo2Jerzc4nSFeu9xdfQY/Y=	13w16a-merged-nested.jar
+		5636353	SHA256	3Sjt5RqUjTmGrlhrXDh8jb6mEs0vmEkem8AstTNjFQE=	13w16a-merged-nested.jar
 	cp:
 		208338	SHA256	ebWk9YKeGkmkFXEff7jrW5rSLe+nKSn9otqW7DDT8Bg=	jinput-2.0.5.jar
 		7508	SHA256	wzNP85zwqztUklYZEBBUyQCYt8czseeDTHt15MQehKU=	jutils-1.0.0.jar
@@ -14637,10 +14637,6 @@ c	Lavc;	Lasl;
 	m	<clinit>()V	<clinit>()V
 	f	a;;Ljava/util/Map;	a;;Ljava/util/Map;
 	f	b;;Ljava/util/List;	b;;Ljava/util/List;
-cu	a	Lavp;
-c	Lavq;	Lnet/minecraft/client/main/Main$2;
-	m	<init>()V	<init>()V
-	m	run()V	run()V
 c	Lavt;	Lw$x;
 	m	values()[Lavt;	values()[Lw$x;
 	m	valueOf(Ljava/lang/String;)Lavt;	valueOf(Ljava/lang/String;)Lw$x;
@@ -30771,17 +30767,11 @@ c	Lnet/minecraft/client/Minecraft$11;	Lasm$8;
 	m	call()Ljava/lang/Object;	call()Ljava/lang/Object;
 	f	a;;Lnet/minecraft/client/Minecraft;	a;;Lasm;
 c	Lnet/minecraft/client/Minecraft$12;	Lasm$9;
-	m	<init>(Lnet/minecraft/client/Minecraft;)V	<init>(Lasm;)V
-		ma	0	0
-	m	a()Ljava/lang/String;	a()Ljava/lang/String;
-	m	call()Ljava/lang/Object;	call()Ljava/lang/Object;
-	f	a;;Lnet/minecraft/client/Minecraft;	a;;Lasm;
+	m	<init>()V	<init>(Lasm;)V
 c	Lnet/minecraft/client/Minecraft$13;	Lasm$10;
-	m	<init>(Lnet/minecraft/client/Minecraft;)V	<init>(Lasm;)V
-		ma	0	0
-	m	a()Ljava/lang/String;	a()Ljava/lang/String;
-	m	call()Ljava/lang/Object;	call()Ljava/lang/Object;
-	f	a;;Lnet/minecraft/client/Minecraft;	a;;Lasm;
+	m	<init>()V	<init>(Lasm;)V
+cu	a	Lnet/minecraft/client/Minecraft$14;
+cu	a	Lnet/minecraft/client/Minecraft$15;
 c	Lnet/minecraft/client/Minecraft$1;	Lasm$1;
 	m	<init>(Lnet/minecraft/client/Minecraft;Ljava/lang/String;)V	<init>(Lasm;Ljava/lang/String;)V
 		ma	0	0

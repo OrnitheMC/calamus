@@ -1,8 +1,8 @@
-Matches saved 2022-10-26, status: c:1633/1633 m:13508/13543 f:6597/6659 ma:21108/21197, input files:
+Matches saved 2022-11-10, status: c:1633/1633 m:13508/13543 f:6597/6659 ma:21105/21197, input files:
 	a:
-		5566095	SHA256	xOtQnw23KUpcOch1XLZs3RTpmVwIvlaND62D2tpr+fw=	13w10a-merged-nested.jar
+		5560842	SHA256	hsLsizJc2KRpat7+9Vb4frmjyX0ZYNToJ70lul5PIco=	13w10a-merged-nested.jar
 	b:
-		5586525	SHA256	tqdyHtxiR0FqB2FIIzhAtmCTzL18/UMnF8FZ7pjCnmA=	13w10b-merged-nested.jar
+		5581291	SHA256	Lc8gZ2P6uDxydZjONhU9TjbpDuWYMIpW6q5e95Fgn1s=	13w10b-merged-nested.jar
 	cp:
 		27787	SHA256	yfoJ9YFfHYzlt9WaUxaLmhsKuWY+Q7JEAxE5HfenjVI=	launchwrapper-1.5.jar
 		61311	SHA256	ZDNaSL5rFCp9DBPsXIKnB4V6pYwCNObto+rKDpbupRs=	jopt-simple-4.5.jar
@@ -14053,13 +14053,6 @@ c	Lav;	Lav;
 	m	<init>(Ljava/lang/String;[Ljava/lang/Object;)V	<init>(Ljava/lang/String;[Ljava/lang/Object;)V
 		ma	0	0
 		ma	1	1
-c	Lavj;	Lavj;
-	m	<init>()V	<init>()V
-	m	windowClosing(Ljava/awt/event/WindowEvent;)V	windowClosing(Ljava/awt/event/WindowEvent;)V
-		ma	0	0
-c	Lavk;	Lavk;
-	m	<init>()V	<init>()V
-	m	run()V	run()V
 c	Lavn;	Lavn;
 	m	values()[Lavn;	values()[Lavn;
 	m	valueOf(Ljava/lang/String;)Lavn;	valueOf(Ljava/lang/String;)Lavn;
@@ -31756,14 +31749,18 @@ c	Lnet/minecraft/client/Minecraft$11;	Lnet/minecraft/client/Minecraft$11;
 	m	call()Ljava/lang/Object;	call()Ljava/lang/Object;
 	f	a;;Lnet/minecraft/client/Minecraft;	a;;Lnet/minecraft/client/Minecraft;
 c	Lnet/minecraft/client/Minecraft$12;	Lnet/minecraft/client/Minecraft$12;
+	m	<init>()V	<init>()V
+	m	windowClosing(Ljava/awt/event/WindowEvent;)V	windowClosing(Ljava/awt/event/WindowEvent;)V
+c	Lnet/minecraft/client/Minecraft$13;	Lnet/minecraft/client/Minecraft$13;
+	m	<init>()V	<init>()V
+	m	run()V	run()V
+c	Lnet/minecraft/client/Minecraft$14;	Lnet/minecraft/client/Minecraft$14;
 	m	<init>(Lnet/minecraft/client/Minecraft;)V	<init>(Lnet/minecraft/client/Minecraft;)V
-		ma	0	0
 	m	a()Ljava/lang/String;	a()Ljava/lang/String;
 	m	call()Ljava/lang/Object;	call()Ljava/lang/Object;
 	f	a;;Lnet/minecraft/client/Minecraft;	a;;Lnet/minecraft/client/Minecraft;
-c	Lnet/minecraft/client/Minecraft$13;	Lnet/minecraft/client/Minecraft$13;
+c	Lnet/minecraft/client/Minecraft$15;	Lnet/minecraft/client/Minecraft$15;
 	m	<init>(Lnet/minecraft/client/Minecraft;)V	<init>(Lnet/minecraft/client/Minecraft;)V
-		ma	0	0
 	m	a()Ljava/lang/String;	a()Ljava/lang/String;
 	m	call()Ljava/lang/Object;	call()Ljava/lang/Object;
 	f	a;;Lnet/minecraft/client/Minecraft;	a;;Lnet/minecraft/client/Minecraft;

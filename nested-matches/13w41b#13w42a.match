@@ -1,8 +1,8 @@
-Matches saved 2022-10-26, status: c:1766/1771 m:15038/15107 f:6616/6673 ma:22518/22647, input files:
+Matches saved 2022-11-10, status: c:1766/1771 m:15038/15107 f:6616/6673 ma:22518/22647, input files:
 	a:
-		5242589	SHA256	DRmlRz+uMsEuIibklTBrIo26OqPWx31X3vWP2x4L/C8=	13w41b-merged-nested.jar
+		5235200	SHA256	2hHa6BN2of3pzAdSOyNzjXNDhigR3tbwK5HJYy3BnLQ=	13w41b-merged-nested.jar
 	b:
-		5182866	SHA256	9H0Io9feQS3vtNJEASruz86hoHkWnW3IxvikqOZwLxM=	13w42a-merged-nested.jar
+		5175268	SHA256	inymCOF73d+VGMtMG1Ge+9R47Wt9NK4UqGTgPcOMe9Q=	13w42a-merged-nested.jar
 	cp:
 		15966	SHA256	yuPeFp52le8wB5NJxeqBeQvRDATEA3GW/U/cB7bUOTQ=	netty-1.8.8.jar
 		289881	SHA256	26oIhpCiOpVO/2aamdJFKiTdnxDYZnJf9dKf9HQKiX4=	vecmath-1.3.1.jar
@@ -33239,13 +33239,11 @@ c	Lcom/google/common/collect/AbstractMapBasedMultimap$SortedKeySet;	Lcom/google/
 	m	comparator()Ljava/util/Comparator;	comparator()Ljava/util/Comparator;
 	m	first()Ljava/lang/Object;	first()Ljava/lang/Object;
 	m	headSet(Ljava/lang/Object;)Ljava/util/SortedSet;	headSet(Ljava/lang/Object;)Ljava/util/SortedSet;
-		ma	0	0
 	m	last()Ljava/lang/Object;	last()Ljava/lang/Object;
 	m	subSet(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedSet;	subSet(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedSet;
 		ma	0	0
 		ma	1	1
 	m	tailSet(Ljava/lang/Object;)Ljava/util/SortedSet;	tailSet(Ljava/lang/Object;)Ljava/util/SortedSet;
-		ma	0	0
 	f	this$0;;Lcom/google/common/collect/AbstractMapBasedMultimap;	this$0;;Lcom/google/common/collect/AbstractMapBasedMultimap;
 c	Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedCollection$WrappedIterator;	Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedCollection$WrappedIterator;
 	m	<init>(Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedCollection;)V	<init>(Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedCollection;)V
@@ -33365,12 +33363,10 @@ c	Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedSortedSet;	Lcom/goo
 	m	first()Ljava/lang/Object;	first()Ljava/lang/Object;
 	m	last()Ljava/lang/Object;	last()Ljava/lang/Object;
 	m	headSet(Ljava/lang/Object;)Ljava/util/SortedSet;	headSet(Ljava/lang/Object;)Ljava/util/SortedSet;
-		ma	0	0
 	m	subSet(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedSet;	subSet(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedSet;
 		ma	0	0
 		ma	1	1
 	m	tailSet(Ljava/lang/Object;)Ljava/util/SortedSet;	tailSet(Ljava/lang/Object;)Ljava/util/SortedSet;
-		ma	0	0
 	f	this$0;;Lcom/google/common/collect/AbstractMapBasedMultimap;	this$0;;Lcom/google/common/collect/AbstractMapBasedMultimap;
 c	Lcom/google/common/collect/AbstractMapBasedMultimap;	Lcom/google/common/collect/AbstractMapBasedMultimap;
 	m	<init>(Ljava/util/Map;)V	<init>(Ljava/util/Map;)V
@@ -34129,8 +34125,6 @@ c	Lcom/google/common/collect/EmptyImmutableSortedMap;	Lcom/google/common/collect
 		ma	1	1
 	m	createDescendingMap()Lcom/google/common/collect/ImmutableSortedMap;	createDescendingMap()Lcom/google/common/collect/ImmutableSortedMap;
 	m	tailMap(Ljava/lang/Object;Z)Ljava/util/NavigableMap;	tailMap(Ljava/lang/Object;Z)Ljava/util/NavigableMap;
-		ma	0	0
-		ma	1	1
 	m	headMap(Ljava/lang/Object;Z)Ljava/util/NavigableMap;	headMap(Ljava/lang/Object;Z)Ljava/util/NavigableMap;
 		ma	0	0
 		ma	1	1
@@ -34790,13 +34784,11 @@ c	Lcom/google/common/collect/ForwardingSortedSet;	Lcom/google/common/collect/For
 	m	comparator()Ljava/util/Comparator;	comparator()Ljava/util/Comparator;
 	m	first()Ljava/lang/Object;	first()Ljava/lang/Object;
 	m	headSet(Ljava/lang/Object;)Ljava/util/SortedSet;	headSet(Ljava/lang/Object;)Ljava/util/SortedSet;
-		ma	0	0
 	m	last()Ljava/lang/Object;	last()Ljava/lang/Object;
 	m	subSet(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedSet;	subSet(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedSet;
 		ma	0	0
 		ma	1	1
 	m	tailSet(Ljava/lang/Object;)Ljava/util/SortedSet;	tailSet(Ljava/lang/Object;)Ljava/util/SortedSet;
-		ma	0	0
 	m	unsafeCompare(Ljava/lang/Object;Ljava/lang/Object;)I	unsafeCompare(Ljava/lang/Object;Ljava/lang/Object;)I
 		ma	0	0
 		ma	1	1
@@ -35636,7 +35628,6 @@ c	Lcom/google/common/collect/ImmutableList;	Lcom/google/common/collect/Immutable
 	m	isPartialView()Z	isPartialView()Z
 	m	iterator()Ljava/util/Iterator;	iterator()Ljava/util/Iterator;
 	m	builder()Lcom/google/common/collect/ImmutableList$Builder;	builder()Lcom/google/common/collect/ImmutableList$Builder;
-	m	builder()Lcom/google/common/collect/ImmutableList$Builder;	builder()Lcom/google/common/collect/ImmutableList$Builder;
 	m	subList(II)Ljava/util/List;	subList(II)Ljava/util/List;
 		ma	0	0
 		ma	1	1
@@ -35718,7 +35709,6 @@ c	Lcom/google/common/collect/ImmutableListMultimap;	Lcom/google/common/collect/I
 		ma	7	7
 		ma	8	8
 		ma	9	9
-	m	builder()Lcom/google/common/collect/ImmutableListMultimap$Builder;	builder()Lcom/google/common/collect/ImmutableListMultimap$Builder;
 	m	builder()Lcom/google/common/collect/ImmutableListMultimap$Builder;	builder()Lcom/google/common/collect/ImmutableListMultimap$Builder;
 	m	copyOf(Lcom/google/common/collect/Multimap;)Lcom/google/common/collect/ImmutableListMultimap;	copyOf(Lcom/google/common/collect/Multimap;)Lcom/google/common/collect/ImmutableListMultimap;
 		ma	0	0
@@ -35823,7 +35813,6 @@ c	Lcom/google/common/collect/ImmutableMap;	Lcom/google/common/collect/ImmutableM
 		ma	1	1
 	m	get(Ljava/lang/Object;)Ljava/lang/Object;	get(Ljava/lang/Object;)Ljava/lang/Object;
 		ma	0	0
-	m	builder()Lcom/google/common/collect/ImmutableMap$Builder;	builder()Lcom/google/common/collect/ImmutableMap$Builder;
 	m	equals(Ljava/lang/Object;)Z	equals(Ljava/lang/Object;)Z
 		ma	0	0
 	m	hashCode()I	hashCode()I
@@ -36595,8 +36584,6 @@ c	Lcom/google/common/collect/ImmutableSortedMap;	Lcom/google/common/collect/Immu
 		ma	0	0
 		ma	1	1
 	m	tailMap(Ljava/lang/Object;Z)Ljava/util/NavigableMap;	tailMap(Ljava/lang/Object;Z)Ljava/util/NavigableMap;
-		ma	0	0
-		ma	1	1
 	m	headMap(Ljava/lang/Object;Z)Ljava/util/NavigableMap;	headMap(Ljava/lang/Object;Z)Ljava/util/NavigableMap;
 		ma	0	0
 		ma	1	1
@@ -36811,9 +36798,6 @@ c	Lcom/google/common/collect/ImmutableSortedSet;	Lcom/google/common/collect/Immu
 	m	writeReplace()Ljava/lang/Object;	writeReplace()Ljava/lang/Object;
 	m	iterator()Ljava/util/Iterator;	iterator()Ljava/util/Iterator;
 	m	tailSet(Ljava/lang/Object;)Ljava/util/SortedSet;	tailSet(Ljava/lang/Object;)Ljava/util/SortedSet;
-		ma	0	0
-	m	headSet(Ljava/lang/Object;)Ljava/util/SortedSet;	headSet(Ljava/lang/Object;)Ljava/util/SortedSet;
-		ma	0	0
 	m	subSet(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedSet;	subSet(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedSet;
 		ma	0	0
 		ma	1	1
@@ -38830,14 +38814,10 @@ c	Lcom/google/common/collect/Maps$4;	Lcom/google/common/collect/Maps$4;
 		ma	0	0
 	m	addAll(Ljava/util/Collection;)Z	addAll(Ljava/util/Collection;)Z
 		ma	0	0
-	m	headSet(Ljava/lang/Object;)Ljava/util/SortedSet;	headSet(Ljava/lang/Object;)Ljava/util/SortedSet;
-		ma	0	0
 	m	subSet(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedSet;	subSet(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedSet;
 		ma	1	1
 	m	tailSet(Ljava/lang/Object;)Ljava/util/SortedSet;	tailSet(Ljava/lang/Object;)Ljava/util/SortedSet;
-		ma	0	0
 	m	headSet(Ljava/lang/Object;Z)Ljava/util/NavigableSet;	headSet(Ljava/lang/Object;)Ljava/util/SortedSet;
-	m	tailSet(Ljava/lang/Object;Z)Ljava/util/NavigableSet;	tailSet(Ljava/lang/Object;)Ljava/util/SortedSet;
 	m	subSet(Ljava/lang/Object;ZLjava/lang/Object;Z)Ljava/util/NavigableSet;	subSet(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedSet;
 	m	delegate()Ljava/util/SortedSet;	delegate()Ljava/util/SortedSet;
 	m	delegate()Ljava/util/Set;	delegate()Ljava/util/Set;
@@ -38938,8 +38918,6 @@ c	Lcom/google/common/collect/Maps$DescendingMap;	Lcom/google/common/collect/Maps
 		ma	0	0
 		ma	1	1
 	m	tailMap(Ljava/lang/Object;Z)Ljava/util/NavigableMap;	tailMap(Ljava/lang/Object;Z)Ljava/util/NavigableMap;
-		ma	0	0
-		ma	1	1
 	m	subMap(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedMap;	subMap(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedMap;
 		ma	0	0
 		ma	1	1
@@ -39091,9 +39069,7 @@ c	Lcom/google/common/collect/Maps$FilteredEntryNavigableMap;	Lcom/google/common/
 		ma	0	0
 		ma	1	1
 	m	tailMap(Ljava/lang/Object;Z)Ljava/util/NavigableMap;	tailMap(Ljava/lang/Object;Z)Ljava/util/NavigableMap;
-		ma	0	0
-		ma	1	1
-	m	tailMap(Ljava/lang/Object;)Ljava/util/SortedMap;	tailMap(Ljava/lang/Object;Z)Ljava/util/NavigableMap;
+	m	subMap(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedMap;	subMap(Ljava/lang/Object;ZLjava/lang/Object;Z)Ljava/util/NavigableMap;
 	m	headMap(Ljava/lang/Object;)Ljava/util/SortedMap;	headMap(Ljava/lang/Object;Z)Ljava/util/NavigableMap;
 c	Lcom/google/common/collect/Maps$FilteredEntrySortedMap;	Lcom/google/common/collect/Maps$FilteredEntrySortedMap;
 	m	<init>(Ljava/util/SortedMap;Lcom/google/common/base/Predicate;)V	<init>(Ljava/util/SortedMap;Lcom/google/common/base/Predicate;)V
@@ -39158,8 +39134,6 @@ c	Lcom/google/common/collect/Maps$NavigableAsMapView;	Lcom/google/common/collect
 		ma	0	0
 		ma	1	1
 	m	tailMap(Ljava/lang/Object;Z)Ljava/util/NavigableMap;	tailMap(Ljava/lang/Object;Z)Ljava/util/NavigableMap;
-		ma	0	0
-		ma	1	1
 	m	comparator()Ljava/util/Comparator;	comparator()Ljava/util/Comparator;
 	m	get(Ljava/lang/Object;)Ljava/lang/Object;	get(Ljava/lang/Object;)Ljava/lang/Object;
 		ma	0	0
@@ -39297,8 +39271,6 @@ c	Lcom/google/common/collect/Maps$TransformedEntriesNavigableMap;	Lcom/google/co
 	m	tailMap(Ljava/lang/Object;)Ljava/util/NavigableMap;	tailMap(Ljava/lang/Object;)Ljava/util/NavigableMap;
 		ma	0	0
 	m	tailMap(Ljava/lang/Object;Z)Ljava/util/NavigableMap;	tailMap(Ljava/lang/Object;Z)Ljava/util/NavigableMap;
-		ma	0	0
-		ma	1	1
 	m	transformEntry(Ljava/util/Map$Entry;)Ljava/util/Map$Entry;	transformEntry(Ljava/util/Map$Entry;)Ljava/util/Map$Entry;
 	m	fromMap()Ljava/util/NavigableMap;	fromMap()Ljava/util/NavigableMap;
 	m	tailMap(Ljava/lang/Object;)Ljava/util/SortedMap;	tailMap(Ljava/lang/Object;)Ljava/util/SortedMap;
@@ -39403,8 +39375,6 @@ c	Lcom/google/common/collect/Maps$UnmodifiableNavigableMap;	Lcom/google/common/c
 		ma	0	0
 		ma	1	1
 	m	tailMap(Ljava/lang/Object;Z)Ljava/util/NavigableMap;	tailMap(Ljava/lang/Object;Z)Ljava/util/NavigableMap;
-		ma	0	0
-		ma	1	1
 	m	delegate()Ljava/util/Map;	delegate()Ljava/util/Map;
 	m	delegate()Ljava/lang/Object;	delegate()Ljava/lang/Object;
 	f	delegate;;Ljava/util/NavigableMap;	delegate;;Ljava/util/NavigableMap;
@@ -40633,8 +40603,6 @@ c	Lcom/google/common/collect/Platform;	Lcom/google/common/collect/Platform;
 	m	newArray([Ljava/lang/Object;I)[Ljava/lang/Object;	newArray([Ljava/lang/Object;I)[Ljava/lang/Object;
 		ma	0	0
 		ma	1	1
-	m	tryWeakKeys(Lcom/google/common/collect/MapMaker;)Lcom/google/common/collect/MapMaker;	tryWeakKeys(Lcom/google/common/collect/MapMaker;)Lcom/google/common/collect/MapMaker;
-		ma	0	0
 	m	setsFilterSortedSet(Ljava/util/SortedSet;Lcom/google/common/base/Predicate;)Ljava/util/SortedSet;	setsFilterSortedSet(Ljava/util/SortedSet;Lcom/google/common/base/Predicate;)Ljava/util/SortedSet;
 		ma	0	0
 		ma	1	1
@@ -58197,7 +58165,6 @@ c	Lio/netty/util/internal/chmv8/ForkJoinWorkerThread;	Lio/netty/util/internal/ch
 	m	run()V	run()V
 	f	pool;;Lio/netty/util/internal/chmv8/ForkJoinPool;	pool;;Lio/netty/util/internal/chmv8/ForkJoinPool;
 	f	workQueue;;Lio/netty/util/internal/chmv8/ForkJoinPool$WorkQueue;	workQueue;;Lio/netty/util/internal/chmv8/ForkJoinPool$WorkQueue;
-	f	workQueue;;Lio/netty/util/internal/chmv8/ForkJoinPool$WorkQueue;	workQueue;;Lio/netty/util/internal/chmv8/ForkJoinPool$WorkQueue;
 c	Lio/netty/util/internal/logging/AbstractInternalLogger$1;	Lio/netty/util/internal/logging/AbstractInternalLogger$1;
 	m	<clinit>()V	<clinit>()V
 	f	$SwitchMap$io$netty$util$internal$logging$InternalLogLevel;;[I	$SwitchMap$io$netty$util$internal$logging$InternalLogLevel;;[I
@@ -63447,7 +63414,6 @@ c	Lorg/lwjgl/input/Mouse;	Lorg/lwjgl/input/Mouse;
 	m	<init>()V	<init>()V
 	m	isCreated()Z	isCreated()Z
 	m	getImplementation()Lorg/lwjgl/opengl/InputImplementation;	getImplementation()Lorg/lwjgl/opengl/InputImplementation;
-	m	getNativeCursor()Lorg/lwjgl/input/Cursor;	getNativeCursor()Lorg/lwjgl/input/Cursor;
 	m	setNativeCursor(Lorg/lwjgl/input/Cursor;)Lorg/lwjgl/input/Cursor;	setNativeCursor(Lorg/lwjgl/input/Cursor;)Lorg/lwjgl/input/Cursor;
 		ma	0	0
 	m	getNativeCursor()Lorg/lwjgl/input/Cursor;	getNativeCursor()Lorg/lwjgl/input/Cursor;
@@ -64716,12 +64682,10 @@ c	Lorg/lwjgl/opengl/ContextCapabilities;	Lorg/lwjgl/opengl/ContextCapabilities;
 		ma	0	0
 	f	DEBUG;;Z	DEBUG;;Z
 	f	util;;Lorg/lwjgl/opengl/APIUtil;	util;;Lorg/lwjgl/opengl/APIUtil;
-	f	util;;Lorg/lwjgl/opengl/APIUtil;	util;;Lorg/lwjgl/opengl/APIUtil;
 	f	OpenGL20;;Z	OpenGL20;;Z
 	f	GL_ARB_vertex_shader;;Z	GL_ARB_vertex_shader;;Z
 	f	OpenGL13;;Z	OpenGL13;;Z
 	f	GL_ARB_multitexture;;Z	GL_ARB_multitexture;;Z
-	f	tracker;;Lorg/lwjgl/opengl/StateTracker;	tracker;;Lorg/lwjgl/opengl/StateTracker;
 	f	tracker;;Lorg/lwjgl/opengl/StateTracker;	tracker;;Lorg/lwjgl/opengl/StateTracker;
 	f	GL_AMD_blend_minmax_factor;;Z	GL_AMD_blend_minmax_factor;;Z
 	f	GL_AMD_conservative_depth;;Z	GL_AMD_conservative_depth;;Z
@@ -76883,7 +76847,6 @@ c	Lorg/lwjgl/opengl/GLContext$CapabilitiesCacheEntry;	Lorg/lwjgl/opengl/GLContex
 	f	capabilities;;Lorg/lwjgl/opengl/ContextCapabilities;	capabilities;;Lorg/lwjgl/opengl/ContextCapabilities;
 c	Lorg/lwjgl/opengl/GLContext;	Lorg/lwjgl/opengl/GLContext;
 	m	<init>()V	<init>()V
-	m	getCapabilities()Lorg/lwjgl/opengl/ContextCapabilities;	getCapabilities()Lorg/lwjgl/opengl/ContextCapabilities;
 	m	getFunctionAddress([Ljava/lang/String;)J	getFunctionAddress([Ljava/lang/String;)J
 		ma	0	0
 	m	getFunctionAddress(Ljava/lang/String;)J	getFunctionAddress(Ljava/lang/String;)J
