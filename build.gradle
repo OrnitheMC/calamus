@@ -370,12 +370,17 @@ task generateCalamus(dependsOn: [downloadVersionDetails, nestJar]) {
         }
 
         File jar = nestedJar.exists() ? nestedJar : mainJar
-        String[] args = new String[] {
-            "--client-hash", versionDetails.downloads.client.sha1,
-            "--server-hash", versionDetails.downloads.server.sha1
+        List<String> args = new ArrayList<>()
+        if (environment.isClient()) {
+            args.add("--client-hash")
+            args.add(versionDetails.downloads.client.sha1)
+        }
+        if (environment.isServer()) {
+            args.add("--server-hash")
+            args.add(versionDetails.downloads.server.sha1)
         }
 
-        CalamusUtil.generateCalamus(jar, calamusFile, args)
+        CalamusUtil.generateCalamus(jar, calamusFile, args.toArray())
     }
 }
 
@@ -452,12 +457,17 @@ task updateCalamus(dependsOn: [downloadOldVersionDetails, nestOldJar, downloadVe
         File jar = nestedJar.exists() ? nestedJar : mainJar
         File oldJar = oldNestedJar.exists() ? oldNestedJar : oldMainJar
         File matchesFile = findMatches(old_version_id, version_id)
-        String[] args = new String[] {
-            "--client-hash", version.downloads.client.sha1,
-            "--server-hash", version.downloads.server.sha1
+        List<String> args = new ArrayList<>()
+        if (environment.isClient()) {
+            args.add("--client-hash")
+            args.add(versionDetails.downloads.client.sha1)
+        }
+        if (environment.isServer()) {
+            args.add("--server-hash")
+            args.add(versionDetails.downloads.server.sha1)
         }
 
-        CalamusUtil.updateCalamus(oldJar, jar, oldCalamusFile, calamusFile, matchesFile, args)
+        CalamusUtil.updateCalamus(oldJar, jar, oldCalamusFile, calamusFile, matchesFile, args.toArray())
     }
 }
 
