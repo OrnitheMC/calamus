@@ -317,7 +317,7 @@ static File findMatches(String from, String to, boolean orThrow) {
         throw new RuntimeException("matches from ${from} to ${to} do not exist!");
     } else {
         File invertedMatches = findMatches(to, from, true);
-        matches = new File(invertedMatches.parentFile, "${from}#t${to}.match")
+        matches = new File(invertedMatches.parentFile, "${from}#${to}.match")
 
         MappingUtils.invertMatches(invertedMatches.toPath(), matches.toPath());
     }
