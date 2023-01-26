@@ -254,12 +254,6 @@ task nestJar(dependsOn: mergeJars) {
     outputs.file(nestedJar)
 
     doLast {
-        if (nestedJar.exists()) {
-            logger.lifecycle(":nested jar already exists!")
-        }
-        if (!nestsFile.exists()) {
-            logger.lifecycle(":nests don't exists!")
-        }
         if (!nestedJar.exists() && nestsFile.exists()) {
             logger.lifecycle(":nesting jar")
             Nester.nestJar(new Nester.Options().silent(true), Paths.get(mainJar.getAbsolutePath()), Paths.get(nestedJar.getAbsolutePath()), Paths.get(nestsFile.getAbsolutePath()))
