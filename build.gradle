@@ -151,6 +151,9 @@ task downloadVersionDetails(dependsOn: downloadVersionsManifest) {
     inputs.property "manifestUrl", manifestVersion.isPresent() ? manifestVersion.get().url : -1
 
     outputs.file versionDetailsFile
+    outputs.upToDateWhen {
+        return false
+    }
 
     doLast {
         if (manifestVersion.isPresent() || versionDetailsFile.exists()) {
@@ -286,7 +289,7 @@ task generateCalamus(dependsOn: [downloadVersionDetails, nestJar]) {
             args.add(versionDetails.downloads.server.sha1)
         }
 
-        CalamusUtil.generateCalamus(jar, calamusFile, args.toArray())
+        CalamusUtil.generateCalamus(jar, calamusFile, args.toArray(new String[args.size()]))
     }
 }
 
@@ -303,7 +306,7 @@ static File findMatches(String from, String to, boolean orThrow) {
     }
 
     // check skyrising's matches
-    matches = findMatches(new File("matches/matches"));
+    matches = findMatches(new File("matches/matches"), from, to);
 
     if (matches != null) {
         return matches;
@@ -314,9 +317,9 @@ static File findMatches(String from, String to, boolean orThrow) {
         throw new RuntimeException("matches from ${from} to ${to} do not exist!");
     } else {
         File invertedMatches = findMatches(to, from, true);
-        matches = new File(".gradle/temp/${from}#${to}.match");
+        matches = new File(invertedMatches.parentFile, "${from}#t${to}.match")
 
-        MappingUtils.invertMatches(invertedMatches, matches);
+        MappingUtils.invertMatches(invertedMatches.toPath(), matches.toPath());
     }
 
     return matches;
@@ -373,7 +376,7 @@ task updateCalamus(dependsOn: [downloadVersionDetails, nestJar]) {
             args.add(versionDetails.downloads.server.sha1)
         }
 
-        CalamusUtil.updateCalamus(fromJar, jar, fromCalamusFile, calamusFile, matchesFile, args.toArray())
+        CalamusUtil.updateCalamus(fromJar, jar, fromCalamusFile, calamusFile, matchesFile, args.toArray(new String[args.size()]))
     }
 }
 
