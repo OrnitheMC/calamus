@@ -91,6 +91,9 @@ enum Environment {
 }
 
 static Environment parseEnvironment(String id) {
+    if (id == null) {
+        return null
+    }
     if (id.endsWith("-client")) {
         return Environment.CLIENT
     }
@@ -109,6 +112,8 @@ static String parseVersion(String id, Environment environment) {
         return id.substring(0, id.length() - "-server".length())
     case Environment.MERGED:
         return id
+    default:
+        return null
     }
 }
 
