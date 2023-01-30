@@ -245,9 +245,16 @@ task mergeJars(dependsOn: downloadMcJars) {
     inputs.files downloadMcJars.outputs.files.files
 
     outputs.file(mergedJar)
+    outputs.upToDateWhen {
+        return false
+    }
 
     doLast {
-        if (environment.isMerged() && !mergedJar.exists()) {
+        if (!environment.isMerged()) {
+            logger.lifecycle(":skipping - ${version_id} is not merged")
+        } else if (mergedJar.exists()) {
+            logger.lifecycle(":skipping - merged jar already exists")
+        } else {
             logger.lifecycle(":merging jars")
             def jarMerger = new JarMerger(clientJar, serverJar, mergedJar)
             jarMerger.merge()
@@ -260,9 +267,16 @@ task nestJar(dependsOn: mergeJars) {
     group = jarSetupGroup
 
     outputs.file(nestedJar)
+    outputs.upToDateWhen {
+        return false
+    }
 
     doLast {
-        if (!nestedJar.exists() && nestsFile.exists()) {
+        if (!nestsFile.exists()) {
+            logger.lifecycle(":skipping - no nests for ${version_id}")
+        } else if (nestedJar.exists()) {
+            logger.lifecycle(":skipping - nested jar already exists")
+        } else {
             logger.lifecycle(":nesting jar")
             Nester.nestJar(new Nester.Options().silent(true), Paths.get(mainJar.getAbsolutePath()), Paths.get(nestedJar.getAbsolutePath()), Paths.get(nestsFile.getAbsolutePath()))
         }
@@ -275,7 +289,7 @@ task generateCalamus(dependsOn: [downloadVersionDetails, nestJar]) {
 
     outputs.file(calamusFile)
     outputs.upToDateWhen {
-        return calamusFile.exists()
+        return false
     }
 
     doLast {
@@ -356,7 +370,7 @@ task updateCalamus(dependsOn: [downloadVersionDetails, nestJar]) {
 
     outputs.file(calamusFile)
     outputs.upToDateWhen {
-        return calamusFile.exists()
+        return false
     }
 
     doLast {
