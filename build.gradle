@@ -27,7 +27,7 @@ buildscript {
     dependencies {
         classpath "net.ornithemc:enigma-cli:1.2.7"
         classpath "net.ornithemc:nester:1.0.0"
-        classpath "net.ornithemc:stitch:0.8.6"
+        classpath "net.ornithemc:stitch:0.9.0"
         classpath "net.ornithemc:mapping-utils:0.7.0"
         classpath "commons-io:commons-io:2.8.0"
         classpath "org.codehaus.groovy:groovy-json:3.0.9"
@@ -62,17 +62,16 @@ def clientJar = new File(cacheFilesMinecraft, "${minecraft_version}-client.jar")
 def serverJar = new File(cacheFilesMinecraft, "${minecraft_version}-server.jar")
 def mergedJar = new File(cacheFilesMinecraft, "${minecraft_version}-merged.jar")
 def mainJar = null
-def nestedJar = new File(cacheFilesMinecraft, "${version_id}-nested.jar")
-def nestsFile = file("nests/${version_id}.nest")
 def calamusFile = file("mappings/${version_id}.tiny")
 
 def fromClientJar = new File(cacheFilesMinecraft, "${from_minecraft_version}-client.jar")
 def fromServerJar = new File(cacheFilesMinecraft, "${from_minecraft_version}-server.jar")
 def fromMergedJar = new File(cacheFilesMinecraft, "${from_minecraft_version}-merged.jar")
 def fromMainJar = null
-def fromNestedJar = new File(cacheFilesMinecraft, "${from_version_id}-nested.jar")
 def fromCalamusFile = file("mappings/${from_version_id}.tiny")
 
+def defaultPackage = "net/minecraft/unmapped/"
+def namespace = "intermediary"
 def nameLength = 7
 
 enum Environment {
@@ -266,27 +265,8 @@ task mergeJars(dependsOn: downloadMcJars) {
     }
 }
 
-task nestJar(dependsOn: mergeJars) {
-    group = jarSetupGroup
-
-    outputs.file(nestedJar)
-    outputs.upToDateWhen {
-        return false
-    }
-
-    doLast {
-        if (nestsFile.exists()) {
-            logger.lifecycle(":nesting jar")
-            Nester.nestJar(new Nester.Options().silent(true), Paths.get(mainJar.getAbsolutePath()), Paths.get(nestedJar.getAbsolutePath()), Paths.get(nestsFile.getAbsolutePath()))
-        } else {
-            logger.lifecycle(":skipping - no nests for ${version_id}")
-        }
-    }
-}
-
-task generateCalamus(dependsOn: [downloadVersionDetails, nestJar]) {
+task generateCalamus(dependsOn: [downloadVersionDetails, mergeJars]) {
     group = mappingGenerationGroup
-    inputs.files(mainJar, nestedJar)
 
     outputs.file(calamusFile)
     outputs.upToDateWhen {
@@ -298,8 +278,11 @@ task generateCalamus(dependsOn: [downloadVersionDetails, nestJar]) {
             return
         }
 
-        File jar = nestedJar.exists() ? nestedJar : mainJar
         List<String> args = new ArrayList<>()
+        args.add("--default-package")
+        args.add(defaultPackage)
+        args.add("--target-namespace")
+        args.add(namespace)
         args.add("--name-length")
         args.add(Integer.toString(nameLength))
         if (environment.isClient()) {
@@ -311,24 +294,55 @@ task generateCalamus(dependsOn: [downloadVersionDetails, nestJar]) {
             args.add(versionDetails.downloads.server.sha1)
         }
 
-        CalamusUtil.generateCalamus(jar, calamusFile, args.toArray(new String[args.size()]))
+        CalamusUtil.generateCalamus(mainJar, calamusFile, args.toArray(new String[args.size()]))
     }
 }
 
-static File findMatches(String from, String to) {
-    return findMatches(from, to, false);
-}
-
-static File findMatches(String from, String to, boolean orThrow) {
-    // first check if we have our own nested matches
-    File matches = findMatches(new File("nested-matches"), from, to);
-
-    if (matches != null) {
-        return matches;
+static File findMatches(Environment fromEnv, String from, Environment toEnv, String to) {
+    // some of the matches use version names
+    // that do not match the version ids
+    def versionTranslations = new HashMap<String, String>() {
+        {
+            put("b1.8-pre1-2"   , "b1.8-pre1-201109091357")
+            put("b1.9-pre3-2"   , "b1.9-pre3-201110061402")
+            put("b1.9-pre4-1435", "b1.9-pre4-201110131434")
+            put("1.3"           , "1.3-pre-07261249")
+            put("1.4"           , "1.4-pre")
+            put("1.4.1"         , "1.4.1-pre-10231538")
+            put("1.4.3"         , "1.4.3-pre")
+            put("13w16a"        , "13w16a-04192037")
+            put("13w16b"        , "13w16b-04232151")
+            put("13w23b"        , "13w23b-06080101")
+            put("1.6"           , "1.6-pre-06251516")
+            put("1.6.2"         , "1.6.2-091847")
+            put("1.6.3"         , "1.6.3-pre-171231")
+            put("13w36a"        , "13w36a-09051446")
+            put("13w36b"        , "13w36b-09061310")
+            put("13w41b"        , "13w41b-1523")
+            put("1.7"           , "1.7-pre")
+            put("1.7.1"         , "1.7.1-pre")
+            put("1.7.3"         , "1.7.3-pre")
+            put("1.7.7"         , "1.7.7-101331")
+            put("14w04b"        , "14w04b-1554")
+            put("14w27b"        , "14w27b-07021646")
+            put("14w34c"        , "14w34c-08191549")
+            put("16w50a"        , "16w50a-1438")
+            put("2point0_red"   , "af-2013-red")
+            put("2point0_blue"  , "af-2013-blue")
+            put("2point0_purple", "af-2013-purple")
+            put("15w14a"        , "af-2015")
+            put("1.RV-Pre1"     , "af-2016")
+        }
     }
 
-    // check skyrising's matches
-    matches = findMatches(new File("matches/matches"), from, to);
+    from = versionTranslations.getOrDefault(from, from);
+    to = versionTranslations.getOrDefault(to, to);
+
+    return findMatches(fromEnv, from, toEnv, to, false);
+}
+
+static File findMatches(Environment fromEnv, String from, Environment toEnv, String to, boolean orThrow) {
+    File matches = findMatches(new File("matches/matches"), fromEnv, from, toEnv, to);
 
     if (matches != null) {
         return matches;
@@ -336,9 +350,9 @@ static File findMatches(String from, String to, boolean orThrow) {
 
     // no matches found...
     if (orThrow) {
-        throw new RuntimeException("matches from ${from} to ${to} do not exist!");
+        throw new RuntimeException("matches from ${fromEnv.name().toLowerCase()} ${from} to ${toEnv.name().toLowerCase()} ${to} do not exist!");
     } else {
-        File invertedMatches = findMatches(to, from, true);
+        File invertedMatches = findMatches(toEnv, to, fromEnv, from, true);
         matches = new File(invertedMatches.parentFile, "temp.match")
 
         MappingUtils.invertMatches(invertedMatches.toPath(), matches.toPath());
@@ -347,16 +361,28 @@ static File findMatches(String from, String to, boolean orThrow) {
     return matches;
 }
 
-static File findMatches(File dir, String from, String to) {
-    if (dir.isDirectory()) {
-        File matches = new File(dir, "${from}#${to}.match");
+static File findMatches(File dir, Environment fromEnv, String from, Environment toEnv, String to) {
+    String name
 
+    if (fromEnv == toEnv) {
+        name = "${from}#${to}.match"
+    } else {
+        name = "${fromEnv.name().toLowerCase()}-${from}#${toEnv.name().toLowerCase()}-${to}.match"
+    }
+
+    return findMatches(dir, name)
+}
+
+static File findMatches(File dir, String name) {
+    if (dir.isDirectory()) {
+        File matches = new File(dir, name);
+ 
         if (matches.exists()) {
             return matches;
         }
 
         for (File f : dir.listFiles()) {
-            matches = findMatches(f, from, to);
+            matches = findMatches(f, name);
 
             if (matches != null) {
                 return matches;
@@ -367,9 +393,9 @@ static File findMatches(File dir, String from, String to) {
     return null;
 }
 
-task updateCalamus(dependsOn: [downloadVersionDetails, nestJar]) {
+task updateCalamus(dependsOn: [downloadVersionDetails, mergeJars]) {
     group = mappingGenerationGroup
-    inputs.files(fromMainJar, mainJar, fromNestedJar, nestedJar)
+    inputs.files(fromMainJar, mainJar)
 
     outputs.file(calamusFile)
     outputs.upToDateWhen {
@@ -385,15 +411,18 @@ task updateCalamus(dependsOn: [downloadVersionDetails, nestJar]) {
             throw new RuntimeException("Cannot update calamus from ${from_version_id} to ${version_id}: calamus for ${from_version_id} does not exist!")
         }
 
-        File jar = nestedJar.exists() ? nestedJar : mainJar
         List<File> oldJars = new ArrayList<>()
         List<File> oldCalamusFiles = new ArrayList<>()
         List<File> matchesFiles = new ArrayList<>()
         List<String> args = new ArrayList<>()
 
-        oldJars.add(fromNestedJar.exists() ? fromNestedJar : fromMainJar)
+        oldJars.add(fromMainJar)
         oldCalamusFiles.add(fromCalamusFile)
-        matchesFiles.add(findMatches(from_version_id, version_id))
+        matchesFiles.add(findMatches(from_environment, from_minecraft_version, environment, minecraft_version))
+        args.add("--default-package")
+        args.add(defaultPackage)
+        args.add("--target-namespace")
+        args.add(namespace)
         args.add("--name-length")
         args.add(Integer.toString(nameLength))
         if (environment.isClient()) {
@@ -405,7 +434,7 @@ task updateCalamus(dependsOn: [downloadVersionDetails, nestJar]) {
             args.add(versionDetails.downloads.server.sha1)
         }
 
-        CalamusUtil.updateCalamus(oldJars, jar, oldCalamusFiles, calamusFile, matchesFiles, args.toArray(new String[args.size()]))
+        CalamusUtil.updateCalamus(oldJars, mainJar, oldCalamusFiles, calamusFile, matchesFiles, args.toArray(new String[args.size()]))
     }
 }
 
@@ -430,7 +459,6 @@ file('mappings').eachFile {
     def mcVer = it.name.replace(".tiny", "")
 
     if (publishedVersions != null && publishedVersions.contains(mcVer)) {
-        project.logger.lifecycle("Skipping ${mcVer} as it has already been released")
         return
     }
 
@@ -448,7 +476,7 @@ file('mappings').eachFile {
             new ConvertMappingsCommand().run(
                     "tiny",
                     v1MappingFile.path,
-                    "tinyv2:official:calamus",
+                    "tinyv2:official:${namespace}",
                     v2MappingFile.path
             )
         }
