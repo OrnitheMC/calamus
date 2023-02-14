@@ -74,6 +74,8 @@ def defaultPackage = "net/minecraft/unmapped/"
 def namespace = "intermediary"
 def nameLength = 7
 
+def maven_group = "calamus-${namespace}"
+
 enum Environment {
 
     MERGED, CLIENT, SERVER
@@ -438,8 +440,8 @@ task updateCalamus(dependsOn: [downloadVersionDetails, mergeJars]) {
     }
 }
 
-static List<String> getPublishedVersions() {
-    def xml = new URL("https://maven.ornithemc.net/releases/net/ornithemc/calamus/maven-metadata.xml").text
+static List<String> getPublishedVersions(def maven_group) {
+    def xml = new URL("https://maven.ornithemc.net/releases/net/ornithemc/${maven_group}/maven-metadata.xml").text
     def metadata = new XmlSlurper().parseText(xml)
     def versions = metadata.versioning.versions.version*.text()
     return versions
@@ -447,7 +449,7 @@ static List<String> getPublishedVersions() {
 
 def publishedVersions
 try {
-    publishedVersions = getPublishedVersions()
+    publishedVersions = getPublishedVersions(maven_group)
 } catch (ignored) {
 }
 
@@ -494,7 +496,7 @@ file('mappings').eachFile {
         publications {
             create("${mcVer.replace(" ", "")}_mavenJava", MavenPublication) {
                 groupId 'net.ornithemc'
-                artifactId "calamus"
+                artifactId maven_group
                 version mcVer
                 artifact(makeV1Jar.archiveFile) {
                     builtBy makeV1Jar
