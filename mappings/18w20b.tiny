@@ -337,11 +337,11 @@ CLASS	abm	net/minecraft/unmapped/C_3010262
 CLASS	abn	net/minecraft/unmapped/C_4637193
 CLASS	abr	net/minecraft/unmapped/C_5190407
 METHOD	abr	(Labe;Ljava/util/function/Function;Labc;)Labc;	a	m_9678962
-CLASS	abt	net/minecraft/util/datafix/optics/Adapter
+CLASS	abt	net/minecraft/unmapped/C_7765664
 METHOD	abt	(Ladf;Labd;)Labd;	a	m_2208621
 METHOD	abt	(Ljava/lang/Object;)Ljava/lang/Object;	a	m_6061955
 METHOD	abt	(Ljava/lang/Object;)Ljava/lang/Object;	b	m_1943482
-CLASS	abu	net/minecraft/util/datafix/optics/Affine
+CLASS	abu	net/minecraft/unmapped/C_2262531
 METHOD	abu	(Labd;)Labu;	a	m_6957375
 METHOD	abu	(Lacx;Lacz;Labd;)Labd;	a	m_1219940
 METHOD	abu	(Ljava/lang/Object;)Lwo;	a	m_7668423
@@ -350,7 +350,7 @@ METHOD	abu	(Lwo;)Ljava/lang/Object;	a	m_5927610
 METHOD	abu	(Lwy;)Ljava/lang/Object;	a	m_8650230
 METHOD	abu	(Ljava/lang/Object;)Lwo;	b	m_8435408
 METHOD	abu	(Ljava/lang/Object;Ljava/lang/Object;)Lwo;	b	m_9488711
-CLASS	abu$a	net/minecraft/util/datafix/optics/Affine$Instance
+CLASS	abu$a	net/minecraft/unmapped/C_2262531$C_2534666
 METHOD	abu$a	(Labd;Ljava/util/function/Function;Ljava/util/function/Function;Ljava/lang/Object;)Lwo;	a	m_9450766
 METHOD	abu$a	(Labu;Ljava/lang/Object;)Lwo;	a	m_0519671
 METHOD	abu$a	(Labu;Ljava/lang/Object;Ljava/lang/Object;)Lwo;	a	m_7736551
@@ -367,24 +367,24 @@ METHOD	abu$a	(Labu;Lwo;)Lwo;	b	m_0614045
 METHOD	abu$a	(Labu;Lwy;)Lwo;	b	m_7485573
 METHOD	abu$a	(Ljava/lang/Object;)Lwo;	b	m_3705110
 METHOD	abu$a	(Lwy;Ljava/lang/Object;)Lwy;	b	m_9733393
-CLASS	abv	net/minecraft/util/datafix/optics/Forget
+CLASS	abv	net/minecraft/unmapped/C_3261799
 METHOD	abv	(Ljava/lang/Object;)Ljava/lang/Object;	run	run
 METHOD	abv	(Labd;)Labv;	unbox	unbox
-CLASS	abv$a	net/minecraft/util/datafix/optics/Forget$Instance
+CLASS	abv$a	net/minecraft/unmapped/C_3261799$C_9795652
 METHOD	abv$a	(Labd;Ljava/util/function/Function;Ljava/lang/Object;)Ljava/lang/Object;	a	m_9128272
 METHOD	abv$a	(Ljava/util/function/Function;Labd;)Labd;	a	m_8427471
 METHOD	abv$a	(Labd;Lwy;)Ljava/lang/Object;	b	m_7860852
-CLASS	abv$a$a	net/minecraft/util/datafix/optics/Forget$Instance$Mu
-CLASS	abx	net/minecraft/util/datafix/optics/ForgetOpt
+CLASS	abv$a$a	net/minecraft/unmapped/C_3261799$C_9795652$C_2642081
+CLASS	abx	net/minecraft/unmapped/C_6869644
 METHOD	abx	(Ljava/lang/Object;)Ljava/util/Optional;	run	run
 METHOD	abx	(Labd;)Labx;	unbox	unbox
-CLASS	abx$a	net/minecraft/util/datafix/optics/ForgetOpt$Instance
+CLASS	abx$a	net/minecraft/unmapped/C_6869644$C_1722726
 METHOD	abx$a	(Labd;Ljava/util/function/Function;Ljava/lang/Object;)Ljava/util/Optional;	a	m_7054836
 METHOD	abx$a	(Labd;Lwo;)Ljava/util/Optional;	a	m_3133729
 METHOD	abx$a	(Ljava/util/function/Function;Labd;)Labd;	a	m_4377669
 METHOD	abx$a	(Labd;Lwo;)Ljava/util/Optional;	b	m_2810587
 METHOD	abx$a	(Labd;Lwy;)Ljava/util/Optional;	b	m_4193624
-CLASS	abx$a$a	net/minecraft/util/datafix/optics/ForgetOpt$Instance$Mu
+CLASS	abx$a$a	net/minecraft/unmapped/C_6869644$C_1722726$C_2900205
 CLASS	aby	net/minecraft/unmapped/C_2824358
 METHOD	aby	(Ljava/lang/Object;)Ljava/lang/Object;	get	get
 METHOD	aby	(Ladb;Labd;)Labd;	lambda$eval$0	lambda$eval$0
@@ -410,59 +410,59 @@ CLASS	ac$b	net/minecraft/unmapped/C_5383955$C_5613033
 FIELD	ac$b	[Lao;	a	f_4712888
 METHOD	ac$b	(Lsl;Ljava/util/Collection;)Z	a	m_1529738
 METHOD	ac$b	([Lao;)Lac$b;	a	m_6563098
-CLASS	aca	net/minecraft/util/datafix/optics/IdAdapter
+CLASS	aca	net/minecraft/unmapped/C_8541654
 METHOD	aca	(Ljava/lang/Object;)Z	equals	equals
 METHOD	aca	()Ljava/lang/String;	toString	toString
-CLASS	acb	net/minecraft/util/datafix/optics/Inj1
+CLASS	acb	net/minecraft/unmapped/C_9049246
 METHOD	acb	(Ljava/lang/Object;)Lwo;	a	m_2210997
 METHOD	acb	(Lwo;)Lwo;	a	m_1347800
 METHOD	acb	(Ljava/lang/Object;)Lwo;	d	m_1047224
 METHOD	acb	(Ljava/lang/Object;)Z	equals	equals
 METHOD	acb	()Ljava/lang/String;	toString	toString
-CLASS	acc	net/minecraft/util/datafix/optics/Inj2
+CLASS	acc	net/minecraft/unmapped/C_6391286
 METHOD	acc	(Ljava/lang/Object;)Lwo;	a	m_2443536
 METHOD	acc	(Lwo;)Lwo;	a	m_1422514
 METHOD	acc	(Ljava/lang/Object;)Lwo;	d	m_1018095
 METHOD	acc	(Ljava/lang/Object;)Z	equals	equals
 METHOD	acc	()Ljava/lang/String;	toString	toString
-CLASS	acd	net/minecraft/util/datafix/optics/InjTagged
+CLASS	acd	net/minecraft/unmapped/C_6480125
 FIELD	acd	Ljava/lang/Object;	a	f_9774715
 METHOD	acd	(Ljava/lang/Object;)Lwy;	a	m_8643469
 METHOD	acd	(Lwy;)Lwo;	a	m_3995150
 METHOD	acd	(Ljava/lang/Object;)Z	equals	equals
 METHOD	acd	()Ljava/lang/String;	toString	toString
-CLASS	ace	net/minecraft/util/datafix/optics/Lens
+CLASS	ace	net/minecraft/unmapped/C_9997573
 METHOD	ace	(Labd;)Lace;	a	m_2806176
 METHOD	ace	(Lacx;Labd;)Labd;	a	m_6081060
 METHOD	ace	(Ljava/lang/Object;)Ljava/lang/Object;	a	m_3439948
 METHOD	ace	(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;	a	m_0157002
 METHOD	ace	(Lwy;)Ljava/lang/Object;	a	m_2821739
 METHOD	ace	(Ljava/lang/Object;)Lwy;	b	m_8834648
-CLASS	ace$b	net/minecraft/util/datafix/optics/Lens$Instance
+CLASS	ace$b	net/minecraft/unmapped/C_9997573$C_0055031
 METHOD	ace$b	(Labd;Ljava/util/function/Function;Ljava/lang/Object;)Ljava/lang/Object;	a	m_1311674
 METHOD	ace$b	(Ljava/util/function/Function;Labd;Ljava/util/function/Function;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;	a	m_3701943
 METHOD	ace$b	(Ljava/util/function/Function;Ljava/util/function/Function;Labd;)Labd;	a	m_5020961
 METHOD	ace$b	(Labd;Ljava/lang/Object;Lwy;)Lwy;	b	m_0577902
 METHOD	ace$b	(Labd;Lwy;)Ljava/lang/Object;	b	m_7741729
-CLASS	acf	net/minecraft/util/datafix/optics/ListTraversal
+CLASS	acf	net/minecraft/unmapped/C_7725908
 METHOD	acf	(Labe;Lxp;Ljava/util/List;)Labc;	a	m_5614246
 METHOD	acf	(Ljava/util/List;Ljava/lang/Object;)Ljava/util/List;	a	m_4105178
 METHOD	acf	(Ljava/lang/Object;)Z	equals	equals
 METHOD	acf	()Ljava/lang/String;	toString	toString
-CLASS	acg	net/minecraft/util/datafix/optics/Optic
+CLASS	acg	net/minecraft/unmapped/C_9470892
 METHOD	acg	(Lacg;)Lacg;	a	m_8115087
 METHOD	acg	(Lcom/google/common/reflect/TypeToken;Lcom/google/common/reflect/TypeToken;)Z	a	m_9429538
 METHOD	acg	(Ljava/util/Set;Lcom/google/common/reflect/TypeToken;)Ljava/util/Optional;	a	m_3790192
 METHOD	acg	(Lacg;)Lacg;	b	m_1898193
 METHOD	acg	(Labc;)Lxp;	eval	eval
-CLASS	acg$a	net/minecraft/util/datafix/optics/Optic$CompositionOptic
+CLASS	acg$a	net/minecraft/unmapped/C_9470892$C_4023362
 FIELD	acg$a	Lacg;	a	f_9425457
 FIELD	acg$a	Lacg;	b	f_1363546
 METHOD	acg$a	()Lacg;	a	m_7178611
 METHOD	acg$a	(Ljava/lang/Object;)Z	equals	equals
 METHOD	acg$a	()I	hashCode	hashCode
 METHOD	acg$a	()Ljava/lang/String;	toString	toString
-CLASS	ach	net/minecraft/util/datafix/optics/Optics
+CLASS	ach	net/minecraft/unmapped/C_2842693
 METHOD	ach	()Labt;	a	m_5077650
 METHOD	ach	(Labd;)Lxp;	a	m_1666121
 METHOD	ach	(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;	a	m_0983285
@@ -480,15 +480,15 @@ METHOD	ach	(Lacg;)Labu;	d	m_0231014
 METHOD	ach	()Lacc;	e	m_8856405
 METHOD	ach	(Lacg;)Lacs;	f	m_2863695
 METHOD	ach	(Ljava/util/function/Function;)Lxp;	f	m_9536761
-CLASS	ach$1	net/minecraft/util/datafix/optics/Optics$1
-CLASS	ach$11	net/minecraft/util/datafix/optics/Optics$11
+CLASS	ach$1	net/minecraft/unmapped/C_2842693$1
+CLASS	ach$11	net/minecraft/unmapped/C_2842693$11
 FIELD	ach$11	Lwo;	a	f_4100108
 FIELD	ach$11	Ljava/lang/String;	b	f_4135192
 METHOD	ach$11	()Ljava/lang/String;	toString	toString
-CLASS	ach$5	net/minecraft/util/datafix/optics/Optics$5
+CLASS	ach$5	net/minecraft/unmapped/C_2842693$5
 FIELD	ach$5	Ljava/util/function/Function;	a	f_5889218
 FIELD	ach$5	Ljava/util/function/BiFunction;	b	f_1449874
-CLASS	ach$7	net/minecraft/util/datafix/optics/Optics$7
+CLASS	ach$7	net/minecraft/unmapped/C_2842693$7
 FIELD	ach$7	Ljava/util/function/Function;	a	f_3732407
 FIELD	ach$7	Ljava/util/function/BiFunction;	b	f_0782962
 CLASS	acj	net/minecraft/unmapped/C_2046839
@@ -496,23 +496,23 @@ METHOD	acj	(Lacz;Labd;)Labd;	a	m_2790213
 METHOD	acj	(Lwo;)Ljava/lang/Object;	a	m_2763594
 METHOD	acj	(Ljava/lang/Object;)Ljava/lang/Object;	b	m_8354018
 METHOD	acj	(Ljava/lang/Object;)Lwo;	c	m_3210407
-CLASS	acl	net/minecraft/util/datafix/optics/Proj1
+CLASS	acl	net/minecraft/unmapped/C_0519509
 METHOD	acl	(Ljava/lang/Object;Lwy;)Lwy;	a	m_5655029
 METHOD	acl	(Lwy;)Ljava/lang/Object;	a	m_2493290
 METHOD	acl	(Ljava/lang/Object;)Z	equals	equals
 METHOD	acl	()Ljava/lang/String;	toString	toString
-CLASS	acm	net/minecraft/util/datafix/optics/Proj2
+CLASS	acm	net/minecraft/unmapped/C_5735985
 METHOD	acm	(Ljava/lang/Object;Lwy;)Lwy;	a	m_9366871
 METHOD	acm	(Lwy;)Ljava/lang/Object;	a	m_0688455
 METHOD	acm	(Ljava/lang/Object;)Z	equals	equals
 METHOD	acm	()Ljava/lang/String;	toString	toString
-CLASS	aco	net/minecraft/util/datafix/optics/ReForgetC
+CLASS	aco	net/minecraft/unmapped/C_2870092
 METHOD	aco	()Lwo;	a	m_0793905
 METHOD	aco	(Labd;)Laco;	a	m_4471705
 METHOD	aco	(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;	a	m_4371984
 METHOD	aco	(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;	a	m_0219231
 METHOD	aco	(Ljava/lang/Object;Ljava/util/function/Function;)Ljava/lang/Object;	a	m_5064825
-CLASS	aco$a	net/minecraft/util/datafix/optics/ReForgetC$Instance
+CLASS	aco$a	net/minecraft/unmapped/C_2870092$C_1985901
 METHOD	aco$a	(Ljava/util/function/BiFunction;)Lwo;	a	m_6242673
 METHOD	aco$a	(Ljava/util/function/BiFunction;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;	a	m_8667929
 METHOD	aco$a	(Ljava/util/function/BiFunction;Lwo;Ljava/lang/Object;)Lwo;	a	m_4541443
@@ -532,47 +532,47 @@ METHOD	aco$a	(Ljava/util/function/Function;Ljava/util/function/Function;)Lwo;	b	
 METHOD	aco$a	(Ljava/util/function/Function;Lwy;Ljava/lang/Object;)Lwy;	b	m_7523347
 METHOD	aco$a	(Ljava/util/function/BiFunction;)Lwo;	d	m_4891651
 METHOD	aco$a	(Ljava/util/function/Function;)Lwo;	d	m_8542944
-CLASS	aco$a$a	net/minecraft/util/datafix/optics/ReForgetC$Instance$Mu
-CLASS	acs	net/minecraft/util/datafix/optics/Traversal
+CLASS	aco$a$a	net/minecraft/unmapped/C_2870092$C_1985901$C_1350021
+CLASS	acs	net/minecraft/unmapped/C_7384823
 METHOD	acs	(Labd;)Lacs;	a	m_9632767
 METHOD	acs	(Ladj;Labd;)Labd;	a	m_0800890
-CLASS	acs$a	net/minecraft/util/datafix/optics/Traversal$C_0011545
+CLASS	acs$a	net/minecraft/unmapped/C_7384823$C_0011545
 METHOD	acs$a	(Ljava/util/function/Function;Ljava/util/function/Function;Labd;)Labd;	a	m_8030890
-CLASS	acs$a$1	net/minecraft/util/datafix/optics/Traversal$C_0011545$1
+CLASS	acs$a$1	net/minecraft/unmapped/C_7384823$C_0011545$1
 FIELD	acs$a$1	Ljava/util/function/Function;	a	f_1726231
 FIELD	acs$a$1	Labd;	b	f_3189264
 FIELD	acs$a$1	Ljava/util/function/Function;	c	f_4732223
 FIELD	acs$a$1	Lacs$a;	d	f_6837166
 METHOD	acs$a$1	(Labe;Ljava/util/function/Function;Labd;Lxp;Ljava/util/function/Function;Ljava/lang/Object;)Labc;	a	m_1286711
-CLASS	acs$a$2	net/minecraft/util/datafix/optics/Traversal$C_0011545$2
+CLASS	acs$a$2	net/minecraft/unmapped/C_7384823$C_0011545$2
 FIELD	acs$a$2	Lact;	a	f_3928640
 FIELD	acs$a$2	Labd;	b	f_7396374
 FIELD	acs$a$2	Lacs$a;	c	f_4493645
-CLASS	act	net/minecraft/util/datafix/optics/Wander
+CLASS	act	net/minecraft/unmapped/C_4638487
 METHOD	act	(Labe;Lxp;)Lxp;	a	m_8712408
-CLASS	acv	net/minecraft/util/datafix/optics/profunctors/AffineP
-CLASS	acv$a	net/minecraft/util/datafix/optics/profunctors/AffineP$Mu
+CLASS	acv	net/minecraft/unmapped/C_3838382
+CLASS	acv$a	net/minecraft/unmapped/C_3838382$C_6621542
 FIELD	acv$a	Lcom/google/common/reflect/TypeToken;	b	f_3634673
-CLASS	acv$a$1	net/minecraft/util/datafix/optics/profunctors/AffineP$Mu$1
+CLASS	acv$a$1	net/minecraft/unmapped/C_3838382$C_6621542$1
 CLASS	acw	net/minecraft/unmapped/C_2470221
 METHOD	acw	(Ljava/util/function/Supplier;Ljava/util/function/Function;Ljava/util/function/Function;)Labd;	a	m_1415171
 METHOD	acw	(Ljava/util/function/Function;Ljava/util/function/Function;)Lxp;	b	m_5040626
-CLASS	acx	net/minecraft/util/datafix/optics/profunctors/Cartesian
+CLASS	acx	net/minecraft/unmapped/C_4112331
 METHOD	acx	(Labd;)Labd;	a	m_6743002
 METHOD	acx	(Labc;)Lacx;	b	m_5667844
-CLASS	acx$a	net/minecraft/util/datafix/optics/profunctors/Cartesian$Mu
+CLASS	acx$a	net/minecraft/unmapped/C_4112331$C_6782600
 FIELD	acx$a	Lcom/google/common/reflect/TypeToken;	c	f_6357125
-CLASS	acx$a$1	net/minecraft/util/datafix/optics/profunctors/Cartesian$Mu$1
-CLASS	acy	net/minecraft/util/datafix/optics/profunctors/Closed
+CLASS	acx$a$1	net/minecraft/unmapped/C_4112331$C_6782600$1
+CLASS	acy	net/minecraft/unmapped/C_6188125
 METHOD	acy	(Labd;)Labd;	a	m_7829944
 METHOD	acy	(Labc;)Lacy;	b	m_3937567
-CLASS	acz	net/minecraft/util/datafix/optics/profunctors/Cocartesian
+CLASS	acz	net/minecraft/unmapped/C_2114684
 METHOD	acz	(Labc;)Lacz;	b	m_5828744
 METHOD	acz	(Labd;)Labd;	c	m_3253031
 METHOD	acz	(Labd;)Labd;	d	m_7624308
-CLASS	acz$a	net/minecraft/util/datafix/optics/profunctors/Cocartesian$Mu
+CLASS	acz$a	net/minecraft/unmapped/C_2114684$C_2352775
 FIELD	acz$a	Lcom/google/common/reflect/TypeToken;	c	f_4765986
-CLASS	acz$a$1	net/minecraft/util/datafix/optics/profunctors/Cocartesian$Mu$1
+CLASS	acz$a$1	net/minecraft/unmapped/C_2114684$C_2352775$1
 CLASS	ad	net/minecraft/unmapped/C_5802230
 FIELD	ad	Loj;	a	f_2564539
 FIELD	ad	Ljava/util/Map;	b	f_7014155
@@ -590,42 +590,42 @@ CLASS	ad$b	net/minecraft/unmapped/C_5802230$C_4910499
 FIELD	ad$b	Laz;	a	f_9452945
 METHOD	ad$b	(Laz;)Lad$b;	a	m_6449745
 METHOD	ad$b	(Lbmd;)Z	a	m_6795112
-CLASS	adb	net/minecraft/util/datafix/optics/profunctors/GetterP
+CLASS	adb	net/minecraft/unmapped/C_0554912
 METHOD	adb	(Labd;)Labd;	a	m_5821670
 METHOD	adb	(Ljava/lang/Object;)Ljava/lang/Void;	a	m_1128579
 METHOD	adb	(Labd;)Labd;	b	m_6557920
 METHOD	adb	(Ljava/lang/Object;)Ljava/lang/Void;	b	m_7391608
 METHOD	adb	(Labc;)Ladb;	c	m_7231769
 CLASS	adc	net/minecraft/unmapped/C_4345896
-CLASS	adc$a	net/minecraft/unmapped/C_4345896$Mu
+CLASS	adc$a	net/minecraft/unmapped/C_4345896$C_6178367
 CLASS	add	net/minecraft/unmapped/C_8261394
 CLASS	add$a	net/minecraft/unmapped/C_8261394$C_2478239
 CLASS	ade	net/minecraft/unmapped/C_1323299
 CLASS	ade$a	net/minecraft/unmapped/C_1323299$C_8071621
-CLASS	adf	net/minecraft/util/datafix/optics/profunctors/Profunctor
+CLASS	adf	net/minecraft/unmapped/C_6763932
 METHOD	adf	(Labd;Ljava/util/function/Function;)Labd;	a	m_2507171
 METHOD	adf	(Labd;Ljava/util/function/Function;Ljava/util/function/Function;)Labd;	a	m_6966947
 METHOD	adf	(Ljava/util/function/Function;Ljava/util/function/Function;)Lxp;	a	m_9489558
 METHOD	adf	(Labd;Ljava/util/function/Function;)Labd;	b	m_1929770
 METHOD	adf	(Labc;)Ladf;	d	m_1814631
-CLASS	adf$a	net/minecraft/util/datafix/optics/profunctors/Profunctor$Mu
+CLASS	adf$a	net/minecraft/unmapped/C_6763932$C_9910129
 FIELD	adf$a	Lcom/google/common/reflect/TypeToken;	d	f_3218631
-CLASS	adf$a$1	net/minecraft/util/datafix/optics/profunctors/Profunctor$Mu$1
+CLASS	adf$a$1	net/minecraft/unmapped/C_6763932$C_9910129$1
 CLASS	adi	net/minecraft/unmapped/C_3206928
-CLASS	adi$a	net/minecraft/unmapped/C_3206928$Mu
-CLASS	adj	net/minecraft/util/datafix/optics/profunctors/TraversalP
+CLASS	adi$a	net/minecraft/unmapped/C_3206928$C_1712800
+CLASS	adj	net/minecraft/unmapped/C_6159121
 METHOD	adj	(Labr;Labd;)Labd;	a	m_0090696
 METHOD	adj	(Lact;Labd;)Labd;	a	m_6833635
 METHOD	adj	(Lwo;)Labc;	a	m_4597870
 METHOD	adj	(Lwy;)Labc;	a	m_6937582
 METHOD	adj	(Labc;)Ladj;	e	m_3168009
-CLASS	adj$1	net/minecraft/util/datafix/optics/profunctors/TraversalP$1
+CLASS	adj$1	net/minecraft/unmapped/C_6159121$1
 FIELD	adj$1	Labr;	a	f_6242362
 FIELD	adj$1	Ladj;	b	f_2065786
 METHOD	adj$1	(Labr;Labe;Lxp;Labc;)Labc;	a	m_9583604
-CLASS	adj$a	net/minecraft/util/datafix/optics/profunctors/TraversalP$Mu
+CLASS	adj$a	net/minecraft/unmapped/C_6159121$C_0305007
 FIELD	adj$a	Lcom/google/common/reflect/TypeToken;	e	f_4082553
-CLASS	adj$a$1	net/minecraft/util/datafix/optics/profunctors/TraversalP$Mu$1
+CLASS	adj$a$1	net/minecraft/unmapped/C_6159121$C_0305007$1
 CLASS	adm	net/minecraft/unmapped/C_4817250
 CLASS	adn	net/minecraft/unmapped/C_2367458
 FIELD	adn	Lit/unimi/dsi/fastutil/objects/Object2IntMap;	a	f_3053362
@@ -17371,7 +17371,7 @@ METHOD	chs	(II)V	a	m_1719509
 METHOD	chs	(I)V	b	m_1450705
 METHOD	chs	(I)Ljava/nio/ByteBuffer;	c	m_6417164
 METHOD	chs	(I)Ljava/nio/FloatBuffer;	h	m_5171659
-CLASS	cht	net/minecraft/client/Minecraft
+CLASS	cht	net/minecraft/unmapped/C_8105098
 FIELD	cht	Z	C	f_4320283
 FIELD	cht	Z	D	f_3239446
 FIELD	cht	Lorg/apache/logging/log4j/Logger;	E	f_1870900
@@ -17571,56 +17571,56 @@ METHOD	cht	()Z	w	m_3844208
 METHOD	cht	()Z	x	m_9805322
 METHOD	cht	()Ldhp;	y	m_4351464
 METHOD	cht	()V	z	m_2805239
-CLASS	cht$1	net/minecraft/client/Minecraft$1
+CLASS	cht$1	net/minecraft/unmapped/C_8105098$1
 FIELD	cht$1	Lcht;	a	f_0519636
 METHOD	cht$1	()V	run	run
-CLASS	cht$10	net/minecraft/client/Minecraft$10
+CLASS	cht$10	net/minecraft/unmapped/C_8105098$10
 FIELD	cht$10	Lcht;	a	f_7466146
 METHOD	cht$10	()Ljava/lang/String;	a	m_0284574
 METHOD	cht$10	()Ljava/lang/Object;	call	call
-CLASS	cht$11	net/minecraft/client/Minecraft$11
+CLASS	cht$11	net/minecraft/unmapped/C_8105098$11
 FIELD	cht$11	Lcht;	a	f_0199112
 METHOD	cht$11	()Ljava/lang/String;	a	m_5374894
 METHOD	cht$11	()Ljava/lang/Object;	call	call
-CLASS	cht$12	net/minecraft/client/Minecraft$12
+CLASS	cht$12	net/minecraft/unmapped/C_8105098$12
 FIELD	cht$12	Lcht;	a	f_7165591
 METHOD	cht$12	()Ljava/lang/String;	a	m_8252660
 METHOD	cht$12	()Ljava/lang/Object;	call	call
-CLASS	cht$13	net/minecraft/client/Minecraft$13
+CLASS	cht$13	net/minecraft/unmapped/C_8105098$13
 FIELD	cht$13	Lcht;	a	f_9093702
 METHOD	cht$13	()Ljava/lang/String;	a	m_3026083
 METHOD	cht$13	()Ljava/lang/Object;	call	call
-CLASS	cht$14	net/minecraft/client/Minecraft$14
+CLASS	cht$14	net/minecraft/unmapped/C_8105098$14
 FIELD	cht$14	Lcht;	a	f_6229147
 METHOD	cht$14	()Ljava/lang/String;	a	m_7375447
 METHOD	cht$14	()Ljava/lang/Object;	call	call
-CLASS	cht$2	net/minecraft/client/Minecraft$2
+CLASS	cht$2	net/minecraft/unmapped/C_8105098$2
 FIELD	cht$2	Lcht;	a	f_3385690
 METHOD	cht$2	()Ljava/lang/String;	a	m_3001296
 METHOD	cht$2	()Ljava/lang/Object;	call	call
-CLASS	cht$3	net/minecraft/client/Minecraft$3
+CLASS	cht$3	net/minecraft/unmapped/C_8105098$3
 FIELD	cht$3	Lcht;	a	f_0902528
 METHOD	cht$3	()Ljava/lang/String;	a	m_5150530
 METHOD	cht$3	()Ljava/lang/Object;	call	call
-CLASS	cht$4	net/minecraft/client/Minecraft$4
+CLASS	cht$4	net/minecraft/unmapped/C_8105098$4
 FIELD	cht$4	Lcht;	a	f_5649614
 METHOD	cht$4	()Ljava/lang/String;	a	m_7549177
 METHOD	cht$4	()Ljava/lang/Object;	call	call
-CLASS	cht$5	net/minecraft/client/Minecraft$5
+CLASS	cht$5	net/minecraft/unmapped/C_8105098$5
 FIELD	cht$5	Lcht;	a	f_4966088
 METHOD	cht$5	()V	run	run
-CLASS	cht$6	net/minecraft/client/Minecraft$6
+CLASS	cht$6	net/minecraft/unmapped/C_8105098$6
 FIELD	cht$6	[I	a	f_3664039
 FIELD	cht$6	[I	b	f_3613042
-CLASS	cht$7	net/minecraft/client/Minecraft$7
+CLASS	cht$7	net/minecraft/unmapped/C_8105098$7
 FIELD	cht$7	Lcht;	a	f_2048459
 METHOD	cht$7	()Ljava/lang/String;	a	m_8418756
 METHOD	cht$7	()Ljava/lang/Object;	call	call
-CLASS	cht$8	net/minecraft/client/Minecraft$8
+CLASS	cht$8	net/minecraft/unmapped/C_8105098$8
 FIELD	cht$8	Lcht;	a	f_5345822
 METHOD	cht$8	()Ljava/lang/String;	a	m_2029182
 METHOD	cht$8	()Ljava/lang/Object;	call	call
-CLASS	cht$9	net/minecraft/client/Minecraft$9
+CLASS	cht$9	net/minecraft/unmapped/C_8105098$9
 FIELD	cht$9	Lcht;	a	f_0886493
 METHOD	cht$9	()Ljava/lang/String;	a	m_3863477
 METHOD	cht$9	()Ljava/lang/Object;	call	call
