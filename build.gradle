@@ -365,8 +365,10 @@ static File findMatches(File dir, Environment fromEnv, String from, Environment 
     String name
 
     if (fromEnv == toEnv) {
+        dir = new File(dir, fromEnv.name().toLowerCase())
         name = "${from}#${to}.match"
     } else {
+        dir = new File(dir, "cross")
         name = "${fromEnv.name().toLowerCase()}-${from}#${toEnv.name().toLowerCase()}-${to}.match"
     }
 
