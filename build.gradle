@@ -191,14 +191,22 @@ task downloadVersionDetails(dependsOn: downloadVersionsManifest) {
         switch (environment) {
         case Environment.CLIENT:
             mainJar = clientJar
-            fromMainJar = fromClientJar
             break
         case Environment.SERVER:
             mainJar = serverJar
-            fromMainJar = fromServerJar
             break
         case Environment.MERGED:
             mainJar = mergedJar
+            break
+        }
+        switch (from_environment) {
+        case Environment.CLIENT:
+            fromMainJar = fromClientJar
+            break
+        case Environment.SERVER:
+            fromMainJar = fromServerJar
+            break
+        case Environment.MERGED:
             fromMainJar = fromMergedJar
             break
         }
@@ -304,8 +312,11 @@ static File findMatches(Environment fromEnv, String from, Environment toEnv, Str
     def versionTranslations = new HashMap<String, String>() {
         {
             put("b1.8-pre1-2"   , "b1.8-pre1-201109091357")
+            put("b1.9-pre3"     , "b1.9-pre3-201110061350")
             put("b1.9-pre3-2"   , "b1.9-pre3-201110061402")
             put("b1.9-pre4-1435", "b1.9-pre4-201110131434")
+            put("b1.9-pre4-1440", "b1.9-pre4-201110131440")
+            put("1.0"           , "1.0.0")
             put("1.3"           , "1.3-pre-07261249")
             put("1.4"           , "1.4-pre")
             put("1.4.1"         , "1.4.1-pre-10231538")
