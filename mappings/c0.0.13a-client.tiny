@@ -1,24 +1,24 @@
 v1	official	intermediary
 CLASS	com/mojang/minecraft/Entity	com/mojang/minecraft/Entity
 FIELD	com/mojang/minecraft/Entity	F	bbHeight	bbHeight
-FIELD	com/mojang/minecraft/Entity	Lcom/mojang/minecraft/phys/AABB;	bb	f_6149935
+FIELD	com/mojang/minecraft/Entity	Lcom/mojang/minecraft/phys/AABB;	bb	bb
 FIELD	com/mojang/minecraft/Entity	F	bbWidth	bbWidth
 FIELD	com/mojang/minecraft/Entity	F	heightOffset	heightOffset
 FIELD	com/mojang/minecraft/Entity	Z	horizontalCollision	horizontalCollision
 FIELD	com/mojang/minecraft/Entity	Lcom/mojang/minecraft/level/Level;	level	level
 FIELD	com/mojang/minecraft/Entity	Z	onGround	onGround
 FIELD	com/mojang/minecraft/Entity	Z	removed	removed
-FIELD	com/mojang/minecraft/Entity	F	x	f_3530110
+FIELD	com/mojang/minecraft/Entity	F	x	x
 FIELD	com/mojang/minecraft/Entity	F	xRot	xRot
-FIELD	com/mojang/minecraft/Entity	F	xd	f_6592976
-FIELD	com/mojang/minecraft/Entity	F	xo	f_6346574
-FIELD	com/mojang/minecraft/Entity	F	y	f_7519982
+FIELD	com/mojang/minecraft/Entity	F	xd	xd
+FIELD	com/mojang/minecraft/Entity	F	xo	xo
+FIELD	com/mojang/minecraft/Entity	F	y	y
 FIELD	com/mojang/minecraft/Entity	F	yRot	yRot
-FIELD	com/mojang/minecraft/Entity	F	yd	f_7079437
-FIELD	com/mojang/minecraft/Entity	F	yo	f_4039806
-FIELD	com/mojang/minecraft/Entity	F	z	f_2049069
-FIELD	com/mojang/minecraft/Entity	F	zd	f_8299820
-FIELD	com/mojang/minecraft/Entity	F	zo	f_8072357
+FIELD	com/mojang/minecraft/Entity	F	yd	yd
+FIELD	com/mojang/minecraft/Entity	F	yo	yo
+FIELD	com/mojang/minecraft/Entity	F	z	z
+FIELD	com/mojang/minecraft/Entity	F	zd	zd
+FIELD	com/mojang/minecraft/Entity	F	zo	zo
 METHOD	com/mojang/minecraft/Entity	(FFF)Z	isFree	isFree
 METHOD	com/mojang/minecraft/Entity	()Z	isInLava	isInLava
 METHOD	com/mojang/minecraft/Entity	()Z	isInWater	isInWater
@@ -33,11 +33,11 @@ METHOD	com/mojang/minecraft/Entity	(FF)V	setSize	setSize
 METHOD	com/mojang/minecraft/Entity	()V	tick	tick
 METHOD	com/mojang/minecraft/Entity	(FF)V	turn	turn
 CLASS	com/mojang/minecraft/HitResult	com/mojang/minecraft/HitResult
-FIELD	com/mojang/minecraft/HitResult	I	f	f_9466041
+FIELD	com/mojang/minecraft/HitResult	I	f	f
 FIELD	com/mojang/minecraft/HitResult	I	type	type
-FIELD	com/mojang/minecraft/HitResult	I	x	f_3481974
-FIELD	com/mojang/minecraft/HitResult	I	y	f_9550480
-FIELD	com/mojang/minecraft/HitResult	I	z	f_1671864
+FIELD	com/mojang/minecraft/HitResult	I	x	x
+FIELD	com/mojang/minecraft/HitResult	I	y	y
+FIELD	com/mojang/minecraft/HitResult	I	z	z
 METHOD	com/mojang/minecraft/HitResult	(Lcom/mojang/minecraft/Player;I)F	distanceTo	distanceTo
 METHOD	com/mojang/minecraft/HitResult	(Lcom/mojang/minecraft/Player;Lcom/mojang/minecraft/HitResult;I)Z	isCloserThan	isCloserThan
 CLASS	com/mojang/minecraft/Minecraft	com/mojang/minecraft/Minecraft
@@ -53,7 +53,7 @@ FIELD	com/mojang/minecraft/Minecraft	Ljava/lang/String;	fpsString	fpsString
 FIELD	com/mojang/minecraft/Minecraft	Z	fullscreen	fullscreen
 FIELD	com/mojang/minecraft/Minecraft	I	height	height
 FIELD	com/mojang/minecraft/Minecraft	Lcom/mojang/minecraft/HitResult;	hitResult	hitResult
-FIELD	com/mojang/minecraft/Minecraft	Ljava/nio/FloatBuffer;	lb	f_6477821
+FIELD	com/mojang/minecraft/Minecraft	Ljava/nio/FloatBuffer;	lb	lb
 FIELD	com/mojang/minecraft/Minecraft	Lcom/mojang/minecraft/level/levelgen/LevelGen;	levelGen	levelGen
 FIELD	com/mojang/minecraft/Minecraft	Lcom/mojang/minecraft/level/LevelIO;	levelIo	levelIo
 FIELD	com/mojang/minecraft/Minecraft	Lcom/mojang/minecraft/level/Level;	level	level
@@ -124,7 +124,7 @@ CLASS	com/mojang/minecraft/Timer	com/mojang/minecraft/Timer
 FIELD	com/mojang/minecraft/Timer	J	MAX_NS_PER_UPDATE	MAX_NS_PER_UPDATE
 FIELD	com/mojang/minecraft/Timer	I	MAX_TICKS_PER_UPDATE	MAX_TICKS_PER_UPDATE
 FIELD	com/mojang/minecraft/Timer	J	NS_PER_SECOND	NS_PER_SECOND
-FIELD	com/mojang/minecraft/Timer	F	a	f_9324515
+FIELD	com/mojang/minecraft/Timer	F	a	a
 FIELD	com/mojang/minecraft/Timer	F	fps	fps
 FIELD	com/mojang/minecraft/Timer	J	lastTime	lastTime
 FIELD	com/mojang/minecraft/Timer	F	passedTime	passedTime
@@ -139,13 +139,13 @@ FIELD	com/mojang/minecraft/character/Cube	Z	compiled	compiled
 FIELD	com/mojang/minecraft/character/Cube	I	list	list
 FIELD	com/mojang/minecraft/character/Cube	[Lcom/mojang/minecraft/character/Polygon;	polygons	polygons
 FIELD	com/mojang/minecraft/character/Cube	[Lcom/mojang/minecraft/character/Vertex;	vertices	vertices
-FIELD	com/mojang/minecraft/character/Cube	F	x	f_8501929
+FIELD	com/mojang/minecraft/character/Cube	F	x	x
 FIELD	com/mojang/minecraft/character/Cube	F	xRot	xRot
 FIELD	com/mojang/minecraft/character/Cube	I	xTexOffs	xTexOffs
-FIELD	com/mojang/minecraft/character/Cube	F	y	f_8710519
+FIELD	com/mojang/minecraft/character/Cube	F	y	y
 FIELD	com/mojang/minecraft/character/Cube	F	yRot	yRot
 FIELD	com/mojang/minecraft/character/Cube	I	yTexOffs	yTexOffs
-FIELD	com/mojang/minecraft/character/Cube	F	z	f_2757164
+FIELD	com/mojang/minecraft/character/Cube	F	z	z
 FIELD	com/mojang/minecraft/character/Cube	F	zRot	zRot
 METHOD	com/mojang/minecraft/character/Cube	(FFFIII)V	addBox	addBox
 METHOD	com/mojang/minecraft/character/Cube	()V	compile	compile
@@ -157,15 +157,15 @@ FIELD	com/mojang/minecraft/character/Polygon	I	vertexCount	vertexCount
 FIELD	com/mojang/minecraft/character/Polygon	[Lcom/mojang/minecraft/character/Vertex;	vertices	vertices
 METHOD	com/mojang/minecraft/character/Polygon	()V	render	render
 CLASS	com/mojang/minecraft/character/Vec3	com/mojang/minecraft/character/Vec3
-FIELD	com/mojang/minecraft/character/Vec3	F	x	f_8797516
-FIELD	com/mojang/minecraft/character/Vec3	F	y	f_7064947
-FIELD	com/mojang/minecraft/character/Vec3	F	z	f_1767139
+FIELD	com/mojang/minecraft/character/Vec3	F	x	x
+FIELD	com/mojang/minecraft/character/Vec3	F	y	y
+FIELD	com/mojang/minecraft/character/Vec3	F	z	z
 METHOD	com/mojang/minecraft/character/Vec3	(Lcom/mojang/minecraft/character/Vec3;F)Lcom/mojang/minecraft/character/Vec3;	interpolateTo	interpolateTo
 METHOD	com/mojang/minecraft/character/Vec3	(FFF)V	set	set
 CLASS	com/mojang/minecraft/character/Vertex	com/mojang/minecraft/character/Vertex
 FIELD	com/mojang/minecraft/character/Vertex	Lcom/mojang/minecraft/character/Vec3;	pos	pos
-FIELD	com/mojang/minecraft/character/Vertex	F	u	f_5311158
-FIELD	com/mojang/minecraft/character/Vertex	F	v	f_9595578
+FIELD	com/mojang/minecraft/character/Vertex	F	u	u
+FIELD	com/mojang/minecraft/character/Vertex	F	v	v
 METHOD	com/mojang/minecraft/character/Vertex	(FF)Lcom/mojang/minecraft/character/Vertex;	remap	remap
 CLASS	com/mojang/minecraft/character/Zombie	com/mojang/minecraft/character/Zombie
 FIELD	com/mojang/minecraft/character/Zombie	F	rotA	rotA
@@ -193,7 +193,7 @@ FIELD	com/mojang/minecraft/comm/SocketConnection	I	BUFFER_SIZE	BUFFER_SIZE
 FIELD	com/mojang/minecraft/comm/SocketConnection	I	bytesRead	bytesRead
 FIELD	com/mojang/minecraft/comm/SocketConnection	Z	connected	connected
 FIELD	com/mojang/minecraft/comm/SocketConnection	Lcom/mojang/minecraft/comm/ConnectionListener;	connectionListener	connectionListener
-FIELD	com/mojang/minecraft/comm/SocketConnection	Ljava/io/BufferedInputStream;	in	f_4439276
+FIELD	com/mojang/minecraft/comm/SocketConnection	Ljava/io/BufferedInputStream;	in	in
 FIELD	com/mojang/minecraft/comm/SocketConnection	J	lastRead	lastRead
 FIELD	com/mojang/minecraft/comm/SocketConnection	Ljava/io/BufferedOutputStream;	out	out
 FIELD	com/mojang/minecraft/comm/SocketConnection	Ljava/nio/ByteBuffer;	readBuffer	readBuffer
@@ -217,12 +217,12 @@ FIELD	com/mojang/minecraft/comm/SocketServer	Lcom/mojang/minecraft/comm/ServerLi
 FIELD	com/mojang/minecraft/comm/SocketServer	Ljava/nio/channels/ServerSocketChannel;	ssc	ssc
 METHOD	com/mojang/minecraft/comm/SocketServer	()V	tick	tick
 CLASS	com/mojang/minecraft/gui/Button	com/mojang/minecraft/gui/Button
-FIELD	com/mojang/minecraft/gui/Button	I	h	f_7845401
-FIELD	com/mojang/minecraft/gui/Button	I	id	f_5920996
+FIELD	com/mojang/minecraft/gui/Button	I	h	h
+FIELD	com/mojang/minecraft/gui/Button	I	id	id
 FIELD	com/mojang/minecraft/gui/Button	Ljava/lang/String;	msg	msg
-FIELD	com/mojang/minecraft/gui/Button	I	w	f_9527567
-FIELD	com/mojang/minecraft/gui/Button	I	x	f_3923091
-FIELD	com/mojang/minecraft/gui/Button	I	y	f_8532347
+FIELD	com/mojang/minecraft/gui/Button	I	w	w
+FIELD	com/mojang/minecraft/gui/Button	I	x	x
+FIELD	com/mojang/minecraft/gui/Button	I	y	y
 CLASS	com/mojang/minecraft/gui/Font	com/mojang/minecraft/gui/Font
 FIELD	com/mojang/minecraft/gui/Font	[I	charWidths	charWidths
 FIELD	com/mojang/minecraft/gui/Font	I	fontTexture	fontTexture
@@ -254,20 +254,20 @@ FIELD	com/mojang/minecraft/level/Chunk	J	dirtiedTime	dirtiedTime
 FIELD	com/mojang/minecraft/level/Chunk	Z	dirty	dirty
 FIELD	com/mojang/minecraft/level/Chunk	Lcom/mojang/minecraft/level/Level;	level	level
 FIELD	com/mojang/minecraft/level/Chunk	I	lists	lists
-FIELD	com/mojang/minecraft/level/Chunk	Lcom/mojang/minecraft/renderer/Tesselator;	t	f_3580586
+FIELD	com/mojang/minecraft/level/Chunk	Lcom/mojang/minecraft/renderer/Tesselator;	t	t
 FIELD	com/mojang/minecraft/level/Chunk	J	totalTime	totalTime
 FIELD	com/mojang/minecraft/level/Chunk	I	totalUpdates	totalUpdates
 FIELD	com/mojang/minecraft/level/Chunk	I	updates	updates
 FIELD	com/mojang/minecraft/level/Chunk	Z	visible	visible
-FIELD	com/mojang/minecraft/level/Chunk	I	x0	f_9148018
-FIELD	com/mojang/minecraft/level/Chunk	I	x1	f_6592251
-FIELD	com/mojang/minecraft/level/Chunk	F	x	f_0197070
-FIELD	com/mojang/minecraft/level/Chunk	I	y0	f_8057675
-FIELD	com/mojang/minecraft/level/Chunk	I	y1	f_8249186
-FIELD	com/mojang/minecraft/level/Chunk	F	y	f_1224225
-FIELD	com/mojang/minecraft/level/Chunk	I	z0	f_1468741
-FIELD	com/mojang/minecraft/level/Chunk	I	z1	f_4676706
-FIELD	com/mojang/minecraft/level/Chunk	F	z	f_0857525
+FIELD	com/mojang/minecraft/level/Chunk	I	x0	x0
+FIELD	com/mojang/minecraft/level/Chunk	I	x1	x1
+FIELD	com/mojang/minecraft/level/Chunk	F	x	x
+FIELD	com/mojang/minecraft/level/Chunk	I	y0	y0
+FIELD	com/mojang/minecraft/level/Chunk	I	y1	y1
+FIELD	com/mojang/minecraft/level/Chunk	F	y	y
+FIELD	com/mojang/minecraft/level/Chunk	I	z0	z0
+FIELD	com/mojang/minecraft/level/Chunk	I	z1	z1
+FIELD	com/mojang/minecraft/level/Chunk	F	z	z
 METHOD	com/mojang/minecraft/level/Chunk	(Lcom/mojang/minecraft/Player;)F	distanceToSqr	distanceToSqr
 METHOD	com/mojang/minecraft/level/Chunk	()Z	isDirty	isDirty
 METHOD	com/mojang/minecraft/level/Chunk	()V	rebuild	rebuild
@@ -276,9 +276,9 @@ METHOD	com/mojang/minecraft/level/Chunk	(I)V	render	render
 METHOD	com/mojang/minecraft/level/Chunk	()V	reset	reset
 METHOD	com/mojang/minecraft/level/Chunk	()V	setDirty	setDirty
 CLASS	com/mojang/minecraft/level/Coord	com/mojang/minecraft/level/Coord
-FIELD	com/mojang/minecraft/level/Coord	I	x	f_0337226
-FIELD	com/mojang/minecraft/level/Coord	I	y	f_2291575
-FIELD	com/mojang/minecraft/level/Coord	I	z	f_2343530
+FIELD	com/mojang/minecraft/level/Coord	I	x	x
+FIELD	com/mojang/minecraft/level/Coord	I	y	y
+FIELD	com/mojang/minecraft/level/Coord	I	z	z
 CLASS	com/mojang/minecraft/level/DirtyChunkSorter	com/mojang/minecraft/level/DirtyChunkSorter
 FIELD	com/mojang/minecraft/level/DirtyChunkSorter	Lcom/mojang/minecraft/Player;	player	player
 METHOD	com/mojang/minecraft/level/DirtyChunkSorter	(Lcom/mojang/minecraft/level/Chunk;Lcom/mojang/minecraft/level/Chunk;)I	compare	compare
@@ -339,9 +339,9 @@ FIELD	com/mojang/minecraft/level/LevelRenderer	I	CHUNK_SIZE	CHUNK_SIZE
 FIELD	com/mojang/minecraft/level/LevelRenderer	I	MAX_REBUILDS_PER_FRAME	MAX_REBUILDS_PER_FRAME
 FIELD	com/mojang/minecraft/level/LevelRenderer	[Lcom/mojang/minecraft/level/Chunk;	chunks	chunks
 FIELD	com/mojang/minecraft/level/LevelRenderer	I	drawDistance	drawDistance
-FIELD	com/mojang/minecraft/level/LevelRenderer	F	lX	f_7700050
-FIELD	com/mojang/minecraft/level/LevelRenderer	F	lY	f_7276458
-FIELD	com/mojang/minecraft/level/LevelRenderer	F	lZ	f_3568764
+FIELD	com/mojang/minecraft/level/LevelRenderer	F	lX	lX
+FIELD	com/mojang/minecraft/level/LevelRenderer	F	lY	lY
+FIELD	com/mojang/minecraft/level/LevelRenderer	F	lZ	lZ
 FIELD	com/mojang/minecraft/level/LevelRenderer	Lcom/mojang/minecraft/level/Level;	level	level
 FIELD	com/mojang/minecraft/level/LevelRenderer	[Lcom/mojang/minecraft/level/Chunk;	sortedChunks	sortedChunks
 FIELD	com/mojang/minecraft/level/LevelRenderer	I	surroundLists	surroundLists
@@ -383,7 +383,7 @@ FIELD	com/mojang/minecraft/level/levelgen/synth/Distort	Lcom/mojang/minecraft/le
 CLASS	com/mojang/minecraft/level/levelgen/synth/Emboss	com/mojang/minecraft/level/levelgen/synth/Emboss
 FIELD	com/mojang/minecraft/level/levelgen/synth/Emboss	Lcom/mojang/minecraft/level/levelgen/synth/Synth;	synth	synth
 CLASS	com/mojang/minecraft/level/levelgen/synth/ImprovedNoise	com/mojang/minecraft/level/levelgen/synth/ImprovedNoise
-FIELD	com/mojang/minecraft/level/levelgen/synth/ImprovedNoise	[I	p	f_8875687
+FIELD	com/mojang/minecraft/level/levelgen/synth/ImprovedNoise	[I	p	p
 FIELD	com/mojang/minecraft/level/levelgen/synth/ImprovedNoise	D	scale	scale
 METHOD	com/mojang/minecraft/level/levelgen/synth/ImprovedNoise	(D)D	fade	fade
 METHOD	com/mojang/minecraft/level/levelgen/synth/ImprovedNoise	(IDDD)D	grad	grad
@@ -424,7 +424,7 @@ FIELD	com/mojang/minecraft/level/tile/Tile	Lcom/mojang/minecraft/level/tile/Tile
 FIELD	com/mojang/minecraft/level/tile/Tile	Lcom/mojang/minecraft/level/tile/Tile;	dirt	dirt
 FIELD	com/mojang/minecraft/level/tile/Tile	Lcom/mojang/minecraft/level/tile/Tile;	empty	empty
 FIELD	com/mojang/minecraft/level/tile/Tile	Lcom/mojang/minecraft/level/tile/Tile;	grass	grass
-FIELD	com/mojang/minecraft/level/tile/Tile	I	id	f_5175748
+FIELD	com/mojang/minecraft/level/tile/Tile	I	id	id
 FIELD	com/mojang/minecraft/level/tile/Tile	Lcom/mojang/minecraft/level/tile/Tile;	lava	lava
 FIELD	com/mojang/minecraft/level/tile/Tile	Lcom/mojang/minecraft/level/tile/Tile;	rock	rock
 FIELD	com/mojang/minecraft/level/tile/Tile	[Z	shouldTick	shouldTick
@@ -462,11 +462,11 @@ FIELD	com/mojang/minecraft/particle/Particle	I	age	age
 FIELD	com/mojang/minecraft/particle/Particle	I	lifetime	lifetime
 FIELD	com/mojang/minecraft/particle/Particle	F	size	size
 FIELD	com/mojang/minecraft/particle/Particle	I	tex	tex
-FIELD	com/mojang/minecraft/particle/Particle	F	uo	f_4866298
-FIELD	com/mojang/minecraft/particle/Particle	F	vo	f_5759237
-FIELD	com/mojang/minecraft/particle/Particle	F	xd	f_6487551
-FIELD	com/mojang/minecraft/particle/Particle	F	yd	f_3194041
-FIELD	com/mojang/minecraft/particle/Particle	F	zd	f_0182044
+FIELD	com/mojang/minecraft/particle/Particle	F	uo	uo
+FIELD	com/mojang/minecraft/particle/Particle	F	vo	vo
+FIELD	com/mojang/minecraft/particle/Particle	F	xd	xd
+FIELD	com/mojang/minecraft/particle/Particle	F	yd	yd
+FIELD	com/mojang/minecraft/particle/Particle	F	zd	zd
 METHOD	com/mojang/minecraft/particle/Particle	(Lcom/mojang/minecraft/renderer/Tesselator;FFFFFF)V	render	render
 CLASS	com/mojang/minecraft/particle/ParticleEngine	com/mojang/minecraft/particle/ParticleEngine
 FIELD	com/mojang/minecraft/particle/ParticleEngine	Lcom/mojang/minecraft/level/Level;	level	level
@@ -477,12 +477,12 @@ METHOD	com/mojang/minecraft/particle/ParticleEngine	(Lcom/mojang/minecraft/Playe
 METHOD	com/mojang/minecraft/particle/ParticleEngine	()V	tick	tick
 CLASS	com/mojang/minecraft/phys/AABB	com/mojang/minecraft/phys/AABB
 FIELD	com/mojang/minecraft/phys/AABB	F	epsilon	epsilon
-FIELD	com/mojang/minecraft/phys/AABB	F	x0	f_8967193
-FIELD	com/mojang/minecraft/phys/AABB	F	x1	f_2297591
-FIELD	com/mojang/minecraft/phys/AABB	F	y0	f_4668140
-FIELD	com/mojang/minecraft/phys/AABB	F	y1	f_6178414
-FIELD	com/mojang/minecraft/phys/AABB	F	z0	f_0293671
-FIELD	com/mojang/minecraft/phys/AABB	F	z1	f_5165912
+FIELD	com/mojang/minecraft/phys/AABB	F	x0	x0
+FIELD	com/mojang/minecraft/phys/AABB	F	x1	x1
+FIELD	com/mojang/minecraft/phys/AABB	F	y0	y0
+FIELD	com/mojang/minecraft/phys/AABB	F	y1	y1
+FIELD	com/mojang/minecraft/phys/AABB	F	z0	z0
+FIELD	com/mojang/minecraft/phys/AABB	F	z1	z1
 METHOD	com/mojang/minecraft/phys/AABB	(Lcom/mojang/minecraft/phys/AABB;F)F	clipXCollide	clipXCollide
 METHOD	com/mojang/minecraft/phys/AABB	(Lcom/mojang/minecraft/phys/AABB;F)F	clipYCollide	clipYCollide
 METHOD	com/mojang/minecraft/phys/AABB	(Lcom/mojang/minecraft/phys/AABB;F)F	clipZCollide	clipZCollide
@@ -492,12 +492,12 @@ METHOD	com/mojang/minecraft/phys/AABB	(FFF)Lcom/mojang/minecraft/phys/AABB;	grow
 METHOD	com/mojang/minecraft/phys/AABB	(Lcom/mojang/minecraft/phys/AABB;)Z	intersects	intersects
 METHOD	com/mojang/minecraft/phys/AABB	(FFF)V	move	move
 CLASS	com/mojang/minecraft/renderer/Frustum	com/mojang/minecraft/renderer/Frustum
-FIELD	com/mojang/minecraft/renderer/Frustum	I	A	f_4730248
+FIELD	com/mojang/minecraft/renderer/Frustum	I	A	A
 FIELD	com/mojang/minecraft/renderer/Frustum	I	BACK	BACK
-FIELD	com/mojang/minecraft/renderer/Frustum	I	B	f_5989962
+FIELD	com/mojang/minecraft/renderer/Frustum	I	B	B
 FIELD	com/mojang/minecraft/renderer/Frustum	I	BOTTOM	BOTTOM
-FIELD	com/mojang/minecraft/renderer/Frustum	I	C	f_9329218
-FIELD	com/mojang/minecraft/renderer/Frustum	I	D	f_7049790
+FIELD	com/mojang/minecraft/renderer/Frustum	I	C	C
+FIELD	com/mojang/minecraft/renderer/Frustum	I	D	D
 FIELD	com/mojang/minecraft/renderer/Frustum	I	FRONT	FRONT
 FIELD	com/mojang/minecraft/renderer/Frustum	I	LEFT	LEFT
 FIELD	com/mojang/minecraft/renderer/Frustum	I	RIGHT	RIGHT
@@ -522,18 +522,18 @@ CLASS	com/mojang/minecraft/renderer/Tesselator	com/mojang/minecraft/renderer/Tes
 FIELD	com/mojang/minecraft/renderer/Tesselator	I	MAX_FLOATS	MAX_FLOATS
 FIELD	com/mojang/minecraft/renderer/Tesselator	I	MAX_MEMORY_USE	MAX_MEMORY_USE
 FIELD	com/mojang/minecraft/renderer/Tesselator	[F	array	array
-FIELD	com/mojang/minecraft/renderer/Tesselator	F	b	f_9116781
+FIELD	com/mojang/minecraft/renderer/Tesselator	F	b	b
 FIELD	com/mojang/minecraft/renderer/Tesselator	Ljava/nio/FloatBuffer;	buffer	buffer
-FIELD	com/mojang/minecraft/renderer/Tesselator	F	g	f_8671849
+FIELD	com/mojang/minecraft/renderer/Tesselator	F	g	g
 FIELD	com/mojang/minecraft/renderer/Tesselator	Z	hasColor	hasColor
 FIELD	com/mojang/minecraft/renderer/Tesselator	Z	hasTexture	hasTexture
 FIELD	com/mojang/minecraft/renderer/Tesselator	Lcom/mojang/minecraft/renderer/Tesselator;	instance	instance
 FIELD	com/mojang/minecraft/renderer/Tesselator	I	len	len
 FIELD	com/mojang/minecraft/renderer/Tesselator	Z	noColor	noColor
-FIELD	com/mojang/minecraft/renderer/Tesselator	I	p	f_4509910
-FIELD	com/mojang/minecraft/renderer/Tesselator	F	r	f_6105193
-FIELD	com/mojang/minecraft/renderer/Tesselator	F	u	f_8074906
-FIELD	com/mojang/minecraft/renderer/Tesselator	F	v	f_0639554
+FIELD	com/mojang/minecraft/renderer/Tesselator	I	p	p
+FIELD	com/mojang/minecraft/renderer/Tesselator	F	r	r
+FIELD	com/mojang/minecraft/renderer/Tesselator	F	u	u
+FIELD	com/mojang/minecraft/renderer/Tesselator	F	v	v
 FIELD	com/mojang/minecraft/renderer/Tesselator	I	vertices	vertices
 METHOD	com/mojang/minecraft/renderer/Tesselator	()V	begin	begin
 METHOD	com/mojang/minecraft/renderer/Tesselator	()V	clear	clear
