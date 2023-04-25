@@ -179,7 +179,7 @@ METHOD	net/minecraft/a/a/a/h	(Lnet/minecraft/a/c/b;)Z	b	m_3418881
 METHOD	net/minecraft/a/a/a/h	()I	c	m_2337713
 METHOD	net/minecraft/a/a/a/h	(Lnet/minecraft/a/a/a;III)F	c	m_9326356
 METHOD	net/minecraft/a/a/a/h	(Lnet/minecraft/a/c/b;)Z	c	m_9946993
-METHOD	net/minecraft/a/a/a/h	()Lnet/minecraft/a/a/b/a;	d	m_3659477
+METHOD	net/minecraft/a/a/a/h	()Lnet/minecraft/a/a/b/a;	d	m_5824613
 METHOD	net/minecraft/a/a/a/h	(Lnet/minecraft/a/a/a;III)V	d	m_1556953
 METHOD	net/minecraft/a/a/a/h	()I	e	m_9474325
 METHOD	net/minecraft/a/a/a/h	(Lnet/minecraft/a/a/a;III)V	e	m_2650869
@@ -197,7 +197,7 @@ CLASS	net/minecraft/a/a/a/p	net/minecraft/a/a/a/C_2501864
 CLASS	net/minecraft/a/a/a/q	net/minecraft/a/a/a/C_8620458
 CLASS	net/minecraft/a/a/a/r	net/minecraft/a/a/a/C_5333728
 CLASS	net/minecraft/a/a/a/s	net/minecraft/a/a/a/C_3747079
-FIELD	net/minecraft/a/a/a/s	Lnet/minecraft/a/a/b/a;	am	f_0206020
+FIELD	net/minecraft/a/a/a/s	Lnet/minecraft/a/a/b/a;	am	f_1002492
 FIELD	net/minecraft/a/a/a/s	I	an	f_9509159
 FIELD	net/minecraft/a/a/a/s	I	ao	f_9203262
 METHOD	net/minecraft/a/a/a/s	(Lnet/minecraft/a/a/a;III)Z	f	m_6220270
@@ -209,11 +209,11 @@ CLASS	net/minecraft/a/a/b	net/minecraft/a/a/C_1051907
 FIELD	net/minecraft/a/a/b	Lnet/minecraft/a/a/a;	a	f_5139716
 METHOD	net/minecraft/a/a/b	()V	a	m_8088466
 METHOD	net/minecraft/a/a/b	(ILnet/minecraft/a/b/c;Lnet/minecraft/client/a;)I	a	m_1814805
-CLASS	net/minecraft/a/a/b/a	net/minecraft/a/a/b/C_0879483
-FIELD	net/minecraft/a/a/b/a	Lnet/minecraft/a/a/b/a;	a	f_9935367
-FIELD	net/minecraft/a/a/b/a	Lnet/minecraft/a/a/b/a;	b	f_4438670
-FIELD	net/minecraft/a/a/b/a	Lnet/minecraft/a/a/b/a;	c	f_7469038
-FIELD	net/minecraft/a/a/b/a	[Lnet/minecraft/a/a/b/a;	d	f_4534639
+CLASS	net/minecraft/a/a/b/a	net/minecraft/a/a/b/C_8048208
+FIELD	net/minecraft/a/a/b/a	Lnet/minecraft/a/a/b/a;	a	f_1905986
+FIELD	net/minecraft/a/a/b/a	Lnet/minecraft/a/a/b/a;	b	f_0913582
+FIELD	net/minecraft/a/a/b/a	Lnet/minecraft/a/a/b/a;	c	f_7949049
+FIELD	net/minecraft/a/a/b/a	[Lnet/minecraft/a/a/b/a;	d	f_5419847
 CLASS	net/minecraft/a/a/c	net/minecraft/a/a/C_1372762
 CLASS	net/minecraft/a/a/c/a	net/minecraft/a/a/c/C_5376418
 FIELD	net/minecraft/a/a/c/a	Lnet/minecraft/client/a;	a	f_4854350
@@ -264,19 +264,19 @@ FIELD	net/minecraft/a/a/f	Lnet/minecraft/a/a/d;	d	f_3119793
 METHOD	net/minecraft/a/a/f	(FFF)Lnet/minecraft/a/a/f;	a	m_3495049
 METHOD	net/minecraft/a/a/f	(Lnet/minecraft/a/b/c;)V	a	m_2077771
 METHOD	net/minecraft/a/a/f	(Lnet/minecraft/a/b/c;)V	b	m_7996437
-CLASS	net/minecraft/a/b/a	net/minecraft/a/b/C_5112384
-METHOD	net/minecraft/a/b/a	(Lnet/minecraft/a/a/a;Lnet/minecraft/a/b/d;)V	a	m_6440618
-CLASS	net/minecraft/a/b/b	net/minecraft/a/b/C_1827211
-FIELD	net/minecraft/a/b/b	F	a	f_2637531
-FIELD	net/minecraft/a/b/b	F	b	f_7489763
-FIELD	net/minecraft/a/b/b	Z	c	f_8572246
-FIELD	net/minecraft/a/b/b	Ljava/util/Random;	d	f_4513879
-FIELD	net/minecraft/a/b/b	F	e	f_9665752
-FIELD	net/minecraft/a/b/b	Lnet/minecraft/a/b/d;	f	f_1220398
-FIELD	net/minecraft/a/b/b	I	g	f_7836677
-FIELD	net/minecraft/a/b/b	F	h	f_0475930
-FIELD	net/minecraft/a/b/b	I	i	f_5516242
-METHOD	net/minecraft/a/b/b	()V	a	m_1687387
+CLASS	net/minecraft/a/b/a	net/minecraft/a/b/C_7181464
+METHOD	net/minecraft/a/b/a	(Lnet/minecraft/a/a/a;Lnet/minecraft/a/b/d;)V	a	m_1710270
+CLASS	net/minecraft/a/b/b	net/minecraft/a/b/C_0998176
+FIELD	net/minecraft/a/b/b	F	a	f_7459712
+FIELD	net/minecraft/a/b/b	F	b	f_3261139
+FIELD	net/minecraft/a/b/b	Z	c	f_6998416
+FIELD	net/minecraft/a/b/b	Ljava/util/Random;	d	f_9850268
+FIELD	net/minecraft/a/b/b	F	e	f_3913922
+FIELD	net/minecraft/a/b/b	Lnet/minecraft/a/b/d;	f	f_8725827
+FIELD	net/minecraft/a/b/b	I	g	f_1432240
+FIELD	net/minecraft/a/b/b	F	h	f_4141406
+FIELD	net/minecraft/a/b/b	I	i	f_5157830
+METHOD	net/minecraft/a/b/b	()V	a	m_9434000
 CLASS	net/minecraft/a/b/c	net/minecraft/a/b/C_0539808
 FIELD	net/minecraft/a/b/c	Lnet/minecraft/a/c/c;	A	f_6149935
 FIELD	net/minecraft/a/b/c	Z	B	f_4493928
@@ -336,7 +336,7 @@ FIELD	net/minecraft/a/b/d	F	S	f_1944619
 FIELD	net/minecraft/a/b/d	I	T	f_0351419
 FIELD	net/minecraft/a/b/d	F	U	f_2138793
 FIELD	net/minecraft/a/b/d	F	V	f_0565533
-FIELD	net/minecraft/a/b/d	Lnet/minecraft/a/b/a;	W	f_0240921
+FIELD	net/minecraft/a/b/d	Lnet/minecraft/a/b/a;	W	f_3086914
 FIELD	net/minecraft/a/b/d	F	a	f_8485754
 FIELD	net/minecraft/a/b/d	F	b	f_5626582
 FIELD	net/minecraft/a/b/d	I	c	f_8971183
@@ -418,8 +418,8 @@ FIELD	net/minecraft/client/a/b	Z	c	f_1024078
 METHOD	net/minecraft/client/a/b	()V	a	m_2790596
 METHOD	net/minecraft/client/a/b	(IZ)V	a	m_7792523
 METHOD	net/minecraft/client/a/b	()V	b	m_6793679
-CLASS	net/minecraft/client/a/c	net/minecraft/client/a/C_0059443
-FIELD	net/minecraft/client/a/c	Lnet/minecraft/client/a/d;	d	f_0842938
+CLASS	net/minecraft/client/a/c	net/minecraft/client/a/C_5094890
+FIELD	net/minecraft/client/a/c	Lnet/minecraft/client/a/d;	d	f_9757354
 CLASS	net/minecraft/client/a/d	net/minecraft/client/a/C_9590849
 FIELD	net/minecraft/client/a/d	I	X	f_5814228
 FIELD	net/minecraft/client/a/d	I	Y	f_5763380
@@ -432,7 +432,7 @@ FIELD	net/minecraft/client/a/d	Ljava/awt/image/BufferedImage;	f	f_6577111
 METHOD	net/minecraft/client/a/d	(IZ)V	a	m_2761262
 METHOD	net/minecraft/client/a/d	(Lnet/minecraft/client/b/f;)V	a	m_6973957
 METHOD	net/minecraft/client/a/d	()V	c	m_1117010
-METHOD	net/minecraft/client/a/d	()I	d	m_9349334
+METHOD	net/minecraft/client/a/d	()I	d	m_2989732
 CLASS	net/minecraft/client/a/e	net/minecraft/client/a/C_5637855
 FIELD	net/minecraft/client/a/e	[Z	d	f_6643588
 FIELD	net/minecraft/client/a/e	Lnet/minecraft/client/n;	e	f_5788907
@@ -474,7 +474,7 @@ FIELD	net/minecraft/client/b/b	Ljava/util/List;	e	f_2775791
 FIELD	net/minecraft/client/b/b	[Lnet/minecraft/client/b/k;	f	f_2222405
 FIELD	net/minecraft/client/b/b	Lnet/minecraft/client/e;	g	f_7980673
 FIELD	net/minecraft/client/b/b	Lnet/minecraft/client/b/h;	h	f_5517996
-FIELD	net/minecraft/client/b/b	Lnet/minecraft/client/b/d;	i	f_3247417
+FIELD	net/minecraft/client/b/b	Lnet/minecraft/client/b/d;	i	f_9135836
 FIELD	net/minecraft/client/b/b	I	j	f_3294694
 FIELD	net/minecraft/client/b/b	F	k	f_3435063
 FIELD	net/minecraft/client/b/b	[Lnet/minecraft/client/b/k;	l	f_6849064
@@ -496,12 +496,12 @@ FIELD	net/minecraft/client/b/c	[F	c	f_1537560
 FIELD	net/minecraft/client/b/c	I	d	f_2371374
 FIELD	net/minecraft/client/b/c	F	e	f_8074906
 FIELD	net/minecraft/client/b/c	F	f	f_0639554
-FIELD	net/minecraft/client/b/c	F	g	f_4193097
-FIELD	net/minecraft/client/b/c	F	h	f_4455894
-FIELD	net/minecraft/client/b/c	F	i	f_8896887
+FIELD	net/minecraft/client/b/c	F	g	f_6105193
+FIELD	net/minecraft/client/b/c	F	h	f_8671849
+FIELD	net/minecraft/client/b/c	F	i	f_9116781
 FIELD	net/minecraft/client/b/c	Z	j	f_6416337
 FIELD	net/minecraft/client/b/c	Z	k	f_4096191
-FIELD	net/minecraft/client/b/c	I	l	f_2075711
+FIELD	net/minecraft/client/b/c	I	l	f_3590856
 FIELD	net/minecraft/client/b/c	I	m	f_4509910
 FIELD	net/minecraft/client/b/c	Z	n	f_9000710
 METHOD	net/minecraft/client/b/c	()V	a	m_7459300
@@ -555,7 +555,7 @@ METHOD	net/minecraft/client/b/g	(Ljava/lang/Object;Ljava/lang/Object;)I	compare	
 CLASS	net/minecraft/client/b/h	net/minecraft/client/b/C_3216249
 FIELD	net/minecraft/client/b/h	I	a	f_8577676
 FIELD	net/minecraft/client/b/h	Z	b	f_1364088
-FIELD	net/minecraft/client/b/h	Lnet/minecraft/client/b/c;	c	f_1106270
+FIELD	net/minecraft/client/b/h	Lnet/minecraft/client/b/c;	c	f_3801497
 FIELD	net/minecraft/client/b/h	Lnet/minecraft/a/a/a;	d	f_2934779
 METHOD	net/minecraft/client/b/h	(Lnet/minecraft/a/a/a/h;)V	a	m_7777797
 METHOD	net/minecraft/client/b/h	(Lnet/minecraft/a/a/a/h;FFF)V	a	m_8971930
@@ -567,13 +567,13 @@ METHOD	net/minecraft/client/b/h	(Lnet/minecraft/a/a/a/h;IIII)V	c	m_5011995
 METHOD	net/minecraft/client/b/h	(Lnet/minecraft/a/a/a/h;IIII)V	d	m_0641897
 METHOD	net/minecraft/client/b/h	(Lnet/minecraft/a/a/a/h;IIII)V	e	m_6542944
 METHOD	net/minecraft/client/b/h	(Lnet/minecraft/a/a/a/h;IIII)V	f	m_5288691
-CLASS	net/minecraft/client/b/i	net/minecraft/client/b/C_8512695
-FIELD	net/minecraft/client/b/i	Lnet/minecraft/client/b/i;	e	f_9077546
-FIELD	net/minecraft/client/b/i	Ljava/nio/FloatBuffer;	f	f_0541827
-FIELD	net/minecraft/client/b/i	Ljava/nio/FloatBuffer;	g	f_5041371
-FIELD	net/minecraft/client/b/i	Ljava/nio/FloatBuffer;	h	f_0845392
-METHOD	net/minecraft/client/b/i	()Lnet/minecraft/client/b/l;	a	m_7487692
-METHOD	net/minecraft/client/b/i	([[FI)V	a	m_2649552
+CLASS	net/minecraft/client/b/i	net/minecraft/client/b/C_8199124
+FIELD	net/minecraft/client/b/i	Lnet/minecraft/client/b/i;	e	f_3284628
+FIELD	net/minecraft/client/b/i	Ljava/nio/FloatBuffer;	f	f_7388569
+FIELD	net/minecraft/client/b/i	Ljava/nio/FloatBuffer;	g	f_6924582
+FIELD	net/minecraft/client/b/i	Ljava/nio/FloatBuffer;	h	f_9644453
+METHOD	net/minecraft/client/b/i	()Lnet/minecraft/client/b/l;	a	m_4703353
+METHOD	net/minecraft/client/b/i	([[FI)V	a	m_5256054
 CLASS	net/minecraft/client/b/j	net/minecraft/client/b/C_1022696
 FIELD	net/minecraft/client/b/j	Lnet/minecraft/client/e;	a	f_0306817
 FIELD	net/minecraft/client/b/j	Lnet/minecraft/a/a/a/h;	b	f_8566506
@@ -603,25 +603,25 @@ METHOD	net/minecraft/client/b/k	(Lnet/minecraft/client/b/l;)V	a	m_0357066
 METHOD	net/minecraft/client/b/k	([III)I	a	m_2792646
 METHOD	net/minecraft/client/b/k	()V	b	m_4375328
 METHOD	net/minecraft/client/b/k	()V	c	m_0274851
-CLASS	net/minecraft/client/b/l	net/minecraft/client/b/C_4042505
-FIELD	net/minecraft/client/b/l	[[F	a	f_8572000
-FIELD	net/minecraft/client/b/l	[F	b	f_5602675
-FIELD	net/minecraft/client/b/l	[F	c	f_5945789
-FIELD	net/minecraft/client/b/l	[F	d	f_9866078
-METHOD	net/minecraft/client/b/l	(FFFFFF)Z	a	m_9777500
+CLASS	net/minecraft/client/b/l	net/minecraft/client/b/C_0669153
+FIELD	net/minecraft/client/b/l	[[F	a	f_1324188
+FIELD	net/minecraft/client/b/l	[F	b	f_1762360
+FIELD	net/minecraft/client/b/l	[F	c	f_5195035
+FIELD	net/minecraft/client/b/l	[F	d	f_2265740
+METHOD	net/minecraft/client/b/l	(FFFFFF)Z	a	m_9733536
 CLASS	net/minecraft/client/c	net/minecraft/client/C_2899740
 FIELD	net/minecraft/client/c	Ljava/nio/FloatBuffer;	a	f_6824639
 METHOD	net/minecraft/client/c	()V	a	m_8989115
 METHOD	net/minecraft/client/c	(FFFF)Ljava/nio/FloatBuffer;	a	m_5689885
 METHOD	net/minecraft/client/c	()V	b	m_3229588
 CLASS	net/minecraft/client/c/a	net/minecraft/client/c/C_2313930
-FIELD	net/minecraft/client/c/a	Lnet/minecraft/client/c/d;	a	f_7557714
-FIELD	net/minecraft/client/c/a	Lnet/minecraft/client/c/d;	b	f_2015125
-FIELD	net/minecraft/client/c/a	Lnet/minecraft/client/c/d;	c	f_8519311
-FIELD	net/minecraft/client/c/a	Lnet/minecraft/client/c/d;	d	f_2523455
-FIELD	net/minecraft/client/c/a	Lnet/minecraft/client/c/d;	e	f_5519877
-FIELD	net/minecraft/client/c/a	Lnet/minecraft/client/c/d;	f	f_6076649
-FIELD	net/minecraft/client/c/a	Lnet/minecraft/client/c/d;	g	f_2867501
+FIELD	net/minecraft/client/c/a	Lnet/minecraft/client/c/d;	a	f_5519877
+FIELD	net/minecraft/client/c/a	Lnet/minecraft/client/c/d;	b	f_6076649
+FIELD	net/minecraft/client/c/a	Lnet/minecraft/client/c/d;	c	f_2867501
+FIELD	net/minecraft/client/c/a	Lnet/minecraft/client/c/d;	d	f_7557714
+FIELD	net/minecraft/client/c/a	Lnet/minecraft/client/c/d;	e	f_2015125
+FIELD	net/minecraft/client/c/a	Lnet/minecraft/client/c/d;	f	f_8519311
+FIELD	net/minecraft/client/c/a	Lnet/minecraft/client/c/d;	g	f_2523455
 CLASS	net/minecraft/client/c/a/a	net/minecraft/client/c/a/C_7946382
 FIELD	net/minecraft/client/c/a/a	Ljava/lang/String;	a	f_2200494
 FIELD	net/minecraft/client/c/a/a	[Lnet/minecraft/a/c/b;	b	f_8641337
@@ -664,8 +664,8 @@ CLASS	net/minecraft/client/c/d	net/minecraft/client/c/C_6697291
 FIELD	net/minecraft/client/c/d	Z	a	f_1867366
 FIELD	net/minecraft/client/c/d	[Lnet/minecraft/client/c/c;	b	f_3048190
 FIELD	net/minecraft/client/c/d	[Lnet/minecraft/client/c/b;	c	f_9309120
-FIELD	net/minecraft/client/c/d	I	d	f_7335546
-FIELD	net/minecraft/client/c/d	I	e	f_6072995
+FIELD	net/minecraft/client/c/d	I	d	f_6072995
+FIELD	net/minecraft/client/c/d	I	e	f_7335546
 METHOD	net/minecraft/client/c/d	(FFFIIIF)V	a	m_9060489
 CLASS	net/minecraft/client/c/e	net/minecraft/client/c/C_7503776
 CLASS	net/minecraft/client/d	net/minecraft/client/C_8730536
@@ -751,7 +751,7 @@ METHOD	net/minecraft/client/d/o	(II)I	b	m_8484964
 CLASS	net/minecraft/client/d/p	net/minecraft/client/d/C_3831727
 FIELD	net/minecraft/client/d/p	[I	a	f_7122498
 FIELD	net/minecraft/client/d/p	I	b	f_9065645
-FIELD	net/minecraft/client/d/p	Lnet/minecraft/client/n;	c	f_0443901
+FIELD	net/minecraft/client/d/p	Lnet/minecraft/client/n;	c	f_9105384
 METHOD	net/minecraft/client/d/p	(Ljava/lang/String;)I	a	m_0040387
 METHOD	net/minecraft/client/d/p	(Ljava/lang/String;III)V	a	m_1950885
 METHOD	net/minecraft/client/d/p	(Ljava/lang/String;IIIZ)V	a	m_7632532
@@ -802,7 +802,7 @@ METHOD	net/minecraft/client/e	()V	run	run
 CLASS	net/minecraft/client/e/a	net/minecraft/client/e/C_7952195
 FIELD	net/minecraft/client/e/a	Lnet/minecraft/client/e;	a	f_4962692
 FIELD	net/minecraft/client/e/a	Z	b	f_6494735
-METHOD	net/minecraft/client/e/a	()V	a	m_7229613
+METHOD	net/minecraft/client/e/a	()V	a	m_1894352
 METHOD	net/minecraft/client/e/a	(F)V	a	m_8681363
 METHOD	net/minecraft/client/e/a	(I)Z	a	m_5458213
 METHOD	net/minecraft/client/e/a	(III)V	a	m_2543394
@@ -910,10 +910,10 @@ FIELD	net/minecraft/client/n	Z	t	f_4742872
 FIELD	net/minecraft/client/n	Lnet/minecraft/client/h;	u	f_5437105
 FIELD	net/minecraft/client/n	Lnet/minecraft/client/e;	v	f_1674215
 FIELD	net/minecraft/client/n	Ljava/io/File;	w	f_1127274
-METHOD	net/minecraft/client/n	()V	a	m_2313216
+METHOD	net/minecraft/client/n	()V	a	m_2009088
 METHOD	net/minecraft/client/n	(I)Ljava/lang/String;	a	m_9612061
 METHOD	net/minecraft/client/n	(II)V	a	m_9162457
-METHOD	net/minecraft/client/n	()V	b	m_2009088
+METHOD	net/minecraft/client/n	()V	b	m_2313216
 METHOD	net/minecraft/client/n	(I)Ljava/lang/String;	b	m_8187097
 METHOD	net/minecraft/client/n	(II)V	b	m_2312322
 CLASS	net/minecraft/client/o	net/minecraft/client/C_6542415
