@@ -25,7 +25,7 @@ buildscript {
 
     dependencies {
         classpath "net.ornithemc:enigma-cli:1.2.7"
-        classpath "net.ornithemc:stitch:0.9.4"
+        classpath "net.ornithemc:stitch:0.10.2"
         classpath "net.ornithemc:mapping-utils:0.7.0"
         classpath "commons-io:commons-io:2.8.0"
         classpath "org.codehaus.groovy:groovy-json:3.0.9"
@@ -147,7 +147,7 @@ task downloadVersionsManifest {
 static def getManifestVersion(File manifestFile, String minecraft_version) {
     def manifest = manifestFile.exists() ? new JsonSlurper().parseText(FileUtils.readFileToString(manifestFile, Charset.defaultCharset())) : null
     return manifest != null ? manifest.versions.stream().filter({
-        (it.id == minecraft_version || it.omniId == minecraft_version)
+        (it.id == minecraft_version)
     }).findFirst() : java.util.Optional.empty()
 }
 
@@ -307,79 +307,6 @@ task generateCalamus(dependsOn: [downloadVersionDetails, mergeJars]) {
 }
 
 static File findMatches(Environment fromEnv, String from, Environment toEnv, String to) {
-    // some of the matches use version names
-    // that do not match the version ids
-    def versionTranslations = new HashMap<String, String>() {
-        {
-            put("rd-132211"     , "rd-132211-launcher")
-            put("rd-132328"     , "rd-132328-launcher")
-            put("rd-160052"     , "rd-160052-launcher")
-            put("rd-161348"     , "rd-161348-launcher")
-            put("c0.0.11a"      , "c0.0.11a-launcher")
-            put("c0.0.13a"      , "c0.0.13a-launcher")
-            put("c0.0.13a_03"   , "c0.0.13a_03-launcher")
-            put("c0.0.19a_06-2" , "c0.0.19a_06-0137")
-            put("in-20091223-2" , "in-20091223-1459")
-            put("in-20091231-2" , "in-20091231-2257")
-            put("in-20100129"   , "in-20100129-1452")
-            put("in-20100207-1" , "in-20100207-1101")
-            put("in-20100207-2" , "in-20100207-1703")
-            put("in-20100212-1" , "in-20100212-1210")
-            put("in-20100212-2" , "in-20100212-1622")
-            put("inf-20100227"  , "inf-20100227-1433")
-            put("inf-20100321"  , "inf-20100321-1857")
-            put("inf-20100325"  , "inf-20100325-1640")
-            put("inf-20100330"  , "inf-20100330-1611")
-            put("inf-20100617-3", "inf-20100617-1531")
-            put("inf-20100625-2", "inf-20100625-1917")
-            put("inf-20100630-2", "inf-20100630-1835")
-            put("a1.0.5"        , "a1.0.5-2149")
-            put("a1.0.13_01-2"  , "a1.0.13_01-1444")
-            put("a1.0.14-2"     , "a1.0.14-1659")
-            put("a1.1.0-2"      , "a1.1.0-131933")
-            put("a1.2.2a"       , "a1.2.2-1624")
-            put("a1.2.2b"       , "a1.2.2-1938")
-            put("a1.2.3_01"     , "a1.2.3_01-0958")
-            put("b1.8-pre1-1"   , "b1.8-pre1-201109081459")
-            put("b1.8-pre1-2"   , "b1.8-pre1-201109091357")
-            put("b1.9-pre3"     , "b1.9-pre3-201110061350")
-            put("b1.9-pre3-2"   , "b1.9-pre3-201110061402")
-            put("b1.9-pre4-1435", "b1.9-pre4-201110131434")
-            put("b1.9-pre4-1440", "b1.9-pre4-201110131440")
-            put("1.0"           , "1.0.0")
-            put("1.3"           , "1.3-pre-07261249")
-            put("1.4"           , "1.4-pre")
-            put("1.4.1"         , "1.4.1-pre-10231538")
-            put("1.4.3"         , "1.4.3-pre")
-            put("13w16a"        , "13w16a-04192037")
-            put("13w16b"        , "13w16b-04232151")
-            put("13w23b"        , "13w23b-06080101")
-            put("1.6"           , "1.6-pre-06251516")
-            put("1.6.2"         , "1.6.2-091847")
-            put("1.6.3"         , "1.6.3-pre-171231")
-            put("13w36a"        , "13w36a-09051446")
-            put("13w36b"        , "13w36b-09061310")
-            put("13w41b"        , "13w41b-1523")
-            put("1.7"           , "1.7-pre")
-            put("1.7.1"         , "1.7.1-pre")
-            put("1.7.3"         , "1.7.3-pre")
-            put("1.7.7"         , "1.7.7-101331")
-            put("14w04b"        , "14w04b-1554")
-            put("14w27b"        , "14w27b-07021646")
-            put("14w34c"        , "14w34c-08191549")
-            put("16w50a"        , "16w50a-1438")
-            put("1.12-pre3"     , "1.12-pre3-1409")
-            put("2point0_red"   , "af-2013-red")
-            put("2point0_blue"  , "af-2013-blue")
-            put("2point0_purple", "af-2013-purple")
-            put("15w14a"        , "af-2015")
-            put("1.RV-Pre1"     , "af-2016")
-        }
-    }
-
-    from = versionTranslations.getOrDefault(from, from);
-    to = versionTranslations.getOrDefault(to, to);
-
     return findMatches(fromEnv, from, toEnv, to, false);
 }
 
