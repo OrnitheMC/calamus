@@ -79,7 +79,8 @@ def defaultPackage = "net/minecraft/unmapped/"
 def namespace = "intermediary"
 def nameLength = 7
 
-def artifact_id = "calamus-${namespace}-gen2"
+def intermediary_gen = 2
+def artifact_id = "calamus-${namespace}-gen${intermediary_gen}"
 
 static boolean validateChecksum(File file, String checksum) {
     if (file != null) {
@@ -461,7 +462,9 @@ try {
 def localMappingsPath = "$buildDir/v2Mappings"
 new File(localMappingsPath).mkdirs()
 file('mappings').eachFile {
-    if (!it.name.endsWith(".tiny")) return
+    if (!it.name.endsWith(".tiny")) {
+		return
+    }
 
     def mcVer = it.name.replace(".tiny", "")
 
@@ -471,7 +474,6 @@ file('mappings').eachFile {
 
     File v1MappingFile = it
     File v2MappingFile = new File("$localMappingsPath/${it.name}")
-    File nests = file("nests/${mcVer}.nest")
 
     def conversionTask = "convert${it.name}ToV2"
     tasks.register(conversionTask) {
@@ -483,14 +485,14 @@ file('mappings').eachFile {
             new ConvertMappingsCommand().run(
                     "tiny",
                     v1MappingFile.path,
-                    "tinyv2:official:${namespace}",
+                    versionDetails.sharedMappings ? "tinyv2:${namespace}:clientOfficial:serverOfficial" : "tinyv2:official:${namespace}",
                     v2MappingFile.path
             )
         }
     }
 
-    Jar makeV1Jar = makeJar(mcVer, v1MappingFile, nests, false)
-    Jar makeV2Jar = makeJar(mcVer, v2MappingFile, nests, true)
+    Jar makeV1Jar = makeJar(mcVer, v1MappingFile, false)
+    Jar makeV2Jar = makeJar(mcVer, v2MappingFile, true)
 
     build.dependsOn makeV1Jar
     build.dependsOn makeV2Jar
@@ -516,19 +518,13 @@ file('mappings').eachFile {
 
 }
 
-def makeJar(String mcVersion, File mappings, File nests, boolean v2) {
+def makeJar(String mcVersion, File mappings, boolean v2) {
     def jarFilename = "calamus-" + mcVersion + (v2 ? "-v2" : "")
     return task("${mcVersion}_makeJar" + (v2 ? "v2" : ""), type: Jar) {
         archiveBaseName.set(jarFilename)
         from(file(mappings)) {
             into "mappings"
             rename mappings.name, "mappings.tiny"
-        }
-        if (nests.exists()) {
-            from(file(nests)) {
-                into "mappings"
-                rename nests.name, "mappings.nest"
-            }
         }
         destinationDirectory = file("build/jars")
     }
