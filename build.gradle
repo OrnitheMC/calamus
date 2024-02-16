@@ -4,7 +4,7 @@ import cuchaz.enigma.command.ConvertMappingsCommand
 import groovy.json.JsonSlurper
 import groovy.xml.XmlSlurper
 import net.fabricmc.stitch.merge.JarMerger
-import net.fabricmc.stitch.util.CalamusUtil
+import net.fabricmc.stitch.util.IntermediaryUtil
 import net.ornithemc.mappingutils.MappingUtils
 import org.apache.commons.io.FileUtils
 
@@ -13,6 +13,7 @@ import java.nio.file.Paths
 
 buildscript {
     repositories {
+		mavenLocal()
         maven {
             name "Quilt"
             url "https://maven.quiltmc.org/repository/release"
@@ -25,8 +26,8 @@ buildscript {
 
     dependencies {
         classpath "net.ornithemc:enigma-cli:1.2.7"
-        classpath "net.ornithemc:stitch:0.10.3"
-        classpath "net.ornithemc:mapping-utils:0.8.10"
+        classpath "net.ornithemc:stitch:0.11.0"
+        classpath "net.ornithemc:mapping-utils:0.8.19"
         classpath "commons-io:commons-io:2.8.0"
         classpath "org.codehaus.groovy:groovy-json:3.0.9"
         classpath "org.codehaus.groovy:groovy-xml:3.0.9"
@@ -44,79 +45,41 @@ def ENV = System.getenv()
 def jarSetupGroup = "jar setup"
 def mappingGenerationGroup = "mapping generation"
 def cacheFilesMinecraft = file(".gradle/minecraft")
+def librariesFiles = new File(cacheFilesMinecraft, "libraries")
 def manifestFile = new File(cacheFilesMinecraft, "version_manifest.json")
 
-def version_id = ENV.MC_VERSION
-def environment = parseEnvironment(version_id)
-def minecraft_version = parseVersion(version_id, environment)
+def minecraft_version = ENV.MC_VERSION
+def from_minecraft_version = ENV.FROM_MC_VERSION
 
-def from_version_id = ENV.FROM_MC_VERSION
-def from_environment = parseEnvironment(from_version_id)
-def from_minecraft_version = parseVersion(from_version_id, from_environment)
-
+def versionInfo = null;
 def versionDetails = null
+def versionInfoFile = new File(cacheFilesMinecraft, "${minecraft_version}-info.json")
 def versionDetailsFile = new File(cacheFilesMinecraft, "${minecraft_version}-details.json")
 def clientJar = new File(cacheFilesMinecraft, "${minecraft_version}-client.jar")
 def serverJar = new File(cacheFilesMinecraft, "${minecraft_version}-server.jar")
 def mergedJar = new File(cacheFilesMinecraft, "${minecraft_version}-merged.jar")
-def mainJar = null
-def calamusFile = file("mappings/${version_id}.tiny")
+def libraries = new ArrayList<File>()
+def clientCalamusFile = file("mappings/${minecraft_version}-client.tiny")
+def serverCalamusFile = file("mappings/${minecraft_version}-server.tiny")
+def mergedCalamusFile = file("mappings/${minecraft_version}.tiny")
 
+def fromVersionInfo = null;
+def fromVersionDetails = null
+def fromVersionInfoFile = new File(cacheFilesMinecraft, "${from_minecraft_version}-info.json")
+def fromVersionDetailsFile = new File(cacheFilesMinecraft, "${from_minecraft_version}-details.json")
 def fromClientJar = new File(cacheFilesMinecraft, "${from_minecraft_version}-client.jar")
 def fromServerJar = new File(cacheFilesMinecraft, "${from_minecraft_version}-server.jar")
 def fromMergedJar = new File(cacheFilesMinecraft, "${from_minecraft_version}-merged.jar")
-def fromMainJar = null
-def fromCalamusFile = file("mappings/${from_version_id}.tiny")
+def fromLibraries = new ArrayList<File>()
+def fromClientCalamusFile = file("mappings/${from_minecraft_version}-client.tiny")
+def fromServerCalamusFile = file("mappings/${from_minecraft_version}-server.tiny")
+def fromMergedCalamusFile = file("mappings/${from_minecraft_version}.tiny")
 
 def defaultPackage = "net/minecraft/unmapped/"
 def namespace = "intermediary"
 def nameLength = 7
 
-def maven_group = "calamus-${namespace}"
-
-enum Environment {
-
-    MERGED, CLIENT, SERVER
-
-    public boolean isMerged() {
-        return this == MERGED
-    }
-
-    public boolean isClient() {
-        return this == MERGED || this == CLIENT
-    }
-
-    public boolean isServer() {
-        return this == MERGED || this == SERVER
-    }
-}
-
-static Environment parseEnvironment(String id) {
-    if (id == null) {
-        return null
-    }
-    if (id.endsWith("-client")) {
-        return Environment.CLIENT
-    }
-    if (id.endsWith("-server")) {
-        return Environment.SERVER
-    }
-
-    return Environment.MERGED
-}
-
-static String parseVersion(String id, Environment environment) {
-    switch (environment) {
-    case Environment.CLIENT:
-        return id.substring(0, id.length() - "-client".length())
-    case Environment.SERVER:
-        return id.substring(0, id.length() - "-server".length())
-    case Environment.MERGED:
-        return id
-    default:
-        return null
-    }
-}
+def artifact_id = "calamus-${namespace}-gen2"
 
 static boolean validateChecksum(File file, String checksum) {
     if (file != null) {
@@ -146,9 +109,37 @@ task downloadVersionsManifest {
 
 static def getManifestVersion(File manifestFile, String minecraft_version) {
     def manifest = manifestFile.exists() ? new JsonSlurper().parseText(FileUtils.readFileToString(manifestFile, Charset.defaultCharset())) : null
-    return manifest != null ? manifest.versions.stream().filter({
+    return manifest != null && minecraft_version != null ? manifest.versions.stream().filter({
         (it.id == minecraft_version)
     }).findFirst() : java.util.Optional.empty()
+}
+
+task downloadVersionInfo(dependsOn: downloadVersionsManifest) {
+	group = jarSetupGroup
+	def manifestVersion = getManifestVersion(manifestFile, minecraft_version)
+	inputs.property "manifestUrl", manifestVersion.isPresent() ? manifestVersion.get().url : -1
+
+	outputs.files(versionInfoFile)
+
+	doLast {
+		if (manifestVersion.isPresent() || versionInfoFile.exists()) {
+			if (manifestVersion.isPresent()) {
+				FileUtils.copyURLToFile(new URL(manifestVersion.get().url), versionInfoFile)
+			}
+		} else {
+			throw new RuntimeException("No version info for Minecraft version ${minecraft_version} (Did you forget to set the MC_VERSION environment variable?)")
+		}
+
+		versionInfo = new JsonSlurper().parseText(FileUtils.readFileToString(versionInfoFile, Charset.defaultCharset()))
+
+		if (from_minecraft_version != null) {
+			if (!fromVersionInfoFile.exists()) {
+				throw new RuntimeException("No version info for Minecraft version ${from_minecraft_version}")
+			}
+			
+			fromVersionInfo = new JsonSlurper().parseText(FileUtils.readFileToString(fromVersionInfoFile, Charset.defaultCharset()))
+		}
+	}
 }
 
 task downloadVersionDetails(dependsOn: downloadVersionsManifest) {
@@ -156,10 +147,7 @@ task downloadVersionDetails(dependsOn: downloadVersionsManifest) {
     def manifestVersion = getManifestVersion(manifestFile, minecraft_version)
     inputs.property "manifestUrl", manifestVersion.isPresent() ? manifestVersion.get().url : -1
 
-    outputs.file versionDetailsFile
-    outputs.upToDateWhen {
-        return false
-    }
+    outputs.files(versionDetailsFile)
 
     doLast {
         if (manifestVersion.isPresent() || versionDetailsFile.exists()) {
@@ -167,50 +155,74 @@ task downloadVersionDetails(dependsOn: downloadVersionsManifest) {
                 FileUtils.copyURLToFile(new URL(manifestVersion.get().details), versionDetailsFile)
             }
         } else {
-            throw new RuntimeException("No version details for Minecraft version ${minecraft_version} (Did you forget to set the (FROM_)MC_VERSION environment variable?)")
+            throw new RuntimeException("No version details for Minecraft version ${minecraft_version} (Did you forget to set the MC_VERSION environment variable?)")
         }
 
         versionDetails = new JsonSlurper().parseText(FileUtils.readFileToString(versionDetailsFile, Charset.defaultCharset()))
 
-        if (versionDetails.sharedMappings) {
-            if (!environment.isMerged()) {
-                throw new RuntimeException("Minecraft version ${minecraft_version} is only available as merged but was requested for ${environment}!")
-            }
-        } else {
-            if (environment.isMerged()) {
-                throw new RuntimeException("Minecraft version ${minecraft_version} cannot be merged - please select either the client or server environment!")
-            }
-            if (environment.isClient() && !versionDetails.client) {
-                throw new RuntimeException("Minecraft version ${minecraft_version} does not have a client jar!")
-            }
-            if (environment.isServer() && !versionDetails.server) {
-                throw new RuntimeException("Minecraft version ${minecraft_version} does not have a server jar!")
-            }
-        }
-
-        switch (environment) {
-        case Environment.CLIENT:
-            mainJar = clientJar
-            break
-        case Environment.SERVER:
-            mainJar = serverJar
-            break
-        case Environment.MERGED:
-            mainJar = mergedJar
-            break
-        }
-        switch (from_environment) {
-        case Environment.CLIENT:
-            fromMainJar = fromClientJar
-            break
-        case Environment.SERVER:
-            fromMainJar = fromServerJar
-            break
-        case Environment.MERGED:
-            fromMainJar = fromMergedJar
-            break
-        }
+		if (from_minecraft_version != null) {
+			if (!fromVersionDetailsFile.exists()) {
+				throw new RuntimeException("No version details for Minecraft version ${from_minecraft_version}")
+			}
+			
+			fromVersionDetails = new JsonSlurper().parseText(FileUtils.readFileToString(fromVersionDetailsFile, Charset.defaultCharset()))
+		}
     }
+}
+
+task downloadMcLibs(dependsOn: downloadVersionInfo) {
+	group = jarSetupGroup
+	inputs.files versionInfoFile
+
+	outputs.dir(librariesFiles)
+
+	outputs.upToDateWhen { false }
+
+	doLast {
+		if (fromVersionInfo != null) {
+			fromVersionInfo.libraries.each {
+				if (it.downloads == null) {
+					return;
+				}
+	
+				def artifact = it.downloads.artifact
+				if (artifact == null) {
+					return
+				}
+				def downloadUrl = artifact.url
+				def libraryFile = new File(librariesFiles, downloadUrl.substring(downloadUrl.lastIndexOf("/") + 1))
+	
+				libraries.add(libraryFile);
+			}
+		}
+
+		logger.lifecycle(":downloading minecraft libraries")
+
+		if (!librariesFiles.exists()) {
+			librariesFiles.mkdirs()
+		}
+
+		versionInfo.libraries.each {
+			if (it.downloads == null) {
+				return;
+			}
+
+			def artifact = it.downloads.artifact
+			if (artifact == null) {
+				return
+			}
+			def downloadUrl = artifact.url
+			def libraryFile = new File(librariesFiles, downloadUrl.substring(downloadUrl.lastIndexOf("/") + 1))
+
+			download {
+				src downloadUrl
+				dest libraryFile
+				overwrite false
+			}
+
+			libraries.add(libraryFile);
+		}
+	}
 }
 
 task downloadMcJars(dependsOn: downloadVersionDetails) {
@@ -222,8 +234,8 @@ task downloadMcJars(dependsOn: downloadVersionDetails) {
         if (project.gradle.startParameter.isRefreshDependencies()) {
             return false
         }
-        def validClient = (!environment.isClient() || (clientJar.exists() && validateChecksum(clientJar, versionDetails.downloads.client.sha1)))
-        def validServer = (!environment.isServer() || (serverJar.exists() && validateChecksum(serverJar, versionDetails.downloads.server.sha1)))
+        def validClient = (!versionDetails.client || (clientJar.exists() && validateChecksum(clientJar, versionDetails.downloads.client.sha1)))
+        def validServer = (!versionDetails.server || (serverJar.exists() && validateChecksum(serverJar, versionDetails.downloads.server.sha1)))
 
         return validClient && validServer
     }
@@ -233,16 +245,16 @@ task downloadMcJars(dependsOn: downloadVersionDetails) {
             throw new RuntimeException("Can't download the jars without the ${versionDetailsFile.name} file!")
         }
 
-        logger.lifecycle(":downloading minecraft jar(s) for ${version_id}")
+        logger.lifecycle(":downloading minecraft jar(s) for ${minecraft_version}")
 
-        if (environment.isClient()) {
+        if (versionDetails.client) {
             download {
                 src new URL(versionDetails.downloads.client.url)
                 dest clientJar
                 overwrite false
             }
         }
-        if (environment.isServer()) {
+        if (versionDetails.server) {
             download {
                 src new URL(versionDetails.downloads.server.url)
                 dest serverJar
@@ -253,164 +265,188 @@ task downloadMcJars(dependsOn: downloadVersionDetails) {
 }
 
 task mergeJars(dependsOn: downloadMcJars) {
-    group = jarSetupGroup
+	group = jarSetupGroup
     inputs.files downloadMcJars.outputs.files.files
 
     outputs.file(mergedJar)
-    outputs.upToDateWhen {
-        return false
-    }
+	outputs.upToDateWhen {
+		return false
+	}
 
     doLast {
-        if (environment.isMerged()) {
-            logger.lifecycle(":merging jars")
-            def jarMerger = new JarMerger(clientJar, serverJar, mergedJar)
-            jarMerger.merge()
-            jarMerger.close()
-        } else {
-            logger.lifecycle(":skipping - ${version_id} is not merged")
-        }
+		if (versionDetails.sharedMappings) {
+			logger.lifecycle(":merging jars")
+			
+			def jarMerger = new JarMerger(clientJar, serverJar, mergedJar)
+			jarMerger.merge()
+			jarMerger.close()
+		}
     }
 }
 
-task generateCalamus(dependsOn: [downloadVersionDetails, mergeJars]) {
-    group = mappingGenerationGroup
-
-    outputs.file(calamusFile)
-    outputs.upToDateWhen {
-        return false
-    }
-
-    doLast {
-        if (calamusFile.exists()) {
-            return
-        }
-
-        List<String> args = new ArrayList<>()
-        args.add("--default-package")
-        args.add(defaultPackage)
-        args.add("--target-namespace")
-        args.add(namespace)
-        args.add("--name-length")
-        args.add(Integer.toString(nameLength))
-        if (environment.isClient()) {
-            args.add("--client-hash")
-            args.add(versionDetails.downloads.client.sha1)
-        }
-        if (environment.isServer()) {
-            args.add("--server-hash")
-            args.add(versionDetails.downloads.server.sha1)
-        }
-
-        CalamusUtil.generateCalamus(mainJar, calamusFile, args.toArray(new String[args.size()]))
-    }
+class Matches {
+	File file;
+	boolean inverted
 }
 
-static File findMatches(Environment fromEnv, String from, Environment toEnv, String to) {
-    return findMatches(fromEnv, from, toEnv, to, false);
+static Matches findMatches(String fromEnv, String from, String toEnv, String to) {
+	Matches m = new Matches()
+
+	m.file = findMatches(new File("matches/matches"), fromEnv, from, toEnv, to);
+	m.inverted = false
+
+	if (m.file == null) {
+		m.file = findMatches(new File("matches/matches"), toEnv, to, fromEnv, from);
+		m.inverted = true
+	}
+
+	if (m.file == null) {
+		throw new RuntimeException("no matches from ${fromEnv} ${from} to ${toEnv} ${to} could be found" )
+	}
+
+	return m
 }
 
-static File findMatches(Environment fromEnv, String from, Environment toEnv, String to, boolean orThrow) {
-    File matches = findMatches(new File("matches/matches"), fromEnv, from, toEnv, to);
+static File findMatches(File dir, String fromEnv, String from, String toEnv, String to) {
+	String name
 
-    if (matches != null) {
-        return matches;
-    }
+	if (fromEnv == toEnv) {
+		dir = new File(dir, fromEnv)
+		name = "${from}#${to}.match"
+	} else {
+		dir = new File(dir, "cross")
+		name = "${fromEnv}-${from}#${toEnv}-${to}.match"
+	}
 
-    // no matches found...
-    if (orThrow) {
-        throw new RuntimeException("matches from ${fromEnv.name().toLowerCase()} ${from} to ${toEnv.name().toLowerCase()} ${to} do not exist!");
-    } else {
-        File invertedMatches = findMatches(toEnv, to, fromEnv, from, true);
-        matches = new File(invertedMatches.parentFile, "temp.match")
-
-        MappingUtils.invertMatches(invertedMatches.toPath(), matches.toPath());
-    }
-
-    return matches;
-}
-
-static File findMatches(File dir, Environment fromEnv, String from, Environment toEnv, String to) {
-    String name
-
-    if (fromEnv == toEnv) {
-        dir = new File(dir, fromEnv.name().toLowerCase())
-        name = "${from}#${to}.match"
-    } else {
-        dir = new File(dir, "cross")
-        name = "${fromEnv.name().toLowerCase()}-${from}#${toEnv.name().toLowerCase()}-${to}.match"
-    }
-
-    return findMatches(dir, name)
+	return findMatches(dir, name)
 }
 
 static File findMatches(File dir, String name) {
-    if (dir.isDirectory()) {
-        File matches = new File(dir, name);
+	if (dir.isDirectory()) {
+		File matches = new File(dir, name);
  
-        if (matches.exists()) {
-            return matches;
-        }
+		if (matches.exists()) {
+			return matches;
+		}
 
-        for (File f : dir.listFiles()) {
-            matches = findMatches(f, name);
+		for (File f : dir.listFiles()) {
+			matches = findMatches(f, name);
 
-            if (matches != null) {
-                return matches;
-            }
-        }
-    }
+			if (matches != null) {
+				return matches;
+			}
+		}
+	}
 
-    return null;
+	return null;
 }
 
-task updateCalamus(dependsOn: [downloadVersionDetails, mergeJars]) {
-    group = mappingGenerationGroup
-    inputs.files(fromMainJar, mainJar)
+task generateCalamus(dependsOn: [mergeJars, downloadMcLibs]) {
+	group = mappingGenerationGroup
 
-    outputs.file(calamusFile)
+    outputs.file(mergedCalamusFile)
     outputs.upToDateWhen {
         return false
     }
 
     doLast {
-        if (calamusFile.exists()) {
+        if (mergedCalamusFile.exists()) {
             return
         }
 
-        if (!fromCalamusFile.exists()) {
-            throw new RuntimeException("Cannot update calamus from ${from_version_id} to ${version_id}: calamus for ${from_version_id} does not exist!")
-        }
+		logger.lifecycle(":generating intermediary for ${minecraft_version}")
 
-        List<File> oldJars = new ArrayList<>()
-        List<File> oldCalamusFiles = new ArrayList<>()
-        List<File> matchesFiles = new ArrayList<>()
         List<String> args = new ArrayList<>()
-
-        oldJars.add(fromMainJar)
-        oldCalamusFiles.add(fromCalamusFile)
-        matchesFiles.add(findMatches(from_environment, from_minecraft_version, environment, minecraft_version))
         args.add("--default-package")
         args.add(defaultPackage)
         args.add("--target-namespace")
         args.add(namespace)
         args.add("--name-length")
         args.add(Integer.toString(nameLength))
-        if (environment.isClient()) {
+        if (versionDetails.client) {
             args.add("--client-hash")
             args.add(versionDetails.downloads.client.sha1)
         }
-        if (environment.isServer()) {
+        if (versionDetails.server) {
             args.add("--server-hash")
             args.add(versionDetails.downloads.server.sha1)
         }
+		String[] options = args.toArray(new String[args.size()])
 
-        CalamusUtil.updateCalamus(oldJars, mainJar, oldCalamusFiles, calamusFile, matchesFiles, args.toArray(new String[args.size()]))
+		if (versionDetails.sharedMappings) {
+			IntermediaryUtil.generateIntermediary(mergedJar, libraries, mergedCalamusFile, options)
+		} else {
+			def matches = findMatches("client", minecraft_version, "server", minecraft_version)
+
+			IntermediaryUtil.generateIntermediary(clientJar, libraries, serverJar, libraries, mergedCalamusFile, matches.file, matches.inverted, options)
+		}
     }
 }
 
-static List<String> getPublishedVersions(def maven_group) {
-    def xml = new URL("https://maven.ornithemc.net/releases/net/ornithemc/${maven_group}/maven-metadata.xml").text
+task updateCalamus(dependsOn: [mergeJars, downloadMcLibs]) {
+	group = mappingGenerationGroup
+
+    outputs.file(mergedCalamusFile)
+    outputs.upToDateWhen {
+        return false
+    }
+
+    doLast {
+        if (mergedCalamusFile.exists()) {
+            return
+        }
+
+        if (!fromMergedCalamusFile.exists()) {
+            throw new RuntimeException("Cannot update calamus from ${from_minecraft_version} to ${minecraft_version}: calamus for ${from_minecraft_version} does not exist!")
+        }
+
+		logger.lifecycle(":updating intermediary from ${from_minecraft_version} to ${minecraft_version}")
+
+		List<String> args = new ArrayList<>()
+		args.add("--default-package")
+		args.add(defaultPackage)
+		args.add("--target-namespace")
+		args.add(namespace)
+		args.add("--name-length")
+		args.add(Integer.toString(nameLength))
+		if (versionDetails.client) {
+			args.add("--client-hash")
+			args.add(versionDetails.downloads.client.sha1)
+		}
+		if (versionDetails.server) {
+			args.add("--server-hash")
+			args.add(versionDetails.downloads.server.sha1)
+		}
+		String[] options = args.toArray(new String[args.size()])
+
+		if (versionDetails.sharedMappings) {
+			if (fromVersionDetails.sharedMappings) {
+				def matches = findMatches("merged", from_minecraft_version, "merged", minecraft_version)
+
+				IntermediaryUtil.updateIntermediary(fromMergedJar, fromLibraries, mergedJar, libraries, fromMergedCalamusFile, mergedCalamusFile, matches.file, matches.inverted, options)
+			} else {
+				throw new RuntimeException("updating intermediary from split to merged is not supported yet!")
+			}
+		} else {
+			if (fromVersionDetails.sharedMappings) {
+				def clientMatches = findMatches("merged", from_minecraft_version, "client", minecraft_version)
+				def serverMatches = findMatches("merged", from_minecraft_version, "server", minecraft_version)
+				def clientServerMatches = findMatches("client", minecraft_version, "server", minecraft_version)
+
+				IntermediaryUtil.updateIntermediary(fromMergedJar, fromLibraries, clientJar, libraries, serverJar, libraries, fromMergedCalamusFile, mergedCalamusFile, clientMatches.file, serverMatches.file, clientServerMatches.file, clientMatches.inverted, serverMatches.inverted, clientServerMatches.inverted, options)
+			} else {
+				def clientMatches = findMatches("client", from_minecraft_version, "client", minecraft_version)
+				def serverMatches = findMatches("server", from_minecraft_version, "server", minecraft_version)
+				def clientServerMatches = findMatches("client", minecraft_version, "server", minecraft_version)
+
+				IntermediaryUtil.updateIntermediary(fromClientJar, fromLibraries, fromServerJar, fromLibraries, clientJar, libraries, serverJar, libraries, fromMergedCalamusFile, mergedCalamusFile, clientMatches.file, serverMatches.file, clientServerMatches.file, clientMatches.inverted, serverMatches.inverted, clientServerMatches.inverted, options)
+			}
+		}
+    }
+}
+
+static List<String> getPublishedVersions(def artifact_id) {
+    def xml = new URL("https://maven.ornithemc.net/releases/net/ornithemc/${artifact_id}/maven-metadata.xml").text
     def metadata = new XmlSlurper().parseText(xml)
     def versions = metadata.versioning.versions.version*.text()
     return versions
@@ -418,7 +454,7 @@ static List<String> getPublishedVersions(def maven_group) {
 
 def publishedVersions
 try {
-    publishedVersions = getPublishedVersions(maven_group)
+    publishedVersions = getPublishedVersions(artifact_id)
 } catch (ignored) {
 }
 
@@ -465,7 +501,7 @@ file('mappings').eachFile {
         publications {
             create("${mcVer.replace(" ", "")}_mavenJava", MavenPublication) {
                 groupId 'net.ornithemc'
-                artifactId maven_group
+                artifactId artifact_id
                 version mcVer
                 artifact(makeV1Jar.archiveFile) {
                     builtBy makeV1Jar
@@ -483,7 +519,7 @@ file('mappings').eachFile {
 def makeJar(String mcVersion, File mappings, File nests, boolean v2) {
     def jarFilename = "calamus-" + mcVersion + (v2 ? "-v2" : "")
     return task("${mcVersion}_makeJar" + (v2 ? "v2" : ""), type: Jar) {
-        baseName jarFilename
+        archiveBaseName.set(jarFilename)
         from(file(mappings)) {
             into "mappings"
             rename mappings.name, "mappings.tiny"
