@@ -191,7 +191,7 @@ METHOD	net/minecraft/server/MinecraftServer	()V	m_4199656	G	F
 METHOD	net/minecraft/server/MinecraftServer	()V	m_0461388	a	a
 METHOD	net/minecraft/server/MinecraftServer	(I)Lnet/minecraft/unmapped/C_3179790;	m_8359155	a	a
 METHOD	net/minecraft/server/MinecraftServer	(Lnet/minecraft/unmapped/C_8111543;Ljava/lang/String;)Ljava/util/List;	m_7359594	a	a
-METHOD	net/minecraft/server/MinecraftServer	(Lnet/minecraft/unmapped/C_1418725;)V	m_6822422	a	a
+METHOD	net/minecraft/server/MinecraftServer	(Lnet/minecraft/unmapped/C_1418725;)V	m_6396675	a	a
 METHOD	net/minecraft/server/MinecraftServer	(Ljava/lang/String;)Ljava/io/File;	m_8402376	a	a
 METHOD	net/minecraft/server/MinecraftServer	(Ljava/lang/String;JLnet/minecraft/unmapped/C_3029635;)V	m_2746437	a	a
 METHOD	net/minecraft/server/MinecraftServer	(Ljava/lang/String;Lnet/minecraft/unmapped/C_8111543;)V	m_3034430	a	a
@@ -5237,10 +5237,10 @@ FIELD	net/minecraft/unmapped/C_5523790	Ljava/util/logging/Logger;	f_2823978	a	a
 FIELD	net/minecraft/unmapped/C_5523790	Z	f_9905767	b	b
 FIELD	net/minecraft/unmapped/C_5523790	Lnet/minecraft/server/MinecraftServer;	f_9326964	c	c
 METHOD	net/minecraft/unmapped/C_5523790	()Z	m_6894308	a	a
-METHOD	net/minecraft/unmapped/C_5523790	(Lnet/minecraft/unmapped/C_5523790;)Lnet/minecraft/server/MinecraftServer;	m_5248147	a	a
-METHOD	net/minecraft/unmapped/C_5523790	()Ljavax/swing/JComponent;	m_2075000	b	b
-METHOD	net/minecraft/unmapped/C_5523790	()Ljavax/swing/JComponent;	m_7635047	c	c
-METHOD	net/minecraft/unmapped/C_5523790	()Ljavax/swing/JComponent;	m_8356424	d	d
+METHOD	net/minecraft/unmapped/C_5523790	(Lnet/minecraft/unmapped/C_5523790;)Lnet/minecraft/server/MinecraftServer;	m_3745490	a	a
+METHOD	net/minecraft/unmapped/C_5523790	()Ljavax/swing/JComponent;	m_0954064	b	b
+METHOD	net/minecraft/unmapped/C_5523790	()Ljavax/swing/JComponent;	m_0927951	c	c
+METHOD	net/minecraft/unmapped/C_5523790	()Ljavax/swing/JComponent;	m_0632186	d	d
 CLASS	net/minecraft/unmapped/C_5534171	dc	cf
 FIELD	net/minecraft/unmapped/C_5534171	Lnet/minecraft/unmapped/C_5534171;	f_2204918	a	a
 FIELD	net/minecraft/unmapped/C_5534171	Lnet/minecraft/unmapped/C_5534171;	f_2222395	b	b
@@ -5987,10 +5987,10 @@ FIELD	net/minecraft/unmapped/C_6168508	[I	f_0508291	b	b
 FIELD	net/minecraft/unmapped/C_6168508	I	f_5014014	c	c
 FIELD	net/minecraft/unmapped/C_6168508	[Ljava/lang/String;	f_0690297	d	d
 FIELD	net/minecraft/unmapped/C_6168508	Lnet/minecraft/server/MinecraftServer;	f_6833737	e	e
-METHOD	net/minecraft/unmapped/C_6168508	()V	m_4504000	a	a
-METHOD	net/minecraft/unmapped/C_6168508	(Lnet/minecraft/unmapped/C_6168508;)V	m_5364811	a	a
-METHOD	net/minecraft/unmapped/C_6168508	([J)D	m_2633610	a	a
-METHOD	net/minecraft/unmapped/C_6168508	(Ljava/awt/Graphics;)V	m_3587647	paint	paint
+METHOD	net/minecraft/unmapped/C_6168508	()V	m_9613095	a	a
+METHOD	net/minecraft/unmapped/C_6168508	(Lnet/minecraft/unmapped/C_6168508;)V	m_0193981	a	a
+METHOD	net/minecraft/unmapped/C_6168508	([J)D	m_2018258	a	a
+METHOD	net/minecraft/unmapped/C_6168508	(Ljava/awt/Graphics;)V	m_6095836	paint	paint
 CLASS	net/minecraft/unmapped/C_6170210	xs	qb
 FIELD	net/minecraft/unmapped/C_6170210	I	f_7661146	a	a
 FIELD	net/minecraft/unmapped/C_6170210	I	f_4456093	b	b
@@ -9294,18 +9294,18 @@ METHOD	net/minecraft/unmapped/C_9998591	(II)I	m_7672918	b	b
 METHOD	net/minecraft/unmapped/C_9998591	(IZ)Ljava/util/List;	m_5159777	b	a
 METHOD	net/minecraft/unmapped/C_9998591	(I)I	m_7604655	c	a
 METHOD	net/minecraft/unmapped/C_9998591	(II)I	m_0534118	c	c
-FIELD	net/minecraft/server/MinecraftServer	(Z)V	m_4398599		a
-FIELD	net/minecraft/server/MinecraftServer	(I)V	m_8267947		b
-FIELD	net/minecraft/server/MinecraftServer	(Ljava/lang/String;)V	m_0787970		i
-FIELD	net/minecraft/server/MinecraftServer	(Ljava/lang/String;)V	m_1659183		j
-FIELD	net/minecraft/unmapped/C_2077354	(Ljava/lang/String;)Lnet/minecraft/unmapped/C_5678746;	m_1972199		c
+METHOD	net/minecraft/server/MinecraftServer	(Z)V	m_7246063		a
+METHOD	net/minecraft/server/MinecraftServer	(I)V	m_8579925		b
+METHOD	net/minecraft/server/MinecraftServer	(Ljava/lang/String;)V	m_2271831		i
+METHOD	net/minecraft/server/MinecraftServer	(Ljava/lang/String;)V	m_8279287		j
+METHOD	net/minecraft/unmapped/C_2077354	(Ljava/lang/String;)Lnet/minecraft/unmapped/C_5678746;	m_1972199		c
 CLASS	net/minecraft/unmapped/C_3680785		bz
 FIELD	net/minecraft/unmapped/C_3680785	Lnet/minecraft/server/MinecraftServer;	f_2528423		a
-FIELD	net/minecraft/unmapped/C_5056035	(II)Lnet/minecraft/unmapped/C_5161289;	m_4731966		a
-FIELD	net/minecraft/unmapped/C_5056035	()I	m_4863429		u
-FIELD	net/minecraft/unmapped/C_5056035	(III)F	m_3817120		p
-FIELD	net/minecraft/unmapped/C_5056035	(III)Z	m_7204759		r
-FIELD	net/minecraft/unmapped/C_5056035	(III)Z	m_4919034		g
-FIELD	net/minecraft/unmapped/C_5523790	(Lnet/minecraft/server/MinecraftServer;)V	m_0732000		a
+METHOD	net/minecraft/unmapped/C_5056035	(II)Lnet/minecraft/unmapped/C_5161289;	m_4731966		a
+METHOD	net/minecraft/unmapped/C_5056035	()I	m_4863429		u
+METHOD	net/minecraft/unmapped/C_5056035	(III)F	m_3817120		p
+METHOD	net/minecraft/unmapped/C_5056035	(III)Z	m_7204759		r
+METHOD	net/minecraft/unmapped/C_5056035	(III)Z	m_4919034		g
+METHOD	net/minecraft/unmapped/C_5523790	(Lnet/minecraft/server/MinecraftServer;)V	m_7003350		a
 CLASS	net/minecraft/unmapped/C_8594362		x
 FIELD	net/minecraft/unmapped/C_8594362	Lnet/minecraft/server/MinecraftServer;	f_3972821		a
