@@ -123,12 +123,12 @@ static def getManifestVersion(File manifestFile, String minecraft_version) {
 
 task downloadVersionInfo(dependsOn: downloadVersionsManifest) {
 	group = jarSetupGroup
-	def manifestVersion = getManifestVersion(manifestFile, minecraft_version)
-	inputs.property "manifestUrl", manifestVersion.isPresent() ? manifestVersion.get().url : -1
 
 	outputs.files(versionInfoFile)
 
 	doLast {
+		def manifestVersion = getManifestVersion(manifestFile, minecraft_version)
+
 		if (manifestVersion.isPresent() || versionInfoFile.exists()) {
 			if (manifestVersion.isPresent()) {
 				FileUtils.copyURLToFile(new URL(manifestVersion.get().url), versionInfoFile)
@@ -151,12 +151,12 @@ task downloadVersionInfo(dependsOn: downloadVersionsManifest) {
 
 task downloadVersionDetails(dependsOn: downloadVersionsManifest) {
     group = jarSetupGroup
-    def manifestVersion = getManifestVersion(manifestFile, minecraft_version)
-    inputs.property "manifestUrl", manifestVersion.isPresent() ? manifestVersion.get().url : -1
 
     outputs.files(versionDetailsFile)
 
     doLast {
+    	def manifestVersion = getManifestVersion(manifestFile, minecraft_version)
+
         if (manifestVersion.isPresent() || versionDetailsFile.exists()) {
             if (manifestVersion.isPresent()) {
                 FileUtils.copyURLToFile(new URL(manifestVersion.get().details), versionDetailsFile)
