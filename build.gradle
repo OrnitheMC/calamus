@@ -43,9 +43,14 @@ plugins {
 def ENV = System.getenv()
 
 def jarSetupGroup = "jar setup"
-def mappingGenerationGroup = "mapping generation"
-def buildCacheDir = file(".gradle/minecraft")
+def buildMappingsGroup = "build mappings"
+// cache dirs
+def buildCacheDir = new File(project.gradle.gradleUserHomeDir, "caches/ornithe-cache")
+def versionJsonsDir = new File(buildCacheDir, "version-jsons")
+def gameJarsDir = new File(buildCacheDir, "game-jars")
 def librariesDir = new File(buildCacheDir, "libraries")
+// project dirs
+def workingDir = file("mappings");
 
 def minecraft_version = ENV.MC_VERSION
 def from_minecraft_version = ENV.FROM_MC_VERSION
@@ -54,27 +59,27 @@ def manifestFile = new File(buildCacheDir, "version_manifest.json")
 
 def versionInfo = null;
 def versionDetails = null
-def versionInfoFile = new File(buildCacheDir, "${minecraft_version}-info.json")
-def versionDetailsFile = new File(buildCacheDir, "${minecraft_version}-details.json")
-def clientJar = new File(buildCacheDir, "${minecraft_version}-client.jar")
-def serverJar = new File(buildCacheDir, "${minecraft_version}-server.jar")
-def mergedJar = new File(buildCacheDir, "${minecraft_version}-merged.jar")
+def versionInfoFile = new File(versionJsonsDir, "${minecraft_version}-info.json")
+def versionDetailsFile = new File(versionJsonsDir, "${minecraft_version}-details.json")
+def clientJar = new File(gameJarsDir, "${minecraft_version}-client.jar")
+def serverJar = new File(gameJarsDir, "${minecraft_version}-server.jar")
+def mergedJar = new File(gameJarsDir, "${minecraft_version}-merged.jar")
 def libraries = new ArrayList<File>()
-def clientCalamusFile = file("mappings/${minecraft_version}-client.tiny")
-def serverCalamusFile = file("mappings/${minecraft_version}-server.tiny")
-def mergedCalamusFile = file("mappings/${minecraft_version}.tiny")
+def clientCalamusFile = new File(workingDir, "${minecraft_version}-client.tiny")
+def serverCalamusFile = new File(workingDir, "${minecraft_version}-server.tiny")
+def mergedCalamusFile = new File(workingDir, "${minecraft_version}.tiny")
 
 def fromVersionInfo = null;
 def fromVersionDetails = null
-def fromVersionInfoFile = new File(buildCacheDir, "${from_minecraft_version}-info.json")
-def fromVersionDetailsFile = new File(buildCacheDir, "${from_minecraft_version}-details.json")
-def fromClientJar = new File(buildCacheDir, "${from_minecraft_version}-client.jar")
-def fromServerJar = new File(buildCacheDir, "${from_minecraft_version}-server.jar")
-def fromMergedJar = new File(buildCacheDir, "${from_minecraft_version}-merged.jar")
+def fromVersionInfoFile = new File(versionJsonsDir, "${from_minecraft_version}-info.json")
+def fromVersionDetailsFile = new File(versionJsonsDir, "${from_minecraft_version}-details.json")
+def fromClientJar = new File(gameJarsDir, "${from_minecraft_version}-client.jar")
+def fromServerJar = new File(gameJarsDir, "${from_minecraft_version}-server.jar")
+def fromMergedJar = new File(gameJarsDir, "${from_minecraft_version}-merged.jar")
 def fromLibraries = new ArrayList<File>()
-def fromClientCalamusFile = file("mappings/${from_minecraft_version}-client.tiny")
-def fromServerCalamusFile = file("mappings/${from_minecraft_version}-server.tiny")
-def fromMergedCalamusFile = file("mappings/${from_minecraft_version}.tiny")
+def fromClientCalamusFile = new File(workingDir, "${from_minecraft_version}-client.tiny")
+def fromServerCalamusFile = new File(workingDir, "${from_minecraft_version}-server.tiny")
+def fromMergedCalamusFile = new File(workingDir, "${from_minecraft_version}.tiny")
 
 def defaultPackage = "net/minecraft/unmapped/"
 def namespace = "intermediary"
@@ -181,6 +186,10 @@ task downloadMcLibs(dependsOn: downloadVersionInfo) {
 	outputs.upToDateWhen { false }
 
 	doLast {
+		if (!librariesDir.exists()) {
+			librariesDir.mkdirs()
+		}
+
 		if (fromVersionInfo != null) {
 			fromVersionInfo.libraries.each {
 				if (it.downloads == null) {
@@ -199,10 +208,6 @@ task downloadMcLibs(dependsOn: downloadVersionInfo) {
 		}
 
 		logger.lifecycle(":downloading minecraft libraries")
-
-		if (!librariesDir.exists()) {
-			librariesDir.mkdirs()
-		}
 
 		versionInfo.libraries.each {
 			if (it.downloads == null) {
@@ -344,7 +349,7 @@ static File findMatches(File dir, String name) {
 }
 
 task generateCalamus(dependsOn: [mergeJars, downloadMcLibs]) {
-	group = mappingGenerationGroup
+	group = buildMappingsGroup
 
     outputs.file(mergedCalamusFile)
     outputs.upToDateWhen {
@@ -386,7 +391,7 @@ task generateCalamus(dependsOn: [mergeJars, downloadMcLibs]) {
 }
 
 task updateCalamus(dependsOn: [mergeJars, downloadMcLibs]) {
-	group = mappingGenerationGroup
+	group = buildMappingsGroup
 
     outputs.file(mergedCalamusFile)
     outputs.upToDateWhen {
