@@ -1,43 +1,43 @@
+import java.nio.charset.Charset
+import java.nio.file.Paths
+import groovy.json.JsonSlurper
+import groovy.xml.XmlSlurper
+
 import com.google.common.hash.Hashing
 import com.google.common.io.Files
 import cuchaz.enigma.command.ConvertMappingsCommand
-import groovy.json.JsonSlurper
-import groovy.xml.XmlSlurper
 import net.fabricmc.stitch.merge.JarMerger
 import net.fabricmc.stitch.util.IntermediaryUtil
 import net.ornithemc.mappingutils.MappingUtils
 import org.apache.commons.io.FileUtils
 
-import java.nio.charset.Charset
-import java.nio.file.Paths
-
 buildscript {
-    repositories {
+	repositories {
 		mavenLocal()
-        maven {
-            name "Quilt"
-            url "https://maven.quiltmc.org/repository/release"
-        }
-        maven {
-            name "Ornithe"
-            url "https://maven.ornithemc.net/releases"
-        }
-    }
+		maven {
+			name "Quilt"
+			url "https://maven.quiltmc.org/repository/release"
+		}
+		maven {
+			name "Ornithe"
+			url "https://maven.ornithemc.net/releases"
+		}
+	}
 
-    dependencies {
-        classpath "net.ornithemc:enigma-cli:1.2.7"
-        classpath "net.ornithemc:stitch:0.11.2"
-        classpath "net.ornithemc:mapping-utils:0.9.1"
-        classpath "commons-io:commons-io:2.8.0"
-        classpath "org.codehaus.groovy:groovy-json:3.0.9"
-        classpath "org.codehaus.groovy:groovy-xml:3.0.9"
-    }
+	dependencies {
+		classpath "net.ornithemc:enigma-cli:1.2.7"
+		classpath "net.ornithemc:stitch:0.11.2"
+		classpath "net.ornithemc:mapping-utils:0.9.1"
+		classpath "commons-io:commons-io:2.8.0"
+		classpath "org.codehaus.groovy:groovy-json:3.0.9"
+		classpath "org.codehaus.groovy:groovy-xml:3.0.9"
+	}
 }
 
 plugins {
-    id 'de.undercouch.download' version '4.1.1'
-    id 'java'
-    id 'maven-publish'
+	id 'de.undercouch.download' version '4.1.1'
+	id 'java'
+	id 'maven-publish'
 }
 
 def ENV = System.getenv()
@@ -89,36 +89,35 @@ def intermediary_gen = 2
 def artifact_id = "calamus-${namespace}-gen${intermediary_gen}"
 
 static boolean validateChecksum(File file, String checksum) {
-    if (file != null) {
-        //noinspection GrDeprecatedAPIUsage
-        def hash = Files.asByteSource(file).hash(Hashing.sha1())
-        def builder = new StringBuilder()
-        hash.asBytes().each {
-            builder.append(Integer.toString((it & 0xFF) + 0x100, 16).substring(1))
-        }
-        return builder.toString() == checksum
-    }
-    return false
+	if (file != null) {
+		def hash = Files.asByteSource(file).hash(Hashing.sha1())
+		def builder = new StringBuilder()
+		hash.asBytes().each {
+			builder.append(Integer.toString((it & 0xFF) + 0x100, 16).substring(1))
+		}
+		return builder.toString() == checksum
+	}
+	return false
 }
 
 task downloadVersionsManifest {
-    group = jarSetupGroup
-    //inputs.property "mc_ver", minecraft_version
-    inputs.property "currenttime", new Date()
+	group = jarSetupGroup
 
-    outputs.file(manifestFile)
+	//inputs.property "mc_ver", minecraft_version
+	inputs.property "currenttime", new Date()
+	outputs.file(manifestFile)
 
-    doLast {
-        logger.lifecycle(":downloading minecraft versions manifest")
-        FileUtils.copyURLToFile(new URL("https://skyrising.github.io/mc-versions/version_manifest.json"), manifestFile)
-    }
+	doLast {
+		logger.lifecycle(":downloading minecraft versions manifest")
+		FileUtils.copyURLToFile(new URL("https://skyrising.github.io/mc-versions/version_manifest.json"), manifestFile)
+	}
 }
 
 static def getManifestVersion(File manifestFile, String minecraft_version) {
-    def manifest = manifestFile.exists() ? new JsonSlurper().parseText(FileUtils.readFileToString(manifestFile, Charset.defaultCharset())) : null
-    return manifest != null && minecraft_version != null ? manifest.versions.stream().filter({
-        (it.id == minecraft_version)
-    }).findFirst() : java.util.Optional.empty()
+	def manifest = manifestFile.exists() ? new JsonSlurper().parseText(FileUtils.readFileToString(manifestFile, Charset.defaultCharset())) : null
+	return manifest != null && minecraft_version != null ? manifest.versions.stream().filter({
+		(it.id == minecraft_version)
+	}).findFirst() : java.util.Optional.empty()
 }
 
 task downloadVersionInfo(dependsOn: downloadVersionsManifest) {
@@ -143,66 +142,61 @@ task downloadVersionInfo(dependsOn: downloadVersionsManifest) {
 			if (!fromVersionInfoFile.exists()) {
 				throw new RuntimeException("No version info for Minecraft version ${from_minecraft_version}")
 			}
-			
+
 			fromVersionInfo = new JsonSlurper().parseText(FileUtils.readFileToString(fromVersionInfoFile, Charset.defaultCharset()))
 		}
 	}
 }
 
 task downloadVersionDetails(dependsOn: downloadVersionsManifest) {
-    group = jarSetupGroup
+	group = jarSetupGroup
 
-    outputs.files(versionDetailsFile)
+	outputs.files(versionDetailsFile)
 
-    doLast {
-    	def manifestVersion = getManifestVersion(manifestFile, minecraft_version)
+	doLast {
+		def manifestVersion = getManifestVersion(manifestFile, minecraft_version)
 
-        if (manifestVersion.isPresent() || versionDetailsFile.exists()) {
-            if (manifestVersion.isPresent()) {
-                FileUtils.copyURLToFile(new URL(manifestVersion.get().details), versionDetailsFile)
-            }
-        } else {
-            throw new RuntimeException("No version details for Minecraft version ${minecraft_version} (Did you forget to set the MC_VERSION environment variable?)")
-        }
+		if (manifestVersion.isPresent() || versionDetailsFile.exists()) {
+			if (manifestVersion.isPresent()) {
+				FileUtils.copyURLToFile(new URL(manifestVersion.get().details), versionDetailsFile)
+			}
+		} else {
+			throw new RuntimeException("No version details for Minecraft version ${minecraft_version} (Did you forget to set the MC_VERSION environment variable?)")
+		}
 
-        versionDetails = new JsonSlurper().parseText(FileUtils.readFileToString(versionDetailsFile, Charset.defaultCharset()))
+		versionDetails = new JsonSlurper().parseText(FileUtils.readFileToString(versionDetailsFile, Charset.defaultCharset()))
 
 		if (from_minecraft_version != null) {
 			if (!fromVersionDetailsFile.exists()) {
 				throw new RuntimeException("No version details for Minecraft version ${from_minecraft_version}")
 			}
-			
+
 			fromVersionDetails = new JsonSlurper().parseText(FileUtils.readFileToString(fromVersionDetailsFile, Charset.defaultCharset()))
 		}
-    }
+	}
 }
 
 task downloadMcLibs(dependsOn: downloadVersionInfo) {
 	group = jarSetupGroup
+
 	inputs.files versionInfoFile
-
 	outputs.dir(librariesDir)
-
 	outputs.upToDateWhen { false }
 
 	doLast {
-		if (!librariesDir.exists()) {
-			librariesDir.mkdirs()
-		}
-
 		if (fromVersionInfo != null) {
 			fromVersionInfo.libraries.each {
 				if (it.downloads == null) {
 					return;
 				}
-	
+
 				def artifact = it.downloads.artifact
 				if (artifact == null) {
 					return
 				}
 				def downloadUrl = artifact.url
 				def libraryFile = new File(librariesDir, downloadUrl.substring(downloadUrl.lastIndexOf("/") + 1))
-	
+
 				libraries.add(libraryFile);
 			}
 		}
@@ -233,62 +227,62 @@ task downloadMcLibs(dependsOn: downloadVersionInfo) {
 }
 
 task downloadMcJars(dependsOn: downloadVersionDetails) {
-    group = jarSetupGroup
-    inputs.files versionDetailsFile
+	group = jarSetupGroup
 
-    outputs.files(clientJar, serverJar)
-    outputs.upToDateWhen {
-        if (project.gradle.startParameter.isRefreshDependencies()) {
-            return false
-        }
-        def validClient = (!versionDetails.client || (clientJar.exists() && validateChecksum(clientJar, versionDetails.downloads.client.sha1)))
-        def validServer = (!versionDetails.server || (serverJar.exists() && validateChecksum(serverJar, versionDetails.downloads.server.sha1)))
+	inputs.files versionDetailsFile
+	outputs.files(clientJar, serverJar)
+	outputs.upToDateWhen {
+		if (project.gradle.startParameter.isRefreshDependencies()) {
+			return false
+		}
+		def validClient = (!versionDetails.client || (clientJar.exists() && validateChecksum(clientJar, versionDetails.downloads.client.sha1)))
+		def validServer = (!versionDetails.server || (serverJar.exists() && validateChecksum(serverJar, versionDetails.downloads.server.sha1)))
 
-        return validClient && validServer
-    }
+		return validClient && validServer
+	}
 
-    doLast {
-        if (!versionDetailsFile.exists() || versionDetails == null) {
-            throw new RuntimeException("Can't download the jars without the ${versionDetailsFile.name} file!")
-        }
+	doLast {
+		if (!versionDetailsFile.exists() || versionDetails == null) {
+			throw new RuntimeException("Can't download the jars without the ${versionDetailsFile.name} file!")
+		}
 
-        logger.lifecycle(":downloading minecraft jar(s) for ${minecraft_version}")
+		logger.lifecycle(":downloading minecraft jar(s) for ${minecraft_version}")
 
-        if (versionDetails.client) {
-            download {
-                src new URL(versionDetails.downloads.client.url)
-                dest clientJar
-                overwrite false
-            }
-        }
-        if (versionDetails.server) {
-            download {
-                src new URL(versionDetails.downloads.server.url)
-                dest serverJar
-                overwrite false
-            }
-        }
-    }
+		if (versionDetails.client) {
+			download {
+				src new URL(versionDetails.downloads.client.url)
+				dest clientJar
+				overwrite false
+			}
+		}
+		if (versionDetails.server) {
+			download {
+				src new URL(versionDetails.downloads.server.url)
+				dest serverJar
+				overwrite false
+			}
+		}
+	}
 }
 
 task mergeJars(dependsOn: downloadMcJars) {
 	group = jarSetupGroup
-    inputs.files downloadMcJars.outputs.files.files
 
-    outputs.file(mergedJar)
+	inputs.files downloadMcJars.outputs.files.files
+	outputs.file(mergedJar)
 	outputs.upToDateWhen {
 		return false
 	}
 
-    doLast {
+	doLast {
 		if (versionDetails.sharedMappings) {
 			logger.lifecycle(":merging jars")
-			
+
 			def jarMerger = new JarMerger(clientJar, serverJar, mergedJar)
 			jarMerger.merge()
 			jarMerger.close()
 		}
-    }
+	}
 }
 
 class Matches {
@@ -331,7 +325,7 @@ static File findMatches(File dir, String fromEnv, String from, String toEnv, Str
 static File findMatches(File dir, String name) {
 	if (dir.isDirectory()) {
 		File matches = new File(dir, name);
- 
+
 		if (matches.exists()) {
 			return matches;
 		}
@@ -351,33 +345,35 @@ static File findMatches(File dir, String name) {
 task generateCalamus(dependsOn: [mergeJars, downloadMcLibs]) {
 	group = buildMappingsGroup
 
-    outputs.file(mergedCalamusFile)
-    outputs.upToDateWhen {
-        return false
-    }
+	outputs.file(mergedCalamusFile)
+	outputs.upToDateWhen {
+		return false
+	}
 
-    doLast {
-        if (mergedCalamusFile.exists()) {
-            return
-        }
+	workingDir.mkdirs()
+
+	doLast {
+		if (mergedCalamusFile.exists()) {
+			return
+		}
 
 		logger.lifecycle(":generating intermediary for ${minecraft_version}")
 
-        List<String> args = new ArrayList<>()
-        args.add("--default-package")
-        args.add(defaultPackage)
-        args.add("--target-namespace")
-        args.add(namespace)
-        args.add("--name-length")
-        args.add(Integer.toString(nameLength))
-        if (versionDetails.client) {
-            args.add("--client-hash")
-            args.add(versionDetails.downloads.client.sha1)
-        }
-        if (versionDetails.server) {
-            args.add("--server-hash")
-            args.add(versionDetails.downloads.server.sha1)
-        }
+		List<String> args = new ArrayList<>()
+		args.add("--default-package")
+		args.add(defaultPackage)
+		args.add("--target-namespace")
+		args.add(namespace)
+		args.add("--name-length")
+		args.add(Integer.toString(nameLength))
+		if (versionDetails.client) {
+			args.add("--client-hash")
+			args.add(versionDetails.downloads.client.sha1)
+		}
+		if (versionDetails.server) {
+			args.add("--server-hash")
+			args.add(versionDetails.downloads.server.sha1)
+		}
 		String[] options = args.toArray(new String[args.size()])
 
 		if (versionDetails.sharedMappings) {
@@ -387,25 +383,25 @@ task generateCalamus(dependsOn: [mergeJars, downloadMcLibs]) {
 
 			IntermediaryUtil.generateIntermediary(clientJar, libraries, serverJar, libraries, mergedCalamusFile, matches.file, matches.inverted, options)
 		}
-    }
+	}
 }
 
 task updateCalamus(dependsOn: [mergeJars, downloadMcLibs]) {
 	group = buildMappingsGroup
 
-    outputs.file(mergedCalamusFile)
-    outputs.upToDateWhen {
-        return false
-    }
+	outputs.file(mergedCalamusFile)
+	outputs.upToDateWhen {
+		return false
+	}
 
-    doLast {
-        if (mergedCalamusFile.exists()) {
-            return
-        }
+	doLast {
+		if (mergedCalamusFile.exists()) {
+			return
+		}
 
-        if (!fromMergedCalamusFile.exists()) {
-            throw new RuntimeException("Cannot update calamus from ${from_minecraft_version} to ${minecraft_version}: calamus for ${from_minecraft_version} does not exist!")
-        }
+		if (!fromMergedCalamusFile.exists()) {
+			throw new RuntimeException("Cannot update calamus from ${from_minecraft_version} to ${minecraft_version}: calamus for ${from_minecraft_version} does not exist!")
+		}
 
 		logger.lifecycle(":updating intermediary from ${from_minecraft_version} to ${minecraft_version}")
 
@@ -449,106 +445,106 @@ task updateCalamus(dependsOn: [mergeJars, downloadMcLibs]) {
 				IntermediaryUtil.updateIntermediary(fromClientJar, fromLibraries, fromServerJar, fromLibraries, clientJar, libraries, serverJar, libraries, fromMergedCalamusFile, mergedCalamusFile, clientMatches.file, serverMatches.file, clientServerMatches.file, clientMatches.inverted, serverMatches.inverted, clientServerMatches.inverted, options)
 			}
 		}
-    }
+	}
 }
 
 static List<String> getPublishedVersions(def artifact_id) {
-    def xml = new URL("https://maven.ornithemc.net/releases/net/ornithemc/${artifact_id}/maven-metadata.xml").text
-    def metadata = new XmlSlurper().parseText(xml)
-    def versions = metadata.versioning.versions.version*.text()
-    return versions
+	def xml = new URL("https://maven.ornithemc.net/releases/net/ornithemc/${artifact_id}/maven-metadata.xml").text
+	def metadata = new XmlSlurper().parseText(xml)
+	def versions = metadata.versioning.versions.version*.text()
+	return versions
 }
 
 def publishedVersions
 try {
-    publishedVersions = getPublishedVersions(artifact_id)
+	publishedVersions = getPublishedVersions(artifact_id)
 } catch (ignored) {
 }
 
-def localMappingsPath = "$buildDir/v2Mappings"
+def localMappingsPath = "$buildDir/mappings"
 new File(localMappingsPath).mkdirs()
 file('mappings').eachFile {
-    if (!it.name.endsWith(".tiny")) {
+	if (!it.name.endsWith(".tiny")) {
 		return
-    }
+	}
 
-    def mcVer = it.name.replace(".tiny", "")
+	def mcVer = it.name.replace(".tiny", "")
 
-    if (publishedVersions != null && publishedVersions.contains(mcVer)) {
-        return
-    }
+	if (publishedVersions != null && publishedVersions.contains(mcVer)) {
+		return
+	}
 
-    File v1MappingFile = it
-    File v2MappingFile = new File("$localMappingsPath/${it.name}")
+	File tinyV1File = it
+	File tinyV2File = new File("$localMappingsPath/${it.name}")
 
-    def conversionTask = "convert${it.name}ToV2"
-    tasks.register(conversionTask) {
-        group = "V2 Conversion"
-        inputs.file(v1MappingFile)
-        outputs.file(v2MappingFile)
+	def conversionTask = "convert${it.name}ToV2"
+	tasks.register(conversionTask) {
+		group = "V2 Conversion"
 
-        doLast {
-            new ConvertMappingsCommand().run(
-                    "tiny",
-                    v1MappingFile.path,
-                    versionDetails.sharedMappings ? "tinyv2:${namespace}:clientOfficial:serverOfficial" : "tinyv2:official:${namespace}",
-                    v2MappingFile.path
-            )
-        }
-    }
+		inputs.file(tinyV1File)
+		outputs.file(tinyV2File)
 
-    Jar makeV1Jar = makeJar(mcVer, v1MappingFile, false)
-    Jar makeV2Jar = makeJar(mcVer, v2MappingFile, true)
+		doLast {
+			new ConvertMappingsCommand().run(
+				"tiny",
+				tinyV1File.path,
+				versionDetails.sharedMappings ? "tinyv2:${namespace}:clientOfficial:serverOfficial" : "tinyv2:official:${namespace}",
+				tinyV2File.path
+			)
+		}
+	}
 
-    build.dependsOn makeV1Jar
-    build.dependsOn makeV2Jar
+	Jar makeV1Jar = makeJar(mcVer, tinyV1File, false)
+	Jar makeV2Jar = makeJar(mcVer, tinyV2File, true)
 
-    makeV2Jar.dependsOn conversionTask
+	build.dependsOn makeV1Jar
+	build.dependsOn makeV2Jar
 
-    publishing {
-        publications {
-            create("${mcVer.replace(" ", "")}_mavenJava", MavenPublication) {
-                groupId 'net.ornithemc'
-                artifactId artifact_id
-                version mcVer
-                artifact(makeV1Jar.archiveFile) {
-                    builtBy makeV1Jar
-                }
-                artifact(makeV2Jar.archiveFile) {
-                    builtBy makeV2Jar
-                    classifier = "v2"
-                }
-            }
-        }
-    }
+	makeV2Jar.dependsOn conversionTask
 
+	publishing {
+		publications {
+			create("${mcVer.replace(" ", "")}_mavenJava", MavenPublication) {
+				groupId 'net.ornithemc'
+				artifactId artifact_id
+				version mcVer
+				artifact(makeV1Jar.archiveFile) {
+					builtBy makeV1Jar
+				}
+				artifact(makeV2Jar.archiveFile) {
+					builtBy makeV2Jar
+					classifier = "v2"
+				}
+			}
+		}
+	}
 }
 
 def makeJar(String mcVersion, File mappings, boolean v2) {
-    def jarFilename = "calamus-" + mcVersion + (v2 ? "-v2" : "")
-    return task("${mcVersion}_makeJar" + (v2 ? "v2" : ""), type: Jar) {
-        archiveBaseName.set(jarFilename)
-        from(file(mappings)) {
-            into "mappings"
-            rename mappings.name, "mappings.tiny"
-        }
-        destinationDirectory = file("build/jars")
-    }
+	def jarFilename = "calamus-" + mcVersion + (v2 ? "-v2" : "")
+	return task("${mcVersion}_makeJar" + (v2 ? "v2" : ""), type: Jar) {
+		archiveBaseName.set(jarFilename)
+		from(file(mappings)) {
+			into "mappings"
+			rename mappings.name, "mappings.tiny"
+		}
+		destinationDirectory = file("build/jars")
+	}
 }
 
 publishing {
-    repositories {
-        if (ENV.MAVEN_URL) {
-            maven {
-                url ENV.MAVEN_URL
-                credentials {
-                    username ENV.MAVEN_USERNAME
-                    password ENV.MAVEN_PASSWORD
-                }
-                authentication {
-                    basic(BasicAuthentication)
-                }
-            }
-        }
-    }
+	repositories {
+		if (ENV.MAVEN_URL) {
+			maven {
+				url ENV.MAVEN_URL
+				credentials {
+					username ENV.MAVEN_USERNAME
+					password ENV.MAVEN_PASSWORD
+				}
+				authentication {
+					basic(BasicAuthentication)
+				}
+			}
+		}
+	}
 }
