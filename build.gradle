@@ -13,7 +13,6 @@ import org.apache.commons.io.FileUtils
 
 buildscript {
 	repositories {
-		mavenLocal()
 		maven {
 			name "Quilt"
 			url "https://maven.quiltmc.org/repository/release"
