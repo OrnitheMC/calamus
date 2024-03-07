@@ -95,7 +95,7 @@ def fromMergedCalamusFile = new File(workingDir, "${from_minecraft_version}.tiny
 
 def defaultPackage = "net/minecraft/unmapped/"
 def namespace = "intermediary"
-def nameLength = 7
+def nameLength = 8
 
 def intermediary_gen = 2
 def artifact_id = "calamus-${namespace}-gen${intermediary_gen}"
