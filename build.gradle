@@ -31,7 +31,7 @@ buildscript {
 
 	dependencies {
 		classpath "net.fabricmc:mapping-io:0.5.1"
-		classpath "net.ornithemc:stitch:0.13.5"
+		classpath "net.ornithemc:stitch:0.13.6"
 		classpath "net.ornithemc:mapping-utils:0.10.1"
 		classpath "commons-io:commons-io:2.8.0"
 		classpath "org.codehaus.groovy:groovy-json:3.0.9"
@@ -136,6 +136,7 @@ task downloadVersionInfo(dependsOn: downloadVersionsManifest) {
 	group = jarSetupGroup
 
 	outputs.files(versionInfoFile)
+	outputs.upToDateWhen { false }
 
 	doLast {
 		def manifestVersion = getManifestVersion(manifestFile, minecraft_version)
@@ -164,6 +165,7 @@ task downloadVersionDetails(dependsOn: downloadVersionsManifest) {
 	group = jarSetupGroup
 
 	outputs.files(versionDetailsFile)
+	outputs.upToDateWhen { false }
 
 	doLast {
 		def manifestVersion = getManifestVersion(manifestFile, minecraft_version)
@@ -225,12 +227,15 @@ task downloadMcLibs(dependsOn: downloadVersionInfo) {
 				return
 			}
 			def downloadUrl = artifact.url
+			def checksum = artifact.sha1
 			def libraryFile = new File(librariesDir, downloadUrl.substring(downloadUrl.lastIndexOf("/") + 1))
 
-			download {
-				src downloadUrl
-				dest libraryFile
-				overwrite false
+			if (!libraryFile.exists() || !validateChecksum(libraryFile, checksum)) {
+				download {
+					src downloadUrl
+					dest libraryFile
+					overwrite true
+				}
 			}
 
 			libraries.add(libraryFile);
@@ -287,7 +292,7 @@ task mergeJars(dependsOn: downloadMcJars) {
 	}
 
 	doLast {
-		if (versionDetails.sharedMappings) {
+		if (versionDetails.sharedMappings && versionDetails.client && versionDetails.server) {
 			logger.lifecycle(":merging jars")
 
 			def jarMerger = new JarMerger(clientJar, serverJar, mergedJar)
