@@ -31,7 +31,7 @@ buildscript {
 
 	dependencies {
 		classpath "net.fabricmc:mapping-io:0.5.1"
-		classpath "net.ornithemc:stitch:0.13.9"
+		classpath "net.ornithemc:stitch:0.14.0"
 		classpath "net.ornithemc:mapping-utils:0.10.1"
 		classpath "commons-io:commons-io:2.8.0"
 		classpath "org.codehaus.groovy:groovy-json:3.0.9"
@@ -60,9 +60,11 @@ def workingDir = file("mappings");
 
 def minecraft_version = ENV.MC_VERSION
 def from_minecraft_version = ENV.FROM_MC_VERSION
+def from_from_minecraft_version = ENV.FROM_FROM_MC_VERSION
 
 def manifestFile = new File(buildCacheDir, "version_manifest.json")
 
+// files for the version we're generating mappings for
 def versionInfo = null;
 def versionDetails = null
 def versionInfoFile = new File(versionJsonsDir, "${minecraft_version}-info.json")
@@ -77,10 +79,9 @@ def nesting = false
 def clientNestsFile = new File(nestsDir, "${minecraft_version}-client.nest")
 def serverNestsFile = new File(nestsDir, "${minecraft_version}-server.nest")
 def mergedNestsFile = new File(nestsDir, "${minecraft_version}.nest")
-def clientCalamusFile = new File(workingDir, "${minecraft_version}-client.tiny")
-def serverCalamusFile = new File(workingDir, "${minecraft_version}-server.tiny")
-def mergedCalamusFile = new File(workingDir, "${minecraft_version}.tiny")
+def calamusFile = new File(workingDir, "${minecraft_version}.tiny")
 
+// files for the version we're updating from
 def fromVersionInfo = null;
 def fromVersionDetails = null
 def fromVersionInfoFile = new File(versionJsonsDir, "${from_minecraft_version}-info.json")
@@ -88,10 +89,17 @@ def fromVersionDetailsFile = new File(versionJsonsDir, "${from_minecraft_version
 def fromClientJar = new File(gameJarsDir, "${from_minecraft_version}-client.jar")
 def fromServerJar = new File(gameJarsDir, "${from_minecraft_version}-server.jar")
 def fromMergedJar = new File(gameJarsDir, "${from_minecraft_version}-merged.jar")
-def fromLibraries = new ArrayList<File>()
-def fromClientCalamusFile = new File(workingDir, "${from_minecraft_version}-client.tiny")
-def fromServerCalamusFile = new File(workingDir, "${from_minecraft_version}-server.tiny")
-def fromMergedCalamusFile = new File(workingDir, "${from_minecraft_version}.tiny")
+def fromCalamusFile = new File(workingDir, "${from_minecraft_version}.tiny")
+
+// files for the second version we're updating from
+def fromFromVersionInfo = null;
+def fromFromVersionDetails = null
+def fromFromVersionInfoFile = new File(versionJsonsDir, "${from_from_minecraft_version}-info.json")
+def fromFromVersionDetailsFile = new File(versionJsonsDir, "${from_from_minecraft_version}-details.json")
+def fromFromClientJar = new File(gameJarsDir, "${from_from_minecraft_version}-client.jar")
+def fromFromServerJar = new File(gameJarsDir, "${from_from_minecraft_version}-server.jar")
+def fromFromMergedJar = new File(gameJarsDir, "${from_from_minecraft_version}-merged.jar")
+def fromFromCalamusFile = new File(workingDir, "${from_from_minecraft_version}.tiny")
 
 def defaultPackage = "net/minecraft/unmapped/"
 def namespace = "intermediary"
@@ -125,11 +133,23 @@ task downloadVersionsManifest {
 	}
 }
 
-static def getManifestVersion(File manifestFile, String minecraft_version) {
+def getManifestVersion(File manifestFile, String minecraft_version) {
 	def manifest = manifestFile.exists() ? new JsonSlurper().parseText(FileUtils.readFileToString(manifestFile, Charset.defaultCharset())) : null
 	return manifest != null && minecraft_version != null ? manifest.versions.stream().filter({
 		(it.id == minecraft_version)
 	}).findFirst() : java.util.Optional.empty()
+}
+
+def getVersionInfo(def version, def file, def minecraft_version, def env_var) {
+	if (version.isPresent() || file.exists()) {
+		if (version.isPresent()) {
+			FileUtils.copyURLToFile(new URL(version.get().url), file)
+		}
+	} else {
+		throw new RuntimeException("No version info for Minecraft version ${minecraft_version} (Did you forget to set the ${env_var} environment variable?)")
+	}
+
+	return new JsonSlurper().parseText(FileUtils.readFileToString(file, Charset.defaultCharset()))
 }
 
 task downloadVersionInfo(dependsOn: downloadVersionsManifest) {
@@ -140,25 +160,29 @@ task downloadVersionInfo(dependsOn: downloadVersionsManifest) {
 
 	doLast {
 		def manifestVersion = getManifestVersion(manifestFile, minecraft_version)
+		def fromManifestVersion = getManifestVersion(manifestFile, from_minecraft_version)
+		def fromFromManifestVersion = getManifestVersion(manifestFile, from_from_minecraft_version)
 
-		if (manifestVersion.isPresent() || versionInfoFile.exists()) {
-			if (manifestVersion.isPresent()) {
-				FileUtils.copyURLToFile(new URL(manifestVersion.get().url), versionInfoFile)
-			}
-		} else {
-			throw new RuntimeException("No version info for Minecraft version ${minecraft_version} (Did you forget to set the MC_VERSION environment variable?)")
-		}
-
-		versionInfo = new JsonSlurper().parseText(FileUtils.readFileToString(versionInfoFile, Charset.defaultCharset()))
-
+		versionInfo = getVersionInfo(manifestVersion, versionInfoFile, minecraft_version, "MC_VERSION")
 		if (from_minecraft_version != null) {
-			if (!fromVersionInfoFile.exists()) {
-				throw new RuntimeException("No version info for Minecraft version ${from_minecraft_version}")
+			fromVersionInfo = getVersionInfo(fromManifestVersion, fromVersionInfoFile, from_minecraft_version, "FROM_MC_VERSION")
+			if (from_from_minecraft_version != null) {
+				fromFromVersionInfo = getVersionInfo(fromFromManifestVersion, fromFromVersionInfoFile, from_from_minecraft_version, "FROM_FROM_MC_VERSION")
 			}
-
-			fromVersionInfo = new JsonSlurper().parseText(FileUtils.readFileToString(fromVersionInfoFile, Charset.defaultCharset()))
 		}
 	}
+}
+
+def getVersionDetails(def version, def file, def minecraft_version, def env_var) {
+	if (version.isPresent() || file.exists()) {
+		if (version.isPresent()) {
+			FileUtils.copyURLToFile(new URL(version.get().details), file)
+		}
+	} else {
+		throw new RuntimeException("No version details for Minecraft version ${minecraft_version} (Did you forget to set the ${env_var} environment variable?)")
+	}
+
+	return new JsonSlurper().parseText(FileUtils.readFileToString(file, Charset.defaultCharset()))
 }
 
 task downloadVersionDetails(dependsOn: downloadVersionsManifest) {
@@ -169,23 +193,15 @@ task downloadVersionDetails(dependsOn: downloadVersionsManifest) {
 
 	doLast {
 		def manifestVersion = getManifestVersion(manifestFile, minecraft_version)
+		def fromManifestVersion = getManifestVersion(manifestFile, from_minecraft_version)
+		def fromFromManifestVersion = getManifestVersion(manifestFile, from_from_minecraft_version)
 
-		if (manifestVersion.isPresent() || versionDetailsFile.exists()) {
-			if (manifestVersion.isPresent()) {
-				FileUtils.copyURLToFile(new URL(manifestVersion.get().details), versionDetailsFile)
-			}
-		} else {
-			throw new RuntimeException("No version details for Minecraft version ${minecraft_version} (Did you forget to set the MC_VERSION environment variable?)")
-		}
-
-		versionDetails = new JsonSlurper().parseText(FileUtils.readFileToString(versionDetailsFile, Charset.defaultCharset()))
-
+		versionDetails = getVersionDetails(manifestVersion, versionDetailsFile, minecraft_version, "MC_VERSION")
 		if (from_minecraft_version != null) {
-			if (!fromVersionDetailsFile.exists()) {
-				throw new RuntimeException("No version details for Minecraft version ${from_minecraft_version}")
+			fromVersionDetails = getVersionDetails(fromManifestVersion, fromVersionDetailsFile, from_minecraft_version, "FROM_MC_VERSION")
+			if (from_from_minecraft_version != null) {
+				fromFromVersionDetails = getVersionDetails(fromFromManifestVersion, fromFromVersionDetailsFile, from_from_minecraft_version, "FROM_FROM_MC_VERSION")
 			}
-
-			fromVersionDetails = new JsonSlurper().parseText(FileUtils.readFileToString(fromVersionDetailsFile, Charset.defaultCharset()))
 		}
 	}
 }
@@ -198,32 +214,6 @@ task downloadMcLibs(dependsOn: downloadVersionInfo) {
 	outputs.upToDateWhen { false }
 
 	doLast {
-		if (fromVersionInfo != null) {
-			fromVersionInfo.libraries.each {
-				if (it.downloads == null) {
-					return;
-				}
-
-				def artifact = it.downloads.artifact
-				if (artifact == null) {
-					return
-				}
-				def downloadUrl = artifact.url
-				def checksum = artifact.sha1
-				def libraryFile = new File(librariesDir, downloadUrl.substring(downloadUrl.lastIndexOf("/") + 1))
-
-				if (!libraryFile.exists() || !validateChecksum(libraryFile, checksum)) {
-					download {
-						src downloadUrl
-						dest libraryFile
-						overwrite true
-					}
-				}
-
-				fromLibraries.add(libraryFile);
-			}
-		}
-
 		logger.lifecycle(":downloading minecraft libraries")
 
 		versionInfo.libraries.each {
@@ -240,14 +230,14 @@ task downloadMcLibs(dependsOn: downloadVersionInfo) {
 			def libraryFile = new File(librariesDir, downloadUrl.substring(downloadUrl.lastIndexOf("/") + 1))
 
 			if (!libraryFile.exists() || !validateChecksum(libraryFile, checksum)) {
-				download {
+				project.download {
 					src downloadUrl
 					dest libraryFile
 					overwrite true
 				}
 			}
 
-			libraries.add(libraryFile);
+			libraries.add(libraryFile)
 		}
 	}
 }
@@ -268,10 +258,6 @@ task downloadMcJars(dependsOn: downloadVersionDetails) {
 	}
 
 	doLast {
-		if (!versionDetailsFile.exists() || versionDetails == null) {
-			throw new RuntimeException("Can't download the jars without the ${versionDetailsFile.name} file!")
-		}
-
 		logger.lifecycle(":downloading minecraft jar(s) for ${minecraft_version}")
 
 		if (versionDetails.client) {
@@ -296,9 +282,7 @@ task mergeJars(dependsOn: downloadMcJars) {
 
 	inputs.files downloadMcJars.outputs.files.files
 	outputs.file(mergedJar)
-	outputs.upToDateWhen {
-		return false
-	}
+	outputs.upToDateWhen { false }
 
 	doLast {
 		if (versionDetails.sharedMappings && versionDetails.client && versionDetails.server) {
@@ -311,6 +295,14 @@ task mergeJars(dependsOn: downloadMcJars) {
 	}
 }
 
+def downloadNests(def minecraft_version, def side, def file) {
+	project.download {
+		src new URL("https://github.com/OrnitheMC/nests/raw/main/nests/${minecraft_version}${side}.nest")
+		dest file
+		overwrite true
+	}
+}
+
 task downloadNests(dependsOn: mergeJars) {
 	group = jarSetupGroup
 
@@ -320,25 +312,13 @@ task downloadNests(dependsOn: mergeJars) {
 	doLast {
 		try {
 			if (versionDetails.sharedMappings) {
-				download {
-					src new URL("https://github.com/OrnitheMC/nests/raw/main/nests/${minecraft_version}.nest")
-					dest mergedNestsFile
-					overwrite true
-				}
+				downloadNests(minecraft_version, "", mergedNestsFile)
 			} else {
 				if (versionDetails.client) {
-					download {
-						src new URL("https://github.com/OrnitheMC/nests/raw/main/nests/${minecraft_version}-client.nest")
-						dest clientNestsFile
-						overwrite true
-					}
+					downloadNests(minecraft_version, "-client", clientNestsFile)
 				}
 				if (versionDetails.server) {
-					download {
-						src new URL("https://github.com/OrnitheMC/nests/raw/main/nests/${minecraft_version}-server.nest")
-						dest serverNestsFile
-						overwrite true
-					}
+					downloadNests(minecraft_version, "-server", serverNestsFile)
 				}
 			}
 
@@ -409,15 +389,13 @@ static File findMatches(File dir, String name) {
 task generateCalamus(dependsOn: [downloadNests, downloadMcLibs]) {
 	group = buildMappingsGroup
 
-	outputs.file(mergedCalamusFile)
-	outputs.upToDateWhen {
-		return false
-	}
+	outputs.file(calamusFile)
+	outputs.upToDateWhen { false }
 
 	workingDir.mkdirs()
 
 	doLast {
-		if (mergedCalamusFile.exists()) {
+		if (calamusFile.exists()) {
 			return
 		}
 
@@ -441,18 +419,26 @@ task generateCalamus(dependsOn: [downloadNests, downloadMcLibs]) {
 		String[] options = args.toArray(new String[args.size()])
 
 		if (versionDetails.sharedMappings) {
-			if (nesting) {
-				IntermediaryUtil.generateIntermediary(mergedJar, mergedNestsFile, libraries, mergedCalamusFile, options)
+			if (versionDetails.client && versionDetails.server) {
+				if (nesting) {
+					IntermediaryUtil.generateIntermediary(mergedJar, mergedNestsFile, libraries, calamusFile, options)
+				} else {
+					IntermediaryUtil.generateIntermediary(mergedJar, libraries, calamusFile, options)
+				}
 			} else {
-				IntermediaryUtil.generateIntermediary(mergedJar, libraries, mergedCalamusFile, options)
+				throw new UnsupportedOperationException("generating mappings for shared client-only/server-only versions is not supported")
 			}
 		} else {
-			def matches = findMatches("client", minecraft_version, "server", minecraft_version)
+			if (versionDetails.client && versionDetails.server) {
+				def matches = findMatches("client", minecraft_version, "server", minecraft_version)
 
-			if (nesting) {
-				IntermediaryUtil.generateIntermediary(clientJar, clientNestsFile, libraries, serverJar, serverNestsFile, libraries, mergedCalamusFile, matches.file, matches.inverted, options)
+				if (nesting) {
+					IntermediaryUtil.generateIntermediary(clientJar, clientNestsFile, libraries, serverJar, serverNestsFile, libraries, calamusFile, matches.file, matches.inverted, options)
+				} else {
+					IntermediaryUtil.generateIntermediary(clientJar, libraries, serverJar, libraries, calamusFile, matches.file, matches.inverted, options)
+				}
 			} else {
-				IntermediaryUtil.generateIntermediary(clientJar, libraries, serverJar, libraries, mergedCalamusFile, matches.file, matches.inverted, options)
+				throw new UnsupportedOperationException("generating mappings for split client-only/server-only versions is not supported")
 			}
 		}
 	}
@@ -461,21 +447,26 @@ task generateCalamus(dependsOn: [downloadNests, downloadMcLibs]) {
 task updateCalamus(dependsOn: [downloadNests, downloadMcLibs]) {
 	group = buildMappingsGroup
 
-	outputs.file(mergedCalamusFile)
-	outputs.upToDateWhen {
-		return false
-	}
+	outputs.file(calamusFile)
+	outputs.upToDateWhen { false }
 
 	doLast {
-		if (mergedCalamusFile.exists()) {
+		if (calamusFile.exists()) {
 			return
 		}
 
-		if (!fromMergedCalamusFile.exists()) {
+		if (!fromCalamusFile.exists()) {
 			throw new RuntimeException("Cannot update calamus from ${from_minecraft_version} to ${minecraft_version}: calamus for ${from_minecraft_version} does not exist!")
 		}
+		if (from_from_minecraft_version != null && !fromFromCalamusFile.exists()) {
+			throw new RuntimeException("Cannot update calamus from ${from_from_minecraft_version}/${from_minecraft_version} to ${minecraft_version}: calamus for ${from_from_minecraft_version} does not exist!")
+		}
 
-		logger.lifecycle(":updating intermediary from ${from_minecraft_version} to ${minecraft_version}")
+		if (from_from_minecraft_version == null) {
+			logger.lifecycle(":updating calamus from ${from_minecraft_version} to ${minecraft_version}")
+		} else {
+			logger.lifecycle(":updating calamus from ${from_from_minecraft_version}/${from_minecraft_version} to ${minecraft_version}")
+		}
 
 		List<String> args = new ArrayList<>()
 		args.add("--default-package")
@@ -495,37 +486,96 @@ task updateCalamus(dependsOn: [downloadNests, downloadMcLibs]) {
 		String[] options = args.toArray(new String[args.size()])
 
 		if (versionDetails.sharedMappings) {
-			if (fromVersionDetails.sharedMappings) {
-				def matches = findMatches("merged", from_minecraft_version, "merged", minecraft_version)
-
-				if (nesting) {
-					IntermediaryUtil.updateIntermediary(fromMergedJar, fromLibraries, mergedJar, mergedNestsFile, libraries, fromMergedCalamusFile, mergedCalamusFile, matches.file, matches.inverted, options)
+			if (versionDetails.client && versionDetails.server) {
+				if (fromVersionDetails.sharedMappings) {
+					def matches = findMatches("merged", from_minecraft_version, "merged", minecraft_version)
+					
+					if (nesting) {
+						IntermediaryUtil.updateIntermediary(fromMergedJar, Collections.emptyList(), mergedJar, mergedNestsFile, libraries, fromCalamusFile, calamusFile, matches.file, matches.inverted, options)
+					} else {
+						IntermediaryUtil.updateIntermediary(fromMergedJar, Collections.emptyList(), mergedJar, libraries, fromCalamusFile, calamusFile, matches.file, matches.inverted, options)
+					}
 				} else {
-					IntermediaryUtil.updateIntermediary(fromMergedJar, fromLibraries, mergedJar, libraries, fromMergedCalamusFile, mergedCalamusFile, matches.file, matches.inverted, options)
+					throw new UnsupportedOperationException("updating mappings from shared client-only/server-only versions to merged versions is not supported")
 				}
 			} else {
-				throw new RuntimeException("updating intermediary from split to merged is not supported yet!")
+				throw new UnsupportedOperationException("updating mappings to shared client-only/server-only versions is not supported")
 			}
 		} else {
-			if (fromVersionDetails.sharedMappings) {
-				def clientMatches = findMatches("merged", from_minecraft_version, "client", minecraft_version)
-				def serverMatches = findMatches("merged", from_minecraft_version, "server", minecraft_version)
-				def clientServerMatches = findMatches("client", minecraft_version, "server", minecraft_version)
-
-				if (nesting) {
-					IntermediaryUtil.updateIntermediary(fromMergedJar, fromLibraries, clientJar, clientNestsFile, libraries, serverJar, serverNestsFile, libraries, fromMergedCalamusFile, mergedCalamusFile, clientMatches.file, serverMatches.file, clientServerMatches.file, clientMatches.inverted, serverMatches.inverted, clientServerMatches.inverted, options)
+			if (versionDetails.client && versionDetails.server) {
+				if (fromVersionDetails.sharedMappings) {
+					def clientMatches = findMatches("merged", from_minecraft_version, "client", minecraft_version)
+					def serverMatches = findMatches("merged", from_minecraft_version, "server", minecraft_version)
+					def clientServerMatches = findMatches("client", minecraft_version, "server", minecraft_version)
+	
+					if (nesting) {
+						IntermediaryUtil.updateIntermediary(fromMergedJar, Collections.emptyList(), clientJar, clientNestsFile, libraries, serverJar, serverNestsFile, libraries, fromCalamusFile, calamusFile, clientMatches.file, serverMatches.file, clientServerMatches.file, clientMatches.inverted, serverMatches.inverted, clientServerMatches.inverted, options)
+					} else {
+						IntermediaryUtil.updateIntermediary(fromMergedJar, Collections.emptyList(), clientJar, libraries, serverJar, libraries, fromCalamusFile, calamusFile, clientMatches.file, serverMatches.file, clientServerMatches.file, clientMatches.inverted, serverMatches.inverted, clientServerMatches.inverted, options)
+					}
 				} else {
-					IntermediaryUtil.updateIntermediary(fromMergedJar, fromLibraries, clientJar, libraries, serverJar, libraries, fromMergedCalamusFile, mergedCalamusFile, clientMatches.file, serverMatches.file, clientServerMatches.file, clientMatches.inverted, serverMatches.inverted, clientServerMatches.inverted, options)
+					if (fromVersionDetails.client && fromVersionDetails.server) {
+						def clientMatches = findMatches("client", from_minecraft_version, "client", minecraft_version)
+						def serverMatches = findMatches("server", from_minecraft_version, "server", minecraft_version)
+						def clientServerMatches = findMatches("client", minecraft_version, "server", minecraft_version)
+		
+						if (nesting) {
+							IntermediaryUtil.updateIntermediary(fromClientJar, Collections.emptyList(), fromServerJar, Collections.emptyList(), clientJar, clientNestsFile, libraries, serverJar, serverNestsFile, libraries, fromCalamusFile, calamusFile, clientMatches.file, serverMatches.file, clientServerMatches.file, clientMatches.inverted, serverMatches.inverted, clientServerMatches.inverted, options)
+						} else {
+							IntermediaryUtil.updateIntermediary(fromClientJar, Collections.emptyList(), fromServerJar, Collections.emptyList(), clientJar, libraries, serverJar, libraries, fromCalamusFile, calamusFile, clientMatches.file, serverMatches.file, clientServerMatches.file, clientMatches.inverted, serverMatches.inverted, clientServerMatches.inverted, options)
+						}
+					} else {
+						if (fromFromVersionDetails == null) {
+							throw new RuntimeException("second mapping source is missing")
+						}
+						if ((fromVersionDetails.client && !fromFromVersionDetails.server) || (fromVersionDetails.server && !fromFromVersionDetails.client)) {
+							throw new RuntimeException("incompatible sources")
+						}
+
+						if (fromVersionDetails.client) {
+							def clientMatches = findMatches("client", from_minecraft_version, "client", minecraft_version)
+							def serverMatches = findMatches("server", from_from_minecraft_version, "server", minecraft_version)
+							def clientServerMatches = findMatches("client", minecraft_version, "server", minecraft_version)
+			
+							if (nesting) {
+								IntermediaryUtil.updateIntermediary(fromClientJar, Collections.emptyList(), fromFromServerJar, Collections.emptyList(), clientJar, clientNestsFile, libraries, serverJar, serverNestsFile, libraries, fromCalamusFile, fromFromCalamusFile, calamusFile, clientMatches.file, serverMatches.file, clientServerMatches.file, clientMatches.inverted, serverMatches.inverted, clientServerMatches.inverted, options)
+							} else {
+								IntermediaryUtil.updateIntermediary(fromClientJar, Collections.emptyList(), fromFromServerJar, Collections.emptyList(), clientJar, libraries, serverJar, libraries, fromCalamusFile, fromFromCalamusFile, calamusFile, clientMatches.file, serverMatches.file, clientServerMatches.file, clientMatches.inverted, serverMatches.inverted, clientServerMatches.inverted, options)
+							}
+						} else {
+							def clientMatches = findMatches("client", from_from_minecraft_version, "client", minecraft_version)
+							def serverMatches = findMatches("server", from_minecraft_version, "server", minecraft_version)
+							def clientServerMatches = findMatches("client", minecraft_version, "server", minecraft_version)
+			
+							if (nesting) {
+								IntermediaryUtil.updateIntermediary(fromFromClientJar, Collections.emptyList(), fromServerJar, Collections.emptyList(), clientJar, clientNestsFile, libraries, serverJar, serverNestsFile, libraries, fromFromCalamusFile, fromCalamusFile, calamusFile, clientMatches.file, serverMatches.file, clientServerMatches.file, clientMatches.inverted, serverMatches.inverted, clientServerMatches.inverted, options)
+							} else {
+								IntermediaryUtil.updateIntermediary(fromFromClientJar, Collections.emptyList(), fromServerJar, Collections.emptyList(), clientJar, libraries, serverJar, libraries, fromFromCalamusFile, fromCalamusFile, calamusFile, clientMatches.file, serverMatches.file, clientServerMatches.file, clientMatches.inverted, serverMatches.inverted, clientServerMatches.inverted, options)
+							}
+						}
+					}
 				}
 			} else {
-				def clientMatches = findMatches("client", from_minecraft_version, "client", minecraft_version)
-				def serverMatches = findMatches("server", from_minecraft_version, "server", minecraft_version)
-				def clientServerMatches = findMatches("client", minecraft_version, "server", minecraft_version)
+				if ((versionDetails.client && !fromVersionDetails.server) || (versionDetails.server && !fromVersionDetails.client)) {
+					throw new RuntimeException("incompatible source")
+				}
 
-				if (nesting) {
-					IntermediaryUtil.updateIntermediary(fromClientJar, fromLibraries, fromServerJar, fromLibraries, clientJar, clientNestsFile, libraries, serverJar, serverNestsFile, libraries, fromMergedCalamusFile, mergedCalamusFile, clientMatches.file, serverMatches.file, clientServerMatches.file, clientMatches.inverted, serverMatches.inverted, clientServerMatches.inverted, options)
+				if (versionDetails.client) {
+					def clientMatches = findMatches("client", from_minecraft_version, "client", minecraft_version)
+			
+					if (nesting) {
+						IntermediaryUtil.updateIntermediary(fromClientJar, Collections.emptyList(), null, Collections.emptyList(), clientJar, clientNestsFile, libraries, null, null, libraries, fromCalamusFile, null, calamusFile, clientMatches.file, null, null, clientMatches.inverted, false, false, options)
+					} else {
+						IntermediaryUtil.updateIntermediary(fromClientJar, Collections.emptyList(), null, Collections.emptyList(), clientJar, libraries, null, libraries, fromCalamusFile, null, calamusFile, clientMatches.file, null, null, clientMatches.inverted, false, false, options)
+					}
 				} else {
-					IntermediaryUtil.updateIntermediary(fromClientJar, fromLibraries, fromServerJar, fromLibraries, clientJar, libraries, serverJar, libraries, fromMergedCalamusFile, mergedCalamusFile, clientMatches.file, serverMatches.file, clientServerMatches.file, clientMatches.inverted, serverMatches.inverted, clientServerMatches.inverted, options)
+					def serverMatches = findMatches("server", from_minecraft_version, "server", minecraft_version)
+			
+					if (nesting) {
+						IntermediaryUtil.updateIntermediary(null, Collections.emptyList(), fromServerJar, Collections.emptyList(), null, null, libraries, serverJar, serverNestsFile, libraries, null, fromCalamusFile, calamusFile, null, serverMatches.file, null, false, serverMatches.inverted, false, options)
+					} else {
+						IntermediaryUtil.updateIntermediary(null, Collections.emptyList(), fromServerJar, Collections.emptyList(), null, libraries, serverJar, libraries, null, fromCalamusFile, calamusFile, null, serverMatches.file, null, false, serverMatches.inverted, false, options)
+					}
 				}
 			}
 		}
