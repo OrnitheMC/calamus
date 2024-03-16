@@ -31,7 +31,7 @@ buildscript {
 
 	dependencies {
 		classpath "net.fabricmc:mapping-io:0.5.1"
-		classpath "net.ornithemc:stitch:0.13.7"
+		classpath "net.ornithemc:stitch:0.13.9"
 		classpath "net.ornithemc:mapping-utils:0.10.1"
 		classpath "commons-io:commons-io:2.8.0"
 		classpath "org.codehaus.groovy:groovy-json:3.0.9"
@@ -209,9 +209,18 @@ task downloadMcLibs(dependsOn: downloadVersionInfo) {
 					return
 				}
 				def downloadUrl = artifact.url
+				def checksum = artifact.sha1
 				def libraryFile = new File(librariesDir, downloadUrl.substring(downloadUrl.lastIndexOf("/") + 1))
 
-				libraries.add(libraryFile);
+				if (!libraryFile.exists() || !validateChecksum(libraryFile, checksum)) {
+					download {
+						src downloadUrl
+						dest libraryFile
+						overwrite true
+					}
+				}
+
+				fromLibraries.add(libraryFile);
 			}
 		}
 
