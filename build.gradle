@@ -31,7 +31,7 @@ buildscript {
 
 	dependencies {
 		classpath "net.fabricmc:mapping-io:0.5.1"
-		classpath "net.ornithemc:stitch:0.13.6"
+		classpath "net.ornithemc:stitch:0.13.7"
 		classpath "net.ornithemc:mapping-utils:0.10.1"
 		classpath "commons-io:commons-io:2.8.0"
 		classpath "org.codehaus.groovy:groovy-json:3.0.9"
@@ -95,7 +95,7 @@ def fromMergedCalamusFile = new File(workingDir, "${from_minecraft_version}.tiny
 
 def defaultPackage = "net/minecraft/unmapped/"
 def namespace = "intermediary"
-def nameLength = 8
+def nameLength = 7
 
 def intermediary_gen = 2
 def artifact_id = "calamus-${namespace}-gen${intermediary_gen}"
