@@ -18,10 +18,10 @@ ROOT,
 '12w18a',
 '12w17a',
 '12w16a',
-'12w15a'
+'12w15a',
+'1.2.5'
 ],
 [
-'12w15a',
 '1.2.5',
 '1.2.4',
 '1.2.3',
@@ -33,11 +33,21 @@ ROOT,
 '12w06a',
 '12w05b','12w05a-1442',
 '12w04a',
-'12w03a'
-],
-[
 '12w03a',
 '1.1'
+],
+[
+'1.1',
+'12w01a',
+'11w50a',
+'11w49a',
+'11w48a',
+'11w47a',
+'1.0.1'
+],
+[
+'1.0.1:11w47a',
+'1.0.0'
 ],
 [
 ROOT,
@@ -326,10 +336,21 @@ def main():
 	
 	for versions in VERSIONS:
 		for i in range(1, len(versions)):
-			os.environ['FROM_MC_VERSION'] = versions[i - 1]
-			os.environ['MC_VERSION'] = versions[i]
+			frm = versions[i - 1]
+			to = versions[i]
 			
-			subprocess.run("./gradlew updateCalamus --stacktrace", shell = True, check = True)
+			if ':' not in to:
+				if ':' in frm:
+					parts = frm.split(':', 2)
+					
+					os.environ['FROM_MC_VERSION'] = parts[0]
+					os.environ['FROM_FROM_MC_VERSION'] = parts[1]
+				else:
+					os.environ['FROM_MC_VERSION'] = frm
+				
+				os.environ['MC_VERSION'] = to
+				
+				subprocess.run("./gradlew updateCalamus --stacktrace", shell = True, check = True)
 
 if __name__ == '__main__':
 	main()
