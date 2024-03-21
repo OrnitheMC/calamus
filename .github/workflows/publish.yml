@@ -5,12 +5,11 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v4
-      - name: Set up JDK 17 for x86
+      - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
           java-version: '17'
           distribution: 'temurin'
-          architecture: x86
       - uses: gradle/wrapper-validation-action@v2
       - run: ./gradlew publish --stacktrace
         env:
