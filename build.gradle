@@ -620,13 +620,7 @@ file('mappings').eachFile {
 
 		doLast {
 			def mappings = new MemoryMappingTree()
-			MappingNsCompleter visitor
-			if (isPre1_3(tinyV1File)) {
-				visitor = new MappingNsCompleter(mappings, Map.of('clientOfficial', 'intermediary', 'serverOfficial', 'intermediary'))
-			} else {
-				visitor = new MappingNsCompleter(mappings, Map.of('intermediary', 'official'))
-			}
-			MappingReader.read(tinyV1File.toPath(), visitor)
+			MappingReader.read(tinyV1File.toPath(), mappings)
 			try (MappingWriter mappingWriter = MappingWriter.create(tinyV2File.toPath(), MappingFormat.TINY_2_FILE)) {
 				mappings.accept(mappingWriter)
 			}
