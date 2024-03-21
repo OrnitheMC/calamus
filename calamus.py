@@ -347,6 +347,7 @@ def main():
 					os.environ['FROM_FROM_MC_VERSION'] = parts[1]
 				else:
 					os.environ['FROM_MC_VERSION'] = frm
+					os.environ.pop('FROM_FROM_MC_VERSION', None)
 				
 				os.environ['MC_VERSION'] = to
 				
