@@ -31,8 +31,8 @@ buildscript {
 
 	dependencies {
 		classpath "net.fabricmc:mapping-io:0.5.1"
-		classpath "net.ornithemc:stitch:0.14.0"
-		classpath "net.ornithemc:mapping-utils:0.10.1"
+		classpath "net.ornithemc:stitch:0.15.3"
+		classpath "net.ornithemc:mapping-utils:0.10.2"
 		classpath "commons-io:commons-io:2.8.0"
 		classpath "org.codehaus.groovy:groovy-json:3.0.9"
 		classpath "org.codehaus.groovy:groovy-xml:3.0.9"
@@ -678,8 +678,8 @@ def makeJar(String mcVersion, File mappings, boolean v2, def intermediary_gen) {
 		destinationDirectory = file("build/jars")
 		manifest {
 			attributes(
-				'minecraft-version': "${mcVersion}",
-				'calanus-generation': "${intermediary_gen}"
+				'Minecraft-Version': "${mcVersion}",
+				'Calanus-Generation': "${intermediary_gen}"
 			)
 		}
 	}
