@@ -3,12 +3,15 @@ on: [workflow_dispatch] # Manual trigger
 jobs:
   build:
     runs-on: ubuntu-20.04
-    container:
-      image: openjdk:17-jdk
-      options: --user root
     steps:
-      - uses: actions/checkout@v1
-      - uses: gradle/wrapper-validation-action@v1
+      - uses: actions/checkout@v4
+      - name: Set up JDK 11 for x64
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          architecture: x64
+      - uses: gradle/wrapper-validation-action@v2
       - run: ./gradlew publish --stacktrace
         env:
           MAVEN_URL: ${{ secrets.NEW_MAVEN_URL }}
