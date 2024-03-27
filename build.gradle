@@ -556,7 +556,7 @@ task updateCalamus(dependsOn: [downloadNests, downloadMcLibs]) {
 					}
 				}
 			} else {
-				if ((versionDetails.client && !fromVersionDetails.server) || (versionDetails.server && !fromVersionDetails.client)) {
+				if ((versionDetails.client && !fromVersionDetails.client) || (versionDetails.server && !fromVersionDetails.server)) {
 					throw new RuntimeException("incompatible source")
 				}
 
