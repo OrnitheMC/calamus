@@ -105,6 +105,26 @@ ROOT,
 'b1.4-1634:b1.4_01',
 'b1.4-1507'
 ],
+# there is no b1.3 version id with both client and server
+# so we update to b1.2 and from there up to b1.3
+[
+'b1.4-1507',
+'b1.2_02',
+'b1.2_02:b1.4-1507',
+'b1.2_01',
+'b1.2'
+],
+# b1.3 client side
+[
+'b1.2_02',
+'b1.3-1750',
+'b1.3_01'
+],
+# b1.3 server side
+[
+'b1.2_01',
+'b1.3-1731'
+],
 [
 ROOT,
 '1.3.1',
