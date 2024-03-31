@@ -35,53 +35,53 @@ ly.a(Lnx;IIII)Z: m_7925651 -> **m_8199947** (manual fix, name taken from b1.6-tb
 
 ### 1.10.2 -> 16w32a
 
-1) m_0097924 <- aeo$5<-[java/lang/Object,aez$a<-java/lang/Object].a(Laeq;)Ljava/lang/String;
+1) m_0054836 <- aeo$7<-[java/lang/Object,aez$a<-java/lang/Object].a(Laeq;)Ljava/lang/String;
 
-2) m_0175490 <- aeo$20<-[java/lang/Object,aez$a<-java/lang/Object].a(Laeq;)Ljava/lang/String;
+2) m_0074173 <- aeo$6<-[java/lang/Object,aez$a<-java/lang/Object].a(Laeq;)Ljava/lang/String;
 
-3) m_0717115 <- aeo$19<-[java/lang/Object,aez$a<-java/lang/Object].a(Laeq;)Ljava/lang/String;
+3) m_1264601 <- aeo$3<-[java/lang/Object,aez$a<-java/lang/Object].a(Laeq;)Ljava/lang/String;
 
-4) m_2213079 <- aeo$17<-[java/lang/Object,aez$a<-java/lang/Object].a(Laeq;)Ljava/lang/String;
+**4) m_2708149 <- aez$1<-[java/lang/Object,aez$a<-java/lang/Object].a(Laeq;)Ljava/lang/String;**
 
-5) m_2569834 <- aeo$3<-[java/lang/Object,aez$a<-java/lang/Object].a(Laeq;)Ljava/lang/String;
+5) m_4178545 <- aeo$9<-[java/lang/Object,aez$a<-java/lang/Object].a(Laeq;)Ljava/lang/String;
 
-6) m_2967985 <- aeo$9<-[java/lang/Object,aez$a<-java/lang/Object].a(Laeq;)Ljava/lang/String;
+6) m_4539558 <- aeo$11<-[java/lang/Object,aez$a<-java/lang/Object].a(Laeq;)Ljava/lang/String;
 
-7) m_3084527 <- aeo$4<-[java/lang/Object,aez$a<-java/lang/Object].a(Laeq;)Ljava/lang/String;
+7) m_5190968 <- aeo$14<-[java/lang/Object,aez$a<-java/lang/Object].a(Laeq;)Ljava/lang/String;
 
-8) m_3709607 <- aeo$21<-[java/lang/Object,aez$a<-java/lang/Object].a(Laeq;)Ljava/lang/String;
+8) m_6263986 <- aeo$10<-[java/lang/Object,aez$a<-java/lang/Object].a(Laeq;)Ljava/lang/String;
 
-9) m_3996727 <- aeo$13<-[java/lang/Object,aez$a<-java/lang/Object].a(Laeq;)Ljava/lang/String;
+9) m_6402606 <- aeo$21<-[java/lang/Object,aez$a<-java/lang/Object].a(Laeq;)Ljava/lang/String;
 
-10) m_4194175 <- aeo$8<-[java/lang/Object,aez$a<-java/lang/Object].a(Laeq;)Ljava/lang/String;
+10) m_6665253 <- aeo$19<-[java/lang/Object,aez$a<-java/lang/Object].a(Laeq;)Ljava/lang/String;
 
-11) m_4201145 <- aeo$18<-[java/lang/Object,aez$a<-java/lang/Object].a(Laeq;)Ljava/lang/String;
+11) m_7010000 <- aeo$5<-[java/lang/Object,aez$a<-java/lang/Object].a(Laeq;)Ljava/lang/String;
 
-12) m_4478815 <- aeo$11<-[java/lang/Object,aez$a<-java/lang/Object].a(Laeq;)Ljava/lang/String;
+12) m_7544376 <- aeo$17<-[java/lang/Object,aez$a<-java/lang/Object].a(Laeq;)Ljava/lang/String;
 
-13) m_5248322 <- aeo$14<-[java/lang/Object,aez$a<-java/lang/Object].a(Laeq;)Ljava/lang/String;
+13) m_7853793 <- aeo$20<-[java/lang/Object,aez$a<-java/lang/Object].a(Laeq;)Ljava/lang/String;
 
-14) m_6657135 <- aeo$10<-[java/lang/Object,aez$a<-java/lang/Object].a(Laeq;)Ljava/lang/String;
+14) m_8660281 <- aeo$2<-[java/lang/Object,aez$a<-java/lang/Object].a(Laeq;)Ljava/lang/String;
 
-15) m_7063144 <- aeo$2<-[java/lang/Object,aez$a<-java/lang/Object].a(Laeq;)Ljava/lang/String;
+15) m_8843097 <- aeo$13<-[java/lang/Object,aez$a<-java/lang/Object].a(Laeq;)Ljava/lang/String;
 
-16) m_7605551 <- aeo$7<-[java/lang/Object,aez$a<-java/lang/Object].a(Laeq;)Ljava/lang/String;
+16) m_8904905 <- aeo$18<-[java/lang/Object,aez$a<-java/lang/Object].a(Laeq;)Ljava/lang/String;
 
-**17) m_9398216 <- aez$1<-[java/lang/Object,aez$a<-java/lang/Object].a(Laeq;)Ljava/lang/String;**
+17) m_9725227 <- aeo$8<-[java/lang/Object,aez$a<-java/lang/Object].a(Laeq;)Ljava/lang/String;
 
-18) m_9712510 <- aeo$6<-[java/lang/Object,aez$a<-java/lang/Object].a(Laeq;)Ljava/lang/String;
+18) m_9807816 <- aeo$4<-[java/lang/Object,aez$a<-java/lang/Object].a(Laeq;)Ljava/lang/String;
 
 ### 1.12-pre5 -> 1.12-pre6
 
-**1) m_2628412 <- bix<-bio<-java/lang/Object.a(Lbhz;IIF)V, biy<-bip<-java/lang/Object.a(Lbhz;IIF)V**
+**1) m_3845983 <- bix<-bio<-java/lang/Object.a(Lbhz;IIF)V, biy<-bip<-java/lang/Object.a(Lbhz;IIF)V**
 
 2) m_8193356 <- bnl$a<-biy<-bip<-java/lang/Object.a(Lbhz;IIF)V
 
 ### 1.12.2 -> 17w43a
 
-**1) m_2337221 <- net/minecraft/realms/RealmsEditBox<-net/minecraft/realms/RealmsGuiEventListener<-java/lang/Object.keyPressed(III)Z**
+**1) m_0860186 <- net/minecraft/realms/RealmsEditBox<-net/minecraft/realms/RealmsGuiEventListener<-java/lang/Object.keyPressed(III)Z**
 
-2) m_5179739 <- net/minecraft/realms/RealmsScreen<-java/lang/Object.keyPressed(III)Z
+2) m_7937999 <- net/minecraft/realms/RealmsScreen<-java/lang/Object.keyPressed(III)Z
 
 ### 1.13 -> 18w30a
 
@@ -119,17 +119,18 @@ ly.a(Lnx;IIII)Z: m_7925651 -> **m_8199947** (manual fix, name taken from b1.6-tb
 
 **2) m_7734219 <- boh<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].a(Ljava/util/Map;)V**
 
+--
+
+**1) m_1530040 <- boh<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].a(Z)V**
+
+2) m_2364727 <- bnr<-[java/lang/Object,bmx<-[java/lang/Object,axk<-java/lang/Object]].a(Z)V, bop<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].a(Z)V
+
+
 ---
 
-1) m_2364727 <- bnr<-[java/lang/Object,bmx<-[java/lang/Object,axk<-java/lang/Object]].a(Z)V, bop<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].a(Z)V
+**1) m_7022151 <- boh<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].b(J)V**
 
-**2) m_4031364 <- boh<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].a(Z)V**
-
----
-
-**1) m_4914142 <- boh<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].b(J)V**
-
-2) m_8864286 <- bop<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].b(J)V
+2) m_8864286 <- bop<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].b(J)VV
 
 ---
 
@@ -157,15 +158,15 @@ ly.a(Lnx;IIII)Z: m_7925651 -> **m_8199947** (manual fix, name taken from b1.6-tb
 
 ---
 
-1) m_2252476 <- bop<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].q()J
+**1) m_0972325 <- boh<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].q()J**
 
-**2) m_8748510 <- boh<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].q()J**
+2) m_2252476 <- bop<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].q()J*
 
 ---
 
-1) m_0274503 <- bpt<-bnw<-[java/lang/Object,bnv<-java/lang/Object].a(IILbnu;)V
+**1) m_0874705 <- bpr<-bnw<-[java/lang/Object,bnv<-java/lang/Object].a(IILbnu;)V**
 
-**2) m_5243968 <- bpr<-bnw<-[java/lang/Object,bnv<-java/lang/Object].a(IILbnu;)V**
+2) m_8884370 <- bpt<-bnw<-[java/lang/Object,bnv<-java/lang/Object].a(IILbnu;)V*
 
 ---
 
@@ -175,31 +176,31 @@ ly.a(Lnx;IIII)Z: m_7925651 -> **m_8199947** (manual fix, name taken from b1.6-tb
 
 ---
 
-**1) m_4395572 <- fc<-[java/lang/Object,et<-[java/lang/Object,java/lang/Iterable]](itf).a(I)Ljava/lang/Object;**
+**1) m_4368911 <- fc<-[java/lang/Object,et<-[java/lang/Object,java/lang/Iterable]](itf).a(I)Ljava/lang/Object;**
 
-2) m_4949766 <- ez<-[java/lang/Object,ey<-[java/lang/Object,java/lang/Iterable]].a(I)Ljava/lang/Object;
+2) m_4640952 <- xu<-[java/lang/Object,ey<-[java/lang/Object,java/lang/Iterable]].a(I)Ljava/lang/Object;
 
-3) m_8559065 <- xu<-[java/lang/Object,ey<-[java/lang/Object,java/lang/Iterable]].a(I)Ljava/lang/Object;
+3) m_4949766 <- ez<-[java/lang/Object,ey<-[java/lang/Object,java/lang/Iterable]].a(I)Ljava/lang/Object;;
 
 ### 18w49a -> 18w50a
 
-1) m_6112713 <- bok<-[boj<-[bnq<-java/lang/Object,afu<-[java/lang/Object,afi<-[java/lang/Object,afg<-java/lang/Object,afv<-java/lang/Object],afp<-[java/lang/Object,afv<-java/lang/Object]]],afw<-java/lang/Object].f()Ljd;
+**1) m_5573014 <- agv<-[java/lang/Object,afv<-java/lang/Object,bz<-java/lang/Object].f()Ljd;**
 
-**2) m_9287716 <- agv<-[java/lang/Object,afv<-java/lang/Object,bz<-java/lang/Object].f()Ljd;**
-
----
-
-1) m_1686282 <- apc<-[apu<-[ahl<-ahf<-ahe<-agv<-[java/lang/Object,afv<-java/lang/Object,bz<-java/lang/Object],apl<-[java/lang/Object,agu<-java/lang/Object]],apz<-java/lang/Object].dz()Z
-
-2) m_8668866 <- aps<-[aqf<-apb<-asg<-apv<-apu<-[ahl<-ahf<-ahe<-agv<-[java/lang/Object,afv<-java/lang/Object,bz<-java/lang/Object],apl<-[java/lang/Object,agu<-java/lang/Object]],apz<-java/lang/Object].dz()Z
-
-**3) m_9854584 <- aqm<-apu<-[ahl<-ahf<-ahe<-agv<-[java/lang/Object,afv<-java/lang/Object,bz<-java/lang/Object],apl<-[java/lang/Object,agu<-java/lang/Object]].dz()Z**
+2) m_6112713 <- bok<-[boj<-[bnq<-java/lang/Object,afu<-[java/lang/Object,afi<-[java/lang/Object,afg<-java/lang/Object,afv<-java/lang/Object],afp<-[java/lang/Object,afv<-java/lang/Object]]],afw<-java/lang/Object].f()Ljd;*
 
 ---
 
-**1) m_7542181 <- aqr<-[ags<-ahl<-ahf<-ahe<-agv<-[java/lang/Object,afv<-java/lang/Object,bz<-java/lang/Object],aho<-java/lang/Object,aqq<-[java/lang/Object,agu<-java/lang/Object],aqt<-java/lang/Object,bat<-java/lang/Object].dM()Laqs;**
+1) m_5792722 <- apc<-[apu<-[ahl<-ahf<-ahe<-agv<-[java/lang/Object,afv<-java/lang/Object,bz<-java/lang/Object],apl<-[java/lang/Object,agu<-java/lang/Object]],apz<-java/lang/Object].dz()Z
 
-2) m_9297159 <- aqn<-[aqm<-apu<-[ahl<-ahf<-ahe<-agv<-[java/lang/Object,afv<-java/lang/Object,bz<-java/lang/Object],apl<-[java/lang/Object,agu<-java/lang/Object]],aqt<-java/lang/Object].dM()Laqs;
+**2) m_6447487 <- aqm<-apu<-[ahl<-ahf<-ahe<-agv<-[java/lang/Object,afv<-java/lang/Object,bz<-java/lang/Object],apl<-[java/lang/Object,agu<-java/lang/Object]].dz()Z**
+
+3) m_8668866 <- aps<-[aqf<-apb<-asg<-apv<-apu<-[ahl<-ahf<-ahe<-agv<-[java/lang/Object,afv<-java/lang/Object,bz<-java/lang/Object],apl<-[java/lang/Object,agu<-java/lang/Object]],apz<-java/lang/Object].dz()Z*
+
+---
+
+**1) m_7783530 <- aqr<-[ags<-ahl<-ahf<-ahe<-agv<-[java/lang/Object,afv<-java/lang/Object,bz<-java/lang/Object],aho<-java/lang/Object,aqq<-[java/lang/Object,agu<-java/lang/Object],aqt<-java/lang/Object,bat<-java/lang/Object].dM()Laqs;**
+
+2) m_9297159 <- aqn<-[aqm<-apu<-[ahl<-ahf<-ahe<-agv<-[java/lang/Object,afv<-java/lang/Object,bz<-java/lang/Object],apl<-[java/lang/Object,agu<-java/lang/Object]],aqt<-java/lang/Object].dM()Laqs;;
 
 ---
 
@@ -215,33 +216,35 @@ ly.a(Lnx;IIII)Z: m_7925651 -> **m_8199947** (manual fix, name taken from b1.6-tb
 
 ### 19w07a -> 19w08a
 
-1) m_1993081 <- csd<-[crq<-java/lang/Object,css<-java/lang/Object,csv<-java/lang/Object].a(IIF)V
+1) m_0251012 <- csf<-[crq<-java/lang/Object,css<-java/lang/Object,csv<-java/lang/Object].a(IIF)V
 
-2) m_2803941 <- csa<-csg<-[crd<-java/lang/Object,csi<-[java/lang/Object,csh<-java/lang/Object]].a(IIF)V, csn<-[cst<-[crq<-java/lang/Object,csu<-[java/lang/Object,csw<-[java/lang/Object,csv<-java/lang/Object]]],css<-java/lang/Object].a(IIF)V
+2) m_2774249 <- csd<-[crq<-java/lang/Object,css<-java/lang/Object,csv<-java/lang/Object].a(IIF)V
 
-3) m_3842529 <- cxz<-[crq<-java/lang/Object,css<-java/lang/Object,csv<-java/lang/Object,cye<-java/lang/Object,qe<-java/lang/Object].a(IIF)V
-4) m_6844623 <- csf<-[crq<-java/lang/Object,css<-java/lang/Object,csv<-java/lang/Object].a(IIF)V
+**3) m_3426670 <- cut<-[csg<-[crd<-java/lang/Object,csi<-[java/lang/Object,csh<-java/lang/Object]],ctw<-java/lang/Object].a(IIF)V, cvi<-[cst<-[crq<-java/lang/Object,csu<-[java/lang/Object,csw<-[java/lang/Object,csv<-java/lang/Object]]],css<-java/lang/Object,cuk<-java/lang/Object].a(IIF)V**
 
-**5) m_6948721 <- cut<-[csg<-[crd<-java/lang/Object,csi<-[java/lang/Object,csh<-java/lang/Object]],ctw<-java/lang/Object].a(IIF)V, cvi<-[cst<-[crq<-java/lang/Object,csu<-[java/lang/Object,csw<-[java/lang/Object,csv<-java/lang/Object]]],css<-java/lang/Object,cuk<-java/lang/Object].a(IIF)V**
+4) m_3816878 <- csa<-csg<-[crd<-java/lang/Object,csi<-[java/lang/Object,csh<-java/lang/Object]].a(IIF)V, csn<-[cst<-[crq<-java/lang/Object,csu<-[java/lang/Object,csw<-[java/lang/Object,csv<-java/lang/Object]]],css<-java/lang/Object].a(IIF)V
+
+5) m_3842529 <- cxz<-[crq<-java/lang/Object,css<-java/lang/Object,csv<-java/lang/Object,cye<-java/lang/Object,qe<-java/lang/Object].a(IIF)V
 
 6) m_7905474 <- crz<-[crq<-java/lang/Object,css<-java/lang/Object,csv<-java/lang/Object].a(IIF)V
 
 7) m_9661580 <- cxy<-[crq<-java/lang/Object,css<-java/lang/Object,csv<-java/lang/Object].a(IIF)V
 
+
 ---
 
-1) m_0571403 <- wn<-[java/lang/Object,wt<-java/lang/Object].a(Lvw;)V
+1) m_0734522 <- wn<-[java/lang/Object,wt<-java/lang/Object].a(Lvw;)V
 
-**2) m_8729113 <- wx<-[java/lang/Object,wr<-[java/lang/Object,wt<-java/lang/Object]].a(Lvw;)V**
+**2) m_6560014 <- wx<-[java/lang/Object,wr<-[java/lang/Object,wt<-java/lang/Object]].a(Lvw;)V***
 
 ### 19w08b -> 19w09a
 
-**1) m_4624292 <- asv<-[ahm<-[java/lang/Object,agl<-java/lang/Object,bz<-java/lang/Object],aso<-java/lang/Object].a(Lahm;FFFFF)V**
+**1) m_1897788 <- asv<-[ahm<-[java/lang/Object,agl<-java/lang/Object,bz<-java/lang/Object],aso<-java/lang/Object].a(Lahm;FFFFF)V**
 
-2) m_7993403 <- asd<-[ahm<-[java/lang/Object,agl<-java/lang/Object,bz<-java/lang/Object],aso<-java/lang/Object].a(Lahm;FFFFF)V
+2) m_7517040 <- asd<-[ahm<-[java/lang/Object,agl<-java/lang/Object,bz<-java/lang/Object],aso<-java/lang/Object].a(Lahm;FFFFF)VV
 
 ### 1.14.4-pre3 -> 1.14.4-pre4
 
-**1) m_4584464 <- dkc<-[java/lang/Object,kf<-[java/lang/Object,jh<-java/lang/Object]].a()Ljc;**
+1) m_1482540 <- wc<-[java/lang/Object,nu<-[java/lang/Object,jh<-java/lang/Object]].a()Ljc;
 
-2) m_7116279 <- wc<-[java/lang/Object,nu<-[java/lang/Object,jh<-java/lang/Object]].a()Ljc;
+**2) m_7400282 <- dkc<-[java/lang/Object,kf<-[java/lang/Object,jh<-java/lang/Object]].a()Ljc;**;
