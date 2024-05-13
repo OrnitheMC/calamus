@@ -83,6 +83,36 @@ ly.a(Lnx;IIII)Z: m_7925651 -> **m_8199947** (manual fix, name taken from b1.6-tb
 
 2) m_7937999 <- net/minecraft/realms/RealmsScreen<-java/lang/Object.keyPressed(III)Z
 
+### 18w05a -> 18w06a
+
+1) m_2661127 <- bdo<-java/lang/Object.b(Lec;)Lbfj;, bgv<-[java/lang/Object,bgm<-[java/lang/Object,atb<-java/lang/Object]].b(Lec;)Lbfj;
+
+**2) m_4919395 <- asn<-java/lang/Object(itf).b(Lec;)Lbfj;, atb<-java/lang/Object(itf).b(Lec;)Lbfj;**
+
+---
+
+**1) m_1517868 <- atm<-[java/lang/Object,atn<-[java/lang/Object,atq<-[java/lang/Object,atb<-java/lang/Object],atu<-java/lang/Object],ats<-[java/lang/Object,atq<-[java/lang/Object,atb<-java/lang/Object]],java/lang/AutoCloseable].a(Latv;Lec;)I**
+
+2) m_9271475 <- aty<-[java/lang/Object,ats<-[java/lang/Object,atq<-[java/lang/Object,atb<-java/lang/Object]]].a(Latv;Lec;)I
+
+---
+
+1) m_0598682 <- bly<-bjo<-java/lang/Object.a(Latn;Lbgn;Ljava/util/Random;Lec;Lbjp;)Z
+
+**2) m_2665009 <- bfl<-java/lang/Object.a(Latn;Lbgn;Ljava/util/Random;Lec;Lbjp;)Z, bjo<-java/lang/Object.a(Latn;Lbgn;Ljava/util/Random;Lec;Lbjp;)Z**
+
+---
+
+1) m_8161543 <- bkz<-bly<-bjo<-java/lang/Object.e()Ljava/util/List;
+
+**2) m_9912401 <- bkv<-bly<-bjo<-java/lang/Object.e()Ljava/util/List;**
+
+---
+
+**1) m_5506965 <- ok<-java/lang/Object(itf).aa_()V, op<-java/lang/Object(itf).aa_()V**
+
+2) m_8716168 <- aug<-[java/lang/Object,op<-java/lang/Object].aa_()V
+
 ### 1.13 -> 18w30a
 
 **1) m_7423871 <- chx<-java/lang/Object(itf).getAdvance()F**
