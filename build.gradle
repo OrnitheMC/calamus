@@ -27,9 +27,14 @@ updateIntermediary {
 def maven_group = 'net.ornithemc'
 def artifact_id = "calamus-intermediary-gen${keratin.intermediaryGen.get()}"
 
-def xml = new URL("https://maven.ornithemc.net/releases/${maven_group.replace('.', '/')}/${artifact_id}/maven-metadata.xml").text
-def metadata = new XmlSlurper().parseText(xml)
-def publishedVersions = metadata.versioning.versions.version*.text()
+def publishedVersions
+
+try {
+	def xml = new URL("https://maven.ornithemc.net/releases/${maven_group.replace('.', '/')}/${artifact_id}/maven-metadata.xml").text
+	def metadata = new XmlSlurper().parseText(xml)
+	publishedVersions = metadata.versioning.versions.version*.text()
+} catch (FileNotFoundException e) {
+}
 
 def localMappingsPath = "$buildDir/mappings"
 new File(localMappingsPath).mkdirs()
@@ -48,16 +53,16 @@ keratin.files.mappingsDirectory.eachFile {
 	File tinyV2File = new File("$localMappingsPath/${it.name}")
 
 	def conversionTask = "convert${it.name}ToV2"
-	tasks.register(name: conversionTask, type: ConvertMappingsFromTinyV1ToTinyV2Task) {
+	tasks.register(conversionTask, ConvertMappingsFromTinyV1ToTinyV2Task) {
 		input = tinyV1File
 		output = tinyV2File
 	}
 
-	Jar makeV1Jar = task("${mcVer}_buildMappingsJar", type: BuildMappingsJarTask) {
+	Jar makeV1Jar = task("${mcVer}_buildVV1MappingsJar", type: BuildMappingsJarTask) {
 		archiveFileName = "calamus-intermediary-gen${keratin.intermediaryGen.get()}-${mcVer}.jar"
 		mappings tinyV1File
 	}
-	Jar makeV2Jar = task("${mcVer}_buildMappingsJar", type: BuildMappingsJarTask, dependsOn: conversionTask) {
+	Jar makeV2Jar = task("${mcVer}_buildV2MappingsJar", type: BuildMappingsJarTask, dependsOn: conversionTask) {
 		archiveFileName = "calamus-intermediary-gen${keratin.intermediaryGen.get()}-${mcVer}-v2.jar"
 		mappings tinyV2File
 	}
