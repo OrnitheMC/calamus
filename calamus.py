@@ -557,7 +557,7 @@ ROOT,
 
 def main():
 	os.environ['MC_VERSION'] = ROOT
-	subprocess.run("./gradlew generateCalamus --stacktrace", shell = True, check = True)
+	subprocess.run("./gradlew generateIntermediary --stacktrace", shell = True, check = True)
 	
 	for versions in VERSIONS:
 		for i in range(1, len(versions)):
@@ -576,7 +576,7 @@ def main():
 				
 				os.environ['MC_VERSION'] = to
 				
-				subprocess.run("./gradlew updateCalamus --stacktrace", shell = True, check = True)
+				subprocess.run("./gradlew updateIntermediary --stacktrace", shell = True, check = True)
 
 if __name__ == '__main__':
 	main()

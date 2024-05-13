@@ -11,7 +11,7 @@ method inheritance, report the issue [here](https://github.com/OrnitheMC/calamus
 If you are generating new mappings, first check if the conflict can be resolved by an update to
 our matches. If not, add a new entry for the conflict resolution to this file.
 
-### b1.6-pre-trailer -> b1.5_02>
+### b1.6-pre-trailer -> b1.5_02
 
 ly.a(Lnx;IIII)Z: m_7925651 -> **m_8199947** (manual fix, name taken from b1.6-tb3)
 
