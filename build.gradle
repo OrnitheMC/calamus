@@ -1,19 +1,16 @@
 import net.ornithemc.keratin.api.TaskSelection
-import net.ornithemc.keratin.api.task.build.BuildMappingsJarTask
-import net.ornithemc.keratin.api.task.mapping.ConvertMappingsFromTinyV1ToTinyV2Task
-import net.ornithemc.keratin.api.task.mapping.GenerateNewIntermediaryTask
 import net.ornithemc.keratin.api.task.mapping.UpdateIntermediaryTask
 
 plugins {
 	id 'java'
 	id 'maven-publish'
-	id 'keratin' version '2.7'
+	id 'keratin' version '5.1'
 }
 
 def ENV = System.getenv()
 
 keratin {
-	minecraftVersion = ENV.MC_VERSION ?: 'b1.0'
+	minecraftVersion = ENV.MC_VERSION
 	intermediaryGen = 2
 
 	tasks TaskSelection.CALAMUS
@@ -22,67 +19,6 @@ keratin {
 updateIntermediary {
 	fromMinecraftVersion = ENV.FROM_MC_VERSION
 	fromFromMinecraftVersion = ENV.FROM_FROM_MC_VERSION
-}
-
-def maven_group = 'net.ornithemc'
-def artifact_id = "calamus-intermediary-gen${keratin.intermediaryGen.get()}"
-
-def publishedVersions
-
-try {
-	def xml = new URL("https://maven.ornithemc.net/releases/${maven_group.replace('.', '/')}/${artifact_id}/maven-metadata.xml").text
-	def metadata = new XmlSlurper().parseText(xml)
-	publishedVersions = metadata.versioning.versions.version*.text()
-} catch (FileNotFoundException e) {
-}
-
-def localMappingsPath = "$buildDir/mappings"
-new File(localMappingsPath).mkdirs()
-keratin.files.mappingsDirectory.eachFile {
-	if (!it.name.endsWith(".tiny")) {
-		return
-	}
-
-	def mcVer = it.name.replace(".tiny", "")
-
-	if (publishedVersions != null && publishedVersions.contains(mcVer)) {
-		return
-	}
-
-	File tinyV1File = it
-	File tinyV2File = new File("$localMappingsPath/${it.name}")
-
-	def conversionTask = "convert${it.name}ToV2"
-	tasks.register(conversionTask, ConvertMappingsFromTinyV1ToTinyV2Task) {
-		input = tinyV1File
-		output = tinyV2File
-	}
-
-	Jar makeV1Jar = task("${mcVer}_buildVV1MappingsJar", type: BuildMappingsJarTask) {
-		archiveFileName = "calamus-intermediary-gen${keratin.intermediaryGen.get()}-${mcVer}.jar"
-		mappings tinyV1File
-	}
-	Jar makeV2Jar = task("${mcVer}_buildV2MappingsJar", type: BuildMappingsJarTask, dependsOn: conversionTask) {
-		archiveFileName = "calamus-intermediary-gen${keratin.intermediaryGen.get()}-${mcVer}-v2.jar"
-		mappings tinyV2File
-	}
-
-	build.dependsOn makeV1Jar
-	build.dependsOn makeV2Jar
-
-	publishing {
-		publications {
-			create("${mcVer}_mavenJava", MavenPublication) {
-				groupId maven_group
-				artifactId artifact_id
-				version mcVer
-				artifact(makeV1Jar)
-				artifact(makeV2Jar) {
-					classifier = 'v2'
-				}
-			}
-		}
-	}
 }
 
 publishing {
