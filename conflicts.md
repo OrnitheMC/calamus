@@ -21,6 +21,12 @@ ly.a(Lnx;IIII)Z: m_7925651 -> **m_8199947** (manual fix, name taken from b1.6-tb
 
 2) m_8813677 <- qd<-[kw<-java/lang/Object,qi<-java/lang/Object].c(DDDFF)V
 
+### 1.5.1 -> 13w16a-04192037
+
+**1) m_4971784 <- nk<-ms<-java/lang/Object.aL()F**
+
+2) m_9161906 <- rc<-java/lang/Object(itf).aL()F
+
 ### 14w20b -> 14w21a
 
 1) m_3056365 <- gd<-java/lang/Object(itf).c()V
@@ -70,6 +76,12 @@ ly.a(Lnx;IIII)Z: m_7925651 -> **m_8199947** (manual fix, name taken from b1.6-tb
 17) m_9725227 <- aeo$8<-[java/lang/Object,aez$a<-java/lang/Object].a(Laeq;)Ljava/lang/String;
 
 18) m_9807816 <- aeo$4<-[java/lang/Object,aez$a<-java/lang/Object].a(Laeq;)Ljava/lang/String;
+
+### 16w39c -> 16w40a
+
+**1) m_4020455 <- bsr<-bsg<-java/lang/Object.a(Lasu;DDDFI)V**
+
+2) m_8437148 <- bsq<-bsr<-bsg<-java/lang/Object.a(Lasu;DDDFI)V
 
 ### 1.12-pre5 -> 1.12-pre6
 
@@ -139,9 +151,9 @@ ly.a(Lnx;IIII)Z: m_7925651 -> **m_8199947** (manual fix, name taken from b1.6-tb
 
 ---
 
-1) m_5454048 <- bnr<-[java/lang/Object,bmx<-[java/lang/Object,axk<-java/lang/Object]].a(Lbpp$a;[J)V, bop<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].a(Lbpp$a;[J)V
+**1) m_3098180 <- boh<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].a(Lbpp$a;[J)V**
 
-**2) m_8696804 <- boh<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].a(Lbpp$a;[J)V**
+2) m_5454048 <- bnr<-[java/lang/Object,bmx<-[java/lang/Object,axk<-java/lang/Object]].a(Lbpp$a;[J)V, bop<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].a(Lbpp$a;[J)V
 
 ---
 
@@ -214,9 +226,9 @@ ly.a(Lnx;IIII)Z: m_7925651 -> **m_8199947** (manual fix, name taken from b1.6-tb
 
 ### 18w49a -> 18w50a
 
-**1) m_5573014 <- agv<-[java/lang/Object,afv<-java/lang/Object,bz<-java/lang/Object].f()Ljd;**
+1) m_6112713 <- bok<-[boj<-[bnq<-java/lang/Object,afu<-[java/lang/Object,afi<-[java/lang/Object,afg<-java/lang/Object,afv<-java/lang/Object],afp<-[java/lang/Object,afv<-java/lang/Object]]],afw<-java/lang/Object].f()Ljd;
 
-2) m_6112713 <- bok<-[boj<-[bnq<-java/lang/Object,afu<-[java/lang/Object,afi<-[java/lang/Object,afg<-java/lang/Object,afv<-java/lang/Object],afp<-[java/lang/Object,afv<-java/lang/Object]]],afw<-java/lang/Object].f()Ljd;*
+**2) m_7744478 <- agv<-[java/lang/Object,afv<-java/lang/Object,bz<-java/lang/Object].f()Ljd;**
 
 ---
 
