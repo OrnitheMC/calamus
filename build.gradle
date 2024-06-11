@@ -4,13 +4,15 @@ import net.ornithemc.keratin.api.task.mapping.UpdateIntermediaryTask
 plugins {
 	id 'java'
 	id 'maven-publish'
-	id 'keratin' version '5.1'
+	id 'keratin' version '6.3'
 }
 
 def ENV = System.getenv()
 
 keratin {
-	minecraftVersion = ENV.MC_VERSION
+	if (ENV.MC_VERSION) {
+		minecraftVersions ENV.MC_VERSION
+	}
 	intermediaryGen = 2
 
 	tasks TaskSelection.CALAMUS
