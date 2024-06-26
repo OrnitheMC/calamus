@@ -109,9 +109,9 @@ ly.a(Lnx;IIII)Z: m_7925651 -> **m_8199947** (manual fix, name taken from b1.6-tb
 
 ---
 
-1) m_0598682 <- bly<-bjo<-java/lang/Object.a(Latn;Lbgn;Ljava/util/Random;Lec;Lbjp;)Z
+**1) m_2665009 <- bfl<-java/lang/Object.a(Latn;Lbgn;Ljava/util/Random;Lec;Lbjp;)Z, bjo<-java/lang/Object.a(Latn;Lbgn;Ljava/util/Random;Lec;Lbjp;)Z**
 
-**2) m_2665009 <- bfl<-java/lang/Object.a(Latn;Lbgn;Ljava/util/Random;Lec;Lbjp;)Z, bjo<-java/lang/Object.a(Latn;Lbgn;Ljava/util/Random;Lec;Lbjp;)Z**
+2) m_4632275 <- bly<-bjo<-java/lang/Object.a(Latn;Lbgn;Ljava/util/Random;Lec;Lbjp;)Z
 
 ---
 
@@ -188,9 +188,9 @@ ly.a(Lnx;IIII)Z: m_7925651 -> **m_8199947** (manual fix, name taken from b1.6-tb
 
 ---
 
-1) m_1853948 <- bop<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].l()[Lit/unimi/dsi/fastutil/shorts/ShortList;
+**1) m_1340183 <- boh<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].l()[Lit/unimi/dsi/fastutil/shorts/ShortList;**
 
-**2) m_7755614 <- boh<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].l()[Lit/unimi/dsi/fastutil/shorts/ShortList;**
+2) m_1853948 <- bop<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].l()[Lit/unimi/dsi/fastutil/shorts/ShortList;
 
 ---
 
