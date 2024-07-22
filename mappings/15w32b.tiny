@@ -1732,7 +1732,7 @@ FIELD	aga	[[Lapo;	c	f_2446217
 FIELD	aga	Z	d	f_1357093
 FIELD	aga	Lafr;	e	f_8669340
 METHOD	aga	(Lafx;Lcj;)I	a	m_2213654
-METHOD	aga	(Lafx;Lcj;)I	b	m_9271475
+METHOD	aga	(Lafx;Lcj;)I	b	m_6502512
 CLASS	agb	net/minecraft/unmapped/C_6605607
 FIELD	agb	Lcj;	a	f_8944974
 FIELD	agb	J	b	f_2942309
@@ -4384,7 +4384,7 @@ METHOD	apo	(Lqg;)V	b	m_1651534
 METHOD	apo	(Z)V	b	m_8729732
 METHOD	apo	()V	c	m_9463277
 METHOD	apo	(II)Z	c	m_6577248
-METHOD	apo	(III)V	c	m_2063645
+METHOD	apo	(III)V	c	m_4728819
 METHOD	apo	(J)V	c	m_7022151
 METHOD	apo	(Lcj;)I	c	m_3471632
 METHOD	apo	(Z)V	c	m_4814085
@@ -12063,7 +12063,7 @@ METHOD	bqh$b	()I	b	m_6104637
 METHOD	bqh$b	()I	c	m_1542035
 CLASS	bqi	net/minecraft/unmapped/C_3478281
 FIELD	bqi	Lbqh$a;	a	f_1600165
-CLASS	bqj	net/minecraft/unmapped/C_3544790
+CLASS	bqj	net/minecraft/unmapped/C_6088271
 FIELD	bqj	Ljz;	f	f_8742392
 FIELD	bqj	Ljz;	g	f_3126491
 FIELD	bqj	Lorg/apache/logging/log4j/Logger;	h	f_7184052
@@ -12083,15 +12083,15 @@ METHOD	bqj	(Lbri;)V	b	m_8596643
 METHOD	bqj	()V	d	m_2121010
 METHOD	bqj	()Lbqk;	f	m_9754427
 METHOD	bqj	()V	g	m_3134138
-CLASS	bqj$1	net/minecraft/unmapped/C_3544790$2182988
+CLASS	bqj$1	net/minecraft/unmapped/C_6088271$2182988
 FIELD	bqj$1	Lbqk;	a	f_4403421
 FIELD	bqj$1	Lbqj;	b	f_1357699
 METHOD	bqj$1	()Ljava/lang/String;	a	m_7845473
-CLASS	bqj$2	net/minecraft/unmapped/C_3544790$9853306
+CLASS	bqj$2	net/minecraft/unmapped/C_6088271$9853306
 FIELD	bqj$2	Lbqk;	a	f_7607208
 FIELD	bqj$2	Lbqj;	b	f_9948934
 METHOD	bqj$2	()Ljava/lang/String;	a	m_2882345
-CLASS	bqj$3	net/minecraft/unmapped/C_3544790$2743704
+CLASS	bqj$3	net/minecraft/unmapped/C_6088271$2743704
 FIELD	bqj$3	Lbqk;	a	f_4299277
 FIELD	bqj$3	Lbqj;	b	f_1404075
 METHOD	bqj$3	()Ljava/lang/String;	a	m_3077698
@@ -12330,12 +12330,10 @@ CLASS	brb$a	net/minecraft/unmapped/C_6498111$C_7263502
 FIELD	brb$a	Ljava/io/InputStream;	a	f_0747145
 FIELD	brb$a	Ljava/lang/String;	b	f_1938626
 FIELD	brb$a	Z	c	f_6852390
-METHOD	brb$a	()V	finalize	m_1714477
 CLASS	brc	net/minecraft/unmapped/C_2126928
 FIELD	brc	Lcom/google/common/base/Splitter;	b	f_8901884
 FIELD	brc	Ljava/util/zip/ZipFile;	c	f_0925735
 METHOD	brc	()Ljava/util/zip/ZipFile;	d	m_9225516
-METHOD	brc	()V	finalize	m_3739325
 CLASS	brd	net/minecraft/unmapped/C_9427820
 CLASS	bre	net/minecraft/unmapped/C_1992618
 FIELD	bre	Ljz;	a	f_4575303
@@ -12970,7 +12968,6 @@ CLASS	bty$1$1	net/minecraft/unmapped/C_3624347$0841016$7119818
 FIELD	bty$1$1	Lbty$1;	a	f_0976128
 CLASS	bty$2	net/minecraft/unmapped/C_3624347$5160525
 FIELD	bty$2	Ljz;	a	f_9887617
-METHOD	bty$2	(Ljava/net/URL;)Ljava/net/URLConnection;	openConnection	m_5938367
 CLASS	bty$2$1	net/minecraft/unmapped/C_3624347$5160525$8790747
 FIELD	bty$2$1	Lbty$2;	a	f_1800332
 CLASS	bty$a	net/minecraft/unmapped/C_3624347$C_8871607
@@ -16482,7 +16479,6 @@ METHOD	net/minecraft/client/main/Main	([Ljava/lang/String;)V	main	main
 CLASS	net/minecraft/client/main/Main$1	net/minecraft/client/main/Main$5970547
 FIELD	net/minecraft/client/main/Main$1	Ljava/lang/String;	a	f_0605463
 FIELD	net/minecraft/client/main/Main$1	Ljava/lang/String;	b	f_0839336
-METHOD	net/minecraft/client/main/Main$1	()Ljava/net/PasswordAuthentication;	getPasswordAuthentication	m_1293032
 CLASS	net/minecraft/client/main/Main$2	net/minecraft/client/main/Main$5969793
 CLASS	net/minecraft/realms/DisconnectedRealmsScreen	net/minecraft/realms/DisconnectedRealmsScreen
 FIELD	net/minecraft/realms/DisconnectedRealmsScreen	Ljava/util/List;	lines	f_2700793
@@ -17955,7 +17951,7 @@ METHOD	qg	(Lc;)V	a	m_8367053
 METHOD	qg	(Lcj;FF)V	a	m_6663867
 METHOD	qg	(Lcj;Lahn;)V	a	m_4546144
 METHOD	qg	(Ldn;)V	a	m_9618795
-METHOD	qg	(Ldn;Z)Z	a	m_6188111
+METHOD	qg	(Ldn;Z)Z	a	m_1203502
 METHOD	qg	(Ljava/lang/String;)V	a	m_0752703
 METHOD	qg	(Ljava/lang/String;FF)V	a	m_6294842
 METHOD	qg	(Ljava/util/UUID;)V	a	m_3138143
@@ -18039,7 +18035,7 @@ METHOD	qg	(FF)V	c	m_9598325
 METHOD	qg	(I)V	c	m_0210844
 METHOD	qg	(ILabw;)Z	c	m_4059557
 METHOD	qg	(Lcj;)D	c	m_3957443
-METHOD	qg	(Ldn;)Z	c	m_3827610
+METHOD	qg	(Ldn;)Z	c	m_6188111
 METHOD	qg	(Llh;)V	c	m_8805713
 METHOD	qg	(Z)V	c	m_8609807
 METHOD	qg	(DDD)V	d	m_1206758

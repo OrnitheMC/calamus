@@ -103,9 +103,9 @@ ly.a(Lnx;IIII)Z: m_7925651 -> **m_8199947** (manual fix, name taken from b1.6-tb
 
 ---
 
-**1) m_1517868 <- atm<-[java/lang/Object,atn<-[java/lang/Object,atq<-[java/lang/Object,atb<-java/lang/Object],atu<-java/lang/Object],ats<-[java/lang/Object,atq<-[java/lang/Object,atb<-java/lang/Object]],java/lang/AutoCloseable].a(Latv;Lec;)I**
+**1) m_1517868 <- atm<-[java/lang/Object,atn<-[java/lang/Object,atq<-[java/lang/Object,atb<-java/lang/Object],atu<-java/lang/Object],ats<-[java/lang/Object,atq<-[java/lang/Object,atb<-java/lang/Object]],java/lang/AutoCloseable<-java/lang/Object].a(Latv;Lec;)I**
 
-2) m_9271475 <- aty<-[java/lang/Object,ats<-[java/lang/Object,atq<-[java/lang/Object,atb<-java/lang/Object]]].a(Latv;Lec;)I
+2) m_6502512 <- aty<-[java/lang/Object,ats<-[java/lang/Object,atq<-[java/lang/Object,atb<-java/lang/Object]]].a(Latv;Lec;)I
 
 ---
 

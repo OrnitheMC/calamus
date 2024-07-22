@@ -1630,7 +1630,7 @@ METHOD	age	(DDD)Z	c	m_3552814
 METHOD	age	(FF)V	c	m_8092679
 METHOD	age	(ILavn;)Z	c	m_4059557
 METHOD	age	(Les;)D	c	m_7687704
-METHOD	age	(Lho;)Z	c	m_3827610
+METHOD	age	(Lho;)Z	c	m_6188111
 METHOD	age	(Liz;)V	c	m_8604824
 METHOD	age	(Lui;)V	c	m_8805713
 METHOD	age	(Z)V	c	m_4587013
@@ -1640,7 +1640,7 @@ METHOD	age	(F)V	d	m_8498956
 METHOD	age	(FF)Lckg;	d	m_5055102
 METHOD	age	(Laqf;)V	d	m_8086437
 METHOD	age	(Les;)D	d	m_3957443
-METHOD	age	(Lho;)Z	d	m_6188111
+METHOD	age	(Lho;)Z	d	m_1203502
 METHOD	age	(Z)V	d	m_5119666
 METHOD	age	()Liz;	e	m_7744478
 METHOD	age	(DDD)D	e	m_5454154
@@ -12507,7 +12507,6 @@ METHOD	boc	()J	k	m_6187483
 METHOD	boc	()Lboh;	l	m_1771492
 CLASS	boc$1	net/minecraft/unmapped/C_5812542$4514938
 METHOD	boc$1	()Lex;	a	m_8258180
-METHOD	boc$1	()Ljava/lang/Object;	initialValue	m_9424918
 CLASS	boc$2	net/minecraft/unmapped/C_5812542$2648333
 FIELD	boc$2	[I	a	f_1522614
 FIELD	boc$2	[I	b	f_1824367
@@ -13968,7 +13967,6 @@ METHOD	bse	(JII)J	a	m_6437034
 METHOD	bse	(JIII)J	a	m_4467005
 METHOD	bse	(JII)J	b	m_0494894
 METHOD	bse	(JII)J	c	m_1137141
-METHOD	bse	(I)I	next	m_8429542
 CLASS	bsf	net/minecraft/unmapped/C_2331584
 FIELD	bsf	[F	m	f_8791445
 METHOD	bsf	(Lbqb;JIIIDDDFFFIIDLjava/util/BitSet;)V	a	m_5562305
@@ -27548,7 +27546,7 @@ METHOD	dkx$b	()I	b	m_6104637
 METHOD	dkx$b	()I	c	m_1542035
 CLASS	dky	net/minecraft/unmapped/C_3478281
 FIELD	dky	Ldkx$a;	a	f_1600165
-CLASS	dkz	net/minecraft/unmapped/C_3544790
+CLASS	dkz	net/minecraft/unmapped/C_6088271
 FIELD	dkz	Lpx;	f	f_3126491
 FIELD	dkz	Lorg/apache/logging/log4j/Logger;	g	f_7184052
 FIELD	dkz	Ljava/util/List;	h	f_7728926
@@ -28277,7 +28275,6 @@ CLASS	doc$1	net/minecraft/unmapped/C_3624347$7119818
 FIELD	doc$1	Ldoc;	a	f_0976128
 CLASS	doc$2	net/minecraft/unmapped/C_3624347$5160525
 FIELD	doc$2	Lpx;	a	f_9887617
-METHOD	doc$2	(Ljava/net/URL;)Ljava/net/URLConnection;	openConnection	m_5938367
 CLASS	doc$2$1	net/minecraft/unmapped/C_3624347$5160525$8790747
 FIELD	doc$2$1	Ldoc$2;	a	f_1800332
 CLASS	doc$a	net/minecraft/unmapped/C_3624347$C_8871607
@@ -31564,7 +31561,6 @@ METHOD	net/minecraft/client/main/Main	([Ljava/lang/String;)V	main	main
 CLASS	net/minecraft/client/main/Main$1	net/minecraft/client/main/Main$5970547
 FIELD	net/minecraft/client/main/Main$1	Ljava/lang/String;	a	f_0605463
 FIELD	net/minecraft/client/main/Main$1	Ljava/lang/String;	b	f_0839336
-METHOD	net/minecraft/client/main/Main$1	()Ljava/net/PasswordAuthentication;	getPasswordAuthentication	m_1293032
 CLASS	net/minecraft/client/main/Main$2	net/minecraft/client/main/Main$5969793
 CLASS	net/minecraft/data/Main	net/minecraft/data/Main
 METHOD	net/minecraft/data/Main	(Ljava/lang/String;)Ljava/nio/file/Path;	a	m_4384126
@@ -35070,7 +35066,6 @@ CLASS	vd	net/minecraft/unmapped/C_2126928
 FIELD	vd	Lcom/google/common/base/Splitter;	b	f_8901884
 FIELD	vd	Ljava/util/zip/ZipFile;	c	f_0925735
 METHOD	vd	()Ljava/util/zip/ZipFile;	b	m_9225516
-METHOD	vd	()V	finalize	m_3739325
 CLASS	ve	net/minecraft/unmapped/C_9427820
 FIELD	ve	Lorg/apache/logging/log4j/Logger;	b	f_7803229
 FIELD	ve	Z	c	f_7538886
@@ -35192,7 +35187,6 @@ CLASS	vw$a	net/minecraft/unmapped/C_6498111$C_7263502
 FIELD	vw$a	Ljava/io/InputStream;	a	f_0747145
 FIELD	vw$a	Ljava/lang/String;	b	f_1938626
 FIELD	vw$a	Z	c	f_6852390
-METHOD	vw$a	()V	finalize	m_1714477
 CLASS	vx	net/minecraft/unmapped/C_4729290
 METHOD	vx	(Ljava/util/List;)V	a	m_1063666
 METHOD	vx	(Lwa;)V	a	m_1035371

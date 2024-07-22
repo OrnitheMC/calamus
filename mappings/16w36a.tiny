@@ -2692,7 +2692,7 @@ FIELD	aje	Laiv;	e	f_8669340
 METHOD	aje	(Lajb;Lcn;)I	a	m_2213654
 METHOD	aje	(Lcn;Lato$a;)Lard;	a	m_7721848
 METHOD	aje	()Z	aa	m_4365968
-METHOD	aje	(Lajb;Lcn;)I	b	m_9271475
+METHOD	aje	(Lajb;Lcn;)I	b	m_6502512
 CLASS	ajf	net/minecraft/unmapped/C_8031101
 FIELD	ajf	Ldt;	b	f_2748372
 METHOD	ajf	()Ldt;	a	m_7417739
@@ -5764,7 +5764,7 @@ METHOD	ato	([I)V	a	m_3098180
 METHOD	ato	([Latp;)V	a	m_5968350
 METHOD	ato	()V	b	m_8266290
 METHOD	ato	(II)I	b	m_1133488
-METHOD	ato	(III)V	b	m_2063645
+METHOD	ato	(III)V	b	m_4728819
 METHOD	ato	(J)V	b	m_2399911
 METHOD	ato	(Lcn;)I	b	m_9345141
 METHOD	ato	(Lsf;)V	b	m_1651534
@@ -14557,7 +14557,7 @@ METHOD	bxa$b	()I	b	m_6104637
 METHOD	bxa$b	()I	c	m_1542035
 CLASS	bxb	net/minecraft/unmapped/C_3478281
 FIELD	bxb	Lbxa$a;	a	f_1600165
-CLASS	bxc	net/minecraft/unmapped/C_3544790
+CLASS	bxc	net/minecraft/unmapped/C_6088271
 FIELD	bxc	Lkp;	f	f_8742392
 FIELD	bxc	Lkp;	g	f_3126491
 FIELD	bxc	Lorg/apache/logging/log4j/Logger;	h	f_7184052
@@ -14578,15 +14578,15 @@ METHOD	bxc	(Lbyc;)V	b	m_8596643
 METHOD	bxc	()V	d	m_2121010
 METHOD	bxc	()Lbxd;	f	m_9754427
 METHOD	bxc	()V	g	m_3134138
-CLASS	bxc$1	net/minecraft/unmapped/C_3544790$2182988
+CLASS	bxc$1	net/minecraft/unmapped/C_6088271$2182988
 FIELD	bxc$1	Lbxd;	a	f_4403421
 FIELD	bxc$1	Lbxc;	b	f_1357699
 METHOD	bxc$1	()Ljava/lang/String;	a	m_7845473
-CLASS	bxc$2	net/minecraft/unmapped/C_3544790$9853306
+CLASS	bxc$2	net/minecraft/unmapped/C_6088271$9853306
 FIELD	bxc$2	Lbxd;	a	f_7607208
 FIELD	bxc$2	Lbxc;	b	f_9948934
 METHOD	bxc$2	()Ljava/lang/String;	a	m_2882345
-CLASS	bxc$3	net/minecraft/unmapped/C_3544790$2743704
+CLASS	bxc$3	net/minecraft/unmapped/C_6088271$2743704
 FIELD	bxc$3	Lbxd;	a	f_4299277
 FIELD	bxc$3	Lbxc;	b	f_1404075
 METHOD	bxc$3	()Ljava/lang/String;	a	m_3077698
@@ -14833,12 +14833,10 @@ CLASS	bxv$a	net/minecraft/unmapped/C_6498111$C_7263502
 FIELD	bxv$a	Ljava/io/InputStream;	a	f_0747145
 FIELD	bxv$a	Ljava/lang/String;	b	f_1938626
 FIELD	bxv$a	Z	c	f_6852390
-METHOD	bxv$a	()V	finalize	m_1714477
 CLASS	bxw	net/minecraft/unmapped/C_2126928
 FIELD	bxw	Lcom/google/common/base/Splitter;	b	f_8901884
 FIELD	bxw	Ljava/util/zip/ZipFile;	c	f_0925735
 METHOD	bxw	()Ljava/util/zip/ZipFile;	d	m_9225516
-METHOD	bxw	()V	finalize	m_3739325
 CLASS	bxx	net/minecraft/unmapped/C_9427820
 FIELD	bxx	Z	b	f_7538886
 FIELD	bxx	Lcom/google/common/base/CharMatcher;	c	f_3356060
@@ -15515,7 +15513,6 @@ CLASS	cau$1$1	net/minecraft/unmapped/C_3624347$0841016$7119818
 FIELD	cau$1$1	Lcau$1;	a	f_0976128
 CLASS	cau$2	net/minecraft/unmapped/C_3624347$5160525
 FIELD	cau$2	Lkp;	a	f_9887617
-METHOD	cau$2	(Ljava/net/URL;)Ljava/net/URLConnection;	openConnection	m_5938367
 CLASS	cau$2$1	net/minecraft/unmapped/C_3624347$5160525$8790747
 FIELD	cau$2$1	Lcau$2;	a	f_1800332
 CLASS	cau$a	net/minecraft/unmapped/C_3624347$C_8871607
@@ -18996,7 +18993,6 @@ METHOD	net/minecraft/client/main/Main	([Ljava/lang/String;)V	main	main
 CLASS	net/minecraft/client/main/Main$1	net/minecraft/client/main/Main$5970547
 FIELD	net/minecraft/client/main/Main$1	Ljava/lang/String;	a	f_0605463
 FIELD	net/minecraft/client/main/Main$1	Ljava/lang/String;	b	f_0839336
-METHOD	net/minecraft/client/main/Main$1	()Ljava/net/PasswordAuthentication;	getPasswordAuthentication	m_1293032
 CLASS	net/minecraft/client/main/Main$2	net/minecraft/client/main/Main$5969793
 CLASS	net/minecraft/realms/DisconnectedRealmsScreen	net/minecraft/realms/DisconnectedRealmsScreen
 FIELD	net/minecraft/realms/DisconnectedRealmsScreen	Ljava/util/List;	lines	f_2700793
@@ -21478,7 +21474,7 @@ METHOD	sf	(FF)V	c	m_9598325
 METHOD	sf	(I)Lsf;	c	m_0210844
 METHOD	sf	(ILaer;)Z	c	m_4059557
 METHOD	sf	(Lcn;)D	c	m_7687704
-METHOD	sf	(Ldt;)Z	c	m_3827610
+METHOD	sf	(Ldt;)Z	c	m_6188111
 METHOD	sf	(Ljava/lang/String;)V	c	m_0752703
 METHOD	sf	(Llw;)V	c	m_8805713
 METHOD	sf	(Z)V	c	m_4587013
@@ -21486,7 +21482,7 @@ METHOD	sf	(DDD)V	d	m_1206758
 METHOD	sf	(F)I	d	m_8582980
 METHOD	sf	(Laal;)V	d	m_8086437
 METHOD	sf	(Lcn;)D	d	m_3957443
-METHOD	sf	(Ldt;)Z	d	m_6188111
+METHOD	sf	(Ldt;)Z	d	m_1203502
 METHOD	sf	(Z)V	d	m_5119666
 METHOD	sf	(DDD)D	e	m_0692136
 METHOD	sf	(F)F	e	m_3581619

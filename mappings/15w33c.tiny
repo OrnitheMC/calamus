@@ -1822,7 +1822,7 @@ FIELD	agq	[[Laqf;	c	f_2446217
 FIELD	agq	Z	d	f_1357093
 FIELD	agq	Lagh;	e	f_8669340
 METHOD	agq	(Lagn;Lcj;)I	a	m_2213654
-METHOD	agq	(Lagn;Lcj;)I	b	m_9271475
+METHOD	agq	(Lagn;Lcj;)I	b	m_6502512
 CLASS	agr	net/minecraft/unmapped/C_8031101
 FIELD	agr	Ldn;	b	f_2748372
 METHOD	agr	()Ldn;	a	m_7417739
@@ -4486,7 +4486,7 @@ METHOD	aqf	(Lqu;)V	b	m_1651534
 METHOD	aqf	(Z)V	b	m_8729732
 METHOD	aqf	()V	c	m_9463277
 METHOD	aqf	(II)Z	c	m_6577248
-METHOD	aqf	(III)V	c	m_2063645
+METHOD	aqf	(III)V	c	m_4728819
 METHOD	aqf	(J)V	c	m_7022151
 METHOD	aqf	(Lcj;)I	c	m_3471632
 METHOD	aqf	(Z)V	c	m_4814085
@@ -12229,7 +12229,7 @@ METHOD	brb$b	()I	b	m_6104637
 METHOD	brb$b	()I	c	m_1542035
 CLASS	brc	net/minecraft/unmapped/C_3478281
 FIELD	brc	Lbrb$a;	a	f_1600165
-CLASS	brd	net/minecraft/unmapped/C_3544790
+CLASS	brd	net/minecraft/unmapped/C_6088271
 FIELD	brd	Lkd;	f	f_8742392
 FIELD	brd	Lkd;	g	f_3126491
 FIELD	brd	Lorg/apache/logging/log4j/Logger;	h	f_7184052
@@ -12249,15 +12249,15 @@ METHOD	brd	(Lbsc;)V	b	m_8596643
 METHOD	brd	()V	d	m_2121010
 METHOD	brd	()Lbre;	f	m_9754427
 METHOD	brd	()V	g	m_3134138
-CLASS	brd$1	net/minecraft/unmapped/C_3544790$2182988
+CLASS	brd$1	net/minecraft/unmapped/C_6088271$2182988
 FIELD	brd$1	Lbre;	a	f_4403421
 FIELD	brd$1	Lbrd;	b	f_1357699
 METHOD	brd$1	()Ljava/lang/String;	a	m_7845473
-CLASS	brd$2	net/minecraft/unmapped/C_3544790$9853306
+CLASS	brd$2	net/minecraft/unmapped/C_6088271$9853306
 FIELD	brd$2	Lbre;	a	f_7607208
 FIELD	brd$2	Lbrd;	b	f_9948934
 METHOD	brd$2	()Ljava/lang/String;	a	m_2882345
-CLASS	brd$3	net/minecraft/unmapped/C_3544790$2743704
+CLASS	brd$3	net/minecraft/unmapped/C_6088271$2743704
 FIELD	brd$3	Lbre;	a	f_4299277
 FIELD	brd$3	Lbrd;	b	f_1404075
 METHOD	brd$3	()Ljava/lang/String;	a	m_3077698
@@ -12493,12 +12493,10 @@ CLASS	brv$a	net/minecraft/unmapped/C_6498111$C_7263502
 FIELD	brv$a	Ljava/io/InputStream;	a	f_0747145
 FIELD	brv$a	Ljava/lang/String;	b	f_1938626
 FIELD	brv$a	Z	c	f_6852390
-METHOD	brv$a	()V	finalize	m_1714477
 CLASS	brw	net/minecraft/unmapped/C_2126928
 FIELD	brw	Lcom/google/common/base/Splitter;	b	f_8901884
 FIELD	brw	Ljava/util/zip/ZipFile;	c	f_0925735
 METHOD	brw	()Ljava/util/zip/ZipFile;	d	m_9225516
-METHOD	brw	()V	finalize	m_3739325
 CLASS	brx	net/minecraft/unmapped/C_9427820
 CLASS	bry	net/minecraft/unmapped/C_1992618
 FIELD	bry	Lkd;	a	f_4575303
@@ -13134,7 +13132,6 @@ CLASS	bus$1$1	net/minecraft/unmapped/C_3624347$0841016$7119818
 FIELD	bus$1$1	Lbus$1;	a	f_0976128
 CLASS	bus$2	net/minecraft/unmapped/C_3624347$5160525
 FIELD	bus$2	Lkd;	a	f_9887617
-METHOD	bus$2	(Ljava/net/URL;)Ljava/net/URLConnection;	openConnection	m_5938367
 CLASS	bus$2$1	net/minecraft/unmapped/C_3624347$5160525$8790747
 FIELD	bus$2$1	Lbus$2;	a	f_1800332
 CLASS	bus$a	net/minecraft/unmapped/C_3624347$C_8871607
@@ -16667,7 +16664,6 @@ METHOD	net/minecraft/client/main/Main	([Ljava/lang/String;)V	main	main
 CLASS	net/minecraft/client/main/Main$1	net/minecraft/client/main/Main$5970547
 FIELD	net/minecraft/client/main/Main$1	Ljava/lang/String;	a	f_0605463
 FIELD	net/minecraft/client/main/Main$1	Ljava/lang/String;	b	f_0839336
-METHOD	net/minecraft/client/main/Main$1	()Ljava/net/PasswordAuthentication;	getPasswordAuthentication	m_1293032
 CLASS	net/minecraft/client/main/Main$2	net/minecraft/client/main/Main$5969793
 CLASS	net/minecraft/realms/DisconnectedRealmsScreen	net/minecraft/realms/DisconnectedRealmsScreen
 FIELD	net/minecraft/realms/DisconnectedRealmsScreen	Ljava/util/List;	lines	f_2700793
@@ -18386,14 +18382,14 @@ METHOD	qu	(DDD)Z	c	m_3552814
 METHOD	qu	(FF)V	c	m_9598325
 METHOD	qu	(ILacj;)Z	c	m_4059557
 METHOD	qu	(Lcj;)D	c	m_3957443
-METHOD	qu	(Ldn;)Z	c	m_3827610
+METHOD	qu	(Ldn;)Z	c	m_6188111
 METHOD	qu	(Ljava/lang/String;)V	c	m_0752703
 METHOD	qu	(Lll;)V	c	m_8805713
 METHOD	qu	(Z)V	c	m_8609807
 METHOD	qu	(DDD)V	d	m_1206758
 METHOD	qu	(I)V	d	m_8679251
 METHOD	qu	(Lcj;)V	d	m_9794132
-METHOD	qu	(Ldn;)Z	d	m_6188111
+METHOD	qu	(Ldn;)Z	d	m_1203502
 METHOD	qu	(Lyq;)V	d	m_8086437
 METHOD	qu	(Z)V	d	m_4619223
 METHOD	qu	(DDD)D	e	m_0692136

@@ -2104,7 +2104,7 @@ METHOD	aio	(Lajh;)Z	c	m_9352417
 METHOD	aio	(Lawg;)Z	c	m_6918799
 METHOD	aio	(Lcsi;)D	c	m_1302350
 METHOD	aio	(Lew;)V	c	m_9794132
-METHOD	aio	(Lid;)Z	c	m_3827610
+METHOD	aio	(Lid;)Z	c	m_6188111
 METHOD	aio	(Ljo;)V	c	m_8604824
 METHOD	aio	(Lvl;)V	c	m_8805713
 METHOD	aio	(Z)V	c	m_4587013
@@ -2123,7 +2123,7 @@ METHOD	aio	(F)V	d	m_8498956
 METHOD	aio	(FF)Lcsi;	d	m_2990768
 METHOD	aio	(Lajh;)Lcsc;	d	m_5131798
 METHOD	aio	(Lcsi;)V	d	m_5189207
-METHOD	aio	(Lid;)Z	d	m_6188111
+METHOD	aio	(Lid;)Z	d	m_1203502
 METHOD	aio	(Z)V	d	m_5119666
 METHOD	aio	(DDD)D	e	m_0692136
 METHOD	aio	(F)F	e	m_9042923
@@ -15159,7 +15159,6 @@ METHOD	bvp	()J	v	m_6187483
 METHOD	bvp	()Lbvt;	x	m_1771492
 CLASS	bvp$1	net/minecraft/unmapped/C_5812542$4514938
 METHOD	bvp$1	()Lfb;	a	m_8258180
-METHOD	bvp$1	()Ljava/lang/Object;	initialValue	m_9424918
 CLASS	bvp$2	net/minecraft/unmapped/C_5812542$2648333
 FIELD	bvp$2	[I	a	f_1522614
 FIELD	bvp$2	[I	b	f_1824367
@@ -16632,7 +16631,6 @@ METHOD	bzk	(JII)J	a	m_6437034
 METHOD	bzk	(JIII)J	a	m_4467005
 METHOD	bzk	(JII)J	b	m_0494894
 METHOD	bzk	(JII)J	c	m_1137141
-METHOD	bzk	(I)I	next	m_8429542
 CLASS	bzl	net/minecraft/unmapped/C_2331584
 FIELD	bzl	[F	m	f_8791445
 METHOD	bzl	(Lbxh;JIIIDDDFFFIIDLjava/util/BitSet;)V	a	m_5562305
@@ -20721,7 +20719,6 @@ FIELD	com/mojang/realmsclient/dto/RealmsServer	Ljava/util/Map;	slots	f_2841560
 FIELD	com/mojang/realmsclient/dto/RealmsServer	Lcom/mojang/realmsclient/dto/RealmsServer$b;	state	f_5413654
 FIELD	com/mojang/realmsclient/dto/RealmsServer	Lcom/mojang/realmsclient/dto/RealmsServer$c;	worldType	f_9341011
 METHOD	com/mojang/realmsclient/dto/RealmsServer	()Lcom/mojang/realmsclient/dto/RealmsServer;	clone	m_5458973
-METHOD	com/mojang/realmsclient/dto/RealmsServer	()Ljava/lang/Object;	clone	m_9302759
 METHOD	com/mojang/realmsclient/dto/RealmsServer	(Ljava/util/Map;)Ljava/util/Map;	cloneSlots	m_3143975
 METHOD	com/mojang/realmsclient/dto/RealmsServer	()Ljava/lang/String;	getDescription	m_0846376
 METHOD	com/mojang/realmsclient/dto/RealmsServer	()Ljava/util/Map;	getEmptySlots	m_2690421
@@ -20807,7 +20804,6 @@ FIELD	com/mojang/realmsclient/dto/RealmsWorldOptions	J	templateId	f_7930786
 FIELD	com/mojang/realmsclient/dto/RealmsWorldOptions	Ljava/lang/String;	templateImageDefault	f_5932225
 FIELD	com/mojang/realmsclient/dto/RealmsWorldOptions	Ljava/lang/String;	templateImage	f_9357962
 METHOD	com/mojang/realmsclient/dto/RealmsWorldOptions	()Lcom/mojang/realmsclient/dto/RealmsWorldOptions;	clone	m_5385081
-METHOD	com/mojang/realmsclient/dto/RealmsWorldOptions	()Ljava/lang/Object;	clone	m_4869690
 METHOD	com/mojang/realmsclient/dto/RealmsWorldOptions	(I)Ljava/lang/String;	getDefaultSlotName	m_3154711
 METHOD	com/mojang/realmsclient/dto/RealmsWorldOptions	()Lcom/mojang/realmsclient/dto/RealmsWorldOptions;	getDefaults	m_1693133
 METHOD	com/mojang/realmsclient/dto/RealmsWorldOptions	()Lcom/mojang/realmsclient/dto/RealmsWorldOptions;	getEmptyDefaults	m_9565860
@@ -32921,7 +32917,7 @@ METHOD	dx	(IZ)Lbcj;	a	m_4633987
 METHOD	dx	(Lbcj;)Z	a	m_6306690
 METHOD	dx	(Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/brigadier/Message;	a	m_8933836
 METHOD	dx	()Ljava/lang/String;	c	m_6163711
-CLASS	dxa	net/minecraft/unmapped/C_3544790
+CLASS	dxa	net/minecraft/unmapped/C_6088271
 FIELD	dxa	Lqv;	f	f_3126491
 FIELD	dxa	Lqv;	g	f_0408333
 FIELD	dxa	Lqv;	h	f_2300071
@@ -32952,7 +32948,7 @@ METHOD	dxa	(Lqv;)Lqv;	b	m_2280147
 METHOD	dxa	(Ldxb;)Ljava/lang/String;	c	m_4723836
 METHOD	dxa	(Ldxb;)Ljava/lang/String;	d	m_7836787
 METHOD	dxa	()V	g	m_7015367
-CLASS	dxa$a	net/minecraft/unmapped/C_3544790$C_5897828
+CLASS	dxa$a	net/minecraft/unmapped/C_6088271$C_5897828
 FIELD	dxa$a	Ljava/util/Set;	a	f_3904146
 FIELD	dxa$a	I	b	f_7364706
 FIELD	dxa$a	I	c	f_2608719
@@ -36979,7 +36975,6 @@ METHOD	net/minecraft/client/main/Main	([Ljava/lang/String;)V	main	main
 CLASS	net/minecraft/client/main/Main$1	net/minecraft/client/main/Main$5970547
 FIELD	net/minecraft/client/main/Main$1	Ljava/lang/String;	a	f_0605463
 FIELD	net/minecraft/client/main/Main$1	Ljava/lang/String;	b	f_0839336
-METHOD	net/minecraft/client/main/Main$1	()Ljava/net/PasswordAuthentication;	getPasswordAuthentication	m_1293032
 CLASS	net/minecraft/client/main/Main$2	net/minecraft/client/main/Main$5969793
 CLASS	net/minecraft/data/Main	net/minecraft/data/Main
 METHOD	net/minecraft/data/Main	(Ljava/lang/String;)Ljava/nio/file/Path;	a	m_4384126
@@ -41407,7 +41402,6 @@ CLASS	wj	net/minecraft/unmapped/C_2126928
 FIELD	wj	Lcom/google/common/base/Splitter;	b	f_8901884
 FIELD	wj	Ljava/util/zip/ZipFile;	c	f_0925735
 METHOD	wj	()Ljava/util/zip/ZipFile;	b	m_9225516
-METHOD	wj	()V	finalize	m_3739325
 CLASS	wk	net/minecraft/unmapped/C_9427820
 FIELD	wk	Lorg/apache/logging/log4j/Logger;	b	f_7803229
 FIELD	wk	Z	c	f_7538886
@@ -41545,7 +41539,6 @@ CLASS	xc$a	net/minecraft/unmapped/C_6498111$C_7263502
 FIELD	xc$a	Ljava/io/InputStream;	a	f_0747145
 FIELD	xc$a	Ljava/lang/String;	b	f_1938626
 FIELD	xc$a	Z	c	f_6852390
-METHOD	xc$a	()V	finalize	m_1714477
 CLASS	xd	net/minecraft/unmapped/C_2248454
 METHOD	xd	(Lxd$a;Lxi;Lagn;Lagn;Ljava/util/concurrent/Executor;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture;	a	m_4229852
 CLASS	xd$a	net/minecraft/unmapped/C_2248454$C_4125937

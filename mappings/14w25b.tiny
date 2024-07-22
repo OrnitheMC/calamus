@@ -2453,7 +2453,7 @@ FIELD	amj	[[Layv;	c	f_2446217
 FIELD	amj	Z	d	f_1357093
 FIELD	amj	Lalu;	e	f_8669340
 METHOD	amj	(Lamf;Ldi;)I	a	m_2213654
-METHOD	amj	(Lamf;Ldi;)I	b	m_9271475
+METHOD	amj	(Lamf;Ldi;)I	b	m_6502512
 CLASS	amk	net/minecraft/unmapped/C_6605607
 FIELD	amk	Ldi;	a	f_8944974
 FIELD	amk	J	b	f_2942309
@@ -4764,7 +4764,7 @@ METHOD	ayv	(Lub;)V	b	m_1651534
 METHOD	ayv	(Z)V	b	m_8729732
 METHOD	ayv	()V	c	m_9463277
 METHOD	ayv	(II)Z	c	m_6577248
-METHOD	ayv	(III)V	c	m_2063645
+METHOD	ayv	(III)V	c	m_4728819
 METHOD	ayv	(J)V	c	m_7022151
 METHOD	ayv	(Ldi;)I	c	m_3471632
 METHOD	ayv	(Z)V	c	m_4814085
@@ -9454,7 +9454,6 @@ FIELD	bvk	Ljava/net/Proxy;	c	f_5189865
 CLASS	bvl	net/minecraft/unmapped/C_5970547
 FIELD	bvl	Ljava/lang/String;	a	f_0605463
 FIELD	bvl	Ljava/lang/String;	b	f_0839336
-METHOD	bvl	()Ljava/net/PasswordAuthentication;	getPasswordAuthentication	m_1293032
 CLASS	bvm	net/minecraft/unmapped/C_5969793
 CLASS	bvs	net/minecraft/unmapped/C_0055554
 FIELD	bvs	Lbxr;	a	f_9077111
@@ -12014,7 +12013,7 @@ METHOD	ckn	()I	b	m_6104637
 METHOD	ckn	()I	c	m_1542035
 CLASS	cko	net/minecraft/unmapped/C_3478281
 FIELD	cko	Lckm;	a	f_1600165
-CLASS	ckp	net/minecraft/unmapped/C_3544790
+CLASS	ckp	net/minecraft/unmapped/C_6088271
 FIELD	ckp	Lclu;	b	f_8742392
 FIELD	ckp	Lclu;	c	f_3126491
 FIELD	ckp	Lorg/apache/logging/log4j/Logger;	d	f_7184052
@@ -12269,12 +12268,10 @@ CLASS	cln	net/minecraft/unmapped/C_7263502
 FIELD	cln	Ljava/io/InputStream;	a	f_0747145
 FIELD	cln	Ljava/lang/String;	b	f_1938626
 FIELD	cln	Z	c	f_6852390
-METHOD	cln	()V	finalize	m_1714477
 CLASS	clo	net/minecraft/unmapped/C_2126928
 FIELD	clo	Lcom/google/common/base/Splitter;	b	f_8901884
 FIELD	clo	Ljava/util/zip/ZipFile;	c	f_0925735
 METHOD	clo	()Ljava/util/zip/ZipFile;	d	m_9225516
-METHOD	clo	()V	finalize	m_3739325
 CLASS	clp	net/minecraft/unmapped/C_9427820
 CLASS	clq	net/minecraft/unmapped/C_1992618
 FIELD	clq	Lclu;	a	f_4575303
@@ -12854,7 +12851,6 @@ CLASS	cos	net/minecraft/unmapped/C_0841016
 FIELD	cos	Lcor;	a	f_2840157
 CLASS	cot	net/minecraft/unmapped/C_5160525
 FIELD	cot	Lclu;	a	f_9887617
-METHOD	cot	(Ljava/net/URL;)Ljava/net/URLConnection;	openConnection	m_5938367
 CLASS	cou	net/minecraft/unmapped/C_8790747
 FIELD	cou	Lcot;	a	f_1800332
 CLASS	cov	net/minecraft/unmapped/C_8871607
@@ -17385,14 +17381,14 @@ METHOD	ub	(FF)V	c	m_9598325
 METHOD	ub	(I)V	c	m_0210844
 METHOD	ub	(ILaht;)V	c	m_0129682
 METHOD	ub	(Ldi;)D	c	m_3957443
-METHOD	ub	(Ler;)Z	c	m_3827610
+METHOD	ub	(Ler;)Z	c	m_6188111
 METHOD	ub	(Z)V	c	m_4619223
 METHOD	ub	()Lgn;	c_	m_5573014
 METHOD	ub	(DDD)V	d	m_1206758
 METHOD	ub	(F)Lbko;	d	m_0430803
 METHOD	ub	(I)V	d	m_8679251
 METHOD	ub	(Lacw;)V	d	m_8086437
-METHOD	ub	(Ler;)Z	d	m_6188111
+METHOD	ub	(Ler;)Z	d	m_1203502
 METHOD	ub	(Z)V	d	m_5821397
 METHOD	ub	(DDD)D	e	m_0692136
 METHOD	ub	(F)Lbko;	e	m_4800803

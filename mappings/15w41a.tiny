@@ -2002,7 +2002,7 @@ FIELD	ahl	[[Larj;	c	f_2446217
 FIELD	ahl	Z	d	f_1357093
 FIELD	ahl	Lahc;	e	f_8669340
 METHOD	ahl	(Lahi;Lcj;)I	a	m_2213654
-METHOD	ahl	(Lahi;Lcj;)I	b	m_9271475
+METHOD	ahl	(Lahi;Lcj;)I	b	m_6502512
 CLASS	ahm	net/minecraft/unmapped/C_8031101
 FIELD	ahm	Ldn;	b	f_2748372
 METHOD	ahm	()Ldn;	a	m_7417739
@@ -4921,7 +4921,7 @@ METHOD	arj	([I)V	a	m_3098180
 METHOD	arj	([Lark;)V	a	m_5968350
 METHOD	arj	()V	b	m_8266290
 METHOD	arj	(II)I	b	m_1133488
-METHOD	arj	(III)V	b	m_2063645
+METHOD	arj	(III)V	b	m_4728819
 METHOD	arj	(J)V	b	m_2399911
 METHOD	arj	(Lcj;)I	b	m_9345141
 METHOD	arj	(Lrh;)V	b	m_1651534
@@ -12847,7 +12847,7 @@ METHOD	bso$b	()I	b	m_6104637
 METHOD	bso$b	()I	c	m_1542035
 CLASS	bsp	net/minecraft/unmapped/C_3478281
 FIELD	bsp	Lbso$a;	a	f_1600165
-CLASS	bsq	net/minecraft/unmapped/C_3544790
+CLASS	bsq	net/minecraft/unmapped/C_6088271
 FIELD	bsq	Lkj;	f	f_8742392
 FIELD	bsq	Lkj;	g	f_3126491
 FIELD	bsq	Lorg/apache/logging/log4j/Logger;	h	f_7184052
@@ -12868,15 +12868,15 @@ METHOD	bsq	(Lbtp;)V	b	m_8596643
 METHOD	bsq	()V	d	m_2121010
 METHOD	bsq	()Lbsr;	f	m_9754427
 METHOD	bsq	()V	g	m_3134138
-CLASS	bsq$1	net/minecraft/unmapped/C_3544790$2182988
+CLASS	bsq$1	net/minecraft/unmapped/C_6088271$2182988
 FIELD	bsq$1	Lbsr;	a	f_4403421
 FIELD	bsq$1	Lbsq;	b	f_1357699
 METHOD	bsq$1	()Ljava/lang/String;	a	m_7845473
-CLASS	bsq$2	net/minecraft/unmapped/C_3544790$9853306
+CLASS	bsq$2	net/minecraft/unmapped/C_6088271$9853306
 FIELD	bsq$2	Lbsr;	a	f_7607208
 FIELD	bsq$2	Lbsq;	b	f_9948934
 METHOD	bsq$2	()Ljava/lang/String;	a	m_2882345
-CLASS	bsq$3	net/minecraft/unmapped/C_3544790$2743704
+CLASS	bsq$3	net/minecraft/unmapped/C_6088271$2743704
 FIELD	bsq$3	Lbsr;	a	f_4299277
 FIELD	bsq$3	Lbsq;	b	f_1404075
 METHOD	bsq$3	()Ljava/lang/String;	a	m_3077698
@@ -13116,12 +13116,10 @@ CLASS	bti$a	net/minecraft/unmapped/C_6498111$C_7263502
 FIELD	bti$a	Ljava/io/InputStream;	a	f_0747145
 FIELD	bti$a	Ljava/lang/String;	b	f_1938626
 FIELD	bti$a	Z	c	f_6852390
-METHOD	bti$a	()V	finalize	m_1714477
 CLASS	btj	net/minecraft/unmapped/C_2126928
 FIELD	btj	Lcom/google/common/base/Splitter;	b	f_8901884
 FIELD	btj	Ljava/util/zip/ZipFile;	c	f_0925735
 METHOD	btj	()Ljava/util/zip/ZipFile;	d	m_9225516
-METHOD	btj	()V	finalize	m_3739325
 CLASS	btk	net/minecraft/unmapped/C_9427820
 CLASS	btl	net/minecraft/unmapped/C_1992618
 FIELD	btl	Lkj;	a	f_4575303
@@ -13751,7 +13749,6 @@ CLASS	bwf$1$1	net/minecraft/unmapped/C_3624347$0841016$7119818
 FIELD	bwf$1$1	Lbwf$1;	a	f_0976128
 CLASS	bwf$2	net/minecraft/unmapped/C_3624347$5160525
 FIELD	bwf$2	Lkj;	a	f_9887617
-METHOD	bwf$2	(Ljava/net/URL;)Ljava/net/URLConnection;	openConnection	m_5938367
 CLASS	bwf$2$1	net/minecraft/unmapped/C_3624347$5160525$8790747
 FIELD	bwf$2$1	Lbwf$2;	a	f_1800332
 CLASS	bwf$a	net/minecraft/unmapped/C_3624347$C_8871607
@@ -15213,7 +15210,6 @@ METHOD	gp	()I	b	m_6953222
 METHOD	gp	()I	c	m_2281333
 METHOD	gp	()I	d	m_6633795
 METHOD	gp	()Z	e	m_8072963
-METHOD	gp	()V	finalize	m_6086439
 CLASS	gq	net/minecraft/unmapped/C_9055414
 FIELD	gq	I	a	f_5851963
 FIELD	gq	Lcj;	b	f_0015708
@@ -17358,7 +17354,6 @@ METHOD	net/minecraft/client/main/Main	([Ljava/lang/String;)V	main	main
 CLASS	net/minecraft/client/main/Main$1	net/minecraft/client/main/Main$5970547
 FIELD	net/minecraft/client/main/Main$1	Ljava/lang/String;	a	f_0605463
 FIELD	net/minecraft/client/main/Main$1	Ljava/lang/String;	b	f_0839336
-METHOD	net/minecraft/client/main/Main$1	()Ljava/net/PasswordAuthentication;	getPasswordAuthentication	m_1293032
 CLASS	net/minecraft/client/main/Main$2	net/minecraft/client/main/Main$5969793
 CLASS	net/minecraft/realms/DisconnectedRealmsScreen	net/minecraft/realms/DisconnectedRealmsScreen
 FIELD	net/minecraft/realms/DisconnectedRealmsScreen	Ljava/util/List;	lines	f_2700793
@@ -19185,14 +19180,14 @@ METHOD	rh	(DDD)Z	c	m_3552814
 METHOD	rh	(FF)V	c	m_9598325
 METHOD	rh	(ILadc;)Z	c	m_4059557
 METHOD	rh	(Lcj;)D	c	m_3957443
-METHOD	rh	(Ldn;)Z	c	m_3827610
+METHOD	rh	(Ldn;)Z	c	m_6188111
 METHOD	rh	(Ljava/lang/String;)V	c	m_0752703
 METHOD	rh	(Llq;)V	c	m_8805713
 METHOD	rh	(Z)V	c	m_4587013
 METHOD	rh	(DDD)V	d	m_1206758
 METHOD	rh	(I)V	d	m_8679251
 METHOD	rh	(Lcj;)V	d	m_9794132
-METHOD	rh	(Ldn;)Z	d	m_6188111
+METHOD	rh	(Ldn;)Z	d	m_1203502
 METHOD	rh	(Lzh;)V	d	m_8086437
 METHOD	rh	(Z)V	d	m_8609807
 METHOD	rh	(DDD)D	e	m_0692136

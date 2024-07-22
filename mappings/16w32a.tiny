@@ -2682,7 +2682,7 @@ FIELD	ajd	Laiu;	e	f_8669340
 METHOD	ajd	(Laja;Lcn;)I	a	m_2213654
 METHOD	ajd	(Lcn;Latm$a;)Larb;	a	m_7721848
 METHOD	ajd	()Z	aa	m_4365968
-METHOD	ajd	(Laja;Lcn;)I	b	m_9271475
+METHOD	ajd	(Laja;Lcn;)I	b	m_6502512
 CLASS	aje	net/minecraft/unmapped/C_8031101
 FIELD	aje	Ldt;	b	f_2748372
 METHOD	aje	()Ldt;	a	m_7417739
@@ -5752,7 +5752,7 @@ METHOD	atm	([I)V	a	m_3098180
 METHOD	atm	([Latn;)V	a	m_5968350
 METHOD	atm	()V	b	m_8266290
 METHOD	atm	(II)I	b	m_1133488
-METHOD	atm	(III)V	b	m_2063645
+METHOD	atm	(III)V	b	m_4728819
 METHOD	atm	(J)V	b	m_2399911
 METHOD	atm	(Lcn;)I	b	m_9345141
 METHOD	atm	(Lse;)V	b	m_1651534
@@ -14545,7 +14545,7 @@ METHOD	bwy$b	()I	c	m_1542035
 CLASS	bwz	net/minecraft/unmapped/C_3478281
 FIELD	bwz	Lbwy$a;	a	f_1600165
 CLASS	bx	net/minecraft/unmapped/C_1090314
-CLASS	bxa	net/minecraft/unmapped/C_3544790
+CLASS	bxa	net/minecraft/unmapped/C_6088271
 FIELD	bxa	Lkp;	f	f_8742392
 FIELD	bxa	Lkp;	g	f_3126491
 FIELD	bxa	Lorg/apache/logging/log4j/Logger;	h	f_7184052
@@ -14566,15 +14566,15 @@ METHOD	bxa	(Lbya;)V	b	m_8596643
 METHOD	bxa	()V	d	m_2121010
 METHOD	bxa	()Lbxb;	f	m_9754427
 METHOD	bxa	()V	g	m_3134138
-CLASS	bxa$1	net/minecraft/unmapped/C_3544790$2182988
+CLASS	bxa$1	net/minecraft/unmapped/C_6088271$2182988
 FIELD	bxa$1	Lbxb;	a	f_4403421
 FIELD	bxa$1	Lbxa;	b	f_1357699
 METHOD	bxa$1	()Ljava/lang/String;	a	m_7845473
-CLASS	bxa$2	net/minecraft/unmapped/C_3544790$9853306
+CLASS	bxa$2	net/minecraft/unmapped/C_6088271$9853306
 FIELD	bxa$2	Lbxb;	a	f_7607208
 FIELD	bxa$2	Lbxa;	b	f_9948934
 METHOD	bxa$2	()Ljava/lang/String;	a	m_2882345
-CLASS	bxa$3	net/minecraft/unmapped/C_3544790$2743704
+CLASS	bxa$3	net/minecraft/unmapped/C_6088271$2743704
 FIELD	bxa$3	Lbxb;	a	f_4299277
 FIELD	bxa$3	Lbxa;	b	f_1404075
 METHOD	bxa$3	()Ljava/lang/String;	a	m_3077698
@@ -14821,12 +14821,10 @@ CLASS	bxt$a	net/minecraft/unmapped/C_6498111$C_7263502
 FIELD	bxt$a	Ljava/io/InputStream;	a	f_0747145
 FIELD	bxt$a	Ljava/lang/String;	b	f_1938626
 FIELD	bxt$a	Z	c	f_6852390
-METHOD	bxt$a	()V	finalize	m_1714477
 CLASS	bxu	net/minecraft/unmapped/C_2126928
 FIELD	bxu	Lcom/google/common/base/Splitter;	b	f_8901884
 FIELD	bxu	Ljava/util/zip/ZipFile;	c	f_0925735
 METHOD	bxu	()Ljava/util/zip/ZipFile;	d	m_9225516
-METHOD	bxu	()V	finalize	m_3739325
 CLASS	bxv	net/minecraft/unmapped/C_9427820
 CLASS	bxw	net/minecraft/unmapped/C_1992618
 FIELD	bxw	Lkp;	a	f_4575303
@@ -15496,7 +15494,6 @@ CLASS	cas$1$1	net/minecraft/unmapped/C_3624347$0841016$7119818
 FIELD	cas$1$1	Lcas$1;	a	f_0976128
 CLASS	cas$2	net/minecraft/unmapped/C_3624347$5160525
 FIELD	cas$2	Lkp;	a	f_9887617
-METHOD	cas$2	(Ljava/net/URL;)Ljava/net/URLConnection;	openConnection	m_5938367
 CLASS	cas$2$1	net/minecraft/unmapped/C_3624347$5160525$8790747
 FIELD	cas$2$1	Lcas$2;	a	f_1800332
 CLASS	cas$a	net/minecraft/unmapped/C_3624347$C_8871607
@@ -18976,7 +18973,6 @@ METHOD	net/minecraft/client/main/Main	([Ljava/lang/String;)V	main	main
 CLASS	net/minecraft/client/main/Main$1	net/minecraft/client/main/Main$5970547
 FIELD	net/minecraft/client/main/Main$1	Ljava/lang/String;	a	f_0605463
 FIELD	net/minecraft/client/main/Main$1	Ljava/lang/String;	b	f_0839336
-METHOD	net/minecraft/client/main/Main$1	()Ljava/net/PasswordAuthentication;	getPasswordAuthentication	m_1293032
 CLASS	net/minecraft/client/main/Main$2	net/minecraft/client/main/Main$5969793
 CLASS	net/minecraft/realms/DisconnectedRealmsScreen	net/minecraft/realms/DisconnectedRealmsScreen
 FIELD	net/minecraft/realms/DisconnectedRealmsScreen	Ljava/util/List;	lines	f_2700793
@@ -21453,7 +21449,7 @@ METHOD	se	(FF)V	c	m_9598325
 METHOD	se	(I)Lse;	c	m_0210844
 METHOD	se	(ILaeq;)Z	c	m_4059557
 METHOD	se	(Lcn;)D	c	m_7687704
-METHOD	se	(Ldt;)Z	c	m_3827610
+METHOD	se	(Ldt;)Z	c	m_6188111
 METHOD	se	(Ljava/lang/String;)V	c	m_0752703
 METHOD	se	(Llw;)V	c	m_8805713
 METHOD	se	(Z)V	c	m_4587013
@@ -21461,7 +21457,7 @@ METHOD	se	(DDD)V	d	m_1206758
 METHOD	se	(F)I	d	m_8582980
 METHOD	se	(Laak;)V	d	m_8086437
 METHOD	se	(Lcn;)D	d	m_3957443
-METHOD	se	(Ldt;)Z	d	m_6188111
+METHOD	se	(Ldt;)Z	d	m_1203502
 METHOD	se	(Z)V	d	m_5119666
 METHOD	se	(DDD)D	e	m_0692136
 METHOD	se	(F)F	e	m_3581619
