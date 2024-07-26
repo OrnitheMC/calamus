@@ -4,7 +4,7 @@ import net.ornithemc.keratin.api.task.mapping.UpdateIntermediaryTask
 plugins {
 	id 'java'
 	id 'maven-publish'
-	id 'keratin' version '11.4'
+	id 'keratin' version '13.0'
 }
 
 def ENV = System.getenv()
@@ -19,8 +19,9 @@ keratin {
 }
 
 updateIntermediary {
-	fromMinecraftVersion = ENV.FROM_MC_VERSION
-	fromFromMinecraftVersion = ENV.FROM_FROM_MC_VERSION
+	if (ENV.FROM_MC_VERSIONS) {
+		fromMinecraftVersions ENV.FROM_MC_VERSIONS.split('[,]')
+	}
 }
 
 publishing {
