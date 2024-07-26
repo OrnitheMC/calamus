@@ -318,6 +318,18 @@ ROOT,
 ],
 [
 '1.5.1',
+'af-2013-blue'
+],
+[
+'1.5.1:af-2013-blue',
+'af-2013-red'
+],
+[
+'af-2013-blue:af-2013-red',
+'af-2013-purple'
+],
+[
+'1.5.1',
 '13w16a-04192037','13w16b-04232151',
 '13w17a',
 '13w18a','13w18b','13w18c',
@@ -565,15 +577,9 @@ def main():
 			to = versions[i]
 			
 			if ':' not in to:
-				if ':' in frm:
-					parts = frm.split(':', 2)
-					
-					os.environ['FROM_MC_VERSION'] = parts[0]
-					os.environ['FROM_FROM_MC_VERSION'] = parts[1]
-				else:
-					os.environ['FROM_MC_VERSION'] = frm
-					os.environ.pop('FROM_FROM_MC_VERSION', None)
+				parts = frm.split(':')
 				
+				os.environ['FROM_MC_VERSIONS'] = ','.join(parts)
 				os.environ['MC_VERSION'] = to
 				
 				subprocess.run("./gradlew updateIntermediary --stacktrace", shell = True, check = True)
