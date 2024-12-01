@@ -1,5 +1,6 @@
 v1	intermediary	clientOfficial	serverOfficial
 CLASS	net/minecraft/client/ClientBrandRetriever	net/minecraft/client/ClientBrandRetriever	
+METHOD	net/minecraft/client/ClientBrandRetriever	()Ljava/lang/String;	getClientModName	getClientModName	
 CLASS	net/minecraft/client/Minecraft	net/minecraft/client/Minecraft	
 FIELD	net/minecraft/client/Minecraft	Lnet/minecraft/unmapped/C_3624347;	f_7545235	A	
 FIELD	net/minecraft/client/Minecraft	Lnet/minecraft/unmapped/C_9846877;	f_0106998	B	
@@ -114,6 +115,7 @@ METHOD	net/minecraft/client/Minecraft	()V	m_7834074	j
 METHOD	net/minecraft/client/Minecraft	()V	m_4187290	k	
 METHOD	net/minecraft/client/Minecraft	()V	m_2590710	l	
 METHOD	net/minecraft/client/Minecraft	()Ljava/lang/String;	m_5864047	m	
+METHOD	net/minecraft/client/Minecraft	([Ljava/lang/String;)V	main	main	
 METHOD	net/minecraft/client/Minecraft	()Ljava/lang/String;	m_8898923	n	
 METHOD	net/minecraft/client/Minecraft	()Ljava/lang/String;	m_4199269	o	
 METHOD	net/minecraft/client/Minecraft	()Ljava/lang/String;	m_7590025	p	
@@ -243,6 +245,7 @@ METHOD	net/minecraft/server/MinecraftServer	(Z)V	m_0055438	f	f
 METHOD	net/minecraft/server/MinecraftServer	()I	m_1243578	g	g
 METHOD	net/minecraft/server/MinecraftServer	(Ljava/lang/String;)V	m_3364796	g	g
 METHOD	net/minecraft/server/MinecraftServer	(Z)V	m_8856568	g	g
+METHOD	net/minecraft/server/MinecraftServer	()Ljava/lang/String;	getServerModName	getServerModName	getServerModName
 METHOD	net/minecraft/server/MinecraftServer	()Z	m_8010193	h	h
 METHOD	net/minecraft/server/MinecraftServer	(Ljava/lang/String;)V	m_7446076	h	h
 METHOD	net/minecraft/server/MinecraftServer	(Z)V	m_0066930	h	h
@@ -10202,6 +10205,7 @@ METHOD	net/minecraft/unmapped/C_9974825	(III)Lnet/minecraft/unmapped/C_0336319;	
 METHOD	net/minecraft/unmapped/C_9974825	()Z	m_2142055	b	b
 METHOD	net/minecraft/unmapped/C_9974825	()Z	m_8668587	c	c
 METHOD	net/minecraft/server/MinecraftServer	(Lnet/minecraft/unmapped/C_4753572;)V	m_1782684		a
+METHOD	net/minecraft/server/MinecraftServer	([Ljava/lang/String;)V	main		main
 CLASS	net/minecraft/unmapped/C_2093089		fp
 FIELD	net/minecraft/unmapped/C_2093089	Lnet/minecraft/unmapped/C_6265960;	f_4863861		a
 CLASS	net/minecraft/unmapped/C_3093966		fj

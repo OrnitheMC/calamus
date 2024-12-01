@@ -1,5 +1,6 @@
 v1	intermediary	clientOfficial	serverOfficial
 CLASS	net/minecraft/client/ClientBrandRetriever	net/minecraft/client/ClientBrandRetriever	
+METHOD	net/minecraft/client/ClientBrandRetriever	()Ljava/lang/String;	getClientModName	getClientModName	
 CLASS	net/minecraft/client/Minecraft	net/minecraft/client/Minecraft	
 FIELD	net/minecraft/client/Minecraft	Lnet/minecraft/client/MinecraftApplet;	f_2677529	A	
 FIELD	net/minecraft/client/Minecraft	Lnet/minecraft/unmapped/C_3624347;	f_7545235	B	
@@ -107,6 +108,7 @@ METHOD	net/minecraft/client/Minecraft	()V	m_4187290	j
 METHOD	net/minecraft/client/Minecraft	()V	m_2590710	k	
 METHOD	net/minecraft/client/Minecraft	()Z	m_3492516	l	
 METHOD	net/minecraft/client/Minecraft	()Ljava/lang/String;	m_5864047	m	
+METHOD	net/minecraft/client/Minecraft	([Ljava/lang/String;)V	main	main	
 METHOD	net/minecraft/client/Minecraft	()Ljava/lang/String;	m_8898923	n	
 METHOD	net/minecraft/client/Minecraft	()Ljava/lang/String;	m_4199269	o	
 METHOD	net/minecraft/client/Minecraft	()Ljava/lang/String;	m_7590025	p	
@@ -194,7 +196,7 @@ METHOD	net/minecraft/server/MinecraftServer	(I)V	m_9014213	b	c
 METHOD	net/minecraft/server/MinecraftServer	(Ljava/lang/String;I)V	m_4174934	b	b
 METHOD	net/minecraft/server/MinecraftServer	()[Ljava/lang/String;	m_6167886	o	o
 METHOD	net/minecraft/server/MinecraftServer	()[Ljava/lang/String;	m_6507606	p	p
-METHOD	net/minecraft/server/MinecraftServer	()Ljava/lang/String;	getServerModName	q	
+METHOD	net/minecraft/server/MinecraftServer	()Ljava/lang/String;	getServerModName	q	getServerModName
 METHOD	net/minecraft/server/MinecraftServer	()Lnet/minecraft/server/MinecraftServer;	m_3660934	r	q
 METHOD	net/minecraft/server/MinecraftServer	()Lnet/minecraft/unmapped/C_6015078;	m_9353503	t	s
 METHOD	net/minecraft/server/MinecraftServer	()Ljava/security/KeyPair;	m_8059729	u	t
@@ -9532,6 +9534,7 @@ METHOD	net/minecraft/server/MinecraftServer	(I)V	m_5389810		b
 METHOD	net/minecraft/server/MinecraftServer	(Z)V	m_0278434		b
 METHOD	net/minecraft/server/MinecraftServer	(Ljava/lang/String;)V	m_2187077		i
 METHOD	net/minecraft/server/MinecraftServer	(Ljava/lang/String;)V	m_3738333		j
+METHOD	net/minecraft/server/MinecraftServer	([Ljava/lang/String;)V	main		main
 CLASS	net/minecraft/unmapped/C_3568167		y
 FIELD	net/minecraft/unmapped/C_3568167	Lnet/minecraft/server/MinecraftServer;	f_3148831		a
 METHOD	net/minecraft/unmapped/C_3906126	(II)Lnet/minecraft/unmapped/C_4636105;	m_4850746		a

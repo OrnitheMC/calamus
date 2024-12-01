@@ -113,6 +113,7 @@ METHOD	net/minecraft/client/Minecraft	()V	m_4187290	j
 METHOD	net/minecraft/client/Minecraft	()V	m_2590710	k	
 METHOD	net/minecraft/client/Minecraft	()Z	m_3492516	l	
 METHOD	net/minecraft/client/Minecraft	()Ljava/lang/String;	m_5864047	m	
+METHOD	net/minecraft/client/Minecraft	([Ljava/lang/String;)V	main	main	
 METHOD	net/minecraft/client/Minecraft	()Ljava/lang/String;	m_8898923	n	
 METHOD	net/minecraft/client/Minecraft	()Ljava/lang/String;	m_4199269	o	
 METHOD	net/minecraft/client/Minecraft	()Ljava/lang/String;	m_7590025	p	
@@ -8596,6 +8597,8 @@ METHOD	net/minecraft/server/MinecraftServer	(Ljava/lang/String;Lnet/minecraft/un
 METHOD	net/minecraft/server/MinecraftServer	(Lnet/minecraft/server/MinecraftServer;)Z	m_9666204		a
 METHOD	net/minecraft/server/MinecraftServer	()V	m_2515286		b
 METHOD	net/minecraft/server/MinecraftServer	(Ljava/lang/String;I)V	m_4174934		b
+METHOD	net/minecraft/server/MinecraftServer	()Ljava/lang/String;	getServerModName		getServerModName
+METHOD	net/minecraft/server/MinecraftServer	([Ljava/lang/String;)V	main		main
 METHOD	net/minecraft/server/MinecraftServer	()[Ljava/lang/String;	m_6167886		o
 METHOD	net/minecraft/server/MinecraftServer	()[Ljava/lang/String;	m_6507606		p
 METHOD	net/minecraft/server/MinecraftServer	()Lnet/minecraft/server/MinecraftServer;	m_3660934		q

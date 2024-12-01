@@ -1,5 +1,6 @@
 v1	intermediary	clientOfficial	serverOfficial
 CLASS	net/minecraft/client/ClientBrandRetriever	net/minecraft/client/ClientBrandRetriever	
+METHOD	net/minecraft/client/ClientBrandRetriever	()Ljava/lang/String;	getClientModName	getClientModName	
 CLASS	net/minecraft/client/Minecraft	net/minecraft/client/Minecraft	
 FIELD	net/minecraft/client/Minecraft	Lnet/minecraft/client/MinecraftApplet;	f_2677529	A	
 FIELD	net/minecraft/client/Minecraft	Lnet/minecraft/unmapped/C_3624347;	f_7545235	B	
@@ -109,6 +110,7 @@ METHOD	net/minecraft/client/Minecraft	()V	m_4187290	j
 METHOD	net/minecraft/client/Minecraft	()V	m_2590710	k	
 METHOD	net/minecraft/client/Minecraft	()Ljava/lang/String;	m_5864047	l	
 METHOD	net/minecraft/client/Minecraft	()Ljava/lang/String;	m_8898923	m	
+METHOD	net/minecraft/client/Minecraft	([Ljava/lang/String;)V	main	main	
 METHOD	net/minecraft/client/Minecraft	()Ljava/lang/String;	m_4199269	n	
 METHOD	net/minecraft/client/Minecraft	()Ljava/lang/String;	m_7590025	o	
 METHOD	net/minecraft/client/Minecraft	()Z	m_2616441	p	
@@ -171,7 +173,7 @@ FIELD	net/minecraft/server/MinecraftServer	Z	f_2598215	w	w
 FIELD	net/minecraft/server/MinecraftServer	Z	f_9476002	x	x
 FIELD	net/minecraft/server/MinecraftServer	Z	f_8264391	y	y
 FIELD	net/minecraft/server/MinecraftServer	Z	f_3140624	z	z
-METHOD	net/minecraft/server/MinecraftServer	()Ljava/lang/String;	getServerModName	A	
+METHOD	net/minecraft/server/MinecraftServer	()Ljava/lang/String;	getServerModName	A	getServerModName
 METHOD	net/minecraft/server/MinecraftServer	()Lnet/minecraft/server/MinecraftServer;	m_3660934	B	A
 METHOD	net/minecraft/server/MinecraftServer	()Lnet/minecraft/unmapped/C_6015078;	m_9353503	D	C
 METHOD	net/minecraft/server/MinecraftServer	()Ljava/security/KeyPair;	m_8059729	E	D
@@ -9800,6 +9802,7 @@ METHOD	net/minecraft/unmapped/C_9974825	()V	m_0738050	a	a
 METHOD	net/minecraft/unmapped/C_9974825	(III)Lnet/minecraft/unmapped/C_0336319;	m_2847453	a	a
 METHOD	net/minecraft/unmapped/C_9974825	()Z	m_2142055	b	b
 METHOD	net/minecraft/unmapped/C_9974825	()Z	m_8668587	c	c
+METHOD	net/minecraft/server/MinecraftServer	([Ljava/lang/String;)V	main		main
 CLASS	net/minecraft/unmapped/C_1629414		sk
 CLASS	net/minecraft/unmapped/C_3568167		aa
 FIELD	net/minecraft/unmapped/C_3568167	Lnet/minecraft/unmapped/C_7293551;	f_3148831		a

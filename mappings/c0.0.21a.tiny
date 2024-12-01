@@ -1,707 +1,707 @@
-v1	intermediary	clientOfficial	serverOfficial
-CLASS	com/mojang/minecraft/MinecraftApplet	com/mojang/minecraft/MinecraftApplet	
-FIELD	com/mojang/minecraft/MinecraftApplet	Ljava/awt/Canvas;	f_8056441	canvas	
-FIELD	com/mojang/minecraft/MinecraftApplet	Lnet/minecraft/client/Minecraft;	f_3418168	minecraft	
-FIELD	com/mojang/minecraft/MinecraftApplet	Ljava/lang/Thread;	f_5361016	thread	
-METHOD	com/mojang/minecraft/MinecraftApplet	()V	m_0146433	startGameThread	
-METHOD	com/mojang/minecraft/MinecraftApplet	()V	m_0730519	stopGameThread	
-CLASS	net/minecraft/client/Minecraft	com/mojang/minecraft/d	
-FIELD	net/minecraft/client/Minecraft	Lnet/minecraft/unmapped/C_2454294;	f_1759878	A	
-FIELD	net/minecraft/client/Minecraft	Ljava/awt/Canvas;	f_2875400	B	
-FIELD	net/minecraft/client/Minecraft	Lorg/lwjgl/input/Cursor;	f_5333905	C	
-FIELD	net/minecraft/client/Minecraft	I	f_6184923	D	
-FIELD	net/minecraft/client/Minecraft	I	f_0440810	E	
-FIELD	net/minecraft/client/Minecraft	Lnet/minecraft/unmapped/C_5376418;	f_0254108	F	
-FIELD	net/minecraft/client/Minecraft	I	f_2615354	G	
-FIELD	net/minecraft/client/Minecraft	Ljava/awt/Robot;	f_9154570	H	
-FIELD	net/minecraft/client/Minecraft	Lnet/minecraft/unmapped/C_3699792;	f_8446821	I	
-FIELD	net/minecraft/client/Minecraft	F	f_9762585	J	
-FIELD	net/minecraft/client/Minecraft	F	f_7808593	K	
-FIELD	net/minecraft/client/Minecraft	F	f_0991746	L	
-FIELD	net/minecraft/client/Minecraft	Z	f_0682520	M	
-FIELD	net/minecraft/client/Minecraft	I	f_7539337	N	
-FIELD	net/minecraft/client/Minecraft	F	f_0224003	O	
-FIELD	net/minecraft/client/Minecraft	Lnet/minecraft/unmapped/C_5853518;	f_3091378	P	
-FIELD	net/minecraft/client/Minecraft	F	f_9356698	Q	
-FIELD	net/minecraft/client/Minecraft	Z	f_2099688	R	
-FIELD	net/minecraft/client/Minecraft	I	f_5984003	S	
-FIELD	net/minecraft/client/Minecraft	I	f_4890835	T	
-FIELD	net/minecraft/client/Minecraft	Ljava/nio/FloatBuffer;	f_6477821	U	
-FIELD	net/minecraft/client/Minecraft	Ljava/lang/String;	f_0125064	V	
-FIELD	net/minecraft/client/Minecraft	Ljava/lang/String;	f_3100662	W	
-FIELD	net/minecraft/client/Minecraft	I	f_5137568	a	
-FIELD	net/minecraft/client/Minecraft	I	f_9273317	b	
-FIELD	net/minecraft/client/Minecraft	Lnet/minecraft/unmapped/C_3906126;	f_5337597	c	
-FIELD	net/minecraft/client/Minecraft	Lnet/minecraft/unmapped/C_5009044;	f_5473933	d	
-FIELD	net/minecraft/client/Minecraft	Lnet/minecraft/unmapped/C_3172064;	f_8811754	e	
-FIELD	net/minecraft/client/Minecraft	Ljava/lang/String;	f_1371651	f	
-FIELD	net/minecraft/client/Minecraft	Z	f_7579809	g	
-FIELD	net/minecraft/client/Minecraft	Z	f_1866091	h	
-FIELD	net/minecraft/client/Minecraft	Lnet/minecraft/unmapped/C_3385278;	f_1050021	i	
-FIELD	net/minecraft/client/Minecraft	Lnet/minecraft/unmapped/C_4766485;	f_0935328	j	
-FIELD	net/minecraft/client/Minecraft	Lnet/minecraft/unmapped/C_0786431;	f_4327097	k	
-FIELD	net/minecraft/client/Minecraft	Lnet/minecraft/unmapped/C_9665058;	f_1737492	l	
-FIELD	net/minecraft/client/Minecraft	Ljava/lang/String;	f_6753290	m	
-FIELD	net/minecraft/client/Minecraft	I	f_5242116	n	
-FIELD	net/minecraft/client/Minecraft	Lnet/minecraft/unmapped/C_3464647;	f_9951748	o	
-FIELD	net/minecraft/client/Minecraft	Ljava/lang/String;	f_9991059	p	
-FIELD	net/minecraft/client/Minecraft	I	f_0132506	q	
-FIELD	net/minecraft/client/Minecraft	Z	f_5170474	r	
-FIELD	net/minecraft/client/Minecraft	Ljava/lang/String;	f_8891450	s	
-FIELD	net/minecraft/client/Minecraft	Z	f_4909729	t	
-FIELD	net/minecraft/client/Minecraft	Lnet/minecraft/unmapped/C_9882464;	f_3067732	u	
-FIELD	net/minecraft/client/Minecraft	Z	f_9483415	v	
-FIELD	net/minecraft/client/Minecraft	Ljava/nio/FloatBuffer;	f_2682162	w	
-FIELD	net/minecraft/client/Minecraft	Ljava/nio/FloatBuffer;	f_4839363	x	
-FIELD	net/minecraft/client/Minecraft	Lnet/minecraft/unmapped/C_5974036;	f_4204214	y	
-FIELD	net/minecraft/client/Minecraft	Lnet/minecraft/unmapped/C_1044273;	f_6874361	z	
-METHOD	net/minecraft/client/Minecraft	()V	m_5537798	a	
-METHOD	net/minecraft/client/Minecraft	(F)V	m_0675932	a	
-METHOD	net/minecraft/client/Minecraft	(FFFF)Ljava/nio/FloatBuffer;	m_8273881	a	
-METHOD	net/minecraft/client/Minecraft	(I)V	m_6284575	a	
-METHOD	net/minecraft/client/Minecraft	(Lnet/minecraft/unmapped/C_0786431;)V	m_2721855	a	
-METHOD	net/minecraft/client/Minecraft	(Lnet/minecraft/unmapped/C_3906126;)V	m_8603410	a	
-METHOD	net/minecraft/client/Minecraft	(Ljava/lang/String;)V	m_3461043	a	
-METHOD	net/minecraft/client/Minecraft	(Ljava/lang/String;I)Z	m_8752834	a	
-METHOD	net/minecraft/client/Minecraft	(Z)V	m_6824580	a	
-METHOD	net/minecraft/client/Minecraft	()V	m_7502890	b	
-METHOD	net/minecraft/client/Minecraft	(I)V	m_0092759	b	
-METHOD	net/minecraft/client/Minecraft	(Ljava/lang/String;)V	m_6843433	b	
-METHOD	net/minecraft/client/Minecraft	()V	m_2422356	c	
-METHOD	net/minecraft/client/Minecraft	(Ljava/lang/String;)V	m_5014509	c	
-METHOD	net/minecraft/client/Minecraft	()V	m_7834074	d	
-METHOD	net/minecraft/client/Minecraft	(Ljava/lang/String;)V	m_0572353	d	
-METHOD	net/minecraft/client/Minecraft	()V	m_5678101	e	
-METHOD	net/minecraft/client/Minecraft	()V	m_2590710	f	
-METHOD	net/minecraft/client/Minecraft	()Z	m_7044458	g	
-METHOD	net/minecraft/client/Minecraft	()V	m_1963333	h	
-CLASS	net/minecraft/unmapped/C_0289174	com/mojang/minecraft/character/d	
-FIELD	net/minecraft/unmapped/C_0289174	F	f_4296307	a	
-FIELD	net/minecraft/unmapped/C_0289174	F	f_5432517	b	
-FIELD	net/minecraft/unmapped/C_0289174	F	f_0768495	c	
-FIELD	net/minecraft/unmapped/C_0289174	[Lnet/minecraft/unmapped/C_9856888;	f_4964947	d	
-FIELD	net/minecraft/unmapped/C_0289174	[Lnet/minecraft/unmapped/C_3589148;	f_0337920	e	
-FIELD	net/minecraft/unmapped/C_0289174	I	f_3780787	f	
-FIELD	net/minecraft/unmapped/C_0289174	I	f_4434142	g	
-FIELD	net/minecraft/unmapped/C_0289174	F	f_8501929	h	
-FIELD	net/minecraft/unmapped/C_0289174	F	f_8710519	i	
-FIELD	net/minecraft/unmapped/C_0289174	F	f_2757164	j	
-FIELD	net/minecraft/unmapped/C_0289174	Z	f_7948508	k	
-FIELD	net/minecraft/unmapped/C_0289174	I	f_3894400	l	
-METHOD	net/minecraft/unmapped/C_0289174	(F)V	m_3169058	a	
-METHOD	net/minecraft/unmapped/C_0289174	(FFF)V	m_4478491	a	
-METHOD	net/minecraft/unmapped/C_0289174	(FFFIII)V	m_7902911	a	
-CLASS	net/minecraft/unmapped/C_0336319	com/mojang/minecraft/character/c	
-FIELD	net/minecraft/unmapped/C_0336319	F	f_1625353	a	
-FIELD	net/minecraft/unmapped/C_0336319	F	f_4544943	b	
-FIELD	net/minecraft/unmapped/C_0336319	F	f_9811199	c	
-METHOD	net/minecraft/unmapped/C_0336319	()Lnet/minecraft/unmapped/C_0336319;	m_6409794	a	
-METHOD	net/minecraft/unmapped/C_0336319	(Lnet/minecraft/unmapped/C_0336319;)Lnet/minecraft/unmapped/C_0336319;	m_2803106	a	
-CLASS	net/minecraft/unmapped/C_0351020	com/mojang/minecraft/level/a/c	
-CLASS	net/minecraft/unmapped/C_0388903	com/mojang/minecraft/b/k	
-CLASS	net/minecraft/unmapped/C_0456473	com/mojang/minecraft/level/a/b	
-FIELD	net/minecraft/unmapped/C_0456473	Z	f_2146168	U	
-CLASS	net/minecraft/unmapped/C_0611937	com/mojang/minecraft/level/b/a/d	
-FIELD	net/minecraft/unmapped/C_0611937	[I	f_3721058	a	
-METHOD	net/minecraft/unmapped/C_0611937	(D)D	m_7396482	a	
-METHOD	net/minecraft/unmapped/C_0611937	(DDD)D	m_2882229	a	
-METHOD	net/minecraft/unmapped/C_0611937	(IDDD)D	m_2595755	a	
-CLASS	net/minecraft/unmapped/C_0639491	com/mojang/minecraft/player/b	
-FIELD	net/minecraft/unmapped/C_0639491	[Z	f_9923725	e	
-CLASS	net/minecraft/unmapped/C_0704590	com/mojang/minecraft/net/NetworkPlayer	
-FIELD	net/minecraft/unmapped/C_0704590	I	f_5645485	a	
-FIELD	net/minecraft/unmapped/C_0704590	F	f_1130634	animStep	
-FIELD	net/minecraft/unmapped/C_0704590	F	f_7872401	animStepO	
-FIELD	net/minecraft/unmapped/C_0704590	Lnet/minecraft/client/Minecraft;	f_4466434	minecraft	
-FIELD	net/minecraft/unmapped/C_0704590	Ljava/util/List;	f_9994647	moveQueue	
-FIELD	net/minecraft/unmapped/C_0704590	Ljava/lang/String;	f_3203693	name	
-FIELD	net/minecraft/unmapped/C_0704590	Ljava/awt/image/BufferedImage;	f_2099031	newTexture	
-FIELD	net/minecraft/unmapped/C_0704590	F	f_5606140	oRun	
-FIELD	net/minecraft/unmapped/C_0704590	F	f_3163463	run	
-FIELD	net/minecraft/unmapped/C_0704590	J	f_2122754	serialVersionUID	
-FIELD	net/minecraft/unmapped/C_0704590	Lnet/minecraft/unmapped/C_3385278;	f_0662810	textures$7a7c7041	
-FIELD	net/minecraft/unmapped/C_0704590	I	f_3178597	tickCount	
-FIELD	net/minecraft/unmapped/C_0704590	I	f_1852013	xp	
-FIELD	net/minecraft/unmapped/C_0704590	F	f_5048036	yBodyRot	
-FIELD	net/minecraft/unmapped/C_0704590	F	f_4202022	yBodyRotO	
-FIELD	net/minecraft/unmapped/C_0704590	I	f_6002905	yp	
-FIELD	net/minecraft/unmapped/C_0704590	Lnet/minecraft/unmapped/C_9882464;	f_3319528	zombieModel	
-FIELD	net/minecraft/unmapped/C_0704590	I	f_4192401	zp	
-METHOD	net/minecraft/unmapped/C_0704590	()V	m_0324216	clear	
-METHOD	net/minecraft/unmapped/C_0704590	(BBB)V	m_4513077	queue	
-METHOD	net/minecraft/unmapped/C_0704590	(BBBFF)V	m_0277319	queue	
-METHOD	net/minecraft/unmapped/C_0704590	(FF)V	m_1266839	queue	
-METHOD	net/minecraft/unmapped/C_0704590	(SSSFF)V	m_7008798	teleport	
-CLASS	net/minecraft/unmapped/C_0786431	com/mojang/minecraft/b/f	
-FIELD	net/minecraft/unmapped/C_0786431	Lnet/minecraft/client/Minecraft;	f_5807102	a	
-FIELD	net/minecraft/unmapped/C_0786431	I	f_3016493	b	
-FIELD	net/minecraft/unmapped/C_0786431	I	f_3368919	c	
-FIELD	net/minecraft/unmapped/C_0786431	Ljava/util/List;	f_3767855	d	
-FIELD	net/minecraft/unmapped/C_0786431	Z	f_5666652	e	
-METHOD	net/minecraft/unmapped/C_0786431	()V	m_2060594	a	
-METHOD	net/minecraft/unmapped/C_0786431	(CI)V	m_2815482	a	
-METHOD	net/minecraft/unmapped/C_0786431	(II)V	m_3426670	a	
-METHOD	net/minecraft/unmapped/C_0786431	(III)V	m_9746540	a	
-METHOD	net/minecraft/unmapped/C_0786431	(IIIII)V	m_2880262	a	
-METHOD	net/minecraft/unmapped/C_0786431	(IIIIII)V	m_0931055	a	
-METHOD	net/minecraft/unmapped/C_0786431	(Lnet/minecraft/unmapped/C_2621421;)V	m_9403981	a	
-METHOD	net/minecraft/unmapped/C_0786431	(Lnet/minecraft/client/Minecraft;II)V	m_8202425	a	
-METHOD	net/minecraft/unmapped/C_0786431	(Ljava/lang/String;III)V	m_1082129	a	
-METHOD	net/minecraft/unmapped/C_0786431	()V	m_5056964	b	
-METHOD	net/minecraft/unmapped/C_0786431	(Ljava/lang/String;III)V	m_4604480	b	
-METHOD	net/minecraft/unmapped/C_0786431	()V	m_7135145	c	
-METHOD	net/minecraft/unmapped/C_0786431	()V	m_1498751	d	
-METHOD	net/minecraft/unmapped/C_0786431	()V	m_7974146	e	
-CLASS	net/minecraft/unmapped/C_0823907	com/mojang/minecraft/level/a/g	
-CLASS	net/minecraft/unmapped/C_0974371	com/mojang/minecraft/level/a/f	
-CLASS	net/minecraft/unmapped/C_1017062	com/mojang/minecraft/b/e	
-CLASS	net/minecraft/unmapped/C_1044273	com/mojang/minecraft/a/g	
-FIELD	net/minecraft/unmapped/C_1044273	Lnet/minecraft/unmapped/C_3906126;	f_4415583	a	
-FIELD	net/minecraft/unmapped/C_1044273	Lnet/minecraft/unmapped/C_3385278;	f_9220461	b	
-FIELD	net/minecraft/unmapped/C_1044273	I	f_0437423	c	
-FIELD	net/minecraft/unmapped/C_1044273	I	f_9039970	d	
-FIELD	net/minecraft/unmapped/C_1044273	Ljava/nio/IntBuffer;	f_2125993	e	
-FIELD	net/minecraft/unmapped/C_1044273	Ljava/util/Set;	f_5607847	f	
-FIELD	net/minecraft/unmapped/C_1044273	[Lnet/minecraft/unmapped/C_5283200;	f_6979547	g	
-FIELD	net/minecraft/unmapped/C_1044273	I	f_4574005	h	
-FIELD	net/minecraft/unmapped/C_1044273	[Lnet/minecraft/unmapped/C_5283200;	f_9451185	i	
-FIELD	net/minecraft/unmapped/C_1044273	I	f_0904057	j	
-FIELD	net/minecraft/unmapped/C_1044273	I	f_3933893	k	
-FIELD	net/minecraft/unmapped/C_1044273	I	f_4898986	l	
-FIELD	net/minecraft/unmapped/C_1044273	I	f_2783901	m	
-FIELD	net/minecraft/unmapped/C_1044273	F	f_3320356	n	
-FIELD	net/minecraft/unmapped/C_1044273	F	f_1619923	o	
-FIELD	net/minecraft/unmapped/C_1044273	F	f_4269846	p	
-METHOD	net/minecraft/unmapped/C_1044273	()V	m_8889498	a	
-METHOD	net/minecraft/unmapped/C_1044273	(F)V	m_3907130	a	
-METHOD	net/minecraft/unmapped/C_1044273	(III)V	m_1486881	a	
-METHOD	net/minecraft/unmapped/C_1044273	(IIIIII)V	m_6084899	a	
-METHOD	net/minecraft/unmapped/C_1044273	(Lnet/minecraft/unmapped/C_8199124;F)V	m_7867114	a	
-METHOD	net/minecraft/unmapped/C_1044273	(Lnet/minecraft/unmapped/C_5853518;I)V	m_5985063	a	
-METHOD	net/minecraft/unmapped/C_1044273	(Lnet/minecraft/unmapped/C_5009044;I)I	m_8682700	a	
-METHOD	net/minecraft/unmapped/C_1044273	(Lnet/minecraft/unmapped/C_5009044;Lnet/minecraft/unmapped/C_5853518;II)V	m_3006844	a	
-CLASS	net/minecraft/unmapped/C_1124552	com/mojang/minecraft/level/a/h	
-CLASS	net/minecraft/unmapped/C_1350810	com/mojang/minecraft/a/a/a	
-FIELD	net/minecraft/unmapped/C_1350810	[F	f_8300376	c	
-FIELD	net/minecraft/unmapped/C_1350810	[F	f_0115449	d	
-FIELD	net/minecraft/unmapped/C_1350810	[F	f_8901516	e	
-FIELD	net/minecraft/unmapped/C_1350810	[F	f_2310438	f	
-CLASS	net/minecraft/unmapped/C_1414550	com/mojang/minecraft/phys/AABB	
-FIELD	net/minecraft/unmapped/C_1414550	F	f_3537156	epsilon	
-FIELD	net/minecraft/unmapped/C_1414550	J	f_2749082	serialVersionUID	
-FIELD	net/minecraft/unmapped/C_1414550	F	f_9162863	x0	
-FIELD	net/minecraft/unmapped/C_1414550	F	f_4861340	x1	
-FIELD	net/minecraft/unmapped/C_1414550	F	f_2662376	y0	
-FIELD	net/minecraft/unmapped/C_1414550	F	f_8677721	y1	
-FIELD	net/minecraft/unmapped/C_1414550	F	f_8292781	z0	
-FIELD	net/minecraft/unmapped/C_1414550	F	f_6972664	z1	
-METHOD	net/minecraft/unmapped/C_1414550	(Lnet/minecraft/unmapped/C_1414550;F)F	m_1629908	clipXCollide	
-METHOD	net/minecraft/unmapped/C_1414550	(Lnet/minecraft/unmapped/C_1414550;F)F	m_3985442	clipYCollide	
-METHOD	net/minecraft/unmapped/C_1414550	(Lnet/minecraft/unmapped/C_1414550;F)F	m_4691507	clipZCollide	
-METHOD	net/minecraft/unmapped/C_1414550	(FFF)Lnet/minecraft/unmapped/C_1414550;	m_8366988	cloneMove	
-METHOD	net/minecraft/unmapped/C_1414550	(FFF)Lnet/minecraft/unmapped/C_1414550;	m_3310866	expand	
-METHOD	net/minecraft/unmapped/C_1414550	(FFF)Lnet/minecraft/unmapped/C_1414550;	m_6186501	grow	
-METHOD	net/minecraft/unmapped/C_1414550	(Lnet/minecraft/unmapped/C_1414550;)Z	m_3105804	intersects	
-METHOD	net/minecraft/unmapped/C_1414550	(FFF)V	m_6640618	move	
-CLASS	net/minecraft/unmapped/C_1525636	com/mojang/minecraft/b/b	
-FIELD	net/minecraft/unmapped/C_1525636	Lnet/minecraft/unmapped/C_0786431;	f_7387990	f	
-FIELD	net/minecraft/unmapped/C_1525636	Ljava/lang/String;	f_5633768	g	
-FIELD	net/minecraft/unmapped/C_1525636	I	f_6675555	h	
-FIELD	net/minecraft/unmapped/C_1525636	Ljava/lang/String;	f_0866064	i	
-FIELD	net/minecraft/unmapped/C_1525636	I	f_2617005	j	
-CLASS	net/minecraft/unmapped/C_2334550	com/mojang/minecraft/a/c	
-FIELD	net/minecraft/unmapped/C_2334550	Lnet/minecraft/unmapped/C_2334550;	f_9148274	a	
-FIELD	net/minecraft/unmapped/C_2334550	Ljava/nio/FloatBuffer;	f_8094244	b	
-FIELD	net/minecraft/unmapped/C_2334550	[F	f_8611150	c	
-FIELD	net/minecraft/unmapped/C_2334550	I	f_2619375	d	
-FIELD	net/minecraft/unmapped/C_2334550	F	f_1689112	e	
-FIELD	net/minecraft/unmapped/C_2334550	F	f_7046269	f	
-FIELD	net/minecraft/unmapped/C_2334550	F	f_6105193	g	
-FIELD	net/minecraft/unmapped/C_2334550	F	f_8671849	h	
-FIELD	net/minecraft/unmapped/C_2334550	F	f_9116781	i	
-FIELD	net/minecraft/unmapped/C_2334550	Z	f_2402650	j	
-FIELD	net/minecraft/unmapped/C_2334550	Z	f_4774726	k	
-FIELD	net/minecraft/unmapped/C_2334550	I	f_3590856	l	
-FIELD	net/minecraft/unmapped/C_2334550	I	f_9540616	m	
-FIELD	net/minecraft/unmapped/C_2334550	Z	f_5362588	n	
-METHOD	net/minecraft/unmapped/C_2334550	()V	m_9115048	a	
-METHOD	net/minecraft/unmapped/C_2334550	(FFF)V	m_0870881	a	
-METHOD	net/minecraft/unmapped/C_2334550	(FFFFF)V	m_7710685	a	
-METHOD	net/minecraft/unmapped/C_2334550	(I)V	m_0357738	a	
-METHOD	net/minecraft/unmapped/C_2334550	(III)V	m_5703686	a	
-METHOD	net/minecraft/unmapped/C_2334550	()V	m_5139550	b	
-METHOD	net/minecraft/unmapped/C_2334550	(FFF)V	m_6740062	b	
-METHOD	net/minecraft/unmapped/C_2334550	()V	m_6994600	c	
-METHOD	net/minecraft/unmapped/C_2334550	()V	m_1972655	d	
-CLASS	net/minecraft/unmapped/C_2454294	com/mojang/minecraft/particle/a	
-FIELD	net/minecraft/unmapped/C_2454294	Ljava/util/List;	f_5543693	a	
-FIELD	net/minecraft/unmapped/C_2454294	Lnet/minecraft/unmapped/C_3385278;	f_6053780	b	
-METHOD	net/minecraft/unmapped/C_2454294	(Lnet/minecraft/unmapped/C_5009044;F)V	m_5775841	a	
-CLASS	net/minecraft/unmapped/C_2621421	com/mojang/minecraft/b/g	
-FIELD	net/minecraft/unmapped/C_2621421	I	f_0196761	a	
-FIELD	net/minecraft/unmapped/C_2621421	I	f_6898817	b	
-FIELD	net/minecraft/unmapped/C_2621421	I	f_9324441	c	
-FIELD	net/minecraft/unmapped/C_2621421	I	f_2585197	d	
-FIELD	net/minecraft/unmapped/C_2621421	Ljava/lang/String;	f_1547282	e	
-FIELD	net/minecraft/unmapped/C_2621421	I	f_1932931	f	
-FIELD	net/minecraft/unmapped/C_2621421	Z	f_0197900	g	
-FIELD	net/minecraft/unmapped/C_2621421	Z	f_5948919	h	
-CLASS	net/minecraft/unmapped/C_2682589	com/mojang/minecraft/level/a/e	
-CLASS	net/minecraft/unmapped/C_2805650	com/mojang/minecraft/level/b	
-FIELD	net/minecraft/unmapped/C_2805650	I	f_1605327	a	
-FIELD	net/minecraft/unmapped/C_2805650	I	f_7004962	b	
-FIELD	net/minecraft/unmapped/C_2805650	I	f_1589532	c	
-FIELD	net/minecraft/unmapped/C_2805650	I	f_7305028	d	
-FIELD	net/minecraft/unmapped/C_2805650	I	f_9435787	e	
-CLASS	net/minecraft/unmapped/C_2813741	com/mojang/minecraft/a/e	
-FIELD	net/minecraft/unmapped/C_2813741	Lnet/minecraft/unmapped/C_5009044;	f_6258221	a	
-CLASS	net/minecraft/unmapped/C_3172064	com/mojang/minecraft/a	
-FIELD	net/minecraft/unmapped/C_3172064	Ljava/util/List;	f_7459865	a	
-FIELD	net/minecraft/unmapped/C_3172064	Ljava/lang/String;	f_6779482	b	
-FIELD	net/minecraft/unmapped/C_3172064	Ljava/lang/String;	f_1305529	c	
-FIELD	net/minecraft/unmapped/C_3172064	Ljava/lang/String;	f_2577321	d	
-CLASS	net/minecraft/unmapped/C_3354938	com/mojang/minecraft/player/c	
-FIELD	net/minecraft/unmapped/C_3354938	[I	f_4438253	a	
-FIELD	net/minecraft/unmapped/C_3354938	I	f_4550394	b	
-METHOD	net/minecraft/unmapped/C_3354938	()I	m_9328585	a	
-METHOD	net/minecraft/unmapped/C_3354938	(I)I	m_3847488	a	
-METHOD	net/minecraft/unmapped/C_3354938	(Lnet/minecraft/unmapped/C_3635204;)V	m_0226182	a	
-CLASS	net/minecraft/unmapped/C_3385278	com/mojang/minecraft/a/a	
-FIELD	net/minecraft/unmapped/C_3385278	Ljava/nio/IntBuffer;	f_8164263	a	
-FIELD	net/minecraft/unmapped/C_3385278	Ljava/nio/ByteBuffer;	f_2030366	b	
-FIELD	net/minecraft/unmapped/C_3385278	Ljava/util/List;	f_2948969	c	
-FIELD	net/minecraft/unmapped/C_3385278	Ljava/util/HashMap;	f_3266729	d	
-METHOD	net/minecraft/unmapped/C_3385278	(Lnet/minecraft/unmapped/C_3544790;)V	m_6962185	a	
-METHOD	net/minecraft/unmapped/C_3385278	(Ljava/awt/image/BufferedImage;)I	m_5303716	a	
-METHOD	net/minecraft/unmapped/C_3385278	(Ljava/lang/String;)I	m_6177175	a	
-CLASS	net/minecraft/unmapped/C_3464647	com/mojang/minecraft/net/d	
-FIELD	net/minecraft/unmapped/C_3464647	Ljava/io/ByteArrayOutputStream;	f_1074422	a	
-FIELD	net/minecraft/unmapped/C_3464647	Lnet/minecraft/unmapped/C_8995754;	f_6951774	b	
-FIELD	net/minecraft/unmapped/C_3464647	Lnet/minecraft/client/Minecraft;	f_1892126	c	
-FIELD	net/minecraft/unmapped/C_3464647	Z	f_7137415	d	
-FIELD	net/minecraft/unmapped/C_3464647	Z	f_1094396	e	
-FIELD	net/minecraft/unmapped/C_3464647	Ljava/util/HashMap;	f_4932152	f	
-METHOD	net/minecraft/unmapped/C_3464647	()Z	m_3898071	a	
-METHOD	net/minecraft/unmapped/C_3464647	(IIIII)V	m_8042486	a	
-METHOD	net/minecraft/unmapped/C_3464647	(Ljava/lang/Exception;)V	m_3938439	a	
-CLASS	net/minecraft/unmapped/C_3544790	com/mojang/minecraft/a/a/c	
-FIELD	net/minecraft/unmapped/C_3544790	[B	f_5732441	a	
-FIELD	net/minecraft/unmapped/C_3544790	I	f_7672603	b	
-METHOD	net/minecraft/unmapped/C_3544790	()V	m_4399705	a	
-CLASS	net/minecraft/unmapped/C_3589148	com/mojang/minecraft/character/b	
-FIELD	net/minecraft/unmapped/C_3589148	[Lnet/minecraft/unmapped/C_9856888;	f_2471300	a	
-CLASS	net/minecraft/unmapped/C_3600653	com/mojang/minecraft/net/a	
-FIELD	net/minecraft/unmapped/C_3600653	[Lnet/minecraft/unmapped/C_3600653;	f_7217191	a	
-FIELD	net/minecraft/unmapped/C_3600653	Lnet/minecraft/unmapped/C_3600653;	f_3149308	b	
-FIELD	net/minecraft/unmapped/C_3600653	Lnet/minecraft/unmapped/C_3600653;	f_4461768	c	
-FIELD	net/minecraft/unmapped/C_3600653	Lnet/minecraft/unmapped/C_3600653;	f_5289207	d	
-FIELD	net/minecraft/unmapped/C_3600653	Lnet/minecraft/unmapped/C_3600653;	f_8546696	e	
-FIELD	net/minecraft/unmapped/C_3600653	Lnet/minecraft/unmapped/C_3600653;	f_2373056	f	
-FIELD	net/minecraft/unmapped/C_3600653	Lnet/minecraft/unmapped/C_3600653;	f_3895897	g	
-FIELD	net/minecraft/unmapped/C_3600653	Lnet/minecraft/unmapped/C_3600653;	f_7782816	h	
-FIELD	net/minecraft/unmapped/C_3600653	Lnet/minecraft/unmapped/C_3600653;	f_5917851	i	
-FIELD	net/minecraft/unmapped/C_3600653	Lnet/minecraft/unmapped/C_3600653;	f_6187456	j	
-FIELD	net/minecraft/unmapped/C_3600653	Lnet/minecraft/unmapped/C_3600653;	f_9528793	k	
-FIELD	net/minecraft/unmapped/C_3600653	Lnet/minecraft/unmapped/C_3600653;	f_6653682	l	
-FIELD	net/minecraft/unmapped/C_3600653	Lnet/minecraft/unmapped/C_3600653;	f_7798170	m	
-FIELD	net/minecraft/unmapped/C_3600653	Lnet/minecraft/unmapped/C_3600653;	f_0872420	n	
-FIELD	net/minecraft/unmapped/C_3600653	Lnet/minecraft/unmapped/C_3600653;	f_5317033	o	
-FIELD	net/minecraft/unmapped/C_3600653	I	f_7304734	p	
-FIELD	net/minecraft/unmapped/C_3600653	B	f_6782781	q	
-FIELD	net/minecraft/unmapped/C_3600653	[Ljava/lang/Class;	f_8463791	r	
-FIELD	net/minecraft/unmapped/C_3600653	I	f_5406195	s	
-CLASS	net/minecraft/unmapped/C_3635204	com/mojang/minecraft/level/a/a	
-FIELD	net/minecraft/unmapped/C_3635204	Lnet/minecraft/unmapped/C_3635204;	f_4166470	A	
-FIELD	net/minecraft/unmapped/C_3635204	Lnet/minecraft/unmapped/C_3635204;	f_9045368	B	
-FIELD	net/minecraft/unmapped/C_3635204	Lnet/minecraft/unmapped/C_3635204;	f_1241397	C	
-FIELD	net/minecraft/unmapped/C_3635204	Lnet/minecraft/unmapped/C_3635204;	f_6684845	D	
-FIELD	net/minecraft/unmapped/C_3635204	Lnet/minecraft/unmapped/C_3635204;	f_2576680	E	
-FIELD	net/minecraft/unmapped/C_3635204	Lnet/minecraft/unmapped/C_3635204;	f_1913310	F	
-FIELD	net/minecraft/unmapped/C_3635204	Lnet/minecraft/unmapped/C_3635204;	f_1076717	G	
-FIELD	net/minecraft/unmapped/C_3635204	Lnet/minecraft/unmapped/C_3635204;	f_0541245	H	
-FIELD	net/minecraft/unmapped/C_3635204	Lnet/minecraft/unmapped/C_3635204;	f_1605453	I	
-FIELD	net/minecraft/unmapped/C_3635204	Lnet/minecraft/unmapped/C_3635204;	f_4533105	J	
-FIELD	net/minecraft/unmapped/C_3635204	Lnet/minecraft/unmapped/C_3635204;	f_7028655	K	
-FIELD	net/minecraft/unmapped/C_3635204	Lnet/minecraft/unmapped/C_3635204;	f_2031679	L	
-FIELD	net/minecraft/unmapped/C_3635204	Lnet/minecraft/unmapped/C_3635204;	f_7565331	M	
-FIELD	net/minecraft/unmapped/C_3635204	Lnet/minecraft/unmapped/C_3635204;	f_3027250	N	
-FIELD	net/minecraft/unmapped/C_3635204	Lnet/minecraft/unmapped/C_3635204;	f_4214731	O	
-FIELD	net/minecraft/unmapped/C_3635204	Lnet/minecraft/unmapped/C_3635204;	f_1176361	P	
-FIELD	net/minecraft/unmapped/C_3635204	Lnet/minecraft/unmapped/C_3635204;	f_3504882	Q	
-FIELD	net/minecraft/unmapped/C_3635204	I	f_2648035	R	
-FIELD	net/minecraft/unmapped/C_3635204	I	f_2860341	S	
-FIELD	net/minecraft/unmapped/C_3635204	F	f_8697106	T	
-FIELD	net/minecraft/unmapped/C_3635204	[I	f_0375741	U	
-FIELD	net/minecraft/unmapped/C_3635204	F	f_8954589	V	
-FIELD	net/minecraft/unmapped/C_3635204	F	f_1532370	W	
-FIELD	net/minecraft/unmapped/C_3635204	F	f_8265770	X	
-FIELD	net/minecraft/unmapped/C_3635204	F	f_7034990	Y	
-FIELD	net/minecraft/unmapped/C_3635204	F	f_3247786	Z	
-FIELD	net/minecraft/unmapped/C_3635204	[Lnet/minecraft/unmapped/C_3635204;	f_3809114	a	
-FIELD	net/minecraft/unmapped/C_3635204	F	f_3364884	aa	
-FIELD	net/minecraft/unmapped/C_3635204	[Z	f_7047452	b	
-FIELD	net/minecraft/unmapped/C_3635204	Lnet/minecraft/unmapped/C_3635204;	f_5708490	c	
-FIELD	net/minecraft/unmapped/C_3635204	Lnet/minecraft/unmapped/C_3635204;	f_0804334	d	
-FIELD	net/minecraft/unmapped/C_3635204	Lnet/minecraft/unmapped/C_3635204;	f_6242213	e	
-FIELD	net/minecraft/unmapped/C_3635204	Lnet/minecraft/unmapped/C_3635204;	f_5091096	f	
-FIELD	net/minecraft/unmapped/C_3635204	Lnet/minecraft/unmapped/C_3635204;	f_5905020	g	
-FIELD	net/minecraft/unmapped/C_3635204	Lnet/minecraft/unmapped/C_3635204;	f_8866375	h	
-FIELD	net/minecraft/unmapped/C_3635204	Lnet/minecraft/unmapped/C_3635204;	f_6795120	i	
-FIELD	net/minecraft/unmapped/C_3635204	Lnet/minecraft/unmapped/C_3635204;	f_1761026	j	
-FIELD	net/minecraft/unmapped/C_3635204	Lnet/minecraft/unmapped/C_3635204;	f_1957938	k	
-FIELD	net/minecraft/unmapped/C_3635204	Lnet/minecraft/unmapped/C_3635204;	f_6455504	l	
-FIELD	net/minecraft/unmapped/C_3635204	Lnet/minecraft/unmapped/C_3635204;	f_1788821	m	
-FIELD	net/minecraft/unmapped/C_3635204	Lnet/minecraft/unmapped/C_3635204;	f_7106883	n	
-FIELD	net/minecraft/unmapped/C_3635204	Lnet/minecraft/unmapped/C_3635204;	f_7543153	o	
-FIELD	net/minecraft/unmapped/C_3635204	Lnet/minecraft/unmapped/C_3635204;	f_7230133	p	
-FIELD	net/minecraft/unmapped/C_3635204	Lnet/minecraft/unmapped/C_3635204;	f_4107115	q	
-FIELD	net/minecraft/unmapped/C_3635204	Lnet/minecraft/unmapped/C_3635204;	f_0069613	r	
-FIELD	net/minecraft/unmapped/C_3635204	Lnet/minecraft/unmapped/C_3635204;	f_8676132	s	
-FIELD	net/minecraft/unmapped/C_3635204	Lnet/minecraft/unmapped/C_3635204;	f_4511668	t	
-FIELD	net/minecraft/unmapped/C_3635204	Lnet/minecraft/unmapped/C_3635204;	f_7667387	u	
-FIELD	net/minecraft/unmapped/C_3635204	Lnet/minecraft/unmapped/C_3635204;	f_9737895	v	
-FIELD	net/minecraft/unmapped/C_3635204	Lnet/minecraft/unmapped/C_3635204;	f_1956160	w	
-FIELD	net/minecraft/unmapped/C_3635204	Lnet/minecraft/unmapped/C_3635204;	f_6437230	x	
-FIELD	net/minecraft/unmapped/C_3635204	Lnet/minecraft/unmapped/C_3635204;	f_2003281	y	
-FIELD	net/minecraft/unmapped/C_3635204	Lnet/minecraft/unmapped/C_3635204;	f_8312651	z	
-METHOD	net/minecraft/unmapped/C_3635204	()Z	m_3237591	a	
-METHOD	net/minecraft/unmapped/C_3635204	(FFFFFF)V	m_3006888	a	
-METHOD	net/minecraft/unmapped/C_3635204	(I)V	m_5930259	a	
-METHOD	net/minecraft/unmapped/C_3635204	(III)Lnet/minecraft/unmapped/C_1414550;	m_9650578	a	
-METHOD	net/minecraft/unmapped/C_3635204	(Lnet/minecraft/unmapped/C_6385858;Lnet/minecraft/unmapped/C_2334550;IIII)V	m_8104522	a	
-METHOD	net/minecraft/unmapped/C_3635204	(Lnet/minecraft/unmapped/C_2334550;IIII)V	m_2253214	a	
-METHOD	net/minecraft/unmapped/C_3635204	(Lnet/minecraft/unmapped/C_2334550;Lnet/minecraft/unmapped/C_3906126;IIII)Z	m_7740877	a	
-METHOD	net/minecraft/unmapped/C_3635204	(Lnet/minecraft/unmapped/C_3906126;III)F	m_1598263	a	
-METHOD	net/minecraft/unmapped/C_3635204	(Lnet/minecraft/unmapped/C_3906126;IIII)V	m_9130741	a	
-METHOD	net/minecraft/unmapped/C_3635204	(Lnet/minecraft/unmapped/C_3906126;IIIII)Z	m_8199947	a	
-METHOD	net/minecraft/unmapped/C_3635204	(Lnet/minecraft/unmapped/C_3906126;IIILnet/minecraft/unmapped/C_2454294;)V	m_9622802	a	
-METHOD	net/minecraft/unmapped/C_3635204	(Lnet/minecraft/unmapped/C_3906126;IIILjava/util/Random;)V	m_3941370	a	
-METHOD	net/minecraft/unmapped/C_3635204	(Z)V	m_3405751	a	
-METHOD	net/minecraft/unmapped/C_3635204	()Z	m_1944525	b	
-METHOD	net/minecraft/unmapped/C_3635204	(I)I	m_9597800	b	
-METHOD	net/minecraft/unmapped/C_3635204	(Lnet/minecraft/unmapped/C_2334550;IIII)V	m_8901536	b	
-METHOD	net/minecraft/unmapped/C_3635204	(Lnet/minecraft/unmapped/C_3906126;III)V	m_1467728	b	
-METHOD	net/minecraft/unmapped/C_3635204	()Lnet/minecraft/unmapped/C_8554894;	m_5824613	c	
-METHOD	net/minecraft/unmapped/C_3635204	(Lnet/minecraft/unmapped/C_3906126;III)V	m_1556953	c	
-METHOD	net/minecraft/unmapped/C_3635204	()I	m_9474325	d	
-METHOD	net/minecraft/unmapped/C_3635204	(Lnet/minecraft/unmapped/C_3906126;III)V	m_2650869	d	
-CLASS	net/minecraft/unmapped/C_3699792	com/mojang/minecraft/b/a	
-FIELD	net/minecraft/unmapped/C_3699792	Ljava/util/List;	f_9851646	a	
-FIELD	net/minecraft/unmapped/C_3699792	Lnet/minecraft/client/Minecraft;	f_5266056	b	
-FIELD	net/minecraft/unmapped/C_3699792	I	f_0775750	c	
-FIELD	net/minecraft/unmapped/C_3699792	I	f_8519063	d	
-METHOD	net/minecraft/unmapped/C_3699792	()V	m_1122306	a	
-METHOD	net/minecraft/unmapped/C_3699792	(IIIIII)V	m_6628097	a	
-CLASS	net/minecraft/unmapped/C_3724278	com/mojang/minecraft/level/a/d	
-METHOD	net/minecraft/unmapped/C_3724278	(Lnet/minecraft/unmapped/C_3906126;III)V	m_8647977	e	
-CLASS	net/minecraft/unmapped/C_3906126	com/mojang/minecraft/level/Level	
-FIELD	net/minecraft/unmapped/C_3906126	Ljava/util/ArrayList;	f_9572477	a	
-FIELD	net/minecraft/unmapped/C_3906126	[I	f_6234407	b	
-FIELD	net/minecraft/unmapped/C_3906126	[B	f_4249554	blocks	
-FIELD	net/minecraft/unmapped/C_3906126	Ljava/util/Random;	f_7114289	c	
-FIELD	net/minecraft/unmapped/C_3906126	J	f_0203833	createTime	
-FIELD	net/minecraft/unmapped/C_3906126	Ljava/lang/String;	f_9848506	creator	
-FIELD	net/minecraft/unmapped/C_3906126	I	f_5915199	d	
-FIELD	net/minecraft/unmapped/C_3906126	I	f_4184003	depth	
-FIELD	net/minecraft/unmapped/C_3906126	Ljava/util/ArrayList;	f_1161172	e	
-FIELD	net/minecraft/unmapped/C_3906126	Ljava/util/ArrayList;	f_1083250	entities	
-FIELD	net/minecraft/unmapped/C_3906126	I	f_8212213	height	
-FIELD	net/minecraft/unmapped/C_3906126	Ljava/lang/String;	f_0713588	name	
-FIELD	net/minecraft/unmapped/C_3906126	Z	f_5674767	networkMode	
-FIELD	net/minecraft/unmapped/C_3906126	F	f_0132843	rotSpawn	
-FIELD	net/minecraft/unmapped/C_3906126	J	f_5969655	serialVersionUID	
-FIELD	net/minecraft/unmapped/C_3906126	I	f_8845673	tickCount	
-FIELD	net/minecraft/unmapped/C_3906126	I	f_2476841	unprocessed	
-FIELD	net/minecraft/unmapped/C_3906126	I	f_3061106	width	
-FIELD	net/minecraft/unmapped/C_3906126	I	f_3926541	xSpawn	
-FIELD	net/minecraft/unmapped/C_3906126	I	f_2923303	ySpawn	
-FIELD	net/minecraft/unmapped/C_3906126	I	f_8500813	zSpawn	
-METHOD	net/minecraft/unmapped/C_3906126	(FFF)Z	m_6056620	a	
-METHOD	net/minecraft/unmapped/C_3906126	(III)Z	m_9458565	a	
-METHOD	net/minecraft/unmapped/C_3906126	(IIII)V	m_0943051	a	
-METHOD	net/minecraft/unmapped/C_3906126	(Lnet/minecraft/unmapped/C_1044273;)V	m_1367228	addListener$74652038	
-METHOD	net/minecraft/unmapped/C_3906126	(IIII)V	m_3258114	addToTickNextTick	
-METHOD	net/minecraft/unmapped/C_3906126	(IIII)V	m_9243947	calcLightDepths	
-METHOD	net/minecraft/unmapped/C_3906126	(Lnet/minecraft/unmapped/C_0336319;Lnet/minecraft/unmapped/C_0336319;)Lnet/minecraft/unmapped/C_5853518;	m_1107910	clip	
-METHOD	net/minecraft/unmapped/C_3906126	(Lnet/minecraft/unmapped/C_1414550;)Z	m_9156319	containsAnyLiquid	
-METHOD	net/minecraft/unmapped/C_3906126	(Lnet/minecraft/unmapped/C_1414550;Lnet/minecraft/unmapped/C_8554894;)Z	m_4199410	containsLiquid	
-METHOD	net/minecraft/unmapped/C_3906126	()[B	m_0615700	copyBlocks	
-METHOD	net/minecraft/unmapped/C_3906126	()V	m_9896192	findSpawn	
-METHOD	net/minecraft/unmapped/C_3906126	(III)F	m_0273103	getBrightness	
-METHOD	net/minecraft/unmapped/C_3906126	(FFFF)F	m_4703682	getCaveness	
-METHOD	net/minecraft/unmapped/C_3906126	(Lnet/minecraft/unmapped/C_6385858;)F	m_6146563	getCaveness	
-METHOD	net/minecraft/unmapped/C_3906126	(Lnet/minecraft/unmapped/C_1414550;)Ljava/util/ArrayList;	m_1845335	getCubes	
-METHOD	net/minecraft/unmapped/C_3906126	()F	m_8935901	getGroundLevel	
-METHOD	net/minecraft/unmapped/C_3906126	(II)I	m_6057855	getHighestTile	
-METHOD	net/minecraft/unmapped/C_3906126	(III)I	m_5102244	getTile	
-METHOD	net/minecraft/unmapped/C_3906126	()F	m_6053275	getWaterLevel	
-METHOD	net/minecraft/unmapped/C_3906126	()V	m_5250554	initTransient	
-METHOD	net/minecraft/unmapped/C_3906126	(Lnet/minecraft/unmapped/C_1414550;)Z	m_3216978	isFree	
-METHOD	net/minecraft/unmapped/C_3906126	(III)Z	m_1580278	isLightBlocker	
-METHOD	net/minecraft/unmapped/C_3906126	(III)Z	m_6760267	isLit	
-METHOD	net/minecraft/unmapped/C_3906126	(FFFF)Z	m_9113962	isSolid	
-METHOD	net/minecraft/unmapped/C_3906126	(III)Z	m_3624759	isSolidTile	
-METHOD	net/minecraft/unmapped/C_3906126	(III)Z	m_6411090	isWater	
-METHOD	net/minecraft/unmapped/C_3906126	(IIII)Z	m_3401611	netSetTile	
-METHOD	net/minecraft/unmapped/C_3906126	(IIII)Z	m_4432142	netSetTileNoNeighborChange	
-METHOD	net/minecraft/unmapped/C_3906126	(Lnet/minecraft/unmapped/C_1044273;)V	m_1985242	removeListener$74652038	
-METHOD	net/minecraft/unmapped/C_3906126	(III[B)V	m_2817546	setData	
-METHOD	net/minecraft/unmapped/C_3906126	(Z)V	m_3522154	setNetworkMode	
-METHOD	net/minecraft/unmapped/C_3906126	(IIIF)V	m_2142003	setSpawnPos	
-METHOD	net/minecraft/unmapped/C_3906126	(IIII)Z	m_9241515	setTile	
-METHOD	net/minecraft/unmapped/C_3906126	(IIII)Z	m_5064482	setTileNoNeighborChange	
-METHOD	net/minecraft/unmapped/C_3906126	(IIII)Z	m_6881939	setTileNoUpdate	
-METHOD	net/minecraft/unmapped/C_3906126	(IIIIII)V	m_2444845	swap	
-METHOD	net/minecraft/unmapped/C_3906126	()V	m_8605860	tick	
-METHOD	net/minecraft/unmapped/C_3906126	()V	m_0155430	tickEntities	
-METHOD	net/minecraft/unmapped/C_3906126	(IIII)V	m_1156369	updateNeighborsAt	
-CLASS	net/minecraft/unmapped/C_4045198	com/mojang/minecraft/player/a	
-FIELD	net/minecraft/unmapped/C_4045198	F	f_7472910	a	
-FIELD	net/minecraft/unmapped/C_4045198	F	f_7984611	b	
-FIELD	net/minecraft/unmapped/C_4045198	Z	f_5816164	c	
-FIELD	net/minecraft/unmapped/C_4045198	Z	f_0314305	d	
-METHOD	net/minecraft/unmapped/C_4045198	()V	m_0500842	a	
-METHOD	net/minecraft/unmapped/C_4045198	(IZ)V	m_6133262	a	
-METHOD	net/minecraft/unmapped/C_4045198	()V	m_0460692	b	
-CLASS	net/minecraft/unmapped/C_4393193	com/mojang/minecraft/b/h	
-FIELD	net/minecraft/unmapped/C_4393193	Lnet/minecraft/unmapped/C_0786431;	f_4216179	f	
-CLASS	net/minecraft/unmapped/C_4558465	com/mojang/minecraft/level/a/k	
-FIELD	net/minecraft/unmapped/C_4558465	Lnet/minecraft/unmapped/C_8554894;	f_1002492	U	
-FIELD	net/minecraft/unmapped/C_4558465	I	f_9509159	V	
-FIELD	net/minecraft/unmapped/C_4558465	I	f_9203262	W	
-METHOD	net/minecraft/unmapped/C_4558465	(Lnet/minecraft/unmapped/C_3906126;III)Z	m_6220270	e	
-METHOD	net/minecraft/unmapped/C_4558465	(Lnet/minecraft/unmapped/C_3906126;III)Z	m_8268450	f	
-CLASS	net/minecraft/unmapped/C_4561907	com/mojang/minecraft/level/b/a/c	
-METHOD	net/minecraft/unmapped/C_4561907	(DD)D	m_7516921	a	
-CLASS	net/minecraft/unmapped/C_4643161	com/mojang/minecraft/b/j	
-FIELD	net/minecraft/unmapped/C_4643161	Ljava/lang/String;	f_9782510	f	
-FIELD	net/minecraft/unmapped/C_4643161	Ljava/lang/String;	f_1751895	g	
-CLASS	net/minecraft/unmapped/C_4766485	com/mojang/minecraft/b/l	
-FIELD	net/minecraft/unmapped/C_4766485	[I	f_4822011	a	
-FIELD	net/minecraft/unmapped/C_4766485	I	f_6728583	b	
-METHOD	net/minecraft/unmapped/C_4766485	(Ljava/lang/String;)I	m_3908105	a	
-METHOD	net/minecraft/unmapped/C_4766485	(Ljava/lang/String;III)V	m_4507504	a	
-METHOD	net/minecraft/unmapped/C_4766485	(Ljava/lang/String;IIIZ)V	m_3272628	a	
-METHOD	net/minecraft/unmapped/C_4766485	(Ljava/lang/String;III)V	m_5762160	b	
-CLASS	net/minecraft/unmapped/C_5009044	com/mojang/minecraft/player/Player	
-FIELD	net/minecraft/unmapped/C_5009044	Lnet/minecraft/unmapped/C_4045198;	f_7517390	input	
-FIELD	net/minecraft/unmapped/C_5009044	Lnet/minecraft/unmapped/C_3354938;	f_0693100	inventory	
-FIELD	net/minecraft/unmapped/C_5009044	B	f_3952010	userType	
-METHOD	net/minecraft/unmapped/C_5009044	()V	m_7136452	releaseAllKeys	
-METHOD	net/minecraft/unmapped/C_5009044	(IZ)V	m_3078238	setKey	
-CLASS	net/minecraft/unmapped/C_5169041	com/mojang/minecraft/b/c	
-FIELD	net/minecraft/unmapped/C_5169041	Ljava/lang/String;	f_0533128	f	
-FIELD	net/minecraft/unmapped/C_5169041	I	f_9208767	g	
-CLASS	net/minecraft/unmapped/C_5283200	com/mojang/minecraft/a/f	
-FIELD	net/minecraft/unmapped/C_5283200	I	f_5922577	a	
-FIELD	net/minecraft/unmapped/C_5283200	Z	f_0382305	b	
-FIELD	net/minecraft/unmapped/C_5283200	Lnet/minecraft/unmapped/C_3906126;	f_1045625	c	
-FIELD	net/minecraft/unmapped/C_5283200	I	f_6923294	d	
-FIELD	net/minecraft/unmapped/C_5283200	Lnet/minecraft/unmapped/C_2334550;	f_6896073	e	
-FIELD	net/minecraft/unmapped/C_5283200	I	f_7537396	f	
-FIELD	net/minecraft/unmapped/C_5283200	I	f_1919969	g	
-FIELD	net/minecraft/unmapped/C_5283200	I	f_9635507	h	
-FIELD	net/minecraft/unmapped/C_5283200	I	f_2412601	i	
-FIELD	net/minecraft/unmapped/C_5283200	I	f_5060052	j	
-FIELD	net/minecraft/unmapped/C_5283200	I	f_2483070	k	
-FIELD	net/minecraft/unmapped/C_5283200	[Z	f_6592967	l	
-METHOD	net/minecraft/unmapped/C_5283200	()V	m_6088480	a	
-METHOD	net/minecraft/unmapped/C_5283200	(Lnet/minecraft/unmapped/C_8199124;)V	m_5092852	a	
-METHOD	net/minecraft/unmapped/C_5283200	(Lnet/minecraft/unmapped/C_5009044;)F	m_9608130	a	
-METHOD	net/minecraft/unmapped/C_5283200	(Ljava/nio/IntBuffer;I)V	m_0937596	a	
-METHOD	net/minecraft/unmapped/C_5283200	()V	m_0330444	b	
-METHOD	net/minecraft/unmapped/C_5283200	()V	m_5530771	c	
-CLASS	net/minecraft/unmapped/C_5376418	com/mojang/minecraft/level/b/a	
-FIELD	net/minecraft/unmapped/C_5376418	Lnet/minecraft/client/Minecraft;	f_4854350	a	
-FIELD	net/minecraft/unmapped/C_5376418	I	f_7275613	b	
-FIELD	net/minecraft/unmapped/C_5376418	I	f_8175346	c	
-FIELD	net/minecraft/unmapped/C_5376418	I	f_2316345	d	
-FIELD	net/minecraft/unmapped/C_5376418	Ljava/util/Random;	f_3235868	e	
-FIELD	net/minecraft/unmapped/C_5376418	[B	f_8316515	f	
-FIELD	net/minecraft/unmapped/C_5376418	[I	f_6516890	g	
-METHOD	net/minecraft/unmapped/C_5376418	()V	m_8370654	a	
-METHOD	net/minecraft/unmapped/C_5376418	(I)V	m_8611747	a	
-METHOD	net/minecraft/unmapped/C_5376418	(IIII)V	m_9667175	a	
-METHOD	net/minecraft/unmapped/C_5376418	(IIIII)J	m_6366896	a	
-METHOD	net/minecraft/unmapped/C_5376418	(Ljava/lang/String;III)Lnet/minecraft/unmapped/C_3906126;	m_0447977	a	
-METHOD	net/minecraft/unmapped/C_5376418	([I)V	m_6035318	a	
-METHOD	net/minecraft/unmapped/C_5376418	([I)V	m_1162242	b	
-CLASS	net/minecraft/unmapped/C_5540851	com/mojang/minecraft/b/i	
-FIELD	net/minecraft/unmapped/C_5540851	Ljava/lang/String;	f_0810697	f	
-FIELD	net/minecraft/unmapped/C_5540851	Lnet/minecraft/unmapped/C_0786431;	f_8404091	g	
-FIELD	net/minecraft/unmapped/C_5540851	Z	f_1196307	h	
-FIELD	net/minecraft/unmapped/C_5540851	Z	f_6250022	i	
-FIELD	net/minecraft/unmapped/C_5540851	[Ljava/lang/String;	f_2151156	j	
-FIELD	net/minecraft/unmapped/C_5540851	Ljava/lang/String;	f_5758365	k	
-METHOD	net/minecraft/unmapped/C_5540851	(I)V	m_7286993	a	
-METHOD	net/minecraft/unmapped/C_5540851	([Ljava/lang/String;)V	m_1871619	a	
-CLASS	net/minecraft/unmapped/C_5691640	com/mojang/minecraft/b/d	
-METHOD	net/minecraft/unmapped/C_5691640	(II)I	m_5484728	b	
-CLASS	net/minecraft/unmapped/C_5708128	com/mojang/minecraft/level/b/a/b	
-FIELD	net/minecraft/unmapped/C_5708128	Lnet/minecraft/unmapped/C_4561907;	f_1343857	a	
-FIELD	net/minecraft/unmapped/C_5708128	Lnet/minecraft/unmapped/C_4561907;	f_6356450	b	
-CLASS	net/minecraft/unmapped/C_5746331	com/mojang/minecraft/MinecraftApplet$1	
-FIELD	net/minecraft/unmapped/C_5746331	Lcom/mojang/minecraft/MinecraftApplet;	f_4508920	this$0	
-CLASS	net/minecraft/unmapped/C_5853518	com/mojang/minecraft/e	
-FIELD	net/minecraft/unmapped/C_5853518	I	f_0070115	a	
-FIELD	net/minecraft/unmapped/C_5853518	I	f_6536619	b	
-FIELD	net/minecraft/unmapped/C_5853518	I	f_6309744	c	
-FIELD	net/minecraft/unmapped/C_5853518	I	f_5340853	d	
-CLASS	net/minecraft/unmapped/C_5897181	com/mojang/minecraft/a/a/b	
-FIELD	net/minecraft/unmapped/C_5897181	[F	f_6274011	c	
-FIELD	net/minecraft/unmapped/C_5897181	[F	f_5170750	d	
-FIELD	net/minecraft/unmapped/C_5897181	[F	f_1718580	e	
-FIELD	net/minecraft/unmapped/C_5897181	[F	f_7237767	f	
-FIELD	net/minecraft/unmapped/C_5897181	I	f_1927845	g	
-CLASS	net/minecraft/unmapped/C_5974036	com/mojang/minecraft/c	
-FIELD	net/minecraft/unmapped/C_5974036	F	f_5342306	a	
-FIELD	net/minecraft/unmapped/C_5974036	D	f_7086038	b	
-FIELD	net/minecraft/unmapped/C_5974036	I	f_9607039	c	
-FIELD	net/minecraft/unmapped/C_5974036	F	f_1547140	d	
-FIELD	net/minecraft/unmapped/C_5974036	F	f_3981960	e	
-FIELD	net/minecraft/unmapped/C_5974036	F	f_6634432	f	
-FIELD	net/minecraft/unmapped/C_5974036	J	f_8152395	g	
-FIELD	net/minecraft/unmapped/C_5974036	J	f_7610845	h	
-FIELD	net/minecraft/unmapped/C_5974036	D	f_3503925	i	
-CLASS	net/minecraft/unmapped/C_6170244	com/mojang/minecraft/net/c	
-FIELD	net/minecraft/unmapped/C_6170244	Ljava/lang/String;	f_1031671	a	
-FIELD	net/minecraft/unmapped/C_6170244	I	f_1951524	b	
-FIELD	net/minecraft/unmapped/C_6170244	Ljava/lang/String;	f_0399068	c	
-FIELD	net/minecraft/unmapped/C_6170244	Ljava/lang/String;	f_2362738	d	
-FIELD	net/minecraft/unmapped/C_6170244	Lnet/minecraft/client/Minecraft;	f_1601230	e	
-FIELD	net/minecraft/unmapped/C_6170244	Lnet/minecraft/unmapped/C_3464647;	f_2348871	f	
-CLASS	net/minecraft/unmapped/C_6205974	com/mojang/minecraft/level/b/a/a	
-FIELD	net/minecraft/unmapped/C_6205974	[Lnet/minecraft/unmapped/C_0611937;	f_4448671	a	
-FIELD	net/minecraft/unmapped/C_6205974	I	f_6571600	b	
-CLASS	net/minecraft/unmapped/C_6385858	com/mojang/minecraft/Entity	
-FIELD	net/minecraft/unmapped/C_6385858	F	f_5906359	bbHeight	
-FIELD	net/minecraft/unmapped/C_6385858	Lnet/minecraft/unmapped/C_1414550;	f_2044537	bb	
-FIELD	net/minecraft/unmapped/C_6385858	F	f_4042167	bbWidth	
-FIELD	net/minecraft/unmapped/C_6385858	F	f_0183404	heightOffset	
-FIELD	net/minecraft/unmapped/C_6385858	Z	f_9161075	horizontalCollision	
-FIELD	net/minecraft/unmapped/C_6385858	Lnet/minecraft/unmapped/C_3906126;	f_9083885	level	
-FIELD	net/minecraft/unmapped/C_6385858	Z	f_1240689	onGround	
-FIELD	net/minecraft/unmapped/C_6385858	Z	f_1175468	removed	
-FIELD	net/minecraft/unmapped/C_6385858	J	f_4814092	serialVersionUID	
-FIELD	net/minecraft/unmapped/C_6385858	F	f_3530110	x	
-FIELD	net/minecraft/unmapped/C_6385858	F	f_6995706	xRot	
-FIELD	net/minecraft/unmapped/C_6385858	F	f_4296272	xRotO	
-FIELD	net/minecraft/unmapped/C_6385858	F	f_6592976	xd	
-FIELD	net/minecraft/unmapped/C_6385858	F	f_6346574	xo	
-FIELD	net/minecraft/unmapped/C_6385858	F	f_7519982	y	
-FIELD	net/minecraft/unmapped/C_6385858	F	f_4543601	yRot	
-FIELD	net/minecraft/unmapped/C_6385858	F	f_7304362	yRotO	
-FIELD	net/minecraft/unmapped/C_6385858	F	f_7079437	yd	
-FIELD	net/minecraft/unmapped/C_6385858	F	f_4039806	yo	
-FIELD	net/minecraft/unmapped/C_6385858	F	f_2049069	z	
-FIELD	net/minecraft/unmapped/C_6385858	F	f_8299820	zd	
-FIELD	net/minecraft/unmapped/C_6385858	F	f_8072357	zo	
-METHOD	net/minecraft/unmapped/C_6385858	()F	m_0062748	getBrightness	
-METHOD	net/minecraft/unmapped/C_6385858	(FF)V	m_5324035	interpolateTurn	
-METHOD	net/minecraft/unmapped/C_6385858	(FFF)Z	m_3552814	isFree	
-METHOD	net/minecraft/unmapped/C_6385858	()Z	m_1332985	isInLava	
-METHOD	net/minecraft/unmapped/C_6385858	()Z	m_0439182	isInWater	
-METHOD	net/minecraft/unmapped/C_6385858	()Z	m_5124480	isLit	
-METHOD	net/minecraft/unmapped/C_6385858	(FFF)V	m_2164746	move	
-METHOD	net/minecraft/unmapped/C_6385858	(FFF)V	m_0500056	moveRelative	
-METHOD	net/minecraft/unmapped/C_6385858	(FFFFF)V	m_1065879	moveTo	
-METHOD	net/minecraft/unmapped/C_6385858	()V	m_8944389	remove	
-METHOD	net/minecraft/unmapped/C_6385858	(Lnet/minecraft/unmapped/C_3385278;F)V	m_7933254	render$2a8c5a	
-METHOD	net/minecraft/unmapped/C_6385858	()V	m_4306841	resetPos	
-METHOD	net/minecraft/unmapped/C_6385858	(Lnet/minecraft/unmapped/C_3906126;)V	m_8223023	setLevel	
-METHOD	net/minecraft/unmapped/C_6385858	(FFF)V	m_2141747	setPos	
-METHOD	net/minecraft/unmapped/C_6385858	(Lnet/minecraft/unmapped/C_7018681;)V	m_8352690	setPos	
-METHOD	net/minecraft/unmapped/C_6385858	(FF)V	m_0283442	setRot	
-METHOD	net/minecraft/unmapped/C_6385858	(FF)V	m_2788323	setSize	
-METHOD	net/minecraft/unmapped/C_6385858	()V	m_0718337	tick	
-METHOD	net/minecraft/unmapped/C_6385858	(FF)V	m_1428765	turn	
-CLASS	net/minecraft/unmapped/C_6732508	com/mojang/minecraft/character/Zombie	
-FIELD	net/minecraft/unmapped/C_6732508	Lnet/minecraft/unmapped/C_9882464;	f_6031782	a	
-FIELD	net/minecraft/unmapped/C_6732508	F	f_0961085	rotA	
-FIELD	net/minecraft/unmapped/C_6732508	F	f_7214655	rot	
-FIELD	net/minecraft/unmapped/C_6732508	J	f_7082119	serialVersionUID	
-FIELD	net/minecraft/unmapped/C_6732508	F	f_6698408	speed	
-FIELD	net/minecraft/unmapped/C_6732508	F	f_7601649	timeOffs	
-CLASS	net/minecraft/unmapped/C_6936244	com/mojang/minecraft/net/e	
-FIELD	net/minecraft/unmapped/C_6936244	Lnet/minecraft/unmapped/C_0704590;	f_4638487	a	
-CLASS	net/minecraft/unmapped/C_7018681	com/mojang/minecraft/net/b	
-FIELD	net/minecraft/unmapped/C_7018681	F	f_6477721	a	
-FIELD	net/minecraft/unmapped/C_7018681	F	f_7870468	b	
-FIELD	net/minecraft/unmapped/C_7018681	F	f_0110066	c	
-FIELD	net/minecraft/unmapped/C_7018681	F	f_2382842	d	
-FIELD	net/minecraft/unmapped/C_7018681	F	f_1369203	e	
-FIELD	net/minecraft/unmapped/C_7018681	Z	f_5972456	f	
-FIELD	net/minecraft/unmapped/C_7018681	Z	f_9167360	g	
-CLASS	net/minecraft/unmapped/C_7450537	com/mojang/minecraft/level/a/i	
-CLASS	net/minecraft/unmapped/C_8199124	com/mojang/minecraft/a/d	
-FIELD	net/minecraft/unmapped/C_8199124	[[F	f_2943825	a	
-FIELD	net/minecraft/unmapped/C_8199124	Lnet/minecraft/unmapped/C_8199124;	f_3284628	b	
-FIELD	net/minecraft/unmapped/C_8199124	Ljava/nio/FloatBuffer;	f_7388569	c	
-FIELD	net/minecraft/unmapped/C_8199124	Ljava/nio/FloatBuffer;	f_6924582	d	
-FIELD	net/minecraft/unmapped/C_8199124	Ljava/nio/FloatBuffer;	f_9644453	e	
-FIELD	net/minecraft/unmapped/C_8199124	[F	f_6016742	f	
-FIELD	net/minecraft/unmapped/C_8199124	[F	f_3267753	g	
-FIELD	net/minecraft/unmapped/C_8199124	[F	f_8138591	h	
-METHOD	net/minecraft/unmapped/C_8199124	()Lnet/minecraft/unmapped/C_8199124;	m_4703353	a	
-METHOD	net/minecraft/unmapped/C_8199124	(FFFFFF)Z	m_7203488	a	
-METHOD	net/minecraft/unmapped/C_8199124	(Lnet/minecraft/unmapped/C_1414550;)Z	m_0183273	a	
-METHOD	net/minecraft/unmapped/C_8199124	([[FI)V	m_5256054	a	
-CLASS	net/minecraft/unmapped/C_8443484	com/mojang/minecraft/level/a/j	
-FIELD	net/minecraft/unmapped/C_8443484	Z	f_1686264	U	
-CLASS	net/minecraft/unmapped/C_8554894	com/mojang/minecraft/level/c/a	
-FIELD	net/minecraft/unmapped/C_8554894	Lnet/minecraft/unmapped/C_8554894;	f_1017744	a	
-FIELD	net/minecraft/unmapped/C_8554894	Lnet/minecraft/unmapped/C_8554894;	f_3070279	b	
-FIELD	net/minecraft/unmapped/C_8554894	Lnet/minecraft/unmapped/C_8554894;	f_3260500	c	
-FIELD	net/minecraft/unmapped/C_8554894	[Lnet/minecraft/unmapped/C_8554894;	f_5419847	d	
-CLASS	net/minecraft/unmapped/C_8688622	com/mojang/minecraft/a/b	
-FIELD	net/minecraft/unmapped/C_8688622	Lnet/minecraft/unmapped/C_5009044;	f_9491045	a	
-CLASS	net/minecraft/unmapped/C_8770355	com/mojang/minecraft/StopGameException	
-CLASS	net/minecraft/unmapped/C_8905061	com/mojang/minecraft/particle/Particle	
-FIELD	net/minecraft/unmapped/C_8905061	I	f_7246954	age	
-FIELD	net/minecraft/unmapped/C_8905061	F	f_0780390	gravity	
-FIELD	net/minecraft/unmapped/C_8905061	I	f_4210850	lifetime	
-FIELD	net/minecraft/unmapped/C_8905061	F	f_1296427	size	
-FIELD	net/minecraft/unmapped/C_8905061	I	f_8606041	tex	
-FIELD	net/minecraft/unmapped/C_8905061	F	f_4159616	uo	
-FIELD	net/minecraft/unmapped/C_8905061	F	f_8149664	vo	
-FIELD	net/minecraft/unmapped/C_8905061	F	f_6487551	xd	
-FIELD	net/minecraft/unmapped/C_8905061	F	f_3194041	yd	
-FIELD	net/minecraft/unmapped/C_8905061	F	f_0182044	zd	
-METHOD	net/minecraft/unmapped/C_8905061	(Lnet/minecraft/unmapped/C_2334550;FFFFFF)V	m_7521183	render$12562f50	
-CLASS	net/minecraft/unmapped/C_8995754	com/mojang/a/a	
-FIELD	net/minecraft/unmapped/C_8995754	Z	f_8629289	a	
-FIELD	net/minecraft/unmapped/C_8995754	Ljava/nio/channels/SocketChannel;	f_6794126	b	
-FIELD	net/minecraft/unmapped/C_8995754	Ljava/nio/ByteBuffer;	f_1990451	c	
-FIELD	net/minecraft/unmapped/C_8995754	Ljava/nio/ByteBuffer;	f_4137365	d	
-FIELD	net/minecraft/unmapped/C_8995754	Lnet/minecraft/unmapped/C_3464647;	f_9596163	e	
-FIELD	net/minecraft/unmapped/C_8995754	Ljava/net/Socket;	f_0307332	f	
-FIELD	net/minecraft/unmapped/C_8995754	Z	f_3124921	g	
-FIELD	net/minecraft/unmapped/C_8995754	[B	f_8341920	h	
-METHOD	net/minecraft/unmapped/C_8995754	()V	m_3957784	a	
-METHOD	net/minecraft/unmapped/C_8995754	(Lnet/minecraft/unmapped/C_3600653;[Ljava/lang/Object;)V	m_9207877	a	
-METHOD	net/minecraft/unmapped/C_8995754	(Ljava/lang/Class;)Ljava/lang/Object;	m_9294968	a	
-METHOD	net/minecraft/unmapped/C_8995754	()V	m_1055827	b	
-CLASS	net/minecraft/unmapped/C_9437404	com/mojang/minecraft/b	
-FIELD	net/minecraft/unmapped/C_9437404	Ljava/lang/String;	f_4623692	a	
-FIELD	net/minecraft/unmapped/C_9437404	I	f_5528963	b	
-CLASS	net/minecraft/unmapped/C_9665058	com/mojang/minecraft/level/a	
-FIELD	net/minecraft/unmapped/C_9665058	Lnet/minecraft/client/Minecraft;	f_7071680	a	
-METHOD	net/minecraft/unmapped/C_9665058	(Lnet/minecraft/unmapped/C_3906126;Ljava/io/OutputStream;)V	m_5611887	a	
-METHOD	net/minecraft/unmapped/C_9665058	(Lnet/minecraft/unmapped/C_3906126;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Z	m_5551734	a	
-METHOD	net/minecraft/unmapped/C_9665058	(Ljava/io/InputStream;)Lnet/minecraft/unmapped/C_3906126;	m_7729189	a	
-METHOD	net/minecraft/unmapped/C_9665058	(Ljava/lang/String;Ljava/lang/String;I)Lnet/minecraft/unmapped/C_3906126;	m_2468514	a	
-METHOD	net/minecraft/unmapped/C_9665058	(Ljava/io/InputStream;)Lnet/minecraft/unmapped/C_3906126;	m_2718498	b	
-METHOD	net/minecraft/unmapped/C_9665058	(Ljava/io/InputStream;)[B	m_8590209	c	
-CLASS	net/minecraft/unmapped/C_9856888	com/mojang/minecraft/character/e	
-FIELD	net/minecraft/unmapped/C_9856888	Lnet/minecraft/unmapped/C_0336319;	f_4350793	a	
-FIELD	net/minecraft/unmapped/C_9856888	F	f_5311158	b	
-FIELD	net/minecraft/unmapped/C_9856888	F	f_9595578	c	
-METHOD	net/minecraft/unmapped/C_9856888	(FF)Lnet/minecraft/unmapped/C_9856888;	m_7441866	a	
-CLASS	net/minecraft/unmapped/C_9882464	com/mojang/minecraft/character/a	
-FIELD	net/minecraft/unmapped/C_9882464	Lnet/minecraft/unmapped/C_0289174;	f_0436548	a	
-FIELD	net/minecraft/unmapped/C_9882464	Lnet/minecraft/unmapped/C_0289174;	f_5748350	b	
-FIELD	net/minecraft/unmapped/C_9882464	Lnet/minecraft/unmapped/C_0289174;	f_8008943	c	
-FIELD	net/minecraft/unmapped/C_9882464	Lnet/minecraft/unmapped/C_0289174;	f_5933343	d	
-FIELD	net/minecraft/unmapped/C_9882464	Lnet/minecraft/unmapped/C_0289174;	f_2741912	e	
-FIELD	net/minecraft/unmapped/C_9882464	Lnet/minecraft/unmapped/C_0289174;	f_1336076	f	
-METHOD	net/minecraft/unmapped/C_9882464	(FFFFFF)V	m_5620605	a	
+v1	official	intermediary
+CLASS	com/mojang/a/a	net/minecraft/unmapped/C_8995754
+FIELD	com/mojang/a/a	Z	a	f_8629289
+FIELD	com/mojang/a/a	Ljava/nio/channels/SocketChannel;	b	f_6794126
+FIELD	com/mojang/a/a	Ljava/nio/ByteBuffer;	c	f_1990451
+FIELD	com/mojang/a/a	Ljava/nio/ByteBuffer;	d	f_4137365
+FIELD	com/mojang/a/a	Lcom/mojang/minecraft/net/d;	e	f_9596163
+FIELD	com/mojang/a/a	Ljava/net/Socket;	f	f_0307332
+FIELD	com/mojang/a/a	Z	g	f_3124921
+FIELD	com/mojang/a/a	[B	h	f_8341920
+METHOD	com/mojang/a/a	()V	a	m_3957784
+METHOD	com/mojang/a/a	(Lcom/mojang/minecraft/net/a;[Ljava/lang/Object;)V	a	m_9207877
+METHOD	com/mojang/a/a	(Ljava/lang/Class;)Ljava/lang/Object;	a	m_9294968
+METHOD	com/mojang/a/a	()V	b	m_1055827
+CLASS	com/mojang/minecraft/Entity	com/mojang/minecraft/Entity
+FIELD	com/mojang/minecraft/Entity	F	bbHeight	bbHeight
+FIELD	com/mojang/minecraft/Entity	Lcom/mojang/minecraft/phys/AABB;	bb	bb
+FIELD	com/mojang/minecraft/Entity	F	bbWidth	bbWidth
+FIELD	com/mojang/minecraft/Entity	F	heightOffset	heightOffset
+FIELD	com/mojang/minecraft/Entity	Z	horizontalCollision	horizontalCollision
+FIELD	com/mojang/minecraft/Entity	Lcom/mojang/minecraft/level/Level;	level	level
+FIELD	com/mojang/minecraft/Entity	Z	onGround	onGround
+FIELD	com/mojang/minecraft/Entity	Z	removed	removed
+FIELD	com/mojang/minecraft/Entity	J	serialVersionUID	serialVersionUID
+FIELD	com/mojang/minecraft/Entity	F	x	x
+FIELD	com/mojang/minecraft/Entity	F	xRot	xRot
+FIELD	com/mojang/minecraft/Entity	F	xRotO	xRotO
+FIELD	com/mojang/minecraft/Entity	F	xd	xd
+FIELD	com/mojang/minecraft/Entity	F	xo	xo
+FIELD	com/mojang/minecraft/Entity	F	y	y
+FIELD	com/mojang/minecraft/Entity	F	yRot	yRot
+FIELD	com/mojang/minecraft/Entity	F	yRotO	yRotO
+FIELD	com/mojang/minecraft/Entity	F	yd	yd
+FIELD	com/mojang/minecraft/Entity	F	yo	yo
+FIELD	com/mojang/minecraft/Entity	F	z	z
+FIELD	com/mojang/minecraft/Entity	F	zd	zd
+FIELD	com/mojang/minecraft/Entity	F	zo	zo
+METHOD	com/mojang/minecraft/Entity	()F	getBrightness	getBrightness
+METHOD	com/mojang/minecraft/Entity	(FF)V	interpolateTurn	interpolateTurn
+METHOD	com/mojang/minecraft/Entity	(FFF)Z	isFree	isFree
+METHOD	com/mojang/minecraft/Entity	()Z	isInLava	isInLava
+METHOD	com/mojang/minecraft/Entity	()Z	isInWater	isInWater
+METHOD	com/mojang/minecraft/Entity	()Z	isLit	isLit
+METHOD	com/mojang/minecraft/Entity	(FFF)V	move	move
+METHOD	com/mojang/minecraft/Entity	(FFF)V	moveRelative	moveRelative
+METHOD	com/mojang/minecraft/Entity	(FFFFF)V	moveTo	moveTo
+METHOD	com/mojang/minecraft/Entity	()V	remove	remove
+METHOD	com/mojang/minecraft/Entity	(Lcom/mojang/minecraft/a/a;F)V	render$2a8c5a	render$2a8c5a
+METHOD	com/mojang/minecraft/Entity	()V	resetPos	resetPos
+METHOD	com/mojang/minecraft/Entity	(Lcom/mojang/minecraft/level/Level;)V	setLevel	setLevel
+METHOD	com/mojang/minecraft/Entity	(FFF)V	setPos	setPos
+METHOD	com/mojang/minecraft/Entity	(Lcom/mojang/minecraft/net/b;)V	setPos	setPos
+METHOD	com/mojang/minecraft/Entity	(FF)V	setRot	setRot
+METHOD	com/mojang/minecraft/Entity	(FF)V	setSize	setSize
+METHOD	com/mojang/minecraft/Entity	()V	tick	tick
+METHOD	com/mojang/minecraft/Entity	(FF)V	turn	turn
+CLASS	com/mojang/minecraft/MinecraftApplet	com/mojang/minecraft/MinecraftApplet
+FIELD	com/mojang/minecraft/MinecraftApplet	Ljava/awt/Canvas;	canvas	f_8056441
+FIELD	com/mojang/minecraft/MinecraftApplet	Lcom/mojang/minecraft/d;	minecraft	f_3418168
+FIELD	com/mojang/minecraft/MinecraftApplet	Ljava/lang/Thread;	thread	f_5361016
+METHOD	com/mojang/minecraft/MinecraftApplet	()V	startGameThread	m_0146433
+METHOD	com/mojang/minecraft/MinecraftApplet	()V	stopGameThread	m_0730519
+CLASS	com/mojang/minecraft/MinecraftApplet$1	net/minecraft/unmapped/C_5746331
+FIELD	com/mojang/minecraft/MinecraftApplet$1	Lcom/mojang/minecraft/MinecraftApplet;	this$0	f_4508920
+CLASS	com/mojang/minecraft/StopGameException	net/minecraft/unmapped/C_8770355
+CLASS	com/mojang/minecraft/a	net/minecraft/unmapped/C_3172064
+FIELD	com/mojang/minecraft/a	Ljava/util/List;	a	f_7459865
+FIELD	com/mojang/minecraft/a	Ljava/lang/String;	b	f_6779482
+FIELD	com/mojang/minecraft/a	Ljava/lang/String;	c	f_1305529
+FIELD	com/mojang/minecraft/a	Ljava/lang/String;	d	f_2577321
+CLASS	com/mojang/minecraft/a/a	net/minecraft/unmapped/C_3385278
+FIELD	com/mojang/minecraft/a/a	Ljava/nio/IntBuffer;	a	f_8164263
+FIELD	com/mojang/minecraft/a/a	Ljava/nio/ByteBuffer;	b	f_2030366
+FIELD	com/mojang/minecraft/a/a	Ljava/util/List;	c	f_2948969
+FIELD	com/mojang/minecraft/a/a	Ljava/util/HashMap;	d	f_3266729
+METHOD	com/mojang/minecraft/a/a	(Lcom/mojang/minecraft/a/a/c;)V	a	m_6962185
+METHOD	com/mojang/minecraft/a/a	(Ljava/awt/image/BufferedImage;)I	a	m_5303716
+METHOD	com/mojang/minecraft/a/a	(Ljava/lang/String;)I	a	m_6177175
+CLASS	com/mojang/minecraft/a/a/a	net/minecraft/unmapped/C_1350810
+FIELD	com/mojang/minecraft/a/a/a	[F	c	f_8300376
+FIELD	com/mojang/minecraft/a/a/a	[F	d	f_0115449
+FIELD	com/mojang/minecraft/a/a/a	[F	e	f_8901516
+FIELD	com/mojang/minecraft/a/a/a	[F	f	f_2310438
+CLASS	com/mojang/minecraft/a/a/b	net/minecraft/unmapped/C_5897181
+FIELD	com/mojang/minecraft/a/a/b	[F	c	f_6274011
+FIELD	com/mojang/minecraft/a/a/b	[F	d	f_5170750
+FIELD	com/mojang/minecraft/a/a/b	[F	e	f_0643547
+FIELD	com/mojang/minecraft/a/a/b	[F	f	f_9790267
+FIELD	com/mojang/minecraft/a/a/b	I	g	f_0273574
+CLASS	com/mojang/minecraft/a/a/c	net/minecraft/unmapped/C_3544790
+FIELD	com/mojang/minecraft/a/a/c	[B	a	f_5732441
+FIELD	com/mojang/minecraft/a/a/c	I	b	f_7672603
+METHOD	com/mojang/minecraft/a/a/c	()V	a	m_4399705
+CLASS	com/mojang/minecraft/a/b	net/minecraft/unmapped/C_8688622
+FIELD	com/mojang/minecraft/a/b	Lcom/mojang/minecraft/player/Player;	a	f_9491045
+CLASS	com/mojang/minecraft/a/c	net/minecraft/unmapped/C_2334550
+FIELD	com/mojang/minecraft/a/c	Lcom/mojang/minecraft/a/c;	a	f_9148274
+FIELD	com/mojang/minecraft/a/c	Ljava/nio/FloatBuffer;	b	f_8094244
+FIELD	com/mojang/minecraft/a/c	[F	c	f_8611150
+FIELD	com/mojang/minecraft/a/c	I	d	f_2619375
+FIELD	com/mojang/minecraft/a/c	F	e	f_1689112
+FIELD	com/mojang/minecraft/a/c	F	f	f_7046269
+FIELD	com/mojang/minecraft/a/c	F	g	f_6105193
+FIELD	com/mojang/minecraft/a/c	F	h	f_8671849
+FIELD	com/mojang/minecraft/a/c	F	i	f_9116781
+FIELD	com/mojang/minecraft/a/c	Z	j	f_2402650
+FIELD	com/mojang/minecraft/a/c	Z	k	f_4774726
+FIELD	com/mojang/minecraft/a/c	I	l	f_3590856
+FIELD	com/mojang/minecraft/a/c	I	m	f_9540616
+FIELD	com/mojang/minecraft/a/c	Z	n	f_5362588
+METHOD	com/mojang/minecraft/a/c	()V	a	m_9115048
+METHOD	com/mojang/minecraft/a/c	(FFF)V	a	m_0870881
+METHOD	com/mojang/minecraft/a/c	(FFFFF)V	a	m_7710685
+METHOD	com/mojang/minecraft/a/c	(I)V	a	m_2290737
+METHOD	com/mojang/minecraft/a/c	(III)V	a	m_5703686
+METHOD	com/mojang/minecraft/a/c	()V	b	m_5139550
+METHOD	com/mojang/minecraft/a/c	(FFF)V	b	m_6740062
+METHOD	com/mojang/minecraft/a/c	()V	c	m_6994600
+METHOD	com/mojang/minecraft/a/c	()V	d	m_1972655
+CLASS	com/mojang/minecraft/a/d	net/minecraft/unmapped/C_8199124
+FIELD	com/mojang/minecraft/a/d	[[F	a	f_2943825
+FIELD	com/mojang/minecraft/a/d	Lcom/mojang/minecraft/a/d;	b	f_3284628
+FIELD	com/mojang/minecraft/a/d	Ljava/nio/FloatBuffer;	c	f_7388569
+FIELD	com/mojang/minecraft/a/d	Ljava/nio/FloatBuffer;	d	f_6924582
+FIELD	com/mojang/minecraft/a/d	Ljava/nio/FloatBuffer;	e	f_9644453
+FIELD	com/mojang/minecraft/a/d	[F	f	f_6016742
+FIELD	com/mojang/minecraft/a/d	[F	g	f_3267753
+FIELD	com/mojang/minecraft/a/d	[F	h	f_8138591
+METHOD	com/mojang/minecraft/a/d	()Lcom/mojang/minecraft/a/d;	a	m_4703353
+METHOD	com/mojang/minecraft/a/d	(FFFFFF)Z	a	m_7203488
+METHOD	com/mojang/minecraft/a/d	(Lcom/mojang/minecraft/phys/AABB;)Z	a	m_0183273
+METHOD	com/mojang/minecraft/a/d	([[FI)V	a	m_5256054
+CLASS	com/mojang/minecraft/a/e	net/minecraft/unmapped/C_2813741
+FIELD	com/mojang/minecraft/a/e	Lcom/mojang/minecraft/player/Player;	a	f_6258221
+CLASS	com/mojang/minecraft/a/f	net/minecraft/unmapped/C_5283200
+FIELD	com/mojang/minecraft/a/f	I	a	f_5922577
+FIELD	com/mojang/minecraft/a/f	Z	b	f_0382305
+FIELD	com/mojang/minecraft/a/f	Lcom/mojang/minecraft/level/Level;	c	f_1045625
+FIELD	com/mojang/minecraft/a/f	I	d	f_6923294
+FIELD	com/mojang/minecraft/a/f	Lcom/mojang/minecraft/a/c;	e	f_6896073
+FIELD	com/mojang/minecraft/a/f	I	f	f_7537396
+FIELD	com/mojang/minecraft/a/f	I	g	f_1919969
+FIELD	com/mojang/minecraft/a/f	I	h	f_9635507
+FIELD	com/mojang/minecraft/a/f	I	i	f_2412601
+FIELD	com/mojang/minecraft/a/f	I	j	f_5060052
+FIELD	com/mojang/minecraft/a/f	I	k	f_2483070
+FIELD	com/mojang/minecraft/a/f	[Z	l	f_6592967
+METHOD	com/mojang/minecraft/a/f	()V	a	m_6088480
+METHOD	com/mojang/minecraft/a/f	(Lcom/mojang/minecraft/a/d;)V	a	m_5092852
+METHOD	com/mojang/minecraft/a/f	(Lcom/mojang/minecraft/player/Player;)F	a	m_9608130
+METHOD	com/mojang/minecraft/a/f	(Ljava/nio/IntBuffer;I)V	a	m_8783499
+METHOD	com/mojang/minecraft/a/f	()V	b	m_0330444
+METHOD	com/mojang/minecraft/a/f	()V	c	m_0499834
+CLASS	com/mojang/minecraft/a/g	net/minecraft/unmapped/C_1044273
+FIELD	com/mojang/minecraft/a/g	Lcom/mojang/minecraft/level/Level;	a	f_4415583
+FIELD	com/mojang/minecraft/a/g	Lcom/mojang/minecraft/a/a;	b	f_9220461
+FIELD	com/mojang/minecraft/a/g	I	c	f_0437423
+FIELD	com/mojang/minecraft/a/g	I	d	f_9039970
+FIELD	com/mojang/minecraft/a/g	Ljava/nio/IntBuffer;	e	f_2125993
+FIELD	com/mojang/minecraft/a/g	Ljava/util/Set;	f	f_5607847
+FIELD	com/mojang/minecraft/a/g	[Lcom/mojang/minecraft/a/f;	g	f_6979547
+FIELD	com/mojang/minecraft/a/g	I	h	f_4574005
+FIELD	com/mojang/minecraft/a/g	[Lcom/mojang/minecraft/a/f;	i	f_9451185
+FIELD	com/mojang/minecraft/a/g	I	j	f_0904057
+FIELD	com/mojang/minecraft/a/g	I	k	f_3933893
+FIELD	com/mojang/minecraft/a/g	I	l	f_4898986
+FIELD	com/mojang/minecraft/a/g	I	m	f_2783901
+FIELD	com/mojang/minecraft/a/g	F	n	f_3320356
+FIELD	com/mojang/minecraft/a/g	F	o	f_1619923
+FIELD	com/mojang/minecraft/a/g	F	p	f_4269846
+METHOD	com/mojang/minecraft/a/g	()V	a	m_8889498
+METHOD	com/mojang/minecraft/a/g	(F)V	a	m_3907130
+METHOD	com/mojang/minecraft/a/g	(III)V	a	m_1486881
+METHOD	com/mojang/minecraft/a/g	(IIIIII)V	a	m_6084899
+METHOD	com/mojang/minecraft/a/g	(Lcom/mojang/minecraft/a/d;F)V	a	m_7867114
+METHOD	com/mojang/minecraft/a/g	(Lcom/mojang/minecraft/e;I)V	a	m_5985063
+METHOD	com/mojang/minecraft/a/g	(Lcom/mojang/minecraft/player/Player;I)I	a	m_8682700
+METHOD	com/mojang/minecraft/a/g	(Lcom/mojang/minecraft/player/Player;Lcom/mojang/minecraft/e;II)V	a	m_3006844
+CLASS	com/mojang/minecraft/b	net/minecraft/unmapped/C_9437404
+FIELD	com/mojang/minecraft/b	Ljava/lang/String;	a	f_4623692
+FIELD	com/mojang/minecraft/b	I	b	f_5528963
+CLASS	com/mojang/minecraft/b/a	net/minecraft/unmapped/C_3699792
+FIELD	com/mojang/minecraft/b/a	Ljava/util/List;	a	f_9851646
+FIELD	com/mojang/minecraft/b/a	Lcom/mojang/minecraft/d;	b	f_5266056
+FIELD	com/mojang/minecraft/b/a	I	c	f_0775750
+FIELD	com/mojang/minecraft/b/a	I	d	f_8519063
+METHOD	com/mojang/minecraft/b/a	()V	a	m_1122306
+METHOD	com/mojang/minecraft/b/a	(IIIIII)V	a	m_6628097
+CLASS	com/mojang/minecraft/b/b	net/minecraft/unmapped/C_1525636
+FIELD	com/mojang/minecraft/b/b	Lcom/mojang/minecraft/b/f;	f	f_7387990
+FIELD	com/mojang/minecraft/b/b	Ljava/lang/String;	g	f_5633768
+FIELD	com/mojang/minecraft/b/b	I	h	f_6675555
+FIELD	com/mojang/minecraft/b/b	Ljava/lang/String;	i	f_0866064
+FIELD	com/mojang/minecraft/b/b	I	j	f_2617005
+CLASS	com/mojang/minecraft/b/c	net/minecraft/unmapped/C_5169041
+FIELD	com/mojang/minecraft/b/c	Ljava/lang/String;	f	f_0533128
+FIELD	com/mojang/minecraft/b/c	I	g	f_9208767
+CLASS	com/mojang/minecraft/b/d	net/minecraft/unmapped/C_5691640
+METHOD	com/mojang/minecraft/b/d	(II)I	b	m_5484728
+CLASS	com/mojang/minecraft/b/e	net/minecraft/unmapped/C_1017062
+CLASS	com/mojang/minecraft/b/f	net/minecraft/unmapped/C_0786431
+FIELD	com/mojang/minecraft/b/f	Lcom/mojang/minecraft/d;	a	f_5807102
+FIELD	com/mojang/minecraft/b/f	I	b	f_3016493
+FIELD	com/mojang/minecraft/b/f	I	c	f_3368919
+FIELD	com/mojang/minecraft/b/f	Ljava/util/List;	d	f_3767855
+FIELD	com/mojang/minecraft/b/f	Z	e	f_5666652
+METHOD	com/mojang/minecraft/b/f	()V	a	m_2060594
+METHOD	com/mojang/minecraft/b/f	(CI)V	a	m_2815482
+METHOD	com/mojang/minecraft/b/f	(II)V	a	m_3426670
+METHOD	com/mojang/minecraft/b/f	(III)V	a	m_9746540
+METHOD	com/mojang/minecraft/b/f	(IIIII)V	a	m_2880262
+METHOD	com/mojang/minecraft/b/f	(IIIIII)V	a	m_0931055
+METHOD	com/mojang/minecraft/b/f	(Lcom/mojang/minecraft/b/g;)V	a	m_9403981
+METHOD	com/mojang/minecraft/b/f	(Lcom/mojang/minecraft/d;II)V	a	m_8202425
+METHOD	com/mojang/minecraft/b/f	(Ljava/lang/String;III)V	a	m_1082129
+METHOD	com/mojang/minecraft/b/f	()V	b	m_5056964
+METHOD	com/mojang/minecraft/b/f	(Ljava/lang/String;III)V	b	m_4604480
+METHOD	com/mojang/minecraft/b/f	()V	c	m_7135145
+METHOD	com/mojang/minecraft/b/f	()V	d	m_1498751
+METHOD	com/mojang/minecraft/b/f	()V	e	m_7974146
+CLASS	com/mojang/minecraft/b/g	net/minecraft/unmapped/C_2621421
+FIELD	com/mojang/minecraft/b/g	I	a	f_0196761
+FIELD	com/mojang/minecraft/b/g	I	b	f_6898817
+FIELD	com/mojang/minecraft/b/g	I	c	f_9324441
+FIELD	com/mojang/minecraft/b/g	I	d	f_2585197
+FIELD	com/mojang/minecraft/b/g	Ljava/lang/String;	e	f_1547282
+FIELD	com/mojang/minecraft/b/g	I	f	f_1932931
+FIELD	com/mojang/minecraft/b/g	Z	g	f_0197900
+FIELD	com/mojang/minecraft/b/g	Z	h	f_5948919
+CLASS	com/mojang/minecraft/b/h	net/minecraft/unmapped/C_4393193
+FIELD	com/mojang/minecraft/b/h	Lcom/mojang/minecraft/b/f;	f	f_4216179
+CLASS	com/mojang/minecraft/b/i	net/minecraft/unmapped/C_5540851
+FIELD	com/mojang/minecraft/b/i	Ljava/lang/String;	f	f_0810697
+FIELD	com/mojang/minecraft/b/i	Lcom/mojang/minecraft/b/f;	g	f_8404091
+FIELD	com/mojang/minecraft/b/i	Z	h	f_1196307
+FIELD	com/mojang/minecraft/b/i	Z	i	f_6250022
+FIELD	com/mojang/minecraft/b/i	[Ljava/lang/String;	j	f_2151156
+FIELD	com/mojang/minecraft/b/i	Ljava/lang/String;	k	f_5758365
+METHOD	com/mojang/minecraft/b/i	(I)V	a	m_7286993
+METHOD	com/mojang/minecraft/b/i	([Ljava/lang/String;)V	a	m_1871619
+CLASS	com/mojang/minecraft/b/j	net/minecraft/unmapped/C_4643161
+FIELD	com/mojang/minecraft/b/j	Ljava/lang/String;	f	f_9782510
+FIELD	com/mojang/minecraft/b/j	Ljava/lang/String;	g	f_1751895
+CLASS	com/mojang/minecraft/b/k	net/minecraft/unmapped/C_0388903
+CLASS	com/mojang/minecraft/b/l	net/minecraft/unmapped/C_4766485
+FIELD	com/mojang/minecraft/b/l	[I	a	f_4822011
+FIELD	com/mojang/minecraft/b/l	I	b	f_6728583
+METHOD	com/mojang/minecraft/b/l	(Ljava/lang/String;)I	a	m_3908105
+METHOD	com/mojang/minecraft/b/l	(Ljava/lang/String;III)V	a	m_4507504
+METHOD	com/mojang/minecraft/b/l	(Ljava/lang/String;IIIZ)V	a	m_3272628
+METHOD	com/mojang/minecraft/b/l	(Ljava/lang/String;III)V	b	m_5762160
+CLASS	com/mojang/minecraft/c	net/minecraft/unmapped/C_5974036
+FIELD	com/mojang/minecraft/c	F	a	f_5342306
+FIELD	com/mojang/minecraft/c	D	b	f_7086038
+FIELD	com/mojang/minecraft/c	I	c	f_9607039
+FIELD	com/mojang/minecraft/c	F	d	f_1547140
+FIELD	com/mojang/minecraft/c	F	e	f_3981960
+FIELD	com/mojang/minecraft/c	F	f	f_6634432
+FIELD	com/mojang/minecraft/c	J	g	f_8152395
+FIELD	com/mojang/minecraft/c	J	h	f_7610845
+FIELD	com/mojang/minecraft/c	D	i	f_3503925
+CLASS	com/mojang/minecraft/character/Zombie	com/mojang/minecraft/character/Zombie
+FIELD	com/mojang/minecraft/character/Zombie	Lcom/mojang/minecraft/character/a;	a	a
+FIELD	com/mojang/minecraft/character/Zombie	F	rotA	rotA
+FIELD	com/mojang/minecraft/character/Zombie	F	rot	rot
+FIELD	com/mojang/minecraft/character/Zombie	J	serialVersionUID	serialVersionUID
+FIELD	com/mojang/minecraft/character/Zombie	F	speed	speed
+FIELD	com/mojang/minecraft/character/Zombie	F	timeOffs	timeOffs
+CLASS	com/mojang/minecraft/character/a	net/minecraft/unmapped/C_7898033
+FIELD	com/mojang/minecraft/character/a	Lcom/mojang/minecraft/character/d;	a	f_6250892
+FIELD	com/mojang/minecraft/character/a	Lcom/mojang/minecraft/character/d;	b	f_4812958
+FIELD	com/mojang/minecraft/character/a	Lcom/mojang/minecraft/character/d;	c	f_9339598
+FIELD	com/mojang/minecraft/character/a	Lcom/mojang/minecraft/character/d;	d	f_7661525
+FIELD	com/mojang/minecraft/character/a	Lcom/mojang/minecraft/character/d;	e	f_0860911
+FIELD	com/mojang/minecraft/character/a	Lcom/mojang/minecraft/character/d;	f	f_9956807
+METHOD	com/mojang/minecraft/character/a	(FFFFFF)V	a	m_2584069
+CLASS	com/mojang/minecraft/character/b	net/minecraft/unmapped/C_3589148
+FIELD	com/mojang/minecraft/character/b	[Lcom/mojang/minecraft/character/e;	a	f_2471300
+CLASS	com/mojang/minecraft/character/c	net/minecraft/unmapped/C_0336319
+FIELD	com/mojang/minecraft/character/c	F	a	f_1625353
+FIELD	com/mojang/minecraft/character/c	F	b	f_4544943
+FIELD	com/mojang/minecraft/character/c	F	c	f_9811199
+METHOD	com/mojang/minecraft/character/c	()Lcom/mojang/minecraft/character/c;	a	m_6409794
+METHOD	com/mojang/minecraft/character/c	(Lcom/mojang/minecraft/character/c;)Lcom/mojang/minecraft/character/c;	a	m_2803106
+CLASS	com/mojang/minecraft/character/d	net/minecraft/unmapped/C_0289174
+FIELD	com/mojang/minecraft/character/d	F	a	f_4296307
+FIELD	com/mojang/minecraft/character/d	F	b	f_5432517
+FIELD	com/mojang/minecraft/character/d	F	c	f_0768495
+FIELD	com/mojang/minecraft/character/d	[Lcom/mojang/minecraft/character/e;	d	f_4964947
+FIELD	com/mojang/minecraft/character/d	[Lcom/mojang/minecraft/character/b;	e	f_0337920
+FIELD	com/mojang/minecraft/character/d	I	f	f_3780787
+FIELD	com/mojang/minecraft/character/d	I	g	f_4434142
+FIELD	com/mojang/minecraft/character/d	F	h	f_8501929
+FIELD	com/mojang/minecraft/character/d	F	i	f_8710519
+FIELD	com/mojang/minecraft/character/d	F	j	f_2757164
+FIELD	com/mojang/minecraft/character/d	Z	k	f_7948508
+FIELD	com/mojang/minecraft/character/d	I	l	f_3894400
+METHOD	com/mojang/minecraft/character/d	(F)V	a	m_8346450
+METHOD	com/mojang/minecraft/character/d	(FFF)V	a	m_4478491
+METHOD	com/mojang/minecraft/character/d	(FFFIII)V	a	m_7902911
+CLASS	com/mojang/minecraft/character/e	net/minecraft/unmapped/C_9856888
+FIELD	com/mojang/minecraft/character/e	Lcom/mojang/minecraft/character/c;	a	f_4350793
+FIELD	com/mojang/minecraft/character/e	F	b	f_5311158
+FIELD	com/mojang/minecraft/character/e	F	c	f_9595578
+METHOD	com/mojang/minecraft/character/e	(FF)Lcom/mojang/minecraft/character/e;	a	m_7441866
+CLASS	com/mojang/minecraft/d	net/minecraft/client/Minecraft
+FIELD	com/mojang/minecraft/d	Lcom/mojang/minecraft/particle/a;	A	f_1759878
+FIELD	com/mojang/minecraft/d	Ljava/awt/Canvas;	B	f_2875400
+FIELD	com/mojang/minecraft/d	Lorg/lwjgl/input/Cursor;	C	f_5333905
+FIELD	com/mojang/minecraft/d	I	D	f_6184923
+FIELD	com/mojang/minecraft/d	I	E	f_0440810
+FIELD	com/mojang/minecraft/d	Lcom/mojang/minecraft/level/b/a;	F	f_0254108
+FIELD	com/mojang/minecraft/d	I	G	f_2615354
+FIELD	com/mojang/minecraft/d	Ljava/awt/Robot;	H	f_9154570
+FIELD	com/mojang/minecraft/d	Lcom/mojang/minecraft/b/a;	I	f_8446821
+FIELD	com/mojang/minecraft/d	F	J	f_9762585
+FIELD	com/mojang/minecraft/d	F	K	f_7808593
+FIELD	com/mojang/minecraft/d	F	L	f_0991746
+FIELD	com/mojang/minecraft/d	Z	M	f_0682520
+FIELD	com/mojang/minecraft/d	I	N	f_7539337
+FIELD	com/mojang/minecraft/d	F	O	f_0224003
+FIELD	com/mojang/minecraft/d	Lcom/mojang/minecraft/e;	P	f_3091378
+FIELD	com/mojang/minecraft/d	F	Q	f_9356698
+FIELD	com/mojang/minecraft/d	Z	R	f_2099688
+FIELD	com/mojang/minecraft/d	I	S	f_5984003
+FIELD	com/mojang/minecraft/d	I	T	f_4890835
+FIELD	com/mojang/minecraft/d	Ljava/nio/FloatBuffer;	U	f_6477821
+FIELD	com/mojang/minecraft/d	Ljava/lang/String;	V	f_0125064
+FIELD	com/mojang/minecraft/d	Ljava/lang/String;	W	f_3100662
+FIELD	com/mojang/minecraft/d	I	a	f_5137568
+FIELD	com/mojang/minecraft/d	I	b	f_9273317
+FIELD	com/mojang/minecraft/d	Lcom/mojang/minecraft/level/Level;	c	f_5337597
+FIELD	com/mojang/minecraft/d	Lcom/mojang/minecraft/player/Player;	d	f_5473933
+FIELD	com/mojang/minecraft/d	Lcom/mojang/minecraft/a;	e	f_8811754
+FIELD	com/mojang/minecraft/d	Ljava/lang/String;	f	f_1371651
+FIELD	com/mojang/minecraft/d	Z	g	f_7579809
+FIELD	com/mojang/minecraft/d	Z	h	f_1866091
+FIELD	com/mojang/minecraft/d	Lcom/mojang/minecraft/a/a;	i	f_1050021
+FIELD	com/mojang/minecraft/d	Lcom/mojang/minecraft/b/l;	j	f_0935328
+FIELD	com/mojang/minecraft/d	Lcom/mojang/minecraft/b/f;	k	f_4327097
+FIELD	com/mojang/minecraft/d	Lcom/mojang/minecraft/level/a;	l	f_1737492
+FIELD	com/mojang/minecraft/d	Ljava/lang/String;	m	f_6753290
+FIELD	com/mojang/minecraft/d	I	n	f_5242116
+FIELD	com/mojang/minecraft/d	Lcom/mojang/minecraft/net/d;	o	f_9951748
+FIELD	com/mojang/minecraft/d	Ljava/lang/String;	p	f_9991059
+FIELD	com/mojang/minecraft/d	I	q	f_0132506
+FIELD	com/mojang/minecraft/d	Z	r	f_5170474
+FIELD	com/mojang/minecraft/d	Ljava/lang/String;	s	f_8891450
+FIELD	com/mojang/minecraft/d	Z	t	f_4909729
+FIELD	com/mojang/minecraft/d	Lcom/mojang/minecraft/character/a;	u	f_3067732
+FIELD	com/mojang/minecraft/d	Z	v	f_9483415
+FIELD	com/mojang/minecraft/d	Ljava/nio/FloatBuffer;	w	f_2682162
+FIELD	com/mojang/minecraft/d	Ljava/nio/FloatBuffer;	x	f_4839363
+FIELD	com/mojang/minecraft/d	Lcom/mojang/minecraft/c;	y	f_4204214
+FIELD	com/mojang/minecraft/d	Lcom/mojang/minecraft/a/g;	z	f_6874361
+METHOD	com/mojang/minecraft/d	()V	a	m_5537798
+METHOD	com/mojang/minecraft/d	(F)V	a	m_0675932
+METHOD	com/mojang/minecraft/d	(FFFF)Ljava/nio/FloatBuffer;	a	m_8273881
+METHOD	com/mojang/minecraft/d	(I)V	a	m_6284575
+METHOD	com/mojang/minecraft/d	(Lcom/mojang/minecraft/b/f;)V	a	m_2721855
+METHOD	com/mojang/minecraft/d	(Lcom/mojang/minecraft/level/Level;)V	a	m_6427459
+METHOD	com/mojang/minecraft/d	(Ljava/lang/String;)V	a	m_3461043
+METHOD	com/mojang/minecraft/d	(Ljava/lang/String;I)Z	a	m_8752834
+METHOD	com/mojang/minecraft/d	(Z)V	a	m_6824580
+METHOD	com/mojang/minecraft/d	()V	b	m_7502890
+METHOD	com/mojang/minecraft/d	(I)V	b	m_6392526
+METHOD	com/mojang/minecraft/d	(Ljava/lang/String;)V	b	m_6843433
+METHOD	com/mojang/minecraft/d	()V	c	m_2422356
+METHOD	com/mojang/minecraft/d	(Ljava/lang/String;)V	c	m_5014509
+METHOD	com/mojang/minecraft/d	()V	d	m_7834074
+METHOD	com/mojang/minecraft/d	(Ljava/lang/String;)V	d	m_0572353
+METHOD	com/mojang/minecraft/d	()V	e	m_5678101
+METHOD	com/mojang/minecraft/d	()V	f	m_2590710
+METHOD	com/mojang/minecraft/d	()Z	g	m_7044458
+METHOD	com/mojang/minecraft/d	()V	h	m_1963333
+CLASS	com/mojang/minecraft/e	net/minecraft/unmapped/C_5853518
+FIELD	com/mojang/minecraft/e	I	a	f_0070115
+FIELD	com/mojang/minecraft/e	I	b	f_6536619
+FIELD	com/mojang/minecraft/e	I	c	f_6309744
+FIELD	com/mojang/minecraft/e	I	d	f_5340853
+CLASS	com/mojang/minecraft/level/Level	com/mojang/minecraft/level/Level
+FIELD	com/mojang/minecraft/level/Level	Ljava/util/ArrayList;	a	a
+FIELD	com/mojang/minecraft/level/Level	[I	b	b
+FIELD	com/mojang/minecraft/level/Level	[B	blocks	blocks
+FIELD	com/mojang/minecraft/level/Level	Ljava/util/Random;	c	c
+FIELD	com/mojang/minecraft/level/Level	J	createTime	createTime
+FIELD	com/mojang/minecraft/level/Level	Ljava/lang/String;	creator	creator
+FIELD	com/mojang/minecraft/level/Level	I	d	d
+FIELD	com/mojang/minecraft/level/Level	I	depth	depth
+FIELD	com/mojang/minecraft/level/Level	Ljava/util/ArrayList;	e	e
+FIELD	com/mojang/minecraft/level/Level	Ljava/util/ArrayList;	entities	entities
+FIELD	com/mojang/minecraft/level/Level	I	height	height
+FIELD	com/mojang/minecraft/level/Level	Ljava/lang/String;	name	name
+FIELD	com/mojang/minecraft/level/Level	Z	networkMode	networkMode
+FIELD	com/mojang/minecraft/level/Level	F	rotSpawn	rotSpawn
+FIELD	com/mojang/minecraft/level/Level	J	serialVersionUID	serialVersionUID
+FIELD	com/mojang/minecraft/level/Level	I	tickCount	tickCount
+FIELD	com/mojang/minecraft/level/Level	I	unprocessed	unprocessed
+FIELD	com/mojang/minecraft/level/Level	I	width	width
+FIELD	com/mojang/minecraft/level/Level	I	xSpawn	xSpawn
+FIELD	com/mojang/minecraft/level/Level	I	ySpawn	ySpawn
+FIELD	com/mojang/minecraft/level/Level	I	zSpawn	zSpawn
+METHOD	com/mojang/minecraft/level/Level	(FFF)Z	a	a
+METHOD	com/mojang/minecraft/level/Level	(III)Z	a	a
+METHOD	com/mojang/minecraft/level/Level	(IIII)V	a	a
+METHOD	com/mojang/minecraft/level/Level	(Lcom/mojang/minecraft/a/g;)V	addListener$74652038	addListener$74652038
+METHOD	com/mojang/minecraft/level/Level	(IIII)V	addToTickNextTick	addToTickNextTick
+METHOD	com/mojang/minecraft/level/Level	(IIII)V	calcLightDepths	calcLightDepths
+METHOD	com/mojang/minecraft/level/Level	(Lcom/mojang/minecraft/character/c;Lcom/mojang/minecraft/character/c;)Lcom/mojang/minecraft/e;	clip	clip
+METHOD	com/mojang/minecraft/level/Level	(Lcom/mojang/minecraft/phys/AABB;)Z	containsAnyLiquid	containsAnyLiquid
+METHOD	com/mojang/minecraft/level/Level	(Lcom/mojang/minecraft/phys/AABB;Lcom/mojang/minecraft/level/c/a;)Z	containsLiquid	containsLiquid
+METHOD	com/mojang/minecraft/level/Level	()[B	copyBlocks	copyBlocks
+METHOD	com/mojang/minecraft/level/Level	()V	findSpawn	findSpawn
+METHOD	com/mojang/minecraft/level/Level	(III)F	getBrightness	getBrightness
+METHOD	com/mojang/minecraft/level/Level	(FFFF)F	getCaveness	getCaveness
+METHOD	com/mojang/minecraft/level/Level	(Lcom/mojang/minecraft/Entity;)F	getCaveness	getCaveness
+METHOD	com/mojang/minecraft/level/Level	(Lcom/mojang/minecraft/phys/AABB;)Ljava/util/ArrayList;	getCubes	getCubes
+METHOD	com/mojang/minecraft/level/Level	()F	getGroundLevel	getGroundLevel
+METHOD	com/mojang/minecraft/level/Level	(II)I	getHighestTile	getHighestTile
+METHOD	com/mojang/minecraft/level/Level	(III)I	getTile	getTile
+METHOD	com/mojang/minecraft/level/Level	()F	getWaterLevel	getWaterLevel
+METHOD	com/mojang/minecraft/level/Level	()V	initTransient	initTransient
+METHOD	com/mojang/minecraft/level/Level	(Lcom/mojang/minecraft/phys/AABB;)Z	isFree	isFree
+METHOD	com/mojang/minecraft/level/Level	(III)Z	isLightBlocker	isLightBlocker
+METHOD	com/mojang/minecraft/level/Level	(III)Z	isLit	isLit
+METHOD	com/mojang/minecraft/level/Level	(FFFF)Z	isSolid	isSolid
+METHOD	com/mojang/minecraft/level/Level	(III)Z	isSolidTile	isSolidTile
+METHOD	com/mojang/minecraft/level/Level	(III)Z	isWater	isWater
+METHOD	com/mojang/minecraft/level/Level	(IIII)Z	netSetTile	netSetTile
+METHOD	com/mojang/minecraft/level/Level	(IIII)Z	netSetTileNoNeighborChange	netSetTileNoNeighborChange
+METHOD	com/mojang/minecraft/level/Level	(Lcom/mojang/minecraft/a/g;)V	removeListener$74652038	removeListener$74652038
+METHOD	com/mojang/minecraft/level/Level	(III[B)V	setData	setData
+METHOD	com/mojang/minecraft/level/Level	(Z)V	setNetworkMode	setNetworkMode
+METHOD	com/mojang/minecraft/level/Level	(IIIF)V	setSpawnPos	setSpawnPos
+METHOD	com/mojang/minecraft/level/Level	(IIII)Z	setTile	setTile
+METHOD	com/mojang/minecraft/level/Level	(IIII)Z	setTileNoNeighborChange	setTileNoNeighborChange
+METHOD	com/mojang/minecraft/level/Level	(IIII)Z	setTileNoUpdate	setTileNoUpdate
+METHOD	com/mojang/minecraft/level/Level	(IIIIII)V	swap	swap
+METHOD	com/mojang/minecraft/level/Level	()V	tick	tick
+METHOD	com/mojang/minecraft/level/Level	()V	tickEntities	tickEntities
+METHOD	com/mojang/minecraft/level/Level	(IIII)V	updateNeighborsAt	updateNeighborsAt
+CLASS	com/mojang/minecraft/level/a	net/minecraft/unmapped/C_9665058
+FIELD	com/mojang/minecraft/level/a	Lcom/mojang/minecraft/d;	a	f_7071680
+METHOD	com/mojang/minecraft/level/a	(Lcom/mojang/minecraft/level/Level;Ljava/io/OutputStream;)V	a	m_5611887
+METHOD	com/mojang/minecraft/level/a	(Lcom/mojang/minecraft/level/Level;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Z	a	m_5551734
+METHOD	com/mojang/minecraft/level/a	(Ljava/io/InputStream;)Lcom/mojang/minecraft/level/Level;	a	m_7729189
+METHOD	com/mojang/minecraft/level/a	(Ljava/lang/String;Ljava/lang/String;I)Lcom/mojang/minecraft/level/Level;	a	m_2468514
+METHOD	com/mojang/minecraft/level/a	(Ljava/io/InputStream;)Lcom/mojang/minecraft/level/Level;	b	m_2718498
+METHOD	com/mojang/minecraft/level/a	(Ljava/io/InputStream;)[B	c	m_8590209
+CLASS	com/mojang/minecraft/level/a/a	net/minecraft/unmapped/C_3635204
+FIELD	com/mojang/minecraft/level/a/a	Lcom/mojang/minecraft/level/a/a;	A	f_4166470
+FIELD	com/mojang/minecraft/level/a/a	Lcom/mojang/minecraft/level/a/a;	B	f_9045368
+FIELD	com/mojang/minecraft/level/a/a	Lcom/mojang/minecraft/level/a/a;	C	f_1241397
+FIELD	com/mojang/minecraft/level/a/a	Lcom/mojang/minecraft/level/a/a;	D	f_6684845
+FIELD	com/mojang/minecraft/level/a/a	Lcom/mojang/minecraft/level/a/a;	E	f_2576680
+FIELD	com/mojang/minecraft/level/a/a	Lcom/mojang/minecraft/level/a/a;	F	f_1913310
+FIELD	com/mojang/minecraft/level/a/a	Lcom/mojang/minecraft/level/a/a;	G	f_1076717
+FIELD	com/mojang/minecraft/level/a/a	Lcom/mojang/minecraft/level/a/a;	H	f_0541245
+FIELD	com/mojang/minecraft/level/a/a	Lcom/mojang/minecraft/level/a/a;	I	f_1605453
+FIELD	com/mojang/minecraft/level/a/a	Lcom/mojang/minecraft/level/a/a;	J	f_4533105
+FIELD	com/mojang/minecraft/level/a/a	Lcom/mojang/minecraft/level/a/a;	K	f_7028655
+FIELD	com/mojang/minecraft/level/a/a	Lcom/mojang/minecraft/level/a/a;	L	f_2031679
+FIELD	com/mojang/minecraft/level/a/a	Lcom/mojang/minecraft/level/a/a;	M	f_7565331
+FIELD	com/mojang/minecraft/level/a/a	Lcom/mojang/minecraft/level/a/a;	N	f_3027250
+FIELD	com/mojang/minecraft/level/a/a	Lcom/mojang/minecraft/level/a/a;	O	f_4214731
+FIELD	com/mojang/minecraft/level/a/a	Lcom/mojang/minecraft/level/a/a;	P	f_1176361
+FIELD	com/mojang/minecraft/level/a/a	Lcom/mojang/minecraft/level/a/a;	Q	f_3504882
+FIELD	com/mojang/minecraft/level/a/a	I	R	f_2648035
+FIELD	com/mojang/minecraft/level/a/a	I	S	f_2860341
+FIELD	com/mojang/minecraft/level/a/a	F	T	f_8697106
+FIELD	com/mojang/minecraft/level/a/a	[I	U	f_0375741
+FIELD	com/mojang/minecraft/level/a/a	F	V	f_8954589
+FIELD	com/mojang/minecraft/level/a/a	F	W	f_1532370
+FIELD	com/mojang/minecraft/level/a/a	F	X	f_8265770
+FIELD	com/mojang/minecraft/level/a/a	F	Y	f_7034990
+FIELD	com/mojang/minecraft/level/a/a	F	Z	f_3247786
+FIELD	com/mojang/minecraft/level/a/a	[Lcom/mojang/minecraft/level/a/a;	a	f_3809114
+FIELD	com/mojang/minecraft/level/a/a	F	aa	f_3364884
+FIELD	com/mojang/minecraft/level/a/a	[Z	b	f_7047452
+FIELD	com/mojang/minecraft/level/a/a	Lcom/mojang/minecraft/level/a/a;	c	f_5708490
+FIELD	com/mojang/minecraft/level/a/a	Lcom/mojang/minecraft/level/a/a;	d	f_0804334
+FIELD	com/mojang/minecraft/level/a/a	Lcom/mojang/minecraft/level/a/a;	e	f_6242213
+FIELD	com/mojang/minecraft/level/a/a	Lcom/mojang/minecraft/level/a/a;	f	f_5091096
+FIELD	com/mojang/minecraft/level/a/a	Lcom/mojang/minecraft/level/a/a;	g	f_5905020
+FIELD	com/mojang/minecraft/level/a/a	Lcom/mojang/minecraft/level/a/a;	h	f_8866375
+FIELD	com/mojang/minecraft/level/a/a	Lcom/mojang/minecraft/level/a/a;	i	f_6795120
+FIELD	com/mojang/minecraft/level/a/a	Lcom/mojang/minecraft/level/a/a;	j	f_1761026
+FIELD	com/mojang/minecraft/level/a/a	Lcom/mojang/minecraft/level/a/a;	k	f_1957938
+FIELD	com/mojang/minecraft/level/a/a	Lcom/mojang/minecraft/level/a/a;	l	f_6455504
+FIELD	com/mojang/minecraft/level/a/a	Lcom/mojang/minecraft/level/a/a;	m	f_1788821
+FIELD	com/mojang/minecraft/level/a/a	Lcom/mojang/minecraft/level/a/a;	n	f_7106883
+FIELD	com/mojang/minecraft/level/a/a	Lcom/mojang/minecraft/level/a/a;	o	f_7543153
+FIELD	com/mojang/minecraft/level/a/a	Lcom/mojang/minecraft/level/a/a;	p	f_7230133
+FIELD	com/mojang/minecraft/level/a/a	Lcom/mojang/minecraft/level/a/a;	q	f_4107115
+FIELD	com/mojang/minecraft/level/a/a	Lcom/mojang/minecraft/level/a/a;	r	f_0069613
+FIELD	com/mojang/minecraft/level/a/a	Lcom/mojang/minecraft/level/a/a;	s	f_8676132
+FIELD	com/mojang/minecraft/level/a/a	Lcom/mojang/minecraft/level/a/a;	t	f_4511668
+FIELD	com/mojang/minecraft/level/a/a	Lcom/mojang/minecraft/level/a/a;	u	f_7667387
+FIELD	com/mojang/minecraft/level/a/a	Lcom/mojang/minecraft/level/a/a;	v	f_9737895
+FIELD	com/mojang/minecraft/level/a/a	Lcom/mojang/minecraft/level/a/a;	w	f_1956160
+FIELD	com/mojang/minecraft/level/a/a	Lcom/mojang/minecraft/level/a/a;	x	f_6437230
+FIELD	com/mojang/minecraft/level/a/a	Lcom/mojang/minecraft/level/a/a;	y	f_2003281
+FIELD	com/mojang/minecraft/level/a/a	Lcom/mojang/minecraft/level/a/a;	z	f_8312651
+METHOD	com/mojang/minecraft/level/a/a	()Z	a	m_3237591
+METHOD	com/mojang/minecraft/level/a/a	(FFFFFF)V	a	m_3006888
+METHOD	com/mojang/minecraft/level/a/a	(I)V	a	m_5930259
+METHOD	com/mojang/minecraft/level/a/a	(III)Lcom/mojang/minecraft/phys/AABB;	a	m_9650578
+METHOD	com/mojang/minecraft/level/a/a	(Lcom/mojang/minecraft/Entity;Lcom/mojang/minecraft/a/c;IIII)V	a	m_8104522
+METHOD	com/mojang/minecraft/level/a/a	(Lcom/mojang/minecraft/a/c;IIII)V	a	m_2253214
+METHOD	com/mojang/minecraft/level/a/a	(Lcom/mojang/minecraft/a/c;Lcom/mojang/minecraft/level/Level;IIII)Z	a	m_5198489
+METHOD	com/mojang/minecraft/level/a/a	(Lcom/mojang/minecraft/level/Level;III)F	a	m_1598263
+METHOD	com/mojang/minecraft/level/a/a	(Lcom/mojang/minecraft/level/Level;IIII)V	a	m_9130741
+METHOD	com/mojang/minecraft/level/a/a	(Lcom/mojang/minecraft/level/Level;IIIII)Z	a	m_8199947
+METHOD	com/mojang/minecraft/level/a/a	(Lcom/mojang/minecraft/level/Level;IIILcom/mojang/minecraft/particle/a;)V	a	m_3427045
+METHOD	com/mojang/minecraft/level/a/a	(Lcom/mojang/minecraft/level/Level;IIILjava/util/Random;)V	a	m_3941370
+METHOD	com/mojang/minecraft/level/a/a	(Z)V	a	m_3405751
+METHOD	com/mojang/minecraft/level/a/a	()Z	b	m_1944525
+METHOD	com/mojang/minecraft/level/a/a	(I)I	b	m_9597800
+METHOD	com/mojang/minecraft/level/a/a	(Lcom/mojang/minecraft/a/c;IIII)V	b	m_8901536
+METHOD	com/mojang/minecraft/level/a/a	(Lcom/mojang/minecraft/level/Level;III)V	b	m_0407775
+METHOD	com/mojang/minecraft/level/a/a	()Lcom/mojang/minecraft/level/c/a;	c	m_5824613
+METHOD	com/mojang/minecraft/level/a/a	(Lcom/mojang/minecraft/level/Level;III)V	c	m_1556953
+METHOD	com/mojang/minecraft/level/a/a	()I	d	m_9474325
+METHOD	com/mojang/minecraft/level/a/a	(Lcom/mojang/minecraft/level/Level;III)V	d	m_2650869
+CLASS	com/mojang/minecraft/level/a/b	net/minecraft/unmapped/C_0456473
+FIELD	com/mojang/minecraft/level/a/b	Z	U	f_2146168
+CLASS	com/mojang/minecraft/level/a/c	net/minecraft/unmapped/C_0351020
+CLASS	com/mojang/minecraft/level/a/d	net/minecraft/unmapped/C_3724278
+METHOD	com/mojang/minecraft/level/a/d	(Lcom/mojang/minecraft/level/Level;III)V	e	m_0416811
+CLASS	com/mojang/minecraft/level/a/e	net/minecraft/unmapped/C_2682589
+CLASS	com/mojang/minecraft/level/a/f	net/minecraft/unmapped/C_0974371
+CLASS	com/mojang/minecraft/level/a/g	net/minecraft/unmapped/C_0823907
+CLASS	com/mojang/minecraft/level/a/h	net/minecraft/unmapped/C_1124552
+CLASS	com/mojang/minecraft/level/a/i	net/minecraft/unmapped/C_7450537
+CLASS	com/mojang/minecraft/level/a/j	net/minecraft/unmapped/C_8443484
+FIELD	com/mojang/minecraft/level/a/j	Z	U	f_1686264
+CLASS	com/mojang/minecraft/level/a/k	net/minecraft/unmapped/C_4558465
+FIELD	com/mojang/minecraft/level/a/k	Lcom/mojang/minecraft/level/c/a;	U	f_1002492
+FIELD	com/mojang/minecraft/level/a/k	I	V	f_9509159
+FIELD	com/mojang/minecraft/level/a/k	I	W	f_9203262
+METHOD	com/mojang/minecraft/level/a/k	(Lcom/mojang/minecraft/level/Level;III)Z	e	m_6220270
+METHOD	com/mojang/minecraft/level/a/k	(Lcom/mojang/minecraft/level/Level;III)Z	f	m_8268450
+CLASS	com/mojang/minecraft/level/b	net/minecraft/unmapped/C_2805650
+FIELD	com/mojang/minecraft/level/b	I	a	f_1605327
+FIELD	com/mojang/minecraft/level/b	I	b	f_7004962
+FIELD	com/mojang/minecraft/level/b	I	c	f_1589532
+FIELD	com/mojang/minecraft/level/b	I	d	f_7305028
+FIELD	com/mojang/minecraft/level/b	I	e	f_9435787
+CLASS	com/mojang/minecraft/level/b/a	net/minecraft/unmapped/C_5376418
+FIELD	com/mojang/minecraft/level/b/a	Lcom/mojang/minecraft/d;	a	f_4854350
+FIELD	com/mojang/minecraft/level/b/a	I	b	f_7275613
+FIELD	com/mojang/minecraft/level/b/a	I	c	f_8175346
+FIELD	com/mojang/minecraft/level/b/a	I	d	f_2316345
+FIELD	com/mojang/minecraft/level/b/a	Ljava/util/Random;	e	f_3235868
+FIELD	com/mojang/minecraft/level/b/a	[B	f	f_8316515
+FIELD	com/mojang/minecraft/level/b/a	[I	g	f_6516890
+METHOD	com/mojang/minecraft/level/b/a	()V	a	m_8370654
+METHOD	com/mojang/minecraft/level/b/a	(I)V	a	m_8611747
+METHOD	com/mojang/minecraft/level/b/a	(IIII)V	a	m_9667175
+METHOD	com/mojang/minecraft/level/b/a	(IIIII)J	a	m_6366896
+METHOD	com/mojang/minecraft/level/b/a	(Ljava/lang/String;III)Lcom/mojang/minecraft/level/Level;	a	m_0447977
+METHOD	com/mojang/minecraft/level/b/a	([I)V	a	m_6035318
+METHOD	com/mojang/minecraft/level/b/a	([I)V	b	m_1162242
+CLASS	com/mojang/minecraft/level/b/a/a	net/minecraft/unmapped/C_6205974
+FIELD	com/mojang/minecraft/level/b/a/a	[Lcom/mojang/minecraft/level/b/a/d;	a	f_4448671
+FIELD	com/mojang/minecraft/level/b/a/a	I	b	f_6571600
+CLASS	com/mojang/minecraft/level/b/a/b	net/minecraft/unmapped/C_5708128
+FIELD	com/mojang/minecraft/level/b/a/b	Lcom/mojang/minecraft/level/b/a/c;	a	f_1343857
+FIELD	com/mojang/minecraft/level/b/a/b	Lcom/mojang/minecraft/level/b/a/c;	b	f_6356450
+CLASS	com/mojang/minecraft/level/b/a/c	net/minecraft/unmapped/C_4561907
+METHOD	com/mojang/minecraft/level/b/a/c	(DD)D	a	m_7516921
+CLASS	com/mojang/minecraft/level/b/a/d	net/minecraft/unmapped/C_0611937
+FIELD	com/mojang/minecraft/level/b/a/d	[I	a	f_3721058
+METHOD	com/mojang/minecraft/level/b/a/d	(D)D	a	m_7396482
+METHOD	com/mojang/minecraft/level/b/a/d	(DDD)D	a	m_2882229
+METHOD	com/mojang/minecraft/level/b/a/d	(IDDD)D	a	m_2595755
+CLASS	com/mojang/minecraft/level/c/a	net/minecraft/unmapped/C_8554894
+FIELD	com/mojang/minecraft/level/c/a	Lcom/mojang/minecraft/level/c/a;	a	f_1017744
+FIELD	com/mojang/minecraft/level/c/a	Lcom/mojang/minecraft/level/c/a;	b	f_3070279
+FIELD	com/mojang/minecraft/level/c/a	Lcom/mojang/minecraft/level/c/a;	c	f_3260500
+FIELD	com/mojang/minecraft/level/c/a	[Lcom/mojang/minecraft/level/c/a;	d	f_5419847
+CLASS	com/mojang/minecraft/net/NetworkPlayer	com/mojang/minecraft/net/NetworkPlayer
+FIELD	com/mojang/minecraft/net/NetworkPlayer	I	a	a
+FIELD	com/mojang/minecraft/net/NetworkPlayer	F	animStep	animStep
+FIELD	com/mojang/minecraft/net/NetworkPlayer	F	animStepO	animStepO
+FIELD	com/mojang/minecraft/net/NetworkPlayer	Lcom/mojang/minecraft/d;	minecraft	minecraft
+FIELD	com/mojang/minecraft/net/NetworkPlayer	Ljava/util/List;	moveQueue	moveQueue
+FIELD	com/mojang/minecraft/net/NetworkPlayer	Ljava/lang/String;	name	name
+FIELD	com/mojang/minecraft/net/NetworkPlayer	Ljava/awt/image/BufferedImage;	newTexture	newTexture
+FIELD	com/mojang/minecraft/net/NetworkPlayer	F	oRun	oRun
+FIELD	com/mojang/minecraft/net/NetworkPlayer	F	run	run
+FIELD	com/mojang/minecraft/net/NetworkPlayer	J	serialVersionUID	serialVersionUID
+FIELD	com/mojang/minecraft/net/NetworkPlayer	Lcom/mojang/minecraft/a/a;	textures$7a7c7041	textures$7a7c7041
+FIELD	com/mojang/minecraft/net/NetworkPlayer	I	tickCount	tickCount
+FIELD	com/mojang/minecraft/net/NetworkPlayer	I	xp	xp
+FIELD	com/mojang/minecraft/net/NetworkPlayer	F	yBodyRot	yBodyRot
+FIELD	com/mojang/minecraft/net/NetworkPlayer	F	yBodyRotO	yBodyRotO
+FIELD	com/mojang/minecraft/net/NetworkPlayer	I	yp	yp
+FIELD	com/mojang/minecraft/net/NetworkPlayer	Lcom/mojang/minecraft/character/a;	zombieModel	zombieModel
+FIELD	com/mojang/minecraft/net/NetworkPlayer	I	zp	zp
+METHOD	com/mojang/minecraft/net/NetworkPlayer	()V	clear	clear
+METHOD	com/mojang/minecraft/net/NetworkPlayer	(BBB)V	queue	queue
+METHOD	com/mojang/minecraft/net/NetworkPlayer	(BBBFF)V	queue	queue
+METHOD	com/mojang/minecraft/net/NetworkPlayer	(FF)V	queue	queue
+METHOD	com/mojang/minecraft/net/NetworkPlayer	(SSSFF)V	teleport	teleport
+CLASS	com/mojang/minecraft/net/a	net/minecraft/unmapped/C_3600653
+FIELD	com/mojang/minecraft/net/a	[Lcom/mojang/minecraft/net/a;	a	f_7217191
+FIELD	com/mojang/minecraft/net/a	Lcom/mojang/minecraft/net/a;	b	f_3149308
+FIELD	com/mojang/minecraft/net/a	Lcom/mojang/minecraft/net/a;	c	f_4461768
+FIELD	com/mojang/minecraft/net/a	Lcom/mojang/minecraft/net/a;	d	f_5289207
+FIELD	com/mojang/minecraft/net/a	Lcom/mojang/minecraft/net/a;	e	f_8546696
+FIELD	com/mojang/minecraft/net/a	Lcom/mojang/minecraft/net/a;	f	f_2373056
+FIELD	com/mojang/minecraft/net/a	Lcom/mojang/minecraft/net/a;	g	f_3895897
+FIELD	com/mojang/minecraft/net/a	Lcom/mojang/minecraft/net/a;	h	f_7782816
+FIELD	com/mojang/minecraft/net/a	Lcom/mojang/minecraft/net/a;	i	f_5917851
+FIELD	com/mojang/minecraft/net/a	Lcom/mojang/minecraft/net/a;	j	f_6187456
+FIELD	com/mojang/minecraft/net/a	Lcom/mojang/minecraft/net/a;	k	f_9528793
+FIELD	com/mojang/minecraft/net/a	Lcom/mojang/minecraft/net/a;	l	f_6653682
+FIELD	com/mojang/minecraft/net/a	Lcom/mojang/minecraft/net/a;	m	f_7798170
+FIELD	com/mojang/minecraft/net/a	Lcom/mojang/minecraft/net/a;	n	f_0872420
+FIELD	com/mojang/minecraft/net/a	Lcom/mojang/minecraft/net/a;	o	f_5317033
+FIELD	com/mojang/minecraft/net/a	I	p	f_7304734
+FIELD	com/mojang/minecraft/net/a	B	q	f_6782781
+FIELD	com/mojang/minecraft/net/a	[Ljava/lang/Class;	r	f_8463791
+FIELD	com/mojang/minecraft/net/a	I	s	f_5406195
+CLASS	com/mojang/minecraft/net/b	net/minecraft/unmapped/C_7018681
+FIELD	com/mojang/minecraft/net/b	F	a	f_6477721
+FIELD	com/mojang/minecraft/net/b	F	b	f_7870468
+FIELD	com/mojang/minecraft/net/b	F	c	f_0110066
+FIELD	com/mojang/minecraft/net/b	F	d	f_2382842
+FIELD	com/mojang/minecraft/net/b	F	e	f_1369203
+FIELD	com/mojang/minecraft/net/b	Z	f	f_5972456
+FIELD	com/mojang/minecraft/net/b	Z	g	f_9167360
+CLASS	com/mojang/minecraft/net/c	net/minecraft/unmapped/C_6170244
+FIELD	com/mojang/minecraft/net/c	Ljava/lang/String;	a	f_1031671
+FIELD	com/mojang/minecraft/net/c	I	b	f_1951524
+FIELD	com/mojang/minecraft/net/c	Ljava/lang/String;	c	f_0399068
+FIELD	com/mojang/minecraft/net/c	Ljava/lang/String;	d	f_2362738
+FIELD	com/mojang/minecraft/net/c	Lcom/mojang/minecraft/d;	e	f_1601230
+FIELD	com/mojang/minecraft/net/c	Lcom/mojang/minecraft/net/d;	f	f_2348871
+CLASS	com/mojang/minecraft/net/d	net/minecraft/unmapped/C_3464647
+FIELD	com/mojang/minecraft/net/d	Ljava/io/ByteArrayOutputStream;	a	f_1074422
+FIELD	com/mojang/minecraft/net/d	Lcom/mojang/a/a;	b	f_6951774
+FIELD	com/mojang/minecraft/net/d	Lcom/mojang/minecraft/d;	c	f_1892126
+FIELD	com/mojang/minecraft/net/d	Z	d	f_7137415
+FIELD	com/mojang/minecraft/net/d	Z	e	f_1094396
+FIELD	com/mojang/minecraft/net/d	Ljava/util/HashMap;	f	f_4932152
+METHOD	com/mojang/minecraft/net/d	()Z	a	m_3898071
+METHOD	com/mojang/minecraft/net/d	(IIIII)V	a	m_8042486
+METHOD	com/mojang/minecraft/net/d	(Ljava/lang/Exception;)V	a	m_3938439
+CLASS	com/mojang/minecraft/net/e	net/minecraft/unmapped/C_6936244
+FIELD	com/mojang/minecraft/net/e	Lcom/mojang/minecraft/net/NetworkPlayer;	a	f_4638487
+CLASS	com/mojang/minecraft/particle/Particle	com/mojang/minecraft/particle/Particle
+FIELD	com/mojang/minecraft/particle/Particle	I	age	age
+FIELD	com/mojang/minecraft/particle/Particle	F	gravity	gravity
+FIELD	com/mojang/minecraft/particle/Particle	I	lifetime	lifetime
+FIELD	com/mojang/minecraft/particle/Particle	F	size	size
+FIELD	com/mojang/minecraft/particle/Particle	I	tex	tex
+FIELD	com/mojang/minecraft/particle/Particle	F	uo	uo
+FIELD	com/mojang/minecraft/particle/Particle	F	vo	vo
+FIELD	com/mojang/minecraft/particle/Particle	F	xd	xd
+FIELD	com/mojang/minecraft/particle/Particle	F	yd	yd
+FIELD	com/mojang/minecraft/particle/Particle	F	zd	zd
+METHOD	com/mojang/minecraft/particle/Particle	(Lcom/mojang/minecraft/a/c;FFFFFF)V	render$12562f50	render$12562f50
+CLASS	com/mojang/minecraft/particle/a	net/minecraft/unmapped/C_2454294
+FIELD	com/mojang/minecraft/particle/a	Ljava/util/List;	a	f_5543693
+FIELD	com/mojang/minecraft/particle/a	Lcom/mojang/minecraft/a/a;	b	f_6053780
+METHOD	com/mojang/minecraft/particle/a	(Lcom/mojang/minecraft/player/Player;F)V	a	m_5775841
+CLASS	com/mojang/minecraft/phys/AABB	com/mojang/minecraft/phys/AABB
+FIELD	com/mojang/minecraft/phys/AABB	F	epsilon	epsilon
+FIELD	com/mojang/minecraft/phys/AABB	J	serialVersionUID	serialVersionUID
+FIELD	com/mojang/minecraft/phys/AABB	F	x0	x0
+FIELD	com/mojang/minecraft/phys/AABB	F	x1	x1
+FIELD	com/mojang/minecraft/phys/AABB	F	y0	y0
+FIELD	com/mojang/minecraft/phys/AABB	F	y1	y1
+FIELD	com/mojang/minecraft/phys/AABB	F	z0	z0
+FIELD	com/mojang/minecraft/phys/AABB	F	z1	z1
+METHOD	com/mojang/minecraft/phys/AABB	(Lcom/mojang/minecraft/phys/AABB;F)F	clipXCollide	clipXCollide
+METHOD	com/mojang/minecraft/phys/AABB	(Lcom/mojang/minecraft/phys/AABB;F)F	clipYCollide	clipYCollide
+METHOD	com/mojang/minecraft/phys/AABB	(Lcom/mojang/minecraft/phys/AABB;F)F	clipZCollide	clipZCollide
+METHOD	com/mojang/minecraft/phys/AABB	(FFF)Lcom/mojang/minecraft/phys/AABB;	cloneMove	cloneMove
+METHOD	com/mojang/minecraft/phys/AABB	(FFF)Lcom/mojang/minecraft/phys/AABB;	expand	expand
+METHOD	com/mojang/minecraft/phys/AABB	(FFF)Lcom/mojang/minecraft/phys/AABB;	grow	grow
+METHOD	com/mojang/minecraft/phys/AABB	(Lcom/mojang/minecraft/phys/AABB;)Z	intersects	intersects
+METHOD	com/mojang/minecraft/phys/AABB	(FFF)V	move	move
+CLASS	com/mojang/minecraft/player/Player	com/mojang/minecraft/player/Player
+FIELD	com/mojang/minecraft/player/Player	Lcom/mojang/minecraft/player/a;	input	input
+FIELD	com/mojang/minecraft/player/Player	Lcom/mojang/minecraft/player/c;	inventory	inventory
+FIELD	com/mojang/minecraft/player/Player	B	userType	userType
+METHOD	com/mojang/minecraft/player/Player	()V	releaseAllKeys	releaseAllKeys
+METHOD	com/mojang/minecraft/player/Player	(IZ)V	setKey	setKey
+CLASS	com/mojang/minecraft/player/a	net/minecraft/unmapped/C_4045198
+FIELD	com/mojang/minecraft/player/a	F	a	f_7472910
+FIELD	com/mojang/minecraft/player/a	F	b	f_7984611
+FIELD	com/mojang/minecraft/player/a	Z	c	f_5816164
+FIELD	com/mojang/minecraft/player/a	Z	d	f_0314305
+METHOD	com/mojang/minecraft/player/a	()V	a	m_0500842
+METHOD	com/mojang/minecraft/player/a	(IZ)V	a	m_6133262
+METHOD	com/mojang/minecraft/player/a	()V	b	m_0460692
+CLASS	com/mojang/minecraft/player/b	net/minecraft/unmapped/C_0639491
+FIELD	com/mojang/minecraft/player/b	[Z	e	f_9923725
+CLASS	com/mojang/minecraft/player/c	net/minecraft/unmapped/C_6008819
+FIELD	com/mojang/minecraft/player/c	[I	a	f_2570816
+FIELD	com/mojang/minecraft/player/c	I	b	f_9994839
+METHOD	com/mojang/minecraft/player/c	()I	a	m_4225010
+METHOD	com/mojang/minecraft/player/c	(I)I	a	m_2929127
+METHOD	com/mojang/minecraft/player/c	(Lcom/mojang/minecraft/level/a/a;)V	a	m_0226182

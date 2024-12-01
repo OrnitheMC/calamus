@@ -98,6 +98,7 @@ METHOD	net/minecraft/client/Minecraft	()V	m_4187290	j
 METHOD	net/minecraft/client/Minecraft	()V	m_2590710	k	
 METHOD	net/minecraft/client/Minecraft	()Z	m_3492516	l	
 METHOD	net/minecraft/client/Minecraft	()V	m_6182440	m	
+METHOD	net/minecraft/client/Minecraft	([Ljava/lang/String;)V	main	main	
 METHOD	net/minecraft/client/Minecraft	()Lnet/minecraft/unmapped/C_4076851;	m_9264421	n	
 METHOD	net/minecraft/client/Minecraft	()Ljava/lang/String;	m_5864047	o	
 METHOD	net/minecraft/client/Minecraft	()Ljava/lang/String;	m_8898923	p	
@@ -5495,6 +5496,7 @@ METHOD	net/minecraft/server/MinecraftServer	()V	m_4046137		e
 METHOD	net/minecraft/server/MinecraftServer	()V	m_7367811		f
 METHOD	net/minecraft/server/MinecraftServer	()V	m_5014077		g
 METHOD	net/minecraft/server/MinecraftServer	()V	m_9071158		h
+METHOD	net/minecraft/server/MinecraftServer	([Ljava/lang/String;)V	main		main
 CLASS	net/minecraft/unmapped/C_0019534		fc
 FIELD	net/minecraft/unmapped/C_0019534	Ljava/util/logging/Logger;	f_0534018		a
 FIELD	net/minecraft/unmapped/C_0019534	Ljava/util/List;	f_1205138		b
