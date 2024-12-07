@@ -55,14 +55,14 @@ METHOD	com/mojang/minecraft/Entity	(FF)V	setSize	setSize
 METHOD	com/mojang/minecraft/Entity	()V	tick	tick
 METHOD	com/mojang/minecraft/Entity	(FF)V	turn	turn
 CLASS	com/mojang/minecraft/MinecraftApplet	com/mojang/minecraft/MinecraftApplet
-FIELD	com/mojang/minecraft/MinecraftApplet	Ljava/awt/Canvas;	canvas	f_8056441
-FIELD	com/mojang/minecraft/MinecraftApplet	Lcom/mojang/minecraft/d;	minecraft	f_3418168
-FIELD	com/mojang/minecraft/MinecraftApplet	Ljava/lang/Thread;	thread	f_5361016
-METHOD	com/mojang/minecraft/MinecraftApplet	()V	startGameThread	m_0146433
-METHOD	com/mojang/minecraft/MinecraftApplet	()V	stopGameThread	m_0730519
-CLASS	com/mojang/minecraft/MinecraftApplet$1	net/minecraft/unmapped/C_5746331
-FIELD	com/mojang/minecraft/MinecraftApplet$1	Lcom/mojang/minecraft/MinecraftApplet;	this$0	f_4508920
-CLASS	com/mojang/minecraft/StopGameException	net/minecraft/unmapped/C_8770355
+FIELD	com/mojang/minecraft/MinecraftApplet	Ljava/awt/Canvas;	canvas	canvas
+FIELD	com/mojang/minecraft/MinecraftApplet	Lcom/mojang/minecraft/d;	minecraft	minecraft
+FIELD	com/mojang/minecraft/MinecraftApplet	Ljava/lang/Thread;	thread	thread
+METHOD	com/mojang/minecraft/MinecraftApplet	()V	startGameThread	startGameThread
+METHOD	com/mojang/minecraft/MinecraftApplet	()V	stopGameThread	stopGameThread
+CLASS	com/mojang/minecraft/MinecraftApplet$1	com/mojang/minecraft/MinecraftApplet$1
+FIELD	com/mojang/minecraft/MinecraftApplet$1	Lcom/mojang/minecraft/MinecraftApplet;	this$0	this$0
+CLASS	com/mojang/minecraft/StopGameException	com/mojang/minecraft/StopGameException
 CLASS	com/mojang/minecraft/a	net/minecraft/unmapped/C_3172064
 FIELD	com/mojang/minecraft/a	[I	a	f_7459865
 FIELD	com/mojang/minecraft/a	Ljava/lang/String;	b	f_6779482
@@ -227,7 +227,7 @@ FIELD	com/mojang/minecraft/c	F	d	f_1547140
 FIELD	com/mojang/minecraft/c	F	e	f_3981960
 FIELD	com/mojang/minecraft/c	F	f	f_6634432
 CLASS	com/mojang/minecraft/character/Zombie	com/mojang/minecraft/character/Zombie
-FIELD	com/mojang/minecraft/character/Zombie	Lcom/mojang/minecraft/character/a;	a	a
+FIELD	com/mojang/minecraft/character/Zombie	Lcom/mojang/minecraft/character/a;	a	f_9872637
 FIELD	com/mojang/minecraft/character/Zombie	F	rotA	rotA
 FIELD	com/mojang/minecraft/character/Zombie	F	rot	rot
 FIELD	com/mojang/minecraft/character/Zombie	J	serialVersionUID	serialVersionUID
@@ -348,15 +348,15 @@ FIELD	com/mojang/minecraft/e	I	c	f_6309744
 FIELD	com/mojang/minecraft/e	I	d	f_5340853
 METHOD	com/mojang/minecraft/e	(Lcom/mojang/minecraft/player/Player;I)F	a	m_2471298
 CLASS	com/mojang/minecraft/level/Level	com/mojang/minecraft/level/Level
-FIELD	com/mojang/minecraft/level/Level	Ljava/util/ArrayList;	a	a
-FIELD	com/mojang/minecraft/level/Level	[I	b	b
+FIELD	com/mojang/minecraft/level/Level	Ljava/util/ArrayList;	a	f_2893484
+FIELD	com/mojang/minecraft/level/Level	[I	b	f_0888823
 FIELD	com/mojang/minecraft/level/Level	[B	blocks	blocks
-FIELD	com/mojang/minecraft/level/Level	Ljava/util/Random;	c	c
+FIELD	com/mojang/minecraft/level/Level	Ljava/util/Random;	c	f_9534804
 FIELD	com/mojang/minecraft/level/Level	J	createTime	createTime
 FIELD	com/mojang/minecraft/level/Level	Ljava/lang/String;	creator	creator
-FIELD	com/mojang/minecraft/level/Level	I	d	d
+FIELD	com/mojang/minecraft/level/Level	I	d	f_3065468
 FIELD	com/mojang/minecraft/level/Level	I	depth	depth
-FIELD	com/mojang/minecraft/level/Level	Ljava/util/ArrayList;	e	e
+FIELD	com/mojang/minecraft/level/Level	Ljava/util/ArrayList;	e	f_5565254
 FIELD	com/mojang/minecraft/level/Level	Ljava/util/ArrayList;	entities	entities
 FIELD	com/mojang/minecraft/level/Level	I	height	height
 FIELD	com/mojang/minecraft/level/Level	Ljava/lang/String;	name	name
@@ -368,12 +368,12 @@ FIELD	com/mojang/minecraft/level/Level	I	width	width
 FIELD	com/mojang/minecraft/level/Level	I	xSpawn	xSpawn
 FIELD	com/mojang/minecraft/level/Level	I	ySpawn	ySpawn
 FIELD	com/mojang/minecraft/level/Level	I	zSpawn	zSpawn
-METHOD	com/mojang/minecraft/level/Level	(FFF)Z	a	a
-METHOD	com/mojang/minecraft/level/Level	(III)Z	a	a
-METHOD	com/mojang/minecraft/level/Level	(IIII)V	a	a
+METHOD	com/mojang/minecraft/level/Level	(FFF)Z	a	m_6273233
+METHOD	com/mojang/minecraft/level/Level	(III)Z	a	m_4198193
+METHOD	com/mojang/minecraft/level/Level	(IIII)V	a	m_4060860
 METHOD	com/mojang/minecraft/level/Level	(Lcom/mojang/minecraft/a/g;)V	addListener$74652038	addListener$74652038
 METHOD	com/mojang/minecraft/level/Level	(IIII)V	addToTickNextTick	addToTickNextTick
-METHOD	com/mojang/minecraft/level/Level	(IIII)V	b	b
+METHOD	com/mojang/minecraft/level/Level	(IIII)V	b	m_8876122
 METHOD	com/mojang/minecraft/level/Level	(IIII)V	calcLightDepths	calcLightDepths
 METHOD	com/mojang/minecraft/level/Level	(Lcom/mojang/minecraft/phys/AABB;)Z	containsAnyLiquid	containsAnyLiquid
 METHOD	com/mojang/minecraft/level/Level	(Lcom/mojang/minecraft/phys/AABB;Lcom/mojang/minecraft/level/c/a;)Z	containsLiquid	containsLiquid
@@ -516,7 +516,7 @@ FIELD	com/mojang/minecraft/level/c/a	Lcom/mojang/minecraft/level/c/a;	b	f_307027
 FIELD	com/mojang/minecraft/level/c/a	Lcom/mojang/minecraft/level/c/a;	c	f_3260500
 FIELD	com/mojang/minecraft/level/c/a	[Lcom/mojang/minecraft/level/c/a;	d	f_5419847
 CLASS	com/mojang/minecraft/net/NetworkPlayer	com/mojang/minecraft/net/NetworkPlayer
-FIELD	com/mojang/minecraft/net/NetworkPlayer	I	a	a
+FIELD	com/mojang/minecraft/net/NetworkPlayer	I	a	f_0364822
 FIELD	com/mojang/minecraft/net/NetworkPlayer	F	animStep	animStep
 FIELD	com/mojang/minecraft/net/NetworkPlayer	F	animStepO	animStepO
 FIELD	com/mojang/minecraft/net/NetworkPlayer	Lcom/mojang/minecraft/d;	minecraft	minecraft

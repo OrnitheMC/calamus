@@ -78,22 +78,22 @@ METHOD	com/mojang/minecraft/Entity	(FF)V	setRot	setRot
 METHOD	com/mojang/minecraft/Entity	(FF)V	setSize	setSize
 METHOD	com/mojang/minecraft/Entity	()V	tick	tick
 METHOD	com/mojang/minecraft/Entity	(FF)V	turn	turn
-CLASS	com/mojang/minecraft/Minecraft$OS	net/minecraft/unmapped/C_1774538
-FIELD	com/mojang/minecraft/Minecraft$OS	[Lcom/mojang/minecraft/Minecraft$OS;	a	f_7342243
-FIELD	com/mojang/minecraft/Minecraft$OS	Lcom/mojang/minecraft/Minecraft$OS;	linux	f_4626673
-FIELD	com/mojang/minecraft/Minecraft$OS	Lcom/mojang/minecraft/Minecraft$OS;	macos	f_1225923
-FIELD	com/mojang/minecraft/Minecraft$OS	Lcom/mojang/minecraft/Minecraft$OS;	solaris	f_0646261
-FIELD	com/mojang/minecraft/Minecraft$OS	Lcom/mojang/minecraft/Minecraft$OS;	unknown	f_8010491
-FIELD	com/mojang/minecraft/Minecraft$OS	Lcom/mojang/minecraft/Minecraft$OS;	windows	f_7845959
+CLASS	com/mojang/minecraft/Minecraft$OS	com/mojang/minecraft/Minecraft$OS
+FIELD	com/mojang/minecraft/Minecraft$OS	[Lcom/mojang/minecraft/Minecraft$OS;	a	f_1881256
+FIELD	com/mojang/minecraft/Minecraft$OS	Lcom/mojang/minecraft/Minecraft$OS;	linux	linux
+FIELD	com/mojang/minecraft/Minecraft$OS	Lcom/mojang/minecraft/Minecraft$OS;	macos	macos
+FIELD	com/mojang/minecraft/Minecraft$OS	Lcom/mojang/minecraft/Minecraft$OS;	solaris	solaris
+FIELD	com/mojang/minecraft/Minecraft$OS	Lcom/mojang/minecraft/Minecraft$OS;	unknown	unknown
+FIELD	com/mojang/minecraft/Minecraft$OS	Lcom/mojang/minecraft/Minecraft$OS;	windows	windows
 CLASS	com/mojang/minecraft/MinecraftApplet	com/mojang/minecraft/MinecraftApplet
-FIELD	com/mojang/minecraft/MinecraftApplet	Ljava/awt/Canvas;	canvas	f_8056441
-FIELD	com/mojang/minecraft/MinecraftApplet	Lcom/mojang/minecraft/k;	minecraft	f_3418168
-FIELD	com/mojang/minecraft/MinecraftApplet	Ljava/lang/Thread;	thread	f_5361016
-METHOD	com/mojang/minecraft/MinecraftApplet	()V	startGameThread	m_0146433
-METHOD	com/mojang/minecraft/MinecraftApplet	()V	stopGameThread	m_0730519
-CLASS	com/mojang/minecraft/MinecraftApplet$1	net/minecraft/unmapped/C_5746331
-FIELD	com/mojang/minecraft/MinecraftApplet$1	Lcom/mojang/minecraft/MinecraftApplet;	this$0	f_4508920
-CLASS	com/mojang/minecraft/StopGameException	net/minecraft/unmapped/C_8770355
+FIELD	com/mojang/minecraft/MinecraftApplet	Ljava/awt/Canvas;	canvas	canvas
+FIELD	com/mojang/minecraft/MinecraftApplet	Lcom/mojang/minecraft/k;	minecraft	minecraft
+FIELD	com/mojang/minecraft/MinecraftApplet	Ljava/lang/Thread;	thread	thread
+METHOD	com/mojang/minecraft/MinecraftApplet	()V	startGameThread	startGameThread
+METHOD	com/mojang/minecraft/MinecraftApplet	()V	stopGameThread	stopGameThread
+CLASS	com/mojang/minecraft/MinecraftApplet$1	com/mojang/minecraft/MinecraftApplet$1
+FIELD	com/mojang/minecraft/MinecraftApplet$1	Lcom/mojang/minecraft/MinecraftApplet;	this$0	this$0
+CLASS	com/mojang/minecraft/StopGameException	com/mojang/minecraft/StopGameException
 CLASS	com/mojang/minecraft/a	net/minecraft/unmapped/C_3172064
 FIELD	com/mojang/minecraft/a	Ljava/lang/String;	a	f_6779482
 FIELD	com/mojang/minecraft/a	Ljava/lang/String;	b	f_1305529
@@ -520,7 +520,7 @@ FIELD	com/mojang/minecraft/item/Arrow	F	yRotO	yRotO
 FIELD	com/mojang/minecraft/item/Arrow	F	yd	yd
 FIELD	com/mojang/minecraft/item/Arrow	F	zd	zd
 CLASS	com/mojang/minecraft/item/Item	com/mojang/minecraft/item/Item
-FIELD	com/mojang/minecraft/item/Item	[Lcom/mojang/minecraft/item/b;	a	a
+FIELD	com/mojang/minecraft/item/Item	[Lcom/mojang/minecraft/item/b;	a	f_2780124
 FIELD	com/mojang/minecraft/item/Item	I	age	age
 FIELD	com/mojang/minecraft/item/Item	I	resource	resource
 FIELD	com/mojang/minecraft/item/Item	F	rot	rot
@@ -529,7 +529,7 @@ FIELD	com/mojang/minecraft/item/Item	F	xd	xd
 FIELD	com/mojang/minecraft/item/Item	F	yd	yd
 FIELD	com/mojang/minecraft/item/Item	F	zd	zd
 CLASS	com/mojang/minecraft/item/Sign	com/mojang/minecraft/item/Sign
-FIELD	com/mojang/minecraft/item/Sign	Lcom/mojang/minecraft/item/a;	a	a
+FIELD	com/mojang/minecraft/item/Sign	Lcom/mojang/minecraft/item/a;	a	f_2357437
 FIELD	com/mojang/minecraft/item/Sign	Lcom/mojang/minecraft/c/k;	font	font
 FIELD	com/mojang/minecraft/item/Sign	[Ljava/lang/String;	messages	messages
 FIELD	com/mojang/minecraft/item/Sign	F	rot	rot
@@ -631,17 +631,17 @@ METHOD	com/mojang/minecraft/k	()V	c	m_7834074
 METHOD	com/mojang/minecraft/k	()Z	d	m_7044458
 METHOD	com/mojang/minecraft/k	()V	e	m_2590710
 CLASS	com/mojang/minecraft/level/Level	com/mojang/minecraft/level/Level
-FIELD	com/mojang/minecraft/level/Level	Ljava/util/ArrayList;	a	a
-FIELD	com/mojang/minecraft/level/Level	[I	b	b
+FIELD	com/mojang/minecraft/level/Level	Ljava/util/ArrayList;	a	f_9991431
+FIELD	com/mojang/minecraft/level/Level	[I	b	f_7154286
 FIELD	com/mojang/minecraft/level/Level	Lcom/mojang/minecraft/level/b;	blockMap	blockMap
 FIELD	com/mojang/minecraft/level/Level	[B	blocks	blocks
-FIELD	com/mojang/minecraft/level/Level	Ljava/util/Random;	c	c
+FIELD	com/mojang/minecraft/level/Level	Ljava/util/Random;	c	f_2745288
 FIELD	com/mojang/minecraft/level/Level	I	cloudColor	cloudColor
 FIELD	com/mojang/minecraft/level/Level	J	createTime	createTime
 FIELD	com/mojang/minecraft/level/Level	Ljava/lang/String;	creator	creator
-FIELD	com/mojang/minecraft/level/Level	I	d	d
+FIELD	com/mojang/minecraft/level/Level	I	d	f_0793944
 FIELD	com/mojang/minecraft/level/Level	I	depth	depth
-FIELD	com/mojang/minecraft/level/Level	Ljava/util/ArrayList;	e	e
+FIELD	com/mojang/minecraft/level/Level	Ljava/util/ArrayList;	e	f_5911539
 FIELD	com/mojang/minecraft/level/Level	I	fogColor	fogColor
 FIELD	com/mojang/minecraft/level/Level	I	height	height
 FIELD	com/mojang/minecraft/level/Level	Ljava/lang/String;	name	name
@@ -659,9 +659,9 @@ FIELD	com/mojang/minecraft/level/Level	I	width	width
 FIELD	com/mojang/minecraft/level/Level	I	xSpawn	xSpawn
 FIELD	com/mojang/minecraft/level/Level	I	ySpawn	ySpawn
 FIELD	com/mojang/minecraft/level/Level	I	zSpawn	zSpawn
-METHOD	com/mojang/minecraft/level/Level	(FFF)Z	a	a
-METHOD	com/mojang/minecraft/level/Level	(III)Z	a	a
-METHOD	com/mojang/minecraft/level/Level	(IIII)V	a	a
+METHOD	com/mojang/minecraft/level/Level	(FFF)Z	a	m_1975217
+METHOD	com/mojang/minecraft/level/Level	(III)Z	a	m_2136909
+METHOD	com/mojang/minecraft/level/Level	(IIII)V	a	m_7270754
 METHOD	com/mojang/minecraft/level/Level	(Lcom/mojang/minecraft/Entity;)V	addEntity	addEntity
 METHOD	com/mojang/minecraft/level/Level	(Lcom/mojang/minecraft/a/g;)V	addListener$74652038	addListener$74652038
 METHOD	com/mojang/minecraft/level/Level	(IIII)V	addToTickNextTick	addToTickNextTick
@@ -778,20 +778,20 @@ FIELD	com/mojang/minecraft/level/d	I	c	f_1589532
 FIELD	com/mojang/minecraft/level/d	I	d	f_7305028
 FIELD	com/mojang/minecraft/level/d	I	e	f_9435787
 CLASS	com/mojang/minecraft/level/e	net/minecraft/unmapped/C_4294768
-CLASS	com/mojang/minecraft/level/tile/Tile$SoundType	net/minecraft/unmapped/C_7120212
-FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	[Lcom/mojang/minecraft/level/tile/Tile$SoundType;	a	f_6228797
-FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	Lcom/mojang/minecraft/level/tile/Tile$SoundType;	cloth	f_0069528
-FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	Lcom/mojang/minecraft/level/tile/Tile$SoundType;	grass	f_2134264
-FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	Lcom/mojang/minecraft/level/tile/Tile$SoundType;	gravel	f_0145876
-FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	Lcom/mojang/minecraft/level/tile/Tile$SoundType;	metal	f_8651615
-FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	Ljava/lang/String;	name	f_8860184
-FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	Lcom/mojang/minecraft/level/tile/Tile$SoundType;	none	f_0972575
-FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	F	pitch	f_6472007
-FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	Lcom/mojang/minecraft/level/tile/Tile$SoundType;	stone	f_4032487
-FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	F	volume	f_9101682
-FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	Lcom/mojang/minecraft/level/tile/Tile$SoundType;	wood	f_0597472
-METHOD	com/mojang/minecraft/level/tile/Tile$SoundType	()F	getPitch	m_2550154
-METHOD	com/mojang/minecraft/level/tile/Tile$SoundType	()F	getVolume	m_8797914
+CLASS	com/mojang/minecraft/level/tile/Tile$SoundType	com/mojang/minecraft/level/tile/Tile$SoundType
+FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	[Lcom/mojang/minecraft/level/tile/Tile$SoundType;	a	f_3106876
+FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	Lcom/mojang/minecraft/level/tile/Tile$SoundType;	cloth	cloth
+FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	Lcom/mojang/minecraft/level/tile/Tile$SoundType;	grass	grass
+FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	Lcom/mojang/minecraft/level/tile/Tile$SoundType;	gravel	gravel
+FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	Lcom/mojang/minecraft/level/tile/Tile$SoundType;	metal	metal
+FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	Ljava/lang/String;	name	name
+FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	Lcom/mojang/minecraft/level/tile/Tile$SoundType;	none	none
+FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	F	pitch	pitch
+FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	Lcom/mojang/minecraft/level/tile/Tile$SoundType;	stone	stone
+FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	F	volume	volume
+FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	Lcom/mojang/minecraft/level/tile/Tile$SoundType;	wood	wood
+METHOD	com/mojang/minecraft/level/tile/Tile$SoundType	()F	getPitch	getPitch
+METHOD	com/mojang/minecraft/level/tile/Tile$SoundType	()F	getVolume	getVolume
 CLASS	com/mojang/minecraft/level/tile/a	net/minecraft/unmapped/C_3635204
 FIELD	com/mojang/minecraft/level/tile/a	Lcom/mojang/minecraft/level/tile/a;	A	f_9737895
 FIELD	com/mojang/minecraft/level/tile/a	Lcom/mojang/minecraft/level/tile/a;	B	f_1956160
@@ -907,11 +907,11 @@ METHOD	com/mojang/minecraft/level/tile/l	(Lcom/mojang/minecraft/a/c;FFF)V	a	m_30
 CLASS	com/mojang/minecraft/level/tile/m	net/minecraft/unmapped/C_7450537
 CLASS	com/mojang/minecraft/level/tile/n	net/minecraft/unmapped/C_6644571
 CLASS	com/mojang/minecraft/mob/Creeper	com/mojang/minecraft/mob/Creeper
-FIELD	com/mojang/minecraft/mob/Creeper	Lcom/mojang/minecraft/d/a;	a	a
+FIELD	com/mojang/minecraft/mob/Creeper	Lcom/mojang/minecraft/d/a;	a	f_6457030
 CLASS	com/mojang/minecraft/mob/HumanoidMob	com/mojang/minecraft/mob/HumanoidMob
-FIELD	com/mojang/minecraft/mob/HumanoidMob	Lcom/mojang/minecraft/d/h;	a	a
+FIELD	com/mojang/minecraft/mob/HumanoidMob	Lcom/mojang/minecraft/d/h;	a	f_1078621
 FIELD	com/mojang/minecraft/mob/HumanoidMob	Z	armor	armor
-FIELD	com/mojang/minecraft/mob/HumanoidMob	Lcom/mojang/minecraft/d/h;	b	b
+FIELD	com/mojang/minecraft/mob/HumanoidMob	Lcom/mojang/minecraft/d/h;	b	f_9461751
 FIELD	com/mojang/minecraft/mob/HumanoidMob	Z	helmet	helmet
 FIELD	com/mojang/minecraft/mob/HumanoidMob	Lcom/mojang/minecraft/d/h;	humanoidModel	humanoidModel
 FIELD	com/mojang/minecraft/mob/HumanoidMob	J	serialVersionUID	serialVersionUID
@@ -956,14 +956,14 @@ METHOD	com/mojang/minecraft/mob/Mob	(Lcom/mojang/minecraft/Entity;IFF)V	knockbac
 METHOD	com/mojang/minecraft/mob/Mob	(Lcom/mojang/minecraft/a/a;FFFFFF)V	renderModel$f1c6c5a	renderModel$f1c6c5a
 METHOD	com/mojang/minecraft/mob/Mob	(FF)V	travel	travel
 CLASS	com/mojang/minecraft/mob/Pig	com/mojang/minecraft/mob/Pig
-FIELD	com/mojang/minecraft/mob/Pig	Lcom/mojang/minecraft/d/k;	a	a
+FIELD	com/mojang/minecraft/mob/Pig	Lcom/mojang/minecraft/d/k;	a	f_6572888
 FIELD	com/mojang/minecraft/mob/Pig	J	serialVersionUID	serialVersionUID
 CLASS	com/mojang/minecraft/mob/QuadrupedMob	com/mojang/minecraft/mob/QuadrupedMob
-FIELD	com/mojang/minecraft/mob/QuadrupedMob	Lcom/mojang/minecraft/d/k;	a	a
+FIELD	com/mojang/minecraft/mob/QuadrupedMob	Lcom/mojang/minecraft/d/k;	a	f_4521436
 CLASS	com/mojang/minecraft/mob/Skeleton	com/mojang/minecraft/mob/Skeleton
-FIELD	com/mojang/minecraft/mob/Skeleton	Lcom/mojang/minecraft/d/h;	a	a
+FIELD	com/mojang/minecraft/mob/Skeleton	Lcom/mojang/minecraft/d/h;	a	f_1699810
 CLASS	com/mojang/minecraft/mob/Zombie	com/mojang/minecraft/mob/Zombie
-FIELD	com/mojang/minecraft/mob/Zombie	Lcom/mojang/minecraft/d/h;	a	a
+FIELD	com/mojang/minecraft/mob/Zombie	Lcom/mojang/minecraft/d/h;	a	f_3114796
 CLASS	com/mojang/minecraft/mob/a	net/minecraft/unmapped/C_1871684
 FIELD	com/mojang/minecraft/mob/a	Lcom/mojang/minecraft/mob/Creeper;	h	f_3830790
 CLASS	com/mojang/minecraft/mob/a/a	net/minecraft/unmapped/C_3746625
@@ -984,7 +984,7 @@ METHOD	com/mojang/minecraft/mob/a/c	(Lcom/mojang/minecraft/Entity;)V	a	m_1865463
 METHOD	com/mojang/minecraft/mob/a/c	()V	b	m_0827508
 METHOD	com/mojang/minecraft/mob/a/c	(Lcom/mojang/minecraft/Entity;)V	b	m_9807202
 CLASS	com/mojang/minecraft/net/NetworkPlayer	com/mojang/minecraft/net/NetworkPlayer
-FIELD	com/mojang/minecraft/net/NetworkPlayer	I	a	a
+FIELD	com/mojang/minecraft/net/NetworkPlayer	I	a	f_1822309
 FIELD	com/mojang/minecraft/net/NetworkPlayer	Ljava/lang/String;	displayName	displayName
 FIELD	com/mojang/minecraft/net/NetworkPlayer	Lcom/mojang/minecraft/k;	minecraft	minecraft
 FIELD	com/mojang/minecraft/net/NetworkPlayer	Ljava/util/List;	moveQueue	moveQueue
@@ -1141,8 +1141,8 @@ FIELD	de/jarnbjo/a/a/b	I	d	f_7958293
 FIELD	de/jarnbjo/a/a/b	Z	e	f_4791979
 METHOD	de/jarnbjo/a/a/b	()Z	a	m_0477567
 METHOD	de/jarnbjo/a/a/b	(II)Z	a	m_3923716
-CLASS	de/jarnbjo/ogg/EndOfOggStreamException	net/minecraft/unmapped/C_1239415
-CLASS	de/jarnbjo/ogg/OggFormatException	net/minecraft/unmapped/C_9556281
+CLASS	de/jarnbjo/ogg/EndOfOggStreamException	de/jarnbjo/ogg/EndOfOggStreamException
+CLASS	de/jarnbjo/ogg/OggFormatException	de/jarnbjo/ogg/OggFormatException
 CLASS	de/jarnbjo/ogg/a	net/minecraft/unmapped/C_4958210
 FIELD	de/jarnbjo/ogg/a	Lde/jarnbjo/ogg/b;	a	f_9154799
 FIELD	de/jarnbjo/ogg/a	Ljava/util/ArrayList;	b	f_2795626
@@ -1171,7 +1171,7 @@ METHOD	de/jarnbjo/ogg/c	()I	a	m_4618783
 METHOD	de/jarnbjo/ogg/c	(Ljava/io/InputStream;)Lde/jarnbjo/ogg/c;	a	m_8807495
 METHOD	de/jarnbjo/ogg/c	(Ljava/io/InputStream;[B)V	a	m_3333673
 METHOD	de/jarnbjo/ogg/c	(Ljava/lang/Object;Z)Lde/jarnbjo/ogg/c;	a	m_6142753
-CLASS	de/jarnbjo/vorbis/VorbisFormatException	net/minecraft/unmapped/C_3156013
+CLASS	de/jarnbjo/vorbis/VorbisFormatException	de/jarnbjo/vorbis/VorbisFormatException
 CLASS	de/jarnbjo/vorbis/a	net/minecraft/unmapped/C_1133045
 FIELD	de/jarnbjo/vorbis/a	[I	a	f_5045799
 FIELD	de/jarnbjo/vorbis/a	[I	b	f_2332401

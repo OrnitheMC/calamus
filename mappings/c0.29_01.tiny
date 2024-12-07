@@ -96,24 +96,24 @@ METHOD	com/mojang/minecraft/Entity	(Lcom/mojang/minecraft/a/c;)Z	shouldRender	sh
 METHOD	com/mojang/minecraft/Entity	(F)Z	shouldRenderAtSqrDistance	shouldRenderAtSqrDistance
 METHOD	com/mojang/minecraft/Entity	()V	tick	tick
 METHOD	com/mojang/minecraft/Entity	(FF)V	turn	turn
-CLASS	com/mojang/minecraft/Minecraft$OS	net/minecraft/unmapped/C_1774538
-FIELD	com/mojang/minecraft/Minecraft$OS	[Lcom/mojang/minecraft/Minecraft$OS;	a	f_7342243
-FIELD	com/mojang/minecraft/Minecraft$OS	Lcom/mojang/minecraft/Minecraft$OS;	linux	f_4626673
-FIELD	com/mojang/minecraft/Minecraft$OS	Lcom/mojang/minecraft/Minecraft$OS;	macos	f_1225923
-FIELD	com/mojang/minecraft/Minecraft$OS	Lcom/mojang/minecraft/Minecraft$OS;	solaris	f_0646261
-FIELD	com/mojang/minecraft/Minecraft$OS	Lcom/mojang/minecraft/Minecraft$OS;	unknown	f_8010491
-FIELD	com/mojang/minecraft/Minecraft$OS	Lcom/mojang/minecraft/Minecraft$OS;	windows	f_7845959
+CLASS	com/mojang/minecraft/Minecraft$OS	com/mojang/minecraft/Minecraft$OS
+FIELD	com/mojang/minecraft/Minecraft$OS	[Lcom/mojang/minecraft/Minecraft$OS;	a	f_8747588
+FIELD	com/mojang/minecraft/Minecraft$OS	Lcom/mojang/minecraft/Minecraft$OS;	linux	linux
+FIELD	com/mojang/minecraft/Minecraft$OS	Lcom/mojang/minecraft/Minecraft$OS;	macos	macos
+FIELD	com/mojang/minecraft/Minecraft$OS	Lcom/mojang/minecraft/Minecraft$OS;	solaris	solaris
+FIELD	com/mojang/minecraft/Minecraft$OS	Lcom/mojang/minecraft/Minecraft$OS;	unknown	unknown
+FIELD	com/mojang/minecraft/Minecraft$OS	Lcom/mojang/minecraft/Minecraft$OS;	windows	windows
 CLASS	com/mojang/minecraft/MinecraftApplet	com/mojang/minecraft/MinecraftApplet
-FIELD	com/mojang/minecraft/MinecraftApplet	Ljava/awt/Canvas;	canvas	f_8056441
-FIELD	com/mojang/minecraft/MinecraftApplet	Lcom/mojang/minecraft/l;	minecraft	f_3418168
+FIELD	com/mojang/minecraft/MinecraftApplet	Ljava/awt/Canvas;	canvas	canvas
+FIELD	com/mojang/minecraft/MinecraftApplet	Lcom/mojang/minecraft/l;	minecraft	minecraft
 FIELD	com/mojang/minecraft/MinecraftApplet	J	serialVersionUID	serialVersionUID
-FIELD	com/mojang/minecraft/MinecraftApplet	Ljava/lang/Thread;	thread	f_5361016
-METHOD	com/mojang/minecraft/MinecraftApplet	()V	startGameThread	m_0146433
-METHOD	com/mojang/minecraft/MinecraftApplet	()V	stopGameThread	m_0730519
-CLASS	com/mojang/minecraft/MinecraftApplet$1	net/minecraft/unmapped/C_5746331
+FIELD	com/mojang/minecraft/MinecraftApplet	Ljava/lang/Thread;	thread	thread
+METHOD	com/mojang/minecraft/MinecraftApplet	()V	startGameThread	startGameThread
+METHOD	com/mojang/minecraft/MinecraftApplet	()V	stopGameThread	stopGameThread
+CLASS	com/mojang/minecraft/MinecraftApplet$1	com/mojang/minecraft/MinecraftApplet$1
 FIELD	com/mojang/minecraft/MinecraftApplet$1	J	serialVersionUID	serialVersionUID
-FIELD	com/mojang/minecraft/MinecraftApplet$1	Lcom/mojang/minecraft/MinecraftApplet;	this$0	f_4508920
-CLASS	com/mojang/minecraft/StopGameException	net/minecraft/unmapped/C_8770355
+FIELD	com/mojang/minecraft/MinecraftApplet$1	Lcom/mojang/minecraft/MinecraftApplet;	this$0	this$0
+CLASS	com/mojang/minecraft/StopGameException	com/mojang/minecraft/StopGameException
 FIELD	com/mojang/minecraft/StopGameException	J	serialVersionUID	serialVersionUID
 CLASS	com/mojang/minecraft/a	net/minecraft/unmapped/C_3172064
 FIELD	com/mojang/minecraft/a	Ljava/util/List;	a	f_7459865
@@ -590,7 +590,7 @@ FIELD	com/mojang/minecraft/item/Arrow	F	yd	yd
 FIELD	com/mojang/minecraft/item/Arrow	F	zd	zd
 METHOD	com/mojang/minecraft/item/Arrow	()Lcom/mojang/minecraft/Entity;	getOwner	getOwner
 CLASS	com/mojang/minecraft/item/Item	com/mojang/minecraft/item/Item
-FIELD	com/mojang/minecraft/item/Item	[Lcom/mojang/minecraft/item/a;	a	a
+FIELD	com/mojang/minecraft/item/Item	[Lcom/mojang/minecraft/item/a;	a	f_5564246
 FIELD	com/mojang/minecraft/item/Item	I	age	age
 FIELD	com/mojang/minecraft/item/Item	I	resource	resource
 FIELD	com/mojang/minecraft/item/Item	F	rot	rot
@@ -734,16 +734,16 @@ METHOD	com/mojang/minecraft/level/BlockMap$Slot	(Lcom/mojang/minecraft/Entity;)V
 METHOD	com/mojang/minecraft/level/BlockMap$Slot	(FFF)Lcom/mojang/minecraft/level/BlockMap$Slot;	init	init
 METHOD	com/mojang/minecraft/level/BlockMap$Slot	(Lcom/mojang/minecraft/Entity;)V	remove	remove
 CLASS	com/mojang/minecraft/level/Level	com/mojang/minecraft/level/Level
-FIELD	com/mojang/minecraft/level/Level	Ljava/util/ArrayList;	a	a
-FIELD	com/mojang/minecraft/level/Level	[I	b	b
+FIELD	com/mojang/minecraft/level/Level	Ljava/util/ArrayList;	a	f_7176336
+FIELD	com/mojang/minecraft/level/Level	[I	b	f_3685152
 FIELD	com/mojang/minecraft/level/Level	Lcom/mojang/minecraft/level/BlockMap;	blockMap	blockMap
 FIELD	com/mojang/minecraft/level/Level	[B	blocks	blocks
-FIELD	com/mojang/minecraft/level/Level	I	c	c
+FIELD	com/mojang/minecraft/level/Level	I	c	f_6671750
 FIELD	com/mojang/minecraft/level/Level	I	cloudColor	cloudColor
 FIELD	com/mojang/minecraft/level/Level	J	createTime	createTime
 FIELD	com/mojang/minecraft/level/Level	Z	creativeMode	creativeMode
 FIELD	com/mojang/minecraft/level/Level	Ljava/lang/String;	creator	creator
-FIELD	com/mojang/minecraft/level/Level	Ljava/util/ArrayList;	d	d
+FIELD	com/mojang/minecraft/level/Level	Ljava/util/ArrayList;	d	f_7578756
 FIELD	com/mojang/minecraft/level/Level	I	depth	depth
 FIELD	com/mojang/minecraft/level/Level	I	fogColor	fogColor
 FIELD	com/mojang/minecraft/level/Level	Ljava/lang/Object;	font	font
@@ -765,9 +765,9 @@ FIELD	com/mojang/minecraft/level/Level	I	width	width
 FIELD	com/mojang/minecraft/level/Level	I	xSpawn	xSpawn
 FIELD	com/mojang/minecraft/level/Level	I	ySpawn	ySpawn
 FIELD	com/mojang/minecraft/level/Level	I	zSpawn	zSpawn
-METHOD	com/mojang/minecraft/level/Level	(FFF)Z	a	a
-METHOD	com/mojang/minecraft/level/Level	(III)Z	a	a
-METHOD	com/mojang/minecraft/level/Level	(IIII)V	a	a
+METHOD	com/mojang/minecraft/level/Level	(FFF)Z	a	m_5611976
+METHOD	com/mojang/minecraft/level/Level	(III)Z	a	m_3919151
+METHOD	com/mojang/minecraft/level/Level	(IIII)V	a	m_7890557
 METHOD	com/mojang/minecraft/level/Level	(Lcom/mojang/minecraft/Entity;)V	addEntity	addEntity
 METHOD	com/mojang/minecraft/level/Level	(Lcom/mojang/minecraft/b/g;)V	addListener$74652038	addListener$74652038
 METHOD	com/mojang/minecraft/level/Level	(IIII)V	addToTickNextTick	addToTickNextTick
@@ -866,20 +866,20 @@ FIELD	com/mojang/minecraft/level/d	I	c	f_1589532
 FIELD	com/mojang/minecraft/level/d	I	d	f_7305028
 FIELD	com/mojang/minecraft/level/d	I	e	f_9435787
 CLASS	com/mojang/minecraft/level/e	net/minecraft/unmapped/C_4294768
-CLASS	com/mojang/minecraft/level/tile/Tile$SoundType	net/minecraft/unmapped/C_7120212
-FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	[Lcom/mojang/minecraft/level/tile/Tile$SoundType;	a	f_6228797
-FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	Lcom/mojang/minecraft/level/tile/Tile$SoundType;	cloth	f_0069528
-FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	Lcom/mojang/minecraft/level/tile/Tile$SoundType;	grass	f_2134264
-FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	Lcom/mojang/minecraft/level/tile/Tile$SoundType;	gravel	f_0145876
-FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	Lcom/mojang/minecraft/level/tile/Tile$SoundType;	metal	f_8651615
-FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	Ljava/lang/String;	name	f_8860184
-FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	Lcom/mojang/minecraft/level/tile/Tile$SoundType;	none	f_0972575
-FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	F	pitch	f_6472007
-FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	Lcom/mojang/minecraft/level/tile/Tile$SoundType;	stone	f_4032487
-FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	F	volume	f_9101682
-FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	Lcom/mojang/minecraft/level/tile/Tile$SoundType;	wood	f_0597472
-METHOD	com/mojang/minecraft/level/tile/Tile$SoundType	()F	getPitch	m_2550154
-METHOD	com/mojang/minecraft/level/tile/Tile$SoundType	()F	getVolume	m_8797914
+CLASS	com/mojang/minecraft/level/tile/Tile$SoundType	com/mojang/minecraft/level/tile/Tile$SoundType
+FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	[Lcom/mojang/minecraft/level/tile/Tile$SoundType;	a	f_3419930
+FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	Lcom/mojang/minecraft/level/tile/Tile$SoundType;	cloth	cloth
+FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	Lcom/mojang/minecraft/level/tile/Tile$SoundType;	grass	grass
+FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	Lcom/mojang/minecraft/level/tile/Tile$SoundType;	gravel	gravel
+FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	Lcom/mojang/minecraft/level/tile/Tile$SoundType;	metal	metal
+FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	Ljava/lang/String;	name	name
+FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	Lcom/mojang/minecraft/level/tile/Tile$SoundType;	none	none
+FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	F	pitch	pitch
+FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	Lcom/mojang/minecraft/level/tile/Tile$SoundType;	stone	stone
+FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	F	volume	volume
+FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	Lcom/mojang/minecraft/level/tile/Tile$SoundType;	wood	wood
+METHOD	com/mojang/minecraft/level/tile/Tile$SoundType	()F	getPitch	getPitch
+METHOD	com/mojang/minecraft/level/tile/Tile$SoundType	()F	getVolume	getVolume
 CLASS	com/mojang/minecraft/level/tile/a	net/minecraft/unmapped/C_3635204
 FIELD	com/mojang/minecraft/level/tile/a	Lcom/mojang/minecraft/level/tile/a;	A	f_2003281
 FIELD	com/mojang/minecraft/level/tile/a	Lcom/mojang/minecraft/level/tile/a;	B	f_8312651
@@ -1123,7 +1123,7 @@ METHOD	com/mojang/minecraft/mob/ai/BasicAttackAI	()V	doAttack	doAttack
 CLASS	com/mojang/minecraft/mob/ai/JumpAttackAI	com/mojang/minecraft/mob/ai/JumpAttackAI
 FIELD	com/mojang/minecraft/mob/ai/JumpAttackAI	J	serialVersionUID	serialVersionUID
 CLASS	com/mojang/minecraft/net/NetworkPlayer	com/mojang/minecraft/net/NetworkPlayer
-FIELD	com/mojang/minecraft/net/NetworkPlayer	I	a	a
+FIELD	com/mojang/minecraft/net/NetworkPlayer	I	a	f_6672884
 FIELD	com/mojang/minecraft/net/NetworkPlayer	Ljava/lang/String;	displayName	displayName
 FIELD	com/mojang/minecraft/net/NetworkPlayer	Lcom/mojang/minecraft/l;	minecraft	minecraft
 FIELD	com/mojang/minecraft/net/NetworkPlayer	Ljava/util/List;	moveQueue	moveQueue
@@ -1226,9 +1226,9 @@ FIELD	com/mojang/minecraft/phys/AABB	F	y0	y0
 FIELD	com/mojang/minecraft/phys/AABB	F	y1	y1
 FIELD	com/mojang/minecraft/phys/AABB	F	z0	z0
 FIELD	com/mojang/minecraft/phys/AABB	F	z1	z1
-METHOD	com/mojang/minecraft/phys/AABB	(Lcom/mojang/minecraft/a/c;)Z	a	a
-METHOD	com/mojang/minecraft/phys/AABB	(Lcom/mojang/minecraft/a/c;)Z	b	b
-METHOD	com/mojang/minecraft/phys/AABB	(Lcom/mojang/minecraft/a/c;)Z	c	c
+METHOD	com/mojang/minecraft/phys/AABB	(Lcom/mojang/minecraft/a/c;)Z	a	m_7836755
+METHOD	com/mojang/minecraft/phys/AABB	(Lcom/mojang/minecraft/a/c;)Z	b	m_7792826
+METHOD	com/mojang/minecraft/phys/AABB	(Lcom/mojang/minecraft/a/c;)Z	c	m_1040376
 METHOD	com/mojang/minecraft/phys/AABB	(Lcom/mojang/minecraft/a/c;Lcom/mojang/minecraft/a/c;)Lcom/mojang/minecraft/g;	clip	clip
 METHOD	com/mojang/minecraft/phys/AABB	(Lcom/mojang/minecraft/phys/AABB;F)F	clipXCollide	clipXCollide
 METHOD	com/mojang/minecraft/phys/AABB	(Lcom/mojang/minecraft/phys/AABB;F)F	clipYCollide	clipYCollide
@@ -1251,7 +1251,7 @@ FIELD	com/mojang/minecraft/player/Inventory	[I	popTime	popTime
 FIELD	com/mojang/minecraft/player/Inventory	I	selected	selected
 FIELD	com/mojang/minecraft/player/Inventory	J	serialVersionUID	serialVersionUID
 FIELD	com/mojang/minecraft/player/Inventory	[I	slots	slots
-METHOD	com/mojang/minecraft/player/Inventory	(I)I	a	a
+METHOD	com/mojang/minecraft/player/Inventory	(I)I	a	m_2388611
 METHOD	com/mojang/minecraft/player/Inventory	(I)Z	addResource	addResource
 METHOD	com/mojang/minecraft/player/Inventory	()I	getSelected	getSelected
 METHOD	com/mojang/minecraft/player/Inventory	(IZ)V	grabTexture	grabTexture
@@ -1263,7 +1263,7 @@ METHOD	com/mojang/minecraft/player/Inventory	()V	tick	tick
 CLASS	com/mojang/minecraft/player/Player	com/mojang/minecraft/player/Player
 FIELD	com/mojang/minecraft/player/Player	I	MAX_ARROWS	MAX_ARROWS
 FIELD	com/mojang/minecraft/player/Player	I	MAX_HEALTH	MAX_HEALTH
-FIELD	com/mojang/minecraft/player/Player	I	a	a
+FIELD	com/mojang/minecraft/player/Player	I	a	f_9803130
 FIELD	com/mojang/minecraft/player/Player	I	arrows	arrows
 FIELD	com/mojang/minecraft/player/Player	F	bob	bob
 FIELD	com/mojang/minecraft/player/Player	Lcom/mojang/minecraft/player/a;	input	input
@@ -1309,9 +1309,9 @@ FIELD	de/jarnbjo/a/a/b	I	d	f_7958293
 FIELD	de/jarnbjo/a/a/b	Z	e	f_4791979
 METHOD	de/jarnbjo/a/a/b	()Z	a	m_0477567
 METHOD	de/jarnbjo/a/a/b	(II)Z	a	m_3923716
-CLASS	de/jarnbjo/ogg/EndOfOggStreamException	net/minecraft/unmapped/C_1239415
+CLASS	de/jarnbjo/ogg/EndOfOggStreamException	de/jarnbjo/ogg/EndOfOggStreamException
 FIELD	de/jarnbjo/ogg/EndOfOggStreamException	J	serialVersionUID	serialVersionUID
-CLASS	de/jarnbjo/ogg/OggFormatException	net/minecraft/unmapped/C_9556281
+CLASS	de/jarnbjo/ogg/OggFormatException	de/jarnbjo/ogg/OggFormatException
 FIELD	de/jarnbjo/ogg/OggFormatException	J	serialVersionUID	serialVersionUID
 CLASS	de/jarnbjo/ogg/a	net/minecraft/unmapped/C_4958210
 FIELD	de/jarnbjo/ogg/a	Lde/jarnbjo/ogg/b;	a	f_9154799
@@ -1341,7 +1341,7 @@ METHOD	de/jarnbjo/ogg/c	()I	a	m_4618783
 METHOD	de/jarnbjo/ogg/c	(Ljava/io/InputStream;)Lde/jarnbjo/ogg/c;	a	m_8807495
 METHOD	de/jarnbjo/ogg/c	(Ljava/io/InputStream;[B)V	a	m_3333673
 METHOD	de/jarnbjo/ogg/c	(Ljava/lang/Object;Z)Lde/jarnbjo/ogg/c;	a	m_6142753
-CLASS	de/jarnbjo/vorbis/VorbisFormatException	net/minecraft/unmapped/C_3156013
+CLASS	de/jarnbjo/vorbis/VorbisFormatException	de/jarnbjo/vorbis/VorbisFormatException
 FIELD	de/jarnbjo/vorbis/VorbisFormatException	J	serialVersionUID	serialVersionUID
 CLASS	de/jarnbjo/vorbis/a	net/minecraft/unmapped/C_1133045
 FIELD	de/jarnbjo/vorbis/a	[I	a	f_5045799

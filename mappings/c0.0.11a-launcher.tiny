@@ -83,11 +83,11 @@ METHOD	com/mojang/minecraft/Minecraft	(FII)V	setupPickCamera	m_2707803
 METHOD	com/mojang/minecraft/Minecraft	()V	stop	m_2574939
 METHOD	com/mojang/minecraft/Minecraft	()V	tick	m_2590710
 CLASS	com/mojang/minecraft/MinecraftApplet	com/mojang/minecraft/MinecraftApplet
-FIELD	com/mojang/minecraft/MinecraftApplet	Ljava/awt/Canvas;	canvas	f_8056441
-FIELD	com/mojang/minecraft/MinecraftApplet	Lcom/mojang/minecraft/Minecraft;	minecraft	f_3418168
-FIELD	com/mojang/minecraft/MinecraftApplet	Ljava/lang/Thread;	thread	f_5361016
+FIELD	com/mojang/minecraft/MinecraftApplet	Ljava/awt/Canvas;	canvas	f_4637653
+FIELD	com/mojang/minecraft/MinecraftApplet	Lcom/mojang/minecraft/Minecraft;	minecraft	f_4072290
+FIELD	com/mojang/minecraft/MinecraftApplet	Ljava/lang/Thread;	thread	f_4224164
 METHOD	com/mojang/minecraft/MinecraftApplet	()V	startGameThread	m_0598229
-METHOD	com/mojang/minecraft/MinecraftApplet	()V	stopGameThread	m_0730519
+METHOD	com/mojang/minecraft/MinecraftApplet	()V	stopGameThread	m_5584922
 CLASS	com/mojang/minecraft/Player	net/minecraft/unmapped/C_0693652
 CLASS	com/mojang/minecraft/Timer	net/minecraft/unmapped/C_5974036
 FIELD	com/mojang/minecraft/Timer	J	MAX_NS_PER_UPDATE	f_6322592
