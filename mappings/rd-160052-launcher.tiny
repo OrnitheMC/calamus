@@ -118,7 +118,7 @@ FIELD	com/mojang/rubydung/character/Zombie	F	rotA	f_1524676
 FIELD	com/mojang/rubydung/character/Zombie	F	rot	f_7034797
 FIELD	com/mojang/rubydung/character/Zombie	F	speed	f_4659285
 FIELD	com/mojang/rubydung/character/Zombie	F	timeOffs	f_0087772
-FIELD	com/mojang/rubydung/character/Zombie	Lcom/mojang/rubydung/character/ZombieModel;	zombieModel	f_0264670
+FIELD	com/mojang/rubydung/character/Zombie	Lcom/mojang/rubydung/character/ZombieModel;	zombieModel	f_6031782
 METHOD	com/mojang/rubydung/character/Zombie	(F)V	render	m_1301804
 CLASS	com/mojang/rubydung/character/ZombieModel	net/minecraft/unmapped/C_7898033
 FIELD	com/mojang/rubydung/character/ZombieModel	Lcom/mojang/rubydung/character/Cube;	arm0	f_9339598
@@ -190,9 +190,9 @@ FIELD	com/mojang/rubydung/level/Level	I	TILE_UPDATE_INTERVAL	f_5226865
 FIELD	com/mojang/rubydung/level/Level	[B	blocks	f_4800445
 FIELD	com/mojang/rubydung/level/Level	I	depth	f_0105010
 FIELD	com/mojang/rubydung/level/Level	I	height	f_5230907
-FIELD	com/mojang/rubydung/level/Level	Ljava/util/ArrayList;	levelListeners	f_8602608
-FIELD	com/mojang/rubydung/level/Level	[I	lightDepths	f_8418380
-FIELD	com/mojang/rubydung/level/Level	Ljava/util/Random;	random	f_9465488
+FIELD	com/mojang/rubydung/level/Level	Ljava/util/ArrayList;	levelListeners	f_9572477
+FIELD	com/mojang/rubydung/level/Level	[I	lightDepths	f_6234407
+FIELD	com/mojang/rubydung/level/Level	Ljava/util/Random;	random	f_4448706
 FIELD	com/mojang/rubydung/level/Level	I	unprocessed	f_4520014
 FIELD	com/mojang/rubydung/level/Level	I	width	f_8841667
 METHOD	com/mojang/rubydung/level/Level	(Lcom/mojang/rubydung/level/LevelListener;)V	addListener	m_6604813

@@ -164,7 +164,7 @@ FIELD	com/mojang/minecraft/character/Zombie	F	rot	f_7034797
 FIELD	com/mojang/minecraft/character/Zombie	F	speed	f_4659285
 FIELD	com/mojang/minecraft/character/Zombie	Lcom/mojang/minecraft/renderer/Textures;	textures	f_2431506
 FIELD	com/mojang/minecraft/character/Zombie	F	timeOffs	f_0087772
-FIELD	com/mojang/minecraft/character/Zombie	Lcom/mojang/minecraft/character/ZombieModel;	zombieModel	f_0264670
+FIELD	com/mojang/minecraft/character/Zombie	Lcom/mojang/minecraft/character/ZombieModel;	zombieModel	f_6031782
 CLASS	com/mojang/minecraft/character/ZombieModel	net/minecraft/unmapped/C_7898033
 FIELD	com/mojang/minecraft/character/ZombieModel	Lcom/mojang/minecraft/character/Cube;	arm0	f_9339598
 FIELD	com/mojang/minecraft/character/ZombieModel	Lcom/mojang/minecraft/character/Cube;	arm1	f_7661525
@@ -284,12 +284,12 @@ FIELD	com/mojang/minecraft/level/Level	J	createTime	f_4885013
 FIELD	com/mojang/minecraft/level/Level	Ljava/lang/String;	creator	f_1116933
 FIELD	com/mojang/minecraft/level/Level	I	depth	f_0105010
 FIELD	com/mojang/minecraft/level/Level	I	height	f_5230907
-FIELD	com/mojang/minecraft/level/Level	Ljava/util/ArrayList;	levelListeners	f_8602608
-FIELD	com/mojang/minecraft/level/Level	[I	lightDepths	f_8418380
+FIELD	com/mojang/minecraft/level/Level	Ljava/util/ArrayList;	levelListeners	f_9572477
+FIELD	com/mojang/minecraft/level/Level	[I	lightDepths	f_6234407
 FIELD	com/mojang/minecraft/level/Level	I	multiplier	f_0287590
 FIELD	com/mojang/minecraft/level/Level	Ljava/lang/String;	name	f_9682862
-FIELD	com/mojang/minecraft/level/Level	I	randValue	f_7015101
-FIELD	com/mojang/minecraft/level/Level	Ljava/util/Random;	random	f_9465488
+FIELD	com/mojang/minecraft/level/Level	I	randValue	f_5915199
+FIELD	com/mojang/minecraft/level/Level	Ljava/util/Random;	random	f_4448706
 FIELD	com/mojang/minecraft/level/Level	I	unprocessed	f_4520014
 FIELD	com/mojang/minecraft/level/Level	I	width	f_8841667
 METHOD	com/mojang/minecraft/level/Level	(Lcom/mojang/minecraft/level/LevelListener;)V	addListener	m_1399919
@@ -302,7 +302,7 @@ METHOD	com/mojang/minecraft/level/Level	(III)I	getTile	m_2318510
 METHOD	com/mojang/minecraft/level/Level	(III)Z	isLightBlocker	m_6980551
 METHOD	com/mojang/minecraft/level/Level	(III)Z	isLit	m_2758555
 METHOD	com/mojang/minecraft/level/Level	(III)Z	isSolidTile	m_7094397
-METHOD	com/mojang/minecraft/level/Level	(IIII)V	neighborChanged	m_1235662
+METHOD	com/mojang/minecraft/level/Level	(IIII)V	neighborChanged	m_0943051
 METHOD	com/mojang/minecraft/level/Level	(Lcom/mojang/minecraft/level/LevelListener;)V	removeListener	m_9955087
 METHOD	com/mojang/minecraft/level/Level	(III[B)V	setData	m_8619392
 METHOD	com/mojang/minecraft/level/Level	(IIII)Z	setTile	m_8573098

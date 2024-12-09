@@ -260,7 +260,7 @@ FIELD	com/mojang/minecraft/c	J	g	f_8152395
 FIELD	com/mojang/minecraft/c	J	h	f_7610845
 FIELD	com/mojang/minecraft/c	D	i	f_3503925
 CLASS	com/mojang/minecraft/character/Zombie	com/mojang/minecraft/character/Zombie
-FIELD	com/mojang/minecraft/character/Zombie	Lcom/mojang/minecraft/character/a;	a	f_7548675
+FIELD	com/mojang/minecraft/character/Zombie	Lcom/mojang/minecraft/character/a;	a	f_6031782
 FIELD	com/mojang/minecraft/character/Zombie	F	rotA	rotA
 FIELD	com/mojang/minecraft/character/Zombie	F	rot	rot
 FIELD	com/mojang/minecraft/character/Zombie	J	serialVersionUID	serialVersionUID
@@ -379,15 +379,15 @@ FIELD	com/mojang/minecraft/e	I	b	f_6536619
 FIELD	com/mojang/minecraft/e	I	c	f_6309744
 FIELD	com/mojang/minecraft/e	I	d	f_5340853
 CLASS	com/mojang/minecraft/level/Level	com/mojang/minecraft/level/Level
-FIELD	com/mojang/minecraft/level/Level	Ljava/util/ArrayList;	a	f_4428522
-FIELD	com/mojang/minecraft/level/Level	[I	b	f_4824639
+FIELD	com/mojang/minecraft/level/Level	Ljava/util/ArrayList;	a	f_9572477
+FIELD	com/mojang/minecraft/level/Level	[I	b	f_6234407
 FIELD	com/mojang/minecraft/level/Level	[B	blocks	blocks
-FIELD	com/mojang/minecraft/level/Level	Ljava/util/Random;	c	f_9714807
+FIELD	com/mojang/minecraft/level/Level	Ljava/util/Random;	c	f_4448706
 FIELD	com/mojang/minecraft/level/Level	J	createTime	createTime
 FIELD	com/mojang/minecraft/level/Level	Ljava/lang/String;	creator	creator
-FIELD	com/mojang/minecraft/level/Level	I	d	f_9411828
+FIELD	com/mojang/minecraft/level/Level	I	d	f_5915199
 FIELD	com/mojang/minecraft/level/Level	I	depth	depth
-FIELD	com/mojang/minecraft/level/Level	Ljava/util/ArrayList;	e	f_7612024
+FIELD	com/mojang/minecraft/level/Level	Ljava/util/ArrayList;	e	f_1161172
 FIELD	com/mojang/minecraft/level/Level	Ljava/util/ArrayList;	entities	entities
 FIELD	com/mojang/minecraft/level/Level	I	height	height
 FIELD	com/mojang/minecraft/level/Level	Ljava/lang/String;	name	name
@@ -400,9 +400,9 @@ FIELD	com/mojang/minecraft/level/Level	I	width	width
 FIELD	com/mojang/minecraft/level/Level	I	xSpawn	xSpawn
 FIELD	com/mojang/minecraft/level/Level	I	ySpawn	ySpawn
 FIELD	com/mojang/minecraft/level/Level	I	zSpawn	zSpawn
-METHOD	com/mojang/minecraft/level/Level	(FFF)Z	a	m_4411666
-METHOD	com/mojang/minecraft/level/Level	(III)Z	a	m_8679728
-METHOD	com/mojang/minecraft/level/Level	(IIII)V	a	m_6320718
+METHOD	com/mojang/minecraft/level/Level	(FFF)Z	a	m_6056620
+METHOD	com/mojang/minecraft/level/Level	(III)Z	a	m_9458565
+METHOD	com/mojang/minecraft/level/Level	(IIII)V	a	m_0943051
 METHOD	com/mojang/minecraft/level/Level	(Lcom/mojang/minecraft/a/g;)V	addListener$74652038	addListener$74652038
 METHOD	com/mojang/minecraft/level/Level	(IIII)V	addToTickNextTick	addToTickNextTick
 METHOD	com/mojang/minecraft/level/Level	(IIII)V	calcLightDepths	calcLightDepths
@@ -580,7 +580,7 @@ FIELD	com/mojang/minecraft/level/c/a	Lcom/mojang/minecraft/level/c/a;	b	f_307027
 FIELD	com/mojang/minecraft/level/c/a	Lcom/mojang/minecraft/level/c/a;	c	f_3260500
 FIELD	com/mojang/minecraft/level/c/a	[Lcom/mojang/minecraft/level/c/a;	d	f_5419847
 CLASS	com/mojang/minecraft/net/NetworkPlayer	com/mojang/minecraft/net/NetworkPlayer
-FIELD	com/mojang/minecraft/net/NetworkPlayer	I	a	f_2120118
+FIELD	com/mojang/minecraft/net/NetworkPlayer	I	a	f_5645485
 FIELD	com/mojang/minecraft/net/NetworkPlayer	F	animStep	animStep
 FIELD	com/mojang/minecraft/net/NetworkPlayer	F	animStepO	animStepO
 FIELD	com/mojang/minecraft/net/NetworkPlayer	Lcom/mojang/minecraft/d;	minecraft	minecraft
@@ -703,5 +703,5 @@ CLASS	com/mojang/minecraft/player/c	net/minecraft/unmapped/C_6008819
 FIELD	com/mojang/minecraft/player/c	[I	a	f_2570816
 FIELD	com/mojang/minecraft/player/c	I	b	f_9994839
 METHOD	com/mojang/minecraft/player/c	()I	a	m_4225010
-METHOD	com/mojang/minecraft/player/c	(I)I	a	m_2929127
+METHOD	com/mojang/minecraft/player/c	(I)I	a	m_3847488
 METHOD	com/mojang/minecraft/player/c	(Lcom/mojang/minecraft/level/a/a;)V	a	m_0226182

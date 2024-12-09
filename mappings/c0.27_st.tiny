@@ -564,7 +564,7 @@ FIELD	com/mojang/minecraft/item/Arrow	F	yd	yd
 FIELD	com/mojang/minecraft/item/Arrow	F	zd	zd
 METHOD	com/mojang/minecraft/item/Arrow	()Lcom/mojang/minecraft/Entity;	getOwner	getOwner
 CLASS	com/mojang/minecraft/item/Item	com/mojang/minecraft/item/Item
-FIELD	com/mojang/minecraft/item/Item	[Lcom/mojang/minecraft/item/a;	a	f_3158399
+FIELD	com/mojang/minecraft/item/Item	[Lcom/mojang/minecraft/item/a;	a	f_5539600
 FIELD	com/mojang/minecraft/item/Item	I	age	age
 FIELD	com/mojang/minecraft/item/Item	I	resource	resource
 FIELD	com/mojang/minecraft/item/Item	F	rot	rot
@@ -713,17 +713,17 @@ METHOD	com/mojang/minecraft/level/BlockMap$Slot	(Lcom/mojang/minecraft/Entity;)V
 METHOD	com/mojang/minecraft/level/BlockMap$Slot	(FFF)Lcom/mojang/minecraft/level/BlockMap$Slot;	init	init
 METHOD	com/mojang/minecraft/level/BlockMap$Slot	(Lcom/mojang/minecraft/Entity;)V	remove	remove
 CLASS	com/mojang/minecraft/level/Level	com/mojang/minecraft/level/Level
-FIELD	com/mojang/minecraft/level/Level	Ljava/util/ArrayList;	a	f_3771162
-FIELD	com/mojang/minecraft/level/Level	[I	b	f_4062194
+FIELD	com/mojang/minecraft/level/Level	Ljava/util/ArrayList;	a	f_9572477
+FIELD	com/mojang/minecraft/level/Level	[I	b	f_6234407
 FIELD	com/mojang/minecraft/level/Level	Lcom/mojang/minecraft/level/BlockMap;	blockMap	blockMap
 FIELD	com/mojang/minecraft/level/Level	[B	blocks	blocks
 FIELD	com/mojang/minecraft/level/Level	Ljava/util/Random;	c	f_4448706
 FIELD	com/mojang/minecraft/level/Level	I	cloudColor	cloudColor
 FIELD	com/mojang/minecraft/level/Level	J	createTime	createTime
 FIELD	com/mojang/minecraft/level/Level	Ljava/lang/String;	creator	creator
-FIELD	com/mojang/minecraft/level/Level	I	d	f_9951020
+FIELD	com/mojang/minecraft/level/Level	I	d	f_5915199
 FIELD	com/mojang/minecraft/level/Level	I	depth	depth
-FIELD	com/mojang/minecraft/level/Level	Ljava/util/ArrayList;	e	f_5836178
+FIELD	com/mojang/minecraft/level/Level	Ljava/util/ArrayList;	e	f_1161172
 FIELD	com/mojang/minecraft/level/Level	I	fogColor	fogColor
 FIELD	com/mojang/minecraft/level/Level	Lcom/mojang/minecraft/c/k;	font	font
 FIELD	com/mojang/minecraft/level/Level	I	height	height
@@ -742,9 +742,9 @@ FIELD	com/mojang/minecraft/level/Level	I	width	width
 FIELD	com/mojang/minecraft/level/Level	I	xSpawn	xSpawn
 FIELD	com/mojang/minecraft/level/Level	I	ySpawn	ySpawn
 FIELD	com/mojang/minecraft/level/Level	I	zSpawn	zSpawn
-METHOD	com/mojang/minecraft/level/Level	(FFF)Z	a	m_5522802
-METHOD	com/mojang/minecraft/level/Level	(III)Z	a	m_4086166
-METHOD	com/mojang/minecraft/level/Level	(IIII)V	a	m_5373990
+METHOD	com/mojang/minecraft/level/Level	(FFF)Z	a	m_6056620
+METHOD	com/mojang/minecraft/level/Level	(III)Z	a	m_9458565
+METHOD	com/mojang/minecraft/level/Level	(IIII)V	a	m_0943051
 METHOD	com/mojang/minecraft/level/Level	(Lcom/mojang/minecraft/Entity;)V	addEntity	addEntity
 METHOD	com/mojang/minecraft/level/Level	(Lcom/mojang/minecraft/a/g;)V	addListener$74652038	addListener$74652038
 METHOD	com/mojang/minecraft/level/Level	(IIII)V	addToTickNextTick	addToTickNextTick
@@ -1091,7 +1091,7 @@ METHOD	com/mojang/minecraft/mob/ai/BasicAttackAI	()V	doAttack	doAttack
 CLASS	com/mojang/minecraft/mob/ai/JumpAttackAI	com/mojang/minecraft/mob/ai/JumpAttackAI
 FIELD	com/mojang/minecraft/mob/ai/JumpAttackAI	J	serialVersionUID	serialVersionUID
 CLASS	com/mojang/minecraft/net/NetworkPlayer	com/mojang/minecraft/net/NetworkPlayer
-FIELD	com/mojang/minecraft/net/NetworkPlayer	I	a	f_9074762
+FIELD	com/mojang/minecraft/net/NetworkPlayer	I	a	f_5645485
 FIELD	com/mojang/minecraft/net/NetworkPlayer	Ljava/lang/String;	displayName	displayName
 FIELD	com/mojang/minecraft/net/NetworkPlayer	Lcom/mojang/minecraft/l;	minecraft	minecraft
 FIELD	com/mojang/minecraft/net/NetworkPlayer	Ljava/util/List;	moveQueue	moveQueue
@@ -1214,7 +1214,7 @@ FIELD	com/mojang/minecraft/player/Inventory	[I	popTime	popTime
 FIELD	com/mojang/minecraft/player/Inventory	I	selected	selected
 FIELD	com/mojang/minecraft/player/Inventory	J	serialVersionUID	serialVersionUID
 FIELD	com/mojang/minecraft/player/Inventory	[I	slots	slots
-METHOD	com/mojang/minecraft/player/Inventory	(I)I	a	m_3535045
+METHOD	com/mojang/minecraft/player/Inventory	(I)I	a	m_3847488
 METHOD	com/mojang/minecraft/player/Inventory	(I)Z	addResource	addResource
 METHOD	com/mojang/minecraft/player/Inventory	()I	getSelected	getSelected
 METHOD	com/mojang/minecraft/player/Inventory	(I)V	grabTexture	grabTexture
@@ -1226,7 +1226,7 @@ METHOD	com/mojang/minecraft/player/Inventory	()V	tick	tick
 CLASS	com/mojang/minecraft/player/Player	com/mojang/minecraft/player/Player
 FIELD	com/mojang/minecraft/player/Player	I	MAX_ARROWS	MAX_ARROWS
 FIELD	com/mojang/minecraft/player/Player	I	MAX_HEALTH	MAX_HEALTH
-FIELD	com/mojang/minecraft/player/Player	I	a	f_0378659
+FIELD	com/mojang/minecraft/player/Player	I	a	f_1912940
 FIELD	com/mojang/minecraft/player/Player	I	arrows	arrows
 FIELD	com/mojang/minecraft/player/Player	F	bob	bob
 FIELD	com/mojang/minecraft/player/Player	Lcom/mojang/minecraft/player/a;	input	input
