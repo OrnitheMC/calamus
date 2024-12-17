@@ -279,7 +279,7 @@ METHOD	eo	(IIIIZ)Z	a	m_2921988
 METHOD	eo	(IIILay;)V	a	m_8694006
 METHOD	eo	(IIIZ)I	a	m_0113274
 METHOD	eo	(Lbd;Lbd;)Lgo;	a	m_1352031
-METHOD	eo	(Lbd;Lbd;Z)Lgo;	a	m_1107910
+METHOD	eo	(Lbd;Lbd;Z)Lgo;	a	m_9880818
 METHOD	eo	(Lbd;Ldu;)F	a	m_6686428
 METHOD	eo	(Ldl;III)I	a	m_1517868
 METHOD	eo	(Ldl;IIII)V	a	m_7043535
@@ -1087,9 +1087,6 @@ FIELD	l	B	f	f_4783345
 FIELD	l	B	g	f_8541085
 FIELD	l	I	h	f_6062964
 FIELD	l	I	i	f_3624851
-CLASS	jx	net/minecraft/unmapped/C_0932780
-FIELD	jx	I	a	f_7177981
-FIELD	jx	I	b	f_0809651
 CLASS	n	net/minecraft/unmapped/C_8565077
 METHOD	n	(Leo;III)F	h	m_8172178
 CLASS	o	net/minecraft/unmapped/C_6692735
@@ -1409,7 +1406,7 @@ FIELD	dx	D	s	f_6075053
 FIELD	dx	I	b	f_3523765
 FIELD	dx	Z	T	f_7134678
 FIELD	dx	F	U	f_4332443
-FIELD	dx	Z	V	f_6716342
+FIELD	dx	Z	V	f_3483979
 FIELD	dx	Ljava/util/Random;	W	f_9962160
 FIELD	dx	I	X	f_7850449
 FIELD	dx	I	Y	f_4418656
@@ -1913,7 +1910,7 @@ FIELD	ix	Lfo;	g	f_7187911
 METHOD	ix	(II)Lim;	a	m_4232370
 METHOD	ix	(IIII)[Lim;	a	m_2836963
 METHOD	ix	(Lkf;)Lim;	a	m_5731652
-METHOD	ix	([DIIII)[D	a	m_2137468
+METHOD	ix	([DIIII)[D	a	m_2266722
 METHOD	ix	([Lim;IIII)[Lim;	a	m_6329777
 CLASS	iy	net/minecraft/unmapped/C_4948697
 FIELD	iy	I	a	f_0802335
@@ -1945,7 +1942,7 @@ FIELD	jd	Leo;	p	f_5278555
 FIELD	jd	[D	q	f_5835085
 FIELD	jd	[D	r	f_7022010
 FIELD	jd	[D	s	f_1351414
-FIELD	jd	[D	t	f_9365664
+FIELD	jd	[D	t	f_4647454
 FIELD	jd	Lfe;	u	f_0546041
 FIELD	jd	[Lim;	v	f_5383852
 FIELD	jd	[D	w	f_9021032
@@ -2186,7 +2183,7 @@ METHOD	gp	(III)V	a	m_2771449
 METHOD	gp	(IIILay;)V	a	m_8169613
 METHOD	gp	(Ler;)V	a	m_5986822
 METHOD	gp	(Lev;)V	a	m_8887204
-METHOD	gp	(Lfq;Ljava/lang/String;Ljava/lang/String;)Ler;	a	m_1007200
+METHOD	gp	(Lfq;Ljava/lang/String;Ljava/lang/String;)Ler;	a	m_7298898
 METHOD	gp	(Lir;)V	a	m_3217294
 METHOD	gp	(Ljava/lang/String;)V	a	m_1378472
 METHOD	gp	(Ljava/lang/String;Lir;)Z	a	m_9415220
@@ -2284,7 +2281,6 @@ FIELD	jb	I	b	f_9477583
 FIELD	jb	[Ljava/lang/String;	c	f_2116086
 METHOD	jb	()V	a	m_5567243
 METHOD	jb	(Ljb;)V	a	m_2060476
-METHOD	jb	(Ljava/awt/Graphics;)V	paint	m_4715079
 CLASS	jg	net/minecraft/unmapped/C_8752044
 FIELD	jg	Ljava/util/logging/Logger;	a	f_2099216
 FIELD	jg	Lbi;	b	f_7027179
@@ -2334,6 +2330,9 @@ METHOD	jt	(Lfx;Leo;Lhl;)Z	a	m_1509177
 METHOD	jt	(Lfx;Leo;Lhl;IIII)Z	a	m_7617621
 METHOD	jt	(III)Z	b	m_2416733
 METHOD	jt	(III)Z	c	m_1137399
+CLASS	jx	net/minecraft/unmapped/C_6131076
+FIELD	jx	I	a	f_3347531
+FIELD	jx	I	b	f_3707756
 CLASS	jz	net/minecraft/unmapped/C_4816709
 FIELD	jz	Ljb;	a	f_9705535
 CLASS	net/minecraft/server/MinecraftServer	net/minecraft/server/MinecraftServer

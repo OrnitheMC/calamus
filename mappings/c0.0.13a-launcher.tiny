@@ -263,7 +263,7 @@ METHOD	com/mojang/minecraft/level/Chunk	(Lcom/mojang/minecraft/Player;)F	distanc
 METHOD	com/mojang/minecraft/level/Chunk	()Z	isDirty	m_1389639
 METHOD	com/mojang/minecraft/level/Chunk	()V	rebuild	m_0330444
 METHOD	com/mojang/minecraft/level/Chunk	(I)V	rebuild	m_5355895
-METHOD	com/mojang/minecraft/level/Chunk	(I)V	render	m_1157136
+METHOD	com/mojang/minecraft/level/Chunk	(I)V	render	m_8783499
 METHOD	com/mojang/minecraft/level/Chunk	()V	reset	m_0499834
 METHOD	com/mojang/minecraft/level/Chunk	()V	setDirty	m_9762890
 CLASS	com/mojang/minecraft/level/Coord	net/minecraft/unmapped/C_4052415
@@ -351,13 +351,13 @@ METHOD	com/mojang/minecraft/level/LevelRenderer	()V	renderSurroundingWater	m_491
 METHOD	com/mojang/minecraft/level/LevelRenderer	(IIIIII)V	setDirty	m_6084899
 METHOD	com/mojang/minecraft/level/LevelRenderer	()V	toggleDrawDistance	m_5913509
 METHOD	com/mojang/minecraft/level/LevelRenderer	(Lcom/mojang/minecraft/Player;)V	updateDirtyChunks	m_9910005
-CLASS	com/mojang/minecraft/level/levelgen/LevelGen	net/minecraft/unmapped/C_5376418
+CLASS	com/mojang/minecraft/level/levelgen/LevelGen	net/minecraft/unmapped/C_4078372
 FIELD	com/mojang/minecraft/level/levelgen/LevelGen	[B	blocks	f_8316515
 FIELD	com/mojang/minecraft/level/levelgen/LevelGen	[I	coords	f_6516890
 FIELD	com/mojang/minecraft/level/levelgen/LevelGen	I	depth	f_2316345
 FIELD	com/mojang/minecraft/level/levelgen/LevelGen	I	height	f_8175346
 FIELD	com/mojang/minecraft/level/levelgen/LevelGen	Lcom/mojang/minecraft/level/LevelLoaderListener;	levelLoaderListener	f_4854350
-FIELD	com/mojang/minecraft/level/levelgen/LevelGen	Ljava/util/Random;	random	f_3235868
+FIELD	com/mojang/minecraft/level/levelgen/LevelGen	Ljava/util/Random;	random	f_3952515
 FIELD	com/mojang/minecraft/level/levelgen/LevelGen	I	width	f_7275613
 METHOD	com/mojang/minecraft/level/levelgen/LevelGen	()V	addLava	m_8370654
 METHOD	com/mojang/minecraft/level/levelgen/LevelGen	()V	addWater	m_9596712
@@ -366,7 +366,7 @@ METHOD	com/mojang/minecraft/level/levelgen/LevelGen	(II)[D	buildHeightmap	m_6952
 METHOD	com/mojang/minecraft/level/levelgen/LevelGen	()V	carveTunnels	m_2322080
 METHOD	com/mojang/minecraft/level/levelgen/LevelGen	(IIIII)J	floodFillLiquid	m_6366896
 METHOD	com/mojang/minecraft/level/levelgen/LevelGen	(Lcom/mojang/minecraft/level/Level;Ljava/lang/String;III)Z	generateLevel	m_0447977
-CLASS	com/mojang/minecraft/level/levelgen/synth/Distort	net/minecraft/unmapped/C_5708128
+CLASS	com/mojang/minecraft/level/levelgen/synth/Distort	net/minecraft/unmapped/C_1405541
 FIELD	com/mojang/minecraft/level/levelgen/synth/Distort	Lcom/mojang/minecraft/level/levelgen/synth/Synth;	distort	f_6356450
 FIELD	com/mojang/minecraft/level/levelgen/synth/Distort	Lcom/mojang/minecraft/level/levelgen/synth/Synth;	source	f_1343857
 CLASS	com/mojang/minecraft/level/levelgen/synth/Emboss	net/minecraft/unmapped/C_3139622

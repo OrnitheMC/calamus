@@ -97,9 +97,9 @@ ly.a(Lnx;IIII)Z: m_7925651 -> **m_8199947** (manual fix, name taken from b1.6-tb
 
 ### 18w05a -> 18w06a
 
-1) m_2661127 <- bdo<-java/lang/Object.b(Lec;)Lbfj;, bgv<-[java/lang/Object,bgm<-[java/lang/Object,atb<-java/lang/Object]].b(Lec;)Lbfj;
+**1) m_4919395 <- asn<-java/lang/Object(itf).b(Lec;)Lbfj;**
 
-**2) m_4919395 <- asn<-java/lang/Object(itf).b(Lec;)Lbfj;, atb<-java/lang/Object(itf).b(Lec;)Lbfj;**
+2) m_9971171 <- bdo<-java/lang/Object.b(Lec;)Lbfj;, bgv<-[java/lang/Object,bgm<-[java/lang/Object,atb<-java/lang/Object]].b(Lec;)Lbfj;
 
 ---
 
@@ -124,6 +124,12 @@ ly.a(Lnx;IIII)Z: m_7925651 -> **m_8199947** (manual fix, name taken from b1.6-tb
 **1) m_5506965 <- ok<-java/lang/Object(itf).aa_()V, op<-java/lang/Object(itf).aa_()V**
 
 2) m_8716168 <- aug<-[java/lang/Object,op<-java/lang/Object].aa_()V
+
+### 18w10d -> 18w11a
+
+**1) m_6542542 <- aju<-java/lang/Object(itf).r(Z)V, ajv<-java/lang/Object(itf).r(Z)V**
+
+2) m_7941291 <- aki<-ajs<-[acd<-abw<-abv<-abm<-[java/lang/Object,aan<-java/lang/Object,bn<-java/lang/Object],ajk<-[java/lang/Object,abl<-java/lang/Object]].r(Z)V
 
 ### 1.13 -> 18w30a
 

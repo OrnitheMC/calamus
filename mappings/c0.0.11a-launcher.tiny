@@ -216,7 +216,7 @@ METHOD	com/mojang/minecraft/level/Chunk	(Lcom/mojang/minecraft/Player;)F	distanc
 METHOD	com/mojang/minecraft/level/Chunk	()Z	isDirty	m_1389639
 METHOD	com/mojang/minecraft/level/Chunk	()V	rebuild	m_0330444
 METHOD	com/mojang/minecraft/level/Chunk	(I)V	rebuild	m_5355895
-METHOD	com/mojang/minecraft/level/Chunk	(I)V	render	m_1157136
+METHOD	com/mojang/minecraft/level/Chunk	(I)V	render	m_8783499
 METHOD	com/mojang/minecraft/level/Chunk	()V	setDirty	m_9762890
 CLASS	com/mojang/minecraft/level/DirtyChunkSorter	net/minecraft/unmapped/C_8688622
 FIELD	com/mojang/minecraft/level/DirtyChunkSorter	Lcom/mojang/minecraft/renderer/Frustum;	frustum	f_1226031
@@ -245,10 +245,10 @@ METHOD	com/mojang/minecraft/level/Level	(Lcom/mojang/minecraft/level/LevelListen
 METHOD	com/mojang/minecraft/level/Level	()V	save	m_9465106
 METHOD	com/mojang/minecraft/level/Level	(IIII)Z	setTile	m_8573098
 METHOD	com/mojang/minecraft/level/Level	()V	tick	m_1544961
-CLASS	com/mojang/minecraft/level/LevelGen	net/minecraft/unmapped/C_5376418
+CLASS	com/mojang/minecraft/level/LevelGen	net/minecraft/unmapped/C_4078372
 FIELD	com/mojang/minecraft/level/LevelGen	I	depth	f_2316345
 FIELD	com/mojang/minecraft/level/LevelGen	I	height	f_8175346
-FIELD	com/mojang/minecraft/level/LevelGen	Ljava/util/Random;	random	f_3235868
+FIELD	com/mojang/minecraft/level/LevelGen	Ljava/util/Random;	random	f_3952515
 FIELD	com/mojang/minecraft/level/LevelGen	I	width	f_7275613
 METHOD	com/mojang/minecraft/level/LevelGen	()[B	generateMap	m_5710106
 CLASS	com/mojang/minecraft/level/LevelListener	net/minecraft/unmapped/C_4502654
