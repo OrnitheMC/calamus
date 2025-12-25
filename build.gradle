@@ -4,7 +4,7 @@ import net.ornithemc.keratin.api.task.mapping.UpdateIntermediaryTask
 plugins {
 	id 'java'
 	id 'maven-publish'
-	id 'keratin' version '26.1'
+	id 'keratin' version '38.0'
 }
 
 def ENV = System.getenv()
@@ -15,7 +15,7 @@ keratin {
 	}
 	intermediaryGen = 2
 
-	tasks TaskSelection.CALAMUS
+	tasks TaskSelection.INTERMEDIARY
 }
 
 updateIntermediary {
