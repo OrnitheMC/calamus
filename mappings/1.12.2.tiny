@@ -4641,7 +4641,7 @@ FIELD	aoi	Lbas;	N	f_7069034
 METHOD	aoi	(Lamu;)[Lbas$a;	a	m_3263454
 CLASS	aoi$1	net/minecraft/unmapped/C_8667187$5989789
 CLASS	aoi$a	net/minecraft/unmapped/C_8667187$C_1102671
-METHOD	aoi$a	(Ljava/lang/Long;)[Lbas$a;	a	m_3955375
+METHOD	aoi$a	(Ljava/lang/Long;)[Lbas$a;	a	load
 CLASS	aoj	net/minecraft/unmapped/C_3071807
 CLASS	aok	net/minecraft/unmapped/C_6329851
 CLASS	aom	net/minecraft/unmapped/C_6602321
@@ -18989,7 +18989,7 @@ METHOD	ew	(Ljava/lang/Class;Ljava/lang/Iterable;)[Ljava/lang/Object;	b	m_3229600
 METHOD	ew	(Ljava/lang/Iterable;)Ljava/lang/Iterable;	b	m_0545872
 CLASS	ew$1	net/minecraft/unmapped/C_6115507$2157420
 CLASS	ew$a	net/minecraft/unmapped/C_6115507$C_6644198
-METHOD	ew$a	([Ljava/lang/Object;)Ljava/util/List;	a	m_0462521
+METHOD	ew$a	([Ljava/lang/Object;)Ljava/util/List;	a	apply
 CLASS	ew$b	net/minecraft/unmapped/C_6115507$C_5277315
 FIELD	ew$b	Ljava/lang/Class;	a	f_8864007
 FIELD	ew$b	[Ljava/lang/Iterable;	b	f_3702598
@@ -18998,7 +18998,7 @@ FIELD	ew$b$a	I	a	f_8761003
 FIELD	ew$b$a	[Ljava/lang/Iterable;	b	f_9826665
 FIELD	ew$b$a	[Ljava/util/Iterator;	c	f_6411102
 FIELD	ew$b$a	[Ljava/lang/Object;	d	f_8750606
-METHOD	ew$b$a	()[Ljava/lang/Object;	a	m_3845675
+METHOD	ew$b$a	()[Ljava/lang/Object;	a	next
 METHOD	ew$b$a	()V	b	m_3259979
 CLASS	ex	net/minecraft/unmapped/C_2528085
 METHOD	ex	(Lamu;Laip;ILfa;Lfk;)V	a	m_9837208

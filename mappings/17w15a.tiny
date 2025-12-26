@@ -4151,7 +4151,7 @@ FIELD	anc	Lazl;	N	f_7069034
 METHOD	anc	(Lalo;)[Lazl$a;	a	m_3263454
 CLASS	anc$1	net/minecraft/unmapped/C_8667187$5989789
 CLASS	anc$a	net/minecraft/unmapped/C_8667187$C_1102671
-METHOD	anc$a	(Ljava/lang/Long;)[Lazl$a;	a	m_3955375
+METHOD	anc$a	(Ljava/lang/Long;)[Lazl$a;	a	load
 CLASS	and	net/minecraft/unmapped/C_3071807
 CLASS	ane	net/minecraft/unmapped/C_6329851
 CLASS	ang	net/minecraft/unmapped/C_6602321
@@ -18013,7 +18013,7 @@ METHOD	ee	(Ljava/lang/Class;Ljava/lang/Iterable;)[Ljava/lang/Object;	b	m_3229600
 METHOD	ee	(Ljava/lang/Iterable;)Ljava/lang/Iterable;	b	m_0545872
 CLASS	ee$1	net/minecraft/unmapped/C_6115507$2157420
 CLASS	ee$a	net/minecraft/unmapped/C_6115507$C_6644198
-METHOD	ee$a	([Ljava/lang/Object;)Ljava/util/List;	a	m_0462521
+METHOD	ee$a	([Ljava/lang/Object;)Ljava/util/List;	a	apply
 CLASS	ee$b	net/minecraft/unmapped/C_6115507$C_5277315
 FIELD	ee$b	Ljava/lang/Class;	a	f_8864007
 FIELD	ee$b	[Ljava/lang/Iterable;	b	f_3702598
@@ -18022,7 +18022,7 @@ FIELD	ee$b$a	I	a	f_8761003
 FIELD	ee$b$a	[Ljava/lang/Iterable;	b	f_9826665
 FIELD	ee$b$a	[Ljava/util/Iterator;	c	f_6411102
 FIELD	ee$b$a	[Ljava/lang/Object;	d	f_8750606
-METHOD	ee$b$a	()[Ljava/lang/Object;	a	m_3845675
+METHOD	ee$b$a	()[Ljava/lang/Object;	a	next
 METHOD	ee$b$a	()V	b	m_3259979
 CLASS	ef	net/minecraft/unmapped/C_2528085
 METHOD	ef	(Lalo;Lahl;ILei;Les;)V	a	m_9837208

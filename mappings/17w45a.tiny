@@ -5087,7 +5087,7 @@ FIELD	aqm	Lbcw;	N	f_7069034
 METHOD	aqm	(Laoy;)[Lbcw$a;	a	m_3263454
 CLASS	aqm$1	net/minecraft/unmapped/C_8667187$5989789
 CLASS	aqm$a	net/minecraft/unmapped/C_8667187$C_1102671
-METHOD	aqm$a	(Ljava/lang/Long;)[Lbcw$a;	a	m_3955375
+METHOD	aqm$a	(Ljava/lang/Long;)[Lbcw$a;	a	load
 CLASS	aqn	net/minecraft/unmapped/C_3071807
 CLASS	aqo	net/minecraft/unmapped/C_6329851
 CLASS	aqq	net/minecraft/unmapped/C_6602321
@@ -19999,7 +19999,7 @@ METHOD	dh	(Ljava/lang/Class;Ljava/lang/Iterable;)[Ljava/lang/Object;	b	m_3229600
 METHOD	dh	(Ljava/lang/Iterable;)Ljava/lang/Iterable;	b	m_0545872
 CLASS	dh$1	net/minecraft/unmapped/C_6115507$2157420
 CLASS	dh$a	net/minecraft/unmapped/C_6115507$C_6644198
-METHOD	dh$a	([Ljava/lang/Object;)Ljava/util/List;	a	m_0462521
+METHOD	dh$a	([Ljava/lang/Object;)Ljava/util/List;	a	apply
 CLASS	dh$b	net/minecraft/unmapped/C_6115507$C_5277315
 FIELD	dh$b	Ljava/lang/Class;	a	f_8864007
 FIELD	dh$b	[Ljava/lang/Iterable;	b	f_3702598
@@ -20008,7 +20008,7 @@ FIELD	dh$b$a	I	a	f_8761003
 FIELD	dh$b$a	[Ljava/lang/Iterable;	b	f_9826665
 FIELD	dh$b$a	[Ljava/util/Iterator;	c	f_6411102
 FIELD	dh$b$a	[Ljava/lang/Object;	d	f_8750606
-METHOD	dh$b$a	()[Ljava/lang/Object;	a	m_3845675
+METHOD	dh$b$a	()[Ljava/lang/Object;	a	next
 METHOD	dh$b$a	()V	b	m_3259979
 CLASS	di	net/minecraft/unmapped/C_2528085
 METHOD	di	(Laoy;Lakt;ILdl;Ldv;)V	a	m_9837208

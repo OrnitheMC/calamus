@@ -240,12 +240,6 @@ ly.a(Lnx;IIII)Z: m_9110652 -> **m_3795772** (manual fix, name taken from b1.6-tb
 
 3) m_8107978 <- ez<-[java/lang/Object,ey<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]].a(I)Ljava/lang/Object;
 
-### 18w43b -> 18w43c
-
-**1) load <- azy$1<-com/google/common/cache/CacheLoader<-java/lang/Object.a(Layp;)Lazy$a;, bme$a<-com/google/common/cache/CacheLoader<-java/lang/Object.a(Leq;)Lbmd;, dhm$1<-com/google/common/cache/CacheLoader<-java/lang/Object.a(Lcom/mojang/authlib/GameProfile;)Ljava/util/Map;**
-
-2) m_3955375 <- buk$b<-com/google/common/cache/CacheLoader<-java/lang/Object.a(Ljava/lang/Long;)Ljava/util/List;
-
 ### 18w49a -> 18w50a
 
 **1) m_7064683 <- agv<-[java/lang/Object,afv<-java/lang/Object,bz<-java/lang/Object].f()Ljd;**

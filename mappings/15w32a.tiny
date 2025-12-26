@@ -1977,7 +1977,7 @@ FIELD	agu	Lasf;	N	f_7069034
 METHOD	agu	(Lafk;)[Lasf$a;	a	m_3263454
 CLASS	agu$1	net/minecraft/unmapped/C_8667187$5989789
 CLASS	agu$a	net/minecraft/unmapped/C_8667187$C_1102671
-METHOD	agu$a	(Ljava/lang/Long;)[Lasf$a;	a	m_3955375
+METHOD	agu$a	(Ljava/lang/Long;)[Lasf$a;	a	load
 CLASS	agw	net/minecraft/unmapped/C_6602321
 CLASS	agx	net/minecraft/unmapped/C_8030367
 FIELD	agx	Laou;	a	f_4130096
@@ -13176,7 +13176,7 @@ METHOD	cm	(Ljava/lang/Class;Ljava/lang/Iterable;)[Ljava/lang/Object;	b	m_3229600
 METHOD	cm	(Ljava/lang/Iterable;)Ljava/lang/Iterable;	b	m_0545872
 CLASS	cm$1	net/minecraft/unmapped/C_6115507$2157420
 CLASS	cm$a	net/minecraft/unmapped/C_6115507$C_6644198
-METHOD	cm$a	([Ljava/lang/Object;)Ljava/util/List;	a	m_0462521
+METHOD	cm$a	([Ljava/lang/Object;)Ljava/util/List;	a	apply
 CLASS	cm$b	net/minecraft/unmapped/C_6115507$C_5277315
 FIELD	cm$b	Ljava/lang/Class;	a	f_8864007
 FIELD	cm$b	[Ljava/lang/Iterable;	b	f_3702598
@@ -13185,7 +13185,7 @@ FIELD	cm$b$a	I	a	f_8761003
 FIELD	cm$b$a	[Ljava/lang/Iterable;	b	f_9826665
 FIELD	cm$b$a	[Ljava/util/Iterator;	c	f_6411102
 FIELD	cm$b$a	[Ljava/lang/Object;	d	f_8750606
-METHOD	cm$b$a	()[Ljava/lang/Object;	a	m_3845675
+METHOD	cm$b$a	()[Ljava/lang/Object;	a	next
 METHOD	cm$b$a	()V	b	m_3259979
 CLASS	cn	net/minecraft/unmapped/C_2528085
 METHOD	cn	(Lafk;Labp;ILcq;Lcz;)V	a	m_9837208
