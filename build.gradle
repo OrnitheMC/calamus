@@ -18,7 +18,13 @@ keratin {
 	tasks TaskSelection.INTERMEDIARY
 }
 
+generateIntermediary {
+	nameLength = 8
+}
+
 updateIntermediary {
+	nameLength = 8
+
 	if (ENV.FROM_MC_VERSIONS) {
 		fromMinecraftVersions ENV.FROM_MC_VERSIONS.split('[,]')
 	}
