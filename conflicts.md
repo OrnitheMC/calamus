@@ -13,61 +13,61 @@ our matches. If not, add a new entry for the conflict resolution to this file.
 
 ### b1.6-pre-trailer -> b1.5_02
 
-ly.a(Lnx;IIII)Z: m_9110652 -> **m_3795772** (manual fix, name taken from b1.6-tb3)
+ly.a(Lnx;IIII)Z: m_4533720 -> **m_8922194** (manual fix, name taken from b1.6-tb3)
 
 ### 12w32a/1.3.2 -> 12w34a
 
-1) m_4253685 <- gv<-vg<-[java/lang/Object,vq<-java/lang/Object].a(I)Ljr;
+1) m_1605300 <- gv<-vg<-[java/lang/Object,vq<-java/lang/Object].a(I)Ljr;
 
-**2) m_7585047 <- auk<-vg<-[java/lang/Object,vq<-java/lang/Object].a(I)Ljr;**
+**2) m_9124674 <- auk<-vg<-[java/lang/Object,vq<-java/lang/Object].a(I)Ljr;**
 
 ### 12w39b -> 12w40a
 
-1) m_0504100 <- qd<-[kw<-java/lang/Object,qi<-java/lang/Object].c(DDDFF)V
+1) m_0560604 <- qd<-[kw<-java/lang/Object,qi<-java/lang/Object].c(DDDFF)V
 
-**2) m_7206057 <- ql<-[kw<-java/lang/Object,qi<-java/lang/Object].c(DDDFF)V**
+**2) m_7650587 <- ql<-[kw<-java/lang/Object,qi<-java/lang/Object].c(DDDFF)V**
 
 ### 1.5.1 -> 13w16a-04192037
 
-**1) m_5770056 <- nk<-ms<-java/lang/Object.aL()F**
+1) m_3275531 <- rc<-java/lang/Object(itf).aL()F
 
-2) m_7428638 <- rc<-java/lang/Object(itf).aL()F
+**2) m_9697920 <- nk<-ms<-java/lang/Object.aL()F**
 
 ### 14w10c/1.7.6 -> 14w11a
 
 **1) apply <- bgy<-[java/lang/Object,com/google/common/base/Predicate<-java/lang/Object].a(Lbez;)Z, pg<-[java/lang/Object,com/google/common/base/Predicate<-java/lang/Object].a(Ljava/lang/String;)Z**
 
-2) m_1658919 <- tr<-java/lang/Object(itf).a(Ltj;)Z
+2) m_0863740 <- tr<-java/lang/Object(itf).a(Ltj;)Z
 
 ### 14w20b -> 14w21a
 
-**1) m_5015568 <- nk<-java/lang/Object(itf).c()V, nn<-java/lang/Object(itf).c()V**
+**1) m_5302345 <- nk<-java/lang/Object(itf).c()V, nn<-java/lang/Object(itf).c()V**
 
-2) m_8733790 <- gd<-java/lang/Object(itf).c()V
+2) m_6095279 <- gd<-java/lang/Object(itf).c()V
 
 ### 14w28a -> 14w28b
 
-1) m_4139440 <- bae<-java/lang/Object.c()V
+1) m_0917416 <- bae<-java/lang/Object.c()V
 
-**2) m_5015568 <- pb<-java/lang/Object(itf).c()V, pd<-java/lang/Object(itf).c()V**
+**2) m_5302345 <- pb<-java/lang/Object(itf).c()V, pd<-java/lang/Object(itf).c()V**
 
 ### 16w39c -> 16w40a
 
-**1) m_3420121 <- bsr<-bsg<-java/lang/Object.a(Lasu;DDDFI)V**
+1) m_5704843 <- bsq<-bsr<-bsg<-java/lang/Object.a(Lasu;DDDFI)V
 
-2) m_9048436 <- bsq<-bsr<-bsg<-java/lang/Object.a(Lasu;DDDFI)V
+**2) m_8730533 <- bsr<-bsg<-java/lang/Object.a(Lasu;DDDFI)V**
 
 ### 1.12-pre5 -> 1.12-pre6
 
-**1) m_1466197 <- bix<-bio<-java/lang/Object.a(Lbhz;IIF)V, biy<-bip<-java/lang/Object.a(Lbhz;IIF)V**
+1) m_2102188 <- bnl$a<-biy<-bip<-java/lang/Object.a(Lbhz;IIF)V
 
-2) m_1678382 <- bnl$a<-biy<-bip<-java/lang/Object.a(Lbhz;IIF)V
+**2) m_3811351 <- bix<-bio<-java/lang/Object.a(Lbhz;IIF)V, biy<-bip<-java/lang/Object.a(Lbhz;IIF)V**
 
 ### 1.12.2 -> 17w43a
 
-**1) m_0374853 <- net/minecraft/realms/RealmsEditBox<-net/minecraft/realms/RealmsGuiEventListener<-java/lang/Object.keyPressed(III)Z**
+**1) m_6852870 <- net/minecraft/realms/RealmsEditBox<-net/minecraft/realms/RealmsGuiEventListener<-java/lang/Object.keyPressed(III)Z**
 
-2) m_0997828 <- net/minecraft/realms/RealmsScreen<-java/lang/Object.keyPressed(III)Z
+2) m_9152170 <- net/minecraft/realms/RealmsScreen<-java/lang/Object.keyPressed(III)Z
 
 ### 18w01a -> 18w02a
 
@@ -77,33 +77,33 @@ ly.a(Lnx;IIII)Z: m_9110652 -> **m_3795772** (manual fix, name taken from b1.6-tb
 
 ### 18w05a -> 18w06a
 
-**1) m_5744343 <- asn<-java/lang/Object(itf).b(Lec;)Lbfj;**
+1) m_2925147 <- bdo<-java/lang/Object.b(Lec;)Lbfj;, bgv<-[java/lang/Object,bgm<-[java/lang/Object,atb<-java/lang/Object]].b(Lec;)Lbfj;
 
-2) m_7672733 <- bdo<-java/lang/Object.b(Lec;)Lbfj;, bgv<-[java/lang/Object,bgm<-[java/lang/Object,atb<-java/lang/Object]].b(Lec;)Lbfj;
-
----
-
-1) m_6351783 <- aty<-[java/lang/Object,ats<-[java/lang/Object,atq<-[java/lang/Object,atb<-java/lang/Object]]].a(Latv;Lec;)I
-
-**2) m_9066886 <- atm<-[java/lang/Object,atn<-[java/lang/Object,atq<-[java/lang/Object,atb<-java/lang/Object],atu<-java/lang/Object],ats<-[java/lang/Object,atq<-[java/lang/Object,atb<-java/lang/Object]],java/lang/AutoCloseable<-java/lang/Object].a(Latv;Lec;)I**
+**2) m_7852500 <- asn<-java/lang/Object(itf).b(Lec;)Lbfj;**
 
 ---
 
-1) m_1560104 <- bly<-bjo<-java/lang/Object.a(Latn;Lbgn;Ljava/util/Random;Lec;Lbjp;)Z
+1) m_2404407 <- aty<-[java/lang/Object,ats<-[java/lang/Object,atq<-[java/lang/Object,atb<-java/lang/Object]]].a(Latv;Lec;)I
 
-**2) m_1670439 <- bfl<-java/lang/Object.a(Latn;Lbgn;Ljava/util/Random;Lec;Lbjp;)Z, bjo<-java/lang/Object.a(Latn;Lbgn;Ljava/util/Random;Lec;Lbjp;)Z**
-
----
-
-1) m_2617542 <- bkz<-bly<-bjo<-java/lang/Object.e()Ljava/util/List;
-
-**2) m_5315295 <- bkv<-bly<-bjo<-java/lang/Object.e()Ljava/util/List;**
+**2) m_5475075 <- atm<-[java/lang/Object,atn<-[java/lang/Object,atq<-[java/lang/Object,atb<-java/lang/Object],atu<-java/lang/Object],ats<-[java/lang/Object,atq<-[java/lang/Object,atb<-java/lang/Object]],java/lang/AutoCloseable<-java/lang/Object].a(Latv;Lec;)I**
 
 ---
 
-**1) m_5015568 <- ok<-java/lang/Object(itf).aa_()V, op<-java/lang/Object(itf).aa_()V**
+1) m_4391494 <- bly<-bjo<-java/lang/Object.a(Latn;Lbgn;Ljava/util/Random;Lec;Lbjp;)Z
 
-2) m_6650967 <- aug<-[java/lang/Object,op<-java/lang/Object].aa_()V
+**2) m_5015587 <- bfl<-java/lang/Object.a(Latn;Lbgn;Ljava/util/Random;Lec;Lbjp;)Z, bjo<-java/lang/Object.a(Latn;Lbgn;Ljava/util/Random;Lec;Lbjp;)Z**
+
+---
+
+**1) m_1585233 <- bkv<-bly<-bjo<-java/lang/Object.e()Ljava/util/List;**
+
+2) m_4444558 <- bkz<-bly<-bjo<-java/lang/Object.e()Ljava/util/List;
+
+---
+
+1) m_3210356 <- aug<-[java/lang/Object,op<-java/lang/Object].aa_()V
+
+**2) m_5302345 <- ok<-java/lang/Object(itf).aa_()V, op<-java/lang/Object(itf).aa_()V**
 
 ### 18w07a -> 18w07b
 
@@ -113,184 +113,183 @@ ly.a(Lnx;IIII)Z: m_9110652 -> **m_3795772** (manual fix, name taken from b1.6-tb
 
 ### 18w10d -> 18w11a
 
-**1) m_0320132 <- aju<-java/lang/Object(itf).r(Z)V, ajv<-java/lang/Object(itf).r(Z)V**
+1) m_4354222 <- aki<-ajs<-[acd<-abw<-abv<-abm<-[java/lang/Object,aan<-java/lang/Object,bn<-java/lang/Object],ajk<-[java/lang/Object,abl<-java/lang/Object]].r(Z)V
 
-2) m_4013204 <- aki<-ajs<-[acd<-abw<-abv<-abm<-[java/lang/Object,aan<-java/lang/Object,bn<-java/lang/Object],ajk<-[java/lang/Object,abl<-java/lang/Object]].r(Z)V
+**2) m_6105103 <- aju<-java/lang/Object(itf).r(Z)V, ajv<-java/lang/Object(itf).r(Z)V**
 
 ### 18w16a -> 18w19a
 
 **1) get <- ccs$b<-java/util/AbstractList<-[java/util/AbstractCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]],java/util/List<-[java/lang/Object,java/util/SequencedCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]]]].get(I)Ljava/lang/Object;(bridge), chi$b<-java/util/AbstractList<-[java/util/AbstractCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]],java/util/List<-[java/lang/Object,java/util/SequencedCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]]]].a(I)Lchi$a;**
 
-2) m_7428270 <- ha<-gt<-[java/util/AbstractList<-[java/util/AbstractCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]],java/util/List<-[java/lang/Object,java/util/SequencedCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]]]],hj<-java/lang/Object].d(I)Lhj;
+2) m_9349353 <- ha<-gt<-[java/util/AbstractList<-[java/util/AbstractCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]],java/util/List<-[java/lang/Object,java/util/SequencedCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]]]],hj<-java/lang/Object].d(I)Lhj;
 
 ---
 
-1) m_4705591 <- ha<-gt<-[java/util/AbstractList<-[java/util/AbstractCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]],java/util/List<-[java/lang/Object,java/util/SequencedCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]]]],hj<-java/lang/Object].b(ILhj;)Lhj;
+1) m_0215128 <- ha<-gt<-[java/util/AbstractList<-[java/util/AbstractCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]],java/util/List<-[java/lang/Object,java/util/SequencedCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]]]],hj<-java/lang/Object].b(ILhj;)Lhj;
 
 **2) set <- ccs$b<-java/util/AbstractList<-[java/util/AbstractCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]],java/util/List<-[java/lang/Object,java/util/SequencedCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]]]].set(ILjava/lang/Object;)Ljava/lang/Object;(bridge), chi$b<-java/util/AbstractList<-[java/util/AbstractCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]],java/util/List<-[java/lang/Object,java/util/SequencedCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]]]].a(ILchi$a;)Lchi$a;**
 
 ---
 
-1) m_9011727 <- ha<-gt<-[java/util/AbstractList<-[java/util/AbstractCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]],java/util/List<-[java/lang/Object,java/util/SequencedCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]]]],hj<-java/lang/Object].a(I)Lhj;
+1) m_3729040 <- ha<-gt<-[java/util/AbstractList<-[java/util/AbstractCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]],java/util/List<-[java/lang/Object,java/util/SequencedCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]]]],hj<-java/lang/Object].a(I)Lhj;
 
 **2) remove <- ccs$b<-java/util/AbstractList<-[java/util/AbstractCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]],java/util/List<-[java/lang/Object,java/util/SequencedCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]]]].remove(I)Ljava/lang/Object;(bridge), chi$b<-java/util/AbstractList<-[java/util/AbstractCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]],java/util/List<-[java/lang/Object,java/util/SequencedCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]]]].b(I)Lchi$a;**
 
 ### 1.13 -> 18w30a
 
-1) m_0152532 <- chz<-java/lang/Object(itf).getAdvance()F
+1) m_1097816 <- chz<-java/lang/Object(itf).getAdvance()F
 
-**2) m_1507885 <- chx<-java/lang/Object(itf).getAdvance()F**
-
----
-
-1) m_8953104 <- chz<-java/lang/Object(itf).getBoldOffset()F
-
-**2) m_9651986 <- chx<-java/lang/Object(itf).getBoldOffset()F**
+**2) m_2263145 <- chx<-java/lang/Object(itf).getAdvance()F**
 
 ---
 
-1) m_8497288 <- chz<-java/lang/Object(itf).getShadowOffset()F
+1) m_0993084 <- chz<-java/lang/Object(itf).getBoldOffset()F
 
+**2) m_2954847 <- chx<-java/lang/Object(itf).getBoldOffset()F**
 
-**2) m_8600827 <- chx<-java/lang/Object(itf).getShadowOffset()F**
+---
+
+**1) m_6805892 <- chx<-java/lang/Object(itf).getShadowOffset()F**
+
+2) m_8971395 <- chz<-java/lang/Object(itf).getShadowOffset()F
 
 ### 1.13.2 -> 18w43a
 
-1) m_0164994 <- cdk<-java/lang/Object(itf).a(Lcdw;)Z
+1) m_4833933 <- cdk<-java/lang/Object(itf).a(Lcdw;)Z
 
 **2) test <- aeu$a<-[java/lang/Object,java/util/function/Predicate<-java/lang/Object].test(Ljava/lang/Object;)Z(bridge), afk$a<-[java/lang/Object,java/util/function/Predicate<-java/lang/Object].a(Lafh;)Z, agd$1<-[java/lang/Object,java/util/function/Predicate<-java/lang/Object].test(Ljava/lang/Object;)Z(bridge), agt$1<-[java/lang/Object,java/util/function/Predicate<-java/lang/Object].a(Lafh;)Z, ajz$1<-[java/lang/Object,java/util/function/Predicate<-java/lang/Object].test(Ljava/lang/Object;)Z(bridge), akr$1<-[java/lang/Object,java/util/function/Predicate<-java/lang/Object].a(Lafr;)Z, amu$b<-[java/lang/Object,java/util/function/Predicate<-java/lang/Object].test(Ljava/lang/Object;)Z(bridge), anc$b<-[java/lang/Object,java/util/function/Predicate<-java/lang/Object].test(Ljava/lang/Object;)Z(bridge), anm$b<-[java/lang/Object,java/util/function/Predicate<-java/lang/Object].a(Lapb;)Z, anu$b<-[java/lang/Object,java/util/function/Predicate<-java/lang/Object].a(Lafq;)Z, aog$c<-[java/lang/Object,java/util/function/Predicate<-java/lang/Object].test(Ljava/lang/Object;)Z(bridge), apb$c<-[java/lang/Object,java/util/function/Predicate<-java/lang/Object].a(Lanz;)Z, avh<-[java/lang/Object,java/util/function/Predicate<-java/lang/Object].test(Ljava/lang/Object;)Z(bridge), awf<-[java/lang/Object,java/util/function/Predicate<-java/lang/Object].a(Lauc;)Z, bln<-[java/lang/Object,java/util/function/Predicate<-java/lang/Object].a(Lblz;)Z, bln<-[java/lang/Object,java/util/function/Predicate<-java/lang/Object].test(Ljava/lang/Object;)Z(bridge), blo<-[java/lang/Object,java/util/function/Predicate<-java/lang/Object].test(Ljava/lang/Object;)Z(bridge), blp<-[java/lang/Object,java/util/function/Predicate<-java/lang/Object].test(Ljava/lang/Object;)Z(bridge), bmj<-[java/lang/Object,java/util/function/Predicate<-java/lang/Object].a(Lblz;)Z, bmk<-[java/lang/Object,java/util/function/Predicate<-java/lang/Object].a(Lblz;)Z, bml<-[java/lang/Object,java/util/function/Predicate<-java/lang/Object].a(Lblz;)Z, ct<-[java/lang/Object,java/util/function/Predicate<-java/lang/Object].test(Ljava/lang/Object;)Z(bridge), cu$a<-[java/lang/Object,java/util/function/Predicate<-java/lang/Object].test(Ljava/lang/Object;)Z(bridge), cu$c<-[java/lang/Object,java/util/function/Predicate<-java/lang/Object].test(Ljava/lang/Object;)Z(bridge), cy<-[java/lang/Object,java/util/function/Predicate<-java/lang/Object].a(Lbmd;)Z, cz$a<-[java/lang/Object,java/util/function/Predicate<-java/lang/Object].a(Lbmd;)Z, cz$c<-[java/lang/Object,java/util/function/Predicate<-java/lang/Object].a(Lbmd;)Z, dl<-[java/lang/Object,java/util/function/Predicate<-java/lang/Object].test(Ljava/lang/Object;)Z(bridge), dn$a<-[java/lang/Object,java/util/function/Predicate<-java/lang/Object].test(Ljava/lang/Object;)Z(bridge), dn$c<-[java/lang/Object,java/util/function/Predicate<-java/lang/Object].test(Ljava/lang/Object;)Z(bridge), dr<-[java/lang/Object,java/util/function/Predicate<-java/lang/Object].a(Lauc;)Z, dt$a<-[java/lang/Object,java/util/function/Predicate<-java/lang/Object].a(Lauc;)Z, dt$c<-[java/lang/Object,java/util/function/Predicate<-java/lang/Object].a(Lauc;)Z, eq$a<-[java/lang/Enum<-[java/lang/Object,java/lang/constant/Constable<-java/lang/Object,java/lang/Comparable<-java/lang/Object,java/io/Serializable<-java/lang/Object],java/util/function/Predicate<-java/lang/Object,xv<-java/lang/Object].test(Ljava/lang/Object;)Z(bridge), eq$c<-[java/lang/Enum<-[java/lang/Object,java/lang/constant/Constable<-java/lang/Object,java/lang/Comparable<-java/lang/Object,java/io/Serializable<-java/lang/Object],java/lang/Iterable<-java/lang/Object,java/util/function/Predicate<-java/lang/Object].test(Ljava/lang/Object;)Z(bridge), ev$a<-[java/lang/Enum<-[java/lang/Object,java/lang/constant/Constable<-java/lang/Object,java/lang/Comparable<-java/lang/Object,java/io/Serializable<-java/lang/Object],java/util/function/Predicate<-java/lang/Object,yj<-java/lang/Object].a(Lev;)Z, ev$c<-[java/lang/Enum<-[java/lang/Object,java/lang/constant/Constable<-java/lang/Object,java/lang/Comparable<-java/lang/Object,java/io/Serializable<-java/lang/Object],java/lang/Iterable<-java/lang/Object,java/util/function/Predicate<-java/lang/Object].a(Lev;)Z**
 
 ---
 
-1) m_2282027 <- bop<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].a(Lbpp$a;)Lbpp;
+1) m_4982900 <- bop<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].a(Lbpp$a;)Lbpp;
 
-**2) m_5861215 <- boh<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].a(Lbpp$a;)Lbpp;**
-
----
-
-1) m_3486882 <- bnr<-[java/lang/Object,bmx<-[java/lang/Object,axk<-java/lang/Object]].a(Lbpp$a;[J)V, bop<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].a(Lbpp$a;[J)V
-
-**2) m_9969783 <- boh<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].a(Lbpp$a;[J)V**
+**2) m_6512460 <- boh<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].a(Lbpp$a;)Lbpp;**
 
 ---
 
-**1) m_5417826 <- boh<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].a(Ljava/util/Map;)V**
+**1) m_5056027 <- boh<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].a(Lbpp$a;[J)V**
 
-2) m_6920332 <- bnr<-[java/lang/Object,bmx<-[java/lang/Object,axk<-java/lang/Object]].a(Ljava/util/Map;)V, bop<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].a(Ljava/util/Map;)V
+2) m_5095466 <- bnr<-[java/lang/Object,bmx<-[java/lang/Object,axk<-java/lang/Object]].a(Lbpp$a;[J)V, bop<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].a(Lbpp$a;[J)V
+
+---
+
+1) m_6555075 <- bnr<-[java/lang/Object,bmx<-[java/lang/Object,axk<-java/lang/Object]].a(Ljava/util/Map;)V, bop<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].a(Ljava/util/Map;)V
+
+**2) m_8332889 <- boh<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].a(Ljava/util/Map;)V**
 
 --
 
-**1) m_3539798 <- boh<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].a(Z)V**
+**1) m_4863395 <- boh<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].a(Z)V**
 
-2) m_9927588 <- bnr<-[java/lang/Object,bmx<-[java/lang/Object,axk<-java/lang/Object]].a(Z)V, bop<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].a(Z)V
-
----
-
-**1) m_5648272 <- boh<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].b(J)V**
-
-2) m_6595017 <- bop<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].b(J)V
+2) m_5881503 <- bnr<-[java/lang/Object,bmx<-[java/lang/Object,axk<-java/lang/Object]].a(Z)V, bop<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].a(Z)V
 
 ---
 
-**1) m_1110534 <- boh<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].c()Ljava/util/Set;**
+**1) m_2398547 <- boh<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].b(J)V**
 
-2) m_5639235 <- bop<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].c()Ljava/util/Set;
-
----
-
-1) m_7661360 <- bop<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].f()Ljava/util/Set;
-
-**2) m_8334553 <- boh<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].f()Ljava/util/Set;**
+2) m_7218133 <- bop<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].b(J)V
 
 ---
 
-**1) m_3104653 <- boh<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].l()[Lit/unimi/dsi/fastutil/shorts/ShortList;**
+1) m_5280992 <- bop<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].c()Ljava/util/Set;
 
-2) m_5400191 <- bop<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].l()[Lit/unimi/dsi/fastutil/shorts/ShortList;
-
----
-
-**1) m_4752255 <- boh<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].p()Lbor;**
-
-2) m_7958028 <- bop<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].p()Lbor;
+**2) m_9627859 <- boh<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].c()Ljava/util/Set;**
 
 ---
 
-**1) m_4041232 <- boh<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].q()J**
+1) m_1337117 <- bop<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].f()Ljava/util/Set;
 
-2) m_8790020 <- bop<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].q()J
-
----
-
-1) m_3122740 <- bpt<-bnw<-[java/lang/Object,bnv<-java/lang/Object].a(IILbnu;)V
-
-**2) m_8799022 <- bpr<-bnw<-[java/lang/Object,bnv<-java/lang/Object].a(IILbnu;)V**
+**2) m_9580339 <- boh<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].f()Ljava/util/Set;**
 
 ---
 
-1) m_4092100 <- bnr<-[java/lang/Object,bmx<-[java/lang/Object,axk<-java/lang/Object]].b(Ljava/util/Map;)V, bop<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].b(Ljava/util/Map;)V
+1) m_3423050 <- bop<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].l()[Lit/unimi/dsi/fastutil/shorts/ShortList;
 
-**2) m_6833749 <- boh<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].b(Ljava/util/Map;)V**
+**2) m_9835953 <- boh<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].l()[Lit/unimi/dsi/fastutil/shorts/ShortList;**
 
 ---
 
-1) m_0350883 <- xu<-[java/lang/Object,ey<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]].a(I)Ljava/lang/Object;
+1) m_6079738 <- bop<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].p()Lbor;
 
-**2) m_2031354 <- fc<-[java/lang/Object,et<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]](itf).a(I)Ljava/lang/Object;**
+**2) m_9416441 <- boh<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].p()Lbor;**
 
-3) m_8107978 <- ez<-[java/lang/Object,ey<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]].a(I)Ljava/lang/Object;
+---
+
+**1) m_0691793 <- boh<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].q()J**
+
+2) m_1913466 <- bop<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].q()J
+
+---
+
+**1) m_0480678 <- bpr<-bnw<-[java/lang/Object,bnv<-java/lang/Object].a(IILbnu;)V**
+
+2) m_9236571 <- bpt<-bnw<-[java/lang/Object,bnv<-java/lang/Object].a(IILbnu;)V
+
+---
+
+**1) m_7913440 <- boh<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].b(Ljava/util/Map;)V**
+
+2) m_8296251 <- bnr<-[java/lang/Object,bmx<-[java/lang/Object,axk<-java/lang/Object]].b(Ljava/util/Map;)V, bop<-[java/lang/Object,bnu<-[java/lang/Object,bod<-[java/lang/Object,ayn<-java/lang/Object]]].b(Ljava/util/Map;)V
+
+---
+
+1) m_1732132 <- ez<-[java/lang/Object,ey<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]].a(I)Ljava/lang/Object;
+
+**2) m_5378046 <- fc<-[java/lang/Object,et<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]](itf).a(I)Ljava/lang/Object;**
+
+3) m_6589052 <- xu<-[java/lang/Object,ey<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]].a(I)Ljava/lang/Object;
 
 ### 18w49a -> 18w50a
 
-**1) m_7064683 <- agv<-[java/lang/Object,afv<-java/lang/Object,bz<-java/lang/Object].f()Ljd;**
+1) m_6407734 <- bok<-[boj<-[bnq<-java/lang/Object,afu<-[java/lang/Object,afi<-[java/lang/Object,afg<-java/lang/Object,afv<-java/lang/Object],afp<-[java/lang/Object,afv<-java/lang/Object]]],afw<-java/lang/Object].f()Ljd;
 
-2) m_8784225 <- bok<-[boj<-[bnq<-java/lang/Object,afu<-[java/lang/Object,afi<-[java/lang/Object,afg<-java/lang/Object,afv<-java/lang/Object],afp<-[java/lang/Object,afv<-java/lang/Object]]],afw<-java/lang/Object].f()Ljd;
-
----
-
-1) m_0497646 <- aps<-[aqf<-apb<-asg<-apv<-apu<-[ahl<-ahf<-ahe<-agv<-[java/lang/Object,afv<-java/lang/Object,bz<-java/lang/Object],apl<-[java/lang/Object,agu<-java/lang/Object]],apz<-java/lang/Object].dz()Z
-
-2) m_6229790 <- apc<-[apu<-[ahl<-ahf<-ahe<-agv<-[java/lang/Object,afv<-java/lang/Object,bz<-java/lang/Object],apl<-[java/lang/Object,agu<-java/lang/Object]],apz<-java/lang/Object].dz()Z
-
-**3) m_8154339 <- aqm<-apu<-[ahl<-ahf<-ahe<-agv<-[java/lang/Object,afv<-java/lang/Object,bz<-java/lang/Object],apl<-[java/lang/Object,agu<-java/lang/Object]].dz()Z**
+**2) m_7534701 <- agv<-[java/lang/Object,afv<-java/lang/Object,bz<-java/lang/Object].f()Ljd;**
 
 ---
 
-**1) m_0698157 <- aqr<-[ags<-ahl<-ahf<-ahe<-agv<-[java/lang/Object,afv<-java/lang/Object,bz<-java/lang/Object],aho<-java/lang/Object,aqq<-[java/lang/Object,agu<-java/lang/Object],aqt<-java/lang/Object,bat<-java/lang/Object].dM()Laqs;**
+1) m_2177519 <- aps<-[aqf<-apb<-asg<-apv<-apu<-[ahl<-ahf<-ahe<-agv<-[java/lang/Object,afv<-java/lang/Object,bz<-java/lang/Object],apl<-[java/lang/Object,agu<-java/lang/Object]],apz<-java/lang/Object].dz()Z
 
-2) m_2270393 <- aqn<-[aqm<-apu<-[ahl<-ahf<-ahe<-agv<-[java/lang/Object,afv<-java/lang/Object,bz<-java/lang/Object],apl<-[java/lang/Object,agu<-java/lang/Object]],aqt<-java/lang/Object].dM()Laqs;
+**2) m_3448716 <- aqm<-apu<-[ahl<-ahf<-ahe<-agv<-[java/lang/Object,afv<-java/lang/Object,bz<-java/lang/Object],apl<-[java/lang/Object,agu<-java/lang/Object]].dz()Z**
 
----
-
-**1) m_1031975 <- bok<-[boj<-[bnq<-java/lang/Object,afu<-[java/lang/Object,afi<-[java/lang/Object,afg<-java/lang/Object,afv<-java/lang/Object],afp<-[java/lang/Object,afv<-java/lang/Object]]],afw<-java/lang/Object].a(Ljd;)V**
-
-2) m_2064028 <- bnl<-bok<-[boj<-[bnq<-java/lang/Object,afu<-[java/lang/Object,afi<-[java/lang/Object,afg<-java/lang/Object,afv<-java/lang/Object],afp<-[java/lang/Object,afv<-java/lang/Object]]],afw<-java/lang/Object].a(Ljd;)V
+3) m_9842230 <- apc<-[apu<-[ahl<-ahf<-ahe<-agv<-[java/lang/Object,afv<-java/lang/Object,bz<-java/lang/Object],apl<-[java/lang/Object,agu<-java/lang/Object]],apz<-java/lang/Object].dz()Z
 
 ---
 
-**1) m_0513284 <- dam<-[cym<-czc<-java/lang/Object,dje<-java/lang/Object,dlf<-java/lang/Object].a()Lday;**
+1) m_3237423 <- aqn<-[aqm<-apu<-[ahl<-ahf<-ahe<-agv<-[java/lang/Object,afv<-java/lang/Object,bz<-java/lang/Object],apl<-[java/lang/Object,agu<-java/lang/Object]],aqt<-java/lang/Object].dM()Laqs;
 
-2) m_3521457 <- cyu<-[cym<-czc<-java/lang/Object,dhw<-java/lang/Object,dje<-java/lang/Object].a()Lday;
+**2) m_8826860 <- aqr<-[ags<-ahl<-ahf<-ahe<-agv<-[java/lang/Object,afv<-java/lang/Object,bz<-java/lang/Object],aho<-java/lang/Object,aqq<-[java/lang/Object,agu<-java/lang/Object],aqt<-java/lang/Object,bat<-java/lang/Object].dM()Laqs;**
+
+---
+
+**1) m_7903307 <- bok<-[boj<-[bnq<-java/lang/Object,afu<-[java/lang/Object,afi<-[java/lang/Object,afg<-java/lang/Object,afv<-java/lang/Object],afp<-[java/lang/Object,afv<-java/lang/Object]]],afw<-java/lang/Object].a(Ljd;)V**
+
+2) m_9488819 <- bnl<-bok<-[boj<-[bnq<-java/lang/Object,afu<-[java/lang/Object,afi<-[java/lang/Object,afg<-java/lang/Object,afv<-java/lang/Object],afp<-[java/lang/Object,afv<-java/lang/Object]]],afw<-java/lang/Object].a(Ljd;)V
+
+---
+
+**1) m_1005909 <- dam<-[cym<-czc<-java/lang/Object,dje<-java/lang/Object,dlf<-java/lang/Object].a()Lday;**
+
+2) m_6895656 <- cyu<-[cym<-czc<-java/lang/Object,dhw<-java/lang/Object,dje<-java/lang/Object].a()Lday;
 
 ### 19w02a -> 19w03a
 
 **1) get <- crj$b<-java/util/AbstractList<-[java/util/AbstractCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]],java/util/List<-[java/lang/Object,java/util/SequencedCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]]]].get(I)Ljava/lang/Object;(bridge), cro$b<-java/util/AbstractList<-[java/util/AbstractCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]],java/util/List<-[java/lang/Object,java/util/SequencedCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]]]].a(I)Lcro$a;, hr<-[java/util/AbstractList<-[java/util/AbstractCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]],java/util/List<-[java/lang/Object,java/util/SequencedCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]]]],ij<-java/lang/Object].get(I)Ljava/lang/Object;(bridge), hr<-[java/util/AbstractList<-[java/util/AbstractCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]],java/util/List<-[java/lang/Object,java/util/SequencedCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]]]],ij<-java/lang/Object].k(I)Lih;**
 
-2) m_1091746 <- hn<-hp<-[java/util/AbstractList<-[java/util/AbstractCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]],java/util/List<-[java/lang/Object,java/util/SequencedCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]]]],ih<-java/lang/Object].a(I)Lho;
+2) m_4405511 <- hn<-hp<-[java/util/AbstractList<-[java/util/AbstractCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]],java/util/List<-[java/lang/Object,java/util/SequencedCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]]]],ih<-java/lang/Object].a(I)Lho;
 
-3) m_5006303 <- hu<-hp<-[java/util/AbstractList<-[java/util/AbstractCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]],java/util/List<-[java/lang/Object,java/util/SequencedCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]]]],ih<-java/lang/Object].a(I)Lhv;
+3) m_5126743 <- hx<-hp<-[java/util/AbstractList<-[java/util/AbstractCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]],java/util/List<-[java/lang/Object,java/util/SequencedCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]]]],ih<-java/lang/Object].a(I)Lhy;
 
-4) m_8379114 <- hx<-hp<-[java/util/AbstractList<-[java/util/AbstractCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]],java/util/List<-[java/lang/Object,java/util/SequencedCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]]]],ih<-java/lang/Object].a(I)Lhy;
+4) m_8509821 <- hu<-hp<-[java/util/AbstractList<-[java/util/AbstractCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]],java/util/List<-[java/lang/Object,java/util/SequencedCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]]]],ih<-java/lang/Object].a(I)Lhv;
 
 ---
 
-1) m_9935425 <- hw<-hp<-[java/util/AbstractList<-[java/util/AbstractCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]],java/util/List<-[java/lang/Object,java/util/SequencedCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]]]],ih<-java/lang/Object].d(ILih;)Lih;
+1) m_3125067 <- hw<-hp<-[java/util/AbstractList<-[java/util/AbstractCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]],java/util/List<-[java/lang/Object,java/util/SequencedCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]]]],ih<-java/lang/Object].d(ILih;)Lih;
 
 **2) set <- crj$b<-java/util/AbstractList<-[java/util/AbstractCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]],java/util/List<-[java/lang/Object,java/util/SequencedCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]]]].set(ILjava/lang/Object;)Ljava/lang/Object;(bridge), cro$b<-java/util/AbstractList<-[java/util/AbstractCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]],java/util/List<-[java/lang/Object,java/util/SequencedCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]]]].a(ILcro$a;)Lcro$a;, hr<-[java/util/AbstractList<-[java/util/AbstractCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]],java/util/List<-[java/lang/Object,java/util/SequencedCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]]]],ij<-java/lang/Object].set(ILjava/lang/Object;)Ljava/lang/Object;(bridge)**
 
 ---
 
-1) m_0860215 <- hp<-[java/util/AbstractList<-[java/util/AbstractCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]],java/util/List<-[java/lang/Object,java/util/SequencedCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]]]],ih<-java/lang/Object].c(I)Lih;, hr<-[java/util/AbstractList<-[java/util/AbstractCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]],java/util/List<-[java/lang/Object,java/util/SequencedCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]]]],ij<-java/lang/Object].c(I)Lih;
+1) m_8339536 <- hp<-[java/util/AbstractList<-[java/util/AbstractCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]],java/util/List<-[java/lang/Object,java/util/SequencedCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]]]],ih<-java/lang/Object].c(I)Lih;, hr<-[java/util/AbstractList<-[java/util/AbstractCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]],java/util/List<-[java/lang/Object,java/util/SequencedCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]]]],ij<-java/lang/Object].c(I)Lih;
 
 **2) remove <- crj$b<-java/util/AbstractList<-[java/util/AbstractCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]],java/util/List<-[java/lang/Object,java/util/SequencedCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]]]].remove(I)Ljava/lang/Object;(bridge), cro$b<-java/util/AbstractList<-[java/util/AbstractCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]],java/util/List<-[java/lang/Object,java/util/SequencedCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]]]].b(I)Lcro$a;, hy<-hr<-[java/util/AbstractList<-[java/util/AbstractCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]],java/util/List<-[java/lang/Object,java/util/SequencedCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]]]],ij<-java/lang/Object].remove(I)Ljava/lang/Object;(bridge)**
 
@@ -298,41 +297,41 @@ ly.a(Lnx;IIII)Z: m_9110652 -> **m_3795772** (manual fix, name taken from b1.6-tb
 
 **1) add <- crj$b<-java/util/AbstractList<-[java/util/AbstractCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]],java/util/List<-[java/lang/Object,java/util/SequencedCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]]]].add(ILjava/lang/Object;)V(bridge), cro$b<-java/util/AbstractList<-[java/util/AbstractCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]],java/util/List<-[java/lang/Object,java/util/SequencedCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]]]].b(ILcro$a;)V**
 
-2) m_9935425 <- hy<-hr<-[java/util/AbstractList<-[java/util/AbstractCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]],java/util/List<-[java/lang/Object,java/util/SequencedCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]]]],ij<-java/lang/Object].add(ILjava/lang/Object;)V(bridge)
+2) m_3125067 <- hy<-hr<-[java/util/AbstractList<-[java/util/AbstractCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]],java/util/List<-[java/lang/Object,java/util/SequencedCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]]]],ij<-java/lang/Object].add(ILjava/lang/Object;)V(bridge)
 
 3) set <- hp<-[java/util/AbstractList<-[java/util/AbstractCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]],java/util/List<-[java/lang/Object,java/util/SequencedCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]]]],ih<-java/lang/Object].c(ILih;)V, hp<-[java/util/AbstractList<-[java/util/AbstractCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]],java/util/List<-[java/lang/Object,java/util/SequencedCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]]]],ih<-java/lang/Object].c(ILih;)V(bridge), hr<-[java/util/AbstractList<-[java/util/AbstractCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]],java/util/List<-[java/lang/Object,java/util/SequencedCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]]]],ij<-java/lang/Object].c(ILih;)V, hr<-[java/util/AbstractList<-[java/util/AbstractCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]],java/util/List<-[java/lang/Object,java/util/SequencedCollection<-[java/lang/Object,java/util/Collection<-[java/lang/Object,java/lang/Iterable<-java/lang/Object]]]],ij<-java/lang/Object].c(ILih;)V(bridge)
 
 ### 19w07a -> 19w08a
 
-**1) m_1067146 <- cut<-[csg<-[crd<-java/lang/Object,csi<-[java/lang/Object,csh<-java/lang/Object]],ctw<-java/lang/Object].a(IIF)V, cvi<-[cst<-[crq<-java/lang/Object,csu<-[java/lang/Object,csw<-[java/lang/Object,csv<-java/lang/Object]]],css<-java/lang/Object,cuk<-java/lang/Object].a(IIF)V**
+1) m_0049367 <- csd<-[crq<-java/lang/Object,css<-java/lang/Object,csv<-java/lang/Object].a(IIF)V
 
-2) m_3616302 <- cxy<-[crq<-java/lang/Object,css<-java/lang/Object,csv<-java/lang/Object].a(IIF)V
+2) m_0498464 <- csa<-csg<-[crd<-java/lang/Object,csi<-[java/lang/Object,csh<-java/lang/Object]].a(IIF)V, csn<-[cst<-[crq<-java/lang/Object,csu<-[java/lang/Object,csw<-[java/lang/Object,csv<-java/lang/Object]]],css<-java/lang/Object].a(IIF)V
 
-3) m_4783829 <- csf<-[crq<-java/lang/Object,css<-java/lang/Object,csv<-java/lang/Object].a(IIF)V
+3) m_2686018 <- csf<-[crq<-java/lang/Object,css<-java/lang/Object,csv<-java/lang/Object].a(IIF)V
 
-4) m_6032649 <- crz<-[crq<-java/lang/Object,css<-java/lang/Object,csv<-java/lang/Object].a(IIF)V
+**4) m_3956703 <- cut<-[csg<-[crd<-java/lang/Object,csi<-[java/lang/Object,csh<-java/lang/Object]],ctw<-java/lang/Object].a(IIF)V, cvi<-[cst<-[crq<-java/lang/Object,csu<-[java/lang/Object,csw<-[java/lang/Object,csv<-java/lang/Object]]],css<-java/lang/Object,cuk<-java/lang/Object].a(IIF)V**
 
-5) m_8733589 <- csa<-csg<-[crd<-java/lang/Object,csi<-[java/lang/Object,csh<-java/lang/Object]].a(IIF)V, csn<-[cst<-[crq<-java/lang/Object,csu<-[java/lang/Object,csw<-[java/lang/Object,csv<-java/lang/Object]]],css<-java/lang/Object].a(IIF)V
+5) m_5337651 <- cxy<-[crq<-java/lang/Object,css<-java/lang/Object,csv<-java/lang/Object].a(IIF)V
 
-6) m_8818975 <- csd<-[crq<-java/lang/Object,css<-java/lang/Object,csv<-java/lang/Object].a(IIF)V
+6) m_6827666 <- crz<-[crq<-java/lang/Object,css<-java/lang/Object,csv<-java/lang/Object].a(IIF)V
 
-7) m_9192649 <- cxz<-[crq<-java/lang/Object,css<-java/lang/Object,csv<-java/lang/Object,cye<-java/lang/Object,qe<-java/lang/Object].a(IIF)V
+7) m_9525120 <- cxz<-[crq<-java/lang/Object,css<-java/lang/Object,csv<-java/lang/Object,cye<-java/lang/Object,qe<-java/lang/Object].a(IIF)V
 
 ---
 
-1) m_2542489 <- wn<-[java/lang/Object,wt<-java/lang/Object].a(Lvw;)V
+1) m_2291416 <- wn<-[java/lang/Object,wt<-java/lang/Object].a(Lvw;)V
 
-**2) m_5224175 <- wx<-[java/lang/Object,wr<-[java/lang/Object,wt<-java/lang/Object]].a(Lvw;)V**
+**2) m_9570331 <- wx<-[java/lang/Object,wr<-[java/lang/Object,wt<-java/lang/Object]].a(Lvw;)V**
 
 ### 19w08b -> 19w09a
 
-**1) m_2720857 <- asv<-[ahm<-[java/lang/Object,agl<-java/lang/Object,bz<-java/lang/Object],aso<-java/lang/Object].a(Lahm;FFFFF)V**
+**1) m_5349631 <- asv<-[ahm<-[java/lang/Object,agl<-java/lang/Object,bz<-java/lang/Object],aso<-java/lang/Object].a(Lahm;FFFFF)V**
 
-2) m_8621411 <- asd<-[ahm<-[java/lang/Object,agl<-java/lang/Object,bz<-java/lang/Object],aso<-java/lang/Object].a(Lahm;FFFFF)V
+2) m_5487055 <- asd<-[ahm<-[java/lang/Object,agl<-java/lang/Object,bz<-java/lang/Object],aso<-java/lang/Object].a(Lahm;FFFFF)V
 
 ### 1.14.4-pre3 -> 1.14.4-pre4
 
-**1) m_3525239 <- dkc<-[java/lang/Object,kf<-[java/lang/Object,jh<-java/lang/Object]].a()Ljc;**
+1) m_4859862 <- wc<-[java/lang/Object,nu<-[java/lang/Object,jh<-java/lang/Object]].a()Ljc;
 
-2) m_4369296 <- wc<-[java/lang/Object,nu<-[java/lang/Object,jh<-java/lang/Object]].a()Ljc;
+**2) m_5397109 <- dkc<-[java/lang/Object,kf<-[java/lang/Object,jh<-java/lang/Object]].a()Ljc;**
 
