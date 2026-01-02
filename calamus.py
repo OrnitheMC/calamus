@@ -4,7 +4,7 @@ import subprocess
 
 VERSIONS= [
 [
-'1.3',
+'1.3-1249',
 '12w30e','12w30d','12w30c','12w30b','12w30a',
 '12w27a',
 '12w26a',
@@ -354,6 +354,7 @@ VERSIONS= [
 'rd-132211-launcher'
 ],
 [
+'1.3-1249',
 '1.3',
 '1.3.1',
 '1.3.2'
@@ -426,7 +427,8 @@ VERSIONS= [
 '1.5.2',
 ],
 [
-'1.5.1',
+'1.5.1|1.5',
+'2.0-preview',
 '2.0-blue'
 ],
 [
@@ -554,7 +556,7 @@ VERSIONS= [
 [
 '1.7.4|1.7.5',
 '14w02a','14w02b','14w02c',
-'14w03a','14w03b',
+'14w03a','14w03a|14w02c','14w03b',
 '14w03b|1.7.6','14w04a-1526','14w04a-1740','14w04a-1740|14w04a-1526','14w04a'
 ],
 [
@@ -564,7 +566,10 @@ VERSIONS= [
 '14w06a','14w06b',
 '14w06b|1.7.6','14w07a',
 '14w08a',
-'14w08a|1.7.8','14w10a','14w10b','14w10c','14w10c-1518'
+'14w08a|1.7.8','14w10a','14w10b','14w10c-1351','14w10c-1518'
+],
+[
+'14w10c-1351','14w10c'
 ],
 [
 '14w10c|1.7.6','14w11a','14w11b','14w11b-1650'
@@ -666,6 +671,7 @@ VERSIONS= [
 '16w44a',
 '1.11-pre1',
 '1.11',
+'1.11.1-pre',
 '16w50a',
 '1.11.1',
 '1.11.2'
@@ -765,7 +771,7 @@ ROOT = VERSIONS[0][0]
 
 def main():
 	os.environ['MC_VERSION'] = ROOT
-	subprocess.run("./gradlew generateIntermediary --stacktrace", shell = True, check = True)
+#	subprocess.run("./gradlew generateIntermediary --stacktrace", shell = True, check = True)
 	
 	for versions in VERSIONS:
 		for i in range(1, len(versions)):
