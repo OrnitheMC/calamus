@@ -771,7 +771,7 @@ ROOT = VERSIONS[0][0]
 
 def main():
 	os.environ['MC_VERSION'] = ROOT
-#	subprocess.run("./gradlew generateIntermediary --stacktrace", shell = True, check = True)
+	subprocess.run("./gradlew generateIntermediary --stacktrace", shell = True, check = True)
 	
 	for versions in VERSIONS:
 		for i in range(1, len(versions)):

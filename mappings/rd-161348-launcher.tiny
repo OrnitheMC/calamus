@@ -1,5 +1,5 @@
 v1	official	intermediary
-CLASS	com/mojang/minecraft/Entity	com/mojang/minecraft/Entity
+CLASS	com/mojang/minecraft/Entity	net/minecraft/unmapped/C_10660571
 FIELD	com/mojang/minecraft/Entity	F	bbHeight	f_89222140
 FIELD	com/mojang/minecraft/Entity	Lcom/mojang/minecraft/phys/AABB;	bb	f_60509865
 FIELD	com/mojang/minecraft/Entity	F	bbWidth	f_99513953
@@ -27,15 +27,15 @@ METHOD	com/mojang/minecraft/Entity	(FFF)V	setPos	m_53993839
 METHOD	com/mojang/minecraft/Entity	(FF)V	setSize	m_26624579
 METHOD	com/mojang/minecraft/Entity	()V	tick	m_35252928
 METHOD	com/mojang/minecraft/Entity	(FF)V	turn	m_44240105
-CLASS	com/mojang/minecraft/HitResult	com/mojang/minecraft/HitResult
+CLASS	com/mojang/minecraft/HitResult	net/minecraft/unmapped/C_24654288
 FIELD	com/mojang/minecraft/HitResult	I	f	f_72698539
 FIELD	com/mojang/minecraft/HitResult	I	type	f_21091113
 FIELD	com/mojang/minecraft/HitResult	I	x	f_79497105
 FIELD	com/mojang/minecraft/HitResult	I	y	f_09533029
 FIELD	com/mojang/minecraft/HitResult	I	z	f_04223298
 CLASS	com/mojang/minecraft/MinecraftApplet	com/mojang/minecraft/MinecraftApplet
-CLASS	com/mojang/minecraft/Player	com/mojang/minecraft/Player
-CLASS	com/mojang/minecraft/RubyDung	com/mojang/minecraft/Minecraft
+CLASS	com/mojang/minecraft/Player	net/minecraft/unmapped/C_29185845
+CLASS	com/mojang/minecraft/RubyDung	com/mojang/minecraft/RubyDung
 FIELD	com/mojang/minecraft/RubyDung	Z	FULLSCREEN_MODE	f_81314627
 FIELD	com/mojang/minecraft/RubyDung	Ljava/nio/FloatBuffer;	fogColor0	f_96846485
 FIELD	com/mojang/minecraft/RubyDung	Ljava/nio/FloatBuffer;	fogColor1	f_95600397
@@ -65,10 +65,10 @@ METHOD	com/mojang/minecraft/RubyDung	(F)V	setupCamera	m_72056658
 METHOD	com/mojang/minecraft/RubyDung	(I)V	setupFog	m_38072232
 METHOD	com/mojang/minecraft/RubyDung	(FII)V	setupPickCamera	m_65252619
 METHOD	com/mojang/minecraft/RubyDung	()V	tick	m_67975642
-CLASS	com/mojang/minecraft/Textures	com/mojang/minecraft/Textures
+CLASS	com/mojang/minecraft/Textures	net/minecraft/unmapped/C_82920792
 FIELD	com/mojang/minecraft/Textures	Ljava/util/HashMap;	idMap	f_28882271
 METHOD	com/mojang/minecraft/Textures	(Ljava/lang/String;I)I	loadTexture	m_33729172
-CLASS	com/mojang/minecraft/Timer	com/mojang/minecraft/Timer
+CLASS	com/mojang/minecraft/Timer	net/minecraft/unmapped/C_82837181
 FIELD	com/mojang/minecraft/Timer	J	MAX_NS_PER_UPDATE	f_67272562
 FIELD	com/mojang/minecraft/Timer	I	MAX_TICKS_PER_UPDATE	f_46012325
 FIELD	com/mojang/minecraft/Timer	J	NS_PER_SECOND	f_03869761
@@ -80,7 +80,7 @@ FIELD	com/mojang/minecraft/Timer	I	ticks	f_15357361
 FIELD	com/mojang/minecraft/Timer	F	ticksPerSecond	f_22484848
 FIELD	com/mojang/minecraft/Timer	F	timeScale	f_18308006
 METHOD	com/mojang/minecraft/Timer	()V	advanceTime	m_54627648
-CLASS	com/mojang/minecraft/character/Cube	com/mojang/minecraft/character/Cube
+CLASS	com/mojang/minecraft/character/Cube	net/minecraft/unmapped/C_94760802
 FIELD	com/mojang/minecraft/character/Cube	Z	compiled	f_36781016
 FIELD	com/mojang/minecraft/character/Cube	I	list	f_74386665
 FIELD	com/mojang/minecraft/character/Cube	[Lcom/mojang/minecraft/character/Polygon;	polygons	f_04083325
@@ -98,29 +98,29 @@ METHOD	com/mojang/minecraft/character/Cube	()V	compile	m_92587644
 METHOD	com/mojang/minecraft/character/Cube	()V	render	m_59624913
 METHOD	com/mojang/minecraft/character/Cube	(FFF)V	setPos	m_71576852
 METHOD	com/mojang/minecraft/character/Cube	(II)V	setTexOffs	m_06033348
-CLASS	com/mojang/minecraft/character/Polygon	com/mojang/minecraft/character/Polygon
+CLASS	com/mojang/minecraft/character/Polygon	net/minecraft/unmapped/C_92437228
 FIELD	com/mojang/minecraft/character/Polygon	I	vertexCount	f_77608507
 FIELD	com/mojang/minecraft/character/Polygon	[Lcom/mojang/minecraft/character/Vertex;	vertices	f_80781794
 METHOD	com/mojang/minecraft/character/Polygon	()V	render	m_76425836
-CLASS	com/mojang/minecraft/character/Vec3	com/mojang/minecraft/character/Vec3
+CLASS	com/mojang/minecraft/character/Vec3	net/minecraft/unmapped/C_94584382
 FIELD	com/mojang/minecraft/character/Vec3	F	x	f_96140729
 FIELD	com/mojang/minecraft/character/Vec3	F	y	f_95060918
 FIELD	com/mojang/minecraft/character/Vec3	F	z	f_88390642
 METHOD	com/mojang/minecraft/character/Vec3	(Lcom/mojang/minecraft/character/Vec3;F)Lcom/mojang/minecraft/character/Vec3;	interpolateTo	m_54701557
 METHOD	com/mojang/minecraft/character/Vec3	(FFF)V	set	m_84813616
-CLASS	com/mojang/minecraft/character/Vertex	com/mojang/minecraft/character/Vertex
+CLASS	com/mojang/minecraft/character/Vertex	net/minecraft/unmapped/C_86833787
 FIELD	com/mojang/minecraft/character/Vertex	Lcom/mojang/minecraft/character/Vec3;	pos	f_43016045
 FIELD	com/mojang/minecraft/character/Vertex	F	u	f_74746437
 FIELD	com/mojang/minecraft/character/Vertex	F	v	f_50159677
 METHOD	com/mojang/minecraft/character/Vertex	(FF)Lcom/mojang/minecraft/character/Vertex;	remap	m_72802801
-CLASS	com/mojang/minecraft/character/Zombie	com/mojang/minecraft/character/Zombie
+CLASS	com/mojang/minecraft/character/Zombie	net/minecraft/unmapped/C_87265766
 FIELD	com/mojang/minecraft/character/Zombie	F	rotA	f_70168481
 FIELD	com/mojang/minecraft/character/Zombie	F	rot	f_39320828
 FIELD	com/mojang/minecraft/character/Zombie	F	speed	f_39550099
 FIELD	com/mojang/minecraft/character/Zombie	F	timeOffs	f_89219876
 FIELD	com/mojang/minecraft/character/Zombie	Lcom/mojang/minecraft/character/ZombieModel;	zombieModel	f_75709524
 METHOD	com/mojang/minecraft/character/Zombie	(F)V	render	m_73541603
-CLASS	com/mojang/minecraft/character/ZombieModel	com/mojang/minecraft/character/ZombieModel
+CLASS	com/mojang/minecraft/character/ZombieModel	net/minecraft/unmapped/C_81384252
 FIELD	com/mojang/minecraft/character/ZombieModel	Lcom/mojang/minecraft/character/Cube;	arm0	f_00457534
 FIELD	com/mojang/minecraft/character/ZombieModel	Lcom/mojang/minecraft/character/Cube;	arm1	f_84274445
 FIELD	com/mojang/minecraft/character/ZombieModel	Lcom/mojang/minecraft/character/Cube;	body	f_35683026
@@ -128,7 +128,7 @@ FIELD	com/mojang/minecraft/character/ZombieModel	Lcom/mojang/minecraft/character
 FIELD	com/mojang/minecraft/character/ZombieModel	Lcom/mojang/minecraft/character/Cube;	leg0	f_42329385
 FIELD	com/mojang/minecraft/character/ZombieModel	Lcom/mojang/minecraft/character/Cube;	leg1	f_54562397
 METHOD	com/mojang/minecraft/character/ZombieModel	(F)V	render	m_29689682
-CLASS	com/mojang/minecraft/level/Chunk	com/mojang/minecraft/level/Chunk
+CLASS	com/mojang/minecraft/level/Chunk	net/minecraft/unmapped/C_68333747
 FIELD	com/mojang/minecraft/level/Chunk	Lcom/mojang/minecraft/phys/AABB;	aabb	f_88456804
 FIELD	com/mojang/minecraft/level/Chunk	J	dirtiedTime	f_60477996
 FIELD	com/mojang/minecraft/level/Chunk	Z	dirty	f_73505351
@@ -153,12 +153,12 @@ METHOD	com/mojang/minecraft/level/Chunk	()V	rebuild	m_09308913
 METHOD	com/mojang/minecraft/level/Chunk	(I)V	rebuild	m_94503039
 METHOD	com/mojang/minecraft/level/Chunk	(I)V	render	m_82846651
 METHOD	com/mojang/minecraft/level/Chunk	()V	setDirty	m_89180230
-CLASS	com/mojang/minecraft/level/DirtyChunkSorter	com/mojang/minecraft/level/DirtyChunkSorter
+CLASS	com/mojang/minecraft/level/DirtyChunkSorter	net/minecraft/unmapped/C_35928469
 FIELD	com/mojang/minecraft/level/DirtyChunkSorter	Lcom/mojang/minecraft/level/Frustum;	frustum	f_22014069
 FIELD	com/mojang/minecraft/level/DirtyChunkSorter	J	now	f_14702051
 FIELD	com/mojang/minecraft/level/DirtyChunkSorter	Lcom/mojang/minecraft/Player;	player	f_91616727
 METHOD	com/mojang/minecraft/level/DirtyChunkSorter	(Lcom/mojang/minecraft/level/Chunk;Lcom/mojang/minecraft/level/Chunk;)I	compare	compare
-CLASS	com/mojang/minecraft/level/Frustum	com/mojang/minecraft/level/Frustum
+CLASS	com/mojang/minecraft/level/Frustum	net/minecraft/unmapped/C_01716682
 FIELD	com/mojang/minecraft/level/Frustum	I	A	f_04865846
 FIELD	com/mojang/minecraft/level/Frustum	I	BACK	f_89718155
 FIELD	com/mojang/minecraft/level/Frustum	I	B	f_78936816
@@ -185,7 +185,7 @@ METHOD	com/mojang/minecraft/level/Frustum	(Lcom/mojang/minecraft/phys/AABB;)Z	is
 METHOD	com/mojang/minecraft/level/Frustum	([[FI)V	normalizePlane	m_68321611
 METHOD	com/mojang/minecraft/level/Frustum	(FFF)Z	pointInFrustum	m_74920580
 METHOD	com/mojang/minecraft/level/Frustum	(FFFF)Z	sphereInFrustum	m_82287844
-CLASS	com/mojang/minecraft/level/Level	com/mojang/minecraft/level/Level
+CLASS	com/mojang/minecraft/level/Level	net/minecraft/unmapped/C_97690443
 FIELD	com/mojang/minecraft/level/Level	I	TILE_UPDATE_INTERVAL	f_49283727
 FIELD	com/mojang/minecraft/level/Level	[B	blocks	f_37651764
 FIELD	com/mojang/minecraft/level/Level	I	depth	f_32043562
@@ -208,11 +208,11 @@ METHOD	com/mojang/minecraft/level/Level	(Lcom/mojang/minecraft/level/LevelListen
 METHOD	com/mojang/minecraft/level/Level	()V	save	m_84799593
 METHOD	com/mojang/minecraft/level/Level	(IIII)Z	setTile	m_86385855
 METHOD	com/mojang/minecraft/level/Level	()V	tick	m_73357723
-CLASS	com/mojang/minecraft/level/LevelListener	com/mojang/minecraft/level/LevelListener
+CLASS	com/mojang/minecraft/level/LevelListener	net/minecraft/unmapped/C_67054825
 METHOD	com/mojang/minecraft/level/LevelListener	()V	allChanged	m_21275197
 METHOD	com/mojang/minecraft/level/LevelListener	(IIII)V	lightColumnChanged	m_93071486
 METHOD	com/mojang/minecraft/level/LevelListener	(III)V	tileChanged	m_27180334
-CLASS	com/mojang/minecraft/level/LevelRenderer	com/mojang/minecraft/level/LevelRenderer
+CLASS	com/mojang/minecraft/level/LevelRenderer	net/minecraft/unmapped/C_24384787
 FIELD	com/mojang/minecraft/level/LevelRenderer	I	CHUNK_SIZE	f_50786880
 FIELD	com/mojang/minecraft/level/LevelRenderer	I	MAX_REBUILDS_PER_FRAME	f_45569021
 FIELD	com/mojang/minecraft/level/LevelRenderer	[Lcom/mojang/minecraft/level/Chunk;	chunks	f_07759509
@@ -226,13 +226,13 @@ METHOD	com/mojang/minecraft/level/LevelRenderer	(Lcom/mojang/minecraft/Player;I)
 METHOD	com/mojang/minecraft/level/LevelRenderer	(Lcom/mojang/minecraft/HitResult;)V	renderHit	m_85117450
 METHOD	com/mojang/minecraft/level/LevelRenderer	(IIIIII)V	setDirty	m_24883255
 METHOD	com/mojang/minecraft/level/LevelRenderer	(Lcom/mojang/minecraft/Player;)V	updateDirtyChunks	m_53815250
-CLASS	com/mojang/minecraft/level/PerlinNoiseFilter	com/mojang/minecraft/level/PerlinNoiseFilter
+CLASS	com/mojang/minecraft/level/PerlinNoiseFilter	net/minecraft/unmapped/C_88434182
 FIELD	com/mojang/minecraft/level/PerlinNoiseFilter	I	fuzz	f_54022890
 FIELD	com/mojang/minecraft/level/PerlinNoiseFilter	I	levels	f_54380172
 FIELD	com/mojang/minecraft/level/PerlinNoiseFilter	Ljava/util/Random;	random	f_30359699
 FIELD	com/mojang/minecraft/level/PerlinNoiseFilter	I	seed	f_74963210
 METHOD	com/mojang/minecraft/level/PerlinNoiseFilter	(II)[I	read	m_10551497
-CLASS	com/mojang/minecraft/level/Tesselator	com/mojang/minecraft/level/Tesselator
+CLASS	com/mojang/minecraft/level/Tesselator	net/minecraft/unmapped/C_96603444
 FIELD	com/mojang/minecraft/level/Tesselator	I	MAX_FLOATS	f_21579457
 FIELD	com/mojang/minecraft/level/Tesselator	I	MAX_MEMORY_USE	f_63210773
 FIELD	com/mojang/minecraft/level/Tesselator	[F	array	f_96386002
@@ -255,10 +255,10 @@ METHOD	com/mojang/minecraft/level/Tesselator	()V	init	m_95009975
 METHOD	com/mojang/minecraft/level/Tesselator	(FF)V	tex	m_22449873
 METHOD	com/mojang/minecraft/level/Tesselator	(FFF)V	vertex	m_51994127
 METHOD	com/mojang/minecraft/level/Tesselator	(FFFFF)V	vertexUV	m_75942980
-CLASS	com/mojang/minecraft/level/tile/Bush	com/mojang/minecraft/level/tile/Bush
-CLASS	com/mojang/minecraft/level/tile/DirtTile	com/mojang/minecraft/level/tile/DirtTile
-CLASS	com/mojang/minecraft/level/tile/GrassTile	com/mojang/minecraft/level/tile/GrassTile
-CLASS	com/mojang/minecraft/level/tile/Tile	com/mojang/minecraft/level/tile/Tile
+CLASS	com/mojang/minecraft/level/tile/Bush	net/minecraft/unmapped/C_45448523
+CLASS	com/mojang/minecraft/level/tile/DirtTile	net/minecraft/unmapped/C_68680121
+CLASS	com/mojang/minecraft/level/tile/GrassTile	net/minecraft/unmapped/C_18719811
+CLASS	com/mojang/minecraft/level/tile/Tile	net/minecraft/unmapped/C_81592558
 FIELD	com/mojang/minecraft/level/tile/Tile	Lcom/mojang/minecraft/level/tile/Tile;	bush	f_01357884
 FIELD	com/mojang/minecraft/level/tile/Tile	Lcom/mojang/minecraft/level/tile/Tile;	dirt	f_00201138
 FIELD	com/mojang/minecraft/level/tile/Tile	Lcom/mojang/minecraft/level/tile/Tile;	empty	f_78403195
@@ -280,7 +280,7 @@ METHOD	com/mojang/minecraft/level/tile/Tile	(Lcom/mojang/minecraft/level/Tessela
 METHOD	com/mojang/minecraft/level/tile/Tile	(Lcom/mojang/minecraft/level/Tesselator;IIII)V	renderFaceNoTexture	m_05450957
 METHOD	com/mojang/minecraft/level/tile/Tile	(Lcom/mojang/minecraft/level/Level;IIII)Z	shouldRenderFace	m_28922194
 METHOD	com/mojang/minecraft/level/tile/Tile	(Lcom/mojang/minecraft/level/Level;IIILjava/util/Random;)V	tick	m_41811801
-CLASS	com/mojang/minecraft/particle/Particle	com/mojang/minecraft/particle/Particle
+CLASS	com/mojang/minecraft/particle/Particle	net/minecraft/unmapped/C_21233382
 FIELD	com/mojang/minecraft/particle/Particle	I	age	f_60437068
 FIELD	com/mojang/minecraft/particle/Particle	I	lifetime	f_84630719
 FIELD	com/mojang/minecraft/particle/Particle	F	size	f_31304495
@@ -291,13 +291,13 @@ FIELD	com/mojang/minecraft/particle/Particle	F	xd	f_18258332
 FIELD	com/mojang/minecraft/particle/Particle	F	yd	f_36330799
 FIELD	com/mojang/minecraft/particle/Particle	F	zd	f_00375304
 METHOD	com/mojang/minecraft/particle/Particle	(Lcom/mojang/minecraft/level/Tesselator;FFFFFF)V	render	m_73421798
-CLASS	com/mojang/minecraft/particle/ParticleEngine	com/mojang/minecraft/particle/ParticleEngine
+CLASS	com/mojang/minecraft/particle/ParticleEngine	net/minecraft/unmapped/C_16190149
 FIELD	com/mojang/minecraft/particle/ParticleEngine	Lcom/mojang/minecraft/level/Level;	level	f_39853205
 FIELD	com/mojang/minecraft/particle/ParticleEngine	Ljava/util/List;	particles	f_48436212
 METHOD	com/mojang/minecraft/particle/ParticleEngine	(Lcom/mojang/minecraft/particle/Particle;)V	add	m_83004010
 METHOD	com/mojang/minecraft/particle/ParticleEngine	(Lcom/mojang/minecraft/Player;FI)V	render	m_27238650
 METHOD	com/mojang/minecraft/particle/ParticleEngine	()V	tick	m_35318678
-CLASS	com/mojang/minecraft/phys/AABB	com/mojang/minecraft/phys/AABB
+CLASS	com/mojang/minecraft/phys/AABB	net/minecraft/unmapped/C_21144319
 FIELD	com/mojang/minecraft/phys/AABB	F	epsilon	f_05720620
 FIELD	com/mojang/minecraft/phys/AABB	F	x0	f_32025354
 FIELD	com/mojang/minecraft/phys/AABB	F	x1	f_96418553
