@@ -8790,8 +8790,6 @@ FIELD	he	Lbg;	b	f_47813059
 CLASS	hf	net/minecraft/unmapped/C_80772377
 FIELD	hf	Lnet/minecraft/server/MinecraftServer;	a	f_94187397
 FIELD	hf	J	b	f_70113284
-CLASS	hg	net/minecraft/unmapped/C_54297108
-FIELD	hg	Lir;	a	f_44496937
 CLASS	hh	net/minecraft/unmapped/C_98761130
 FIELD	hh	Lnet/minecraft/server/MinecraftServer;	a	f_42442871
 CLASS	hi	net/minecraft/unmapped/C_28951039
@@ -8997,7 +8995,6 @@ METHOD	ir	(Ljava/lang/String;Lad;)V	a	m_81126772
 METHOD	ir	(Ljava/lang/String;Z)Z	a	m_24705145
 METHOD	ir	()V	ar	m_34308637
 METHOD	ir	()Liq;	as	m_77967565
-METHOD	ir	()V	at	m_33792650
 CLASS	is	net/minecraft/unmapped/C_05307018
 FIELD	is	Lir;	a	f_35688957
 CLASS	it	net/minecraft/unmapped/C_97965498
@@ -9025,45 +9022,9 @@ METHOD	ix	(Ljava/net/InetAddress;)V	a	m_70116138
 METHOD	ix	(Ljx;)V	a	m_46443220
 METHOD	ix	()V	b	m_83500499
 METHOD	ix	()I	d	m_35420577
-CLASS	iy	net/minecraft/unmapped/C_68775612
-FIELD	iy	Z	a	f_44146665
-FIELD	iy	Lir;	b	f_54508791
-METHOD	iy	(Lir;)V	a	m_20700705
-METHOD	iy	(Liy;)Lir;	a	m_41776761
-METHOD	iy	()Ljavax/swing/JComponent;	b	m_84597349
-METHOD	iy	()Ljavax/swing/JComponent;	c	m_14768130
-METHOD	iy	()Ljavax/swing/JComponent;	d	m_54835577
-CLASS	iz	net/minecraft/unmapped/C_02519014
-FIELD	iz	Lir;	a	f_66262917
 CLASS	j	net/minecraft/unmapped/C_23591129
 FIELD	j	Lb;	a	f_21732323
 METHOD	j	()Ljava/lang/String;	a	call
-CLASS	ja	net/minecraft/unmapped/C_59009041
-FIELD	ja	Ljavax/swing/JTextField;	a	f_17501648
-FIELD	ja	Liy;	b	f_70176043
-CLASS	jb	net/minecraft/unmapped/C_78250670
-FIELD	jb	Liy;	a	f_61544145
-CLASS	jc	net/minecraft/unmapped/C_03068318
-FIELD	jc	Lnet/minecraft/server/MinecraftServer;	a	f_35068232
-FIELD	jc	I	b	f_07561015
-CLASS	jd	net/minecraft/unmapped/C_57165061
-FIELD	jd	Ljava/text/DecimalFormat;	a	f_26934194
-FIELD	jd	[I	b	f_38288216
-FIELD	jd	I	c	f_70416132
-FIELD	jd	[Ljava/lang/String;	d	f_62480509
-FIELD	jd	Lnet/minecraft/server/MinecraftServer;	e	f_03943731
-METHOD	jd	()V	a	m_78217179
-METHOD	jd	(Ljd;)V	a	m_41140136
-METHOD	jd	([J)D	a	m_52176948
-CLASS	je	net/minecraft/unmapped/C_94457548
-FIELD	je	Ljd;	a	f_52821133
-CLASS	jf	net/minecraft/unmapped/C_59625208
-FIELD	jf	Ljava/util/logging/Formatter;	a	f_13612335
-FIELD	jf	[I	b	f_62140838
-FIELD	jf	I	c	f_83820941
-FIELD	jf	Ljavax/swing/JTextArea;	d	f_61759702
-CLASS	jg	net/minecraft/unmapped/C_42279890
-FIELD	jg	Ljf;	a	f_00154204
 CLASS	jh	net/minecraft/unmapped/C_58838815
 FIELD	jh	I	a	f_62634985
 FIELD	jh	I	b	f_98727740
@@ -9668,7 +9629,6 @@ FIELD	lm	I	d	f_46224109
 METHOD	lm	()I	a	m_71719766
 METHOD	lm	()Ljava/lang/Object;	b	m_23391820
 CLASS	lo	net/minecraft/unmapped/C_41861935
-METHOD	lo	()Ljava/util/logging/Logger;	a	m_31706624
 METHOD	lo	(Ljava/lang/String;)V	a	m_44153676
 METHOD	lo	(Ljava/lang/String;)V	b	m_57689312
 METHOD	lo	(Ljava/lang/String;Ljava/lang/Throwable;)V	b	m_04946124
@@ -10058,7 +10018,6 @@ METHOD	net/minecraft/server/MinecraftServer	(Lacd;Z)Ljava/lang/String;	a	m_40980
 METHOD	net/minecraft/server/MinecraftServer	(Lad;Ljava/lang/String;)Ljava/util/List;	a	m_58065088
 METHOD	net/minecraft/server/MinecraftServer	(Lb;)V	a	m_13726982
 METHOD	net/minecraft/server/MinecraftServer	(Lhm;)V	a	m_49644895
-METHOD	net/minecraft/server/MinecraftServer	(Lhq;)V	a	m_24899969
 METHOD	net/minecraft/server/MinecraftServer	(Ljava/lang/String;)V	a	m_73674847
 METHOD	net/minecraft/server/MinecraftServer	(Ljava/lang/String;Ljava/lang/String;JLacf;Ljava/lang/String;)V	a	m_93447105
 METHOD	net/minecraft/server/MinecraftServer	(Ljava/security/KeyPair;)V	a	m_83959657
@@ -10117,7 +10076,6 @@ METHOD	net/minecraft/server/MinecraftServer	()V	l	m_84647327
 METHOD	net/minecraft/server/MinecraftServer	(Ljava/lang/String;)V	l	m_16738208
 METHOD	net/minecraft/server/MinecraftServer	()V	m	m_01785488
 METHOD	net/minecraft/server/MinecraftServer	(Ljava/lang/String;)V	m	m_37093010
-METHOD	net/minecraft/server/MinecraftServer	([Ljava/lang/String;)V	main	main
 METHOD	net/minecraft/server/MinecraftServer	()Ljava/lang/String;	n	m_68944603
 METHOD	net/minecraft/server/MinecraftServer	(Ljava/lang/String;)V	n	m_02968104
 METHOD	net/minecraft/server/MinecraftServer	()Z	o	m_12535660

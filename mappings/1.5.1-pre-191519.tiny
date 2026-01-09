@@ -8210,6 +8210,8 @@ FIELD	gm	Lbb;	b	f_47813059
 CLASS	gn	net/minecraft/unmapped/C_80772377
 FIELD	gn	Lnet/minecraft/server/MinecraftServer;	a	f_94187397
 FIELD	gn	J	b	f_70113284
+CLASS	go	net/minecraft/unmapped/C_54297108
+FIELD	go	Lhz;	a	f_44496937
 CLASS	gp	net/minecraft/unmapped/C_98761130
 FIELD	gp	Lnet/minecraft/server/MinecraftServer;	a	f_42442871
 CLASS	gq	net/minecraft/unmapped/C_28951039
@@ -8416,6 +8418,7 @@ METHOD	hz	(Ljava/lang/String;Lab;)V	a	m_81126772
 METHOD	hz	(Ljava/lang/String;Z)Z	a	m_24705145
 METHOD	hz	()V	am	m_34308637
 METHOD	hz	()Lhy;	an	m_77967565
+METHOD	hz	()V	ao	m_33792650
 CLASS	i	net/minecraft/unmapped/C_07062836
 FIELD	i	Lb;	a	f_07140932
 METHOD	i	()Ljava/lang/String;	a	call
@@ -8447,6 +8450,42 @@ METHOD	if	(Ljf;)V	a	m_46443220
 METHOD	if	()V	b	m_83500499
 METHOD	if	()Ljava/net/InetAddress;	c	m_20517896
 METHOD	if	()I	d	m_35420577
+CLASS	ig	net/minecraft/unmapped/C_68775612
+FIELD	ig	Z	a	f_44146665
+FIELD	ig	Lhz;	b	f_54508791
+METHOD	ig	(Lhz;)V	a	m_20700705
+METHOD	ig	(Lig;)Lhz;	a	m_41776761
+METHOD	ig	()Ljavax/swing/JComponent;	b	m_84597349
+METHOD	ig	()Ljavax/swing/JComponent;	c	m_14768130
+METHOD	ig	()Ljavax/swing/JComponent;	d	m_54835577
+CLASS	ih	net/minecraft/unmapped/C_02519014
+FIELD	ih	Lhz;	a	f_66262917
+CLASS	ii	net/minecraft/unmapped/C_59009041
+FIELD	ii	Ljavax/swing/JTextField;	a	f_17501648
+FIELD	ii	Lig;	b	f_70176043
+CLASS	ij	net/minecraft/unmapped/C_78250670
+FIELD	ij	Lig;	a	f_61544145
+CLASS	ik	net/minecraft/unmapped/C_03068318
+FIELD	ik	Lnet/minecraft/server/MinecraftServer;	a	f_35068232
+FIELD	ik	I	b	f_07561015
+CLASS	il	net/minecraft/unmapped/C_57165061
+FIELD	il	Ljava/text/DecimalFormat;	a	f_26934194
+FIELD	il	[I	b	f_38288216
+FIELD	il	I	c	f_70416132
+FIELD	il	[Ljava/lang/String;	d	f_62480509
+FIELD	il	Lnet/minecraft/server/MinecraftServer;	e	f_03943731
+METHOD	il	()V	a	m_78217179
+METHOD	il	(Lil;)V	a	m_41140136
+METHOD	il	([J)D	a	m_52176948
+CLASS	im	net/minecraft/unmapped/C_94457548
+FIELD	im	Lil;	a	f_52821133
+CLASS	in	net/minecraft/unmapped/C_59625208
+FIELD	in	Ljava/util/logging/Formatter;	a	f_13612335
+FIELD	in	[I	b	f_62140838
+FIELD	in	I	c	f_83820941
+FIELD	in	Ljavax/swing/JTextArea;	d	f_61759702
+CLASS	io	net/minecraft/unmapped/C_42279890
+FIELD	io	Lin;	a	f_00154204
 CLASS	ip	net/minecraft/unmapped/C_58838815
 FIELD	ip	I	a	f_62634985
 FIELD	ip	I	b	f_98727740
@@ -9048,6 +9087,7 @@ FIELD	ks	I	d	f_46224109
 METHOD	ks	()I	a	m_71719766
 METHOD	ks	()Ljava/lang/Object;	b	m_23391820
 CLASS	ku	net/minecraft/unmapped/C_41861935
+METHOD	ku	()Ljava/util/logging/Logger;	a	m_31706624
 METHOD	ku	(Ljava/lang/String;)V	a	m_44153676
 METHOD	ku	(Ljava/lang/String;)V	b	m_57689312
 METHOD	ku	(Ljava/lang/String;Ljava/lang/Throwable;)V	b	m_04946124
@@ -9929,6 +9969,7 @@ METHOD	net/minecraft/server/MinecraftServer	(Laaj;Z)Ljava/lang/String;	a	m_40980
 METHOD	net/minecraft/server/MinecraftServer	(Lab;Ljava/lang/String;)Ljava/util/List;	a	m_58065088
 METHOD	net/minecraft/server/MinecraftServer	(Lb;)V	a	m_13726982
 METHOD	net/minecraft/server/MinecraftServer	(Lgu;)V	a	m_49644895
+METHOD	net/minecraft/server/MinecraftServer	(Lgy;)V	a	m_24899969
 METHOD	net/minecraft/server/MinecraftServer	(Ljava/lang/String;Ljava/lang/String;JLaal;Ljava/lang/String;)V	a	m_93447105
 METHOD	net/minecraft/server/MinecraftServer	(Ljava/security/KeyPair;)V	a	m_83959657
 METHOD	net/minecraft/server/MinecraftServer	(Lnet/minecraft/server/MinecraftServer;)Lgu;	a	m_96337289
@@ -9981,6 +10022,7 @@ METHOD	net/minecraft/server/MinecraftServer	()Ljava/lang/String;	l	m_68944603
 METHOD	net/minecraft/server/MinecraftServer	(Ljava/lang/String;)V	l	m_15068325
 METHOD	net/minecraft/server/MinecraftServer	()Z	m	m_12535660
 METHOD	net/minecraft/server/MinecraftServer	(Ljava/lang/String;)V	m	m_16738208
+METHOD	net/minecraft/server/MinecraftServer	([Ljava/lang/String;)V	main	main
 METHOD	net/minecraft/server/MinecraftServer	()V	n	m_68213073
 METHOD	net/minecraft/server/MinecraftServer	(Ljava/lang/String;)V	n	m_37093010
 METHOD	net/minecraft/server/MinecraftServer	()Ljava/io/File;	o	m_85252325
