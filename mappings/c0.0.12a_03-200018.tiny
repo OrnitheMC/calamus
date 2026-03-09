@@ -1,34 +1,34 @@
 v1	official	intermediary
 CLASS	com/mojang/minecraft/MinecraftApplet	com/mojang/minecraft/MinecraftApplet
-FIELD	com/mojang/minecraft/MinecraftApplet	Lcom/mojang/minecraft/c;	a	f_50311294
-FIELD	com/mojang/minecraft/MinecraftApplet	Ljava/lang/Thread;	b	f_60221508
-FIELD	com/mojang/minecraft/MinecraftApplet	Ljava/awt/Canvas;	c	f_76617346
-METHOD	com/mojang/minecraft/MinecraftApplet	()V	a	m_62815550
-CLASS	com/mojang/minecraft/a	net/minecraft/unmapped/C_82837181
+FIELD	com/mojang/minecraft/MinecraftApplet	Lcom/mojang/minecraft/c;	a	minecraft
+FIELD	com/mojang/minecraft/MinecraftApplet	Ljava/lang/Thread;	b	thread
+FIELD	com/mojang/minecraft/MinecraftApplet	Ljava/awt/Canvas;	c	canvas
+METHOD	com/mojang/minecraft/MinecraftApplet	()V	a	stopGameThread
+CLASS	com/mojang/minecraft/a	com/mojang/minecraft/unmapped/C_82837181
 FIELD	com/mojang/minecraft/a	F	a	f_22484848
 FIELD	com/mojang/minecraft/a	J	b	f_75312404
-FIELD	com/mojang/minecraft/a	I	c	f_15357361
-FIELD	com/mojang/minecraft/a	F	d	f_92994442
+FIELD	com/mojang/minecraft/a	I	c	f_92994442
+FIELD	com/mojang/minecraft/a	F	d	f_09102819
 FIELD	com/mojang/minecraft/a	F	e	f_18308006
-FIELD	com/mojang/minecraft/a	F	f	f_09102819
-CLASS	com/mojang/minecraft/a/a	net/minecraft/unmapped/C_88434182
+FIELD	com/mojang/minecraft/a	F	f	f_15357361
+CLASS	com/mojang/minecraft/a/a	com/mojang/minecraft/unmapped/C_88434182
 FIELD	com/mojang/minecraft/a/a	Ljava/util/Random;	a	f_30359699
 FIELD	com/mojang/minecraft/a/a	I	b	f_54380172
 FIELD	com/mojang/minecraft/a/a	I	c	f_54022890
 FIELD	com/mojang/minecraft/a/a	Z	d	f_84134009
 METHOD	com/mojang/minecraft/a/a	(II)[I	a	m_10551497
-CLASS	com/mojang/minecraft/a/a/a	net/minecraft/unmapped/C_45448523
-CLASS	com/mojang/minecraft/a/a/b	net/minecraft/unmapped/C_81592558
+CLASS	com/mojang/minecraft/a/a/a	com/mojang/minecraft/unmapped/C_45448523
+CLASS	com/mojang/minecraft/a/a/b	com/mojang/minecraft/unmapped/C_81592558
 FIELD	com/mojang/minecraft/a/a/b	[Lcom/mojang/minecraft/a/a/b;	a	f_44428008
 FIELD	com/mojang/minecraft/a/a/b	[Z	b	f_08006312
-FIELD	com/mojang/minecraft/a/a/b	Lcom/mojang/minecraft/a/a/b;	c	f_69377240
+FIELD	com/mojang/minecraft/a/a/b	Lcom/mojang/minecraft/a/a/b;	c	f_38442324
 FIELD	com/mojang/minecraft/a/a/b	Lcom/mojang/minecraft/a/a/b;	d	f_41096518
-FIELD	com/mojang/minecraft/a/a/b	Lcom/mojang/minecraft/a/a/b;	e	f_00201138
+FIELD	com/mojang/minecraft/a/a/b	Lcom/mojang/minecraft/a/a/b;	e	f_05581995
 FIELD	com/mojang/minecraft/a/a/b	Lcom/mojang/minecraft/a/a/b;	f	f_35695348
 FIELD	com/mojang/minecraft/a/a/b	Lcom/mojang/minecraft/a/a/b;	g	f_12152349
-FIELD	com/mojang/minecraft/a/a/b	Lcom/mojang/minecraft/a/a/b;	h	f_52762345
+FIELD	com/mojang/minecraft/a/a/b	Lcom/mojang/minecraft/a/a/b;	h	f_91830957
 FIELD	com/mojang/minecraft/a/a/b	Lcom/mojang/minecraft/a/a/b;	i	f_42662644
-FIELD	com/mojang/minecraft/a/a/b	Lcom/mojang/minecraft/a/a/b;	j	f_41127328
+FIELD	com/mojang/minecraft/a/a/b	Lcom/mojang/minecraft/a/a/b;	j	f_63585395
 FIELD	com/mojang/minecraft/a/a/b	I	k	f_71201064
 FIELD	com/mojang/minecraft/a/a/b	I	l	f_84602679
 FIELD	com/mojang/minecraft/a/a/b	F	m	f_74837862
@@ -37,36 +37,36 @@ FIELD	com/mojang/minecraft/a/a/b	F	o	f_37253879
 FIELD	com/mojang/minecraft/a/a/b	F	p	f_38964709
 FIELD	com/mojang/minecraft/a/a/b	F	q	f_93913410
 FIELD	com/mojang/minecraft/a/a/b	F	r	f_01628275
-METHOD	com/mojang/minecraft/a/a/b	()Z	a	m_92057983
+METHOD	com/mojang/minecraft/a/a/b	()Z	a	m_91902994
 METHOD	com/mojang/minecraft/a/a/b	(FFFFFF)V	a	m_86422250
 METHOD	com/mojang/minecraft/a/a/b	(I)I	a	m_79262324
 METHOD	com/mojang/minecraft/a/a/b	(III)Lcom/mojang/minecraft/f/a;	a	m_03092609
 METHOD	com/mojang/minecraft/a/a/b	(Lcom/mojang/minecraft/a/g;IIII)Z	a	m_28922194
-METHOD	com/mojang/minecraft/a/a/b	(Lcom/mojang/minecraft/a/g;IIILcom/mojang/minecraft/c/a;)V	a	m_93914814
-METHOD	com/mojang/minecraft/a/a/b	(Lcom/mojang/minecraft/a/g;IIILjava/util/Random;)V	a	m_41811801
-METHOD	com/mojang/minecraft/a/a/b	(Lcom/mojang/minecraft/b/b;IIII)V	a	m_86795304
-METHOD	com/mojang/minecraft/a/a/b	(Lcom/mojang/minecraft/b/b;Lcom/mojang/minecraft/a/g;IIII)V	a	m_84929365
+METHOD	com/mojang/minecraft/a/a/b	(Lcom/mojang/minecraft/a/g;IIILcom/mojang/minecraft/c/a;)V	a	m_73961906
+METHOD	com/mojang/minecraft/a/a/b	(Lcom/mojang/minecraft/a/g;IIILjava/util/Random;)V	a	m_56075420
+METHOD	com/mojang/minecraft/a/a/b	(Lcom/mojang/minecraft/b/b;IIII)V	a	m_07435259
+METHOD	com/mojang/minecraft/a/a/b	(Lcom/mojang/minecraft/b/b;Lcom/mojang/minecraft/a/g;IIII)V	a	m_25385284
 METHOD	com/mojang/minecraft/a/a/b	(Lcom/mojang/minecraft/d;Lcom/mojang/minecraft/b/b;IIII)V	a	m_05450957
 METHOD	com/mojang/minecraft/a/a/b	(Z)V	a	m_44795498
 METHOD	com/mojang/minecraft/a/a/b	()Z	b	m_57757663
 METHOD	com/mojang/minecraft/a/a/b	(III)Lcom/mojang/minecraft/f/a;	b	m_70487154
-METHOD	com/mojang/minecraft/a/a/b	(Lcom/mojang/minecraft/a/g;IIII)V	b	m_88224282
-METHOD	com/mojang/minecraft/a/a/b	(Lcom/mojang/minecraft/b/b;IIII)V	b	m_70238023
+METHOD	com/mojang/minecraft/a/a/b	(Lcom/mojang/minecraft/a/g;IIII)V	b	m_91032811
+METHOD	com/mojang/minecraft/a/a/b	(Lcom/mojang/minecraft/b/b;IIII)V	b	m_83973402
 METHOD	com/mojang/minecraft/a/a/b	()Z	c	m_13762235
 METHOD	com/mojang/minecraft/a/a/b	()I	d	m_93090551
-CLASS	com/mojang/minecraft/a/a/c	net/minecraft/unmapped/C_68680121
-CLASS	com/mojang/minecraft/a/a/d	net/minecraft/unmapped/C_05042406
-CLASS	com/mojang/minecraft/a/a/e	net/minecraft/unmapped/C_13709197
+CLASS	com/mojang/minecraft/a/a/c	com/mojang/minecraft/unmapped/C_11340426
+CLASS	com/mojang/minecraft/a/a/d	com/mojang/minecraft/unmapped/C_05042406
+CLASS	com/mojang/minecraft/a/a/e	com/mojang/minecraft/unmapped/C_13709197
 FIELD	com/mojang/minecraft/a/a/e	I	m	f_32520509
 FIELD	com/mojang/minecraft/a/a/e	I	n	f_21526176
 FIELD	com/mojang/minecraft/a/a/e	I	o	f_88641891
 FIELD	com/mojang/minecraft/a/a/e	I	p	f_70739583
 METHOD	com/mojang/minecraft/a/a/e	(Lcom/mojang/minecraft/a/g;IIII)Z	c	m_33252137
 METHOD	com/mojang/minecraft/a/a/e	(Lcom/mojang/minecraft/a/g;IIII)Z	d	m_50323938
-CLASS	com/mojang/minecraft/a/a/f	net/minecraft/unmapped/C_18719811
-CLASS	com/mojang/minecraft/a/b	net/minecraft/unmapped/C_35928469
+CLASS	com/mojang/minecraft/a/a/f	com/mojang/minecraft/unmapped/C_18719811
+CLASS	com/mojang/minecraft/a/b	com/mojang/minecraft/unmapped/C_35928469
 FIELD	com/mojang/minecraft/a/b	Lcom/mojang/minecraft/d;	a	f_91616727
-CLASS	com/mojang/minecraft/a/c	net/minecraft/unmapped/C_68333747
+CLASS	com/mojang/minecraft/a/c	com/mojang/minecraft/unmapped/C_68333747
 FIELD	com/mojang/minecraft/a/c	Lcom/mojang/minecraft/f/a;	a	f_88456804
 FIELD	com/mojang/minecraft/a/c	Z	b	f_09460685
 FIELD	com/mojang/minecraft/a/c	I	c	f_32530247
@@ -83,7 +83,7 @@ FIELD	com/mojang/minecraft/a/c	F	m	f_10751561
 FIELD	com/mojang/minecraft/a/c	Z	n	f_73505351
 FIELD	com/mojang/minecraft/a/c	I	o	f_02330620
 FIELD	com/mojang/minecraft/a/c	Lcom/mojang/minecraft/b/b;	p	f_89118127
-FIELD	com/mojang/minecraft/a/c	J	q	f_31557621
+FIELD	com/mojang/minecraft/a/c	J	q	f_84620206
 FIELD	com/mojang/minecraft/a/c	I	r	f_69956051
 METHOD	com/mojang/minecraft/a/c	()V	a	m_09308913
 METHOD	com/mojang/minecraft/a/c	(I)V	a	m_82846651
@@ -92,14 +92,14 @@ METHOD	com/mojang/minecraft/a/c	()V	b	m_89180230
 METHOD	com/mojang/minecraft/a/c	(I)V	b	m_94503039
 METHOD	com/mojang/minecraft/a/c	()Z	c	m_79879218
 METHOD	com/mojang/minecraft/a/c	()V	d	m_54542284
-CLASS	com/mojang/minecraft/a/d	net/minecraft/unmapped/C_49004282
-FIELD	com/mojang/minecraft/a/d	I	a	f_86564369
-FIELD	com/mojang/minecraft/a/d	I	b	f_83204160
-FIELD	com/mojang/minecraft/a/d	I	c	f_33672489
+CLASS	com/mojang/minecraft/a/d	com/mojang/minecraft/unmapped/C_49004282
+FIELD	com/mojang/minecraft/a/d	I	a	f_13190451
+FIELD	com/mojang/minecraft/a/d	I	b	f_89318109
+FIELD	com/mojang/minecraft/a/d	I	c	f_24422497
 FIELD	com/mojang/minecraft/a/d	Ljava/util/Random;	d	f_35596902
-CLASS	com/mojang/minecraft/a/e	net/minecraft/unmapped/C_65241348
+CLASS	com/mojang/minecraft/a/e	com/mojang/minecraft/unmapped/C_65241348
 FIELD	com/mojang/minecraft/a/e	Lcom/mojang/minecraft/d;	a	f_09328661
-CLASS	com/mojang/minecraft/a/f	net/minecraft/unmapped/C_24384787
+CLASS	com/mojang/minecraft/a/f	com/mojang/minecraft/unmapped/C_24384787
 FIELD	com/mojang/minecraft/a/f	Lcom/mojang/minecraft/a/g;	a	f_61719522
 FIELD	com/mojang/minecraft/a/f	[Lcom/mojang/minecraft/a/c;	b	f_07759509
 FIELD	com/mojang/minecraft/a/f	I	c	f_20827757
@@ -116,37 +116,37 @@ METHOD	com/mojang/minecraft/a/f	()V	a	m_32256754
 METHOD	com/mojang/minecraft/a/f	(IIIIII)V	a	m_24883255
 METHOD	com/mojang/minecraft/a/f	(Lcom/mojang/minecraft/d;I)V	a	m_72725110
 METHOD	com/mojang/minecraft/a/f	(Lcom/mojang/minecraft/d;Lcom/mojang/minecraft/e;II)V	a	m_85117450
-METHOD	com/mojang/minecraft/a/f	()V	b	m_68385946
-METHOD	com/mojang/minecraft/a/f	()V	c	m_77166251
-CLASS	com/mojang/minecraft/a/g	net/minecraft/unmapped/C_97690443
-FIELD	com/mojang/minecraft/a/g	I	a	f_31101058
-FIELD	com/mojang/minecraft/a/g	I	b	f_21088706
-FIELD	com/mojang/minecraft/a/g	I	c	f_32043562
-FIELD	com/mojang/minecraft/a/g	[B	d	f_37651764
-FIELD	com/mojang/minecraft/a/g	Ljava/util/ArrayList;	e	f_38972832
-FIELD	com/mojang/minecraft/a/g	Ljava/util/Random;	f	f_18906667
-FIELD	com/mojang/minecraft/a/g	I	g	f_44448070
-FIELD	com/mojang/minecraft/a/g	I	h	f_13562384
+METHOD	com/mojang/minecraft/a/f	()V	b	m_00274507
+METHOD	com/mojang/minecraft/a/f	()V	c	m_64828041
+CLASS	com/mojang/minecraft/a/g	com/mojang/minecraft/level/Level
+FIELD	com/mojang/minecraft/a/g	I	a	width
+FIELD	com/mojang/minecraft/a/g	I	b	height
+FIELD	com/mojang/minecraft/a/g	I	c	depth
+FIELD	com/mojang/minecraft/a/g	[B	d	blocks
+FIELD	com/mojang/minecraft/a/g	Ljava/util/ArrayList;	e	f_92573900
+FIELD	com/mojang/minecraft/a/g	Ljava/util/Random;	f	random
+FIELD	com/mojang/minecraft/a/g	I	g	f_34518796
+FIELD	com/mojang/minecraft/a/g	I	h	unprocessed
 FIELD	com/mojang/minecraft/a/g	[I	i	f_21447192
 FIELD	com/mojang/minecraft/a/g	Lcom/mojang/minecraft/c;	j	f_47411284
 FIELD	com/mojang/minecraft/a/g	[I	k	f_27268065
 METHOD	com/mojang/minecraft/a/g	()V	a	m_77588263
-METHOD	com/mojang/minecraft/a/g	(III)Z	a	m_17926322
-METHOD	com/mojang/minecraft/a/g	(IIII)Z	a	m_86385855
+METHOD	com/mojang/minecraft/a/g	(III)Z	a	isLit
+METHOD	com/mojang/minecraft/a/g	(IIII)Z	a	setTile
 METHOD	com/mojang/minecraft/a/g	(IIIII)J	a	m_76625939
-METHOD	com/mojang/minecraft/a/g	(Lcom/mojang/minecraft/f/a;I)Z	a	m_63894607
+METHOD	com/mojang/minecraft/a/g	(Lcom/mojang/minecraft/f/a;I)Z	a	containsLiquid
 METHOD	com/mojang/minecraft/a/g	()V	b	m_84799593
-METHOD	com/mojang/minecraft/a/g	(III)I	b	m_50159453
-METHOD	com/mojang/minecraft/a/g	(IIII)Z	b	m_47694824
+METHOD	com/mojang/minecraft/a/g	(III)I	b	getTile
+METHOD	com/mojang/minecraft/a/g	(IIII)Z	b	setTileNoUpdate
 METHOD	com/mojang/minecraft/a/g	()Z	c	m_84762348
-METHOD	com/mojang/minecraft/a/g	(IIII)V	c	m_85896044
-METHOD	com/mojang/minecraft/a/g	(IIII)V	d	m_64489019
-CLASS	com/mojang/minecraft/b	net/minecraft/unmapped/C_07523660
-FIELD	com/mojang/minecraft/b	Lcom/mojang/minecraft/MinecraftApplet;	a	f_41948915
-CLASS	com/mojang/minecraft/b/a	net/minecraft/unmapped/C_82920792
+METHOD	com/mojang/minecraft/a/g	(IIII)V	c	calcLightDepths
+METHOD	com/mojang/minecraft/a/g	(IIII)V	d	m_73656961
+CLASS	com/mojang/minecraft/b	com/mojang/minecraft/MinecraftApplet$1
+FIELD	com/mojang/minecraft/b	Lcom/mojang/minecraft/MinecraftApplet;	a	this$0
+CLASS	com/mojang/minecraft/b/a	com/mojang/minecraft/unmapped/C_82920792
 FIELD	com/mojang/minecraft/b/a	Ljava/util/HashMap;	a	f_28882271
 METHOD	com/mojang/minecraft/b/a	(Ljava/lang/String;I)I	a	m_33729172
-CLASS	com/mojang/minecraft/b/b	net/minecraft/unmapped/C_96603444
+CLASS	com/mojang/minecraft/b/b	com/mojang/minecraft/unmapped/C_96603444
 FIELD	com/mojang/minecraft/b/b	Lcom/mojang/minecraft/b/b;	a	f_99414865
 FIELD	com/mojang/minecraft/b/b	Ljava/nio/FloatBuffer;	b	f_09116169
 FIELD	com/mojang/minecraft/b/b	[F	c	f_96386002
@@ -167,26 +167,26 @@ METHOD	com/mojang/minecraft/b/b	(FFF)V	a	m_51994127
 METHOD	com/mojang/minecraft/b/b	(FFFFF)V	a	m_75942980
 METHOD	com/mojang/minecraft/b/b	(I)V	a	m_18881924
 METHOD	com/mojang/minecraft/b/b	(III)V	a	m_04015205
-METHOD	com/mojang/minecraft/b/b	()V	b	m_95009975
+METHOD	com/mojang/minecraft/b/b	()V	b	m_35940071
 METHOD	com/mojang/minecraft/b/b	()V	c	m_22111316
 METHOD	com/mojang/minecraft/b/b	()V	d	m_04179944
-CLASS	com/mojang/minecraft/b/c	net/minecraft/unmapped/C_01716682
+CLASS	com/mojang/minecraft/b/c	com/mojang/minecraft/unmapped/C_59676445
 FIELD	com/mojang/minecraft/b/c	[[F	a	f_49427274
-FIELD	com/mojang/minecraft/b/c	Lcom/mojang/minecraft/b/c;	b	f_86413496
-FIELD	com/mojang/minecraft/b/c	Ljava/nio/FloatBuffer;	c	f_47065416
-FIELD	com/mojang/minecraft/b/c	Ljava/nio/FloatBuffer;	d	f_77487857
-FIELD	com/mojang/minecraft/b/c	Ljava/nio/FloatBuffer;	e	f_86336944
+FIELD	com/mojang/minecraft/b/c	Lcom/mojang/minecraft/b/c;	b	f_86306851
+FIELD	com/mojang/minecraft/b/c	Ljava/nio/FloatBuffer;	c	f_79942747
+FIELD	com/mojang/minecraft/b/c	Ljava/nio/FloatBuffer;	d	f_66569555
+FIELD	com/mojang/minecraft/b/c	Ljava/nio/FloatBuffer;	e	f_56882698
 FIELD	com/mojang/minecraft/b/c	[F	f	f_48713785
 FIELD	com/mojang/minecraft/b/c	[F	g	f_58539757
 FIELD	com/mojang/minecraft/b/c	[F	h	f_76511680
-METHOD	com/mojang/minecraft/b/c	()Lcom/mojang/minecraft/b/c;	a	m_27806081
+METHOD	com/mojang/minecraft/b/c	()Lcom/mojang/minecraft/b/c;	a	m_65493747
 METHOD	com/mojang/minecraft/b/c	(Lcom/mojang/minecraft/f/a;)Z	a	m_81364846
-METHOD	com/mojang/minecraft/b/c	([[FI)V	a	m_68321611
+METHOD	com/mojang/minecraft/b/c	([[FI)V	a	m_47972790
 CLASS	com/mojang/minecraft/c	net/minecraft/client/Minecraft
 FIELD	com/mojang/minecraft/c	Ljava/nio/FloatBuffer;	A	f_00852718
 FIELD	com/mojang/minecraft/c	I	a	f_31800787
 FIELD	com/mojang/minecraft/c	I	b	f_74192110
-FIELD	com/mojang/minecraft/c	Z	c	f_19936967
+FIELD	com/mojang/minecraft/c	Z	c	f_58820764
 FIELD	com/mojang/minecraft/c	Z	d	f_91843158
 FIELD	com/mojang/minecraft/c	Z	e	f_07565246
 FIELD	com/mojang/minecraft/c	Z	f	f_96101654
@@ -215,115 +215,115 @@ METHOD	com/mojang/minecraft/c	(F)V	a	m_10900582
 METHOD	com/mojang/minecraft/c	(FFFF)Ljava/nio/FloatBuffer;	a	m_61780442
 METHOD	com/mojang/minecraft/c	(I)V	a	m_38072232
 METHOD	com/mojang/minecraft/c	(Ljava/lang/String;)V	a	m_07535032
-METHOD	com/mojang/minecraft/c	(Ljava/lang/String;Ljava/lang/String;)V	a	m_04222983
+METHOD	com/mojang/minecraft/c	(Ljava/lang/String;Ljava/lang/String;)V	a	m_24418873
 METHOD	com/mojang/minecraft/c	()V	b	m_57091929
 METHOD	com/mojang/minecraft/c	(F)V	b	m_21818603
 METHOD	com/mojang/minecraft/c	()V	c	m_57085983
 METHOD	com/mojang/minecraft/c	()V	d	m_67975642
-CLASS	com/mojang/minecraft/c/a	net/minecraft/unmapped/C_16190149
+CLASS	com/mojang/minecraft/c/a	com/mojang/minecraft/unmapped/C_16190149
 FIELD	com/mojang/minecraft/c/a	Ljava/util/List;	a	f_48436212
 FIELD	com/mojang/minecraft/c/a	Lcom/mojang/minecraft/b/a;	b	f_94050747
 METHOD	com/mojang/minecraft/c/a	(Lcom/mojang/minecraft/d;FI)V	a	m_27238650
-CLASS	com/mojang/minecraft/c/b	net/minecraft/unmapped/C_21233382
-FIELD	com/mojang/minecraft/c/b	I	a	f_87839813
-FIELD	com/mojang/minecraft/c/b	F	b	f_54582439
-FIELD	com/mojang/minecraft/c/b	F	c	f_00958894
-FIELD	com/mojang/minecraft/c/b	F	d	f_31304495
-FIELD	com/mojang/minecraft/c/b	F	u	f_18258332
-FIELD	com/mojang/minecraft/c/b	F	v	f_36330799
-FIELD	com/mojang/minecraft/c/b	F	w	f_00375304
-FIELD	com/mojang/minecraft/c/b	I	x	f_60437068
-FIELD	com/mojang/minecraft/c/b	I	y	f_84630719
-CLASS	com/mojang/minecraft/d	net/minecraft/unmapped/C_29185845
-CLASS	com/mojang/minecraft/d/a	net/minecraft/unmapped/C_87265766
-FIELD	com/mojang/minecraft/d/a	F	a	f_39320828
-FIELD	com/mojang/minecraft/d/a	F	b	f_89219876
-FIELD	com/mojang/minecraft/d/a	F	c	f_39550099
-FIELD	com/mojang/minecraft/d/a	F	d	f_70168481
-FIELD	com/mojang/minecraft/d/a	Lcom/mojang/minecraft/d/c;	u	f_75709524
+CLASS	com/mojang/minecraft/c/b	com/mojang/minecraft/particle/Particle
+FIELD	com/mojang/minecraft/c/b	I	a	tex
+FIELD	com/mojang/minecraft/c/b	F	b	uo
+FIELD	com/mojang/minecraft/c/b	F	c	vo
+FIELD	com/mojang/minecraft/c/b	F	d	size
+FIELD	com/mojang/minecraft/c/b	F	u	xd
+FIELD	com/mojang/minecraft/c/b	F	v	yd
+FIELD	com/mojang/minecraft/c/b	F	w	zd
+FIELD	com/mojang/minecraft/c/b	I	x	age
+FIELD	com/mojang/minecraft/c/b	I	y	lifetime
+CLASS	com/mojang/minecraft/d	com/mojang/minecraft/player/Player
+CLASS	com/mojang/minecraft/d/a	com/mojang/minecraft/character/Zombie
+FIELD	com/mojang/minecraft/d/a	F	a	rot
+FIELD	com/mojang/minecraft/d/a	F	b	timeOffs
+FIELD	com/mojang/minecraft/d/a	F	c	speed
+FIELD	com/mojang/minecraft/d/a	F	d	rotA
+FIELD	com/mojang/minecraft/d/a	Lcom/mojang/minecraft/d/c;	u	model
 FIELD	com/mojang/minecraft/d/a	Lcom/mojang/minecraft/b/a;	v	f_20917460
-CLASS	com/mojang/minecraft/d/b	net/minecraft/unmapped/C_94760802
-FIELD	com/mojang/minecraft/d/b	F	a	f_39335885
-FIELD	com/mojang/minecraft/d/b	F	b	f_42994507
-FIELD	com/mojang/minecraft/d/b	F	c	f_89953874
-FIELD	com/mojang/minecraft/d/b	[Lcom/mojang/minecraft/d/e;	d	f_04841867
-FIELD	com/mojang/minecraft/d/b	[Lcom/mojang/minecraft/d/d;	e	f_04083325
+CLASS	com/mojang/minecraft/d/b	com/mojang/minecraft/unmapped/C_94760802
+FIELD	com/mojang/minecraft/d/b	F	a	f_73417224
+FIELD	com/mojang/minecraft/d/b	F	b	f_54773047
+FIELD	com/mojang/minecraft/d/b	F	c	f_36432713
+FIELD	com/mojang/minecraft/d/b	[Lcom/mojang/minecraft/d/e;	d	f_72959368
+FIELD	com/mojang/minecraft/d/b	[Lcom/mojang/minecraft/d/d;	e	f_87252878
 FIELD	com/mojang/minecraft/d/b	I	f	f_82281584
 FIELD	com/mojang/minecraft/d/b	I	g	f_87652515
-FIELD	com/mojang/minecraft/d/b	F	h	f_47113719
-FIELD	com/mojang/minecraft/d/b	F	i	f_31609011
-FIELD	com/mojang/minecraft/d/b	F	j	f_95199330
-FIELD	com/mojang/minecraft/d/b	Z	k	f_36781016
-FIELD	com/mojang/minecraft/d/b	I	l	f_74386665
-METHOD	com/mojang/minecraft/d/b	()V	a	m_59624913
-METHOD	com/mojang/minecraft/d/b	(FFF)V	a	m_71576852
+FIELD	com/mojang/minecraft/d/b	F	h	f_01268645
+FIELD	com/mojang/minecraft/d/b	F	i	f_13670788
+FIELD	com/mojang/minecraft/d/b	F	j	f_47496608
+FIELD	com/mojang/minecraft/d/b	Z	k	f_89805948
+FIELD	com/mojang/minecraft/d/b	I	l	f_29008327
+METHOD	com/mojang/minecraft/d/b	()V	a	m_19198583
+METHOD	com/mojang/minecraft/d/b	(FFF)V	a	m_05857513
 METHOD	com/mojang/minecraft/d/b	(FFFIII)V	a	m_04954956
-CLASS	com/mojang/minecraft/d/c	net/minecraft/unmapped/C_81384252
-FIELD	com/mojang/minecraft/d/c	Lcom/mojang/minecraft/d/b;	a	f_93726797
-FIELD	com/mojang/minecraft/d/c	Lcom/mojang/minecraft/d/b;	b	f_35683026
-FIELD	com/mojang/minecraft/d/c	Lcom/mojang/minecraft/d/b;	c	f_00457534
-FIELD	com/mojang/minecraft/d/c	Lcom/mojang/minecraft/d/b;	d	f_84274445
-FIELD	com/mojang/minecraft/d/c	Lcom/mojang/minecraft/d/b;	e	f_42329385
-FIELD	com/mojang/minecraft/d/c	Lcom/mojang/minecraft/d/b;	f	f_54562397
-CLASS	com/mojang/minecraft/d/d	net/minecraft/unmapped/C_92437228
+CLASS	com/mojang/minecraft/d/c	com/mojang/minecraft/unmapped/C_82280655
+FIELD	com/mojang/minecraft/d/c	Lcom/mojang/minecraft/d/b;	a	f_82157217
+FIELD	com/mojang/minecraft/d/c	Lcom/mojang/minecraft/d/b;	b	f_07735729
+FIELD	com/mojang/minecraft/d/c	Lcom/mojang/minecraft/d/b;	c	f_05228680
+FIELD	com/mojang/minecraft/d/c	Lcom/mojang/minecraft/d/b;	d	f_24290848
+FIELD	com/mojang/minecraft/d/c	Lcom/mojang/minecraft/d/b;	e	f_61082756
+FIELD	com/mojang/minecraft/d/c	Lcom/mojang/minecraft/d/b;	f	f_06162269
+CLASS	com/mojang/minecraft/d/d	com/mojang/minecraft/unmapped/C_92437228
 FIELD	com/mojang/minecraft/d/d	[Lcom/mojang/minecraft/d/e;	a	f_80781794
-CLASS	com/mojang/minecraft/d/e	net/minecraft/unmapped/C_86833787
+CLASS	com/mojang/minecraft/d/e	com/mojang/minecraft/unmapped/C_86833787
 FIELD	com/mojang/minecraft/d/e	Lcom/mojang/minecraft/d/f;	a	f_43016045
-FIELD	com/mojang/minecraft/d/e	F	b	f_74746437
-FIELD	com/mojang/minecraft/d/e	F	c	f_50159677
+FIELD	com/mojang/minecraft/d/e	F	b	f_67962641
+FIELD	com/mojang/minecraft/d/e	F	c	f_88876528
 METHOD	com/mojang/minecraft/d/e	(FF)Lcom/mojang/minecraft/d/e;	a	m_72802801
-CLASS	com/mojang/minecraft/d/f	net/minecraft/unmapped/C_94584382
+CLASS	com/mojang/minecraft/d/f	com/mojang/minecraft/unmapped/C_94584382
 FIELD	com/mojang/minecraft/d/f	F	a	f_96140729
 FIELD	com/mojang/minecraft/d/f	F	b	f_95060918
 FIELD	com/mojang/minecraft/d/f	F	c	f_88390642
-CLASS	com/mojang/minecraft/e	net/minecraft/unmapped/C_24654288
+CLASS	com/mojang/minecraft/e	com/mojang/minecraft/unmapped/C_24654288
 FIELD	com/mojang/minecraft/e	I	a	f_79497105
 FIELD	com/mojang/minecraft/e	I	b	f_09533029
 FIELD	com/mojang/minecraft/e	I	c	f_04223298
 FIELD	com/mojang/minecraft/e	I	d	f_72698539
 METHOD	com/mojang/minecraft/e	(Lcom/mojang/minecraft/d;I)F	a	m_02676981
-CLASS	com/mojang/minecraft/e/a	net/minecraft/unmapped/C_23014920
+CLASS	com/mojang/minecraft/e/a	com/mojang/minecraft/unmapped/C_23014920
 FIELD	com/mojang/minecraft/e/a	[I	a	f_45069205
 FIELD	com/mojang/minecraft/e/a	I	b	f_70082797
 METHOD	com/mojang/minecraft/e/a	(Ljava/lang/String;)I	a	m_09235706
-METHOD	com/mojang/minecraft/e/a	(Ljava/lang/String;III)V	a	m_01279315
+METHOD	com/mojang/minecraft/e/a	(Ljava/lang/String;III)V	a	m_27673420
 METHOD	com/mojang/minecraft/e/a	(Ljava/lang/String;IIIZ)V	a	m_83960853
-CLASS	com/mojang/minecraft/f	net/minecraft/unmapped/C_10660571
-FIELD	com/mojang/minecraft/f	Lcom/mojang/minecraft/a/g;	a	f_37412724
-FIELD	com/mojang/minecraft/f	F	b	f_99513953
-FIELD	com/mojang/minecraft/f	F	e	f_17598568
-FIELD	com/mojang/minecraft/f	F	f	f_90304537
-FIELD	com/mojang/minecraft/f	F	g	f_59088159
-FIELD	com/mojang/minecraft/f	F	h	f_46131371
-FIELD	com/mojang/minecraft/f	F	i	f_42434778
-FIELD	com/mojang/minecraft/f	F	j	f_30269300
-FIELD	com/mojang/minecraft/f	F	k	f_95055453
-FIELD	com/mojang/minecraft/f	F	l	f_61984451
-FIELD	com/mojang/minecraft/f	F	m	f_57091804
-FIELD	com/mojang/minecraft/f	F	n	f_22062707
-FIELD	com/mojang/minecraft/f	F	o	f_54730504
-FIELD	com/mojang/minecraft/f	Lcom/mojang/minecraft/f/a;	p	f_60509865
-FIELD	com/mojang/minecraft/f	Z	q	f_89584228
-FIELD	com/mojang/minecraft/f	Z	r	f_03159715
-FIELD	com/mojang/minecraft/f	F	s	f_08405778
-FIELD	com/mojang/minecraft/f	F	t	f_89222140
-METHOD	com/mojang/minecraft/f	()V	a	m_35252928
-METHOD	com/mojang/minecraft/f	(F)V	a	m_73541603
-METHOD	com/mojang/minecraft/f	(FF)V	a	m_26624579
-METHOD	com/mojang/minecraft/f	(FFF)V	a	m_53993839
-METHOD	com/mojang/minecraft/f	()V	b	m_30261458
-METHOD	com/mojang/minecraft/f	(FFF)V	b	m_55894934
-METHOD	com/mojang/minecraft/f	()Z	c	m_07217601
-METHOD	com/mojang/minecraft/f	(FFF)V	c	m_11765660
-METHOD	com/mojang/minecraft/f	()Z	d	m_17153793
-METHOD	com/mojang/minecraft/f	()Z	e	m_92722461
-CLASS	com/mojang/minecraft/f/a	net/minecraft/unmapped/C_21144319
-FIELD	com/mojang/minecraft/f/a	F	a	f_32025354
-FIELD	com/mojang/minecraft/f/a	F	b	f_08201094
-FIELD	com/mojang/minecraft/f/a	F	c	f_09249081
-FIELD	com/mojang/minecraft/f/a	F	d	f_96418553
-FIELD	com/mojang/minecraft/f/a	F	e	f_43301025
-FIELD	com/mojang/minecraft/f/a	F	f	f_83133271
-FIELD	com/mojang/minecraft/f/a	F	g	f_05720620
-METHOD	com/mojang/minecraft/f/a	(FFF)V	a	m_61485251
-METHOD	com/mojang/minecraft/f/a	(Lcom/mojang/minecraft/f/a;)Z	a	m_03208881
+CLASS	com/mojang/minecraft/f	com/mojang/minecraft/Entity
+FIELD	com/mojang/minecraft/f	Lcom/mojang/minecraft/a/g;	a	level
+FIELD	com/mojang/minecraft/f	F	b	bbWidth
+FIELD	com/mojang/minecraft/f	F	e	xo
+FIELD	com/mojang/minecraft/f	F	f	yo
+FIELD	com/mojang/minecraft/f	F	g	zo
+FIELD	com/mojang/minecraft/f	F	h	x
+FIELD	com/mojang/minecraft/f	F	i	y
+FIELD	com/mojang/minecraft/f	F	j	z
+FIELD	com/mojang/minecraft/f	F	k	xd
+FIELD	com/mojang/minecraft/f	F	l	yd
+FIELD	com/mojang/minecraft/f	F	m	zd
+FIELD	com/mojang/minecraft/f	F	n	yRot
+FIELD	com/mojang/minecraft/f	F	o	xRot
+FIELD	com/mojang/minecraft/f	Lcom/mojang/minecraft/f/a;	p	bb
+FIELD	com/mojang/minecraft/f	Z	q	onGround
+FIELD	com/mojang/minecraft/f	Z	r	removed
+FIELD	com/mojang/minecraft/f	F	s	heightOffset
+FIELD	com/mojang/minecraft/f	F	t	bbHeight
+METHOD	com/mojang/minecraft/f	()V	a	tick
+METHOD	com/mojang/minecraft/f	(F)V	a	render
+METHOD	com/mojang/minecraft/f	(FF)V	a	setSize
+METHOD	com/mojang/minecraft/f	(FFF)V	a	setPos
+METHOD	com/mojang/minecraft/f	()V	b	resetPos
+METHOD	com/mojang/minecraft/f	(FFF)V	b	move
+METHOD	com/mojang/minecraft/f	()Z	c	isInWater
+METHOD	com/mojang/minecraft/f	(FFF)V	c	moveRelative
+METHOD	com/mojang/minecraft/f	()Z	d	isInLava
+METHOD	com/mojang/minecraft/f	()Z	e	isLit
+CLASS	com/mojang/minecraft/f/a	com/mojang/minecraft/phys/AABB
+FIELD	com/mojang/minecraft/f/a	F	a	x0
+FIELD	com/mojang/minecraft/f/a	F	b	y0
+FIELD	com/mojang/minecraft/f/a	F	c	z0
+FIELD	com/mojang/minecraft/f/a	F	d	x1
+FIELD	com/mojang/minecraft/f/a	F	e	y1
+FIELD	com/mojang/minecraft/f/a	F	f	z1
+FIELD	com/mojang/minecraft/f/a	F	g	epsilon
+METHOD	com/mojang/minecraft/f/a	(FFF)V	a	move
+METHOD	com/mojang/minecraft/f/a	(Lcom/mojang/minecraft/f/a;)Z	a	intersects
