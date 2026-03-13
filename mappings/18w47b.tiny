@@ -778,6 +778,7 @@ FIELD	aec	J	e	f_86865331
 FIELD	aec	I	f	f_05638642
 METHOD	aec	(ILjava/lang/String;Ljava/lang/StringBuilder;)V	a	m_50257404
 METHOD	aec	(JI)Ljava/lang/String;	a	m_83035421
+METHOD	aec	(Ljava/lang/String;)Ljava/util/List;	a	m_83593755
 METHOD	aec	()Ljava/lang/String;	g	m_20021401
 CLASS	aed	net/minecraft/unmapped/C_78821150
 FIELD	aed	J	a	f_58210580
@@ -18817,6 +18818,8 @@ METHOD	ckw	(Lja;)V	c	m_26066325
 METHOD	ckw	()Lja;	d	m_88953565
 METHOD	ckw	()Lja;	e	m_03020651
 METHOD	ckw	()Lja;	f	m_28432868
+METHOD	ckw	()Z	i	m_43820849
+METHOD	ckw	()Lcla$b;	j	m_57369594
 METHOD	ckw	()I	m	m_23073535
 CLASS	ckx	net/minecraft/unmapped/C_25287165
 FIELD	ckx	Ljava/util/Comparator;	a	f_68256792
@@ -29750,7 +29753,7 @@ FIELD	hv	Lorg/apache/logging/log4j/Logger;	f	f_50133137
 FIELD	hv	Ljava/util/List;	g	f_01591565
 FIELD	hv	B	h	f_56809345
 METHOD	hv	(I)Lig;	a	remove
-METHOD	hv	(Lig;)Z	a	m_43125067
+METHOD	hv	(Lig;)Z	a	add
 METHOD	hv	()I	a_	m_72977924
 METHOD	hv	(Lig;)Z	b	m_83744121
 METHOD	hv	()Lhv;	c	m_92469929
@@ -34557,6 +34560,7 @@ METHOD	ug	(Ljava/util/List;)Lcom/mojang/datafixers/util/Either;	a	m_69888800
 METHOD	ug	(Ljava/util/concurrent/CompletableFuture;)Ljava/util/concurrent/CompletionStage;	a	m_25967732
 METHOD	ug	(Ljava/util/concurrent/CompletableFuture;Lbpz;Lbab;Ljava/lang/Object;)Ljava/util/concurrent/CompletionStage;	a	m_22477833
 METHOD	ug	(Ljava/util/concurrent/ForkJoinPool;)Ljava/util/concurrent/ForkJoinWorkerThread;	a	m_15851655
+METHOD	ug	(Ljava/util/function/BooleanSupplier;)V	a	m_06909447
 METHOD	ug	(Ltw$a;)Ljava/util/concurrent/CompletableFuture;	a	m_38429581
 METHOD	ug	(Ltw;)V	a	m_61911798
 METHOD	ug	(Lug;)Lit/unimi/dsi/fastutil/longs/LongSet;	a	m_83940997
@@ -35058,6 +35062,7 @@ FIELD	vj	Ljava/util/Set;	c	f_00163866
 FIELD	vj	Lorg/apache/logging/log4j/Logger;	d	f_92148525
 METHOD	vj	(ILjava/lang/String;Ljava/nio/file/Path;Ljava/lang/String;Ljava/util/function/Predicate;)Ljava/util/Collection;	a	m_56797247
 METHOD	vj	(Ljava/lang/String;)Ljava/io/InputStream;	a	m_72655504
+METHOD	vj	(Ljava/lang/String;)Ljava/io/InputStream;	b	m_38355504
 METHOD	vj	(Lvh;Lpy;)Ljava/io/InputStream;	c	m_39374962
 CLASS	vk	net/minecraft/unmapped/C_46683602
 METHOD	vk	()Ljava/lang/String;	a	m_35184170

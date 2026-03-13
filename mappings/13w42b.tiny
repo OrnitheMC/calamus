@@ -1108,6 +1108,7 @@ METHOD	afk	()Lawx;	M	m_67440400
 METHOD	afk	()Lafh;	N	m_18124683
 METHOD	afk	()Z	O	m_44230367
 METHOD	afk	()Z	P	m_68511828
+METHOD	afk	()I	Q	m_98920689
 METHOD	afk	()I	R	m_20389902
 METHOD	afk	()D	T	m_58351648
 METHOD	afk	()Ljava/util/Calendar;	V	m_97992864
@@ -1120,6 +1121,7 @@ METHOD	afk	(DDDLjava/lang/String;FF)V	a	m_14911682
 METHOD	afk	(DDDLjava/lang/String;FFZ)V	a	m_70598418
 METHOD	afk	(F)I	a	m_88486855
 METHOD	afk	(I)Lqk;	a	m_99124674
+METHOD	afk	(II)Lagd;	a	m_25174963
 METHOD	afk	(IIII)Z	a	m_80621374
 METHOD	afk	(IIIII)Z	a	m_38188749
 METHOD	afk	(IIILafw;)I	a	m_06174602
@@ -1203,6 +1205,7 @@ METHOD	afk	(Lqk;Laxy;)Ljava/util/List;	b	m_31939869
 METHOD	afk	()V	c	m_82212843
 METHOD	afk	(F)F	c	m_15038091
 METHOD	afk	(II)Z	c	m_12753876
+METHOD	afk	(III)Z	c	m_64558657
 METHOD	afk	(IIIII)V	c	m_80788745
 METHOD	afk	(IIIIII)V	c	m_76770021
 METHOD	afk	(IIILahr;)V	c	m_62453220
@@ -4127,6 +4130,7 @@ CLASS	aww	net/minecraft/unmapped/C_72342472
 FIELD	aww	Ljava/io/File;	a	f_90285215
 FIELD	aww	Lorg/apache/logging/log4j/Logger;	b	f_86786633
 METHOD	aww	([Ljava/io/File;)Z	a	m_58119675
+METHOD	aww	(Ljava/lang/String;)Lawx;	c	m_18055305
 CLASS	awx	net/minecraft/unmapped/C_64676926
 FIELD	awx	J	a	f_16809156
 FIELD	awx	Lafv;	b	f_92576962
@@ -4429,6 +4433,7 @@ METHOD	ayg	(Ljava/lang/String;)V	c	m_49148094
 METHOD	ayg	()Ljava/util/Collection;	d	m_97938750
 METHOD	ayg	()Ljava/lang/String;	e	m_92719207
 METHOD	ayg	()Ljava/lang/String;	f	m_59892403
+METHOD	ayg	()Z	h	m_43820849
 METHOD	ayg	()I	i	m_23073535
 CLASS	ayh	net/minecraft/unmapped/C_25287165
 FIELD	ayh	Ljava/util/Comparator;	a	f_68256792
@@ -9872,6 +9877,7 @@ FIELD	el	Ljava/net/SocketAddress;	k	f_25714849
 FIELD	el	Ler;	l	f_73554042
 FIELD	el	Lef;	m	f_00071957
 FIELD	el	Lez;	n	f_12389608
+METHOD	el	(Lef;)V	a	m_26191327
 METHOD	el	(Lel;)Lio/netty/channel/Channel;	a	m_72758224
 METHOD	el	(Lio/netty/channel/ChannelHandlerContext;Lfj;)V	a	channelRead0
 METHOD	el	(Ljava/net/InetAddress;I)Lel;	a	m_20835321

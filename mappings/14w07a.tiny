@@ -311,6 +311,7 @@ METHOD	aat	(DDD)V	k	m_78178389
 METHOD	aat	()V	l	m_13107648
 METHOD	aat	(DDD)V	l	m_62997662
 METHOD	aat	()V	q	m_29672330
+METHOD	aat	(I)Lafa;	q	m_37372558
 METHOD	aat	()V	r	m_11118191
 METHOD	aat	(I)V	r	m_83917266
 METHOD	aat	(I)V	s	m_06688930
@@ -1814,6 +1815,7 @@ METHOD	aja	()Laix;	P	m_18124683
 METHOD	aja	()Z	Q	m_44230367
 METHOD	aja	()Z	R	m_68511828
 METHOD	aja	()Lbcp;	S	m_55846738
+METHOD	aja	()I	T	m_98920689
 METHOD	aja	()I	U	m_20389902
 METHOD	aja	()D	W	m_58351648
 METHOD	aja	()Ljava/util/Calendar;	X	m_97992864
@@ -1856,6 +1858,7 @@ METHOD	aja	(Lbcv;Lbcs;)F	a	m_36285949
 METHOD	aja	(Lbcv;Lbcv;)Lbct;	a	m_82559274
 METHOD	aja	(Lbcv;Lbcv;Z)Lbct;	a	m_40214598
 METHOD	aja	(Lbcv;Lbcv;ZZZ)Lbct;	a	m_39818017
+METHOD	aja	(Lde;)Lajs;	a	m_25174963
 METHOD	aja	(Lde;I)Z	a	m_80621374
 METHOD	aja	(Lde;II)Z	a	m_38188749
 METHOD	aja	(Lde;Lajl;)I	a	m_06174602
@@ -1937,6 +1940,7 @@ METHOD	aja	(Lsk;)Z	c	m_06673757
 METHOD	aja	()V	d	m_82212843
 METHOD	aja	(F)F	d	m_05796930
 METHOD	aja	(Lbcs;)Z	d	m_05376305
+METHOD	aja	(Lde;)Z	d	m_64558657
 METHOD	aja	(Lde;Lalj;)V	d	m_69064650
 METHOD	aja	(Lde;Lalj;II)Z	d	m_70456507
 METHOD	aja	(Lde;Z)Z	d	m_33594396
@@ -5028,6 +5032,7 @@ CLASS	bbp	net/minecraft/unmapped/C_72342472
 FIELD	bbp	Ljava/io/File;	a	f_90285215
 FIELD	bbp	Lorg/apache/logging/log4j/Logger;	b	f_86786633
 METHOD	bbp	([Ljava/io/File;)Z	a	m_58119675
+METHOD	bbp	(Ljava/lang/String;)Lbbq;	c	m_18055305
 CLASS	bbq	net/minecraft/unmapped/C_64676926
 FIELD	bbq	Laix;	A	f_75324461
 FIELD	bbq	J	a	f_16809156
@@ -5306,6 +5311,8 @@ METHOD	bcx	(Ljava/lang/String;)V	c	m_49148094
 METHOD	bcx	()Ljava/util/Collection;	d	m_97938750
 METHOD	bcx	()Ljava/lang/String;	e	m_92719207
 METHOD	bcx	()Ljava/lang/String;	f	m_59892403
+METHOD	bcx	()Z	h	m_43820849
+METHOD	bcx	()Lbde;	i	m_57369594
 METHOD	bcx	()I	j	m_23073535
 METHOD	bcx	()La;	k	m_88062935
 CLASS	bcy	net/minecraft/unmapped/C_25287165
@@ -15400,6 +15407,7 @@ METHOD	ti	()Lwm;	n	m_35626357
 METHOD	ti	()Lwo;	o	m_45378891
 METHOD	ti	()Lth;	p	m_88061487
 METHOD	ti	()V	q	m_58350462
+METHOD	ti	(I)Lafa;	q	m_37372558
 METHOD	ti	()I	r	m_71326729
 METHOD	ti	()V	s	m_45199528
 METHOD	ti	()V	t	m_08117540

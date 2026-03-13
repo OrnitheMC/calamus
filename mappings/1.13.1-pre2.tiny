@@ -16215,6 +16215,8 @@ METHOD	cez	(Lij;)V	c	m_26066325
 METHOD	cez	()Lij;	d	m_88953565
 METHOD	cez	()Lij;	e	m_03020651
 METHOD	cez	()Lij;	f	m_28432868
+METHOD	cez	()Z	i	m_43820849
+METHOD	cez	()Lcfd$b;	j	m_57369594
 METHOD	cez	()I	m	m_23073535
 CLASS	cf	net/minecraft/unmapped/C_47034372
 FIELD	cf	Ljava/util/Collection;	a	f_25680134
@@ -26590,7 +26592,7 @@ FIELD	he	Lorg/apache/logging/log4j/Logger;	f	f_50133137
 FIELD	he	Ljava/util/List;	g	f_01591565
 FIELD	he	B	h	f_56809345
 METHOD	he	(I)Lho;	a	remove
-METHOD	he	(Lho;)Z	a	m_43125067
+METHOD	he	(Lho;)Z	a	add
 METHOD	he	()Lhe;	c	m_92469929
 METHOD	he	()I	d	m_72977924
 METHOD	he	(I)Lgy;	e	m_41419071
@@ -31611,6 +31613,7 @@ FIELD	uo	Ljava/util/Set;	c	f_00163866
 FIELD	uo	Lorg/apache/logging/log4j/Logger;	d	f_92148525
 METHOD	uo	(ILjava/lang/String;Ljava/nio/file/Path;Ljava/lang/String;Ljava/util/function/Predicate;)Ljava/util/Collection;	a	m_56797247
 METHOD	uo	(Ljava/lang/String;)Ljava/io/InputStream;	a	m_72655504
+METHOD	uo	(Ljava/lang/String;)Ljava/io/InputStream;	b	m_38355504
 METHOD	uo	(Lum;Lpc;)Ljava/io/InputStream;	c	m_39374962
 CLASS	up	net/minecraft/unmapped/C_46683602
 METHOD	up	()Ljava/lang/String;	a	m_35184170

@@ -535,6 +535,7 @@ METHOD	adc	()Laob;	N	m_67440400
 METHOD	adc	()Lacz;	O	m_18124683
 METHOD	adc	()Z	P	m_44230367
 METHOD	adc	()Z	Q	m_68511828
+METHOD	adc	()I	R	m_98920689
 METHOD	adc	()I	S	m_20389902
 METHOD	adc	()D	U	m_58351648
 METHOD	adc	()Ljava/util/Calendar;	W	m_97992864
@@ -547,6 +548,7 @@ METHOD	adc	(DDDLjava/lang/String;FFLadt;)V	a	m_14911682
 METHOD	adc	(DDDLjava/lang/String;FFZLadt;)V	a	m_70598418
 METHOD	adc	(F)I	a	m_88486855
 METHOD	adc	(I)Lok;	a	m_99124674
+METHOD	adc	(II)Lady;	a	m_25174963
 METHOD	adc	(IIII)Z	a	m_80621374
 METHOD	adc	(IIIII)Z	a	m_38188749
 METHOD	adc	(IIILado;)I	a	m_06174602
@@ -631,6 +633,7 @@ METHOD	adc	(Lok;Lavn;)Ljava/util/List;	b	m_31939869
 METHOD	adc	()V	c	m_82212843
 METHOD	adc	(F)F	c	m_15038091
 METHOD	adc	(II)Z	c	m_12753876
+METHOD	adc	(III)Z	c	m_64558657
 METHOD	adc	(IIIII)V	c	m_80788745
 METHOD	adc	(IIIIII)V	c	m_76770021
 METHOD	adc	(IIILatp;)V	c	m_62453220
@@ -681,11 +684,14 @@ METHOD	adc	(III)I	m	m_53002591
 METHOD	adc	(III)I	n	m_71898872
 METHOD	adc	()V	o	m_03149087
 METHOD	adc	(III)V	p	m_00384111
+METHOD	adc	(III)F	q	m_80119644
 METHOD	adc	(III)V	s	m_99668886
+METHOD	adc	(III)Z	t	m_46357017
 METHOD	adc	()Laef;	u	m_72354999
 METHOD	adc	()Z	v	m_55681841
 METHOD	adc	(III)Z	v	m_15479659
 METHOD	adc	()I	w	m_29794890
+METHOD	adc	(III)Z	w	m_84587551
 METHOD	adc	()F	x	m_72207508
 METHOD	adc	(III)Z	x	m_73082703
 METHOD	adc	()Ljava/lang/String;	y	m_19536542
@@ -2364,6 +2370,7 @@ METHOD	ao	()[Ljava/lang/String;	d	m_75276612
 CLASS	aoa	net/minecraft/unmapped/C_72342472
 FIELD	aoa	Ljava/io/File;	a	f_90285215
 METHOD	aoa	([Ljava/io/File;)Z	a	m_58119675
+METHOD	aoa	(Ljava/lang/String;)Laob;	c	m_18055305
 CLASS	aob	net/minecraft/unmapped/C_64676926
 FIELD	aob	J	a	f_16809156
 FIELD	aob	Ladn;	b	f_92576962
@@ -3823,6 +3830,7 @@ METHOD	avv	(Ljava/lang/String;)V	c	m_49148094
 METHOD	avv	()Ljava/util/Collection;	d	m_97938750
 METHOD	avv	()Ljava/lang/String;	e	m_92719207
 METHOD	avv	()Ljava/lang/String;	f	m_59892403
+METHOD	avv	()Z	h	m_43820849
 METHOD	avv	()I	i	m_23073535
 CLASS	avw	net/minecraft/unmapped/C_25287165
 FIELD	avw	Ljava/util/Comparator;	a	f_68256792

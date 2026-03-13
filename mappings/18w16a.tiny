@@ -14199,6 +14199,7 @@ FIELD	bxo	Lxf;	c	f_48721932
 FIELD	bxo	Lorg/apache/logging/log4j/Logger;	e	f_86786633
 METHOD	bxo	(Ljava/io/File;Lxf;)Lbxp;	a	m_29543495
 METHOD	bxo	([Ljava/io/File;)Z	a	m_58119675
+METHOD	bxo	(Ljava/lang/String;)Lbxp;	c	m_18055305
 CLASS	bxp	net/minecraft/unmapped/C_64676926
 FIELD	bxp	Z	A	f_51814374
 FIELD	bxp	Z	B	f_56044825
@@ -15225,6 +15226,8 @@ METHOD	can	(Lcar$b;)V	b	m_83575005
 METHOD	can	(Z)V	b	m_66188589
 METHOD	can	()Ljava/lang/String;	c	m_68253775
 METHOD	can	()Lib;	d	m_88953565
+METHOD	can	()Z	g	m_43820849
+METHOD	can	()Lcar$b;	h	m_57369594
 METHOD	can	()I	k	m_23073535
 CLASS	cao	net/minecraft/unmapped/C_25287165
 FIELD	cao	Ljava/util/Comparator;	a	f_68256792
@@ -24802,6 +24805,7 @@ FIELD	ez	Ljava/util/Map;	c	f_66607653
 METHOD	ez	(Ljava/util/Random;)Ljava/lang/Object;	a	m_47289449
 METHOD	ez	()Ljava/util/Map;	b	m_56475138
 METHOD	ez	()Ljava/util/Set;	c	m_64981899
+METHOD	ez	(Ljava/lang/Object;)Ljava/lang/Object;	c	m_65457132
 METHOD	ez	(Ljava/lang/Object;)Z	d	m_72615648
 CLASS	f	net/minecraft/unmapped/C_76520288
 FIELD	f	Lorg/apache/logging/log4j/Logger;	a	f_85447860
@@ -29955,6 +29959,7 @@ FIELD	ts	Ljava/util/Set;	b	f_00163866
 FIELD	ts	Lorg/apache/logging/log4j/Logger;	c	f_92148525
 METHOD	ts	(ILjava/lang/String;Ljava/nio/file/Path;Ljava/lang/String;Ljava/util/function/Predicate;)Ljava/util/Collection;	a	m_56797247
 METHOD	ts	(Ljava/lang/String;)Ljava/io/InputStream;	a	m_72655504
+METHOD	ts	(Ljava/lang/String;)Ljava/io/InputStream;	b	m_38355504
 METHOD	ts	(Ltq;Loh;)Ljava/io/InputStream;	c	m_39374962
 CLASS	tt	net/minecraft/unmapped/C_46683602
 METHOD	tt	()Ljava/lang/String;	a	m_35184170

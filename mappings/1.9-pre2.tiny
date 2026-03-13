@@ -1887,6 +1887,7 @@ METHOD	ahs	()V	H	m_69392864
 METHOD	ahs	()V	I	m_36911043
 METHOD	ahs	()Ljava/util/List;	J	m_78152051
 METHOD	ahs	()I	K	m_79170396
+METHOD	ahs	()Lahx;	L	m_59003592
 METHOD	ahs	()V	M	m_99760164
 METHOD	ahs	()V	N	m_75538572
 METHOD	ahs	()J	O	m_92966154
@@ -2005,6 +2006,7 @@ METHOD	ahs	(Lapu;)V	b	m_29582778
 METHOD	ahs	(Lavo;Z)Z	b	m_10295650
 METHOD	ahs	(Lbbg;)Z	b	m_51002786
 METHOD	ahs	(Lbbg;Laxd;)Z	b	m_33360396
+METHOD	ahs	(Lcj;)Laif;	b	m_25174963
 METHOD	ahs	(Lcj;Lajs;)Z	b	m_67525679
 METHOD	ahs	(Lcj;Lajs;II)V	b	m_76888851
 METHOD	ahs	(Lcj;Lapu;)V	b	m_84351694
@@ -7062,6 +7064,7 @@ FIELD	azf	Lpb;	b	f_48721932
 FIELD	azf	Lorg/apache/logging/log4j/Logger;	c	f_86786633
 METHOD	azf	(Ljava/io/File;Lpb;)Lazg;	a	m_29543495
 METHOD	azf	([Ljava/io/File;)Z	a	m_58119675
+METHOD	azf	(Ljava/lang/String;)Lazg;	c	m_18055305
 CLASS	azg	net/minecraft/unmapped/C_64676926
 FIELD	azg	Z	A	f_51814374
 FIELD	azg	Z	B	f_56044825
@@ -7836,6 +7839,8 @@ METHOD	bbl	()Ljava/lang/String;	c	m_68253775
 METHOD	bbl	(Ljava/lang/String;)V	c	m_49148094
 METHOD	bbl	()Ljava/lang/String;	e	m_92719207
 METHOD	bbl	()Ljava/lang/String;	f	m_59892403
+METHOD	bbl	()Z	h	m_43820849
+METHOD	bbl	()Lbbq$b;	i	m_57369594
 METHOD	bbl	()I	l	m_23073535
 CLASS	bbm	net/minecraft/unmapped/C_25287165
 FIELD	bbm	Ljava/util/Comparator;	a	f_68256792
@@ -15199,6 +15204,8 @@ FIELD	dd	[Ljava/lang/Object;	b	f_00554859
 FIELD	dd	Ljava/util/Map;	c	f_66607653
 METHOD	dd	(Ljava/util/Random;)Ljava/lang/Object;	a	m_47289449
 METHOD	dd	()Ljava/util/Map;	b	m_56475138
+METHOD	dd	()Ljava/util/Set;	c	m_71903807
+METHOD	dd	(Ljava/lang/Object;)Ljava/lang/Object;	c	m_65457132
 METHOD	dd	(Ljava/lang/Object;)Z	d	m_72615648
 CLASS	df	net/minecraft/unmapped/C_93816630
 FIELD	df	I	a	f_39781383
@@ -23121,6 +23128,7 @@ METHOD	zi	()Z	cW	m_27409739
 METHOD	zi	()F	cX	m_16491628
 METHOD	zi	()V	cY	m_92842745
 METHOD	zi	()Lado;	cZ	m_36012846
+METHOD	zi	()Lry;	cq	m_82780045
 METHOD	zi	(Ljava/lang/String;)Ljava/util/UUID;	d	m_69411679
 METHOD	zi	(Lrq;)Ljava/util/Collection;	d	m_57775337
 METHOD	zi	()F	da	m_12402623

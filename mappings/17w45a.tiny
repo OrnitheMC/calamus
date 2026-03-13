@@ -4368,6 +4368,7 @@ METHOD	aoy	()V	J	m_69392864
 METHOD	aoy	()V	K	m_36911043
 METHOD	aoy	()Ljava/util/List;	L	m_78152051
 METHOD	aoy	()I	M	m_79170396
+METHOD	aoy	()Lapd;	N	m_59003592
 METHOD	aoy	()V	O	m_99760164
 METHOD	aoy	()V	P	m_75538572
 METHOD	aoy	()J	Q	m_92966154
@@ -4488,6 +4489,7 @@ METHOD	aoy	(Lape;Lde;)I	b	m_15475075
 METHOD	aoy	(Laxn;)V	b	m_29582778
 METHOD	aoy	(Lbdk;Z)Z	b	m_10295650
 METHOD	aoy	(Lbjf;)Z	b	m_52719108
+METHOD	aoy	(Lde;)Lapl;	b	m_25174963
 METHOD	aoy	(Lde;Lara;)Z	b	m_67525679
 METHOD	aoy	(Lde;Lara;II)V	b	m_76888851
 METHOD	aoy	(Lde;Lara;Lde;)V	b	m_24696152
@@ -10258,6 +10260,7 @@ FIELD	bhg	Lua;	b	f_48721932
 FIELD	bhg	Lorg/apache/logging/log4j/Logger;	c	f_86786633
 METHOD	bhg	(Ljava/io/File;Lua;)Lbhh;	a	m_29543495
 METHOD	bhg	([Ljava/io/File;)Z	a	m_58119675
+METHOD	bhg	(Ljava/lang/String;)Lbhh;	c	m_18055305
 CLASS	bhh	net/minecraft/unmapped/C_64676926
 FIELD	bhh	Z	A	f_51814374
 FIELD	bhh	Z	B	f_56044825
@@ -11008,6 +11011,8 @@ METHOD	bjl	(Ljava/lang/String;)V	c	m_49148094
 METHOD	bjl	()Lfy;	d	m_88953565
 METHOD	bjl	()Ljava/lang/String;	f	m_92719207
 METHOD	bjl	()Ljava/lang/String;	g	m_59892403
+METHOD	bjl	()Z	i	m_43820849
+METHOD	bjl	()Lbjq$b;	j	m_57369594
 METHOD	bjl	()I	m	m_23073535
 CLASS	bjm	net/minecraft/unmapped/C_25287165
 FIELD	bjm	Ljava/util/Comparator;	a	f_68256792
@@ -20153,6 +20158,7 @@ FIELD	dz	[Ljava/lang/Object;	b	f_00554859
 FIELD	dz	Ljava/util/Map;	c	f_66607653
 METHOD	dz	(Ljava/util/Random;)Ljava/lang/Object;	a	m_47289449
 METHOD	dz	()Ljava/util/Map;	b	m_56475138
+METHOD	dz	(Ljava/lang/Object;)Ljava/lang/Object;	c	m_65457132
 METHOD	dz	(Ljava/lang/Object;)Z	d	m_72615648
 CLASS	eb	net/minecraft/unmapped/C_93816630
 FIELD	eb	I	a	f_39781383
@@ -24596,6 +24602,7 @@ CLASS	qh	net/minecraft/unmapped/C_81285871
 FIELD	qh	Ljava/util/Set;	a	f_00163866
 FIELD	qh	Lorg/apache/logging/log4j/Logger;	b	f_92148525
 METHOD	qh	(ILjava/lang/String;Ljava/nio/file/Path;Ljava/lang/String;)Ljava/util/Collection;	a	m_56797247
+METHOD	qh	(Ljava/lang/String;)Ljava/io/InputStream;	b	m_38355504
 METHOD	qh	(Lql;Llw;)Ljava/io/InputStream;	c	m_39374962
 CLASS	qi	net/minecraft/unmapped/C_14485255
 FIELD	qi	Lcom/google/common/base/Splitter;	b	f_93951655

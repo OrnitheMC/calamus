@@ -576,6 +576,7 @@ METHOD	acw	(DDD)V	k	m_78178389
 METHOD	acw	()Z	l	m_29153887
 METHOD	acw	(DDD)V	l	m_62997662
 METHOD	acw	()V	m	m_13107648
+METHOD	acw	(I)Laht;	q	m_37372558
 METHOD	acw	()V	r	m_29672330
 METHOD	acw	(I)V	r	m_83917266
 METHOD	acw	()V	s	m_11118191
@@ -2179,6 +2180,7 @@ METHOD	alu	(Lbkm;Lbkj;)F	a	m_36285949
 METHOD	alu	(Lbkm;Lbkm;)Lbkk;	a	m_82559274
 METHOD	alu	(Lbkm;Lbkm;Z)Lbkk;	a	m_40214598
 METHOD	alu	(Lbkm;Lbkm;ZZZ)Lbkk;	a	m_39818017
+METHOD	alu	(Ldi;)Lamm;	a	m_25174963
 METHOD	alu	(Ldi;I)Z	a	m_80621374
 METHOD	alu	(Ldi;Lamf;)I	a	m_06174602
 METHOD	alu	(Ldi;Laof;)Z	a	m_38204755
@@ -6314,6 +6316,7 @@ CLASS	bjg	net/minecraft/unmapped/C_72342472
 FIELD	bjg	Ljava/io/File;	a	f_90285215
 FIELD	bjg	Lorg/apache/logging/log4j/Logger;	b	f_86786633
 METHOD	bjg	([Ljava/io/File;)Z	a	m_58119675
+METHOD	bjg	(Ljava/lang/String;)Lbjh;	c	m_18055305
 CLASS	bjh	net/minecraft/unmapped/C_64676926
 FIELD	bjh	Z	A	f_85030439
 FIELD	bjh	D	B	f_43990909
@@ -6625,6 +6628,8 @@ METHOD	bko	()Ljava/lang/String;	c	m_68253775
 METHOD	bko	(Ljava/lang/String;)V	c	m_49148094
 METHOD	bko	()Ljava/lang/String;	e	m_92719207
 METHOD	bko	()Ljava/lang/String;	f	m_59892403
+METHOD	bko	()Z	h	m_43820849
+METHOD	bko	()Lbkv;	i	m_57369594
 METHOD	bko	()I	k	m_23073535
 METHOD	bko	()La;	l	m_88062935
 CLASS	bkp	net/minecraft/unmapped/C_25287165
@@ -17713,6 +17718,7 @@ METHOD	uw	()Lvu;	n	m_73371863
 METHOD	uw	()Lyc;	o	m_35626357
 METHOD	uw	()Lyf;	p	m_45378891
 METHOD	uw	()Luv;	q	m_88061487
+METHOD	uw	(I)Laht;	q	m_37372558
 METHOD	uw	()V	r	m_58350462
 METHOD	uw	()I	s	m_71326729
 METHOD	uw	()V	t	m_45199528

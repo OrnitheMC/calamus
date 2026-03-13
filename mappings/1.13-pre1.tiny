@@ -15699,6 +15699,7 @@ FIELD	cez	Lxo;	c	f_48721932
 FIELD	cez	Lorg/apache/logging/log4j/Logger;	e	f_86786633
 METHOD	cez	(Ljava/io/File;Lxo;)Lcfa;	a	m_29543495
 METHOD	cez	([Ljava/io/File;)Z	a	m_58119675
+METHOD	cez	(Ljava/lang/String;)Lcfa;	c	m_18055305
 CLASS	cf	net/minecraft/unmapped/C_39693538
 FIELD	cf	Ljava/util/Collection;	a	f_35806019
 FIELD	cf	Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;	b	f_57845047
@@ -16719,6 +16720,8 @@ METHOD	chy	()Ljava/lang/String;	c	m_68253775
 METHOD	chy	()Lig;	d	m_88953565
 METHOD	chy	()Lig;	e	m_03020651
 METHOD	chy	()Lig;	f	m_28432868
+METHOD	chy	()Z	i	m_43820849
+METHOD	chy	()Lcic$b;	j	m_57369594
 METHOD	chy	()I	m	m_23073535
 CLASS	chz	net/minecraft/unmapped/C_25287165
 FIELD	chz	Ljava/util/Comparator;	a	f_68256792
@@ -26383,6 +26386,7 @@ FIELD	fb	Ljava/util/Map;	c	f_66607653
 METHOD	fb	(Ljava/util/Random;)Ljava/lang/Object;	a	m_47289449
 METHOD	fb	()Ljava/util/Map;	b	m_56475138
 METHOD	fb	()Ljava/util/Set;	c	m_64981899
+METHOD	fb	(Ljava/lang/Object;)Ljava/lang/Object;	c	m_65457132
 METHOD	fb	(Ljava/lang/Object;)Z	d	m_72615648
 CLASS	fd	net/minecraft/unmapped/C_93816630
 FIELD	fd	I	a	f_39781383
@@ -26818,7 +26822,7 @@ FIELD	hd	Lorg/apache/logging/log4j/Logger;	f	f_50133137
 FIELD	hd	Ljava/util/List;	g	f_01591565
 FIELD	hd	B	h	f_56809345
 METHOD	hd	(I)Lhm;	a	remove
-METHOD	hd	(Lhm;)Z	a	m_43125067
+METHOD	hd	(Lhm;)Z	a	add
 METHOD	hd	()Lhd;	c	m_92469929
 METHOD	hd	()I	d	m_72977924
 METHOD	hd	(I)Lgx;	e	m_41419071
@@ -31613,6 +31617,7 @@ FIELD	tx	Ljava/util/Set;	b	f_00163866
 FIELD	tx	Lorg/apache/logging/log4j/Logger;	c	f_92148525
 METHOD	tx	(ILjava/lang/String;Ljava/nio/file/Path;Ljava/lang/String;Ljava/util/function/Predicate;)Ljava/util/Collection;	a	m_56797247
 METHOD	tx	(Ljava/lang/String;)Ljava/io/InputStream;	a	m_72655504
+METHOD	tx	(Ljava/lang/String;)Ljava/io/InputStream;	b	m_38355504
 METHOD	tx	(Ltv;Lom;)Ljava/io/InputStream;	c	m_39374962
 CLASS	ty	net/minecraft/unmapped/C_46683602
 METHOD	ty	()Ljava/lang/String;	a	m_35184170

@@ -1129,6 +1129,7 @@ FIELD	afx	J	e	f_86865331
 FIELD	afx	I	f	f_05638642
 METHOD	afx	(ILjava/lang/String;Ljava/lang/StringBuilder;)V	a	m_50257404
 METHOD	afx	(JI)Ljava/lang/String;	a	m_83035421
+METHOD	afx	(Ljava/lang/String;)Ljava/util/List;	a	m_83593755
 METHOD	afx	()Ljava/lang/String;	h	m_20021401
 CLASS	afy	net/minecraft/unmapped/C_78821150
 FIELD	afy	J	a	f_58210580
@@ -7166,6 +7167,7 @@ FIELD	awa	Z	g	f_50409931
 METHOD	awa	(Lev;)V	a	m_87529638
 METHOD	awa	(Lbbu;)V	b	m_85121498
 METHOD	awa	(Lbbu;)V	c	m_05464863
+METHOD	awa	()Lbbu;	f	m_50818383
 METHOD	awa	()Lbbu;	i	m_82064545
 CLASS	awb	net/minecraft/unmapped/C_44029030
 FIELD	awb	Lqh;	f	f_54872014
@@ -7266,6 +7268,7 @@ METHOD	awr	(Lbbu;Lbdj;)V	a	m_09945202
 METHOD	awr	(Lev;Lfa;)V	a	m_74450320
 METHOD	awr	(Ljava/util/List;Laid;)V	a	m_63239455
 METHOD	awr	(Lbbu;)V	b	m_14045016
+METHOD	awr	()Lbbu;	f	m_50818383
 METHOD	awr	()V	i	m_28120628
 METHOD	awr	()Z	k	m_31609842
 CLASS	aws	net/minecraft/unmapped/C_78539896
@@ -11079,6 +11082,7 @@ METHOD	bha	(Lev;)Lbxc;	l	m_41814513
 METHOD	bha	(Lev;)V	m	m_22276279
 METHOD	bha	(Lev;)V	n	m_99668886
 METHOD	bha	(Lev;)Z	o	m_64691195
+METHOD	bha	()Lev;	o_	m_84569052
 METHOD	bha	()Lnet/minecraft/server/MinecraftServer;	p	m_34284421
 METHOD	bha	(Lev;)I	p	m_75590456
 METHOD	bha	(Lev;)Z	q	m_38754384
@@ -21886,6 +21890,8 @@ METHOD	csm	(Ljm;)V	c	m_26066325
 METHOD	csm	()Ljm;	d	m_88953565
 METHOD	csm	()Ljm;	e	m_03020651
 METHOD	csm	()Ljm;	f	m_28432868
+METHOD	csm	()Z	i	m_43820849
+METHOD	csm	()Lcsq$b;	j	m_57369594
 METHOD	csm	()I	m	m_23073535
 CLASS	csn	net/minecraft/unmapped/C_25287165
 FIELD	csn	Ljava/util/Comparator;	a	f_68256792
@@ -38299,6 +38305,7 @@ METHOD	vd	(Lbwq;)Lbwq;	a	m_24411930
 METHOD	vd	(Lev;)V	a	m_17007416
 METHOD	vd	(Lfo;Lbhj;)V	a	m_24187552
 METHOD	vd	(Ljava/util/concurrent/CompletableFuture;)Ljava/util/concurrent/CompletionStage;	a	m_25967732
+METHOD	vd	(Ljava/util/function/BooleanSupplier;)V	a	m_06909447
 METHOD	vd	(Lur;I)Z	a	m_93695798
 METHOD	vd	(Lvd;)Ljava/lang/Thread;	a	m_88671521
 METHOD	vd	(Lvg;)V	a	m_03398161
@@ -38874,6 +38881,7 @@ FIELD	wj	Ljava/util/Map;	e	f_17153883
 METHOD	wj	(ILjava/lang/String;Ljava/nio/file/Path;Ljava/lang/String;Ljava/util/function/Predicate;)Ljava/util/Collection;	a	m_56797247
 METHOD	wj	(Ljava/lang/String;)Ljava/io/InputStream;	a	m_72655504
 METHOD	wj	(Ljava/util/HashMap;)V	a	m_94350958
+METHOD	wj	(Ljava/lang/String;)Ljava/io/InputStream;	b	m_38355504
 METHOD	wj	(Lwh;Lqs;)Ljava/io/InputStream;	c	m_39374962
 CLASS	wk	net/minecraft/unmapped/C_46683602
 METHOD	wk	()Ljava/lang/String;	a	m_35184170
@@ -38958,6 +38966,7 @@ FIELD	wx	Ljava/util/List;	a	f_89448392
 FIELD	wx	Lorg/apache/logging/log4j/Logger;	b	f_76626059
 FIELD	wx	Lwh;	c	f_72305547
 METHOD	wx	(Lqs;Lwg;)Ljava/io/InputStream;	a	m_12818905
+METHOD	wx	(Lwg;)V	a	m_89570331
 METHOD	wx	()Lorg/apache/logging/log4j/Logger;	b	m_87781610
 METHOD	wx	(Lqs;)Lqs;	d	m_29108302
 METHOD	wx	(Lqs;)V	e	m_12057460
@@ -39072,6 +39081,8 @@ FIELD	xh	Ljava/util/List;	d	f_38329839
 FIELD	xh	Ljava/util/Set;	e	f_32017158
 FIELD	xh	Lwh;	f	f_39234632
 FIELD	xh	Ljava/lang/Thread;	g	f_53786901
+METHOD	xh	(Ljava/util/concurrent/Executor;Ljava/util/concurrent/Executor;Ljava/util/concurrent/CompletableFuture;Ljava/util/List;)Lxa;	a	m_73356589
+METHOD	xh	(Lwg;)V	a	m_89570331
 METHOD	xh	()V	b	m_80187144
 METHOD	xh	(Ljava/util/concurrent/Executor;Ljava/util/concurrent/Executor;Ljava/util/List;Ljava/util/concurrent/CompletableFuture;)Lxa;	b	m_19156312
 CLASS	xi	net/minecraft/unmapped/C_11789134

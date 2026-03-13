@@ -4402,6 +4402,7 @@ METHOD	aou	([Ljava/lang/String;Ljava/util/Map;II)Len;	b	m_66623147
 METHOD	aou	(Laou;)Ljava/lang/String;	c	m_98300672
 METHOD	aou	(Lcom/google/gson/JsonObject;)Ljava/util/Map;	c	m_19256368
 METHOD	aou	(Laou;)Len;	d	m_05928121
+METHOD	aou	()Lamn;	e	m_66362834
 METHOD	aou	(Laou;)Lamn;	e	m_89944368
 METHOD	aou	()I	h	m_30144399
 METHOD	aou	()I	i	m_03308383
@@ -5053,6 +5054,7 @@ METHOD	aqt	(Laqz;Ldx;)I	b	m_15475075
 METHOD	aqt	(Lazi;)V	b	m_29582778
 METHOD	aqt	(Lbfp;Z)Z	b	m_10295650
 METHOD	aqt	(Lbli;)Z	b	m_05376305
+METHOD	aqt	(Ldx;)Larg;	b	m_25174963
 METHOD	aqt	(Ldx;Lasy;)Z	b	m_67525679
 METHOD	aqt	(Ldx;Lasy;II)V	b	m_76888851
 METHOD	aqt	(Ldx;Lazi;)V	b	m_84351694
@@ -10714,6 +10716,7 @@ FIELD	bjk	Lve;	c	f_48721932
 FIELD	bjk	Lorg/apache/logging/log4j/Logger;	e	f_86786633
 METHOD	bjk	(Ljava/io/File;Lve;)Lbjl;	a	m_29543495
 METHOD	bjk	([Ljava/io/File;)Z	a	m_58119675
+METHOD	bjk	(Ljava/lang/String;)Lbjl;	c	m_18055305
 CLASS	bjl	net/minecraft/unmapped/C_64676926
 FIELD	bjl	Z	A	f_51814374
 FIELD	bjl	Z	B	f_56044825
@@ -11672,6 +11675,8 @@ METHOD	bmg	(Ljava/lang/String;)V	c	m_49148094
 METHOD	bmg	()Lgt;	d	m_88953565
 METHOD	bmg	()Ljava/lang/String;	f	m_92719207
 METHOD	bmg	()Ljava/lang/String;	g	m_59892403
+METHOD	bmg	()Z	i	m_43820849
+METHOD	bmg	()Lbml$b;	j	m_57369594
 METHOD	bmg	()I	m	m_23073535
 CLASS	bmh	net/minecraft/unmapped/C_25287165
 FIELD	bmh	Ljava/util/Comparator;	a	f_68256792
@@ -21023,6 +21028,7 @@ FIELD	es	Ljava/util/Map;	c	f_66607653
 METHOD	es	(Ljava/util/Random;)Ljava/lang/Object;	a	m_47289449
 METHOD	es	()Ljava/util/Map;	b	m_56475138
 METHOD	es	()Ljava/util/Set;	c	m_64981899
+METHOD	es	(Ljava/lang/Object;)Ljava/lang/Object;	c	m_65457132
 METHOD	es	(Ljava/lang/Object;)Z	d	m_72615648
 CLASS	eu	net/minecraft/unmapped/C_93816630
 FIELD	eu	I	a	f_39781383
@@ -25715,6 +25721,7 @@ FIELD	rq	Ljava/util/Set;	b	f_00163866
 FIELD	rq	Lorg/apache/logging/log4j/Logger;	c	f_92148525
 METHOD	rq	(ILjava/lang/String;Ljava/nio/file/Path;Ljava/lang/String;Ljava/util/function/Predicate;)Ljava/util/Collection;	a	m_56797247
 METHOD	rq	(Ljava/lang/String;)Ljava/io/InputStream;	a	m_72655504
+METHOD	rq	(Ljava/lang/String;)Ljava/io/InputStream;	b	m_38355504
 METHOD	rq	(Lro;Lmw;)Ljava/io/InputStream;	c	m_39374962
 CLASS	rr	net/minecraft/unmapped/C_46683602
 METHOD	rr	()Ljava/lang/String;	a	m_35184170

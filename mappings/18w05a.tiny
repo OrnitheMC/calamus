@@ -5490,6 +5490,7 @@ METHOD	aqk	([Ljava/lang/String;Ljava/util/Map;II)Lep;	b	m_66623147
 METHOD	aqk	(Laqk;)Ljava/lang/String;	c	m_98300672
 METHOD	aqk	(Lcom/google/gson/JsonObject;)Ljava/util/Map;	c	m_19256368
 METHOD	aqk	(Laqk;)Lep;	d	m_05928121
+METHOD	aqk	()Laoa;	e	m_66362834
 METHOD	aqk	(Laqk;)Laoa;	e	m_89944368
 METHOD	aqk	()I	h	m_30144399
 METHOD	aqk	()I	i	m_03308383
@@ -6144,6 +6145,7 @@ METHOD	asj	(Lasp;Lea;)I	b	m_15475075
 METHOD	asj	(Lbas;)V	b	m_29582778
 METHOD	asj	(Lbgy;Z)Z	b	m_10295650
 METHOD	asj	(Lbmo;)Z	b	m_05376305
+METHOD	asj	(Lea;)Lasw;	b	m_25174963
 METHOD	asj	(Lea;Lauo;)Z	b	m_67525679
 METHOD	asj	(Lea;Lauo;II)V	b	m_76888851
 METHOD	asj	(Lea;Lbas;)V	b	m_84351694
@@ -11820,6 +11822,7 @@ FIELD	bkp	Lwe;	c	f_48721932
 FIELD	bkp	Lorg/apache/logging/log4j/Logger;	e	f_86786633
 METHOD	bkp	(Ljava/io/File;Lwe;)Lbkq;	a	m_29543495
 METHOD	bkp	([Ljava/io/File;)Z	a	m_58119675
+METHOD	bkp	(Ljava/lang/String;)Lbkq;	c	m_18055305
 CLASS	bkq	net/minecraft/unmapped/C_64676926
 FIELD	bkq	Z	A	f_51814374
 FIELD	bkq	Z	B	f_56044825
@@ -12807,6 +12810,8 @@ METHOD	bnn	(Lbnr$b;)V	b	m_83575005
 METHOD	bnn	(Z)V	b	m_66188589
 METHOD	bnn	()Ljava/lang/String;	c	m_68253775
 METHOD	bnn	()Lho;	d	m_88953565
+METHOD	bnn	()Z	g	m_43820849
+METHOD	bnn	()Lbnr$b;	h	m_57369594
 METHOD	bnn	()I	k	m_23073535
 CLASS	bno	net/minecraft/unmapped/C_25287165
 FIELD	bno	Ljava/util/Comparator;	a	f_68256792
@@ -22201,6 +22206,7 @@ FIELD	eu	Ljava/util/Map;	c	f_66607653
 METHOD	eu	(Ljava/util/Random;)Ljava/lang/Object;	a	m_47289449
 METHOD	eu	()Ljava/util/Map;	b	m_56475138
 METHOD	eu	()Ljava/util/Set;	c	m_64981899
+METHOD	eu	(Ljava/lang/Object;)Ljava/lang/Object;	c	m_65457132
 METHOD	eu	(Ljava/lang/Object;)Z	d	m_72615648
 CLASS	ew	net/minecraft/unmapped/C_93816630
 FIELD	ew	I	a	f_39781383
@@ -27207,6 +27213,7 @@ FIELD	sq	Ljava/util/Set;	b	f_00163866
 FIELD	sq	Lorg/apache/logging/log4j/Logger;	c	f_92148525
 METHOD	sq	(ILjava/lang/String;Ljava/nio/file/Path;Ljava/lang/String;Ljava/util/function/Predicate;)Ljava/util/Collection;	a	m_56797247
 METHOD	sq	(Ljava/lang/String;)Ljava/io/InputStream;	a	m_72655504
+METHOD	sq	(Ljava/lang/String;)Ljava/io/InputStream;	b	m_38355504
 METHOD	sq	(Lso;Lns;)Ljava/io/InputStream;	c	m_39374962
 CLASS	sr	net/minecraft/unmapped/C_46683602
 METHOD	sr	()Ljava/lang/String;	a	m_35184170

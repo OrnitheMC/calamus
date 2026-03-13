@@ -1553,6 +1553,7 @@ METHOD	aha	(Z)V	k	m_85256993
 METHOD	aha	(DDD)V	l	m_62997662
 METHOD	aha	()V	n	m_13107648
 METHOD	aha	()Z	p	m_29153887
+METHOD	aha	(I)Lamg;	q	m_37372558
 METHOD	aha	(I)V	r	m_83917266
 METHOD	aha	()V	s	m_29672330
 METHOD	aha	(I)V	s	m_06688930
@@ -3131,6 +3132,7 @@ METHOD	aqr	(Ldt;)Z	D	m_29906389
 METHOD	aqr	()Ljava/util/List;	E	m_78152051
 METHOD	aqr	(Ldt;)Lvu;	E	m_60275942
 METHOD	aqr	(Ldt;)Z	F	m_85069543
+METHOD	aqr	()Larb;	G	m_59003592
 METHOD	aqr	()V	H	m_99760164
 METHOD	aqr	()V	I	m_75538572
 METHOD	aqr	()J	J	m_92966154
@@ -3248,6 +3250,7 @@ METHOD	aqr	(Lbcj;)V	b	m_29582778
 METHOD	aqr	(Lbiy;Z)Z	b	m_10295650
 METHOD	aqr	(Lbrq;)Z	b	m_52719108
 METHOD	aqr	(Lbrq;Lboc;)Z	b	m_33360396
+METHOD	aqr	(Ldt;)Larj;	b	m_25174963
 METHOD	aqr	(Ldt;Lato;)V	b	m_62453220
 METHOD	aqr	(Ldt;Lato;II)V	b	m_76888851
 METHOD	aqr	(Ldt;Lbcj;)V	b	m_84351694
@@ -7498,6 +7501,7 @@ CLASS	bqk	net/minecraft/unmapped/C_72342472
 FIELD	bqk	Ljava/io/File;	a	f_90285215
 FIELD	bqk	Lorg/apache/logging/log4j/Logger;	b	f_86786633
 METHOD	bqk	([Ljava/io/File;)Z	a	m_58119675
+METHOD	bqk	(Ljava/lang/String;)Lbql;	c	m_18055305
 CLASS	bql	net/minecraft/unmapped/C_64676926
 FIELD	bql	Z	A	f_85030439
 FIELD	bql	D	B	f_43990909
@@ -7817,6 +7821,8 @@ METHOD	brw	()Ljava/lang/String;	c	m_68253775
 METHOD	brw	(Ljava/lang/String;)V	c	m_49148094
 METHOD	brw	()Ljava/lang/String;	e	m_92719207
 METHOD	brw	()Ljava/lang/String;	f	m_59892403
+METHOD	brw	()Z	h	m_43820849
+METHOD	brw	()Lbsd;	i	m_57369594
 METHOD	brw	()I	k	m_23073535
 METHOD	brw	()La;	l	m_88062935
 CLASS	brx	net/minecraft/unmapped/C_25287165
@@ -14915,6 +14921,8 @@ METHOD	fa	()F	d	m_74382738
 CLASS	fb	net/minecraft/unmapped/C_39524089
 FIELD	fb	Lorg/apache/logging/log4j/Logger;	a	f_47483486
 FIELD	fb	Ljava/util/Map;	c	f_66607653
+METHOD	fb	(Ljava/lang/Object;)Ljava/lang/Object;	a	m_65457132
+METHOD	fb	(Ljava/lang/Object;Ljava/lang/Object;)V	a	m_23903711
 METHOD	fb	()Ljava/util/Map;	b	m_56475138
 METHOD	fb	()Ljava/util/Set;	c	m_71903807
 METHOD	fb	(Ljava/lang/Object;)Z	d	m_72615648
@@ -19337,6 +19345,7 @@ METHOD	xn	(F)V	m	m_43092861
 METHOD	xn	()V	n	m_96526108
 METHOD	xn	()Lyl;	p	m_80179678
 METHOD	xn	()Lym;	q	m_87995679
+METHOD	xn	(I)Lamg;	q	m_37372558
 METHOD	xn	()Lyk;	r	m_73371863
 METHOD	xn	()Laay;	s	m_35626357
 METHOD	xn	()Labc;	t	m_45378891

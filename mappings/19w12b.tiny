@@ -1093,6 +1093,7 @@ FIELD	afs	J	e	f_86865331
 FIELD	afs	I	f	f_05638642
 METHOD	afs	(ILjava/lang/String;Ljava/lang/StringBuilder;)V	a	m_50257404
 METHOD	afs	(JI)Ljava/lang/String;	a	m_83035421
+METHOD	afs	(Ljava/lang/String;)Ljava/util/List;	a	m_83593755
 METHOD	afs	()Ljava/lang/String;	h	m_20021401
 CLASS	aft	net/minecraft/unmapped/C_78821150
 FIELD	aft	J	a	f_58210580
@@ -6956,6 +6957,7 @@ FIELD	avf	Z	g	f_50409931
 METHOD	avf	(Lev;)V	a	m_87529638
 METHOD	avf	(Lbaz;)V	b	m_85121498
 METHOD	avf	(Lbaz;)V	c	m_05464863
+METHOD	avf	()Lbaz;	f	m_50818383
 METHOD	avf	()Lbaz;	i	m_82064545
 CLASS	avg	net/minecraft/unmapped/C_44029030
 FIELD	avg	Lqf;	f	f_54872014
@@ -7055,6 +7057,7 @@ METHOD	avw	(Lbaz;Lbco;)V	a	m_09945202
 METHOD	avw	(Lev;Lfa;)V	a	m_74450320
 METHOD	avw	(Ljava/util/List;Lahy;)V	a	m_63239455
 METHOD	avw	(Lbaz;)V	b	m_14045016
+METHOD	avw	()Lbaz;	f	m_50818383
 METHOD	avw	()V	i	m_28120628
 METHOD	avw	()Z	k	m_31609842
 CLASS	avx	net/minecraft/unmapped/C_78539896
@@ -21559,6 +21562,8 @@ METHOD	crm	(Ljm;)V	c	m_26066325
 METHOD	crm	()Ljm;	d	m_88953565
 METHOD	crm	()Ljm;	e	m_03020651
 METHOD	crm	()Ljm;	f	m_28432868
+METHOD	crm	()Z	i	m_43820849
+METHOD	crm	()Lcrq$b;	j	m_57369594
 METHOD	crm	()I	m	m_23073535
 CLASS	crn	net/minecraft/unmapped/C_25287165
 FIELD	crn	Ljava/util/Comparator;	a	f_68256792
@@ -37753,6 +37758,7 @@ METHOD	vb	(Lbvs;)Lbvs;	a	m_24411930
 METHOD	vb	(Lev;)V	a	m_17007416
 METHOD	vb	(Lfo;Lbgo;)V	a	m_24187552
 METHOD	vb	(Ljava/util/concurrent/CompletableFuture;)Ljava/util/concurrent/CompletionStage;	a	m_25967732
+METHOD	vb	(Ljava/util/function/BooleanSupplier;)V	a	m_06909447
 METHOD	vb	(Lup;I)Z	a	m_93695798
 METHOD	vb	(Lvb;)Ljava/lang/Thread;	a	m_88671521
 METHOD	vb	(Lve;)V	a	m_03398161
@@ -38324,6 +38330,7 @@ FIELD	wh	Ljava/util/Map;	e	f_17153883
 METHOD	wh	(ILjava/lang/String;Ljava/nio/file/Path;Ljava/lang/String;Ljava/util/function/Predicate;)Ljava/util/Collection;	a	m_56797247
 METHOD	wh	(Ljava/lang/String;)Ljava/io/InputStream;	a	m_72655504
 METHOD	wh	(Ljava/util/HashMap;)V	a	m_94350958
+METHOD	wh	(Ljava/lang/String;)Ljava/io/InputStream;	b	m_38355504
 METHOD	wh	(Lwf;Lqq;)Ljava/io/InputStream;	c	m_39374962
 CLASS	wi	net/minecraft/unmapped/C_46683602
 METHOD	wi	()Ljava/lang/String;	a	m_35184170
@@ -38408,6 +38415,7 @@ FIELD	wv	Ljava/util/List;	a	f_89448392
 FIELD	wv	Lorg/apache/logging/log4j/Logger;	b	f_76626059
 FIELD	wv	Lwf;	c	f_72305547
 METHOD	wv	(Lqq;Lwe;)Ljava/io/InputStream;	a	m_12818905
+METHOD	wv	(Lwe;)V	a	m_89570331
 METHOD	wv	()Lorg/apache/logging/log4j/Logger;	b	m_87781610
 METHOD	wv	(Lqq;)Lqq;	d	m_29108302
 METHOD	wv	(Lqq;)V	e	m_12057460
@@ -38522,6 +38530,8 @@ FIELD	xf	Ljava/util/List;	d	f_38329839
 FIELD	xf	Ljava/util/Set;	e	f_32017158
 FIELD	xf	Lwf;	f	f_39234632
 FIELD	xf	Ljava/lang/Thread;	g	f_53786901
+METHOD	xf	(Ljava/util/concurrent/Executor;Ljava/util/concurrent/Executor;Ljava/util/concurrent/CompletableFuture;Ljava/util/List;)Lwy;	a	m_73356589
+METHOD	xf	(Lwe;)V	a	m_89570331
 METHOD	xf	()V	b	m_80187144
 METHOD	xf	(Ljava/util/concurrent/Executor;Ljava/util/concurrent/Executor;Ljava/util/List;Ljava/util/concurrent/CompletableFuture;)Lwy;	b	m_19156312
 CLASS	xg	net/minecraft/unmapped/C_11789134

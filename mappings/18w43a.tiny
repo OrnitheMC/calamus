@@ -11940,6 +11940,7 @@ METHOD	blx	()Ljava/util/Collection;	a	m_77094580
 METHOD	blx	(Lbnj;)Ljava/lang/Object;	a	m_70434050
 METHOD	blx	(Ljava/util/Collection;Ljava/lang/Object;)Ljava/lang/Object;	a	m_71554882
 METHOD	blx	(Ljava/util/Map;)V	a	m_46318910
+METHOD	blx	()Lcom/google/common/collect/ImmutableMap;	b	m_07222861
 METHOD	blx	(Lbnj;)Z	b	m_32529332
 METHOD	blx	(Lbnj;Ljava/lang/Comparable;)Ljava/util/Map;	c	m_89064963
 CLASS	blx$1	net/minecraft/unmapped/C_52476540$34106752
@@ -18650,6 +18651,8 @@ METHOD	chy	(Liw;)V	c	m_26066325
 METHOD	chy	()Liw;	d	m_88953565
 METHOD	chy	()Liw;	e	m_03020651
 METHOD	chy	()Liw;	f	m_28432868
+METHOD	chy	()Z	i	m_43820849
+METHOD	chy	()Lcic$b;	j	m_57369594
 METHOD	chy	()I	m	m_23073535
 CLASS	chz	net/minecraft/unmapped/C_25287165
 FIELD	chz	Ljava/util/Comparator;	a	f_68256792
@@ -29309,7 +29312,7 @@ FIELD	hr	Lorg/apache/logging/log4j/Logger;	f	f_50133137
 FIELD	hr	Ljava/util/List;	g	f_01591565
 FIELD	hr	B	h	f_56809345
 METHOD	hr	(I)Lib;	a	remove
-METHOD	hr	(Lib;)Z	a	m_43125067
+METHOD	hr	(Lib;)Z	a	add
 METHOD	hr	()I	a_	m_72977924
 METHOD	hr	(Lib;)Z	b	m_83744121
 METHOD	hr	()Lhr;	c	m_92469929
@@ -34513,6 +34516,7 @@ METHOD	ty	(Lboa;I)Lboa;	b	m_75790493
 METHOD	ty	(Lboh;)V	b	m_25796522
 METHOD	ty	(Lbop;)Lbnu;	b	m_55543236
 METHOD	ty	(Ljava/util/concurrent/CompletableFuture;)Ljava/util/concurrent/CompletionStage;	b	m_25967732
+METHOD	ty	(Ljava/util/function/BooleanSupplier;)V	b	m_06909447
 METHOD	ty	(Ltp;)Ltp$a;	b	m_70076220
 METHOD	ty	(Lty;)Lit/unimi/dsi/fastutil/longs/Long2ObjectLinkedOpenHashMap;	b	m_60570169
 METHOD	ty	(Lub;)V	b	m_38786195
@@ -35016,6 +35020,7 @@ FIELD	vb	Ljava/util/Set;	c	f_00163866
 FIELD	vb	Lorg/apache/logging/log4j/Logger;	d	f_92148525
 METHOD	vb	(ILjava/lang/String;Ljava/nio/file/Path;Ljava/lang/String;Ljava/util/function/Predicate;)Ljava/util/Collection;	a	m_56797247
 METHOD	vb	(Ljava/lang/String;)Ljava/io/InputStream;	a	m_72655504
+METHOD	vb	(Ljava/lang/String;)Ljava/io/InputStream;	b	m_38355504
 METHOD	vb	(Luz;Lpt;)Ljava/io/InputStream;	c	m_39374962
 CLASS	vc	net/minecraft/unmapped/C_46683602
 METHOD	vc	()Ljava/lang/String;	a	m_35184170

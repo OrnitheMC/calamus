@@ -117,6 +117,7 @@ METHOD	aac	()Lajw;	L	m_67440400
 METHOD	aac	()Lzz;	M	m_18124683
 METHOD	aac	()Z	N	m_44230367
 METHOD	aac	()Z	O	m_68511828
+METHOD	aac	()I	P	m_98920689
 METHOD	aac	()I	Q	m_20389902
 METHOD	aac	()D	S	m_58351648
 METHOD	aac	()Ljava/util/Calendar;	U	m_97992864
@@ -129,6 +130,7 @@ METHOD	aac	(DDDLjava/lang/String;FF)V	a	m_14911682
 METHOD	aac	(DDDLjava/lang/String;FFZ)V	a	m_70598418
 METHOD	aac	(F)I	a	m_88486855
 METHOD	aac	(I)Lmp;	a	m_99124674
+METHOD	aac	(II)Laaw;	a	m_25174963
 METHOD	aac	(IIII)Z	a	m_38204755
 METHOD	aac	(IIIII)V	a	m_26749924
 METHOD	aac	(IIIIII)V	a	m_96040795
@@ -207,6 +209,7 @@ METHOD	aac	(Lmp;Larb;)Ljava/util/List;	b	m_31939869
 METHOD	aac	()V	c	m_82212843
 METHOD	aac	(F)F	c	m_15038091
 METHOD	aac	(II)Z	c	m_12753876
+METHOD	aac	(III)Z	c	m_64558657
 METHOD	aac	(IIII)Z	c	m_41448427
 METHOD	aac	(IIIII)V	c	m_63448235
 METHOD	aac	(IIIZ)Z	c	m_52152915
@@ -262,12 +265,15 @@ METHOD	aac	(IIII)V	m	m_30631361
 METHOD	aac	()V	n	m_03149087
 METHOD	aac	(III)I	n	m_71898872
 METHOD	aac	(III)V	p	m_00384111
+METHOD	aac	(III)F	q	m_80119644
 METHOD	aac	(III)V	s	m_99668886
 METHOD	aac	()Labb;	t	m_72354999
+METHOD	aac	(III)Z	t	m_46357017
 METHOD	aac	()Z	u	m_55681841
 METHOD	aac	()I	v	m_29794890
 METHOD	aac	(III)Z	v	m_15479659
 METHOD	aac	()Ljava/lang/String;	w	m_19536542
+METHOD	aac	(III)Z	w	m_84587551
 METHOD	aac	()Ljava/lang/String;	x	m_92045859
 METHOD	aac	(III)Z	x	m_73082703
 METHOD	aac	()V	y	m_69392864
@@ -1741,6 +1747,7 @@ METHOD	aju	()V	h	m_12662582
 CLASS	ajv	net/minecraft/unmapped/C_72342472
 FIELD	ajv	Ljava/io/File;	a	f_90285215
 METHOD	ajv	([Ljava/io/File;)Z	a	m_58119675
+METHOD	ajv	(Ljava/lang/String;)Lajw;	c	m_18055305
 CLASS	ajw	net/minecraft/unmapped/C_64676926
 FIELD	ajw	J	a	f_16809156
 FIELD	ajw	Laam;	b	f_92576962
@@ -11128,6 +11135,7 @@ FIELD	qy	I	j	f_97333648
 METHOD	qy	(I)F	a	m_43427749
 METHOD	qy	(IDDDZ)V	a	m_02021859
 METHOD	qy	(ILng;)V	a	m_01114601
+METHOD	qy	()I	b	m_43275531
 METHOD	qy	(FFF)F	b	m_95241487
 METHOD	qy	(II)V	c	m_12407407
 METHOD	qy	()V	m	m_87831744
@@ -11161,6 +11169,7 @@ FIELD	ra	I	i	f_10239973
 FIELD	ra	Lmy;	j	f_38886288
 METHOD	ra	(I)Z	a	m_46879103
 METHOD	ra	(IDDD)V	a	m_40744102
+METHOD	ra	()I	b	m_43275531
 METHOD	ra	(FFF)F	b	m_88704960
 METHOD	ra	(II)V	c	m_11189787
 METHOD	ra	()I	m	m_26153495

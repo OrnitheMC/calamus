@@ -4186,6 +4186,7 @@ METHOD	anx	()V	J	m_69392864
 METHOD	anx	()V	K	m_36911043
 METHOD	anx	()Ljava/util/List;	L	m_78152051
 METHOD	anx	()I	M	m_79170396
+METHOD	anx	()Laoc;	N	m_59003592
 METHOD	anx	()V	O	m_99760164
 METHOD	anx	()V	P	m_75538572
 METHOD	anx	()J	Q	m_92966154
@@ -4308,6 +4309,7 @@ METHOD	anx	(Laod;Let;)I	b	m_15475075
 METHOD	anx	(Lawm;)V	b	m_29582778
 METHOD	anx	(Lbcj;Z)Z	b	m_10295650
 METHOD	anx	(Lbie;)Z	b	m_52719108
+METHOD	anx	(Let;)Laok;	b	m_25174963
 METHOD	anx	(Let;Lapz;)Z	b	m_67525679
 METHOD	anx	(Let;Lapz;II)V	b	m_76888851
 METHOD	anx	(Let;Lapz;Let;)V	b	m_24696152
@@ -10071,6 +10073,7 @@ FIELD	bgf	Lta;	b	f_48721932
 FIELD	bgf	Lorg/apache/logging/log4j/Logger;	c	f_86786633
 METHOD	bgf	(Ljava/io/File;Lta;)Lbgg;	a	m_29543495
 METHOD	bgf	([Ljava/io/File;)Z	a	m_58119675
+METHOD	bgf	(Ljava/lang/String;)Lbgg;	c	m_18055305
 CLASS	bgg	net/minecraft/unmapped/C_64676926
 FIELD	bgg	Z	A	f_51814374
 FIELD	bgg	Z	B	f_56044825
@@ -10878,6 +10881,8 @@ METHOD	bik	()Ljava/lang/String;	c	m_68253775
 METHOD	bik	(Ljava/lang/String;)V	c	m_49148094
 METHOD	bik	()Ljava/lang/String;	e	m_92719207
 METHOD	bik	()Ljava/lang/String;	f	m_59892403
+METHOD	bik	()Z	h	m_43820849
+METHOD	bik	()Lbip$b;	i	m_57369594
 METHOD	bik	()I	l	m_23073535
 CLASS	bil	net/minecraft/unmapped/C_25287165
 FIELD	bil	Ljava/util/Comparator;	a	f_68256792
@@ -20015,6 +20020,8 @@ FIELD	fo	[Ljava/lang/Object;	b	f_00554859
 FIELD	fo	Ljava/util/Map;	c	f_66607653
 METHOD	fo	(Ljava/util/Random;)Ljava/lang/Object;	a	m_47289449
 METHOD	fo	()Ljava/util/Map;	b	m_56475138
+METHOD	fo	()Ljava/util/Set;	c	m_71903807
+METHOD	fo	(Ljava/lang/Object;)Ljava/lang/Object;	c	m_65457132
 METHOD	fo	(Ljava/lang/Object;)Z	d	m_72615648
 CLASS	fq	net/minecraft/unmapped/C_93816630
 FIELD	fq	I	a	f_39781383
@@ -23633,6 +23640,7 @@ CLASS	ph	net/minecraft/unmapped/C_81285871
 FIELD	ph	Ljava/util/Set;	a	f_00163866
 FIELD	ph	Lorg/apache/logging/log4j/Logger;	b	f_92148525
 METHOD	ph	(ILjava/lang/String;Ljava/nio/file/Path;Ljava/lang/String;)Ljava/util/Collection;	a	m_56797247
+METHOD	ph	(Ljava/lang/String;)Ljava/io/InputStream;	b	m_38355504
 METHOD	ph	(Lpl;Lnf;)Ljava/io/InputStream;	c	m_39374962
 CLASS	pi	net/minecraft/unmapped/C_14485255
 FIELD	pi	Lcom/google/common/base/Splitter;	b	f_93951655

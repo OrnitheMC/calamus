@@ -1373,6 +1373,7 @@ METHOD	agg	(DDD)V	k	m_78178389
 METHOD	agg	(DDD)V	l	m_62997662
 METHOD	agg	()V	m	m_13107648
 METHOD	agg	()Z	o	m_29153887
+METHOD	agg	(I)Lali;	q	m_37372558
 METHOD	agg	()V	r	m_29672330
 METHOD	agg	(I)V	r	m_83917266
 METHOD	agg	()V	s	m_11118191
@@ -2933,6 +2934,7 @@ METHOD	apo	(Ldq;)Lvf;	D	m_60275942
 METHOD	apo	()Ljava/util/List;	E	m_78152051
 METHOD	apo	(Ldq;)Z	E	m_30111639
 METHOD	apo	(Ldq;)Z	F	m_85069543
+METHOD	apo	()Lapy;	G	m_59003592
 METHOD	apo	()V	H	m_99760164
 METHOD	apo	()V	I	m_75538572
 METHOD	apo	()J	J	m_92966154
@@ -2991,6 +2993,7 @@ METHOD	apo	(Lbpz;Lbpw;)F	a	m_36285949
 METHOD	apo	(Lbpz;Lbpz;)Lbpx;	a	m_82559274
 METHOD	apo	(Lbpz;Lbpz;Z)Lbpx;	a	m_40214598
 METHOD	apo	(Lbpz;Lbpz;ZZZ)Lbpx;	a	m_39818017
+METHOD	apo	(Ldq;)Laqg;	a	m_25174963
 METHOD	apo	(Ldq;I)Z	a	m_44979126
 METHOD	apo	(Ldq;IZ)Z	a	m_80621374
 METHOD	apo	(Ldq;Lapz;)I	a	m_06174602
@@ -7134,6 +7137,7 @@ CLASS	boq	net/minecraft/unmapped/C_72342472
 FIELD	boq	Ljava/io/File;	a	f_90285215
 FIELD	boq	Lorg/apache/logging/log4j/Logger;	b	f_86786633
 METHOD	boq	([Ljava/io/File;)Z	a	m_58119675
+METHOD	boq	(Ljava/lang/String;)Lbor;	c	m_18055305
 CLASS	bor	net/minecraft/unmapped/C_64676926
 FIELD	bor	Z	A	f_85030439
 FIELD	bor	D	B	f_43990909
@@ -7455,6 +7459,8 @@ METHOD	bqc	()Ljava/lang/String;	c	m_68253775
 METHOD	bqc	(Ljava/lang/String;)V	c	m_49148094
 METHOD	bqc	()Ljava/lang/String;	e	m_92719207
 METHOD	bqc	()Ljava/lang/String;	f	m_59892403
+METHOD	bqc	()Z	h	m_43820849
+METHOD	bqc	()Lbqj;	i	m_57369594
 METHOD	bqc	()I	k	m_23073535
 METHOD	bqc	()La;	l	m_88062935
 CLASS	bqd	net/minecraft/unmapped/C_25287165
@@ -14418,6 +14424,8 @@ METHOD	ew	(Ljava/lang/Object;Ljava/lang/Object;)V	a	m_23903711
 CLASS	ex	net/minecraft/unmapped/C_39524089
 FIELD	ex	Lorg/apache/logging/log4j/Logger;	a	f_47483486
 FIELD	ex	Ljava/util/Map;	c	f_66607653
+METHOD	ex	(Ljava/lang/Object;)Ljava/lang/Object;	a	m_65457132
+METHOD	ex	(Ljava/lang/Object;Ljava/lang/Object;)V	a	m_23903711
 METHOD	ex	()Ljava/util/Map;	b	m_56475138
 METHOD	ex	()Ljava/util/Set;	c	m_71903807
 METHOD	ex	(Ljava/lang/Object;)Z	d	m_72615648
@@ -18783,6 +18791,7 @@ METHOD	xb	(F)V	m	m_43092861
 METHOD	xb	()Lyb;	o	m_80179678
 METHOD	xb	()Lyc;	p	m_87995679
 METHOD	xb	()Lya;	q	m_73371863
+METHOD	xb	(I)Lali;	q	m_37372558
 METHOD	xb	()Laao;	r	m_35626357
 METHOD	xb	()Laas;	s	m_45378891
 METHOD	xb	()Lxa;	t	m_88061487

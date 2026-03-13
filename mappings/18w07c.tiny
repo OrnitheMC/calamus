@@ -13052,6 +13052,7 @@ FIELD	bto	Lwt;	c	f_48721932
 FIELD	bto	Lorg/apache/logging/log4j/Logger;	e	f_86786633
 METHOD	bto	(Ljava/io/File;Lwt;)Lbtp;	a	m_29543495
 METHOD	bto	([Ljava/io/File;)Z	a	m_58119675
+METHOD	bto	(Ljava/lang/String;)Lbtp;	c	m_18055305
 CLASS	btp	net/minecraft/unmapped/C_64676926
 FIELD	btp	Z	A	f_51814374
 FIELD	btp	Z	B	f_56044825
@@ -14030,6 +14031,8 @@ METHOD	bwm	(Lbwq$b;)V	b	m_83575005
 METHOD	bwm	(Z)V	b	m_66188589
 METHOD	bwm	()Ljava/lang/String;	c	m_68253775
 METHOD	bwm	()Lhr;	d	m_88953565
+METHOD	bwm	()Z	g	m_43820849
+METHOD	bwm	()Lbwq$b;	h	m_57369594
 METHOD	bwm	()I	k	m_23073535
 CLASS	bwn	net/minecraft/unmapped/C_25287165
 FIELD	bwn	Ljava/util/Comparator;	a	f_68256792
@@ -23365,6 +23368,7 @@ FIELD	ew	Ljava/util/Map;	c	f_66607653
 METHOD	ew	(Ljava/util/Random;)Ljava/lang/Object;	a	m_47289449
 METHOD	ew	()Ljava/util/Map;	b	m_56475138
 METHOD	ew	()Ljava/util/Set;	c	m_64981899
+METHOD	ew	(Ljava/lang/Object;)Ljava/lang/Object;	c	m_65457132
 METHOD	ew	(Ljava/lang/Object;)Z	d	m_72615648
 CLASS	ey	net/minecraft/unmapped/C_93816630
 FIELD	ey	I	a	f_39781383
@@ -28454,6 +28458,7 @@ FIELD	tg	Ljava/util/Set;	b	f_00163866
 FIELD	tg	Lorg/apache/logging/log4j/Logger;	c	f_92148525
 METHOD	tg	(ILjava/lang/String;Ljava/nio/file/Path;Ljava/lang/String;Ljava/util/function/Predicate;)Ljava/util/Collection;	a	m_56797247
 METHOD	tg	(Ljava/lang/String;)Ljava/io/InputStream;	a	m_72655504
+METHOD	tg	(Ljava/lang/String;)Ljava/io/InputStream;	b	m_38355504
 METHOD	tg	(Lte;Lnx;)Ljava/io/InputStream;	c	m_39374962
 CLASS	th	net/minecraft/unmapped/C_46683602
 METHOD	th	()Ljava/lang/String;	a	m_35184170

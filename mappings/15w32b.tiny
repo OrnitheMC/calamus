@@ -1399,6 +1399,7 @@ METHOD	afr	()V	F	m_59052961
 METHOD	afr	(Lcj;)Z	F	m_85069543
 METHOD	afr	()Ljava/util/List;	G	m_78152051
 METHOD	afr	()I	H	m_79170396
+METHOD	afr	()Lafw;	I	m_59003592
 METHOD	afr	()V	J	m_99760164
 METHOD	afr	()V	K	m_75538572
 METHOD	afr	()J	L	m_92966154
@@ -1519,6 +1520,7 @@ METHOD	afr	(Lank;)V	b	m_29582778
 METHOD	afr	(Lata;Z)Z	b	m_10295650
 METHOD	afr	(Laxj;)Z	b	m_52719108
 METHOD	afr	(Laxj;Laup;)Z	b	m_33360396
+METHOD	afr	(Lcj;)Lagd;	b	m_25174963
 METHOD	afr	(Lcj;Lahn;)V	b	m_62453220
 METHOD	afr	(Lcj;Lahn;II)V	b	m_76888851
 METHOD	afr	(Lcj;Lank;)V	b	m_84351694
@@ -6144,6 +6146,7 @@ FIELD	awr	Ljava/io/File;	a	f_90285215
 FIELD	awr	Lorg/apache/logging/log4j/Logger;	b	f_86786633
 METHOD	awr	(Ljava/io/File;)Laws;	a	m_29543495
 METHOD	awr	([Ljava/io/File;)Z	a	m_58119675
+METHOD	awr	(Ljava/lang/String;)Laws;	c	m_18055305
 CLASS	aws	net/minecraft/unmapped/C_64676926
 FIELD	aws	Z	A	f_51814374
 FIELD	aws	Z	B	f_56044825
@@ -6484,6 +6487,8 @@ METHOD	axo	()Ljava/lang/String;	c	m_68253775
 METHOD	axo	(Ljava/lang/String;)V	c	m_49148094
 METHOD	axo	()Ljava/lang/String;	e	m_92719207
 METHOD	axo	()Ljava/lang/String;	f	m_59892403
+METHOD	axo	()Z	h	m_43820849
+METHOD	axo	()Laxt$a;	i	m_57369594
 METHOD	axo	()I	k	m_23073535
 CLASS	axp	net/minecraft/unmapped/C_25287165
 FIELD	axp	Ljava/util/Comparator;	a	f_68256792
@@ -13466,6 +13471,8 @@ FIELD	dd	[Ljava/lang/Object;	b	f_00554859
 FIELD	dd	Ljava/util/Map;	c	f_66607653
 METHOD	dd	(Ljava/util/Random;)Ljava/lang/Object;	a	m_47289449
 METHOD	dd	()Ljava/util/Map;	b	m_56475138
+METHOD	dd	()Ljava/util/Set;	c	m_71903807
+METHOD	dd	(Ljava/lang/Object;)Ljava/lang/Object;	c	m_65457132
 METHOD	dd	(Ljava/lang/Object;)Z	d	m_72615648
 CLASS	df	net/minecraft/unmapped/C_93816630
 FIELD	df	I	a	f_39781383
@@ -20550,6 +20557,7 @@ METHOD	yd	(Leu;)V	b	m_83523863
 METHOD	yd	(Ljava/lang/String;)Ljava/util/UUID;	b	m_69411679
 METHOD	yd	(Lmy;)V	b	m_54509024
 METHOD	yd	(Lqg;)V	b	m_68627031
+METHOD	yd	()Lqo;	bS	m_82780045
 METHOD	yd	(Lqg;)V	c	m_13534601
 METHOD	yd	()I	cc	m_54244469
 METHOD	yd	()F	cd	m_01652129

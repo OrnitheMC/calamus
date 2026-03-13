@@ -1184,6 +1184,7 @@ METHOD	aen	(Lcj;)Lon;	E	m_60275942
 METHOD	aen	()Ljava/util/List;	F	m_78152051
 METHOD	aen	(Lcj;)Z	F	m_85069543
 METHOD	aen	()I	G	m_79170396
+METHOD	aen	()Laes;	H	m_59003592
 METHOD	aen	()V	I	m_99760164
 METHOD	aen	()V	J	m_75538572
 METHOD	aen	()J	K	m_92966154
@@ -1304,6 +1305,7 @@ METHOD	aen	(Lamg;)V	b	m_29582778
 METHOD	aen	(Larw;Z)Z	b	m_10295650
 METHOD	aen	(Lawf;)Z	b	m_52719108
 METHOD	aen	(Lawf;Latk;)Z	b	m_33360396
+METHOD	aen	(Lcj;)Laez;	b	m_25174963
 METHOD	aen	(Lcj;Lagj;)V	b	m_62453220
 METHOD	aen	(Lcj;Lagj;II)V	b	m_76888851
 METHOD	aen	(Lcj;Lamg;)V	b	m_84351694
@@ -5924,6 +5926,7 @@ CLASS	avm	net/minecraft/unmapped/C_72342472
 FIELD	avm	Ljava/io/File;	a	f_90285215
 FIELD	avm	Lorg/apache/logging/log4j/Logger;	b	f_86786633
 METHOD	avm	([Ljava/io/File;)Z	a	m_58119675
+METHOD	avm	(Ljava/lang/String;)Lavn;	c	m_18055305
 CLASS	avn	net/minecraft/unmapped/C_64676926
 FIELD	avn	Z	A	f_85030439
 FIELD	avn	D	B	f_43990909
@@ -6247,6 +6250,8 @@ METHOD	awk	()Ljava/lang/String;	c	m_68253775
 METHOD	awk	(Ljava/lang/String;)V	c	m_49148094
 METHOD	awk	()Ljava/lang/String;	e	m_92719207
 METHOD	awk	()Ljava/lang/String;	f	m_59892403
+METHOD	awk	()Z	h	m_43820849
+METHOD	awk	()Lawp$a;	i	m_57369594
 METHOD	awk	()I	k	m_23073535
 METHOD	awk	()La;	l	m_88062935
 CLASS	awl	net/minecraft/unmapped/C_25287165
@@ -13208,6 +13213,8 @@ FIELD	dd	[Ljava/lang/Object;	b	f_00554859
 FIELD	dd	Ljava/util/Map;	c	f_66607653
 METHOD	dd	(Ljava/util/Random;)Ljava/lang/Object;	a	m_47289449
 METHOD	dd	()Ljava/util/Map;	b	m_56475138
+METHOD	dd	()Ljava/util/Set;	c	m_71903807
+METHOD	dd	(Ljava/lang/Object;)Ljava/lang/Object;	c	m_65457132
 METHOD	dd	(Ljava/lang/Object;)Z	d	m_72615648
 CLASS	df	net/minecraft/unmapped/C_93816630
 FIELD	df	I	a	f_39781383
@@ -20166,6 +20173,7 @@ METHOD	xa	(Leu;)V	b	m_83523863
 METHOD	xa	(Ljava/lang/String;)Ljava/util/UUID;	b	m_69411679
 METHOD	xa	(Lmy;)V	b	m_54509024
 METHOD	xa	(Lpr;)V	b	m_68627031
+METHOD	xa	()Lpz;	bR	m_82780045
 METHOD	xa	(Lpr;)V	c	m_13534601
 METHOD	xa	()I	cb	m_54244469
 METHOD	xa	()F	cc	m_01652129

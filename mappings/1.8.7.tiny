@@ -638,6 +638,7 @@ METHOD	adm	()Ljava/util/List;	E	m_78152051
 METHOD	adm	(Lcj;)Lok;	E	m_60275942
 METHOD	adm	()I	F	m_79170396
 METHOD	adm	(Lcj;)Z	F	m_85069543
+METHOD	adm	()Ladr;	G	m_59003592
 METHOD	adm	()V	H	m_99760164
 METHOD	adm	()V	I	m_75538572
 METHOD	adm	()J	J	m_92966154
@@ -755,6 +756,7 @@ METHOD	adm	(Lakw;)V	b	m_29582778
 METHOD	adm	(Laqe;Z)Z	b	m_10295650
 METHOD	adm	(Laug;)Z	b	m_52719108
 METHOD	adm	(Laug;Larm;)Z	b	m_33360396
+METHOD	adm	(Lcj;)Lady;	b	m_25174963
 METHOD	adm	(Lcj;Lafh;)V	b	m_62453220
 METHOD	adm	(Lcj;Lafh;II)V	b	m_76888851
 METHOD	adm	(Lcj;Lakw;)V	b	m_84351694
@@ -4993,6 +4995,7 @@ CLASS	atn	net/minecraft/unmapped/C_72342472
 FIELD	atn	Ljava/io/File;	a	f_90285215
 FIELD	atn	Lorg/apache/logging/log4j/Logger;	b	f_86786633
 METHOD	atn	([Ljava/io/File;)Z	a	m_58119675
+METHOD	atn	(Ljava/lang/String;)Lato;	c	m_18055305
 CLASS	ato	net/minecraft/unmapped/C_64676926
 FIELD	ato	Z	A	f_85030439
 FIELD	ato	D	B	f_43990909
@@ -5312,6 +5315,8 @@ METHOD	aul	()Ljava/lang/String;	c	m_68253775
 METHOD	aul	(Ljava/lang/String;)V	c	m_49148094
 METHOD	aul	()Ljava/lang/String;	e	m_92719207
 METHOD	aul	()Ljava/lang/String;	f	m_59892403
+METHOD	aul	()Z	h	m_43820849
+METHOD	aul	()Lauq$a;	i	m_57369594
 METHOD	aul	()I	k	m_23073535
 METHOD	aul	()La;	l	m_88062935
 CLASS	aum	net/minecraft/unmapped/C_25287165
@@ -12529,6 +12534,8 @@ METHOD	dc	()F	d	m_74382738
 CLASS	dd	net/minecraft/unmapped/C_39524089
 FIELD	dd	Lorg/apache/logging/log4j/Logger;	a	f_47483486
 FIELD	dd	Ljava/util/Map;	c	f_66607653
+METHOD	dd	(Ljava/lang/Object;)Ljava/lang/Object;	a	m_65457132
+METHOD	dd	(Ljava/lang/Object;Ljava/lang/Object;)V	a	m_23903711
 METHOD	dd	()Ljava/util/Map;	b	m_56475138
 METHOD	dd	()Ljava/util/Set;	c	m_71903807
 METHOD	dd	(Ljava/lang/Object;)Z	d	m_72615648
@@ -17243,6 +17250,7 @@ METHOD	ps	()V	n	m_96526108
 METHOD	ps	(F)V	n	m_43092861
 METHOD	ps	()Lqp;	p	m_80179678
 METHOD	ps	()Lqq;	q	m_87995679
+METHOD	ps	(I)Lzx;	q	m_37372558
 METHOD	ps	()Lqo;	r	m_73371863
 METHOD	ps	()Lsw;	s	m_35626357
 METHOD	ps	()Lta;	t	m_45378891
@@ -19145,6 +19153,7 @@ METHOD	wn	(Z)V	k	m_85256993
 METHOD	wn	(DDD)V	l	m_62997662
 METHOD	wn	()V	n	m_13107648
 METHOD	wn	()Z	p	m_29153887
+METHOD	wn	(I)Lzx;	q	m_37372558
 METHOD	wn	(I)V	r	m_83917266
 METHOD	wn	()V	s	m_29672330
 METHOD	wn	(I)V	s	m_06688930

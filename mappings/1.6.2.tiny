@@ -412,6 +412,7 @@ METHOD	abv	()Lalp;	N	m_67440400
 METHOD	abv	()Labs;	O	m_18124683
 METHOD	abv	()Z	P	m_44230367
 METHOD	abv	()Z	Q	m_68511828
+METHOD	abv	()I	R	m_98920689
 METHOD	abv	()I	S	m_20389902
 METHOD	abv	()D	U	m_58351648
 METHOD	abv	()Ljava/util/Calendar;	W	m_97992864
@@ -424,6 +425,7 @@ METHOD	abv	(DDDLjava/lang/String;FF)V	a	m_14911682
 METHOD	abv	(DDDLjava/lang/String;FFZ)V	a	m_70598418
 METHOD	abv	(F)I	a	m_88486855
 METHOD	abv	(I)Lnm;	a	m_99124674
+METHOD	abv	(II)Lacp;	a	m_25174963
 METHOD	abv	(IIII)Z	a	m_38204755
 METHOD	abv	(IIIII)V	a	m_26749924
 METHOD	abv	(IIIIII)V	a	m_96040795
@@ -503,6 +505,7 @@ METHOD	abv	(Lnm;Lasu;)Ljava/util/List;	b	m_31939869
 METHOD	abv	()V	c	m_82212843
 METHOD	abv	(F)F	c	m_15038091
 METHOD	abv	(II)Z	c	m_12753876
+METHOD	abv	(III)Z	c	m_64558657
 METHOD	abv	(IIII)Z	c	m_41448427
 METHOD	abv	(IIIII)V	c	m_63448235
 METHOD	abv	(IIIZ)Z	c	m_52152915
@@ -558,11 +561,14 @@ METHOD	abv	(IIII)V	m	m_30631361
 METHOD	abv	(III)I	n	m_71898872
 METHOD	abv	()V	o	m_03149087
 METHOD	abv	(III)V	p	m_00384111
+METHOD	abv	(III)F	q	m_80119644
 METHOD	abv	(III)V	s	m_99668886
+METHOD	abv	(III)Z	t	m_46357017
 METHOD	abv	()Lacu;	u	m_72354999
 METHOD	abv	()Z	v	m_55681841
 METHOD	abv	(III)Z	v	m_15479659
 METHOD	abv	()I	w	m_29794890
+METHOD	abv	(III)Z	w	m_84587551
 METHOD	abv	()F	x	m_72207508
 METHOD	abv	(III)Z	x	m_73082703
 METHOD	abv	()Ljava/lang/String;	y	m_19536542
@@ -2046,6 +2052,7 @@ METHOD	aln	()V	h	m_12662582
 CLASS	alo	net/minecraft/unmapped/C_72342472
 FIELD	alo	Ljava/io/File;	a	f_90285215
 METHOD	alo	([Ljava/io/File;)Z	a	m_58119675
+METHOD	alo	(Ljava/lang/String;)Lalp;	c	m_18055305
 CLASS	alp	net/minecraft/unmapped/C_64676926
 FIELD	alp	J	a	f_16809156
 FIELD	alp	Lacf;	b	f_92576962
@@ -3445,6 +3452,7 @@ METHOD	atc	(Ljava/lang/String;)V	c	m_49148094
 METHOD	atc	()Ljava/util/Collection;	d	m_97938750
 METHOD	atc	()Ljava/lang/String;	e	m_92719207
 METHOD	atc	()Ljava/lang/String;	f	m_59892403
+METHOD	atc	()Z	h	m_43820849
 METHOD	atc	()I	i	m_23073535
 CLASS	atd	net/minecraft/unmapped/C_25287165
 FIELD	atd	Ljava/util/Comparator;	a	f_68256792

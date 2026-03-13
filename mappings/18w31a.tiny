@@ -16184,6 +16184,8 @@ METHOD	cex	(Lik;)V	c	m_26066325
 METHOD	cex	()Lik;	d	m_88953565
 METHOD	cex	()Lik;	e	m_03020651
 METHOD	cex	()Lik;	f	m_28432868
+METHOD	cex	()Z	i	m_43820849
+METHOD	cex	()Lcfb$b;	j	m_57369594
 METHOD	cex	()I	m	m_23073535
 CLASS	cey	net/minecraft/unmapped/C_25287165
 FIELD	cey	Ljava/util/Comparator;	a	f_68256792
@@ -26088,6 +26090,7 @@ FIELD	fe	Ljava/util/Map;	c	f_66607653
 METHOD	fe	(Ljava/util/Random;)Ljava/lang/Object;	a	m_47289449
 METHOD	fe	()Ljava/util/Map;	b	m_56475138
 METHOD	fe	()Ljava/util/Set;	c	m_64981899
+METHOD	fe	(Ljava/lang/Object;)Ljava/lang/Object;	c	m_65457132
 METHOD	fe	(Ljava/lang/Object;)Z	d	m_72615648
 CLASS	fg	net/minecraft/unmapped/C_93816630
 FIELD	fg	I	a	f_39781383
@@ -26519,7 +26522,7 @@ FIELD	hf	Lorg/apache/logging/log4j/Logger;	f	f_50133137
 FIELD	hf	Ljava/util/List;	g	f_01591565
 FIELD	hf	B	h	f_56809345
 METHOD	hf	(I)Lhp;	a	remove
-METHOD	hf	(Lhp;)Z	a	m_43125067
+METHOD	hf	(Lhp;)Z	a	add
 METHOD	hf	()Lhf;	c	m_92469929
 METHOD	hf	()I	d	m_72977924
 METHOD	hf	(I)Lgz;	e	m_41419071
@@ -31522,6 +31525,7 @@ FIELD	up	Ljava/util/Set;	c	f_00163866
 FIELD	up	Lorg/apache/logging/log4j/Logger;	d	f_92148525
 METHOD	up	(ILjava/lang/String;Ljava/nio/file/Path;Ljava/lang/String;Ljava/util/function/Predicate;)Ljava/util/Collection;	a	m_56797247
 METHOD	up	(Ljava/lang/String;)Ljava/io/InputStream;	a	m_72655504
+METHOD	up	(Ljava/lang/String;)Ljava/io/InputStream;	b	m_38355504
 METHOD	up	(Lun;Lpd;)Ljava/io/InputStream;	c	m_39374962
 CLASS	uq	net/minecraft/unmapped/C_46683602
 METHOD	uq	()Ljava/lang/String;	a	m_35184170

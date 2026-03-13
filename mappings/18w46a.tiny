@@ -766,6 +766,7 @@ FIELD	adz	J	e	f_86865331
 FIELD	adz	I	f	f_05638642
 METHOD	adz	(ILjava/lang/String;Ljava/lang/StringBuilder;)V	a	m_50257404
 METHOD	adz	(JI)Ljava/lang/String;	a	m_83035421
+METHOD	adz	(Ljava/lang/String;)Ljava/util/List;	a	m_83593755
 METHOD	adz	()Ljava/lang/String;	g	m_20021401
 CLASS	ae	net/minecraft/unmapped/C_78852110
 FIELD	ae	Lpx;	a	f_57055994
@@ -12388,6 +12389,7 @@ METHOD	bnx	()Ljava/util/Collection;	a	m_77094580
 METHOD	bnx	(Lbpi;)Ljava/lang/Object;	a	m_70434050
 METHOD	bnx	(Ljava/util/Collection;Ljava/lang/Object;)Ljava/lang/Object;	a	m_71554882
 METHOD	bnx	(Ljava/util/Map;)V	a	m_46318910
+METHOD	bnx	()Lcom/google/common/collect/ImmutableMap;	b	m_07222861
 METHOD	bnx	(Lbpi;)Z	b	m_32529332
 METHOD	bnx	(Lbpi;Ljava/lang/Comparable;)Ljava/util/Map;	c	m_89064963
 CLASS	bnx$1	net/minecraft/unmapped/C_52476540$34106752
@@ -18493,6 +18495,8 @@ METHOD	ckq	(Liz;)V	c	m_26066325
 METHOD	ckq	()Liz;	d	m_88953565
 METHOD	ckq	()Liz;	e	m_03020651
 METHOD	ckq	()Liz;	f	m_28432868
+METHOD	ckq	()Z	i	m_43820849
+METHOD	ckq	()Lcku$b;	j	m_57369594
 METHOD	ckq	()I	m	m_23073535
 CLASS	ckr	net/minecraft/unmapped/C_25287165
 FIELD	ckr	Ljava/util/Comparator;	a	f_68256792
@@ -29404,7 +29408,7 @@ FIELD	hu	Lorg/apache/logging/log4j/Logger;	f	f_50133137
 FIELD	hu	Ljava/util/List;	g	f_01591565
 FIELD	hu	B	h	f_56809345
 METHOD	hu	(I)Lie;	a	remove
-METHOD	hu	(Lie;)Z	a	m_43125067
+METHOD	hu	(Lie;)Z	a	add
 METHOD	hu	()I	a_	m_72977924
 METHOD	hu	(Lie;)Z	b	m_83744121
 METHOD	hu	()Lhu;	c	m_92469929
@@ -34201,6 +34205,7 @@ METHOD	ue	(Ljava/util/List;)Lcom/mojang/datafixers/util/Either;	a	m_69888800
 METHOD	ue	(Ljava/util/concurrent/CompletableFuture;)Ljava/util/concurrent/CompletionStage;	a	m_25967732
 METHOD	ue	(Ljava/util/concurrent/CompletableFuture;Lbpy;Lazs;Ljava/lang/Object;)Ljava/util/concurrent/CompletionStage;	a	m_22477833
 METHOD	ue	(Ljava/util/concurrent/ForkJoinPool;)Ljava/util/concurrent/ForkJoinWorkerThread;	a	m_15851655
+METHOD	ue	(Ljava/util/function/BooleanSupplier;)V	a	m_06909447
 METHOD	ue	(Ltu$a;)Ljava/util/concurrent/CompletableFuture;	a	m_38429581
 METHOD	ue	(Ltu;)V	a	m_61911798
 METHOD	ue	(Lue;)Lit/unimi/dsi/fastutil/longs/LongSet;	a	m_83940997
@@ -34728,6 +34733,7 @@ FIELD	vh	Ljava/util/Set;	c	f_00163866
 FIELD	vh	Lorg/apache/logging/log4j/Logger;	d	f_92148525
 METHOD	vh	(ILjava/lang/String;Ljava/nio/file/Path;Ljava/lang/String;Ljava/util/function/Predicate;)Ljava/util/Collection;	a	m_56797247
 METHOD	vh	(Ljava/lang/String;)Ljava/io/InputStream;	a	m_72655504
+METHOD	vh	(Ljava/lang/String;)Ljava/io/InputStream;	b	m_38355504
 METHOD	vh	(Lvf;Lpx;)Ljava/io/InputStream;	c	m_39374962
 CLASS	vi	net/minecraft/unmapped/C_46683602
 METHOD	vi	()Ljava/lang/String;	a	m_35184170

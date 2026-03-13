@@ -1876,6 +1876,7 @@ METHOD	ahp	()V	H	m_69392864
 METHOD	ahp	()V	I	m_36911043
 METHOD	ahp	()Ljava/util/List;	J	m_78152051
 METHOD	ahp	()I	K	m_79170396
+METHOD	ahp	()Lahu;	L	m_59003592
 METHOD	ahp	()V	M	m_99760164
 METHOD	ahp	()V	N	m_75538572
 METHOD	ahp	()J	O	m_92966154
@@ -1994,6 +1995,7 @@ METHOD	ahp	(Laps;)V	b	m_29582778
 METHOD	ahp	(Lavm;Z)Z	b	m_10295650
 METHOD	ahp	(Lbbe;)Z	b	m_51002786
 METHOD	ahp	(Lbbe;Laxb;)Z	b	m_33360396
+METHOD	ahp	(Lcj;)Laic;	b	m_25174963
 METHOD	ahp	(Lcj;Lajp;)Z	b	m_67525679
 METHOD	ahp	(Lcj;Lajp;II)V	b	m_76888851
 METHOD	ahp	(Lcj;Laps;)V	b	m_84351694
@@ -7051,6 +7053,7 @@ FIELD	azd	Lpb;	b	f_48721932
 FIELD	azd	Lorg/apache/logging/log4j/Logger;	c	f_86786633
 METHOD	azd	(Ljava/io/File;Lpb;)Laze;	a	m_29543495
 METHOD	azd	([Ljava/io/File;)Z	a	m_58119675
+METHOD	azd	(Ljava/lang/String;)Laze;	c	m_18055305
 CLASS	aze	net/minecraft/unmapped/C_64676926
 FIELD	aze	Z	A	f_51814374
 FIELD	aze	Z	B	f_56044825
@@ -7801,6 +7804,8 @@ METHOD	bbj	()Ljava/lang/String;	c	m_68253775
 METHOD	bbj	(Ljava/lang/String;)V	c	m_49148094
 METHOD	bbj	()Ljava/lang/String;	e	m_92719207
 METHOD	bbj	()Ljava/lang/String;	f	m_59892403
+METHOD	bbj	()Z	h	m_43820849
+METHOD	bbj	()Lbbo$b;	i	m_57369594
 METHOD	bbj	()I	l	m_23073535
 CLASS	bbk	net/minecraft/unmapped/C_25287165
 FIELD	bbk	Ljava/util/Comparator;	a	f_68256792
@@ -15184,6 +15189,8 @@ FIELD	dd	[Ljava/lang/Object;	b	f_00554859
 FIELD	dd	Ljava/util/Map;	c	f_66607653
 METHOD	dd	(Ljava/util/Random;)Ljava/lang/Object;	a	m_47289449
 METHOD	dd	()Ljava/util/Map;	b	m_56475138
+METHOD	dd	()Ljava/util/Set;	c	m_71903807
+METHOD	dd	(Ljava/lang/Object;)Ljava/lang/Object;	c	m_65457132
 METHOD	dd	(Ljava/lang/Object;)Z	d	m_72615648
 CLASS	df	net/minecraft/unmapped/C_93816630
 FIELD	df	I	a	f_39781383
@@ -23090,6 +23097,7 @@ METHOD	zg	()F	cS	m_16491628
 METHOD	zg	()V	cT	m_92842745
 METHOD	zg	()Ladm;	cU	m_36012846
 METHOD	zg	()F	cV	m_12402623
+METHOD	zg	()Lry;	cl	m_82780045
 METHOD	zg	()V	cy	m_55551557
 METHOD	zg	()I	cz	m_54244469
 METHOD	zg	(Ljava/lang/String;)Ljava/util/UUID;	d	m_69411679

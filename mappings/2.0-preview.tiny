@@ -331,6 +331,7 @@ METHOD	abe	()Laky;	L	m_67440400
 METHOD	abe	()Labb;	M	m_18124683
 METHOD	abe	()Z	N	m_44230367
 METHOD	abe	()Z	O	m_68511828
+METHOD	abe	()I	P	m_98920689
 METHOD	abe	()I	Q	m_20389902
 METHOD	abe	()D	S	m_58351648
 METHOD	abe	()Ljava/util/Calendar;	U	m_97992864
@@ -343,6 +344,7 @@ METHOD	abe	(DDDLjava/lang/String;FF)V	a	m_14911682
 METHOD	abe	(DDDLjava/lang/String;FFZ)V	a	m_70598418
 METHOD	abe	(F)I	a	m_88486855
 METHOD	abe	(I)Lns;	a	m_99124674
+METHOD	abe	(II)Laby;	a	m_25174963
 METHOD	abe	(IIII)Z	a	m_38204755
 METHOD	abe	(IIIII)V	a	m_26749924
 METHOD	abe	(IIIIII)V	a	m_96040795
@@ -421,6 +423,7 @@ METHOD	abe	(Lns;Lasd;)Ljava/util/List;	b	m_31939869
 METHOD	abe	()V	c	m_82212843
 METHOD	abe	(F)F	c	m_15038091
 METHOD	abe	(II)Z	c	m_12753876
+METHOD	abe	(III)Z	c	m_64558657
 METHOD	abe	(IIII)Z	c	m_41448427
 METHOD	abe	(IIIII)V	c	m_63448235
 METHOD	abe	(IIIZ)Z	c	m_52152915
@@ -476,12 +479,15 @@ METHOD	abe	(IIII)V	m	m_30631361
 METHOD	abe	()V	n	m_03149087
 METHOD	abe	(III)I	n	m_71898872
 METHOD	abe	(III)V	p	m_00384111
+METHOD	abe	(III)F	q	m_80119644
 METHOD	abe	(III)V	s	m_99668886
 METHOD	abe	()Lacd;	t	m_72354999
+METHOD	abe	(III)Z	t	m_46357017
 METHOD	abe	()Z	u	m_55681841
 METHOD	abe	()I	v	m_29794890
 METHOD	abe	(III)Z	v	m_15479659
 METHOD	abe	()Ljava/lang/String;	w	m_19536542
+METHOD	abe	(III)Z	w	m_84587551
 METHOD	abe	()Ljava/lang/String;	x	m_92045859
 METHOD	abe	(III)Z	x	m_73082703
 METHOD	abe	()V	y	m_69392864
@@ -1916,6 +1922,7 @@ METHOD	akw	()V	h	m_12662582
 CLASS	akx	net/minecraft/unmapped/C_72342472
 FIELD	akx	Ljava/io/File;	a	f_90285215
 METHOD	akx	([Ljava/io/File;)Z	a	m_58119675
+METHOD	akx	(Ljava/lang/String;)Laky;	c	m_18055305
 CLASS	aky	net/minecraft/unmapped/C_64676926
 FIELD	aky	J	a	f_16809156
 FIELD	aky	Labo;	b	f_92576962
@@ -11386,6 +11393,7 @@ FIELD	sa	I	j	f_97333648
 METHOD	sa	(I)F	a	m_43427749
 METHOD	sa	(IDDDZ)V	a	m_02021859
 METHOD	sa	(ILoj;)V	a	m_01114601
+METHOD	sa	()I	b	m_43275531
 METHOD	sa	(FFF)F	b	m_95241487
 METHOD	sa	(II)V	c	m_12407407
 METHOD	sa	()V	m	m_87831744
@@ -11408,6 +11416,7 @@ FIELD	sc	I	i	f_10239973
 FIELD	sc	Lob;	j	f_38886288
 METHOD	sc	(I)Z	a	m_46879103
 METHOD	sc	(IDDD)V	a	m_40744102
+METHOD	sc	()I	b	m_43275531
 METHOD	sc	(FFF)F	b	m_88704960
 METHOD	sc	(II)V	c	m_11189787
 METHOD	sc	()I	m	m_26153495

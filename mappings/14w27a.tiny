@@ -828,6 +828,7 @@ METHOD	adq	(DDD)V	k	m_78178389
 METHOD	adq	(DDD)V	l	m_62997662
 METHOD	adq	()V	m	m_13107648
 METHOD	adq	()Z	o	m_29153887
+METHOD	adq	(I)Laio;	q	m_37372558
 METHOD	adq	()V	r	m_29672330
 METHOD	adq	(I)V	r	m_83917266
 METHOD	adq	()V	s	m_11118191
@@ -2399,6 +2400,7 @@ METHOD	amp	(Ldl;)Z	D	m_29906389
 METHOD	amp	()Ljava/util/List;	E	m_78152051
 METHOD	amp	(Ldl;)Ltn;	E	m_60275942
 METHOD	amp	(Ldl;)Z	F	m_30111639
+METHOD	amp	()Lamz;	G	m_59003592
 METHOD	amp	(Ldl;)Z	G	m_85069543
 METHOD	amp	()V	H	m_99760164
 METHOD	amp	()V	I	m_75538572
@@ -2457,6 +2459,7 @@ METHOD	amp	(Lbln;Lblk;)F	a	m_36285949
 METHOD	amp	(Lbln;Lbln;)Lbll;	a	m_82559274
 METHOD	amp	(Lbln;Lbln;Z)Lbll;	a	m_40214598
 METHOD	amp	(Lbln;Lbln;ZZZ)Lbll;	a	m_39818017
+METHOD	amp	(Ldl;)Lanh;	a	m_25174963
 METHOD	amp	(Ldl;I)Z	a	m_80621374
 METHOD	amp	(Ldl;Lana;)I	a	m_06174602
 METHOD	amp	(Ldl;Lapa;)Z	a	m_38204755
@@ -2534,6 +2537,7 @@ METHOD	amp	(II)I	c	m_58591388
 METHOD	amp	(ILdl;I)V	c	m_97254881
 METHOD	amp	(Lana;Ldl;)Z	c	m_35797881
 METHOD	amp	(Lblk;)Z	c	m_30785481
+METHOD	amp	(Ldl;)Z	c	m_64558657
 METHOD	amp	(Ldl;Lapa;)V	c	m_62453220
 METHOD	amp	(Ldl;Lapa;II)V	c	m_63164641
 METHOD	amp	(Ldl;Ldw;)I	c	m_71825179
@@ -6588,6 +6592,7 @@ CLASS	bkh	net/minecraft/unmapped/C_72342472
 FIELD	bkh	Ljava/io/File;	a	f_90285215
 FIELD	bkh	Lorg/apache/logging/log4j/Logger;	b	f_86786633
 METHOD	bkh	([Ljava/io/File;)Z	a	m_58119675
+METHOD	bkh	(Ljava/lang/String;)Lbki;	c	m_18055305
 CLASS	bki	net/minecraft/unmapped/C_64676926
 FIELD	bki	Z	A	f_85030439
 FIELD	bki	D	B	f_43990909
@@ -6901,6 +6906,8 @@ METHOD	blp	()Ljava/lang/String;	c	m_68253775
 METHOD	blp	(Ljava/lang/String;)V	c	m_49148094
 METHOD	blp	()Ljava/lang/String;	e	m_92719207
 METHOD	blp	()Ljava/lang/String;	f	m_59892403
+METHOD	blp	()Z	h	m_43820849
+METHOD	blp	()Lblw;	i	m_57369594
 METHOD	blp	()I	k	m_23073535
 METHOD	blp	()La;	l	m_88062935
 CLASS	blq	net/minecraft/unmapped/C_25287165
@@ -18191,6 +18198,7 @@ METHOD	vh	(F)V	m	m_43092861
 METHOD	vh	()Lwg;	o	m_80179678
 METHOD	vh	()Lwh;	p	m_87995679
 METHOD	vh	()Lwf;	q	m_73371863
+METHOD	vh	(I)Laio;	q	m_37372558
 METHOD	vh	()Lyo;	r	m_35626357
 METHOD	vh	()Lyr;	s	m_45378891
 METHOD	vh	()Lvg;	t	m_88061487

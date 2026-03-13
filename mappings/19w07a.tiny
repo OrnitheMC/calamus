@@ -1056,6 +1056,7 @@ FIELD	afh	J	e	f_86865331
 FIELD	afh	I	f	f_05638642
 METHOD	afh	(ILjava/lang/String;Ljava/lang/StringBuilder;)V	a	m_50257404
 METHOD	afh	(JI)Ljava/lang/String;	a	m_83035421
+METHOD	afh	(Ljava/lang/String;)Ljava/util/List;	a	m_83593755
 METHOD	afh	()Ljava/lang/String;	h	m_20021401
 CLASS	afi	net/minecraft/unmapped/C_78821150
 FIELD	afi	J	a	f_58210580
@@ -5595,6 +5596,7 @@ METHOD	arh	(Ljava/util/UUID;I)V	a	m_98015183
 METHOD	arh	(Luu;)V	a	m_99000086
 METHOD	arh	()Z	dL	m_26433991
 METHOD	arh	()I	dO	m_45517238
+METHOD	arh	()Larn;	dP	m_18826860
 METHOD	arh	(Lhv;)V	g	m_61091289
 CLASS	arj	net/minecraft/unmapped/C_35862624
 FIELD	arj	Lbcg;	bC	f_05653971
@@ -5634,6 +5636,7 @@ METHOD	arm	(I)Z	d	m_78850421
 METHOD	arm	()Z	dM	m_50912734
 METHOD	arm	()Z	dN	m_08841278
 METHOD	arm	()V	dO	m_31849624
+METHOD	arm	()Larn;	dP	m_18826860
 METHOD	arm	()Z	dQ	m_72544856
 METHOD	arm	()Z	dR	m_05576613
 METHOD	arm	()Z	dS	m_01867702
@@ -6184,6 +6187,7 @@ FIELD	ash	Z	g	f_50409931
 METHOD	ash	(Les;)V	a	m_87529638
 METHOD	ash	(Laxt;)V	b	m_85121498
 METHOD	ash	(Laxt;)V	c	m_05464863
+METHOD	ash	()Laxt;	e	m_50818383
 METHOD	ash	()Laxt;	f	m_82064545
 CLASS	asi	net/minecraft/unmapped/C_44029030
 FIELD	asi	Lpw;	f	f_54872014
@@ -6282,6 +6286,7 @@ METHOD	asy	(Laxt;Lazk;)V	a	m_09945202
 METHOD	asy	(Les;Lew;)V	a	m_74450320
 METHOD	asy	(Ljava/util/List;Lahl;)V	a	m_63239455
 METHOD	asy	(Laxt;)V	b	m_14045016
+METHOD	asy	()Laxt;	e	m_50818383
 METHOD	asy	()V	f	m_28120628
 METHOD	asy	()Z	i	m_31609842
 CLASS	asz	net/minecraft/unmapped/C_78539896
@@ -20078,6 +20083,8 @@ METHOD	coe	(Ljg;)V	c	m_26066325
 METHOD	coe	()Ljg;	d	m_88953565
 METHOD	coe	()Ljg;	e	m_03020651
 METHOD	coe	()Ljg;	f	m_28432868
+METHOD	coe	()Z	i	m_43820849
+METHOD	coe	()Lcoi$b;	j	m_57369594
 METHOD	coe	()I	m	m_23073535
 CLASS	cof	net/minecraft/unmapped/C_25287165
 FIELD	cof	Ljava/util/Comparator;	a	f_68256792
@@ -36527,6 +36534,7 @@ METHOD	ut	(Lbco;ZZLuv;)Z	a	m_22237412
 METHOD	ut	(Lbsn;)Lbsn;	a	m_24411930
 METHOD	ut	(Les;)V	a	m_17007416
 METHOD	ut	(Ljava/util/concurrent/CompletableFuture;)Ljava/util/concurrent/CompletionStage;	a	m_25967732
+METHOD	ut	(Ljava/util/function/BooleanSupplier;)V	a	m_06909447
 METHOD	ut	(Luv;)V	a	m_42139205
 METHOD	ut	(Luv;II)Z	a	m_38987274
 METHOD	ut	(Luv;Z)V	a	m_03398161
@@ -37073,6 +37081,7 @@ FIELD	vz	Ljava/util/Map;	e	f_17153883
 METHOD	vz	(ILjava/lang/String;Ljava/nio/file/Path;Ljava/lang/String;Ljava/util/function/Predicate;)Ljava/util/Collection;	a	m_56797247
 METHOD	vz	(Ljava/lang/String;)Ljava/io/InputStream;	a	m_72655504
 METHOD	vz	(Ljava/util/HashMap;)V	a	m_94350958
+METHOD	vz	(Ljava/lang/String;)Ljava/io/InputStream;	b	m_38355504
 METHOD	vz	(Lvx;Lqh;)Ljava/io/InputStream;	c	m_39374962
 CLASS	w	net/minecraft/unmapped/C_63683844
 FIELD	w	Ljg;	a	f_06765962
