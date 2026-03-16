@@ -126,7 +126,7 @@ FIELD	com/mojang/minecraft/a/a	B	s	f_18055874
 FIELD	com/mojang/minecraft/a/a	[Ljava/lang/Class;	t	f_70075675
 FIELD	com/mojang/minecraft/a/a	I	u	f_02630470
 CLASS	com/mojang/minecraft/a/b	com/mojang/minecraft/unmapped/C_02994991
-CLASS	com/mojang/minecraft/b	com/mojang/minecraft/unmapped/C_24654288
+CLASS	com/mojang/minecraft/b	com/mojang/minecraft/unmapped/C_83400153
 CLASS	com/mojang/minecraft/b/a	com/mojang/minecraft/unmapped/C_94584382
 FIELD	com/mojang/minecraft/b/a	F	a	f_96140729
 FIELD	com/mojang/minecraft/b/a	F	b	f_95060918
@@ -140,8 +140,8 @@ METHOD	com/mojang/minecraft/b/a	(Lcom/mojang/minecraft/b/a;F)Lcom/mojang/minecra
 CLASS	com/mojang/minecraft/c/a	com/mojang/minecraft/unmapped/C_26019040
 FIELD	com/mojang/minecraft/c/a	[[F	a	f_03140324
 METHOD	com/mojang/minecraft/c/a	(FFFFFF)Z	a	m_73734779
-CLASS	com/mojang/minecraft/c/b	com/mojang/minecraft/unmapped/C_82920792
-CLASS	com/mojang/minecraft/d/a	com/mojang/minecraft/unmapped/C_16190149
+CLASS	com/mojang/minecraft/c/b	com/mojang/minecraft/unmapped/C_47264217
+CLASS	com/mojang/minecraft/d/a	com/mojang/minecraft/unmapped/C_92907361
 CLASS	com/mojang/minecraft/level/BlockMap	com/mojang/minecraft/level/BlockMap
 FIELD	com/mojang/minecraft/level/BlockMap	Ljava/util/List;	all	all
 FIELD	com/mojang/minecraft/level/BlockMap	I	depth	depth
@@ -262,11 +262,11 @@ METHOD	com/mojang/minecraft/level/Level	()V	tick	tick
 METHOD	com/mojang/minecraft/level/Level	()V	tickEntities	tickEntities
 METHOD	com/mojang/minecraft/level/Level	(IIII)V	updateNeighborsAt	updateNeighborsAt
 CLASS	com/mojang/minecraft/level/a	com/mojang/minecraft/unmapped/C_01953097
-FIELD	com/mojang/minecraft/level/a	Lcom/mojang/minecraft/server/MinecraftServer;	a	f_71688092
+FIELD	com/mojang/minecraft/level/a	Lcom/mojang/minecraft/server/MinecraftServer;	a	f_22739004
 METHOD	com/mojang/minecraft/level/a	(Lcom/mojang/minecraft/level/Level;Ljava/io/OutputStream;)V	a	m_16689239
 METHOD	com/mojang/minecraft/level/a	(Ljava/io/InputStream;)Lcom/mojang/minecraft/level/Level;	a	m_47137514
 CLASS	com/mojang/minecraft/level/a/a	com/mojang/minecraft/unmapped/C_49004282
-FIELD	com/mojang/minecraft/level/a/a	Lcom/mojang/minecraft/server/MinecraftServer;	a	f_76014930
+FIELD	com/mojang/minecraft/level/a/a	Lcom/mojang/minecraft/server/MinecraftServer;	a	f_75500528
 FIELD	com/mojang/minecraft/level/a/a	I	b	f_13190451
 FIELD	com/mojang/minecraft/level/a/a	I	c	f_89318109
 FIELD	com/mojang/minecraft/level/a/a	I	d	f_24422497
@@ -301,7 +301,7 @@ FIELD	com/mojang/minecraft/level/b/a	Lcom/mojang/minecraft/level/b/a;	a	f_058181
 FIELD	com/mojang/minecraft/level/b/a	Lcom/mojang/minecraft/level/b/a;	b	f_99458234
 FIELD	com/mojang/minecraft/level/b/a	Lcom/mojang/minecraft/level/b/a;	c	f_70482856
 FIELD	com/mojang/minecraft/level/b/a	[Lcom/mojang/minecraft/level/b/a;	d	f_75203064
-CLASS	com/mojang/minecraft/level/c	net/minecraft/client/Minecraft
+CLASS	com/mojang/minecraft/level/c	com/mojang/minecraft/unmapped/C_17456413
 CLASS	com/mojang/minecraft/level/d	com/mojang/minecraft/unmapped/C_15180163
 CLASS	com/mojang/minecraft/level/e	com/mojang/minecraft/unmapped/C_68072741
 FIELD	com/mojang/minecraft/level/e	Ljava/util/Set;	a	f_45343544
